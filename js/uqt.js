@@ -7,7 +7,7 @@ function play(album, title){
     .attr("album", track[0].album)
     .attr("num", track[0].num)
   var audio = u("#audio").first();
-  audio.src = "http://subzku.net/uqt" + encodeURI(track[0].file);
+  audio.src = "https://subzku.net/uqt" + encodeURI(track[0].file);
   audio.play();
 }
 
