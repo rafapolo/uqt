@@ -1,0 +1,119 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color            : white;
+  background-color : rgb(54, 53, 49);
+  font-family      : monospace;
+  font-size        : 9px;
+}
+
+h2 {
+  display     : inline-block;
+  padding-top : 10px;
+  text-shadow : grey 2px 3px 3px;
+}
+
+audio {
+  width : 380px;
+  float : right;
+  height: 40px;
+  padding-right: 20px;
+}
+
+#status {
+  z-index          : 10;
+  display          : inline-block;
+  position         : fixed;
+  margin-top       : 71px;
+  margin-left      : 10px;
+  padding          : 10px;
+  border           : 1px solid gray;
+  background-color : black;
+  font-size        : 12px;
+}
+
+tr:hover {
+  background-color : white;
+}
+
+td.gridjs-td {
+  color            : white;
+  background-color : #1e211e;
+  padding: 10px 24px;
+  font-size: 13px;
+}
+
+a.play {
+  color : white;
+}
+
+a.play:hover {
+  color            : black;
+  background-color : white;
+}
+
+button.gridjs-sort {
+  height : 16px;
+}
+
+.gridjs-footer {
+  color            : white;
+  background-color : black;
+  font-size        : 12px;
+}
+
+.gridjs-tr {
+  color            : lightgray;
+  background-color : black;
+}
+
+.gridjs-pagination .gridjs-summary {
+  margin-top : 8px;
+  color      : white;
+}
+
+.gridjs-search {
+  float : right;
+}
+
+input.gridjs-input {
+  color            : black;
+  background-color : lightgrey;
+  font-size        : 13px;
+}
+
+.gridjs-tr:hover {
+  color            : lightgray;
+  background-color : black;
+}
+
+th.gridjs-th-sort:focus,
+th.gridjs-th-sort:hover {
+  color            : black;
+  background-color : gray;
+}
+
+td.gridjs-th td.gridjs-th-sort {
+  box-sizing       : content-box;
+  padding          : 7px 24px;
+  color            : antiquewhite;
+  background-color : #000000cf !important;
+}
+
+#fixed {
+  z-index          : 1000;
+  display          : inline-table;
+  position         : fixed;
+  top              : 0px;
+  width            : 100%;
+  margin           : 0px;
+  padding          : 10px;
+  background-color : black;
+}
+
+#player {
+  padding: 64px 10px 10px 10px;
+}
