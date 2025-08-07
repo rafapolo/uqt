@@ -5,4 +5,4 @@
 3. generated .json db reading all mp3 tags with https://github.com/moumar/ruby-mp3info
 4. simple interface with https://gridjs.io/ and https://umbrellajs.com/
 
-==> http://extrapolo.com/projeto/mpb100anos/
+==> Live at https://rafapolo.github.io/uqt/
