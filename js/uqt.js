@@ -29,7 +29,7 @@ function groupTracksByAlbum() {
         name: track.album,
         artists: track.artists,
         year: track.year,
-        cover: `${BASE_URL}/${folder}/capa.jpg`,
+        cover: `${BASE_URL}/${folder}/cover.jpg`,
         tracks: []
       };
     }
@@ -204,7 +204,7 @@ function updateNowPlaying() {
   u('#player-artist').text(currentTrack.artists);
 
   const folder = currentTrack.file.split('/')[1];
-  const coverUrl = `${BASE_URL}/${folder}/capa.jpg`;
+  const coverUrl = `${BASE_URL}/${folder}/cover.jpg`;
   const coverImg = u('#player-cover').first();
   coverImg.src = coverUrl;
   coverImg.onerror = () => { coverImg.src = PLACEHOLDER_COVER; };
