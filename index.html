@@ -1,22 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-	<title>Acervo UQT</title>
-	<meta charset="utf-8"/>
-	<link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-	<link href="uqt.css" rel="stylesheet" />
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acervo UQT — 100 anos de MPB</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link href="uqt.css" rel="stylesheet">
 	<script src="js/uqt.json"></script>
 	<script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
-	<script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
 	<script src="js/uqt.js"></script>
 </head>
 
 <body>
-	<div id="fixed">
-		<h2>.: Acervo UmQueTenha | 100 anos de MPB :.</h2>
-		<audio id="audio" controls></audio>
-	</div	>
-	<div id="status">705 horas de música</div>
-	<div id="player"></div>
+	<header class="app-header">
+		<div class="header-content">
+			<h1 class="app-title">Acervo UQT</h1>
+			<p class="app-subtitle">100 Anos de MPB</p>
+			<div class="music-count">705 horas de música</div>
+		</div>
+	</header>
+
+	<main class="app-main">
+		<div class="player-section">
+			<div class="now-playing">
+				<div class="np-placeholder">▶</div>
+				<div class="np-info">
+					<h2 id="np-title">Selecione uma música</h2>
+					<p id="np-artist"></p>
+					<p id="np-album"></p>
+				</div>
+			</div>
+
+			<audio id="audio"></audio>
+
+			<div class="controls">
+				<div class="progress-container">
+					<span id="time-current" class="time">0:00</span>
+					<div class="progress-bar">
+						<div id="progress-fill" class="progress-fill"></div>
+					</div>
+					<span id="time-duration" class="time">0:00</span>
+				</div>
+				<div class="button-group">
+					<button id="btn-prev" class="btn btn-control" title="Anterior">⏮</button>
+					<button id="btn-play" class="btn btn-play" title="Play">▶</button>
+					<button id="btn-next" class="btn btn-control" title="Próxima">⏭</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="search-section">
+			<input id="search-input" type="text" class="search-input" placeholder="Buscar por artista, álbum, ano...">
+		</div>
+
+		<div id="player" class="tracks-table"></div>
+	</main>
+
+	<footer class="app-footer">
+		<p>Um acervo de <strong>100 anos</strong> de Música Popular Brasileira</p>
+	</footer>
 </body>
 </html>

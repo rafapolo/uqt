@@ -1,119 +1,537 @@
-*{
-  margin: 0px;
-  padding: 0px;
+/* Root & Variables */
+:root {
+  --color-bg: #0f0e0c;
+  --color-surface: #1a1814;
+  --color-surface-light: #2a2620;
+  --color-accent: #d4a574;
+  --color-accent-dark: #9d7d54;
+  --color-text: #f5f1ed;
+  --color-text-secondary: #b8b0a8;
+  --color-text-muted: #7a7268;
+  --color-border: #3a3530;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s ease-out;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color            : white;
-  background-color : rgb(54, 53, 49);
-  font-family      : monospace;
-  font-size        : 9px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h2 {
-  display     : inline-block;
-  padding-top : 10px;
-  text-shadow : grey 2px 3px 3px;
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #1a1814 0%, #252019 100%);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-lg) var(--spacing-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-xs);
+}
+
+.app-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.music-count {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+/* Player Section */
+.player-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  animation: slideInDown 0.6s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Now Playing */
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.np-placeholder {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--color-bg);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.np-info h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
+}
+
+.np-info p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.np-info p:first-of-type {
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+/* Audio Element */
 audio {
-  width : 380px;
-  float : right;
-  height: 40px;
-  padding-right: 20px;
+  display: none;
 }
 
-#status {
-  z-index          : 10;
-  display          : inline-block;
-  position         : fixed;
-  margin-top       : 71px;
-  margin-left      : 10px;
-  padding          : 10px;
-  border           : 1px solid gray;
-  background-color : black;
-  font-size        : 12px;
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
-tr:hover {
-  background-color : white;
+/* Progress Bar */
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
 }
 
-td.gridjs-td {
-  color            : white;
-  background-color : #1e211e;
-  padding: 10px 24px;
-  font-size: 13px;
+.time {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
 }
 
-a.play {
-  color : white;
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--color-surface-light);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-a.play:hover {
-  color            : black;
-  background-color : white;
+.progress-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+  position: relative;
 }
 
-button.gridjs-sort {
-  height : 16px;
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
-.gridjs-footer {
-  color            : white;
-  background-color : black;
-  font-size        : 12px;
+.progress-bar:hover .progress-fill::after {
+  opacity: 1;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  transition: var(--transition-fast);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  color: var(--color-text);
+  background: var(--color-surface-light);
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-play {
+  font-size: 1.8rem;
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: var(--color-bg);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.btn-play:hover {
+  background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
+  color: var(--color-bg);
+  box-shadow: 0 8px 24px rgba(212, 165, 116, 0.3);
+}
+
+.btn-play.playing {
+  background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
+}
+
+/* Search Section */
+.search-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  background: var(--color-surface-light);
+  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}
+
+/* Tracks Table */
+.tracks-table {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* GridJS Customization */
+.gridjs-wrapper {
+  background: transparent;
+}
+
+.gridjs-container {
+  border: none;
+}
+
+.gridjs {
+  --gridjs-border-color: var(--color-border);
+  --gridjs-background-color: transparent;
+  --gridjs-text-input-background-color: var(--color-surface-light);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.gridjs-head {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.gridjs-th {
+  padding: var(--spacing-md) !important;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: var(--color-surface);
+}
+
+.gridjs-th-sort {
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+.gridjs-th-sort:hover {
+  background: var(--color-surface-light);
+  color: var(--color-accent);
 }
 
 .gridjs-tr {
-  color            : lightgray;
-  background-color : black;
-}
-
-.gridjs-pagination .gridjs-summary {
-  margin-top : 8px;
-  color      : white;
-}
-
-.gridjs-search {
-  float : right;
-}
-
-input.gridjs-input {
-  color            : black;
-  background-color : lightgrey;
-  font-size        : 13px;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .gridjs-tr:hover {
-  color            : lightgray;
-  background-color : black;
+  background: var(--color-surface-light);
 }
 
-th.gridjs-th-sort:focus,
-th.gridjs-th-sort:hover {
-  color            : black;
-  background-color : gray;
+.gridjs-td {
+  padding: var(--spacing-md) !important;
+  color: var(--color-text);
+  border: none;
 }
 
-td.gridjs-th td.gridjs-th-sort {
-  box-sizing       : content-box;
-  padding          : 7px 24px;
-  color            : antiquewhite;
-  background-color : #000000cf !important;
+.gridjs-td a.play {
+  color: var(--color-accent);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition-fast);
 }
 
-#fixed {
-  z-index          : 1000;
-  display          : inline-table;
-  position         : fixed;
-  top              : 0px;
-  width            : 100%;
-  margin           : 0px;
-  padding          : 10px;
-  background-color : black;
+.gridjs-td a.play:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 4px;
 }
 
-#player {
-  padding: 64px 10px 10px 10px;
+.gridjs-pagination {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.gridjs-pagination button {
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.gridjs-pagination button:hover {
+  background: var(--color-surface-light);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.gridjs-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gridjs-summary {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.gridjs-search {
+  margin-bottom: 0;
+}
+
+.gridjs-search input {
+  display: none;
+}
+
+/* Footer */
+.app-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.app-footer strong {
+  color: var(--color-accent);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    padding: var(--spacing-md);
+  }
+
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .app-main {
+    padding: var(--spacing-md);
+  }
+
+  .player-section {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .now-playing {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .np-placeholder {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .np-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .np-info p {
+    font-size: 0.85rem;
+  }
+
+  .button-group {
+    gap: var(--spacing-sm);
+  }
+
+  .btn {
+    padding: var(--spacing-xs);
+    font-size: 1rem;
+  }
+
+  .btn-play {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .gridjs-th,
+  .gridjs-td {
+    padding: var(--spacing-sm) !important;
+    font-size: 0.85rem;
+  }
+
+  .gridjs-th {
+    font-size: 0.75rem;
+  }
+
+  .time {
+    min-width: 35px;
+    font-size: 0.8rem;
+  }
+
+  .progress-container {
+    gap: var(--spacing-xs);
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.4rem;
+  }
+
+  .player-section {
+    padding: var(--spacing-md);
+  }
+
+  .gridjs-pagination button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .np-info h2 {
+    font-size: 1rem;
+  }
 }
