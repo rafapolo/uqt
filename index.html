@@ -14,26 +14,47 @@
 <body>
 	<header class="app-header">
 		<div class="header-content">
-			<h1 class="app-title">Acervo UQT</h1>
-			<p class="app-subtitle">100 Anos de MPB</p>
+			<div class="header-title">
+				<h1 class="app-title">Acervo UQT</h1>
+				<p class="app-subtitle">100 Anos de MPB</p>
+			</div>
 			<div class="music-count">705 horas de música</div>
 		</div>
 	</header>
 
-	<main class="app-main">
-		<div class="player-section">
-			<div class="now-playing">
-				<div class="np-placeholder">▶</div>
-				<div class="np-info">
-					<h2 id="np-title">Selecione uma música</h2>
-					<p id="np-artist"></p>
-					<p id="np-album"></p>
+	<div class="app-layout">
+		<aside class="albums-panel">
+			<div class="filters-section">
+				<input id="search-input" type="text" class="search-input" placeholder="Busca por artista, álbum...">
+				<div class="decade-buttons" id="decade-buttons"></div>
+			</div>
+			<div class="albums-list" id="albums-list"></div>
+		</aside>
+
+		<main class="tracks-panel">
+			<div class="album-header" id="album-header"></div>
+			<ol class="track-list" id="track-list"></ol>
+		</main>
+	</div>
+
+	<audio id="audio"></audio>
+
+	<footer class="player-bar">
+		<div class="player-content">
+			<div class="now-playing-compact">
+				<img id="player-cover" class="player-cover" src="" alt="">
+				<div class="player-info">
+					<h3 id="player-title">Selecione uma música</h3>
+					<p id="player-artist"></p>
 				</div>
 			</div>
 
-			<audio id="audio"></audio>
-
-			<div class="controls">
+			<div class="player-controls">
+				<div class="controls-buttons">
+					<button id="btn-prev" class="btn btn-control" title="Anterior">⏮</button>
+					<button id="btn-play" class="btn btn-play" title="Play">▶</button>
+					<button id="btn-next" class="btn btn-control" title="Próxima">⏭</button>
+				</div>
 				<div class="progress-container">
 					<span id="time-current" class="time">0:00</span>
 					<div class="progress-bar">
@@ -41,23 +62,8 @@
 					</div>
 					<span id="time-duration" class="time">0:00</span>
 				</div>
-				<div class="button-group">
-					<button id="btn-prev" class="btn btn-control" title="Anterior">⏮</button>
-					<button id="btn-play" class="btn btn-play" title="Play">▶</button>
-					<button id="btn-next" class="btn btn-control" title="Próxima">⏭</button>
-				</div>
 			</div>
 		</div>
-
-		<div class="search-section">
-			<input id="search-input" type="text" class="search-input" placeholder="Buscar por artista, álbum, ano...">
-		</div>
-
-		<div id="player" class="tracks-table"></div>
-	</main>
-
-	<footer class="app-footer">
-		<p>Um acervo de <strong>100 anos</strong> de Música Popular Brasileira</p>
 	</footer>
 </body>
 </html>

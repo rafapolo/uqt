@@ -1,9 +1,15 @@
-// Player State
+// State
+let albums = [];
+let filteredAlbums = [];
+let selectedAlbum = null;
 let currentTrack = null;
-let filteredTracks = [];
-let gridInstance = null;
+let allTracks = [];
+let activeDecade = null;
+let searchQuery = '';
 
-// Helper function to format time
+const BASE_URL = 'https://subzku.net/uqt';
+const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%232a2620" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-size="60" fill="%237a7268" font-family="serif"%3E♫%3C/text%3E%3C/svg%3E';
+
 function formatTime(seconds) {
   if (!seconds || isNaN(seconds)) return '0:00';
   const mins = Math.floor(seconds / 60);
@@ -11,181 +17,261 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-// Update now playing display
-function updateNowPlaying(track) {
-  u('#np-title').text(track.title);
-  u('#np-artist').text(track.artists);
-  u('#np-album').text(track.album + ' (' + track.year + ')');
-  u('#np-placeholder').html('▶');
+function groupTracksByAlbum() {
+  const albumMap = {};
+
+  allTracks.forEach(track => {
+    const folder = track.file.split('/')[1];
+    const albumKey = track.album;
+
+    if (!albumMap[albumKey]) {
+      albumMap[albumKey] = {
+        name: track.album,
+        artists: track.artists,
+        year: track.year,
+        cover: `${BASE_URL}/${folder}/cover.jpg`,
+        tracks: []
+      };
+    }
+
+    albumMap[albumKey].tracks.push(track);
+  });
+
+  // Sort tracks within each album by number, then sort albums by year descending
+  Object.values(albumMap).forEach(album => {
+    album.tracks.sort((a, b) => a.num - b.num);
+  });
+
+  albums = Object.values(albumMap).sort((a, b) => b.year - a.year);
+  return albums;
 }
 
-// Play track
-function play(album, title) {
-  const track = db.tracks.find(t => t.album === album && t.title === title);
-  if (!track) return;
+function getDecades() {
+  const years = new Set(allTracks.map(t => t.year));
+  const decades = new Set();
+  years.forEach(year => {
+    const decade = Math.floor(year / 10) * 10;
+    decades.add(decade);
+  });
+  return Array.from(decades).sort((a, b) => a - b);
+}
 
+function renderDecadeButtons() {
+  const decades = getDecades();
+  const container = u('#decade-buttons');
+
+  decades.forEach(decade => {
+    const btn = document.createElement('button');
+    btn.className = 'decade-btn';
+    btn.textContent = `${decade}s`;
+    btn.dataset.decade = decade;
+    btn.addEventListener('click', () => {
+      const allBtns = container.querySelectorAll('.decade-btn');
+      allBtns.forEach(b => {
+        if (b.dataset.decade === btn.dataset.decade) {
+          activeDecade = activeDecade === decade ? null : decade;
+          b.classList.toggle('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+      filterAlbums();
+    });
+    container.append(btn);
+  });
+}
+
+function filterAlbums() {
+  filteredAlbums = albums.filter(album => {
+    const matchesSearch = searchQuery === '' ||
+      album.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      album.artists.toLowerCase().includes(searchQuery.toLowerCase());
+
+    const matchesDecade = activeDecade === null ||
+      Math.floor(album.year / 10) * 10 === activeDecade;
+
+    return matchesSearch && matchesDecade;
+  });
+
+  renderAlbumsList();
+}
+
+function renderAlbumsList() {
+  const container = u('#albums-list');
+  container.html('');
+
+  filteredAlbums.forEach(album => {
+    const item = document.createElement('div');
+    item.className = 'album-item';
+    if (selectedAlbum === album) item.classList.add('active');
+
+    const cover = document.createElement('img');
+    cover.className = 'album-cover-thumb';
+    cover.src = album.cover;
+    cover.onerror = () => { cover.src = PLACEHOLDER_COVER; };
+    cover.alt = album.name;
+
+    const info = document.createElement('div');
+    info.className = 'album-item-info';
+
+    const title = document.createElement('div');
+    title.className = 'album-item-title';
+    title.textContent = album.name;
+
+    const meta = document.createElement('div');
+    meta.className = 'album-item-meta';
+    meta.textContent = `${album.artists} • ${album.year}`;
+
+    info.append(title, meta);
+    item.append(cover, info);
+
+    item.addEventListener('click', () => {
+      selectedAlbum = album;
+      renderAlbumsList();
+      renderTrackList();
+    });
+
+    container.append(item);
+  });
+}
+
+function renderAlbumHeader() {
+  const container = u('#album-header');
+
+  if (!selectedAlbum) {
+    container.html('');
+    return;
+  }
+
+  container.html(`
+    <img class="album-cover-large" src="${selectedAlbum.cover}" alt="${selectedAlbum.name}" onerror="this.src='${PLACEHOLDER_COVER}'">
+    <div class="album-header-info">
+      <h2>${selectedAlbum.name}</h2>
+      <p><strong>${selectedAlbum.artists}</strong></p>
+      <p>${selectedAlbum.year} • ${selectedAlbum.tracks.length} canções</p>
+    </div>
+  `);
+}
+
+function renderTrackList() {
+  const container = u('#track-list');
+  container.html('');
+
+  if (!selectedAlbum) return;
+
+  const list = document.createElement('ol');
+  list.className = 'track-list';
+
+  selectedAlbum.tracks.forEach(track => {
+    const item = document.createElement('li');
+    item.className = 'track-item';
+    if (currentTrack === track) item.classList.add('playing');
+
+    item.innerHTML = `
+      <span class="track-num">${track.num}</span>
+      <div class="track-details">
+        <div class="track-title">${track.title}</div>
+      </div>
+      <span class="track-duration">-</span>
+    `;
+
+    item.addEventListener('click', () => {
+      playTrack(track);
+    });
+
+    list.append(item);
+  });
+
+  container.append(list);
+}
+
+function playTrack(track) {
   currentTrack = track;
-  updateNowPlaying(track);
+  updateNowPlaying();
 
   const audio = u('#audio').first();
-  audio.src = 'https://subzku.net/uqt' + encodeURI(track.file);
+  audio.src = `${BASE_URL}${encodeURI(track.file)}`;
   audio.play();
 
   u('#btn-play').addClass('playing');
+  renderTrackList();
 }
 
-// Play previous track
-function playPrevious() {
+function updateNowPlaying() {
   if (!currentTrack) return;
 
-  const currentIndex = filteredTracks.findIndex(
-    t => t.album === currentTrack.album && t.title === currentTrack.title
-  );
+  u('#player-title').text(currentTrack.title);
+  u('#player-artist').text(currentTrack.artists);
 
-  if (currentIndex > 0) {
-    const prevTrack = filteredTracks[currentIndex - 1];
-    play(prevTrack.album, prevTrack.title);
-  }
+  const folder = currentTrack.file.split('/')[1];
+  const coverUrl = `${BASE_URL}/${folder}/cover.jpg`;
+  const coverImg = u('#player-cover').first();
+  coverImg.src = coverUrl;
+  coverImg.onerror = () => { coverImg.src = PLACEHOLDER_COVER; };
 }
 
-// Play next track
 function playNext() {
-  if (!currentTrack) return;
+  if (!selectedAlbum || !currentTrack) return;
 
-  const currentIndex = filteredTracks.findIndex(
-    t => t.album === currentTrack.album && t.title === currentTrack.title
-  );
-
-  if (currentIndex < filteredTracks.length - 1) {
-    const nextTrack = filteredTracks[currentIndex + 1];
-    play(nextTrack.album, nextTrack.title);
+  const currentIndex = selectedAlbum.tracks.findIndex(t => t.num === currentTrack.num);
+  if (currentIndex < selectedAlbum.tracks.length - 1) {
+    playTrack(selectedAlbum.tracks[currentIndex + 1]);
   }
 }
 
-// Initialize Grid.js table with current filter
-function initializeGrid(tracks) {
-  const container = document.getElementById('player');
+function playPrevious() {
+  if (!selectedAlbum || !currentTrack) return;
 
-  if (gridInstance) {
-    gridInstance.destroy();
+  const currentIndex = selectedAlbum.tracks.findIndex(t => t.num === currentTrack.num);
+  if (currentIndex > 0) {
+    playTrack(selectedAlbum.tracks[currentIndex - 1]);
   }
-
-  gridInstance = new gridjs.Grid({
-    language: {
-      search: {
-        placeholder: 'Busca...'
-      },
-      pagination: {
-        previous: '◀',
-        next: '▶',
-        showing: 'Mostrando',
-        results: () => 'canções'
-      }
-    },
-    columns: [
-      {
-        id: 'title',
-        name: 'Título',
-        formatter: (_, row) =>
-          gridjs.html(
-            `<a class='play' href='#' onclick='play("${row.cells[2].data.replace(/"/g, '\\"')}", "${row.cells[0].data.replace(/"/g, '\\"')}'>${row.cells[0].data}</a>`
-          )
-      },
-      {
-        id: 'artists',
-        name: 'Artista'
-      },
-      {
-        id: 'album',
-        name: 'Álbum'
-      },
-      {
-        id: 'year',
-        name: 'Ano'
-      }
-    ],
-    pagination: {
-      limit: 50
-    },
-    sort: true,
-    data: tracks,
-    search: {
-      enabled: false // We'll handle search manually
-    }
-  }).render(container);
 }
 
-// Handle search
-function handleSearch(query) {
-  const q = query.toLowerCase();
-  filteredTracks = db.tracks.filter(track =>
-    track.title.toLowerCase().includes(q) ||
-    track.artists.toLowerCase().includes(q) ||
-    track.album.toLowerCase().includes(q) ||
-    track.year.toString().includes(q)
-  );
-  initializeGrid(filteredTracks);
-}
-
-// Initialize app
 u(document).on('DOMContentLoaded', function () {
-  // Start with all tracks
-  filteredTracks = [...db.tracks];
+  // Load and process data
+  allTracks = db.tracks;
+  groupTracksByAlbum();
+  filteredAlbums = [...albums];
 
-  // Shuffle tracks (random order)
-  filteredTracks.sort(() => 0.5 - Math.random());
+  // Initialize UI
+  renderDecadeButtons();
+  renderAlbumsList();
 
-  // Initialize grid
-  initializeGrid(filteredTracks);
-
+  // Audio element
   const audio = u('#audio').first();
 
-  // Audio event listeners
-  u('#audio').on('loadstart', function () {
+  audio.addEventListener('play', () => {
     u('#btn-play').addClass('playing');
   });
 
-  u('#audio').on('canplay', function () {
-    u('#btn-play').addClass('playing');
-  });
-
-  u('#audio').on('play', function () {
-    u('#btn-play').addClass('playing');
-  });
-
-  u('#audio').on('pause', function () {
+  audio.addEventListener('pause', () => {
     u('#btn-play').removeClass('playing');
   });
 
-  u('#audio').on('timeupdate', function () {
-    const currentTime = audio.currentTime;
-    const duration = audio.duration;
-    const percent = (currentTime / duration) * 100 || 0;
+  audio.addEventListener('timeupdate', () => {
+    const percent = (audio.currentTime / audio.duration) * 100 || 0;
     u('#progress-fill').css('width', percent + '%');
-    u('#time-current').text(formatTime(currentTime));
-    u('#time-duration').text(formatTime(duration));
+    u('#time-current').text(formatTime(audio.currentTime));
   });
 
-  u('#audio').on('loadedmetadata', function () {
+  audio.addEventListener('loadedmetadata', () => {
     u('#time-duration').text(formatTime(audio.duration));
   });
 
-  u('#audio').on('ended', function () {
+  audio.addEventListener('ended', () => {
     playNext();
-  });
-
-  // Progress bar click handling
-  u('.progress-bar').on('click', function (e) {
-    const rect = this.getBoundingClientRect();
-    const percent = (e.clientX - rect.left) / rect.width;
-    audio.currentTime = percent * audio.duration;
   });
 
   // Control buttons
   u('#btn-play').on('click', function () {
     if (audio.paused) {
-      if (!currentTrack && filteredTracks.length > 0) {
-        play(filteredTracks[0].album, filteredTracks[0].title);
+      if (!currentTrack && filteredAlbums.length > 0) {
+        selectedAlbum = filteredAlbums[0];
+        renderAlbumsList();
+        renderAlbumHeader();
+        renderTrackList();
+        playTrack(selectedAlbum.tracks[0]);
       } else {
         audio.play();
       }
@@ -197,8 +283,16 @@ u(document).on('DOMContentLoaded', function () {
   u('#btn-prev').on('click', playPrevious);
   u('#btn-next').on('click', playNext);
 
-  // Search functionality
+  // Progress bar click
+  u('.progress-bar').on('click', function (e) {
+    const rect = this.getBoundingClientRect();
+    const percent = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = percent * audio.duration;
+  });
+
+  // Search input
   u('#search-input').on('input', function () {
-    handleSearch(this.value);
+    searchQuery = this.value;
+    filterAlbums();
   });
 });
