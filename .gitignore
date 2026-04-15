@@ -1,0 +1,19 @@
+# Local task files (contain credentials & deployment notes)
+tasks/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Local env
+.env
+.env.local
+*.local
+
+# Build artifacts
+dist/
+build/
