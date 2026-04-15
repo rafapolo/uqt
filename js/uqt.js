@@ -7,7 +7,7 @@ let allTracks = [];
 let activeDecade = null;
 let searchQuery = '';
 
-const BASE_URL = 'https://subzku.net/uqt';
+const BASE_URL = 'http://xn--2dk.xyz:3001/uqt';
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%232a2620" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-size="60" fill="%237a7268" font-family="serif"%3E♫%3C/text%3E%3C/svg%3E';
 
 function formatTime(seconds) {
