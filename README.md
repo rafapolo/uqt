@@ -45,21 +45,6 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 3. Geração de banco de dados JSON lendo tags MP3 com [ruby-mp3info](https://github.com/moumar/ruby-mp3info)
 4. Interface intuitiva construída com [Umbrella JS](https://umbrellajs.com/) (dependência leve)
 
-## 📂 Estrutura do Projeto
-
-```
-.
-├── index.html          # Estrutura semântica HTML5
-├── uqt.css             # Estilos (layout responsivo, temas, animações)
-├── js/
-│   ├── uqt.js          # Lógica principal (grupos, filtros, playback)
-│   ├── uqt.json        # Base de dados (992 álbuns, ~7000+ faixas)
-│   └── uqt-artists.json # Dados adicionais de artistas
-├── README.md           # Este arquivo
-└── tasks/
-    └── nginx-reverse-proxy.md  # Plano para otimizar streaming via Hetzner
-```
-
 ## 💡 Dicas de Uso
 
 ### Exploração Rápida
@@ -96,17 +81,6 @@ Atualmente as faixas são servidas via `https://subzku.net/uqt`. Para ambientes 
 - **705 horas** de música (contínua)
 - **Período**: Mais de 100 anos de MPB
 - **Peso da página**: ~200KB (HTML + CSS + JS otimizados)
-
-## 🎬 Tecnologias
-
-| Tecnologia | Uso | Alternativa |
-|-----------|-----|-----------|
-| HTML5 | Estrutura semântica | - |
-| CSS3 | Layout responsivo (Flexbox/Grid) | SCSS/Sass |
-| JavaScript | Lógica de app, filtros, player | TypeScript, React |
-| Umbrella JS | Seletor DOM leve | jQuery, Vanilla |
-| Google Fonts | Tipografia (Playfair + Inter) | System fonts |
-| GitHub Pages | Hospedagem estática | Netlify, Vercel |
 
 ## 🤝 Contribuições
 
