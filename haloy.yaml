@@ -1,8 +1,9 @@
 name: uqt
-server: finland
+server: haloy.xn--2dk.xyz
+api_token:
+  from:
+    env: "HALOY_API_TOKEN"
 port: 9001
+health_check_path: /health
 domains:
-  - domain: xn--2dk.xyz
-    aliases:
-      - www.xn--2dk.xyz
-health_check_path: /uqt/health
+  - domain: "xn--2dk.xyz"
