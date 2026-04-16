@@ -1,6 +1,13 @@
 name: uqt
 description: UQT Hetzner S3 Reverse Proxy
 
+# Server configuration
+servers:
+  production:
+    host: finland  # or your server IP
+    user: root     # or your SSH user
+    port: 22
+
 services:
   uqt-proxy:
     image: node:18-alpine
