@@ -219,7 +219,7 @@ body {
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.9375em;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -391,29 +391,6 @@ body {
   margin-bottom: 2px;
 }
 
-.btn-share {
-  margin-top: var(--spacing-md);
-  padding: 8px 16px;
-  font-size: 0.8rem;
-  background: var(--color-accent);
-  color: var(--color-bg);
-  border: none;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: var(--transition-fast);
-  display: inline-block;
-}
-
-.btn-share:hover {
-  background: var(--color-accent-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
-}
-
-.btn-share:active {
-  transform: translateY(0);
-}
 
 .track-list {
   flex: 1;
