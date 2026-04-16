@@ -21,6 +21,32 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
+function loadCoverImage(imgElement, primaryUrl, fallbackUrl = '/capa.jpg') {
+  // Show placeholder immediately to avoid blank space
+  imgElement.src = PLACEHOLDER_COVER;
+  imgElement.classList.remove('placeholder');
+
+  // Pre-load the actual cover image
+  const tempImg = new Image();
+  tempImg.onload = () => {
+    imgElement.src = primaryUrl;
+  };
+  tempImg.onerror = () => {
+    // Primary failed, try fallback
+    const fallbackImg = new Image();
+    fallbackImg.onload = () => {
+      imgElement.src = fallbackUrl;
+    };
+    fallbackImg.onerror = () => {
+      // Fallback also failed, keep placeholder
+      imgElement.src = PLACEHOLDER_COVER;
+      imgElement.classList.add('placeholder');
+    };
+    fallbackImg.src = fallbackUrl;
+  };
+  tempImg.src = primaryUrl;
+}
+
 function buildAlbumsFromArtists() {
   albums = [];
 
@@ -149,23 +175,8 @@ function renderAlbumsList() {
     cover.className = 'album-cover-thumb';
     cover.alt = album.name;
 
-    // Set up fallback chain: proxy -> default -> placeholder
-    let attemptCount = 0;
-    cover.onerror = function() {
-      attemptCount++;
-      if (attemptCount === 1 && this.src.includes(BASE_URL)) {
-        // Proxy failed (CORB or 404), try default cover
-        this.src = '/capa.jpg';
-      } else if (attemptCount === 2 || this.src === '/capa.jpg') {
-        // Default also failed, use placeholder
-        this.src = PLACEHOLDER_COVER;
-        this.classList.add('placeholder');
-        this.onerror = null;
-      }
-    };
-
-    // Try proxy first
-    cover.src = album.cover;
+    // Load cover with placeholder shown immediately
+    loadCoverImage(cover, album.cover);
 
     const info = document.createElement('div');
     info.className = 'album-item-info';
@@ -209,23 +220,8 @@ function renderAlbumHeader() {
   cover.className = 'album-cover-large';
   cover.alt = selectedAlbum.name;
 
-  // Set up fallback chain: proxy -> default -> placeholder
-  let attemptCount = 0;
-  cover.onerror = function() {
-    attemptCount++;
-    if (attemptCount === 1 && this.src.includes(BASE_URL)) {
-      // Proxy failed (CORB or 404), try default cover
-      this.src = '/capa.jpg';
-    } else if (attemptCount === 2 || this.src === '/capa.jpg') {
-      // Default also failed, use placeholder
-      this.src = PLACEHOLDER_COVER;
-      this.classList.add('placeholder');
-      this.onerror = null;
-    }
-  };
-
-  // Try proxy first
-  cover.src = selectedAlbum.cover;
+  // Load cover with placeholder shown immediately
+  loadCoverImage(cover, selectedAlbum.cover);
 
   const info = document.createElement('div');
   info.className = 'album-header-info';
@@ -301,25 +297,8 @@ function updateNowPlaying() {
 
   if (!coverImg) return;
 
-  coverImg.classList.remove('placeholder');
-
-  // Set up fallback chain: proxy -> default -> placeholder
-  let attemptCount = 0;
-  coverImg.onerror = function() {
-    attemptCount++;
-    if (attemptCount === 1 && this.src.includes(BASE_URL)) {
-      // Proxy failed (CORB or 404), try default cover
-      this.src = '/capa.jpg';
-    } else if (attemptCount === 2 || this.src === '/capa.jpg') {
-      // Default also failed, use placeholder
-      this.src = PLACEHOLDER_COVER;
-      this.classList.add('placeholder');
-      this.onerror = null;
-    }
-  };
-
-  // Try proxy first
-  coverImg.src = coverUrl;
+  // Load cover with placeholder shown immediately
+  loadCoverImage(coverImg, coverUrl);
 }
 
 function playNext() {
