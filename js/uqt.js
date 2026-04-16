@@ -215,6 +215,10 @@ function renderAlbumsList() {
       selectedAlbum = album;
       renderAlbumHeader();
       renderTrackList();
+
+      // Update URL when album is selected
+      const shareUrl = generateAlbumUrl(album);
+      window.history.pushState({ album: album.path }, '', shareUrl);
     });
 
     container.append(item);
@@ -378,6 +382,10 @@ u(document).on('DOMContentLoaded', function () {
     renderAlbumsList(); // Re-render to highlight selected album
     renderAlbumHeader();
     renderTrackList();
+
+    // Update URL to reflect selected album
+    const shareUrl = generateAlbumUrl(albumToSelect);
+    window.history.replaceState({ album: albumToSelect.path }, '', shareUrl);
   }
 
   // Initialize player cover with default image
