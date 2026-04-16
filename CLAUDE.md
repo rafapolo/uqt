@@ -45,28 +45,33 @@ node proxy.js
 
 The proxy will forward requests to the live S3 bucket (sambaraiz), so you need S3 files present to test audio/cover playback.
 
-### Updating Album Metadata
-Edit `js/uqt-artists.json`. Schema:
+### Regenerating Album Database
+When MP3 files are added/updated in `unzips/`, regenerate the JSON database:
+```bash
+node generate-albums.js
+```
+
+This reads MP3 metadata from all files in `unzips/` and outputs `js/uqt-albums.js` (album-centric structure).
+
+**Requirements:** `ffprobe` (from ffmpeg package). On macOS:
+```bash
+brew install ffmpeg
+```
+
+### Data Schema (`js/uqt-albums.js`)
+Album-centric format: `db = {"albums": [...]}`
 ```json
 {
-  "artists": [
+  "title": "Album Title",
+  "artist": "Artist Name or \"Various Artists\" for compilations",
+  "year": 2009,
+  "path": "2009 - Artist Name - Album",
+  "tracks": [
     {
-      "name": "Artist Name",
-      "albums": [
-        {
-          "title": "Album Title",
-          "year": 2009,
-          "path": "2009 - Artist Name - Album",
-          "tracks": [
-            {
-              "title": "Track Title",
-              "num": 1,
-              "file": "01 Track Title.mp3",
-              "artists": "Artist Name"
-            }
-          ]
-        }
-      ]
+      "title": "Track Title",
+      "num": 1,
+      "file": "01 Track Title.mp3",
+      "artists": "Track artist credit"
     }
   ]
 }
@@ -88,6 +93,7 @@ Audio files and cover images are synced to the S3 bucket (`your-objectstorage-en
 
 ## Recent Fixes
 
+- **Album-centric restructure** (recent): Changed from artist-keyed to album-keyed data structure. Merged 211 duplicate compilation albums. Compilations now show as single "Various Artists" entries with all tracks. Replaced `uqt.rb` with `generate-albums.js`.
 - **Double URL encoding** (commit 77f4c03): Removed extra `encodeURI()` call in playback URL construction to prevent %20 → %2520
 - **CORS headers** (commit 1e61623): Ensured CORS headers are included in `writeHead()` response, not just forwarded
 - **Content-Type handling** (commit 6b1040a, 169e531): Proxy now explicitly sets correct MIME types before forwarding response to prevent CORB errors
@@ -99,4 +105,4 @@ Audio files and cover images are synced to the S3 bucket (`your-objectstorage-en
 
 **Proxy not routing through haloy**: Haloy deployment requires valid `HALOY_API_TOKEN`. Verify with `haloy status` (will error if token is missing).
 
-**App doesn't show albums**: Check browser console for errors loading js/uqt-artists.json. Verify the JSON file is valid and contains expected `db = {...}` definition.
+**App doesn't show albums**: Check browser console for errors loading js/uqt-albums.js. Verify the JSON file is valid and contains expected `db = {...}` definition. Regenerate with `node generate-albums.js`.

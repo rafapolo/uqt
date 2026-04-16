@@ -3,7 +3,6 @@ let albums = [];
 let filteredAlbums = [];
 let selectedAlbum = null;
 let currentTrack = null;
-let allArtists = [];
 let activeDecade = null;
 let searchQuery = '';
 let prevActiveItem = null;
@@ -60,29 +59,22 @@ function loadCoverImage(imgElement, primaryUrl, fallbackUrl = '/capa.jpg') {
   tempImg.src = primaryUrl;
 }
 
-function buildAlbumsFromArtists() {
-  albums = [];
-
-  // Flatten artist albums into a single array
-  db.artists.forEach(artist => {
-    artist.albums.forEach(album => {
-      albums.push({
-        name: album.title,
-        artists: artist.name,
-        year: album.year,
-        path: album.path,
-        cover: `${BASE_URL}/${encodeURI(album.path)}/capa.jpg`,
-        tracks: album.tracks.map(track => ({
-          title: track.title,
-          num: track.num,
-          file: `${encodeURI(album.path)}/${encodeURI(track.file)}`,
-          album: album.title,
-          artists: track.artists || artist.name,
-          year: album.year
-        }))
-      });
-    });
-  });
+function buildAlbums() {
+  albums = db.albums.map(album => ({
+    name: album.title,
+    artists: album.artist,
+    year: album.year,
+    path: album.path,
+    cover: `${BASE_URL}/${encodeURI(album.path)}/capa.jpg`,
+    tracks: album.tracks.map(track => ({
+      title: track.title,
+      num: track.num,
+      file: `${encodeURI(album.path)}/${encodeURI(track.file)}`,
+      album: album.title,
+      artists: track.artists || album.artist,
+      year: album.year
+    }))
+  }));
 
   // Sort albums by year descending
   albums.sort((a, b) => b.year - a.year);
@@ -112,6 +104,8 @@ function renderDecadeButtons() {
 
   todosBtn.addEventListener('click', () => {
     activeDecade = null;
+    searchQuery = '';
+    u('#search-input').first().value = '';
     filterAlbums();
 
     // Update all button states
@@ -133,6 +127,8 @@ function renderDecadeButtons() {
     btn.addEventListener('click', () => {
       const decadeNum = parseInt(btn.dataset.decade);
       activeDecade = decadeNum;
+      searchQuery = '';
+      u('#search-input').first().value = '';
       filterAlbums();
 
       // Update button states
@@ -341,8 +337,7 @@ function playPrevious() {
 
 u(document).on('DOMContentLoaded', function () {
   // Load and process data
-  allArtists = db.artists;
-  buildAlbumsFromArtists();
+  buildAlbums();
   filteredAlbums = [...albums];
 
   // Initialize UI
