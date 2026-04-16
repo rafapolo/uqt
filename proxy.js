@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
  * Simple reverse proxy for Hetzner S3 bucket
- * Forwards all requests to your-objectstorage-endpoint/uqt
+ * Forwards all requests to your-objectstorage-endpoint/sambaraiz/uqt
  */
 const http = require('http');
 const https = require('https');
 const url = require('url');
 
-const BUCKET_URL = 'https://your-objectstorage-endpoint';
+const BUCKET_URL = 'https://your-objectstorage-endpoint/sambaraiz';
 const PORT = 9001;
 
 const server = http.createServer((req, res) => {
@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Build target URL (bucket keys already include /uqt/)
+  // Build target URL - bucket structure is /sambaraiz/uqt/...
   const targetUrl = BUCKET_URL + req.url;
 
   // Set up CORS headers to prevent CORB blocking
