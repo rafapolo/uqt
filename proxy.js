@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
   }
 
   // Build target URL - bucket structure is /sambaraiz/uqt/...
-  const targetUrl = BUCKET_URL + req.url;
+  const targetUrl = BUCKET_URL + decodeURI(req.url);
 
   // Handle preflight requests
   if (req.method === 'OPTIONS') {

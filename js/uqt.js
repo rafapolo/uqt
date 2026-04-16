@@ -161,11 +161,9 @@ function filterAlbums() {
 function updateLibraryStats() {
   const totalAlbums = filteredAlbums.length;
   const totalArtists = new Set(filteredAlbums.map(a => a.artists).filter(a => a && a.length > 0)).size;
-  const totalYears = new Set(filteredAlbums.map(a => a.year).filter(y => y > 0)).size;
 
   u('#stat-albums').text(`${totalAlbums} álbun${totalAlbums !== 1 ? 's' : ''}`);
   u('#stat-artists').text(`${totalArtists} artista${totalArtists !== 1 ? 's' : ''}`);
-  u('#stat-years').text(`${totalYears} ano${totalYears !== 1 ? 's' : ''}`);
 }
 
 function renderAlbumsList() {
