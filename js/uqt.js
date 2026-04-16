@@ -77,7 +77,7 @@ function buildAlbumsFromArtists() {
           num: track.num,
           file: `${album.path}/${track.file}`,
           album: album.title,
-          artists: artist.name,
+          artists: track.artists || artist.name,
           year: album.year
         }))
       });
