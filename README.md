@@ -4,15 +4,17 @@ Um arquivo digital em homenagem ao **UQT** com uma coleção curada de **100 ano
 
 ## ✨ Características
 
-### 🎨 Interface Spotify-Style
-- **Navegação por álbum**: Capa grande (200px) com detalhes do artista, ano e total de faixas
-- **Lista visual**: 992 álbuns com capas em miniatura (48px), organizados por ano (mais recentes primeiro)
-- **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e tempo
+### 🎨 Interface Spotify-Style Grid
+- **Grid de álbuns central**: Grade responsiva de capas de álbuns como foco principal
+- **Painel de faixas lateral**: Clique em um álbum para exibir capa grande (160px), info e lista de faixas
+- **Auto-seleção**: Primeiro álbum selecionado automaticamente ao carregar
+- **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
 - **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado
-- **Filtro por década**: Botões gerados automaticamente (1920s → 2020s) — clique para explorar épocas específicas
+- **Filtro por década**: Botões compactos (Todos | 1900 | 1910 | 1920 ... 2010) — clique para explorar épocas específicas
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
+- **Metadados precisos**: Carregados do arquivo `uqt-artists.json` com contagem exata de artistas e álbuns
 
 ### 📱 Totalmente Responsivo
 - **Desktop**: Layout lado-a-lado (painel de álbuns + faixas)
@@ -34,11 +36,11 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 moderno (Flexbox/Grid) + JavaScript vanilla
-- **Dados**: 992 álbuns dinamicamente agrupados a partir de faixas de áudio
-- **Capas**: Derivadas do arquivo `capa.jpg` em cada pasta de álbum
-- **Fallback**: Ícone de música em SVG para capas ausentes
+- **Dados**: Metadados estruturados em `uqt-artists.json` com artistas, álbuns, faixas e anos
+- **Capas**: Servidas via proxy reverso; fallback para `/capa.jpg` (padrão) → SVG placeholder
 - **Fonts**: Playfair Display (títulos) + Inter (corpo — tipografia refinada)
-- **Streaming**: Nginx reverse proxy em ミ.xyz:3001 (Hetzner HEL1, zero egress dentro zona)
+- **Streaming**: Proxy em `http://89.167.95.136:9001/uqt` (Hetzner HEL1, zero egress na zona)
+- **Gerenciamento**: Registrado com haloyd service manager (ou systemd como fallback)
 
 ### Workflow Original
 1. Arquivos baixados de https://drive.google.com/drive/folders/117Bq9JjqMToU6vMLYaDUHj_AkWg3_zz1
@@ -66,11 +68,12 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 
 ## 🎯 Otimizações de Performance
 
-### Streaming
-- **Proxy ativo**: Nginx em ميرتها.xyz:3001 → Hetzner bucket (HEL1)
+### Streaming e Deployment
+- **Proxy reverso**: Node.js proxy em `http://89.167.95.136:9001/uqt` → Hetzner bucket (HEL1)
+- **Gerenciamento**: Haloyd service manager (ou systemd como fallback)
 - **Zero egress**: Transferência grátis entre instância e bucket (mesma zona)
-- **Fallback**: Streaming via `https://subzku.net/uqt` enquanto sync completa
-- **Status**: 941/32.451 arquivos sincronizados (~3%). Sync completo via `tasks/nginx-reverse-proxy.md`
+- **Fallback de capas**: Local `/capa.jpg` (padrão) → SVG se indisponível
+- **Deploy**: Execute `bash deploy.sh` no servidor para atualizar código e sincronizar arquivos
 
 ### Frontend
 - Zero dependências pesadas (apenas Umbrella JS, 2.6KB)
@@ -81,12 +84,13 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 ## 📊 Números
 
 ### Coleção Completa (Local)
-- **992 álbuns** únicos
-- **~7.000+ faixas** de áudio
-- **1.300+ capas** (capa.jpg)
+- **1.997+ álbuns** únicos
+- **1.196+ artistas** brasileiros
+- **100+ anos** de história (1902–2011)
+- **~13.000+ faixas** de áudio
 - **705 horas** de música (contínua)
 - **137GB** total
-- **Período**: Mais de 100 anos de MPB
+- **Período**: Samba, bossa nova, MPB clássica e contemporânea
 
 ### Em Streaming (Hetzner Bucket)
 - **941 arquivos** sincronizados (874 MP3 + 33 capas)
