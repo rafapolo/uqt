@@ -9,8 +9,9 @@ let searchQuery = '';
 
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
-const BASE_URL = 'http://xn--2dk.xyz:9001/uqt';
-const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%232a2620" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-size="60" fill="%237a7268" font-family="serif"%3E♫%3C/text%3E%3C/svg%3E';
+// Server IP: 89.167.95.136 (proxy runs here, not on GitHub Pages)
+const BASE_URL = 'http://89.167.95.136:9001/uqt';
+const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%232a2620;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%231a1814;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23grad)" width="200" height="200"/%3E%3Ccircle cx="100" cy="100" r="40" fill="none" stroke="%23d4a574" stroke-width="8"/%3E%3Ccircle cx="100" cy="100" r="15" fill="none" stroke="%23d4a574" stroke-width="2"/%3E%3Cpath d="M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60" fill="none" stroke="%23d4a574" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E';
 
 function formatTime(seconds) {
   if (!seconds || isNaN(seconds)) return '0:00';
@@ -19,24 +20,112 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
+function parseTrackMetadata(track) {
+  const parts = track.file.split('/').filter(p => p.length > 0);
+  const folder = parts[0];
+
+  // Extract year (first 4 digits)
+  const yearMatch = folder.match(/^(\d{4})/);
+  const year = yearMatch ? parseInt(yearMatch[1]) : 0;
+
+  // Try pattern: YYYY - ARTISTS – ALBUM – (with en dashes)
+  let match = folder.match(/^(\d{4})\s*-\s*(.+?)\s*[–—]\s*(.+?)\s*[–—]/);
+  if (match) {
+    return {
+      year: year,
+      artists: match[2].trim(),
+      album: match[3].trim(),
+      folder: folder
+    };
+  }
+
+  // Try pattern: YYYY - ARTISTS - ALBUM (split on first dash after year)
+  match = folder.match(/^(\d{4})\s*-\s*(.+?)\s*-\s*(.+)/);
+  if (match) {
+    const artists = match[2].trim();
+    const album = match[3].trim();
+    // Only use this if artists and album are reasonably different
+    if (artists && album && artists !== album) {
+      return {
+        year: year,
+        artists: artists,
+        album: album,
+        folder: folder
+      };
+    }
+  }
+
+  // Fallback: YYYY - REST (treat entire rest as album name, extract artists if possible)
+  match = folder.match(/^(\d{4})\s*-\s*(.+)/);
+  if (match) {
+    const rest = match[2].trim();
+    // Try to extract just the artist name (first part before any ' - ')
+    const artistMatch = rest.match(/^([^-]+?)(?:\s*-|$)/);
+    const artists = artistMatch ? artistMatch[1].trim() : rest;
+
+    return {
+      year: year,
+      artists: artists,
+      album: rest,
+      folder: folder
+    };
+  }
+
+  return {
+    year: year,
+    artists: folder,
+    album: folder,
+    folder: folder
+  };
+}
+
+function parseTrackFile(track) {
+  // Extract track metadata from file path: /FOLDER/NUM. TITLE.mp3
+  const fileName = track.file.split('/').pop(); // "1. Agora é cinza.mp3"
+  const match = fileName.match(/^(\d+)\.\s*(.+?)\.(mp3|flac|wav)$/i);
+
+  if (match) {
+    return {
+      num: parseInt(match[1]),
+      title: match[2].trim()
+    };
+  }
+
+  return {
+    num: 0,
+    title: fileName
+  };
+}
+
 function groupTracksByAlbum() {
   const albumMap = {};
 
   allTracks.forEach(track => {
-    const folder = track.file.split('/')[1];
-    const albumKey = track.album;
+    const meta = parseTrackMetadata(track);
+    const trackMeta = parseTrackFile(track);
+    const albumKey = meta.album;
 
     if (!albumMap[albumKey]) {
       albumMap[albumKey] = {
-        name: track.album,
-        artists: track.artists,
-        year: track.year,
-        cover: `${BASE_URL}/${folder}/capa.jpg`,
+        name: meta.album,
+        artists: meta.artists,
+        year: meta.year,
+        cover: `${BASE_URL}/${meta.folder}/capa.jpg`,
         tracks: []
       };
     }
 
-    albumMap[albumKey].tracks.push(track);
+    // Enrich track with parsed metadata
+    const enrichedTrack = {
+      ...track,
+      title: trackMeta.title,
+      num: trackMeta.num,
+      album: meta.album,
+      artists: meta.artists,
+      year: meta.year
+    };
+
+    albumMap[albumKey].tracks.push(enrichedTrack);
   });
 
   // Sort tracks within each album by number, then sort albums by year descending
@@ -96,6 +185,17 @@ function filterAlbums() {
   });
 
   renderAlbumsList();
+  updateLibraryStats();
+}
+
+function updateLibraryStats() {
+  const totalAlbums = filteredAlbums.length;
+  const totalArtists = new Set(filteredAlbums.map(a => a.artists).filter(a => a && a.length > 0)).size;
+  const totalYears = new Set(filteredAlbums.map(a => a.year).filter(y => y > 0)).size;
+
+  u('#stat-albums').text(`${totalAlbums} álbun${totalAlbums !== 1 ? 's' : ''}`);
+  u('#stat-artists').text(`${totalArtists} artista${totalArtists !== 1 ? 's' : ''}`);
+  u('#stat-years').text(`${totalYears} ano${totalYears !== 1 ? 's' : ''}`);
 }
 
 function renderAlbumsList() {
@@ -110,7 +210,18 @@ function renderAlbumsList() {
     const cover = document.createElement('img');
     cover.className = 'album-cover-thumb';
     cover.src = album.cover;
-    cover.onerror = () => { cover.src = PLACEHOLDER_COVER; };
+    cover.onerror = function() {
+      if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
+        this.src = '/capa.jpg'; // Try default cover
+        this.onerror = function() {
+          this.src = PLACEHOLDER_COVER; // Fall back to SVG placeholder
+          this.classList.add('placeholder');
+        };
+      } else if (this.src === '/capa.jpg') {
+        this.src = PLACEHOLDER_COVER;
+        this.classList.add('placeholder');
+      }
+    };
     cover.alt = album.name;
 
     const info = document.createElement('div');
@@ -138,28 +249,53 @@ function renderAlbumsList() {
 }
 
 function renderAlbumHeader() {
-  const container = u('#album-header');
+  const container = u('#album-header').first();
 
   if (!selectedAlbum) {
-    container.html('');
+    container.innerHTML = '';
     return;
   }
 
-  container.html(`
-    <img class="album-cover-large" src="${selectedAlbum.cover}" alt="${selectedAlbum.name}" onerror="this.src='${PLACEHOLDER_COVER}'">
-    <div class="album-header-info">
-      <h2>${selectedAlbum.name}</h2>
-      <p><strong>${selectedAlbum.artists}</strong></p>
-      <p>${selectedAlbum.year} • ${selectedAlbum.tracks.length} canções</p>
-    </div>
-  `);
+  const cover = document.createElement('img');
+  cover.className = 'album-cover-large';
+  cover.src = selectedAlbum.cover;
+  cover.alt = selectedAlbum.name;
+  cover.onerror = function() {
+    if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
+      this.src = '/capa.jpg'; // Try default cover
+      this.onerror = function() {
+        this.src = PLACEHOLDER_COVER;
+        this.classList.add('placeholder');
+      };
+    } else if (this.src === '/capa.jpg') {
+      this.src = PLACEHOLDER_COVER;
+      this.classList.add('placeholder');
+    }
+  };
+
+  const info = document.createElement('div');
+  info.className = 'album-header-info';
+  info.innerHTML = `
+    <h2>${selectedAlbum.name}</h2>
+    <p><strong>${selectedAlbum.artists}</strong></p>
+    <p>${selectedAlbum.year} • ${selectedAlbum.tracks.length} canções</p>
+  `;
+
+  container.innerHTML = '';
+  container.append(cover, info);
 }
 
 function renderTrackList() {
   const container = u('#track-list');
   container.html('');
+  const tracksPanel = u('.tracks-panel').first();
 
-  if (!selectedAlbum) return;
+  if (!selectedAlbum) {
+    tracksPanel.classList.add('hidden');
+    return;
+  }
+
+  tracksPanel.classList.remove('hidden');
 
   const list = document.createElement('ol');
   list.className = 'track-list';
@@ -209,7 +345,18 @@ function updateNowPlaying() {
   const coverUrl = `${BASE_URL}/${folder}/capa.jpg`;
   const coverImg = u('#player-cover').first();
   coverImg.src = coverUrl;
-  coverImg.onerror = () => { coverImg.src = PLACEHOLDER_COVER; };
+  coverImg.onerror = function() {
+    if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
+      this.src = '/capa.jpg'; // Try default cover
+      this.onerror = function() {
+        this.src = PLACEHOLDER_COVER;
+        this.classList.add('placeholder');
+      };
+    } else if (this.src === '/capa.jpg') {
+      this.src = PLACEHOLDER_COVER;
+      this.classList.add('placeholder');
+    }
+  };
 }
 
 function playNext() {
@@ -239,6 +386,7 @@ u(document).on('DOMContentLoaded', function () {
   // Initialize UI
   renderDecadeButtons();
   renderAlbumsList();
+  updateLibraryStats();
 
   // Audio element
   const audio = u('#audio').first();
