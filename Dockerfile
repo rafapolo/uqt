@@ -19,7 +19,7 @@ USER nodejs
 
 # Health check with proper error handling
 HEALTHCHECK --interval=10s --timeout=5s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:9001/uqt/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)}).on('error', () => process.exit(1))"
+  CMD node -e "require('http').get('http://localhost:9001/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)}).on('error', () => process.exit(1))"
 
 # Expose port
 EXPOSE 9001

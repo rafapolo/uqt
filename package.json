@@ -1,0 +1,24 @@
+{
+  "name": "uqt",
+  "version": "1.0.0",
+  "description": "Um arquivo digital em homenagem ao **UQT** com uma coleção curada de **100 anos de Música Popular Brasileira**. **705 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafapolo/uqt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rafapolo/uqt/issues"
+  },
+  "homepage": "https://github.com/rafapolo/uqt#readme",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

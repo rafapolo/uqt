@@ -14,7 +14,7 @@ Um arquivo digital em homenagem ao **UQT** com uma coleção curada de **100 ano
 - **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado
 - **Filtro por década**: Botões compactos (Todos | 1900 | 1910 | 1920 ... 2010) — clique para explorar épocas específicas
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
-- **Metadados precisos**: Carregados do arquivo `uqt-artists.json` com contagem exata de artistas e álbuns
+- **Metadados precisos**: Carregados do arquivo `uqt.json` com contagem exata de artistas e álbuns
 
 ### 📱 Totalmente Responsivo
 - **Desktop**: Layout lado-a-lado (painel de álbuns + faixas)
@@ -36,11 +36,26 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 moderno (Flexbox/Grid) + JavaScript vanilla
-- **Dados**: Metadados estruturados em `uqt-artists.json` com artistas, álbuns, faixas e anos
+- **Dados**: Metadados estruturados em `uqt.json` com artistas, álbuns, faixas e anos
 - **Capas**: Servidas via proxy reverso; fallback para `/capa.jpg` (padrão) → SVG placeholder
 - **Fonts**: Playfair Display (títulos) + Inter (corpo — tipografia refinada)
 - **Streaming**: Proxy em `http://89.167.95.136:9001/uqt` (Hetzner HEL1, zero egress na zona)
 - **Deployment**: Haloy com Docker, SSL automático via Let's Encrypt, health checks e zero-downtime deployments
+
+### Sync para Bucket (macOS)
+```bash
+# Instalar MinIO Client
+brew install minio/stable/mc
+
+# Configurar credenciais
+mc alias set sambaraiz https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
+
+# Sincronizar arquivos
+mc mirror /Volumes/EXTRA/bkps/sambaderaiz/ sambaraiz/sambaraiz/uqt/ --overwrite
+
+# Ou usar o script
+./sync-to-bucket.sh
+```
 
 ### Workflow Original
 1. Arquivos baixados de https://drive.google.com/drive/folders/117Bq9JjqMToU6vMLYaDUHj_AkWg3_zz1

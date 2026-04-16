@@ -1,0 +1,14 @@
+node_modules
+.git
+.env
+.env.*
+*.log
+haloy.yaml
+haloyd-service.json
+deploy.sh
+sync-to-bucket.sh
+*.md
+capa.jpg
+uqt.css
+uqt.rb
+tasks/
