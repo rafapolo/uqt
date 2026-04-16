@@ -49,19 +49,22 @@ const server = http.createServer((req, res) => {
     const headers = { ...proxyRes.headers };
     const urlLower = req.url.toLowerCase();
 
-    // Set proper Content-Type to prevent CORB blocking
+    // Always remove old content-type and set correct one to prevent CORB blocking
+    delete headers['content-type'];
+    delete headers['Content-Type'];
+
     if (urlLower.endsWith('.mp3')) {
-      headers['content-type'] = 'audio/mpeg';
+      headers['Content-Type'] = 'audio/mpeg';
     } else if (urlLower.endsWith('.mp4')) {
-      headers['content-type'] = 'audio/mp4';
+      headers['Content-Type'] = 'audio/mp4';
     } else if (urlLower.endsWith('.jpg') || urlLower.endsWith('.jpeg')) {
-      headers['content-type'] = 'image/jpeg';
+      headers['Content-Type'] = 'image/jpeg';
     } else if (urlLower.endsWith('.png')) {
-      headers['content-type'] = 'image/png';
+      headers['Content-Type'] = 'image/png';
     } else if (urlLower.endsWith('.webp')) {
-      headers['content-type'] = 'image/webp';
+      headers['Content-Type'] = 'image/webp';
     } else if (urlLower.endsWith('.json')) {
-      headers['content-type'] = 'application/json';
+      headers['Content-Type'] = 'application/json';
     }
 
     // Include CORS headers in response
