@@ -45,12 +45,22 @@ const server = http.createServer((req, res) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
 
   const proxyReq = https.request(options, (proxyRes) => {
-    // Override Content-Type for audio requests to prevent CORB blocking
     const headers = { ...proxyRes.headers };
-    if (req.url.toLowerCase().endsWith('.mp3') || req.url.toLowerCase().endsWith('.mp4')) {
+    const urlLower = req.url.toLowerCase();
+
+    // Set proper Content-Type to prevent CORB blocking
+    if (urlLower.endsWith('.mp3')) {
       headers['content-type'] = 'audio/mpeg';
-    } else if (req.url.toLowerCase().endsWith('.jpg') || req.url.toLowerCase().endsWith('.jpeg')) {
+    } else if (urlLower.endsWith('.mp4')) {
+      headers['content-type'] = 'audio/mp4';
+    } else if (urlLower.endsWith('.jpg') || urlLower.endsWith('.jpeg')) {
       headers['content-type'] = 'image/jpeg';
+    } else if (urlLower.endsWith('.png')) {
+      headers['content-type'] = 'image/png';
+    } else if (urlLower.endsWith('.webp')) {
+      headers['content-type'] = 'image/webp';
+    } else if (urlLower.endsWith('.json')) {
+      headers['content-type'] = 'application/json';
     }
 
     res.writeHead(proxyRes.statusCode, headers);
