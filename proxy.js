@@ -21,11 +21,13 @@ const server = http.createServer((req, res) => {
   // Build target URL (bucket keys already include /uqt/)
   const targetUrl = BUCKET_URL + req.url;
 
-  // Set up CORS headers
+  // Set up CORS headers to prevent CORB blocking
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Range, Content-Type');
+  res.setHeader('Access-Control-Expose-Headers', 'Content-Length, Content-Type, Content-Range, ETag');
   res.setHeader('Cache-Control', 'public, max-age=31536000');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
 
   // Handle preflight requests
   if (req.method === 'OPTIONS') {
@@ -43,7 +45,15 @@ const server = http.createServer((req, res) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
 
   const proxyReq = https.request(options, (proxyRes) => {
-    res.writeHead(proxyRes.statusCode, proxyRes.headers);
+    // Override Content-Type for audio requests to prevent CORB blocking
+    const headers = { ...proxyRes.headers };
+    if (req.url.toLowerCase().endsWith('.mp3') || req.url.toLowerCase().endsWith('.mp4')) {
+      headers['content-type'] = 'audio/mpeg';
+    } else if (req.url.toLowerCase().endsWith('.jpg') || req.url.toLowerCase().endsWith('.jpeg')) {
+      headers['content-type'] = 'image/jpeg';
+    }
+
+    res.writeHead(proxyRes.statusCode, headers);
     proxyRes.pipe(res);
   });
 
