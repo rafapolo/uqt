@@ -35,9 +35,10 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 moderno (Flexbox/Grid) + JavaScript vanilla
 - **Dados**: 992 álbuns dinamicamente agrupados a partir de faixas de áudio
-- **Capas**: Derivadas do arquivo `cover.jpg` em cada pasta de álbum
+- **Capas**: Derivadas do arquivo `capa.jpg` em cada pasta de álbum
 - **Fallback**: Ícone de música em SVG para capas ausentes
 - **Fonts**: Playfair Display (títulos) + Inter (corpo — tipografia refinada)
+- **Streaming**: Nginx reverse proxy em ミ.xyz:3001 (Hetzner HEL1, zero egress dentro zona)
 
 ### Workflow Original
 1. Arquivos baixados de https://drive.google.com/drive/folders/117Bq9JjqMToU6vMLYaDUHj_AkWg3_zz1
@@ -66,7 +67,10 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 ## 🎯 Otimizações de Performance
 
 ### Streaming
-Atualmente as faixas são servidas via `https://subzku.net/uqt`. Para ambientes com múltiplos usuários, há um plano de otimização usando Nginx reverse proxy em instância Hetzner (veja `tasks/nginx-reverse-proxy.md`).
+- **Proxy ativo**: Nginx em ميرتها.xyz:3001 → Hetzner bucket (HEL1)
+- **Zero egress**: Transferência grátis entre instância e bucket (mesma zona)
+- **Fallback**: Streaming via `https://subzku.net/uqt` enquanto sync completa
+- **Status**: 941/32.451 arquivos sincronizados (~3%). Sync completo via `tasks/nginx-reverse-proxy.md`
 
 ### Frontend
 - Zero dependências pesadas (apenas Umbrella JS, 2.6KB)
@@ -76,10 +80,18 @@ Atualmente as faixas são servidas via `https://subzku.net/uqt`. Para ambientes 
 
 ## 📊 Números
 
+### Coleção Completa (Local)
 - **992 álbuns** únicos
 - **~7.000+ faixas** de áudio
+- **1.300+ capas** (capa.jpg)
 - **705 horas** de música (contínua)
+- **137GB** total
 - **Período**: Mais de 100 anos de MPB
+
+### Em Streaming (Hetzner Bucket)
+- **941 arquivos** sincronizados (874 MP3 + 33 capas)
+- **~3% do total** — sync em progresso
+- **Interface completa**: Todos os 992 álbuns disponíveis, files carregam conforme sync
 - **Peso da página**: ~200KB (HTML + CSS + JS otimizados)
 
 ## 🤝 Contribuições
