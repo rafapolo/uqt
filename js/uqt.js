@@ -8,6 +8,19 @@ let activeDecade = null;
 let searchQuery = '';
 let prevActiveItem = null;
 
+// Get album ID from URL params
+function getAlbumFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('album');
+}
+
+// Generate shareable URL for an album
+function generateAlbumUrl(album) {
+  const params = new URLSearchParams();
+  params.set('album', album.path);
+  return `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+}
+
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
 // Server IP: 89.167.95.136 (proxy runs here, not on GitHub Pages)
@@ -225,14 +238,31 @@ function renderAlbumHeader() {
 
   const info = document.createElement('div');
   info.className = 'album-header-info';
+
+  const shareUrl = generateAlbumUrl(selectedAlbum);
   info.innerHTML = `
     <h2>${selectedAlbum.name}</h2>
     <p><strong>${selectedAlbum.artists}</strong></p>
     <p>${selectedAlbum.year} • ${selectedAlbum.tracks.length} canções</p>
+    <button id="btn-share-album" class="btn btn-share" title="Copiar link compartilhável">🔗 Compartilhar</button>
   `;
 
   container.innerHTML = '';
   container.append(cover, info);
+
+  // Add share button event listener
+  const shareBtn = container.querySelector('#btn-share-album');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        const originalText = shareBtn.textContent;
+        shareBtn.textContent = '✓ Link copiado!';
+        setTimeout(() => {
+          shareBtn.textContent = originalText;
+        }, 2000);
+      });
+    });
+  }
 }
 
 function renderTrackList() {
@@ -330,9 +360,21 @@ u(document).on('DOMContentLoaded', function () {
   renderAlbumsList();
   updateLibraryStats();
 
-  // Select first album by default
-  if (filteredAlbums.length > 0) {
-    selectedAlbum = filteredAlbums[0];
+  // Try to load album from URL params, otherwise select first album
+  const albumFromUrl = getAlbumFromUrl();
+  let albumToSelect = null;
+
+  if (albumFromUrl) {
+    // Find album by path
+    albumToSelect = albums.find(a => a.path === albumFromUrl);
+  }
+
+  if (!albumToSelect && filteredAlbums.length > 0) {
+    albumToSelect = filteredAlbums[0];
+  }
+
+  if (albumToSelect) {
+    selectedAlbum = albumToSelect;
     renderAlbumsList(); // Re-render to highlight selected album
     renderAlbumHeader();
     renderTrackList();
