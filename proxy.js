@@ -12,6 +12,13 @@ const BUCKET_PATH = '/uqt';
 const PORT = 9001;
 
 const server = http.createServer((req, res) => {
+  // Health check endpoint for haloyd/monitoring
+  if (req.url === '/health') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
+    return;
+  }
+
   // Build target URL
   const targetPath = BUCKET_PATH + req.url;
   const targetUrl = BUCKET_URL + targetPath;

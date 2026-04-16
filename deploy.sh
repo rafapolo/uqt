@@ -7,6 +7,14 @@ set -e
 echo "🎵 UQT Server Deployment"
 echo "======================="
 
+# Check Node.js
+if ! command -v node &> /dev/null; then
+  echo "📦 Installing Node.js..."
+  curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - > /dev/null 2>&1
+  sudo apt-get install -y nodejs > /dev/null 2>&1
+  echo "   ✅ Node.js installed"
+fi
+
 # 1. Download proxy script
 echo ""
 echo "1️⃣  Setting up proxy..."
@@ -20,25 +28,67 @@ else
   git clone https://github.com/rafapolo/uqt.git .
 fi
 
-# 2. Start proxy as service
+# 2. Start proxy as haloyd service
 echo ""
-echo "2️⃣  Starting proxy service..."
+echo "2️⃣  Registering proxy with haloyd..."
 
-# Stop old proxy if running
-pkill node || true
-sleep 1
+# Create haloyd service config
+mkdir -p ~/.haloyd/services
+cat > ~/.haloyd/services/uqt-proxy.json << 'HALOYD_CONFIG'
+{
+  "name": "uqt-proxy",
+  "description": "UQT Hetzner S3 Reverse Proxy",
+  "command": "node",
+  "args": ["proxy.js"],
+  "cwd": "~/uqt-proxy",
+  "port": 9001,
+  "env": {},
+  "restart": true,
+  "public": true,
+  "domain": "xn--2dk.xyz",
+  "path": "/uqt"
+}
+HALOYD_CONFIG
 
-# Start new proxy in background
-nohup node proxy.js > proxy.log 2>&1 &
-PROXY_PID=$!
-sleep 2
+echo "  ✅ Service config created"
 
-if ps -p $PROXY_PID > /dev/null; then
-  echo "✅ Proxy running (PID: $PROXY_PID)"
+# Or use systemd if haloyd isn't available
+if ! command -v haloyd &> /dev/null; then
+  echo "  ℹ️  haloyd not found, using systemd instead..."
+
+  sudo tee /etc/systemd/system/uqt-proxy.service > /dev/null <<'SYSTEMD_CONFIG'
+[Unit]
+Description=UQT Hetzner Proxy
+After=network.target
+
+[Service]
+Type=simple
+User=$USER
+WorkingDirectory=$HOME/uqt-proxy
+ExecStart=/usr/bin/node proxy.js
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+SYSTEMD_CONFIG
+
+  sudo systemctl daemon-reload
+  sudo systemctl enable uqt-proxy
+  sudo systemctl start uqt-proxy
+  sleep 2
+
+  if sudo systemctl is-active --quiet uqt-proxy; then
+    echo "  ✅ Proxy running via systemd"
+  else
+    echo "  ❌ Proxy failed to start"
+    sudo systemctl status uqt-proxy
+    exit 1
+  fi
 else
-  echo "❌ Proxy failed to start. Check proxy.log"
-  cat proxy.log
-  exit 1
+  echo "  ✅ Proxy registered with haloyd"
+  echo "     Service: uqt-proxy"
+  echo "     Port: 9001"
 fi
 
 # 3. Sync JSON and covers to bucket
@@ -98,7 +148,12 @@ echo "   http://localhost:9001/uqt (local)"
 echo "   http://xn--2dk.xyz:9001/uqt (public - if port 9001 exposed)"
 echo ""
 echo "📝 Next steps:"
-echo "   1. Expose port 9001 publicly (firewall/DNS/reverse proxy)"
-echo "   2. Test: curl -I http://xn--2dk.xyz:9001/uqt/uqt.json"
+if command -v haloyd &> /dev/null; then
+  echo "   1. Reload haloyd: haloyd reload"
+  echo "   2. Test: curl -I http://xn--2dk.xyz/uqt/uqt.json"
+else
+  echo "   1. Expose port 9001 publicly (firewall/DNS/reverse proxy)"
+  echo "   2. Test: curl -I http://xn--2dk.xyz:9001/uqt/uqt.json"
+fi
 echo "   3. Check GitHub Pages for covers loading"
 echo ""
