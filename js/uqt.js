@@ -61,8 +61,8 @@ function getDecades() {
 
 function renderDecadeButtons() {
   const decades = getDecades();
-  const container = u('#decade-buttons').first();
-  container.html(''); // Clear existing buttons
+  const container = document.querySelector('#decade-buttons');
+  container.innerHTML = ''; // Clear existing buttons
 
   // Add "Todos" (All) button
   const todosBtn = document.createElement('button');
@@ -132,8 +132,8 @@ function updateLibraryStats() {
 }
 
 function renderAlbumsList() {
-  const container = u('#albums-list');
-  container.html('');
+  const container = document.querySelector('#albums-list');
+  container.innerHTML = '';
 
   filteredAlbums.forEach(album => {
     const item = document.createElement('div');
@@ -229,8 +229,8 @@ function renderAlbumHeader() {
 }
 
 function renderTrackList() {
-  const container = u('#track-list');
-  container.html('');
+  const container = document.querySelector('#track-list');
+  container.innerHTML = '';
   const tracksPanel = u('.tracks-panel').first();
 
   if (!selectedAlbum) {
