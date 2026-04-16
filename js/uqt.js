@@ -71,11 +71,11 @@ function buildAlbumsFromArtists() {
         artists: artist.name,
         year: album.year,
         path: album.path,
-        cover: `${BASE_URL}/${album.path}/capa.jpg`,
+        cover: `${BASE_URL}/${encodeURI(album.path)}/capa.jpg`,
         tracks: album.tracks.map(track => ({
           title: track.title,
           num: track.num,
-          file: `${album.path}/${track.file}`,
+          file: `${encodeURI(album.path)}/${encodeURI(track.file)}`,
           album: album.title,
           artists: track.artists || artist.name,
           year: album.year
