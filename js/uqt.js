@@ -149,7 +149,8 @@ function filterAlbums() {
   filteredAlbums = albums.filter(album => {
     const matchesSearch = searchQuery === '' ||
       album.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      album.artists.toLowerCase().includes(searchQuery.toLowerCase());
+      album.artists.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      album.path.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesDecade = activeDecade === null ||
       Math.floor(album.year / 10) * 10 === activeDecade;
@@ -310,7 +311,7 @@ function updateNowPlaying() {
   u('#player-title').text(currentTrack.title);
   u('#player-artist').text(currentTrack.artists);
 
-  const folder = currentTrack.file.split('/')[1];
+  const folder = currentTrack.file.split('/')[0];
   const coverUrl = `${BASE_URL}/${folder}/capa.jpg`;
   const coverImg = u('#player-cover').first();
 
