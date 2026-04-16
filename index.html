@@ -6,7 +6,7 @@
 	<title>Acervo UQT — 100 anos de MPB</title>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 	<link href="uqt.css" rel="stylesheet">
-	<script src="js/uqt.json"></script>
+	<script src="js/uqt-artists.json"></script>
 	<script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
 	<script src="js/uqt.js"></script>
 </head>
@@ -23,18 +23,18 @@
 	</header>
 
 	<div class="app-layout">
-		<aside class="albums-panel">
+		<main class="main-content">
 			<div class="filters-section">
 				<input id="search-input" type="text" class="search-input" placeholder="Busca por artista, álbum...">
 				<div class="decade-buttons" id="decade-buttons"></div>
 			</div>
 			<div class="albums-grid" id="albums-list"></div>
-		</aside>
+		</main>
 
-		<main class="tracks-panel">
+		<aside class="tracks-panel">
 			<div class="album-header" id="album-header"></div>
 			<ol class="track-list" id="track-list"></ol>
-		</main>
+		</aside>
 	</div>
 
 	<audio id="audio"></audio>
@@ -62,6 +62,12 @@
 					</div>
 					<span id="time-duration" class="time">0:00</span>
 				</div>
+			</div>
+
+			<div class="library-stats">
+				<span id="stat-albums">0 álbuns</span>
+				<span id="stat-artists">0 artistas</span>
+				<span id="stat-years">0 anos</span>
 			</div>
 		</div>
 	</footer>
