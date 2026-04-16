@@ -1,0 +1,46 @@
+name: uqt
+description: UQT Hetzner S3 Reverse Proxy
+
+services:
+  uqt-proxy:
+    image: node:18-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9001:9001"
+    environment:
+      NODE_ENV: production
+      PORT: "9001"
+      BUCKET_URL: https://your-region.your-objectstorage.com
+      BUCKET_REGION: hel1
+    healthCheck:
+      path: /uqt/health
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: always
+    resources:
+      memory: 512M
+      cpu: 0.5
+
+volumes:
+  uqt-data:
+    driver: local
+
+networks:
+  uqt-net:
+    driver: bridge
+
+# Deployment settings
+deployment:
+  strategy: rolling
+  maxUnavailable: 0
+  replicas: 1
+
+# SSL/TLS
+ssl:
+  enabled: true
+  domains:
+    - xn--2dk.xyz
+  autoRenew: true
