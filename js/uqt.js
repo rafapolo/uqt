@@ -145,10 +145,10 @@ function filterAlbums() {
   filteredAlbums = albums.filter(album => {
     const searchLower = searchQuery.toLowerCase();
     const matchesSearch = searchQuery === '' ||
-      album.title.toLowerCase().includes(searchLower) ||
-      album.artist.toLowerCase().includes(searchLower) ||
+      (album.name && album.name.toLowerCase().includes(searchLower)) ||
+      (album.artists && album.artists.toLowerCase().includes(searchLower)) ||
       (album.path && album.path.toLowerCase().includes(searchLower)) ||
-      album.tracks.some(track => track.artists.toLowerCase().includes(searchLower));
+      album.tracks.some(track => track.artists && track.artists.toLowerCase().includes(searchLower));
 
     const matchesDecade = activeDecade === null ||
       Math.floor(album.year / 10) * 10 === activeDecade;
