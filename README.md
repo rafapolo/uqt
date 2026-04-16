@@ -48,10 +48,10 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 brew install minio/stable/mc
 
 # Configurar credenciais
-mc alias set sambaraiz https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
+mc alias set hel1 https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
 
 # Sincronizar arquivos
-mc mirror /Volumes/EXTRA/bkps/sambaderaiz/ sambaraiz/sambaraiz/uqt/ --overwrite
+mc mirror /Volumes/EXTRA/bkps/sambaderaiz/ hel1/sambaraiz/uqt/
 
 # Ou usar o script
 ./sync-to-bucket.sh
