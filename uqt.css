@@ -50,11 +50,24 @@ body {
 /* Header */
 .app-header {
   background: linear-gradient(135deg, #1a1814 0%, #252019 100%);
-  border-bottom: 1px solid var(--color-border);
-  padding: var(--spacing-lg) var(--spacing-md);
+  border-bottom: 2px solid var(--color-accent);
+  padding: var(--spacing-sm) var(--spacing-md);
   flex-shrink: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  opacity: 0.5;
 }
 
 .header-content {
@@ -63,35 +76,61 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-md);
 }
 
 .header-title {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 2px;
+  align-items: flex-start;
 }
 
 .app-title {
   font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -1px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   color: var(--color-accent);
+  position: relative;
+}
+
+.app-title::after {
+  content: '♪';
+  margin-left: 8px;
+  font-size: 1.2rem;
+  animation: samba-bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes samba-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-4px) rotate(15deg);
+    opacity: 0.8;
+  }
 }
 
 .app-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .music-count {
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  font-weight: 600;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  background: rgba(212, 165, 116, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--color-accent);
 }
 
 /* Layout */
@@ -111,12 +150,25 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  position: relative;
+}
+
+.albums-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  opacity: 0.3;
 }
 
 .filters-section {
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(212, 165, 116, 0.05) 0%, transparent 100%);
 }
 
 .search-input {
@@ -189,29 +241,56 @@ body {
   flex-direction: column;
   gap: var(--spacing-sm);
   cursor: pointer;
-  transition: var(--transition);
   align-items: stretch;
   position: relative;
 }
 
 .album-item:hover {
-  transform: translateY(-6px);
+  animation: samba-swing 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes samba-swing {
+  0% {
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    transform: translateY(-8px) scaleX(1.02);
+  }
+  100% {
+    transform: translateY(-8px) scaleX(1);
+  }
 }
 
 .album-item:hover .album-cover-thumb {
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 16px 40px rgba(212, 165, 116, 0.3), 0 0 20px rgba(212, 165, 116, 0.15);
+  transform: scale(1.04);
 }
 
 .album-item:hover .album-item-info {
   opacity: 1;
 }
 
+.album-item.active {
+  animation: samba-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes samba-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 rgba(212, 165, 116, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(212, 165, 116, 0.2));
+  }
+}
+
 .album-item.active .album-cover-thumb {
-  box-shadow: 0 0 0 3px var(--color-accent), 0 12px 32px rgba(212, 165, 116, 0.4);
+  box-shadow: 0 0 0 3px var(--color-accent), 0 16px 40px rgba(212, 165, 116, 0.4);
+  transform: scale(1.06);
 }
 
 .album-item.active .album-item-title {
   color: var(--color-accent);
+  font-weight: 700;
 }
 
 .album-cover-thumb {
@@ -375,11 +454,23 @@ body {
 /* Player Bar (Sticky Bottom) */
 .player-bar {
   background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-accent);
   padding: var(--spacing-md) var(--spacing-lg);
   flex-shrink: 0;
   z-index: 200;
   backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.player-bar::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  opacity: 0.3;
 }
 
 .player-content {

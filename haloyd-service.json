@@ -1,0 +1,27 @@
+{
+  "name": "uqt-proxy",
+  "description": "UQT Hetzner S3 Reverse Proxy - Zero egress streaming",
+  "command": "node",
+  "args": ["proxy.js"],
+  "cwd": "/home/polux/uqt-proxy",
+  "port": 9001,
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "restart": true,
+  "restartDelay": 5000,
+  "public": true,
+  "domain": "xn--2dk.xyz",
+  "path": "/uqt",
+  "ssl": true,
+  "cache": {
+    "enabled": true,
+    "ttl": 31536000
+  },
+  "healthCheck": {
+    "enabled": true,
+    "path": "/health",
+    "interval": 30000,
+    "timeout": 5000
+  }
+}
