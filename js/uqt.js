@@ -297,7 +297,7 @@ function playTrack(track) {
   updateNowPlaying();
 
   const audio = u('#audio').first();
-  audio.src = `${BASE_URL}${encodeURI(track.file)}`;
+  audio.src = `${BASE_URL}/${track.file}`;
   audio.play();
 
   u('#btn-play').addClass('playing');
