@@ -179,6 +179,7 @@ function renderAlbumsList() {
     item.addEventListener('click', () => {
       selectedAlbum = album;
       renderAlbumsList();
+      renderAlbumHeader();
       renderTrackList();
     });
 
