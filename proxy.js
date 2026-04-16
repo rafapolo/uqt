@@ -10,10 +10,19 @@ const url = require('url');
 const BUCKET_URL = 'https://your-objectstorage-endpoint/sambaraiz';
 const PORT = 9001;
 
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+  'Access-Control-Allow-Headers': 'Range, Content-Type',
+  'Access-Control-Expose-Headers': 'Content-Length, Content-Type, Content-Range, ETag',
+  'Cache-Control': 'public, max-age=31536000',
+  'X-Content-Type-Options': 'nosniff'
+};
+
 const server = http.createServer((req, res) => {
   // Health check endpoint for haloyd/monitoring
   if (req.url === '/health') {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.writeHead(200, { 'Content-Type': 'application/json', ...corsHeaders });
     res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
     return;
   }
@@ -21,17 +30,9 @@ const server = http.createServer((req, res) => {
   // Build target URL - bucket structure is /sambaraiz/uqt/...
   const targetUrl = BUCKET_URL + req.url;
 
-  // Set up CORS headers to prevent CORB blocking
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Range, Content-Type');
-  res.setHeader('Access-Control-Expose-Headers', 'Content-Length, Content-Type, Content-Range, ETag');
-  res.setHeader('Cache-Control', 'public, max-age=31536000');
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-
   // Handle preflight requests
   if (req.method === 'OPTIONS') {
-    res.writeHead(200);
+    res.writeHead(200, corsHeaders);
     res.end();
     return;
   }
@@ -63,7 +64,8 @@ const server = http.createServer((req, res) => {
       headers['content-type'] = 'application/json';
     }
 
-    res.writeHead(proxyRes.statusCode, headers);
+    // Include CORS headers in response
+    res.writeHead(proxyRes.statusCode, { ...headers, ...corsHeaders });
     proxyRes.pipe(res);
   });
 
