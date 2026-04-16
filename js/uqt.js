@@ -7,7 +7,9 @@ let allTracks = [];
 let activeDecade = null;
 let searchQuery = '';
 
-const BASE_URL = 'https://your-objectstorage-endpoint/uqt';
+// Base URL for audio streaming via proxy (zero-egress, no surprise charges)
+// The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
+const BASE_URL = 'http://xn--2dk.xyz:9001/uqt';
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%232a2620" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-size="60" fill="%237a7268" font-family="serif"%3E♫%3C/text%3E%3C/svg%3E';
 
 function formatTime(seconds) {
