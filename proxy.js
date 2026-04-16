@@ -62,6 +62,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`🎵 UQT Proxy listening on http://localhost:${PORT}`);
-  console.log(`📍 Proxying to: ${BUCKET_URL}${BUCKET_PATH}`);
+  console.log(`📍 Proxying to: ${BUCKET_URL}`);
   console.log(`🌍 Update BASE_URL in js/uqt.js to: http://xn--2dk.xyz:${PORT}/uqt (once public)`);
 });
