@@ -40,7 +40,7 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 - **Capas**: Servidas via proxy reverso; fallback para `/capa.jpg` (padrão) → SVG placeholder
 - **Fonts**: Playfair Display (títulos) + Inter (corpo — tipografia refinada)
 - **Streaming**: Proxy em `http://89.167.95.136:9001/uqt` (Hetzner HEL1, zero egress na zona)
-- **Gerenciamento**: Registrado com haloyd service manager (ou systemd como fallback)
+- **Deployment**: Haloy com Docker, SSL automático via Let's Encrypt, health checks e zero-downtime deployments
 
 ### Workflow Original
 1. Arquivos baixados de https://drive.google.com/drive/folders/117Bq9JjqMToU6vMLYaDUHj_AkWg3_zz1
@@ -70,10 +70,12 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 
 ### Streaming e Deployment
 - **Proxy reverso**: Node.js proxy em `http://89.167.95.136:9001/uqt` → Hetzner bucket (HEL1)
-- **Gerenciamento**: Haloyd service manager (ou systemd como fallback)
+- **Deployment**: Haloy + Docker com zero-downtime rolling updates
+- **SSL/TLS**: Automático via Let's Encrypt para xn--2dk.xyz
+- **Health checks**: Monitoramento contínuo em `/uqt/health`
 - **Zero egress**: Transferência grátis entre instância e bucket (mesma zona)
 - **Fallback de capas**: Local `/capa.jpg` (padrão) → SVG se indisponível
-- **Deploy**: Execute `bash deploy.sh` no servidor para atualizar código e sincronizar arquivos
+- **Deploy local**: `haloy deploy` a partir da máquina local
 
 ### Frontend
 - Zero dependências pesadas (apenas Umbrella JS, 2.6KB)
