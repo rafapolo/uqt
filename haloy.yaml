@@ -6,4 +6,4 @@ api_token:
 port: 9001
 health_check_path: /health
 domains:
-  - domain: "xn--2dk.xyz"
+  - domain: "haloy.xn--2dk.xyz"
