@@ -40,6 +40,14 @@ aws s3 cp js/uqt.json \
   --region hel1
 
 echo ""
+echo "4️⃣  Syncing all files (covers, MP3s, metadata)..."
+aws s3 sync /Volumes/EXTRA/bkps/sambaderaiz/ \
+  s3://sambaraiz/uqt/ \
+  --endpoint-url https://your-region.your-objectstorage.com \
+  --region hel1 \
+  --no-progress 2>&1 | grep -E "upload:|delete:" || echo "✅ All files up to date"
+
+echo ""
 echo "✅ Sync complete!"
 echo ""
 echo "📊 Current bucket status:"

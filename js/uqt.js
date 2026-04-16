@@ -3,7 +3,7 @@ let albums = [];
 let filteredAlbums = [];
 let selectedAlbum = null;
 let currentTrack = null;
-let allTracks = [];
+let allArtists = [];
 let activeDecade = null;
 let searchQuery = '';
 
@@ -20,125 +20,37 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-function parseTrackMetadata(track) {
-  const parts = track.file.split('/').filter(p => p.length > 0);
-  const folder = parts[0];
+function buildAlbumsFromArtists() {
+  albums = [];
 
-  // Extract year (first 4 digits)
-  const yearMatch = folder.match(/^(\d{4})/);
-  const year = yearMatch ? parseInt(yearMatch[1]) : 0;
-
-  // Try pattern: YYYY - ARTISTS – ALBUM – (with en dashes)
-  let match = folder.match(/^(\d{4})\s*-\s*(.+?)\s*[–—]\s*(.+?)\s*[–—]/);
-  if (match) {
-    return {
-      year: year,
-      artists: match[2].trim(),
-      album: match[3].trim(),
-      folder: folder
-    };
-  }
-
-  // Try pattern: YYYY - ARTISTS - ALBUM (split on first dash after year)
-  match = folder.match(/^(\d{4})\s*-\s*(.+?)\s*-\s*(.+)/);
-  if (match) {
-    const artists = match[2].trim();
-    const album = match[3].trim();
-    // Only use this if artists and album are reasonably different
-    if (artists && album && artists !== album) {
-      return {
-        year: year,
-        artists: artists,
-        album: album,
-        folder: folder
-      };
-    }
-  }
-
-  // Fallback: YYYY - REST (treat entire rest as album name, extract artists if possible)
-  match = folder.match(/^(\d{4})\s*-\s*(.+)/);
-  if (match) {
-    const rest = match[2].trim();
-    // Try to extract just the artist name (first part before any ' - ')
-    const artistMatch = rest.match(/^([^-]+?)(?:\s*-|$)/);
-    const artists = artistMatch ? artistMatch[1].trim() : rest;
-
-    return {
-      year: year,
-      artists: artists,
-      album: rest,
-      folder: folder
-    };
-  }
-
-  return {
-    year: year,
-    artists: folder,
-    album: folder,
-    folder: folder
-  };
-}
-
-function parseTrackFile(track) {
-  // Extract track metadata from file path: /FOLDER/NUM. TITLE.mp3
-  const fileName = track.file.split('/').pop(); // "1. Agora é cinza.mp3"
-  const match = fileName.match(/^(\d+)\.\s*(.+?)\.(mp3|flac|wav)$/i);
-
-  if (match) {
-    return {
-      num: parseInt(match[1]),
-      title: match[2].trim()
-    };
-  }
-
-  return {
-    num: 0,
-    title: fileName
-  };
-}
-
-function groupTracksByAlbum() {
-  const albumMap = {};
-
-  allTracks.forEach(track => {
-    const meta = parseTrackMetadata(track);
-    const trackMeta = parseTrackFile(track);
-    const albumKey = meta.album;
-
-    if (!albumMap[albumKey]) {
-      albumMap[albumKey] = {
-        name: meta.album,
-        artists: meta.artists,
-        year: meta.year,
-        cover: `${BASE_URL}/${meta.folder}/capa.jpg`,
-        tracks: []
-      };
-    }
-
-    // Enrich track with parsed metadata
-    const enrichedTrack = {
-      ...track,
-      title: trackMeta.title,
-      num: trackMeta.num,
-      album: meta.album,
-      artists: meta.artists,
-      year: meta.year
-    };
-
-    albumMap[albumKey].tracks.push(enrichedTrack);
+  // Flatten artist albums into a single array
+  db.artists.forEach(artist => {
+    artist.albums.forEach(album => {
+      albums.push({
+        name: album.title,
+        artists: artist.name,
+        year: album.year,
+        path: album.path,
+        cover: `${BASE_URL}/${album.path}/capa.jpg`,
+        tracks: album.tracks.map(track => ({
+          title: track.title,
+          num: track.num,
+          file: `${album.path}/${track.file}`,
+          album: album.title,
+          artists: artist.name,
+          year: album.year
+        }))
+      });
+    });
   });
 
-  // Sort tracks within each album by number, then sort albums by year descending
-  Object.values(albumMap).forEach(album => {
-    album.tracks.sort((a, b) => a.num - b.num);
-  });
-
-  albums = Object.values(albumMap).sort((a, b) => b.year - a.year);
+  // Sort albums by year descending
+  albums.sort((a, b) => b.year - a.year);
   return albums;
 }
 
 function getDecades() {
-  const years = new Set(allTracks.map(t => t.year));
+  const years = new Set(albums.map(a => a.year));
   const decades = new Set();
   years.forEach(year => {
     const decade = Math.floor(year / 10) * 10;
@@ -150,24 +62,45 @@ function getDecades() {
 function renderDecadeButtons() {
   const decades = getDecades();
   const container = u('#decade-buttons');
+  container.html(''); // Clear existing buttons
 
+  // Add "Todos" (All) button
+  const todosBtn = document.createElement('button');
+  todosBtn.className = 'decade-btn active';
+  todosBtn.textContent = 'Todos';
+  todosBtn.dataset.decade = 'all';
+
+  todosBtn.addEventListener('click', () => {
+    activeDecade = null;
+    filterAlbums();
+
+    // Update all button states
+    const allBtns = container.querySelectorAll('.decade-btn');
+    allBtns.forEach(b => b.classList.remove('active'));
+    todosBtn.classList.add('active');
+  });
+
+  container.append(todosBtn);
+
+  // Add decade buttons
   decades.forEach(decade => {
     const btn = document.createElement('button');
     btn.className = 'decade-btn';
-    btn.textContent = `${decade}s`;
+    btn.textContent = `${decade}`;
     btn.dataset.decade = decade;
+    btn.title = `${decade}–${decade + 9}`;
+
     btn.addEventListener('click', () => {
-      const allBtns = container.querySelectorAll('.decade-btn');
-      allBtns.forEach(b => {
-        if (b.dataset.decade === btn.dataset.decade) {
-          activeDecade = activeDecade === decade ? null : decade;
-          b.classList.toggle('active');
-        } else {
-          b.classList.remove('active');
-        }
-      });
+      const decadeNum = parseInt(btn.dataset.decade);
+      activeDecade = decadeNum;
       filterAlbums();
+
+      // Update button states
+      const allBtns = container.querySelectorAll('.decade-btn');
+      allBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
     });
+
     container.append(btn);
   });
 }
@@ -209,20 +142,25 @@ function renderAlbumsList() {
 
     const cover = document.createElement('img');
     cover.className = 'album-cover-thumb';
-    cover.src = album.cover;
+    cover.alt = album.name;
+
+    // Set up fallback chain: proxy -> default -> placeholder
+    let attemptCount = 0;
     cover.onerror = function() {
-      if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
-        this.src = '/capa.jpg'; // Try default cover
-        this.onerror = function() {
-          this.src = PLACEHOLDER_COVER; // Fall back to SVG placeholder
-          this.classList.add('placeholder');
-        };
-      } else if (this.src === '/capa.jpg') {
+      attemptCount++;
+      if (attemptCount === 1 && this.src.includes(BASE_URL)) {
+        // Proxy failed (CORB or 404), try default cover
+        this.src = '/capa.jpg';
+      } else if (attemptCount === 2 || this.src === '/capa.jpg') {
+        // Default also failed, use placeholder
         this.src = PLACEHOLDER_COVER;
         this.classList.add('placeholder');
+        this.onerror = null;
       }
     };
-    cover.alt = album.name;
+
+    // Try proxy first
+    cover.src = album.cover;
 
     const info = document.createElement('div');
     info.className = 'album-item-info';
@@ -258,20 +196,25 @@ function renderAlbumHeader() {
 
   const cover = document.createElement('img');
   cover.className = 'album-cover-large';
-  cover.src = selectedAlbum.cover;
   cover.alt = selectedAlbum.name;
+
+  // Set up fallback chain: proxy -> default -> placeholder
+  let attemptCount = 0;
   cover.onerror = function() {
-    if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
-      this.src = '/capa.jpg'; // Try default cover
-      this.onerror = function() {
-        this.src = PLACEHOLDER_COVER;
-        this.classList.add('placeholder');
-      };
-    } else if (this.src === '/capa.jpg') {
+    attemptCount++;
+    if (attemptCount === 1 && this.src.includes(BASE_URL)) {
+      // Proxy failed (CORB or 404), try default cover
+      this.src = '/capa.jpg';
+    } else if (attemptCount === 2 || this.src === '/capa.jpg') {
+      // Default also failed, use placeholder
       this.src = PLACEHOLDER_COVER;
       this.classList.add('placeholder');
+      this.onerror = null;
     }
   };
+
+  // Try proxy first
+  cover.src = selectedAlbum.cover;
 
   const info = document.createElement('div');
   info.className = 'album-header-info';
@@ -344,19 +287,28 @@ function updateNowPlaying() {
   const folder = currentTrack.file.split('/')[1];
   const coverUrl = `${BASE_URL}/${folder}/capa.jpg`;
   const coverImg = u('#player-cover').first();
-  coverImg.src = coverUrl;
+
+  if (!coverImg) return;
+
+  coverImg.classList.remove('placeholder');
+
+  // Set up fallback chain: proxy -> default -> placeholder
+  let attemptCount = 0;
   coverImg.onerror = function() {
-    if (this.src !== '/capa.jpg' && this.src !== PLACEHOLDER_COVER) {
-      this.src = '/capa.jpg'; // Try default cover
-      this.onerror = function() {
-        this.src = PLACEHOLDER_COVER;
-        this.classList.add('placeholder');
-      };
-    } else if (this.src === '/capa.jpg') {
+    attemptCount++;
+    if (attemptCount === 1 && this.src.includes(BASE_URL)) {
+      // Proxy failed (CORB or 404), try default cover
+      this.src = '/capa.jpg';
+    } else if (attemptCount === 2 || this.src === '/capa.jpg') {
+      // Default also failed, use placeholder
       this.src = PLACEHOLDER_COVER;
       this.classList.add('placeholder');
+      this.onerror = null;
     }
   };
+
+  // Try proxy first
+  coverImg.src = coverUrl;
 }
 
 function playNext() {
@@ -379,14 +331,35 @@ function playPrevious() {
 
 u(document).on('DOMContentLoaded', function () {
   // Load and process data
-  allTracks = db.tracks;
-  groupTracksByAlbum();
+  allArtists = db.artists;
+  buildAlbumsFromArtists();
   filteredAlbums = [...albums];
 
   // Initialize UI
   renderDecadeButtons();
   renderAlbumsList();
   updateLibraryStats();
+
+  // Select first album by default
+  if (filteredAlbums.length > 0) {
+    selectedAlbum = filteredAlbums[0];
+    renderAlbumsList(); // Re-render to highlight selected album
+    renderAlbumHeader();
+    renderTrackList();
+  }
+
+  // Initialize player cover with default image
+  const playerCover = u('#player-cover').first();
+  if (playerCover && !playerCover.src) {
+    playerCover.src = '/capa.jpg';
+    playerCover.onerror = function() {
+      if (this.src !== PLACEHOLDER_COVER) {
+        this.src = PLACEHOLDER_COVER;
+        this.classList.add('placeholder');
+        this.onerror = null;
+      }
+    };
+  }
 
   // Audio element
   const audio = u('#audio').first();

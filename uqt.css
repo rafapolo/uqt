@@ -142,46 +142,54 @@ body {
   background: var(--color-border);
 }
 
-/* Albums Panel (Left) */
-.albums-panel {
-  width: 320px;
+/* Main Content (Center - Albums Grid) */
+.main-content {
+  flex: 1;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Tracks Panel (Right - Smaller) */
+.tracks-panel {
+  width: 380px;
   background: var(--color-surface);
-  border-right: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   position: relative;
+  transition: width 0.3s ease;
 }
 
-.albums-panel::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, var(--color-accent), transparent);
-  opacity: 0.3;
+.tracks-panel.hidden {
+  width: 0;
+  border-left: none;
+  overflow: hidden;
 }
 
 .filters-section {
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
   border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(212, 165, 116, 0.05) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(212, 165, 116, 0.08) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 .search-input {
   width: 100%;
-  padding: var(--spacing-sm);
+  padding: 8px 12px;
   background: var(--color-surface-light);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 4px;
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-md);
-  transition: var(--transition);
+  font-size: 0.85rem;
+  transition: var(--transition-fast);
 }
 
 .search-input::placeholder {
@@ -198,30 +206,39 @@ body {
 .decade-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: 6px;
+  margin-top: 12px;
+  width: 100%;
+  align-items: center;
 }
 
 .decade-btn {
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 6px 10px;
   background: var(--color-surface-light);
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 0.75rem;
-  cursor: pointer;
-  transition: var(--transition-fast);
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .decade-btn:hover {
+  background: var(--color-surface);
   border-color: var(--color-accent);
   color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
 .decade-btn.active {
   background: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-bg);
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(212, 165, 116, 0.3);
 }
 
 .albums-grid {
@@ -329,24 +346,16 @@ body {
   transition: var(--transition-fast);
 }
 
-/* Tracks Panel (Right) */
-.tracks-panel {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background: var(--color-bg);
-  overflow: hidden;
-}
-
 .album-header {
   padding: var(--spacing-lg);
   border-bottom: 1px solid var(--color-border);
   display: flex;
-  gap: var(--spacing-lg);
-  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
   flex-shrink: 0;
   overflow-y: auto;
-  max-height: 280px;
+  max-height: 350px;
 }
 
 .album-header.empty {
@@ -354,30 +363,31 @@ body {
 }
 
 .album-cover-large {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 12px;
-  flex-shrink: 0;
-  background: var(--color-surface);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background: var(--color-surface-light);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .album-header-info {
-  flex: 1;
+  text-align: center;
+  width: 100%;
 }
 
 .album-header-info h2 {
   font-family: var(--font-display);
-  font-size: 1.8rem;
-  margin-bottom: var(--spacing-sm);
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-xs);
   color: var(--color-text);
+  line-height: 1.3;
 }
 
 .album-header-info p {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: 2px;
 }
 
 .track-list {
@@ -392,7 +402,7 @@ body {
 .track-item {
   display: flex;
   align-items: center;
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
   cursor: pointer;
   transition: var(--transition-fast);
@@ -400,7 +410,7 @@ body {
 }
 
 .track-item:hover {
-  background: var(--color-surface);
+  background: var(--color-surface-light);
 }
 
 .track-item.playing {
@@ -411,12 +421,13 @@ body {
   content: '▶';
   color: var(--color-accent);
   margin-right: 4px;
+  font-size: 0.7rem;
 }
 
 .track-num {
   color: var(--color-text-muted);
-  font-size: 0.85rem;
-  min-width: 24px;
+  font-size: 0.75rem;
+  min-width: 20px;
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
@@ -431,24 +442,26 @@ body {
 }
 
 .track-title {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: var(--color-text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 .track-item.playing .track-title {
   color: var(--color-accent);
+  font-weight: 500;
 }
 
 .track-duration {
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-variant-numeric: tabular-nums;
   text-align: right;
-  min-width: 40px;
+  min-width: 32px;
 }
 
 /* Player Bar (Sticky Bottom) */
@@ -479,6 +492,7 @@ body {
   display: flex;
   gap: var(--spacing-lg);
   align-items: center;
+  justify-content: space-between;
 }
 
 .now-playing-compact {
@@ -490,11 +504,20 @@ body {
 }
 
 .player-cover {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
   border-radius: 4px;
   background: var(--color-surface-light);
+  flex-shrink: 0;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+.player-cover.placeholder {
+  object-fit: contain;
+  padding: 4px;
+  background: var(--color-surface);
 }
 
 .player-info {
@@ -630,6 +653,28 @@ body {
   opacity: 1;
 }
 
+/* Library Stats */
+.library-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: var(--spacing-lg);
+  border-left: 1px solid var(--color-border);
+}
+
+.library-stats span {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.library-stats span strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
 /* Audio Element */
 audio {
   display: none;
@@ -655,8 +700,8 @@ audio {
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-  .albums-panel {
-    width: 280px;
+  .tracks-panel {
+    width: 320px;
   }
 
   .album-cover-large {
@@ -669,7 +714,7 @@ audio {
   }
 
   .album-header-info h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -697,10 +742,8 @@ audio {
     gap: 0;
   }
 
-  .albums-panel {
-    width: 100%;
+  .main-content {
     height: 50vh;
-    border-right: none;
     border-bottom: 1px solid var(--color-border);
   }
 
@@ -711,7 +754,14 @@ audio {
   }
 
   .tracks-panel {
+    width: 100%;
     height: 50vh;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .tracks-panel.hidden {
+    display: none;
   }
 
   .album-cover-large {
@@ -730,10 +780,12 @@ audio {
   .player-content {
     flex-wrap: wrap;
     gap: var(--spacing-md);
+    justify-content: center;
   }
 
   .now-playing-compact {
     min-width: auto;
+    width: 100%;
   }
 
   .player-controls {
@@ -749,6 +801,16 @@ audio {
   .controls-buttons {
     width: 100%;
     justify-content: center;
+  }
+
+  .library-stats {
+    width: 100%;
+    justify-content: center;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
+    padding-left: 0;
+    margin-top: var(--spacing-md);
   }
 }
 
@@ -781,6 +843,19 @@ audio {
 
   .album-item-meta {
     font-size: 0.6rem;
+  }
+
+  .decade-buttons {
+    gap: 6px;
+  }
+
+  .decade-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .filters-section {
+    padding: var(--spacing-md);
   }
 
   .track-item {
