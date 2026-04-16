@@ -150,7 +150,7 @@ function filterAlbums() {
     const matchesSearch = searchQuery === '' ||
       album.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       album.artists.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      album.path.toLowerCase().includes(searchQuery.toLowerCase());
+      (album.path && album.path.toLowerCase().includes(searchQuery.toLowerCase()));
 
     const matchesDecade = activeDecade === null ||
       Math.floor(album.year / 10) * 10 === activeDecade;
