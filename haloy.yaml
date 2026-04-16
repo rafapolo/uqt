@@ -1,36 +1,8 @@
-# Haloy Deployment Configuration
-# UQT Hetzner S3 Reverse Proxy
-# Deploys with automatic SSL, health checks, and zero-downtime updates
-
 name: uqt
 server: finland
 port: 9001
-
-# Domain configuration with automatic SSL via Let's Encrypt
 domains:
   - domain: xn--2dk.xyz
     aliases:
       - www.xn--2dk.xyz
-
-# Health check endpoint for monitoring and rolling updates
 health_check_path: /uqt/health
-health_check_interval: 10s
-health_check_timeout: 5s
-
-# Deployment strategy
-strategy: rolling
-max_unavailable: 0  # Zero-downtime deployments
-
-# Container resources
-memory: 512M
-cpu: 0.5
-
-# Auto-restart on failure
-restart_policy: always
-
-# Logging
-logs:
-  driver: json-file
-  options:
-    max-size: "10m"
-    max-file: "3"
