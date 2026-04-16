@@ -6,6 +6,7 @@ let currentTrack = null;
 let allArtists = [];
 let activeDecade = null;
 let searchQuery = '';
+let prevActiveItem = null;
 
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
@@ -134,11 +135,15 @@ function updateLibraryStats() {
 function renderAlbumsList() {
   const container = document.querySelector('#albums-list');
   container.innerHTML = '';
+  prevActiveItem = null; // Reset tracking on re-render
 
   filteredAlbums.forEach(album => {
     const item = document.createElement('div');
     item.className = 'album-item';
-    if (selectedAlbum === album) item.classList.add('active');
+    if (selectedAlbum === album) {
+      item.classList.add('active');
+      prevActiveItem = item;
+    }
 
     const cover = document.createElement('img');
     cover.className = 'album-cover-thumb';
@@ -177,8 +182,13 @@ function renderAlbumsList() {
     item.append(cover, info);
 
     item.addEventListener('click', () => {
+      if (selectedAlbum === album) return; // No change, skip re-render
+
+      if (prevActiveItem) prevActiveItem.classList.remove('active');
+      item.classList.add('active');
+      prevActiveItem = item;
+
       selectedAlbum = album;
-      renderAlbumsList();
       renderAlbumHeader();
       renderTrackList();
     });

@@ -95,8 +95,8 @@ fi
 echo ""
 echo "3️⃣  Syncing files to Hetzner bucket..."
 
-export AWS_ACCESS_KEY_ID="2GYiNyDXI9m4Y36mKHxWRLVW3h4iimWQYknkQ3t2"
-export AWS_SECRET_ACCESS_KEY="MJZJKKCBI86P66SMHRXE"
+export AWS_ACCESS_KEY_ID="REDACTED_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY="REDACTED_SECRET_ACCESS_KEY"
 
 # Test connectivity
 echo "  Testing bucket access..."
@@ -114,10 +114,10 @@ aws s3 cp js/uqt.json s3://BUCKET_NAME/uqt/uqt.json \
 
 # Sync all files to bucket using mc
 echo "  Syncing files to bucket..."
-if ! mc alias list BUCKET_NAME &>/dev/null; then
-  mc alias set BUCKET_NAME https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
+if ! mc alias list hel1 &>/dev/null; then
+  mc alias set hel1 https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
 fi
-mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" BUCKET_NAME/BUCKET_NAME/uqt/ --overwrite --quiet 2>&1 || {
+mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/BUCKET_NAME/uqt/ --overwrite 2>&1 || {
   echo "  ⚠️  Some files failed to sync, continuing..."
 }
 

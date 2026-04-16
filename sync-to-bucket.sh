@@ -12,9 +12,9 @@ echo "=================="
 echo ""
 
 # Setup mc alias
-if ! mc alias list BUCKET_NAME &>/dev/null; then
+if ! mc alias list hel1 &>/dev/null; then
   echo "Setting up mc alias..."
-  mc alias set BUCKET_NAME https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
+  mc alias set hel1 https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
 fi
 
 # Step 1: Regenerate JSON from MP3 tags
@@ -29,15 +29,15 @@ fi
 
 echo ""
 echo "2️⃣  Syncing all files to bucket..."
-mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" BUCKET_NAME/BUCKET_NAME/uqt/ --overwrite --quiet
+mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/BUCKET_NAME/uqt/
 
 echo ""
 echo "3️⃣  Syncing JSON to bucket..."
-mc cp js/uqt.json BUCKET_NAME/BUCKET_NAME/uqt/uqt.json --quiet
+mc cp js/uqt.json hel1/BUCKET_NAME/uqt/uqt.json
 
 echo ""
 echo "✅ Sync complete!"
 
 echo ""
 echo "📊 Current bucket status:"
-mc ls BUCKET_NAME/BUCKET_NAME/uqt/ --summarize 2>/dev/null | tail -5 || echo "   (check bucket for details)"
+mc ls hel1/BUCKET_NAME/uqt/ --summarize 2>/dev/null | tail -5 || echo "   (check bucket for details)"
