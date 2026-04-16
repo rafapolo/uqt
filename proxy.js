@@ -8,7 +8,6 @@ const https = require('https');
 const url = require('url');
 
 const BUCKET_URL = 'https://your-objectstorage-endpoint';
-const BUCKET_PATH = '/uqt';
 const PORT = 9001;
 
 const server = http.createServer((req, res) => {
@@ -19,9 +18,8 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Build target URL
-  const targetPath = BUCKET_PATH + req.url;
-  const targetUrl = BUCKET_URL + targetPath;
+  // Build target URL (bucket keys already include /uqt/)
+  const targetUrl = BUCKET_URL + req.url;
 
   // Set up CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
