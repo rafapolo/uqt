@@ -263,9 +263,6 @@ function renderTrackList() {
 
   tracksPanel.classList.remove('hidden');
 
-  const list = document.createElement('ol');
-  list.className = 'track-list';
-
   selectedAlbum.tracks.forEach(track => {
     const item = document.createElement('li');
     item.className = 'track-item';
@@ -283,10 +280,8 @@ function renderTrackList() {
       playTrack(track);
     });
 
-    list.append(item);
+    container.append(item);
   });
-
-  container.append(list);
 }
 
 function playTrack(track) {
