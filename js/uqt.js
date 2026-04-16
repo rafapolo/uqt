@@ -10,7 +10,7 @@ let searchQuery = '';
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
 // Server IP: 89.167.95.136 (proxy runs here, not on GitHub Pages)
-const BASE_URL = 'http://89.167.95.136:9001/uqt';
+const BASE_URL = 'https://xn--2dk.xyz/uqt';
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%232a2620;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%231a1814;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23grad)" width="200" height="200"/%3E%3Ccircle cx="100" cy="100" r="40" fill="none" stroke="%23d4a574" stroke-width="8"/%3E%3Ccircle cx="100" cy="100" r="15" fill="none" stroke="%23d4a574" stroke-width="2"/%3E%3Cpath d="M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60" fill="none" stroke="%23d4a574" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E';
 
 function formatTime(seconds) {
@@ -61,7 +61,7 @@ function getDecades() {
 
 function renderDecadeButtons() {
   const decades = getDecades();
-  const container = u('#decade-buttons');
+  const container = u('#decade-buttons').first();
   container.html(''); // Clear existing buttons
 
   // Add "Todos" (All) button
