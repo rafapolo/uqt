@@ -34,18 +34,12 @@ function formatTime(seconds) {
 }
 
 function loadCoverImage(imgElement, primaryUrl) {
-  imgElement.src = PLACEHOLDER_COVER;
   imgElement.classList.remove('placeholder');
-
-  const tempImg = new Image();
-  tempImg.onload = () => {
-    imgElement.src = primaryUrl;
-  };
-  tempImg.onerror = () => {
+  imgElement.src = primaryUrl;
+  imgElement.onerror = () => {
     imgElement.src = PLACEHOLDER_COVER;
     imgElement.classList.add('placeholder');
   };
-  tempImg.src = primaryUrl;
 }
 
 function buildAlbums() {
@@ -257,6 +251,7 @@ function renderTrackList() {
   const container = document.querySelector('#track-list');
   container.innerHTML = '';
   const tracksPanel = u('.tracks-panel').first();
+  tracksPanel.scrollTop = 0;
 
   if (!selectedAlbum) {
     tracksPanel.classList.add('hidden');
