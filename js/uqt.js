@@ -147,8 +147,13 @@ function updateLibraryStats() {
   const totalAlbums = filteredAlbums.length;
   const totalArtists = new Set(filteredAlbums.map(a => a.artists).filter(a => a && a.length > 0)).size;
 
-  u('#stat-albums').text(`${totalAlbums} álbun${totalAlbums !== 1 ? 's' : ''}`);
-  u('#stat-artists').text(`${totalArtists} artista${totalArtists !== 1 ? 's' : ''}`);
+  const albumsText = `${totalAlbums} álbun${totalAlbums !== 1 ? 's' : ''}`;
+  const artistsText = `${totalArtists} artista${totalArtists !== 1 ? 's' : ''}`;
+
+  u('#stat-albums').text(albumsText);
+  u('#stat-artists').text(artistsText);
+  u('#mobile-stat-albums').text(albumsText);
+  u('#mobile-stat-artists').text(artistsText);
 }
 
 function renderAlbumsList() {

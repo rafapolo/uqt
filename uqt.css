@@ -708,6 +708,7 @@ audio {
 /* Mobile-only elements hidden by default on desktop */
 .mobile-only { display: none; }
 .mobile-track-drawer { display: none; }
+.mobile-header-stats { display: none; }
 
 @media (max-width: 768px) {
   /* Header: compact single row ~44px */
@@ -741,6 +742,26 @@ audio {
 
   .music-count {
     display: none;
+  }
+
+  .mobile-header-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    margin-left: auto;
+  }
+
+  .mobile-header-stats span {
+    font-size: 0.7rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    background: rgba(212, 165, 116, 0.1);
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid var(--color-accent);
   }
 
   /* Layout: album grid takes all available height */
