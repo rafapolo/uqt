@@ -1,6 +1,6 @@
 # 🎵 Acervo UQT
 
-Um arquivo digital em homenagem ao **UQT** com uma coleção curada de **100 anos de Música Popular Brasileira**. **705 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.
+Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleção curada de **100 anos de Música Popular Brasileira**. **705 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.
 
 ## ✨ Características
 
@@ -37,68 +37,17 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 (Flexbox/Grid) + JavaScript vanilla, servido pelo GitHub Pages
 - **Dados**: `js/uqt-albums.js` com o catálogo album-centric (título, ano, path, tracks)
-- **Capas e áudio**: Servidos pelo proxy em `https://uqt.xn--2dk.xyz/uqt/…`; placeholder SVG inline quando não há capa
+- **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
 - **Proxy**: Node.js com o SDK S3 — acessa o bucket privado na Hetzner usando credenciais; o bucket nunca é exposto diretamente ao cliente
 - **Deployment do proxy**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
 - **Fonts**: Playfair Display (títulos) + Inter (corpo)
 
 ### Fluxo de uma requisição
 1. Browser carrega `index.html` e `js/uqt-albums.js` do GitHub Pages
-2. Ao clicar em um álbum, constrói a URL `https://uqt.xn--2dk.xyz/uqt/{path}/{file}`
+2. Ao clicar em um álbum, constrói a URL `https://uqt.ミ.xyz/uqt/{path}/{file}`
 3. Proxy recebe a requisição e faz `GetObject` assinado no bucket `sambaraiz/uqt/{path}/{file}`
 4. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
 
-### Sync para o bucket (macOS)
-Os arquivos locais ficam em `/Volumes/EXTRA/bkps/sambaderaiz/`. O script `sync-to-bucket.js` usa o SDK S3 e só envia o que mudou (compara tamanho).
-
-```bash
-# Credenciais em .env (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
-node sync-to-bucket.js
-```
-
-### Regerar o banco de dados
-Quando arquivos novos são sincronizados, rode o generator. Ele usa `ffprobe` para ler tags ID3 e produz `js/uqt-albums.js`.
-
-```bash
-brew install ffmpeg        # para ffprobe
-ln -s /Volumes/EXTRA/bkps/sambaderaiz unzips   # source dir esperado
-node generate-albums.js
-```
-
-### Deploy do proxy
-```bash
-export AWS_ACCESS_KEY_ID=…
-export AWS_SECRET_ACCESS_KEY=…
-haloy deploy   # lê haloy.yaml, constrói Dockerfile, deploy em uqt.xn--2dk.xyz
-```
-
-## 💡 Dicas de Uso
-
-### Exploração Rápida
-1. Use os **botões de década** para navegar por época
-2. **Clique em qualquer álbum** para ver todas as faixas
-3. Clique em uma faixa para **começar a tocar**
-
-### Busca Avançada
-- Digite nome de artista (ex: "Tom Jobim")
-- Digite parte de um álbum (ex: "Garota")
-- Combine com filtro de década (ex: "1960s" + busca por "Bossa")
-
-### Controls do Player
-- ⏮ **Anterior**: Pula para a faixa anterior do álbum
-- ▶ **Play/Pausa**: Inicia ou pausa o áudio
-- ⏭ **Próxima**: Pula para a próxima faixa
-- **Barra de progresso**: Clique em qualquer ponto para avançar/retroceder
-
-## 🎯 Otimizações de Performance
-
-### Streaming e Deployment
-- **Proxy**: Node.js + S3 SDK em `https://uqt.xn--2dk.xyz/uqt` — bucket privado, GetObject assinado, `Range` suportado para seek/streaming
-- **Deployment**: Haloy + Docker, rolling updates sem downtime
-- **SSL/TLS**: Let's Encrypt automático (Haloy)
-- **Health check**: `/health` retorna `{status, timestamp}`
-- **Zero egress**: proxy e bucket ambos na zona HEL1 da Hetzner
-- **Capas**: URL direta pelo proxy, SVG placeholder inline quando o objeto não existe
 
 ### Frontend
 - Zero dependências pesadas (Umbrella JS, ~2.6KB)
@@ -112,10 +61,29 @@ haloy deploy   # lê haloy.yaml, constrói Dockerfile, deploy em uqt.xn--2dk.xyz
 - **26.910 faixas** indexadas
 - **~100 anos** de MPB (1902–2012)
 - **Período**: Samba, choro, bossa nova, MPB clássica e contemporânea
-
-### Coleção completa (local)
-- **137 GB** em `/Volumes/EXTRA/bkps/sambaderaiz/`
+- **137 GB** em S3 bucket
 - **705 horas** de música
+## 💡 Dicas de Uso
+
+### Exploração Rápida
+1. Use os **botões de década** para navegar por época
+2. **Clique em qualquer álbum** para ver todas as faixas
+3. Clique em uma faixa para **começar a tocar**
+
+### Busca Avançada
+- Digite nome de artista (ex: "Tom Jobim")
+- Digite parte de um álbum (ex: "Garota")
+- Combine com filtro de década (ex: "1960s" + busca por "Bossa")
+
+## 🎯 Otimizações de Performance
+
+### Streaming e Deployment
+- **Proxy**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — bucket privado, GetObject assinado, `Range` suportado para seek/streaming
+- **Deployment**: Haloy + Docker, rolling updates sem downtime
+- **SSL/TLS**: Let's Encrypt automático (Haloy)
+- **Health check**: `/health` retorna `{status, timestamp}`
+- **Zero egress**: proxy e bucket ambos na zona HEL1 da Hetzner
+- **Capas**: URL direta pelo proxy, SVG placeholder inline quando o objeto não existe
 
 ## 🤝 Contribuições
 
