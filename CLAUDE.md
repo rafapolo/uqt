@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Frontend
 - **index.html** — Main web app
 - **js/uqt.js** — Core app logic: album/track rendering, playback control, search/filtering
-- **js/uqt-artists.json** — Metadata database (artists, albums, tracks, years, file paths)
+- **js/uqt-albums.js** — Metadata database (album-centric: title, artist, year, path, tracks)
 - **uqt.css** — Styling
 
 The app loads metadata from the JSON file at page load. Album paths in the JSON map directly to file paths on the audio server.
@@ -30,7 +30,7 @@ The app loads metadata from the JSON file at page load. Album paths in the JSON 
 
 ## Key Technical Notes
 
-- **URL Encoding**: Album paths and filenames are encoded with `encodeURI()` when building URLs in js/uqt.js (lines 74, 78). The proxy forwards encoded paths as-is to S3. S3 stores files with literal spaces (no %20).
+- **URL Encoding**: Album paths and filenames are encoded with `encodeURI()` in `buildAlbums()` in js/uqt.js when constructing `track.file` and `album.cover`. The proxy forwards encoded paths as-is to S3. S3 stores files with literal spaces (no %20).
 - **Cover images**: Served as `capa-min.jpg` (200px wide, ~10KB) resized from original `capa.jpg` via `js/resize-cover-images.js`. All img elements use `loading="lazy"`. SVG placeholder shown when cover missing.
 - **Album selection**: Clicking an album primes the first track (sets `audio.src`, calls `audio.load()`, updates player UI) without auto-playing. Play button starts audio.
 - **CORS**: The proxy adds CORS headers to all responses; app runs cross-origin from haloy.
@@ -103,13 +103,12 @@ Audio files and cover images are synced to the S3 bucket (`your-objectstorage-en
 
 ## Recent Fixes
 
-- **Cover resize upload** (recent): Fixed `resize-cover-images.js` — `findBestCover()` was defined but never called (directory passed to sharp instead of jpg), and `mc mirror` silently swallowed 403s. Rewrote to use AWS SDK directly with proper error surfacing. Also fixed bucket policy to allow PutObject on `uqt/*`.
-- **Auto-play removed** (recent): Album click no longer auto-plays. It primes the first track and updates the player UI; user must press play.
-- **Lazy loading** (recent): All cover `<img>` elements use `loading="lazy"`.
-- **Album-centric restructure** (recent): Changed from artist-keyed to album-keyed data structure. Merged 211 duplicate compilation albums. Replaced `uqt.rb` with `generate-albums.js`.
-- **Double URL encoding** (commit 77f4c03): Removed extra `encodeURI()` call in playback URL construction to prevent %20 → %2520
-- **CORS headers** (commit 1e61623): Ensured CORS headers are included in `writeHead()` response, not just forwarded
-- **Content-Type handling** (commit 6b1040a, 169e531): Proxy now explicitly sets correct MIME types before forwarding response to prevent CORB errors
+- **Mobile rethink**: Compact 44px header; album grid takes full height; `.tracks-panel` hidden on mobile; slide-up track drawer embedded in player bar (☰ toggle); player is a single 64px row.
+- **Player controls**: Shuffle (random next track within album), repeat (`audio.loop`), and volume slider added to desktop player bar. Play button uses SVG icons that swap between play/pause states.
+- **Track artist label**: Track artist shown in gray below track title when it differs from album artist (useful for compilations).
+- **Header stats**: Album/artist counts moved from player bar into header as accent pills, visible on all screen sizes in a single row alongside "705 horas".
+- **Cover resize upload**: Fixed `resize-cover-images.js` — rewrote to use AWS SDK directly with proper error surfacing. Fixed bucket policy to allow PutObject on `uqt/*`.
+- **Album-centric restructure**: Changed from artist-keyed to album-keyed data structure. Merged 211 duplicate compilation albums. Replaced `uqt.rb` with `generate-albums.js`.
 
 ## Troubleshooting
 
