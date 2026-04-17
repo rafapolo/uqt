@@ -196,6 +196,8 @@ function renderAlbumsList() {
       selectedAlbum = album;
       renderAlbumHeader();
       renderTrackList();
+      renderMobileDrawer(album);
+      if (isMobile()) openMobileDrawer();
 
       if (album.tracks.length > 0) {
         const track = album.tracks[0];
@@ -281,6 +283,73 @@ function renderTrackList() {
   });
 }
 
+function isMobile() {
+  return window.matchMedia('(max-width: 768px)').matches;
+}
+
+function openMobileDrawer()   { document.getElementById('mobile-track-drawer')?.classList.add('open'); }
+function closeMobileDrawer()  { document.getElementById('mobile-track-drawer')?.classList.remove('open'); }
+function toggleMobileDrawer() { document.getElementById('mobile-track-drawer')?.classList.toggle('open'); }
+
+function renderMobileDrawer(album) {
+  const titleEl = document.getElementById('drawer-album-title');
+  const metaEl = document.getElementById('drawer-album-meta');
+  const coverEl = document.getElementById('drawer-cover');
+  const listEl = document.getElementById('drawer-track-list');
+
+  if (!album) {
+    if (titleEl) titleEl.textContent = '';
+    if (metaEl) metaEl.textContent = '';
+    if (listEl) listEl.innerHTML = '';
+    return;
+  }
+
+  if (titleEl) titleEl.textContent = album.name;
+  if (metaEl) metaEl.textContent = `${album.artists} · ${album.year} · ${album.tracks.length} faixas`;
+  if (coverEl) loadCoverImage(coverEl, album.cover);
+
+  if (!listEl) return;
+  listEl.innerHTML = '';
+
+  album.tracks.forEach(track => {
+    const item = document.createElement('li');
+    item.className = 'track-item';
+    if (currentTrack === track) item.classList.add('playing');
+
+    item.innerHTML = `
+      <span class="track-num">${track.num}</span>
+      <div class="track-details">
+        <div class="track-title">${track.title}</div>
+      </div>
+      <span class="track-duration">-</span>
+    `;
+
+    item.addEventListener('click', () => {
+      playTrack(track);
+      closeMobileDrawer();
+    });
+
+    listEl.append(item);
+  });
+}
+
+function syncDrawerPlayingState() {
+  const listEl = document.getElementById('drawer-track-list');
+  if (!listEl || !selectedAlbum) return;
+
+  const items = listEl.querySelectorAll('.track-item');
+  selectedAlbum.tracks.forEach((track, index) => {
+    const item = items[index];
+    if (!item) return;
+    if (currentTrack === track) {
+      item.classList.add('playing');
+      item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    } else {
+      item.classList.remove('playing');
+    }
+  });
+}
+
 function safePlay(audio) {
   const p = audio.play();
   if (p && typeof p.catch === 'function') {
@@ -306,6 +375,7 @@ function playTrack(track) {
 
   u('#btn-play').addClass('playing');
   renderTrackList();
+  syncDrawerPlayingState();
 }
 
 function updateNowPlaying() {
@@ -324,6 +394,9 @@ function updateNowPlaying() {
 
   // Load cover with placeholder shown immediately
   loadCoverImage(coverImg, coverUrl);
+
+  const drawerCover = document.getElementById('drawer-cover');
+  if (drawerCover) loadCoverImage(drawerCover, coverUrl);
 }
 
 function playNext() {
@@ -372,6 +445,7 @@ u(document).on('DOMContentLoaded', function () {
     renderAlbumsList(); // Re-render to highlight selected album
     renderAlbumHeader();
     renderTrackList();
+    renderMobileDrawer(albumToSelect);
 
     // Update URL to reflect selected album
     const shareUrl = generateAlbumUrl(albumToSelect);
@@ -433,6 +507,9 @@ u(document).on('DOMContentLoaded', function () {
 
   u('#btn-prev').on('click', playPrevious);
   u('#btn-next').on('click', playNext);
+
+  document.getElementById('drawer-close')?.addEventListener('click', closeMobileDrawer);
+  document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
 
   // Progress bar click
   u('.progress-bar').on('click', function (e) {
