@@ -22,6 +22,28 @@ function generateAlbumUrl(album) {
   return `${window.location.origin}${window.location.pathname}?${params.toString()}`;
 }
 
+function setMeta(attr, key, value) {
+  let el = document.querySelector(`meta[${attr}="${key}"]`);
+  if (!el) { el = document.createElement('meta'); el.setAttribute(attr, key); document.head.appendChild(el); }
+  el.setAttribute('content', value);
+}
+
+function updateMetaTags(album) {
+  const title = `${album.name} — ${album.artists} (${album.year})`;
+  const desc = `Álbum de ${album.artists}, ${album.year}. Ouça no Acervo UQT.`;
+  const image = `${BASE_URL}/${encodeURI(album.path)}/capa-min.jpg`;
+  const url = generateAlbumUrl(album);
+
+  document.title = `${album.name} · Acervo UQT`;
+  setMeta('property', 'og:title', title);
+  setMeta('property', 'og:description', desc);
+  setMeta('property', 'og:image', image);
+  setMeta('property', 'og:url', url);
+  setMeta('name', 'twitter:title', title);
+  setMeta('name', 'twitter:description', desc);
+  setMeta('name', 'twitter:image', image);
+}
+
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
 // Deployed via haloy to haloy.xn--2dk.xyz
@@ -216,6 +238,7 @@ function renderAlbumsList() {
         }
       }
 
+      updateMetaTags(album);
       const shareUrl = generateAlbumUrl(album);
       window.history.pushState({ album: album.path }, '', shareUrl);
     });
@@ -462,7 +485,8 @@ u(document).on('DOMContentLoaded', function () {
     renderTrackList();
     renderMobileDrawer(albumToSelect);
 
-    // Update URL to reflect selected album
+    // Update URL and meta tags to reflect selected album
+    updateMetaTags(albumToSelect);
     const shareUrl = generateAlbumUrl(albumToSelect);
     window.history.replaceState({ album: albumToSelect.path }, '', shareUrl);
   }
