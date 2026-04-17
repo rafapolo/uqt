@@ -6,6 +6,8 @@ let currentTrack = null;
 let activeDecade = null;
 let searchQuery = '';
 let prevActiveItem = null;
+let shuffleOn = false;
+let repeatOn = false;
 
 // Get album ID from URL params
 function getAlbumFromUrl() {
@@ -150,8 +152,6 @@ function updateLibraryStats() {
   const albumsText = `${totalAlbums} álbun${totalAlbums !== 1 ? 's' : ''}`;
   const artistsText = `${totalArtists} artista${totalArtists !== 1 ? 's' : ''}`;
 
-  u('#stat-albums').text(albumsText);
-  u('#stat-artists').text(artistsText);
   u('#mobile-stat-albums').text(albumsText);
   u('#mobile-stat-artists').text(artistsText);
 }
@@ -407,10 +407,14 @@ function updateNowPlaying() {
 function playNext() {
   if (!selectedAlbum || !currentTrack) return;
 
-  const currentIndex = selectedAlbum.tracks.findIndex(t => t.num === currentTrack.num);
-  if (currentIndex < selectedAlbum.tracks.length - 1) {
-    playTrack(selectedAlbum.tracks[currentIndex + 1]);
+  const tracks = selectedAlbum.tracks;
+  if (shuffleOn) {
+    const others = tracks.filter(t => t !== currentTrack);
+    if (others.length > 0) playTrack(others[Math.floor(Math.random() * others.length)]);
+    return;
   }
+  const currentIndex = tracks.findIndex(t => t.num === currentTrack.num);
+  if (currentIndex < tracks.length - 1) playTrack(tracks[currentIndex + 1]);
 }
 
 function playPrevious() {
@@ -515,6 +519,26 @@ u(document).on('DOMContentLoaded', function () {
 
   document.getElementById('drawer-close')?.addEventListener('click', closeMobileDrawer);
   document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
+
+  const btnShuffle = document.getElementById('btn-shuffle');
+  btnShuffle?.addEventListener('click', () => {
+    shuffleOn = !shuffleOn;
+    btnShuffle.classList.toggle('active', shuffleOn);
+  });
+
+  const btnRepeat = document.getElementById('btn-repeat');
+  btnRepeat?.addEventListener('click', () => {
+    repeatOn = !repeatOn;
+    audio.loop = repeatOn;
+    btnRepeat.classList.toggle('active', repeatOn);
+  });
+
+  const volumeSlider = document.getElementById('volume-slider');
+  volumeSlider?.addEventListener('input', () => {
+    audio.volume = parseFloat(volumeSlider.value);
+    document.getElementById('volume-wave').style.display =
+      parseFloat(volumeSlider.value) === 0 ? 'none' : '';
+  });
 
   // Progress bar click
   u('.progress-bar').on('click', function (e) {
