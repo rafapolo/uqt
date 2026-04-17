@@ -272,10 +272,13 @@ function renderTrackList() {
     item.className = 'track-item';
     if (currentTrack === track) item.classList.add('playing');
 
+    const artistLabel = track.artists && track.artists !== selectedAlbum.artists
+      ? `<div class="track-artist">${track.artists}</div>` : '';
     item.innerHTML = `
       <span class="track-num">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
+        ${artistLabel}
       </div>
       <span class="track-duration">-</span>
     `;
@@ -321,10 +324,13 @@ function renderMobileDrawer(album) {
     item.className = 'track-item';
     if (currentTrack === track) item.classList.add('playing');
 
+    const artistLabel = track.artists && track.artists !== album.artists
+      ? `<div class="track-artist">${track.artists}</div>` : '';
     item.innerHTML = `
       <span class="track-num">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
+        ${artistLabel}
       </div>
       <span class="track-duration">-</span>
     `;
