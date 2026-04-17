@@ -1,20 +1,18 @@
 #!/usr/bin/env node
 /**
- * Create resized covers locally and upload via mc mirror (new files only)
+ * Create resized covers and upload directly to S3 via AWS SDK.
  * Usage: node js/resize-cover-images.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 const sharp = require('sharp');
+const { S3Client, PutObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3');
 
 const S3_BUCKET = 'sambaraiz';
 const S3_REGION = 'hel1';
 const TARGET_WIDTH = 200;
 const SOURCE_DIR = '/Volumes/EXTRA/bkps/sambaderaiz';
-const TEMP_DIR = path.join(require('os').tmpdir(), 'uqt-covers-resize');
-const MC_ALIAS = 'hel1';
 
 function loadEnv(file = '.env') {
   const envPath = path.resolve(__dirname, '..', file);
@@ -28,35 +26,26 @@ function loadEnv(file = '.env') {
 }
 loadEnv();
 
-function setupMc() {
-  try {
-    execSync(`mc alias ls ${MC_ALIAS}/${S3_BUCKET} 2>/dev/null`, { stdio: 'pipe' });
-  } catch {
-    const ak = process.env.AWS_ACCESS_KEY_ID;
-    const sk = process.env.AWS_SECRET_ACCESS_KEY;
-    execSync(`mc alias set ${MC_ALIAS} https://${S3_REGION}.your-objectstorage.com "${ak}" "${sk}"`, { stdio: 'pipe' });
-  }
-}
-setupMc();
+const ak = process.env.AWS_ACCESS_KEY_ID;
+const sk = process.env.AWS_SECRET_ACCESS_KEY;
+if (!ak || !sk) throw new Error('AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY not set in .env');
+
+const s3 = new S3Client({
+  endpoint: `https://${S3_REGION}.your-objectstorage.com`,
+  region: S3_REGION,
+  credentials: { accessKeyId: ak, secretAccessKey: sk },
+  forcePathStyle: true,
+});
 
 function findJpgFiles(dir) {
   const covers = [];
   if (!fs.existsSync(dir)) return covers;
-
-  const items = fs.readdirSync(dir);
-  for (const item of items) {
+  for (const item of fs.readdirSync(dir)) {
     const fullPath = path.join(dir, item);
     const stat = fs.statSync(fullPath);
-
-    if (stat.isDirectory()) {
-      const subCovers = findJpgFiles(fullPath);
-      covers.push(...subCovers);
-    } else {
-      const ext = path.extname(item).toLowerCase();
-      if (ext === '.jpg' || ext === '.jpeg') {
-        covers.push({ path: fullPath, size: stat.size });
-      }
-    }
+    if (stat.isDirectory()) covers.push(...findJpgFiles(fullPath));
+    else if (['.jpg', '.jpeg'].includes(path.extname(item).toLowerCase()))
+      covers.push({ path: fullPath, size: stat.size });
   }
   return covers;
 }
@@ -72,16 +61,20 @@ function normalizeAlbumPath(folderName) {
   return folderName.replace(/_/g, ' ');
 }
 
-async function resizeAndSave(coverPath, albumPath) {
-  const buffer = await sharp(coverPath)
-    .resize(TARGET_WIDTH, null, { withoutEnlargement: true, fit: 'inside' })
-    .jpeg({ quality: 80 })
-    .toBuffer();
+async function s3Exists(key) {
+  try {
+    await s3.send(new HeadObjectCommand({ Bucket: S3_BUCKET, Key: key }));
+    return true;
+  } catch { return false; }
+}
 
-  const destPath = path.join(TEMP_DIR, albumPath, 'capa-min.jpg');
-  fs.mkdirSync(path.dirname(destPath), { recursive: true });
-  fs.writeFileSync(destPath, buffer);
-  return buffer.length;
+async function uploadToS3(buffer, key) {
+  await s3.send(new PutObjectCommand({
+    Bucket: S3_BUCKET,
+    Key: key,
+    Body: buffer,
+    ContentType: 'image/jpeg',
+  }));
 }
 
 async function main() {
@@ -92,99 +85,82 @@ async function main() {
   const albums = db.albums;
   console.log(`Found ${albums.length} albums in database\n`);
 
-  // Build cover map
   console.log('Scanning source for covers...');
   const coverMap = new Map();
   function scanForCovers(dir) {
-    const items = fs.readdirSync(dir);
-    for (const item of items) {
+    for (const item of fs.readdirSync(dir)) {
       const fullPath = path.join(dir, item);
       const stat = fs.statSync(fullPath);
       if (stat.isDirectory()) {
-        const folderName = path.basename(fullPath);
-        const normalizedFolder = normalizeAlbumPath(folderName);
-        if (!coverMap.has(normalizedFolder) || stat.size > coverMap.get(normalizedFolder).size) {
+        const normalizedFolder = normalizeAlbumPath(path.basename(fullPath));
+        if (!coverMap.has(normalizedFolder) || stat.size > coverMap.get(normalizedFolder).size)
           coverMap.set(normalizedFolder, { path: fullPath, size: stat.size });
-        }
         scanForCovers(fullPath);
       }
     }
   }
   scanForCovers(SOURCE_DIR);
-  console.log(`Found ${coverMap.size} cover images\n`);
+  console.log(`Found ${coverMap.size} album folders with covers\n`);
 
-  if (fs.existsSync(TEMP_DIR)) fs.rmSync(TEMP_DIR, { recursive: true });
-  fs.mkdirSync(TEMP_DIR, { recursive: true });
-
-  let processed = 0;
-  let skipped = 0;
-  let totalOriginal = 0;
-  let totalResized = 0;
+  let processed = 0, skipped = 0, alreadyExists = 0, errors = 0;
+  let totalOriginal = 0, totalResized = 0;
 
   for (const album of albums) {
     const s3Path = album.path;
-    let coverPath = null;
+    const s3Key = `uqt/${s3Path}/capa-min.jpg`;
+    let coverDir = null;
 
-    // Try exact match first
     if (coverMap.has(s3Path)) {
-      coverPath = coverMap.get(s3Path).path;
+      coverDir = coverMap.get(s3Path).path;
     } else {
-      // Fuzzy match
       const s3Words = s3Path.toLowerCase().split(/\s+/);
       for (const [srcPath, coverInfo] of coverMap) {
         const srcWords = srcPath.toLowerCase().split(/\s+/);
         const matches = s3Words.filter(w => w.length > 2 && srcWords.includes(w)).length;
-        if (matches >= 2) { coverPath = coverInfo.path; break; }
+        if (matches >= 2) { coverDir = coverInfo.path; break; }
       }
     }
 
-    if (!coverPath) { skipped++; continue; }
+    if (!coverDir) { skipped++; continue; }
 
-    const jpgPath = findBestCover(coverPath);
+    const jpgPath = findBestCover(coverDir);
     if (!jpgPath) { skipped++; continue; }
+
+    // Skip if already uploaded
+    if (await s3Exists(s3Key)) { alreadyExists++; continue; }
 
     const originalSize = fs.statSync(jpgPath).size;
     totalOriginal += originalSize;
 
     try {
-      const newSize = await resizeAndSave(jpgPath, s3Path);
-      totalResized += newSize;
+      const buffer = await sharp(jpgPath)
+        .resize(TARGET_WIDTH, null, { withoutEnlargement: true, fit: 'inside' })
+        .jpeg({ quality: 80 })
+        .toBuffer();
+
+      await uploadToS3(buffer, s3Key);
+      totalResized += buffer.length;
       processed++;
-      if (processed <= 30) {
-        console.log(`  OK: ${s3Path}`);
-        console.log(`      ${(originalSize/1024).toFixed(1)}KB → ${(newSize/1024).toFixed(1)}KB`);
-      } else if (processed === 31) {
-        console.log(`  ... (more ${albums.length - processed} covers)`);
-      }
+      if (processed <= 30)
+        console.log(`  OK: ${s3Path} (${(originalSize/1024).toFixed(1)}KB → ${(buffer.length/1024).toFixed(1)}KB)`);
+      else if (processed === 31)
+        console.log(`  ... (showing first 30)`);
     } catch (e) {
-      console.log(`  ERROR: ${s3Path}`);
+      console.error(`  ERROR: ${s3Path}: ${e.name} ${e.message}`);
+      errors++;
     }
   }
 
   console.log(`\n=== Summary ===`);
-  console.log(`Processed: ${processed}`);
-  console.log(`Skipped: ${skipped}`);
-  console.log(`Original: ${(totalOriginal/1024/1024).toFixed(1)} MB`);
-  console.log(`Resized: ${(totalResized/1024/1024).toFixed(1)} MB`);
-  console.log(`Saved: ${((totalOriginal-totalResized)/1024/1024).toFixed(1)} MB`);
-
-  if (processed === 0) {
-    console.log(`\nNo covers to upload.`);
-    fs.rmSync(TEMP_DIR, { recursive: true });
-    return;
+  console.log(`Uploaded:      ${processed}`);
+  console.log(`Already exist: ${alreadyExists}`);
+  console.log(`Skipped:       ${skipped} (no source cover found)`);
+  console.log(`Errors:        ${errors}`);
+  if (processed > 0) {
+    console.log(`Original:      ${(totalOriginal/1024/1024).toFixed(1)} MB`);
+    console.log(`Resized:       ${(totalResized/1024/1024).toFixed(1)} MB`);
+    console.log(`Saved:         ${((totalOriginal-totalResized)/1024/1024).toFixed(1)} MB`);
   }
-
-  console.log(`\n=== Uploading to S3 ===`);
-  console.log(`Mirroring ${TEMP_DIR} to ${MC_ALIAS}/${S3_BUCKET}/uqt/`);
-
-  try {
-    execSync(`mc mirror "${TEMP_DIR}/" "${MC_ALIAS}/${S3_BUCKET}/uqt/"`, { stdio: 'inherit' });
-    console.log(`\n✅ Upload complete!`);
-  } catch (e) {
-    console.log(`Upload failed`);
-  }
-
-  fs.rmSync(TEMP_DIR, { recursive: true });
 }
 
 main().catch(err => {
