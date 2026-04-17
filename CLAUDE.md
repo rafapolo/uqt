@@ -89,7 +89,7 @@ Requires `HALOY_API_TOKEN` env var. Deploys proxy.js + Dockerfile to haloy.xn--2
 
 Audio files and cover images are synced to the S3 bucket (`your-objectstorage-endpoint/sambaraiz/uqt/`). This is an ongoing process. Until files are fully synced, audio playback will return 404. Expected paths are:
 - `sambaraiz/uqt/{album_path}/{track_file}` (e.g., `sambaraiz/uqt/2009 - Artist - Album/01 Track.mp3`)
-- `sambaraiz/uqt/{album_path}/capa.jpg` (cover image)
+- `sambaraiz/uqt/{album_path}/capa-min.jpg` (cover image, resized 200px width)
 
 ## Recent Fixes
 

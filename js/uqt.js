@@ -54,7 +54,7 @@ function buildAlbums() {
     artists: album.artist,
     year: album.year,
     path: album.path,
-    cover: `${BASE_URL}/${encodeURI(album.path)}/capa.jpg`,
+    cover: `${BASE_URL}/${encodeURI(album.path)}/capa-min.jpg`,
     tracks: album.tracks.map(track => ({
       title: track.title,
       num: track.num,
@@ -193,12 +193,7 @@ function renderAlbumsList() {
     item.append(cover, info);
 
     item.addEventListener('click', () => {
-      if (selectedAlbum === album) {
-        if (!currentTrack && album.tracks.length > 0) {
-          playTrack(album.tracks[0]);
-        }
-        return;
-      }
+      if (selectedAlbum === album) return;
 
       if (prevActiveItem) prevActiveItem.classList.remove('active');
       item.classList.add('active');
@@ -209,10 +204,17 @@ function renderAlbumsList() {
       renderTrackList();
 
       if (album.tracks.length > 0) {
-        playTrack(album.tracks[0]);
+        const track = album.tracks[0];
+        currentTrack = track;
+        updateNowPlaying();
+        const audio = u('#audio').first();
+        const newSrc = `${BASE_URL}/${track.file}`;
+        if (audio.src !== newSrc) {
+          audio.src = newSrc;
+          audio.load();
+        }
       }
 
-      // Update URL when album is selected
       const shareUrl = generateAlbumUrl(album);
       window.history.pushState({ album: album.path }, '', shareUrl);
     });
@@ -318,7 +320,7 @@ function updateNowPlaying() {
   u('#player-artist').text(currentTrack.artists);
 
   const folder = currentTrack.file.split('/')[0];
-  const coverUrl = `${BASE_URL}/${folder}/capa.jpg`;
+  const coverUrl = `${BASE_URL}/${folder}/capa-min.jpg`;
   const coverImg = u('#player-cover').first();
 
   if (!coverImg) return;
@@ -427,6 +429,7 @@ u(document).on('DOMContentLoaded', function () {
         }
       } else {
         safePlay(audio);
+        u('#btn-play').addClass('playing');
       }
     } else {
       audio.pause();
