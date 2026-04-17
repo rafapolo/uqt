@@ -578,15 +578,21 @@ body {
 }
 
 .btn-play {
-  font-size: 1.4rem;
-  padding: var(--spacing-sm);
-  padding-left: 19px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
   color: var(--color-bg);
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
+
+.icon-play, .icon-pause { display: flex; pointer-events: none; }
+.btn-play .icon-pause { display: none; }
+.btn-play.playing .icon-play { display: none; }
+.btn-play.playing .icon-pause { display: flex; }
 
 .btn-play:hover {
   background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
@@ -823,16 +829,12 @@ audio {
   }
 
   .player-controls {
-    flex: 0 0 auto;
+    flex: 1;
     flex-direction: row;
     gap: 4px;
     width: auto;
     align-items: center;
-  }
-
-  /* Progress bar hidden — too cramped in single row */
-  .progress-container {
-    display: none;
+    min-width: 0;
   }
 
   .controls-buttons {
@@ -849,7 +851,6 @@ audio {
   .btn-play {
     width: 36px;
     height: 36px;
-    font-size: 1.2rem;
   }
 
   /* Library stats: hidden on mobile */
