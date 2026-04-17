@@ -20,3 +20,9 @@ build/
 
 # Node
 node_modules/
+
+# Local-only claude-code state
+.claude/
+
+# Local symlink to MP3 source dir for generate-albums.js
+unzips

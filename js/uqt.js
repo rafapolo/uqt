@@ -23,7 +23,7 @@ function generateAlbumUrl(album) {
 // Base URL for audio streaming via proxy (zero-egress, no surprise charges)
 // The proxy forwards to Hetzner bucket, both in HEL1 zone = free transfer
 // Deployed via haloy to haloy.xn--2dk.xyz
-const BASE_URL = 'https://haloy.xn--2dk.xyz/uqt';
+const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%232a2620;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%231a1814;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23grad)" width="200" height="200"/%3E%3Ccircle cx="100" cy="100" r="40" fill="none" stroke="%23d4a574" stroke-width="8"/%3E%3Ccircle cx="100" cy="100" r="15" fill="none" stroke="%23d4a574" stroke-width="2"/%3E%3Cpath d="M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60" fill="none" stroke="%23d4a574" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E';
 
 function formatTime(seconds) {
@@ -33,28 +33,17 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-function loadCoverImage(imgElement, primaryUrl, fallbackUrl = '/capa.jpg') {
-  // Show placeholder immediately to avoid blank space
+function loadCoverImage(imgElement, primaryUrl) {
   imgElement.src = PLACEHOLDER_COVER;
   imgElement.classList.remove('placeholder');
 
-  // Pre-load the actual cover image
   const tempImg = new Image();
   tempImg.onload = () => {
     imgElement.src = primaryUrl;
   };
   tempImg.onerror = () => {
-    // Primary failed, try fallback
-    const fallbackImg = new Image();
-    fallbackImg.onload = () => {
-      imgElement.src = fallbackUrl;
-    };
-    fallbackImg.onerror = () => {
-      // Fallback also failed, keep placeholder
-      imgElement.src = PLACEHOLDER_COVER;
-      imgElement.classList.add('placeholder');
-    };
-    fallbackImg.src = fallbackUrl;
+    imgElement.src = PLACEHOLDER_COVER;
+    imgElement.classList.add('placeholder');
   };
   tempImg.src = primaryUrl;
 }
@@ -364,17 +353,10 @@ u(document).on('DOMContentLoaded', function () {
     window.history.replaceState({ album: albumToSelect.path }, '', shareUrl);
   }
 
-  // Initialize player cover with default image
   const playerCover = u('#player-cover').first();
   if (playerCover && !playerCover.src) {
-    playerCover.src = '/capa.jpg';
-    playerCover.onerror = function() {
-      if (this.src !== PLACEHOLDER_COVER) {
-        this.src = PLACEHOLDER_COVER;
-        this.classList.add('placeholder');
-        this.onerror = null;
-      }
-    };
+    playerCover.src = PLACEHOLDER_COVER;
+    playerCover.classList.add('placeholder');
   }
 
   // Audio element
@@ -388,9 +370,10 @@ u(document).on('DOMContentLoaded', function () {
     u('#btn-play').removeClass('playing');
   });
 
+  const progressFill = document.querySelector('#progress-fill');
   audio.addEventListener('timeupdate', () => {
     const percent = (audio.currentTime / audio.duration) * 100 || 0;
-    u('#progress-fill').css('width', percent + '%');
+    progressFill.style.width = percent + '%';
     u('#time-current').text(formatTime(audio.currentTime));
   });
 
