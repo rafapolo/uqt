@@ -6,4 +6,11 @@ api_token:
 port: 9001
 health_check_path: /health
 domains:
-  - domain: "haloy.xn--2dk.xyz"
+  - domain: "uqt.xn--2dk.xyz"
+env:
+  - name: AWS_ACCESS_KEY_ID
+    from:
+      env: AWS_ACCESS_KEY_ID
+  - name: AWS_SECRET_ACCESS_KEY
+    from:
+      env: AWS_SECRET_ACCESS_KEY
