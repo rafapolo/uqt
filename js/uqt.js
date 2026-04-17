@@ -105,9 +105,9 @@ function renderDecadeButtons() {
   decades.forEach(decade => {
     const btn = document.createElement('button');
     btn.className = 'decade-btn';
-    btn.textContent = `${decade}`;
+    btn.textContent = decade === 0 ? '∞' : `${decade}`;
     btn.dataset.decade = decade;
-    btn.title = `${decade}–${decade + 9}`;
+    btn.title = decade === 0 ? 'Sem data' : `${decade}–${decade + 9}`;
 
     btn.addEventListener('click', () => {
       const decadeNum = parseInt(btn.dataset.decade);
