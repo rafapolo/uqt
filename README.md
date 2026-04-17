@@ -85,6 +85,8 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 - **Zero egress**: proxy e bucket ambos na zona HEL1 da Hetzner
 - **Capas**: URL direta pelo proxy, SVG placeholder inline quando o objeto não existe
 
+Ver [Setup do Proxy](PROXY_SETUP.md)
+
 ## 🤝 Contribuições
 
 Este é um projeto de arquivo/homenagem. Para sugerir melhorias:

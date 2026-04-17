@@ -571,6 +571,7 @@ body {
 .btn-play {
   font-size: 1.4rem;
   padding: var(--spacing-sm);
+  padding-left: 19px;
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
   color: var(--color-bg);
   border-radius: 50%;

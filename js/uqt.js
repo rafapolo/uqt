@@ -173,6 +173,7 @@ function renderAlbumsList() {
     const cover = document.createElement('img');
     cover.className = 'album-cover-thumb';
     cover.alt = album.name;
+    cover.loading = 'lazy';
 
     // Load cover with placeholder shown immediately
     loadCoverImage(cover, album.cover);
@@ -192,7 +193,12 @@ function renderAlbumsList() {
     item.append(cover, info);
 
     item.addEventListener('click', () => {
-      if (selectedAlbum === album) return; // No change, skip re-render
+      if (selectedAlbum === album) {
+        if (!currentTrack && album.tracks.length > 0) {
+          playTrack(album.tracks[0]);
+        }
+        return;
+      }
 
       if (prevActiveItem) prevActiveItem.classList.remove('active');
       item.classList.add('active');
@@ -201,6 +207,10 @@ function renderAlbumsList() {
       selectedAlbum = album;
       renderAlbumHeader();
       renderTrackList();
+
+      if (album.tracks.length > 0) {
+        playTrack(album.tracks[0]);
+      }
 
       // Update URL when album is selected
       const shareUrl = generateAlbumUrl(album);
@@ -222,6 +232,7 @@ function renderAlbumHeader() {
   const cover = document.createElement('img');
   cover.className = 'album-cover-large';
   cover.alt = selectedAlbum.name;
+  cover.loading = 'lazy';
 
   // Load cover with placeholder shown immediately
   loadCoverImage(cover, selectedAlbum.cover);
@@ -311,6 +322,8 @@ function updateNowPlaying() {
   const coverImg = u('#player-cover').first();
 
   if (!coverImg) return;
+
+  coverImg.loading = 'lazy';
 
   // Load cover with placeholder shown immediately
   loadCoverImage(coverImg, coverUrl);
@@ -402,12 +415,16 @@ u(document).on('DOMContentLoaded', function () {
 
   u('#btn-play').on('click', function () {
     if (audio.paused) {
-      if (!currentTrack && filteredAlbums.length > 0) {
-        selectedAlbum = filteredAlbums[0];
-        renderAlbumsList();
-        renderAlbumHeader();
-        renderTrackList();
-        playTrack(selectedAlbum.tracks[0]);
+      if (!currentTrack) {
+        if (selectedAlbum && selectedAlbum.tracks.length > 0) {
+          playTrack(selectedAlbum.tracks[0]);
+        } else if (filteredAlbums.length > 0) {
+          selectedAlbum = filteredAlbums[0];
+          renderAlbumsList();
+          renderAlbumHeader();
+          renderTrackList();
+          playTrack(selectedAlbum.tracks[0]);
+        }
       } else {
         safePlay(audio);
       }
