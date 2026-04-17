@@ -7,7 +7,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ### 🎨 Interface Spotify-Style Grid
 - **Grid de álbuns central**: Grade responsiva de capas de álbuns como foco principal
 - **Painel de faixas lateral**: Clique em um álbum para exibir capa grande (160px), info e lista de faixas
-- **Auto-seleção**: Primeiro álbum selecionado automaticamente ao carregar
+- **Capas lazy-loaded**: 2.087 capas em `capa-min.jpg` (200px, ~10KB) carregadas sob demanda — sem impacto no carregamento inicial
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
@@ -22,6 +22,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Mobile**: Painéis empilhados com player sempre visível no rodapé
 
 ### 🎼 Funcionalidades de Áudio
+- **Seleção intencional**: Clique em um álbum para carregá-lo no player — o áudio só começa ao pressionar play
 - **Auto-play da próxima**: Continua automaticamente para a próxima faixa ao final
 - **Controle de progresso**: Clique na barra para pular para qualquer ponto
 - **Barra de progresso visual**: Acompanhe o tempo em tempo real
@@ -79,11 +80,12 @@ Nenhuma instalação necessária — acesse direto no navegador, em qualquer dis
 
 ### Streaming e Deployment
 - **Proxy**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — bucket privado, GetObject assinado, `Range` suportado para seek/streaming
+- **Capas**: `capa-min.jpg` (200px wide, 80% quality) — 159MB → 21.8MB vs originais; geradas por `js/resize-cover-images.js` com upload direto via AWS SDK
+- **Lazy loading**: `loading="lazy"` em todas as capas — zero impacto no carregamento inicial
 - **Deployment**: Haloy + Docker, rolling updates sem downtime
 - **SSL/TLS**: Let's Encrypt automático (Haloy)
 - **Health check**: `/health` retorna `{status, timestamp}`
 - **Zero egress**: proxy e bucket ambos na zona HEL1 da Hetzner
-- **Capas**: URL direta pelo proxy, SVG placeholder inline quando o objeto não existe
 
 Ver [Setup do Proxy](PROXY_SETUP.md)
 
