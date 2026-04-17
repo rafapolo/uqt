@@ -62,7 +62,7 @@ async function handleObject(req, res, key) {
   } catch (err) {
     const code = err.$metadata?.httpStatusCode ?? 500;
     console.error(`[${code}] ${req.method} ${key}: ${err.name}`);
-    res.writeHead(code, { 'Content-Type': 'text/plain', ...corsHeaders });
+    res.writeHead(code, { 'Content-Type': 'application/octet-stream', ...corsHeaders });
     res.end(`${err.name}: ${err.message}`);
   }
 }
