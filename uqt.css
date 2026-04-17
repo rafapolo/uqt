@@ -121,7 +121,16 @@ body {
   text-transform: uppercase;
 }
 
-.music-count {
+.header-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.music-count,
+.header-stats span {
   font-size: 0.8rem;
   color: var(--color-accent);
   font-weight: 600;
@@ -708,7 +717,6 @@ audio {
 /* Mobile-only elements hidden by default on desktop */
 .mobile-only { display: none; }
 .mobile-track-drawer { display: none; }
-.mobile-header-stats { display: none; }
 
 @media (max-width: 768px) {
   /* Header: compact single row ~44px */
@@ -740,28 +748,15 @@ audio {
     display: none;
   }
 
-  .music-count {
-    display: none;
-  }
-
-  .mobile-header-stats {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 2px;
+  .header-stats {
     margin-left: auto;
+    gap: 4px;
   }
 
-  .mobile-header-stats span {
-    font-size: 0.7rem;
-    color: var(--color-accent);
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    background: rgba(212, 165, 116, 0.1);
-    padding: 2px 8px;
-    border-radius: 20px;
-    border: 1px solid var(--color-accent);
+  .music-count,
+  .header-stats span {
+    font-size: 0.68rem;
+    padding: 2px 7px;
   }
 
   /* Layout: album grid takes all available height */
