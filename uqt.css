@@ -841,6 +841,21 @@ audio {
     display: none;
   }
 
+  /* Decade buttons: compact */
+  .decade-btn {
+    padding: 4px 8px;
+    font-size: 0.78rem;
+  }
+
+  .decade-buttons {
+    gap: 4px;
+    margin-top: 6px;
+  }
+
+  .filters-section {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
   /* Tracklist toggle button: visible on mobile */
   .mobile-only {
     display: flex;
