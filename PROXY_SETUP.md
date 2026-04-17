@@ -38,7 +38,7 @@ curl -I https://uqt.ミ.xyz/health
 curl -I https://uqt.ミ.xyz/uqt/
 # 404 (empty key), but with CORS + Cache-Control headers present
 
-curl -I "https://uqt.ミ.xyz/uqt/<album%20path>/capa.jpg"
+curl -I "https://uqt.ミ.xyz/uqt/<album%20path>/capa-min.jpg"
 # 200 OK, Content-Type: image/jpeg, Access-Control-Allow-Origin: *
 ```
 
