@@ -655,26 +655,64 @@ body {
   opacity: 1;
 }
 
-/* Library Stats */
+/* Library Stats / Player Extra Controls */
 .library-stats {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xs);
   align-items: center;
   flex-shrink: 0;
   padding-left: var(--spacing-lg);
   border-left: 1px solid var(--color-border);
 }
 
-.library-stats span {
-  font-size: 0.8rem;
-  color: var(--color-text-secondary);
-  font-weight: 500;
-  white-space: nowrap;
+.btn-extra {
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
 }
 
-.library-stats span strong {
+.btn-extra:hover {
+  color: var(--color-text);
+}
+
+.btn-extra.active {
   color: var(--color-accent);
-  font-weight: 600;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 4px;
+  color: var(--color-text-muted);
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-border);
+  outline: none;
+  cursor: pointer;
+  accent-color: var(--color-accent);
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
 }
 
 /* Audio Element */
