@@ -273,13 +273,28 @@ function renderTrackList() {
   });
 }
 
+function safePlay(audio) {
+  const p = audio.play();
+  if (p && typeof p.catch === 'function') {
+    p.catch(err => {
+      if (err.name !== 'AbortError' && err.name !== 'NotAllowedError') {
+        console.error('audio.play() failed:', err);
+      }
+    });
+  }
+}
+
 function playTrack(track) {
   currentTrack = track;
   updateNowPlaying();
 
   const audio = u('#audio').first();
-  audio.src = `${BASE_URL}/${track.file}`;
-  audio.play();
+  const newSrc = `${BASE_URL}/${track.file}`;
+  if (audio.src !== newSrc) {
+    audio.src = newSrc;
+    audio.load();
+  }
+  safePlay(audio);
 
   u('#btn-play').addClass('playing');
   renderTrackList();
@@ -385,7 +400,6 @@ u(document).on('DOMContentLoaded', function () {
     playNext();
   });
 
-  // Control buttons
   u('#btn-play').on('click', function () {
     if (audio.paused) {
       if (!currentTrack && filteredAlbums.length > 0) {
@@ -395,7 +409,7 @@ u(document).on('DOMContentLoaded', function () {
         renderTrackList();
         playTrack(selectedAlbum.tracks[0]);
       } else {
-        audio.play();
+        safePlay(audio);
       }
     } else {
       audio.pause();
