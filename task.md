@@ -1,3 +1,0 @@
-- use lazy load for images, its ridiculous that first load grabs 124 MB resources in capa.jpg + consider a resize on bucket images to the image of the ux
-- do a better mobile version so header and player are much smaller and we can have the smaller album grid navigation and not the track list - it would be embeded on current player jus current tracks.
-- rethink mobile version
