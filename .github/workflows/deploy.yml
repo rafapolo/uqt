@@ -34,6 +34,7 @@ jobs:
           bunx esbuild js/uqt.js  --bundle=false --minify --outfile=dist/js/uqt.js
           bunx esbuild uqt.css    --bundle=false --minify --outfile=dist/uqt.css
           cp index.html dist/
+          cp 3d.html dist/
           cp js/uqt-albums.json.gz dist/js/
 
       - uses: actions/upload-pages-artifact@v3
