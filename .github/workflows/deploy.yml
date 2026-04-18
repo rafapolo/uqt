@@ -14,24 +14,25 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - uses: oven-sh/setup-bun@v2
 
       - name: Install
-        run: npm ci
+        run: bun install
 
       - name: Minify
         run: |
           mkdir -p dist/js
-          npx esbuild js/uqt.js  --bundle=false --minify --outfile=dist/js/uqt.js
-          npx esbuild uqt.css    --bundle=false --minify --outfile=dist/uqt.css
+          bunx esbuild js/uqt.js  --bundle=false --minify --outfile=dist/js/uqt.js
+          bunx esbuild uqt.css    --bundle=false --minify --outfile=dist/uqt.css
           cp index.html dist/
           cp js/uqt-albums.json.gz dist/js/
 
