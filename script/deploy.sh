@@ -95,13 +95,15 @@ fi
 echo ""
 echo "3️⃣  Syncing files to Hetzner bucket..."
 
-export AWS_ACCESS_KEY_ID="REDACTED_ACCESS_KEY_ID"
-export AWS_SECRET_ACCESS_KEY="REDACTED_SECRET_ACCESS_KEY"
+# Load credentials from .env (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_ENDPOINT)
+if [ -f .env ]; then
+  set -a; source .env; set +a
+fi
 
 # Test connectivity
 echo "  Testing bucket access..."
 aws s3 ls s3://sambaraiz/uqt/ \
-  --endpoint-url https://your-region.your-objectstorage.com \
+  --endpoint-url "$S3_ENDPOINT" \
   --region hel1 2>/dev/null | head -1 > /dev/null && echo "  ✅ Bucket accessible" || {
   echo "  ⚠️  Bucket may be unreachable, continuing anyway..."
 }
@@ -109,13 +111,13 @@ aws s3 ls s3://sambaraiz/uqt/ \
 # Sync JSON
 echo "  Uploading JSON..."
 aws s3 cp js/uqt.json s3://sambaraiz/uqt/uqt.json \
-  --endpoint-url https://your-region.your-objectstorage.com \
+  --endpoint-url "$S3_ENDPOINT" \
   --region hel1 && echo "  ✅ JSON uploaded" || echo "  ⚠️  JSON upload failed"
 
 # Sync all files to bucket using mc
 echo "  Syncing files to bucket..."
 if ! mc alias list hel1 &>/dev/null; then
-  mc alias set hel1 https://your-region.your-objectstorage.com "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
+  mc alias set hel1 "$S3_ENDPOINT" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
 fi
 mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/sambaraiz/uqt/ --overwrite 2>&1 || {
   echo "  ⚠️  Some files failed to sync, continuing..."
@@ -125,11 +127,11 @@ mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/sambaraiz/uqt/ --overwrite 2>&
 echo ""
 echo "4️⃣  Bucket statistics:"
 TOTAL=$(aws s3 ls s3://sambaraiz/uqt/ \
-  --endpoint-url https://your-region.your-objectstorage.com \
+  --endpoint-url "$S3_ENDPOINT" \
   --region hel1 \
   --recursive 2>/dev/null | wc -l)
 COVERS=$(aws s3 ls s3://sambaraiz/uqt/ \
-  --endpoint-url https://your-region.your-objectstorage.com \
+  --endpoint-url "$S3_ENDPOINT" \
   --region hel1 \
   --recursive 2>/dev/null | grep '.jpg$' | wc -l)
 

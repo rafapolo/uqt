@@ -11,7 +11,7 @@ const { Upload } = require('@aws-sdk/lib-storage');
 const LOCAL_DIR  = '/Volumes/EXTRA/bkps/sambaderaiz';
 const BUCKET     = 'sambaraiz';
 const PREFIX     = 'uqt/';
-const ENDPOINT   = 'https://your-region.your-objectstorage.com';
+const ENDPOINT   = process.env.S3_ENDPOINT;
 const CONCURRENCY = 20;
 
 // ── Load .env ─────────────────────────────────────────────────────────────────

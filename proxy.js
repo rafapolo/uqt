@@ -10,7 +10,7 @@ const BUCKET = 'sambaraiz';
 const PORT = 9001;
 
 const s3 = new S3Client({
-  endpoint: 'https://your-region.your-objectstorage.com',
+  endpoint: process.env.S3_ENDPOINT,
   region: 'hel1',
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
