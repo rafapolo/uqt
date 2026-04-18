@@ -21,7 +21,8 @@ function getMP3Metadata(filePath) {
       artist: (tags.artist || 'Unknown').trim(),
       album: (tags.album || 'Unknown').trim(),
       year: parseInt(tags.date || tags.year || 0),
-      tracknum: parseInt(tags.track?.split('/')[0] || 0)
+      tracknum: parseInt(tags.track?.split('/')[0] || 0),
+      duration: Math.round(parseFloat(probe.format.duration) || 0)
     };
   } catch (error) {
     console.error(`Error reading ${filePath}:`, error.message);
@@ -97,7 +98,8 @@ function generateAlbums() {
         title: meta.title,
         num: meta.tracknum,
         file: fileName,
-        artists: meta.artist
+        artists: meta.artist,
+        duration: meta.duration
       });
     }
   });

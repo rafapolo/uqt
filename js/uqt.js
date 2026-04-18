@@ -12,6 +12,7 @@ let renderedAlbum = null;
 const durationCache = new Map();
 
 const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
+const failedCovers = new Set();
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%232a2620;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%231a1814;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23grad)" width="200" height="200"/%3E%3Ccircle cx="100" cy="100" r="40" fill="none" stroke="%23d4a574" stroke-width="8"/%3E%3Ccircle cx="100" cy="100" r="15" fill="none" stroke="%23d4a574" stroke-width="2"/%3E%3Cpath d="M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60" fill="none" stroke="%23d4a574" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -55,9 +56,15 @@ function formatTime(seconds) {
 }
 
 function loadCoverImage(imgElement, primaryUrl) {
+  if (failedCovers.has(primaryUrl)) {
+    imgElement.src = PLACEHOLDER_COVER;
+    imgElement.classList.add('placeholder');
+    return;
+  }
   imgElement.classList.remove('placeholder');
   imgElement.src = primaryUrl;
   imgElement.onerror = () => {
+    failedCovers.add(primaryUrl);
     imgElement.src = PLACEHOLDER_COVER;
     imgElement.classList.add('placeholder');
   };
@@ -67,9 +74,6 @@ function isMobile() {
   return window.matchMedia('(max-width: 768px)').matches;
 }
 
-function openMobileDrawer()   { document.getElementById('mobile-track-drawer')?.classList.add('open'); }
-function closeMobileDrawer()  { document.getElementById('mobile-track-drawer')?.classList.remove('open'); }
-function toggleMobileDrawer() { document.getElementById('mobile-track-drawer')?.classList.toggle('open'); }
 
 // ── Virtual Grid ──────────────────────────────────────────────────────────
 // Renders only visible album cards; ~30 DOM nodes instead of 2,164.
@@ -200,14 +204,11 @@ function buildAlbums() {
     year: album.year,
     path: album.path,
     cover: `${BASE_URL}/${encodeURI(album.path)}/capa-min.jpg`,
-    tracks: album.tracks.map(track => ({
-      title: track.title,
-      num: track.num,
-      file: `${encodeURI(album.path)}/${encodeURI(track.file)}`,
-      album: album.title,
-      artists: track.artists || album.artist,
-      year: album.year
-    }))
+    tracks: album.tracks.map(track => {
+      const file = `${encodeURI(album.path)}/${encodeURI(track.file)}`;
+      if (track.duration) durationCache.set(file, track.duration);
+      return { title: track.title, num: track.num, file, album: album.title, artists: track.artists || album.artist, year: album.year };
+    })
   }));
   albums.sort((a, b) => b.year - a.year);
   return albums;
@@ -322,7 +323,6 @@ function updateDurationInDOM(track, idx) {
   if (!dur) return;
   const formatted = formatTime(dur);
   document.querySelector(`#track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
-  document.querySelector(`#drawer-track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
 }
 
 function renderTrackList() {
@@ -375,57 +375,6 @@ function renderTrackList() {
   container.querySelector('.track-item.playing')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 }
 
-function renderMobileDrawer(album) {
-  const titleEl = document.getElementById('drawer-album-title');
-  const metaEl  = document.getElementById('drawer-album-meta');
-  const coverEl = document.getElementById('drawer-cover');
-  const listEl  = document.getElementById('drawer-track-list');
-
-  if (!album) {
-    if (titleEl) titleEl.textContent = '';
-    if (metaEl)  metaEl.textContent  = '';
-    if (listEl)  listEl.replaceChildren();
-    return;
-  }
-
-  if (titleEl) titleEl.textContent = album.name;
-  if (metaEl)  metaEl.textContent  = `${album.artists} · ${album.year} · ${album.tracks.length} faixas`;
-  if (coverEl) loadCoverImage(coverEl, album.cover);
-  if (!listEl) return;
-
-  const frag = document.createDocumentFragment();
-  album.tracks.forEach((track, idx) => {
-    const item = document.createElement('li');
-    item.className = 'track-item';
-    item.dataset.trackIdx = idx;
-    if (currentTrack === track) item.classList.add('playing');
-
-    const artistLabel = track.artists && track.artists !== album.artists
-      ? `<div class="track-artist">${track.artists}</div>` : '';
-    const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
-    item.innerHTML = `
-      <span class="track-num">${track.num}</span>
-      <div class="track-details">
-        <div class="track-title">${track.title}</div>
-        ${artistLabel}
-      </div>
-      <span class="track-duration">${dur}</span>
-    `;
-    frag.append(item);
-  });
-
-  listEl.replaceChildren(frag);
-}
-
-function syncDrawerPlayingState() {
-  const listEl = document.getElementById('drawer-track-list');
-  if (!listEl || !selectedAlbum) return;
-  listEl.querySelectorAll('[data-track-idx]').forEach(item => {
-    const track = selectedAlbum.tracks[parseInt(item.dataset.trackIdx)];
-    item.classList.toggle('playing', track === currentTrack);
-    if (track === currentTrack) item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  });
-}
 
 // ── Playback ──────────────────────────────────────────────────────────────
 
@@ -446,7 +395,6 @@ function playTrack(track) {
   safePlay(audio);
   u('#btn-play').addClass('playing');
   renderTrackList();
-  syncDrawerPlayingState();
 }
 
 function updateNowPlaying() {
@@ -457,9 +405,6 @@ function updateNowPlaying() {
   const coverUrl = `${BASE_URL}/${folder}/capa-min.jpg`;
   const coverImg = u('#player-cover').first();
   if (coverImg) { coverImg.loading = 'lazy'; loadCoverImage(coverImg, coverUrl); }
-  const drawerCover = document.getElementById('drawer-cover');
-  if (drawerCover) loadCoverImage(drawerCover, coverUrl);
-
   // Overlay
   const overlayCover = document.getElementById('overlay-cover');
   if (overlayCover) loadCoverImage(overlayCover, coverUrl);
@@ -490,7 +435,6 @@ function playNext() {
       renderedAlbum = null;
       renderAlbumHeader();
       renderTrackList();
-      renderMobileDrawer(nextAlbum);
       virtualGrid.refresh();
       updateMetaTags(nextAlbum);
       window.history.pushState({ album: nextAlbum.path }, '', generateAlbumUrl(nextAlbum));
@@ -533,8 +477,6 @@ u(document).on('DOMContentLoaded', async function () {
     renderedAlbum = null;
     renderAlbumHeader();
     renderTrackList();
-    renderMobileDrawer(album);
-    if (isMobile()) openMobileDrawer();
 
     if (album.tracks.length > 0) {
       currentTrack = album.tracks[0];
@@ -544,6 +486,7 @@ u(document).on('DOMContentLoaded', async function () {
       if (audio.src !== newSrc) { audio.src = newSrc; audio.load(); }
     }
 
+    loadAlbumDurations(album);
     updateMetaTags(album);
     window.history.pushState({ album: album.path }, '', generateAlbumUrl(album));
   });
@@ -554,16 +497,7 @@ u(document).on('DOMContentLoaded', async function () {
     if (item && selectedAlbum) playTrack(selectedAlbum.tracks[parseInt(item.dataset.trackIdx)]);
   });
 
-  // Delegated click: mobile drawer
-  document.getElementById('drawer-track-list').addEventListener('click', e => {
-    const item = e.target.closest('[data-track-idx]');
-    if (item && selectedAlbum) {
-      playTrack(selectedAlbum.tracks[parseInt(item.dataset.trackIdx)]);
-      closeMobileDrawer();
-    }
-  });
-
-  // Show loading skeleton
+// Show loading skeleton
   const skeletonEl = document.createElement('div');
   skeletonEl.className = 'grid-skeleton';
   for (let i = 0; i < 30; i++) {
@@ -601,6 +535,7 @@ u(document).on('DOMContentLoaded', async function () {
     renderAlbumHeader();
     renderTrackList();
     renderMobileDrawer(albumToSelect);
+    if (albumFromUrl && isMobile()) openMobileDrawer();
     updateMetaTags(albumToSelect);
     window.history.replaceState({ album: albumToSelect.path }, '', generateAlbumUrl(albumToSelect));
   }
@@ -703,10 +638,7 @@ u(document).on('DOMContentLoaded', async function () {
     navigator.mediaSession.setActionHandler('seekto', ({ seekTime }) => { audio.currentTime = seekTime; });
   }
 
-  document.getElementById('drawer-close')?.addEventListener('click', closeMobileDrawer);
-  document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
-
-  const btnShuffle = document.getElementById('btn-shuffle');
+const btnShuffle = document.getElementById('btn-shuffle');
   const btnRepeat = document.getElementById('btn-repeat');
   const volumeSlider = document.getElementById('volume-slider');
 
