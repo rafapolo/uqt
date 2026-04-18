@@ -191,7 +191,7 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 8px 30px 8px 12px;
+  padding: 8px 100px 8px 12px;
   background: var(--color-surface-light);
   border: 1px solid var(--color-border);
   border-radius: 4px;
@@ -252,10 +252,15 @@ body {
 }
 
 .search-count {
-  font-size: 0.72rem;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.68rem;
   color: var(--color-text-muted);
+  white-space: nowrap;
+  pointer-events: none;
   display: none;
-  padding: 0 2px;
 }
 
 .search-count.visible {
