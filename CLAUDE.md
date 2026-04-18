@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses with pako, then renders albums into a virtual scrolling grid. Album paths in the JSON map directly to file paths on the audio server.
 
 ### Backend/Infrastructure
-- **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to Hetzner S3 bucket `your-objectstorage-endpoint/sambaraiz`. Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
+- **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to Hetzner S3 (endpoint set via `S3_ENDPOINT` env var). Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
 - **haloy.yaml** — Deployment config; deploys proxy to uqt.xn--2dk.xyz
 - **Dockerfile** — Packages proxy.js for haloy deployment
 
@@ -104,7 +104,7 @@ Requires `HALOY_API_TOKEN` env var. Deploys proxy.js + Dockerfile to uqt.xn--2dk
 
 ## S3 Sync Status
 
-Audio files and cover images are synced to the S3 bucket (`your-objectstorage-endpoint/sambaraiz/uqt/`). This is an ongoing process. Until files are fully synced, audio playback will return 404. Expected paths are:
+Audio files and cover images are synced to the S3 bucket (`$S3_ENDPOINT/sambaraiz/uqt/`). This is an ongoing process. Until files are fully synced, audio playback will return 404. Expected paths are:
 - `sambaraiz/uqt/{album_path}/{track_file}` (e.g., `sambaraiz/uqt/2009 - Artist - Album/01 Track.mp3`)
 - `sambaraiz/uqt/{album_path}/capa-min.jpg` (cover image, resized 200px width)
 
@@ -119,7 +119,7 @@ Audio files and cover images are synced to the S3 bucket (`your-objectstorage-en
 
 ## Troubleshooting
 
-**Audio returns 404**: Check if files exist on S3 at `your-objectstorage-endpoint/sambaraiz/uqt/{path}`. If sync is incomplete, files may not be available yet.
+**Audio returns 404**: Check if files exist on S3 at `$S3_ENDPOINT/sambaraiz/uqt/{path}`. If sync is incomplete, files may not be available yet.
 
 **Proxy not routing through haloy**: Haloy deployment requires valid `HALOY_API_TOKEN`. Verify with `haloy status` (will error if token is missing).
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-`proxy.js` is a small Node reverse proxy that fronts the private Hetzner Object Storage bucket `sambaraiz` (endpoint `hel1.your-objectstorage.com`). It serves audio and cover images to the web app with correct MIME types, CORS, long-lived cache headers, and HTTP Range support. It is deployed as a container via [haloy](https://haloy.ミ.xyz) and served publicly over HTTPS at **`https://uqt.ミ.xyz`**. Both the haloy host and the bucket live in Hetzner's HEL1 zone, so egress is free.
+`proxy.js` is a small Node reverse proxy that fronts the private Hetzner Object Storage bucket (endpoint read from `S3_ENDPOINT` env var). It serves audio and cover images to the web app with correct MIME types, CORS, long-lived cache headers, and HTTP Range support. It is deployed as a container via [haloy](https://haloy.ミ.xyz) and served publicly over HTTPS at **`https://uqt.ミ.xyz`**. Both the haloy host and the bucket live in Hetzner's HEL1 zone, so egress is free.
 
 ## Architecture
 
