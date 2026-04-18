@@ -17,7 +17,7 @@ const CONCURRENCY = 20;
 // ── Load .env ─────────────────────────────────────────────────────────────────
 
 function loadEnv(file = '.env') {
-  const lines = fs.readFileSync(path.resolve(__dirname, file), 'utf8').split('\n');
+  const lines = fs.readFileSync(path.resolve(__dirname, '..', file), 'utf8').split('\n');
   for (const line of lines) {
     const m = line.match(/^\s*([\w]+)\s*=\s*"?([^"]*)"?\s*$/);
     if (m) process.env[m[1]] = m[2];

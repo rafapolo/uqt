@@ -10,16 +10,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Frontend
 - **index.html** — Main web app
-- **js/uqt.js** — Core app logic: album/track rendering, playback control, search/filtering
+- **js/uqt.js** — Core app logic: virtual grid, album/track rendering, playback control, search/filtering
 - **js/uqt-albums.js** — Metadata database (album-centric: title, artist, year, path, tracks)
+- **js/uqt-albums.json.gz** — Gzipped JSON loaded async by uqt.js via pako (replaces blocking script tag)
 - **uqt.css** — Styling
 
-The app loads metadata from the JSON file at page load. Album paths in the JSON map directly to file paths on the audio server.
+The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses with pako, then renders albums into a virtual scrolling grid. Album paths in the JSON map directly to file paths on the audio server.
 
 ### Backend/Infrastructure
 - **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to Hetzner S3 bucket `your-objectstorage-endpoint/sambaraiz`. Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
 - **haloy.yaml** — Deployment config; deploys proxy to uqt.xn--2dk.xyz
 - **Dockerfile** — Packages proxy.js for haloy deployment
+
+### Scripts (`script/`)
+- **generate-albums.js** — Regenerates `js/uqt-albums.js` and `js/uqt-albums.json.gz` from MP3 files in `unzips/`
+- **sync-to-bucket.js** — Syncs local audio files to Hetzner S3 bucket
+- **resize-cover-images.js** — Resizes and uploads cover images to S3
+- **deploy.sh** — Server deployment script
 
 ### Data Flow
 1. App loads HTML → loads js/uqt-albums.js to populate UI
@@ -31,7 +38,7 @@ The app loads metadata from the JSON file at page load. Album paths in the JSON 
 ## Key Technical Notes
 
 - **URL Encoding**: Album paths and filenames are encoded with `encodeURI()` in `buildAlbums()` in js/uqt.js when constructing `track.file` and `album.cover`. The proxy forwards encoded paths as-is to S3. S3 stores files with literal spaces (no %20).
-- **Cover images**: Served as `capa-min.jpg` (200px wide, ~10KB) resized from original `capa.jpg` via `js/resize-cover-images.js`. All img elements use `loading="lazy"`. SVG placeholder shown when cover missing.
+- **Cover images**: Served as `capa-min.jpg` (200px wide, ~10KB) resized from original `capa.jpg` via `script/resize-cover-images.js`. All img elements use `loading="lazy"`. SVG placeholder shown when cover missing.
 - **Album selection**: Clicking an album primes the first track (sets `audio.src`, calls `audio.load()`, updates player UI) without auto-playing. Play button starts audio.
 - **CORS**: The proxy adds CORS headers to all responses; app runs cross-origin from haloy.
 - **Content-Type**: Proxy explicitly sets correct MIME types to prevent CORB (Cross-Origin Read Blocking) errors in browsers.
@@ -51,10 +58,10 @@ The proxy will forward requests to the live S3 bucket (sambaraiz), so you need S
 ### Regenerating Album Database
 When MP3 files are added/updated in `unzips/`, regenerate the JSON database:
 ```bash
-node generate-albums.js
+node script/generate-albums.js
 ```
 
-This reads MP3 metadata from all files in `unzips/` and outputs `js/uqt-albums.js` (album-centric structure).
+This reads MP3 metadata from all files in `unzips/` and outputs both `js/uqt-albums.js` and `js/uqt-albums.json.gz`.
 
 **Requirements:** `ffprobe` (from ffmpeg package). On macOS:
 ```bash
@@ -85,7 +92,7 @@ Album `path` is used to construct URLs: the proxy expects files at `s3://sambara
 ### Resizing and Uploading Cover Images
 When new albums are added, generate and upload resized covers (200px wide) to S3:
 ```bash
-node js/resize-cover-images.js
+node script/resize-cover-images.js
 ```
 Requires `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` in `.env` with write access to `sambaraiz/uqt/*`. Source covers read from `/Volumes/EXTRA/bkps/sambaderaiz`. Skips albums already uploaded.
 
@@ -116,4 +123,4 @@ Audio files and cover images are synced to the S3 bucket (`your-objectstorage-en
 
 **Proxy not routing through haloy**: Haloy deployment requires valid `HALOY_API_TOKEN`. Verify with `haloy status` (will error if token is missing).
 
-**App doesn't show albums**: Check browser console for errors loading js/uqt-albums.js. Verify the JSON file is valid and contains expected `db = {...}` definition. Regenerate with `node generate-albums.js`.
+**App doesn't show albums**: Check browser console for fetch errors on `js/uqt-albums.json.gz`. Verify the file exists and is valid gzip. Regenerate with `node script/generate-albums.js`.
