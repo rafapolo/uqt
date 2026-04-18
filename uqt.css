@@ -269,6 +269,7 @@ body {
   cursor: pointer;
   align-items: stretch;
   position: relative;
+  contain: content;
 }
 
 .album-item:hover .album-cover-thumb {
@@ -401,6 +402,7 @@ body {
   cursor: pointer;
   transition: var(--transition-fast);
   gap: var(--spacing-md);
+  contain: content;
 }
 
 .track-item:hover {

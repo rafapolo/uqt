@@ -509,9 +509,11 @@ u(document).on('DOMContentLoaded', async function () {
   // Init virtual grid before data loads so it sizes correctly
   virtualGrid = new VirtualGrid(albumsList);
 
-  // Async data: fetch gzipped JSON, decompress with pako
-  const buf = await fetch('js/uqt-albums.json.gz').then(r => r.arrayBuffer());
-  db = JSON.parse(pako.inflate(new Uint8Array(buf), { to: 'string' }));
+  // Async data: fetch gzipped JSON, decompress with native DecompressionStream
+  const json = await new Response(
+    (await fetch('js/uqt-albums.json.gz')).body.pipeThrough(new DecompressionStream('gzip'))
+  ).text();
+  db = JSON.parse(json);
 
   buildAlbums();
   filteredAlbums = [...albums];
@@ -612,8 +614,10 @@ u(document).on('DOMContentLoaded', async function () {
     audio.currentTime = percent * audio.duration;
   });
 
+  let searchDebounce;
   u('#search-input').on('input', function () {
     searchQuery = this.value;
-    filterAlbums();
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(filterAlbums, 150);
   });
 });
