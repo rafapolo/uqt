@@ -74,6 +74,9 @@ function isMobile() {
   return window.matchMedia('(max-width: 768px)').matches;
 }
 
+function openMobileDrawer()   { document.getElementById('mobile-track-drawer')?.classList.add('open'); }
+function closeMobileDrawer()  { document.getElementById('mobile-track-drawer')?.classList.remove('open'); }
+function toggleMobileDrawer() { document.getElementById('mobile-track-drawer')?.classList.toggle('open'); }
 
 // ── Virtual Grid ──────────────────────────────────────────────────────────
 // Renders only visible album cards; ~30 DOM nodes instead of 2,164.
@@ -90,6 +93,7 @@ class VirtualGrid {
     this.rowHeight = 0;
     this._padding = 24;
     this._gap = 24;
+    this._nodes = new Map(); // index → DOM node
 
     this.inner = document.createElement('div');
     this.inner.className = 'albums-grid-inner';
@@ -104,11 +108,16 @@ class VirtualGrid {
 
   setItems(items) {
     this.items = items;
+    this._nodes.clear();
+    this.inner.replaceChildren();
     this.container.scrollTop = 0;
     this._layout();
   }
 
   refresh() {
+    for (const [idx, node] of this._nodes) {
+      node.classList.toggle('active', this.items[idx] === selectedAlbum);
+    }
     this._render();
   }
 
@@ -143,6 +152,37 @@ class VirtualGrid {
     this._render();
   }
 
+  _makeNode(i) {
+    const album = this.items[i];
+    const { _padding: pad, _gap: gap } = this;
+    const col = i % this.colCount;
+    const row = Math.floor(i / this.colCount);
+
+    const item = document.createElement('div');
+    item.className = 'album-item';
+    item.dataset.albumIdx = i;
+    if (selectedAlbum === album) item.classList.add('active');
+    item.style.cssText = `position:absolute;width:${this.itemWidth}px;top:${pad + row * this.rowHeight}px;left:${pad + col * (this.itemWidth + gap)}px`;
+
+    const cover = document.createElement('img');
+    cover.className = 'album-cover-thumb';
+    cover.alt = album.name;
+    loadCoverImage(cover, album.cover);
+
+    const info = document.createElement('div');
+    info.className = 'album-item-info';
+    const title = document.createElement('div');
+    title.className = 'album-item-title';
+    title.textContent = album.name;
+    const meta = document.createElement('div');
+    meta.className = 'album-item-meta';
+    meta.textContent = `${album.artists} • ${album.year || '∞'}`;
+
+    info.append(title, meta);
+    item.append(cover, info);
+    return item;
+  }
+
   _render() {
     const { _padding: pad, _gap: gap } = this;
     const scrollTop = this.container.scrollTop;
@@ -154,42 +194,22 @@ class VirtualGrid {
     const startIdx = startRow * this.colCount;
     const endIdx   = Math.min(this.items.length, endRow * this.colCount);
 
-    const frag = document.createDocumentFragment();
-
-    for (let i = startIdx; i < endIdx; i++) {
-      const album = this.items[i];
-      const col = i % this.colCount;
-      const row = Math.floor(i / this.colCount);
-
-      const item = document.createElement('div');
-      item.className = 'album-item';
-      item.dataset.albumIdx = i;
-      if (selectedAlbum === album) item.classList.add('active');
-      item.style.cssText = `position:absolute;width:${this.itemWidth}px;top:${pad + row * this.rowHeight}px;left:${pad + col * (this.itemWidth + gap)}px`;
-
-      const cover = document.createElement('img');
-      cover.className = 'album-cover-thumb';
-      cover.alt = album.name;
-      cover.loading = 'lazy';
-      loadCoverImage(cover, album.cover);
-
-      const info = document.createElement('div');
-      info.className = 'album-item-info';
-
-      const title = document.createElement('div');
-      title.className = 'album-item-title';
-      title.textContent = album.name;
-
-      const meta = document.createElement('div');
-      meta.className = 'album-item-meta';
-      meta.textContent = `${album.artists} • ${album.year || '∞'}`;
-
-      info.append(title, meta);
-      item.append(cover, info);
-      frag.append(item);
+    // Remove nodes that scrolled out of range
+    for (const [idx, node] of this._nodes) {
+      if (idx < startIdx || idx >= endIdx) {
+        node.remove();
+        this._nodes.delete(idx);
+      }
     }
 
-    this.inner.replaceChildren(frag);
+    // Add nodes that scrolled into range
+    for (let i = startIdx; i < endIdx; i++) {
+      if (!this._nodes.has(i)) {
+        const node = this._makeNode(i);
+        this._nodes.set(i, node);
+        this.inner.appendChild(node);
+      }
+    }
   }
 }
 
@@ -323,6 +343,7 @@ function updateDurationInDOM(track, idx) {
   if (!dur) return;
   const formatted = formatTime(dur);
   document.querySelector(`#track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
+  document.querySelector(`#drawer-track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
 }
 
 function renderTrackList() {
@@ -395,6 +416,59 @@ function playTrack(track) {
   safePlay(audio);
   u('#btn-play').addClass('playing');
   renderTrackList();
+  syncDrawerPlayingState();
+}
+
+function renderMobileDrawer(album) {
+  const titleEl = document.getElementById('drawer-album-title');
+  const metaEl  = document.getElementById('drawer-album-meta');
+  const coverEl = document.getElementById('drawer-cover');
+  const listEl  = document.getElementById('drawer-track-list');
+
+  if (!album) {
+    if (titleEl) titleEl.textContent = '';
+    if (metaEl)  metaEl.textContent  = '';
+    if (listEl)  listEl.replaceChildren();
+    return;
+  }
+
+  if (titleEl) titleEl.textContent = album.name;
+  if (metaEl)  metaEl.textContent  = `${album.artists} · ${album.year} · ${album.tracks.length} faixas`;
+  if (coverEl) loadCoverImage(coverEl, album.cover);
+  if (!listEl) return;
+
+  const frag = document.createDocumentFragment();
+  album.tracks.forEach((track, idx) => {
+    const item = document.createElement('li');
+    item.className = 'track-item';
+    item.dataset.trackIdx = idx;
+    if (currentTrack === track) item.classList.add('playing');
+
+    const artistLabel = track.artists && track.artists !== album.artists
+      ? `<div class="track-artist">${track.artists}</div>` : '';
+    const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
+    item.innerHTML = `
+      <span class="track-num">${track.num}</span>
+      <div class="track-details">
+        <div class="track-title">${track.title}</div>
+        ${artistLabel}
+      </div>
+      <span class="track-duration">${dur}</span>
+    `;
+    frag.append(item);
+  });
+
+  listEl.replaceChildren(frag);
+}
+
+function syncDrawerPlayingState() {
+  const listEl = document.getElementById('drawer-track-list');
+  if (!listEl || !selectedAlbum) return;
+  listEl.querySelectorAll('[data-track-idx]').forEach(item => {
+    const track = selectedAlbum.tracks[parseInt(item.dataset.trackIdx)];
+    item.classList.toggle('playing', track === currentTrack);
+    if (track === currentTrack) item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  });
 }
 
 function updateNowPlaying() {
@@ -405,6 +479,8 @@ function updateNowPlaying() {
   const coverUrl = `${BASE_URL}/${folder}/capa-min.jpg`;
   const coverImg = u('#player-cover').first();
   if (coverImg) { coverImg.loading = 'lazy'; loadCoverImage(coverImg, coverUrl); }
+  const drawerCover = document.getElementById('drawer-cover');
+  if (drawerCover) loadCoverImage(drawerCover, coverUrl);
   // Overlay
   const overlayCover = document.getElementById('overlay-cover');
   if (overlayCover) loadCoverImage(overlayCover, coverUrl);
@@ -435,6 +511,7 @@ function playNext() {
       renderedAlbum = null;
       renderAlbumHeader();
       renderTrackList();
+      renderMobileDrawer(nextAlbum);
       virtualGrid.refresh();
       updateMetaTags(nextAlbum);
       window.history.pushState({ album: nextAlbum.path }, '', generateAlbumUrl(nextAlbum));
@@ -477,6 +554,8 @@ u(document).on('DOMContentLoaded', async function () {
     renderedAlbum = null;
     renderAlbumHeader();
     renderTrackList();
+    renderMobileDrawer(album);
+    if (isMobile()) openMobileDrawer();
 
     if (album.tracks.length > 0) {
       currentTrack = album.tracks[0];
@@ -496,6 +575,7 @@ u(document).on('DOMContentLoaded', async function () {
     const item = e.target.closest('[data-track-idx]');
     if (item && selectedAlbum) playTrack(selectedAlbum.tracks[parseInt(item.dataset.trackIdx)]);
   });
+
 
 // Show loading skeleton
   const skeletonEl = document.createElement('div');
@@ -638,7 +718,10 @@ u(document).on('DOMContentLoaded', async function () {
     navigator.mediaSession.setActionHandler('seekto', ({ seekTime }) => { audio.currentTime = seekTime; });
   }
 
-const btnShuffle = document.getElementById('btn-shuffle');
+  document.getElementById('drawer-close')?.addEventListener('click', closeMobileDrawer);
+  document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
+
+  const btnShuffle = document.getElementById('btn-shuffle');
   const btnRepeat = document.getElementById('btn-repeat');
   const volumeSlider = document.getElementById('volume-slider');
 

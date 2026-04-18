@@ -1,16 +1,16 @@
 # 🎵 Acervo UQT
 
-Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleção curada de **100 anos de Música Popular Brasileira**. **705 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.
+Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleção curada de **100 anos de Música Popular Brasileira**. **1.658 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.
 
 ## 📊 Números
 
 ### Catálogo publicado
-- **2.164 álbuns** com path verificado contra o bucket
-- **26.910 faixas** indexadas
+- **2.303 álbuns** indexados
+- **28.742 faixas** indexadas
+- **816 artistas**
 - **~100 anos** de MPB (1902–2012)
 - **Período**: Samba, choro, bossa nova, MPB clássica e contemporânea
-- **137 GB** em S3 bucket
-- **705 horas** de música
+- **1.658 horas** de música
 
 ## ✨ Características
 
