@@ -523,7 +523,7 @@ body {
 .player-bar {
   background: var(--color-surface);
   border-top: 2px solid var(--color-accent);
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-xs) var(--spacing-lg);
   flex-shrink: 0;
   z-index: 200;
   backdrop-filter: blur(10px);
@@ -602,7 +602,8 @@ body {
 .player-controls {
   flex: 1;
   display: flex;
-  gap: var(--spacing-lg);
+  flex-direction: column;
+  gap: var(--spacing-sm);
   align-items: center;
 }
 
@@ -666,7 +667,7 @@ body {
 
 /* Progress Bar */
 .progress-container {
-  flex: 1;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -869,6 +870,7 @@ audio {
   }
 }
 
+
 /* Mobile-only elements hidden by default on desktop */
 .mobile-only { display: none; }
 .mobile-track-drawer { display: none; }
@@ -938,27 +940,27 @@ audio {
     display: none !important;
   }
 
-  /* Player bar: single compact row ~64px */
+  /* Player bar: compact two-row layout */
   .player-bar {
-    padding: 0;
+    padding: 10px var(--spacing-sm) 8px;
     flex-shrink: 0;
   }
 
   .player-content {
     flex-wrap: nowrap;
     gap: var(--spacing-xs);
-    justify-content: space-between;
-    padding: 0 var(--spacing-sm);
-    height: 64px;
+    justify-content: center;
+    padding: 0;
+    height: auto;
     align-items: center;
   }
 
   .now-playing-compact {
-    min-width: 0;
-    flex: 1;
-    width: auto;
-    max-width: 45vw;
-    gap: var(--spacing-xs);
+    display: none;
+  }
+
+  .player-controls {
+    justify-content: center;
   }
 
   .player-cover {
@@ -977,8 +979,8 @@ audio {
 
   .player-controls {
     flex: 1;
-    flex-direction: row;
-    gap: 4px;
+    flex-direction: column;
+    gap: 2px;
     width: auto;
     align-items: center;
     min-width: 0;
@@ -986,7 +988,7 @@ audio {
 
   .controls-buttons {
     width: auto;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 4px;
   }
 
@@ -1042,14 +1044,16 @@ audio {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, border-top-color 0.3s ease;
     background: var(--color-surface);
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid transparent;
   }
 
   .mobile-track-drawer.open {
-    max-height: 65dvh;
-    max-height: 65vh; /* fallback */
+    border-top-color: var(--color-border);
+  }
+
+  .mobile-track-drawer.open {
     max-height: 65dvh;
   }
 
@@ -1123,6 +1127,7 @@ audio {
   .drawer-track-list .track-item {
     padding: 10px var(--spacing-sm);
   }
+
 }
 
 @media (max-width: 480px) {
