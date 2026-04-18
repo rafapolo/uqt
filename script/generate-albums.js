@@ -50,7 +50,7 @@ function findMP3Files(dir) {
 
 // Main generator
 function generateAlbums() {
-  const unzipsDir = path.join(__dirname, 'unzips');
+  const unzipsDir = path.join(__dirname, '..', 'unzips');
 
   if (!fs.existsSync(unzipsDir)) {
     console.error(`✗ Directory not found: ${unzipsDir}`);
@@ -117,14 +117,19 @@ function generateAlbums() {
     .sort((a, b) => b.year - a.year); // Sort by year descending
 
   // Write output
-  const outputPath = path.join(__dirname, 'js', 'uqt-albums.js');
-  const output = `db = ${JSON.stringify({ albums }, null, 2)}`;
+  const zlib = require('zlib');
+  const outputPath = path.join(__dirname, '..', 'js', 'uqt-albums.js');
+  const gzPath    = path.join(__dirname, '..', 'js', 'uqt-albums.json.gz');
+  const jsonStr   = JSON.stringify({ albums });
+  const output    = `db = ${JSON.stringify({ albums }, null, 2)}`;
 
   fs.writeFileSync(outputPath, output);
+  fs.writeFileSync(gzPath, zlib.gzipSync(Buffer.from(jsonStr)));
 
   console.log(`\n✓ Generated ${albums.length} albums`);
   console.log(`✓ Total tracks: ${albums.reduce((sum, a) => sum + a.tracks.length, 0)}`);
   console.log(`✓ Written to: ${outputPath}`);
+  console.log(`✓ Gzipped to: ${gzPath} (${Math.round(fs.statSync(gzPath).size / 1024)} KB)`);
 }
 
 // Run

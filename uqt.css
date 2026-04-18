@@ -255,12 +255,11 @@ body {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
-  align-content: start;
-  grid-auto-rows: max-content;
+  position: relative;
+}
+
+.albums-grid-inner {
+  position: relative;
 }
 
 .album-item {
@@ -812,6 +811,14 @@ audio {
     padding: 2px 7px;
   }
 
+  .music-count {
+    font-size: 0;
+  }
+  .music-count::before {
+    font-size: 0.68rem;
+    content: attr(data-short);
+  }
+
   /* Layout: album grid takes all available height */
   .app-layout {
     flex-direction: column;
@@ -825,12 +832,6 @@ audio {
     height: auto;
     border-bottom: none;
     overflow: hidden;
-  }
-
-  .albums-grid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: var(--spacing-xs);
-    padding: var(--spacing-xs);
   }
 
   /* Tracks panel: completely hidden on mobile */
@@ -1026,12 +1027,6 @@ audio {
 }
 
 @media (max-width: 480px) {
-  .albums-grid {
-    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
-    gap: 6px;
-    padding: 6px;
-  }
-
   .album-item-title {
     font-size: 0.68rem;
   }
