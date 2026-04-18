@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>UQT · Universo</title>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body, html {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      background: #201d18;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #e8e0d0;
+    }
+
+    #canvas {
+      display: block;
+      width: 100vw; height: 100vh;
+      touch-action: none;
+    }
+
+    /* Loading overlay */
+    #loading {
+      position: fixed; inset: 0;
+      background: #201d18;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 100;
+      transition: opacity 0.7s ease;
+    }
+    #loading-inner { text-align: center; width: 280px; }
+    #loading-title {
+      font-size: 1.4rem; letter-spacing: 0.25em;
+      margin-bottom: 1.5rem; color: #d4a574;
+      text-transform: uppercase;
+    }
+    #loading-bar-bg {
+      height: 2px; background: #1a1a1a;
+      border-radius: 2px; overflow: hidden;
+    }
+    #loading-bar {
+      height: 100%; width: 0%;
+      background: #d4a574;
+      transition: width 0.4s ease;
+      border-radius: 2px;
+    }
+    #loading-status {
+      margin-top: 0.9rem;
+      font-size: 0.75rem; color: #555;
+      letter-spacing: 0.05em;
+    }
+
+    /* Back link */
+    #back-link {
+      position: fixed; top: 14px; left: 14px;
+      color: rgba(212, 165, 116, 0.6);
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      z-index: 10;
+      padding: 6px 10px;
+      background: rgba(0,0,0,0.45);
+      border-radius: 4px;
+      transition: color 0.2s;
+    }
+    #back-link:hover { color: #d4a574; }
+
+    /* Hint text */
+    #hint {
+      position: fixed; bottom: 20px; left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem; color: rgba(212,165,116,0.4);
+      letter-spacing: 0.08em;
+      pointer-events: none;
+      transition: opacity 1.5s ease;
+      white-space: nowrap;
+    }
+    #hint.hidden { opacity: 0; }
+
+    @media (max-width: 600px) {
+      #focus-info { max-width: 200px; font-size: 0.85em; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div id="loading">
+  <div id="loading-inner">
+    <p id="loading-title">UQT · Universo</p>
+    <div id="loading-bar-bg"><div id="loading-bar"></div></div>
+    <p id="loading-status">Carregando álbuns...</p>
+  </div>
+</div>
+
+<a id="back-link" href="./">← Acervo</a>
+<p id="hint">arraste para girar · scroll para avançar · clique em um álbum</p>
+
+<script type="module">
+/*
+ * UQT · UNIVERSO — 3D Album Globe
+ *
+ * ARCHITECTURE: Option A (individual textures, lazy-loaded)
+ * 2303 PlaneGeometry meshes on Fibonacci sphere, textures loaded by view priority.
+ *
+ * OPTION C UPGRADE PATH (pre-built atlas, ~3 draw calls):
+ *  1. Run: node script/build-3d-atlas.js
+ *     → downloads all covers via BASE_URL, packs into 3× 4096² JPEGs + atlas-map.json
+ *  2. 3d.html checks for atlas-map.json at startup:
+ *     - present: InstancedMesh + ShaderMaterial sampling atlas UV per instance
+ *     - absent: current Option A path (this code)
+ */
+
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
+const SPHERE_RADIUS = 300;
+const PLANE_SIZE = 16;
+const isMobile = window.matchMedia('(max-width: 768px)').matches
+  || /Mobi|Android/i.test(navigator.userAgent);
+const MAX_CONCURRENT = isMobile ? 4 : 8;
+
+// ─── Renderer ────────────────────────────────────────────────────────────────
+
+const canvas = document.getElementById('canvas');
+const renderer = new THREE.WebGLRenderer({
+  canvas,
+  antialias: !isMobile && window.devicePixelRatio < 2,
+  powerPreference: 'high-performance',
+  stencil: false,
+});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
+
+// ─── Scene ───────────────────────────────────────────────────────────────────
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x201d18);
+scene.fog = new THREE.FogExp2(0x201d18, 0.0018);
+
+// ─── Camera ──────────────────────────────────────────────────────────────────
+
+const camera = new THREE.PerspectiveCamera(
+  isMobile ? 85 : 75,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  2000
+);
+camera.position.set(0, 0, 0.001);
+
+
+// ─── Resize ──────────────────────────────────────────────────────────────────
+
+new ResizeObserver(() => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}).observe(document.documentElement);
+
+// ─── Controls ────────────────────────────────────────────────────────────────
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0, 0);
+controls.minDistance = 0;
+controls.maxDistance = SPHERE_RADIUS * 0.85;
+controls.rotateSpeed = -0.35;  // negative = inside-sphere invert
+controls.zoomSpeed = 0;         // zoom via custom wheel/pinch only
+controls.enablePan = false;
+controls.enableDamping = true;
+controls.dampingFactor = 0.055;
+controls.minPolarAngle = 0.05;
+controls.maxPolarAngle = Math.PI - 0.05;
+controls.touches.ONE = THREE.TOUCH.ROTATE;
+controls.touches.TWO = THREE.TOUCH.DOLLY_ROTATE;
+
+function moveForward(delta) {
+  const dir = new THREE.Vector3();
+  camera.getWorldDirection(dir);
+  const newPos = camera.position.clone().addScaledVector(dir, delta);
+  const dist = newPos.length();
+  if (dist < SPHERE_RADIUS * 0.88 && dist > 0.1) {
+    camera.position.copy(newPos);
+    controls.target.copy(newPos).addScaledVector(dir, 0.1);
+  }
+}
+
+renderer.domElement.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  moveForward(-e.deltaY * 0.08);
+}, { passive: false });
+
+let lastPinchDist = 0;
+renderer.domElement.addEventListener('touchstart', (e) => {
+  if (e.touches.length === 2) {
+    lastPinchDist = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+  }
+}, { passive: true });
+renderer.domElement.addEventListener('touchmove', (e) => {
+  if (e.touches.length === 2) {
+    const d = Math.hypot(
+      e.touches[0].clientX - e.touches[1].clientX,
+      e.touches[0].clientY - e.touches[1].clientY
+    );
+    moveForward((d - lastPinchDist) * 0.25);
+    lastPinchDist = d;
+  }
+}, { passive: true });
+
+// ─── Starfield ───────────────────────────────────────────────────────────────
+
+function buildStarfield() {
+  const count = isMobile ? 3000 : 8000;
+  const pos = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    const theta = Math.random() * Math.PI * 2;
+    const phi = Math.acos(2 * Math.random() - 1);
+    const r = 1500 + Math.random() * 400;
+    pos[i*3]   = r * Math.sin(phi) * Math.cos(theta);
+    pos[i*3+1] = r * Math.sin(phi) * Math.sin(theta);
+    pos[i*3+2] = r * Math.cos(phi);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const mat = new THREE.PointsMaterial({
+    color: 0xffffff, size: 1.8, sizeAttenuation: true,
+    transparent: true, opacity: 0.7, depthWrite: false,
+  });
+  const stars = new THREE.Points(geo, mat);
+  stars.raycast = () => {};
+  scene.add(stars);
+}
+
+// ─── Fibonacci sphere ────────────────────────────────────────────────────────
+
+function fibonacciPoints(n, radius) {
+  const phi = Math.PI * (3 - Math.sqrt(5));
+  const jitter = 0.03; // fraction of radius — breaks spiral arms without creating pile-ups
+  return Array.from({ length: n }, (_, i) => {
+    const y = 1 - (i / (n - 1)) * 2;
+    const r = Math.sqrt(1 - y * y);
+    const theta = phi * i;
+    const v = new THREE.Vector3(
+      Math.cos(theta) * r + (Math.random() - 0.5) * jitter,
+      y               + (Math.random() - 0.5) * jitter,
+      Math.sin(theta) * r + (Math.random() - 0.5) * jitter
+    );
+    return v.normalize().multiplyScalar(radius);
+  });
+}
+
+// ─── Placeholder materials (per decade) ──────────────────────────────────────
+
+const BOX_DEPTH = PLANE_SIZE * 0.03;
+
+// Shared side materials — warm beige with subtle shading
+const sideR    = new THREE.MeshBasicMaterial({ color: 0xe8dcc8 });
+const sideL    = new THREE.MeshBasicMaterial({ color: 0xc8bcaa });
+const sideT    = new THREE.MeshBasicMaterial({ color: 0xe0d4bc });
+const sideB    = new THREE.MeshBasicMaterial({ color: 0xbcb09a });
+const sideBack = new THREE.MeshBasicMaterial({ color: 0xb0a490 });
+
+const placeholderFrontMat = new THREE.MeshBasicMaterial({ color: 0xd4a574 });
+function getDecadeFrontMat(_year) { return placeholderFrontMat; }
+
+// BoxGeometry face order: [+X, -X, +Y, -Y, +Z(front), -Z(back)]
+function boxMats(frontMat) {
+  return [sideR, sideL, sideT, sideB, frontMat, sideBack];
+}
+
+// ─── Album meshes ─────────────────────────────────────────────────────────────
+
+const sharedGeo = new THREE.BoxGeometry(PLANE_SIZE, PLANE_SIZE, BOX_DEPTH);
+const albumMeshes = [];
+const albumGroup = new THREE.Group();
+scene.add(albumGroup);
+
+function buildAlbumMeshes(albums, positions) {
+  albums.forEach((album, i) => {
+    const mesh = new THREE.Mesh(sharedGeo, boxMats(getDecadeFrontMat(album.year)));
+    mesh.position.copy(positions[i]);
+    mesh.lookAt(0, 0, 0); // +Z already faces origin for non-camera objects
+    mesh.userData = { album, index: i, textureLoaded: false, loading: false };
+    albumGroup.add(mesh);
+    albumMeshes.push(mesh);
+  });
+}
+
+// ─── Texture loading ──────────────────────────────────────────────────────────
+
+const texLoader = new THREE.TextureLoader();
+let activeLoads = 0;
+const loadQueue = new Map();
+
+function enqueueTexture(index, priority) {
+  const m = albumMeshes[index];
+  if (!m || m.userData.textureLoaded || m.userData.loading || m.userData.failed) return;
+  const cur = loadQueue.get(index) ?? -Infinity;
+  if (priority > cur) loadQueue.set(index, priority);
+}
+
+function drainQueue() {
+  while (activeLoads < MAX_CONCURRENT && loadQueue.size > 0) {
+    let bestIdx = -1, bestPri = -Infinity;
+    for (const [idx, pri] of loadQueue) {
+      if (pri > bestPri) { bestPri = pri; bestIdx = idx; }
+    }
+    if (bestIdx === -1) break;
+    loadQueue.delete(bestIdx);
+    fetchTexture(bestIdx);
+  }
+}
+
+// Sample avg color of a pixel strip from a pre-drawn 32×32 canvas data array
+function stripAvg(d, S, x0, y0, x1, y1) {
+  let r=0,g=0,b=0,n=0;
+  for (let y=y0;y<=y1;y++) for (let x=x0;x<=x1;x++) {
+    const i=(y*S+x)*4; r+=d[i];g+=d[i+1];b+=d[i+2];n++;
+  }
+  return (Math.round(r/n)<<16)|(Math.round(g/n)<<8)|Math.round(b/n);
+}
+
+function edgeColors(image) {
+  const S=32, t=2;
+  const c=document.createElement('canvas'); c.width=c.height=S;
+  const ctx=c.getContext('2d',{willReadFrequently:true});
+  ctx.drawImage(image,0,0,S,S);
+  const d=ctx.getImageData(0,0,S,S).data;
+  const dk = hex => { // darken by ~50% for back face
+    return ((Math.round(((hex>>16)&0xff)*0.5))<<16)|
+           ((Math.round(((hex>>8) &0xff)*0.5))<<8)|
+            (Math.round(( hex     &0xff)*0.5));
+  };
+  const right  = stripAvg(d,S, S-t,0, S-1,S-1);
+  const left   = stripAvg(d,S, 0,0,   t-1,S-1);
+  const top    = stripAvg(d,S, 0,0,   S-1,t-1);
+  const bottom = stripAvg(d,S, 0,S-t, S-1,S-1);
+  const avg    = stripAvg(d,S, 0,0,   S-1,S-1);
+  return [right, left, top, bottom, dk(avg)]; // +X,-X,+Y,-Y,-Z
+}
+
+function fetchTexture(index) {
+  const mesh = albumMeshes[index];
+  if (!mesh || mesh.userData.textureLoaded || mesh.userData.loading) return;
+  mesh.userData.loading = true;
+  activeLoads++;
+
+  const url = `${BASE_URL}/${encodeURI(mesh.userData.album.path)}/capa-min.jpg`;
+  texLoader.load(
+    url,
+    (tex) => {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.generateMipmaps = true;
+      tex.minFilter = THREE.LinearMipmapLinearFilter;
+      tex.wrapS = THREE.ClampToEdgeWrapping;
+      tex.wrapT = THREE.ClampToEdgeWrapping;
+      const [cr,cl,ct,cb,ck] = edgeColors(tex.image);
+      // Composite vinyl-sleeve gloss over cover image
+      const S = 256;
+      const gc = document.createElement('canvas'); gc.width = gc.height = S;
+      const gx = gc.getContext('2d');
+      gx.drawImage(tex.image, 0, 0, S, S);
+      const grad = gx.createLinearGradient(0, 0, S * 0.7, S * 0.7);
+      grad.addColorStop(0,    'rgba(255,255,255,0.20)');
+      grad.addColorStop(0.40, 'rgba(255,255,255,0.07)');
+      grad.addColorStop(0.75, 'rgba(255,255,255,0.01)');
+      grad.addColorStop(1,    'rgba(255,255,255,0)');
+      gx.fillStyle = grad;
+      gx.fillRect(0, 0, S, S);
+      const glossTex = new THREE.CanvasTexture(gc);
+      glossTex.colorSpace = THREE.SRGBColorSpace;
+      glossTex.generateMipmaps = true;
+      glossTex.minFilter = THREE.LinearMipmapLinearFilter;
+      mesh.material = [
+        new THREE.MeshBasicMaterial({ color: cr }),       // +X right
+        new THREE.MeshBasicMaterial({ color: cl }),       // -X left
+        new THREE.MeshBasicMaterial({ color: ct }),       // +Y top
+        new THREE.MeshBasicMaterial({ color: cb }),       // -Y bottom
+        new THREE.MeshBasicMaterial({ map: glossTex }),   // +Z front (cover + gloss)
+        new THREE.MeshBasicMaterial({ color: ck }),       // -Z back
+      ];
+      mesh.userData.frontMat = mesh.material[4];
+      mesh.userData.textureLoaded = true;
+      mesh.userData.loading = false;
+      activeLoads--;
+      drainQueue();
+    },
+    undefined,
+    () => {
+      mesh.userData.loading = false;
+      mesh.userData.failed = true;
+      activeLoads--;
+      drainQueue();
+    }
+  );
+}
+
+const frustum = new THREE.Frustum();
+const projMat = new THREE.Matrix4();
+
+function updatePriorities(frame) {
+  if (frame % 45 !== 0) return;
+  camera.updateMatrixWorld(true);
+  projMat.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse);
+  frustum.setFromProjectionMatrix(projMat);
+
+  const dir = new THREE.Vector3();
+  camera.getWorldDirection(dir);
+
+  albumMeshes.forEach((mesh, i) => {
+    if (mesh.userData.textureLoaded || mesh.userData.loading || mesh.userData.failed) return;
+    const mdir = mesh.position.clone().normalize();
+    const dot = mdir.dot(dir);
+    const visible = frustum.containsPoint(mesh.position);
+    enqueueTexture(i, visible ? dot + 3 : dot);
+  });
+  drainQueue();
+}
+
+function initTextureQueue() {
+  const dir = new THREE.Vector3(0, 0, -1);
+  albumMeshes.forEach((mesh, i) => {
+    const mdir = mesh.position.clone().normalize();
+    enqueueTexture(i, mdir.dot(dir));
+  });
+  drainQueue();
+}
+
+// ─── Animation ────────────────────────────────────────────────────────────────
+
+function initAnimationData() {
+  albumMeshes.forEach((mesh) => {
+    mesh.userData.basePos = mesh.position.clone();
+    mesh.userData.phase   = Math.random() * Math.PI * 2;
+  });
+}
+
+const normalScratch = new THREE.Vector3();
+const posScratch = new THREE.Vector3();
+
+function animateScene(elapsed, frame) {
+  albumGroup.scale.setScalar(1 + Math.sin(elapsed * 0.785) * 0.015);
+
+  if (frame % 2 === 0) {
+    albumMeshes.forEach((mesh) => {
+      const bp = mesh.userData.basePos;
+      const drift = Math.sin(elapsed * 0.25 + mesh.userData.phase) * 0.35;
+      normalScratch.copy(bp).normalize();
+      const driftPos = bp.clone().addScaledVector(normalScratch, drift);
+      mesh.position.lerp(driftPos, 0.12);
+    });
+  }
+}
+
+// ─── Raycasting & selection ───────────────────────────────────────────────────
+
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+let pointerDown = null;
+
+renderer.domElement.addEventListener('pointerdown', (e) => {
+  pointerDown = { x: e.clientX, y: e.clientY, t: performance.now() };
+});
+
+renderer.domElement.addEventListener('pointerup', (e) => {
+  if (!pointerDown) return;
+  const dx = e.clientX - pointerDown.x;
+  const dy = e.clientY - pointerDown.y;
+  const dt = performance.now() - pointerDown.t;
+  pointerDown = null;
+  if (Math.hypot(dx, dy) < 8 && dt < 300) {
+    doRaycast(e.clientX, e.clientY);
+  }
+});
+
+function doRaycast(cx, cy) {
+  pointer.x = (cx / window.innerWidth) * 2 - 1;
+  pointer.y = -(cy / window.innerHeight) * 2 + 1;
+  raycaster.setFromCamera(pointer, camera);
+  const hits = raycaster.intersectObjects(albumGroup.children, false);
+  if (hits.length > 0) {
+    selectAlbum(hits[0].object);
+  } else {
+    deselectAlbum();
+  }
+}
+
+// ─── Info canvas texture ──────────────────────────────────────────────────────
+
+function wrapText(ctx, text, x, y, maxW, lineH) {
+  const words = text.split(' ');
+  let line = '';
+  for (const word of words) {
+    const test = line ? line + ' ' + word : word;
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line, x, y);
+      line = word;
+      y += lineH;
+    } else {
+      line = test;
+    }
+  }
+  ctx.fillText(line, x, y);
+  return y + lineH;
+}
+
+function makeInfoTexture(album) {
+  const S = 512;
+  const c = document.createElement('canvas');
+  c.width = S; c.height = S;
+  const ctx = c.getContext('2d');
+
+  ctx.fillStyle = '#07060f';
+  ctx.fillRect(0, 0, S, S);
+
+  const pad = 40;
+  const mid = S / 2;
+
+  ctx.textAlign = 'center';
+
+  // Artist
+  ctx.fillStyle = '#d4a574';
+  ctx.font = '500 26px system-ui,sans-serif';
+  let y = 110;
+  y = wrapText(ctx, album.artist, mid, y, S - pad * 2, 34);
+
+  // Divider
+  y += 14;
+  ctx.strokeStyle = 'rgba(212,165,116,0.25)';
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad * 2, y); ctx.lineTo(S - pad * 2, y); ctx.stroke();
+  y += 28;
+
+  // Title
+  ctx.fillStyle = '#f0ece4';
+  ctx.font = 'bold 32px system-ui,sans-serif';
+  y = wrapText(ctx, album.title, mid, y, S - pad * 2, 40);
+
+  // Year · tracks
+  y += 12;
+  ctx.fillStyle = '#555';
+  ctx.font = '22px system-ui,sans-serif';
+  const tracks = album.tracks?.length ?? 0;
+  ctx.fillText(`${album.year}  ·  ${tracks} faixas`, mid, y);
+
+  // Button
+  const btnY = S - 72;
+  const btnW = 220, btnH = 44, btnX = mid - btnW / 2, btnR = 6;
+  ctx.fillStyle = '#d4a574';
+  ctx.beginPath();
+  ctx.roundRect(btnX, btnY, btnW, btnH, btnR);
+  ctx.fill();
+  ctx.fillStyle = '#0a0806';
+  ctx.font = 'bold 22px system-ui,sans-serif';
+  ctx.fillText('Ver no Acervo UQT →', mid, btnY + 30);
+
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
+}
+
+// Scratch objects for rotation math
+const _lm = new THREE.Matrix4();
+const _lq = new THREE.Quaternion();
+const _origin = new THREE.Vector3(0, 0, 0);
+const _worldUp = new THREE.Vector3(0, 1, 0);
+
+function naturalQuat(pos) {
+  // Quaternion a mesh at `pos` needs to face origin (same as lookAt(0,0,0))
+  _lm.lookAt(_origin, pos, _worldUp);
+  return new THREE.Quaternion().setFromRotationMatrix(_lm);
+}
+
+function selectAlbum(mesh) {
+  if (activeMesh === mesh) {
+    window.location.href = `./?album=${encodeURIComponent(mesh.userData.album.path)}`;
+    return;
+  }
+  if (activeMesh) restoreMesh(activeMesh);
+  activeMesh = mesh;
+
+  // Swap front face to info card
+  mesh.userData.savedFrontMat = mesh.material[4];
+  mesh.material[4] = new THREE.MeshBasicMaterial({ map: makeInfoTexture(mesh.userData.album) });
+}
+
+function restoreMesh(mesh) {
+  if (mesh.userData.savedFrontMat) {
+    mesh.material[4].map?.dispose();
+    mesh.material[4].dispose();
+    mesh.material[4] = mesh.userData.savedFrontMat;
+    mesh.userData.savedFrontMat = null;
+  }
+  // Mark for rotation restore
+  mesh.userData.restoreQuat = naturalQuat(basePositions[mesh.userData.index]);
+}
+
+function deselectAlbum() {
+  if (activeMesh) {
+    restoreMesh(activeMesh);
+    activeMesh = null;
+  }
+}
+
+// ─── Progress helpers ─────────────────────────────────────────────────────────
+
+function setProgress(pct) {
+  document.getElementById('loading-bar').style.width = `${pct}%`;
+}
+function setStatus(msg) {
+  document.getElementById('loading-status').textContent = msg;
+}
+
+// ─── Data loading ─────────────────────────────────────────────────────────────
+
+async function loadAlbumData() {
+  const res = await fetch('./js/uqt-albums.json.gz');
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const ds = new DecompressionStream('gzip');
+  const decompressed = res.body.pipeThrough(ds);
+  const text = await new Response(decompressed).text();
+  return JSON.parse(text).albums;
+}
+
+// ─── Render loop ──────────────────────────────────────────────────────────────
+
+const clock = new THREE.Clock();
+const TARGET_FRAME_MS = isMobile ? 1000 / 30 : 0;
+let lastFrameTime = 0;
+let frame = 0;
+
+function startRenderLoop() {
+  function tick(now) {
+    requestAnimationFrame(tick);
+    if (TARGET_FRAME_MS > 0 && now - lastFrameTime < TARGET_FRAME_MS) return;
+    lastFrameTime = now;
+    frame++;
+
+    controls.update();
+    animateScene(clock.getElapsedTime(), frame);
+    updatePriorities(frame);
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(tick);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) clock.stop(); else clock.start();
+});
+
+// ─── Main ─────────────────────────────────────────────────────────────────────
+
+async function main() {
+  try {
+    setStatus('Carregando álbuns...');
+    const albums = await loadAlbumData();
+    setProgress(30);
+
+    // Only place albums that have a confirmed cover image
+    const withCover = albums.filter(a => a.has_cover !== false);
+    setStatus(`Posicionando ${withCover.length} álbuns...`);
+    buildStarfield();
+    const positions = fibonacciPoints(withCover.length, SPHERE_RADIUS);
+    buildAlbumMeshes(withCover, positions);
+    initAnimationData();
+    setProgress(70);
+
+    setStatus('Iniciando carregamento de capas...');
+    initTextureQueue();
+    setProgress(90);
+
+    startRenderLoop();
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setProgress(100);
+        const overlay = document.getElementById('loading');
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+        setTimeout(() => overlay.remove(), 750);
+
+        // Auto-hide hint
+        setTimeout(() => {
+          document.getElementById('hint')?.classList.add('hidden');
+        }, 6000);
+      });
+    });
+
+  } catch (err) {
+    setStatus(`Erro: ${err.message}`);
+    console.error(err);
+  }
+}
+
+main();
+</script>
+
+</body>
+</html>
