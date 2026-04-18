@@ -558,14 +558,15 @@ u(document).on('DOMContentLoaded', async function () {
     if (isMobile()) openMobileDrawer();
 
     if (album.tracks.length > 0) {
-      currentTrack = album.tracks[0];
-      updateNowPlaying();
       const audio = u('#audio').first();
-      const newSrc = `${BASE_URL}/${currentTrack.file}`;
-      if (audio.src !== newSrc) { audio.src = newSrc; audio.load(); }
+      if (audio.paused) {
+        currentTrack = album.tracks[0];
+        updateNowPlaying();
+        const newSrc = `${BASE_URL}/${currentTrack.file}`;
+        if (audio.src !== newSrc) { audio.src = newSrc; audio.load(); }
+      }
     }
 
-    loadAlbumDurations(album);
     updateMetaTags(album);
     window.history.pushState({ album: album.path }, '', generateAlbumUrl(album));
   });
@@ -689,7 +690,11 @@ u(document).on('DOMContentLoaded', async function () {
         u('#btn-play').addClass('playing');
       }
     } else {
-      audio.pause();
+      if (selectedAlbum && currentTrack && !selectedAlbum.tracks.includes(currentTrack)) {
+        playTrack(selectedAlbum.tracks[0]);
+      } else {
+        audio.pause();
+      }
     }
   });
 
