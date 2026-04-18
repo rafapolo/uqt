@@ -9,6 +9,7 @@ let searchQuery = '';
 let shuffleOn = false;
 let repeatMode = 'off'; // 'off' | 'one' | 'all'
 let renderedAlbum = null;
+const durationCache = new Map();
 
 const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
 const PLACEHOLDER_COVER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%232a2620;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%231a1814;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill="url(%23grad)" width="200" height="200"/%3E%3Ccircle cx="100" cy="100" r="40" fill="none" stroke="%23d4a574" stroke-width="8"/%3E%3Ccircle cx="100" cy="100" r="15" fill="none" stroke="%23d4a574" stroke-width="2"/%3E%3Cpath d="M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60" fill="none" stroke="%23d4a574" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E';
@@ -226,7 +227,7 @@ function filterAlbums() {
       album.name?.toLowerCase().includes(q) ||
       album.artists?.toLowerCase().includes(q) ||
       album.path?.toLowerCase().includes(q) ||
-      album.tracks.some(t => t.artists?.toLowerCase().includes(q));
+      album.tracks.some(t => t.title?.toLowerCase().includes(q) || t.artists?.toLowerCase().includes(q));
     const matchesDecade = activeDecade === null ||
       Math.floor(album.year / 10) * 10 === activeDecade;
     return matchesSearch && matchesDecade;
@@ -316,6 +317,14 @@ function renderAlbumHeader() {
   container.replaceChildren(cover, info);
 }
 
+function updateDurationInDOM(track, idx) {
+  const dur = durationCache.get(track.file);
+  if (!dur) return;
+  const formatted = formatTime(dur);
+  document.querySelector(`#track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
+  document.querySelector(`#drawer-track-list [data-track-idx="${idx}"] .track-duration`)?.replaceChildren(document.createTextNode(formatted));
+}
+
 function renderTrackList() {
   const container = document.querySelector('#track-list');
   const tracksPanel = u('.tracks-panel').first();
@@ -349,13 +358,14 @@ function renderTrackList() {
 
     const artistLabel = track.artists && track.artists !== selectedAlbum.artists
       ? `<div class="track-artist">${track.artists}</div>` : '';
+    const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
     item.innerHTML = `
       <span class="track-num">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
         ${artistLabel}
       </div>
-      <span class="track-duration">-</span>
+      <span class="track-duration">${dur}</span>
     `;
     frag.append(item);
   });
@@ -392,13 +402,14 @@ function renderMobileDrawer(album) {
 
     const artistLabel = track.artists && track.artists !== album.artists
       ? `<div class="track-artist">${track.artists}</div>` : '';
+    const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
     item.innerHTML = `
       <span class="track-num">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
         ${artistLabel}
       </div>
-      <span class="track-duration">-</span>
+      <span class="track-duration">${dur}</span>
     `;
     frag.append(item);
   });
@@ -448,16 +459,47 @@ function updateNowPlaying() {
   if (coverImg) { coverImg.loading = 'lazy'; loadCoverImage(coverImg, coverUrl); }
   const drawerCover = document.getElementById('drawer-cover');
   if (drawerCover) loadCoverImage(drawerCover, coverUrl);
+
+  // Overlay
+  const overlayCover = document.getElementById('overlay-cover');
+  if (overlayCover) loadCoverImage(overlayCover, coverUrl);
+  const overlayTitle = document.getElementById('overlay-track-title');
+  if (overlayTitle) overlayTitle.textContent = currentTrack.title;
+  const overlayArtist = document.getElementById('overlay-track-artist');
+  if (overlayArtist) overlayArtist.textContent = currentTrack.artists;
+
+  // Media Session
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: currentTrack.title,
+      artist: currentTrack.artists,
+      album: currentTrack.album || '',
+      artwork: [{ src: coverUrl, sizes: '200x200', type: 'image/jpeg' }]
+    });
+  }
 }
 
 function playNext() {
-  if (!selectedAlbum || !currentTrack) return;
-  const tracks = selectedAlbum.tracks;
   if (shuffleOn) {
-    const others = tracks.filter(t => t !== currentTrack);
-    if (others.length) playTrack(others[Math.floor(Math.random() * others.length)]);
+    if (!albums.length) return;
+    const pool = albums.flatMap(a => a.tracks.map(t => ({ track: t, album: a }))).filter(({ track }) => track !== currentTrack);
+    if (!pool.length) return;
+    const { track, album: nextAlbum } = pool[Math.floor(Math.random() * pool.length)];
+    if (nextAlbum !== selectedAlbum) {
+      selectedAlbum = nextAlbum;
+      renderedAlbum = null;
+      renderAlbumHeader();
+      renderTrackList();
+      renderMobileDrawer(nextAlbum);
+      virtualGrid.refresh();
+      updateMetaTags(nextAlbum);
+      window.history.pushState({ album: nextAlbum.path }, '', generateAlbumUrl(nextAlbum));
+    }
+    playTrack(track);
     return;
   }
+  if (!selectedAlbum || !currentTrack) return;
+  const tracks = selectedAlbum.tracks;
   const idx = tracks.findIndex(t => t.num === currentTrack.num);
   if (idx < tracks.length - 1) {
     playTrack(tracks[idx + 1]);
@@ -521,6 +563,16 @@ u(document).on('DOMContentLoaded', async function () {
     }
   });
 
+  // Show loading skeleton
+  const skeletonEl = document.createElement('div');
+  skeletonEl.className = 'grid-skeleton';
+  for (let i = 0; i < 30; i++) {
+    const card = document.createElement('div');
+    card.className = 'skeleton-card';
+    skeletonEl.append(card);
+  }
+  albumsList.append(skeletonEl);
+
   // Init virtual grid before data loads so it sizes correctly
   virtualGrid = new VirtualGrid(albumsList);
 
@@ -529,6 +581,7 @@ u(document).on('DOMContentLoaded', async function () {
     (await fetch('js/uqt-albums.json.gz')).body.pipeThrough(new DecompressionStream('gzip'))
   ).text();
   db = JSON.parse(json);
+  skeletonEl.remove();
 
   buildAlbums();
   filteredAlbums = [...albums];
@@ -560,20 +613,46 @@ u(document).on('DOMContentLoaded', async function () {
 
   const audio = u('#audio').first();
 
-  audio.addEventListener('play',  () => u('#btn-play').addClass('playing'));
-  audio.addEventListener('pause', () => u('#btn-play').removeClass('playing'));
+  const overlayBtnPlay = document.getElementById('overlay-btn-play');
+  audio.addEventListener('play', () => {
+    u('#btn-play').addClass('playing');
+    overlayBtnPlay?.classList.add('playing');
+  });
+  audio.addEventListener('pause', () => {
+    u('#btn-play').removeClass('playing');
+    overlayBtnPlay?.classList.remove('playing');
+  });
 
   const progressFill = document.querySelector('#progress-fill');
-  const progressBar = document.querySelector('.progress-bar');
+  const mainProgressBar = document.getElementById('main-progress-bar');
+  const overlayProgressFill = document.getElementById('overlay-progress-fill');
+  const overlayTimeCurrent = document.getElementById('overlay-time-current');
+  const overlayTimeDuration = document.getElementById('overlay-time-duration');
+
   audio.addEventListener('timeupdate', () => {
     const percent = (audio.currentTime / audio.duration) * 100 || 0;
+    const cur = formatTime(audio.currentTime);
     progressFill.style.width = percent + '%';
-    progressBar.classList.toggle('has-progress', percent > 0);
-    u('#time-current').text(formatTime(audio.currentTime));
+    mainProgressBar.classList.toggle('has-progress', percent > 0);
+    u('#time-current').text(cur);
+    if (overlayProgressFill) overlayProgressFill.style.width = percent + '%';
+    if (overlayTimeCurrent) overlayTimeCurrent.textContent = cur;
+    if ('mediaSession' in navigator && audio.duration && !isNaN(audio.duration)) {
+      try { navigator.mediaSession.setPositionState({ duration: audio.duration, playbackRate: audio.playbackRate, position: audio.currentTime }); } catch (_) {}
+    }
   });
 
   audio.addEventListener('loadedmetadata', () => {
-    u('#time-duration').text(formatTime(audio.duration));
+    const dur = formatTime(audio.duration);
+    u('#time-duration').text(dur);
+    if (overlayTimeDuration) overlayTimeDuration.textContent = dur;
+    if (currentTrack) {
+      durationCache.set(currentTrack.file, audio.duration);
+      if (selectedAlbum) {
+        const idx = selectedAlbum.tracks.indexOf(currentTrack);
+        if (idx >= 0) updateDurationInDOM(currentTrack, idx);
+      }
+    }
   });
 
   audio.addEventListener('ended', playNext);
@@ -601,6 +680,28 @@ u(document).on('DOMContentLoaded', async function () {
 
   u('#btn-prev').on('click', playPrevious);
   u('#btn-next').on('click', playNext);
+
+  // Mobile now-playing overlay
+  const overlay = document.getElementById('now-playing-overlay');
+  const overlayProgressBar = document.getElementById('overlay-progress-bar');
+  document.querySelector('.now-playing-compact')?.addEventListener('click', () => {
+    if (isMobile() && currentTrack) overlay?.classList.add('open');
+  });
+  document.getElementById('overlay-close')?.addEventListener('click', () => overlay?.classList.remove('open'));
+  document.getElementById('overlay-btn-prev')?.addEventListener('click', playPrevious);
+  document.getElementById('overlay-btn-next')?.addEventListener('click', playNext);
+  overlayBtnPlay?.addEventListener('click', () => document.getElementById('btn-play').click());
+
+  // Media Session action handlers
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.setActionHandler('play', () => safePlay(audio));
+    navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+    navigator.mediaSession.setActionHandler('previoustrack', playPrevious);
+    navigator.mediaSession.setActionHandler('nexttrack', playNext);
+    navigator.mediaSession.setActionHandler('seekbackward', ({ seekOffset = 10 }) => { audio.currentTime = Math.max(0, audio.currentTime - seekOffset); });
+    navigator.mediaSession.setActionHandler('seekforward', ({ seekOffset = 10 }) => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + seekOffset); });
+    navigator.mediaSession.setActionHandler('seekto', ({ seekTime }) => { audio.currentTime = seekTime; });
+  }
 
   document.getElementById('drawer-close')?.addEventListener('click', closeMobileDrawer);
   document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
@@ -644,10 +745,17 @@ u(document).on('DOMContentLoaded', async function () {
     localStorage.setItem('uqt-volume', vol);
   });
 
-  u('.progress-bar').on('click', function (e) {
-    const rect = this.getBoundingClientRect();
-    const percent = (e.clientX - rect.left) / rect.width;
-    audio.currentTime = percent * audio.duration;
+  function seekFromClient(clientX, barEl) {
+    if (!audio.duration) return;
+    const rect = barEl.getBoundingClientRect();
+    audio.currentTime = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width)) * audio.duration;
+  }
+
+  [mainProgressBar, overlayProgressBar].forEach(bar => {
+    if (!bar) return;
+    bar.addEventListener('click', e => seekFromClient(e.clientX, bar));
+    bar.addEventListener('touchstart', e => { e.preventDefault(); seekFromClient(e.touches[0].clientX, bar); }, { passive: false });
+    bar.addEventListener('touchmove',  e => { e.preventDefault(); seekFromClient(e.touches[0].clientX, bar); }, { passive: false });
   });
 
   let searchDebounce;
@@ -684,6 +792,10 @@ u(document).on('DOMContentLoaded', async function () {
         break;
       case 'p':
         if (!e.metaKey && !e.ctrlKey && !e.altKey) playPrevious();
+        break;
+      case '/':
+        e.preventDefault();
+        u('#search-input').first().focus();
         break;
     }
   });
