@@ -21,28 +21,33 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
-- **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado
+- **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado — com debounce de 150ms
+- **Botão de limpar** (✕): Aparece no campo de busca ao digitar; limpa e reposiciona o foco
+- **Contagem de resultados**: Exibe quantos álbuns correspondem ao filtro ativo
 - **Filtro por década**: Botões compactos (Todos | 1900 | 1910 | 1920 ... 2010) — clique para explorar épocas específicas
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
 - **Metadados precisos**: Carregados de `js/uqt-albums.json.gz` (693 KB, assíncrono) com contagem exata de artistas e álbuns
 
 ### 📱 Totalmente Responsivo
-- **Desktop**: Layout lado-a-lado (grid de álbuns + painel de faixas lateral)
+- **Desktop**: Layout lado-a-lado (grid de álbuns + painel de faixas lateral com auto-scroll para a faixa tocando)
 - **Mobile**: Grid de álbuns em tela cheia; painel de faixas como drawer deslizante no player (botão ☰); header compacto com stats visíveis
 
 ### 🎼 Funcionalidades de Áudio
 - **Seleção intencional**: Clique em um álbum para carregá-lo no player — o áudio só começa ao pressionar play
 - **Auto-play da próxima**: Continua automaticamente para a próxima faixa ao final
-- **Controle de progresso**: Clique na barra para pular para qualquer ponto
+- **Barra de progresso estilo Spotify**: Linha fina com ponto de posição sempre visível; cresce levemente no hover; área de toque ampla para mobile
+- **Controle de progresso**: Clique (ou toque) na barra para pular para qualquer ponto
 - **Shuffle**: Embaralha a ordem das faixas do álbum atual
-- **Repeat**: Repete a faixa atual em loop (`audio.loop`)
+- **Repeat**: Cicla entre três modos — sem repetição → repetir faixa → repetir álbum
 - **Volume**: Slider de volume no player (desktop)
+- **Persistência**: Shuffle, modo de repetição e volume são salvos no `localStorage` e restaurados ao reabrir
+- **Atalhos de teclado**: `Espaço` play/pausa · `←/→` recua/avança 10s · `n` próxima · `p` anterior
 
 ## 🛠️ Como Funciona
 
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 + JavaScript vanilla, servido pelo GitHub Pages
-- **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via pako
+- **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
 - **Rolagem virtual**: `VirtualGrid` em `js/uqt.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
 - **Proxy**: Node.js com o SDK S3 — acessa o bucket privado na Hetzner usando credenciais; o bucket nunca é exposto diretamente ao cliente
@@ -58,7 +63,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 5. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
 
 ### Frontend
-- Dependências mínimas: Umbrella JS (~2.6 KB) + pako (~45 KB, descompressão gzip)
+- Dependências mínimas: Umbrella JS (~2.6 KB); descompressão gzip via `DecompressionStream` nativa (zero KB extra)
 - CSS com Flexbox, sem frameworks; grid substituído por posicionamento absoluto virtual
 - Placeholder de capa embutido como data-URI (nenhum round-trip extra)
 - Delegação de eventos: 3 listeners no total para álbuns, faixas e drawer mobile
@@ -73,7 +78,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ## 🎯 Otimizações de Performance
 
 ### Carregamento de dados
-- **Gzip assíncrono**: `js/uqt-albums.json.gz` (693 KB) carregado via `fetch` + pako — elimina 4.8 MB de JS bloqueante no parse inicial
+- **Gzip assíncrono**: `js/uqt-albums.json.gz` (693 KB) carregado via `fetch` + `DecompressionStream` nativa — elimina 4.8 MB de JS bloqueante no parse inicial
 - **Virtual scrolling**: `VirtualGrid` renderiza ~30 cards em posicionamento absoluto; scroll event passivo + ResizeObserver — DOM nunca passa de ~100 nós
 - **Event delegation**: 3 listeners delegados substituem 2.164+ listeners individuais por álbum
 - **Track list diffing**: `renderTrackList()` detecta se o álbum já está renderizado — ao trocar faixa no mesmo álbum, só atualiza `.playing` sem reconstruir o DOM (React-style reconciliation)

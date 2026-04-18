@@ -191,7 +191,7 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 8px 12px;
+  padding: 8px 30px 8px 12px;
   background: var(--color-surface-light);
   border: 1px solid var(--color-border);
   border-radius: 4px;
@@ -210,6 +210,56 @@ body {
   border-color: var(--color-accent);
   background: var(--color-bg);
   box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+
+.search-clear {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 4px;
+  display: none;
+  border-radius: 50%;
+  transition: var(--transition-fast);
+  align-items: center;
+  justify-content: center;
+}
+
+.search-clear.visible {
+  display: flex;
+}
+
+.search-clear:hover {
+  color: var(--color-text);
+  background: var(--color-surface-light);
+}
+
+.search-count {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  display: none;
+  padding: 0 2px;
+}
+
+.search-count.visible {
+  display: block;
 }
 
 .decade-buttons {
@@ -632,11 +682,24 @@ body {
 .progress-bar {
   flex: 1;
   height: 4px;
-  background: var(--color-surface-light);
+  background: var(--color-border);
   border-radius: 2px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
+  transition: height 0.1s ease;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+}
+
+.progress-bar:hover {
+  height: 6px;
 }
 
 .progress-fill {
@@ -645,24 +708,30 @@ body {
   border-radius: 2px;
   width: 0%;
   transition: width 0.1s linear;
+  position: relative;
 }
 
 .progress-fill::after {
   content: '';
   position: absolute;
-  right: -4px;
+  right: -6px;
   top: 50%;
   transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   background: var(--color-accent);
   border-radius: 50%;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.15s, transform 0.15s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar.has-progress .progress-fill::after {
+  opacity: 1;
 }
 
 .progress-bar:hover .progress-fill::after {
-  opacity: 1;
+  transform: translateY(-50%) scale(1.25);
 }
 
 /* Library Stats / Player Extra Controls */
@@ -814,11 +883,7 @@ audio {
   }
 
   .music-count {
-    font-size: 0;
-  }
-  .music-count::before {
-    font-size: 0.68rem;
-    content: attr(data-short);
+    display: none;
   }
 
   /* Layout: album grid takes all available height */
