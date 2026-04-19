@@ -78,14 +78,14 @@
     #light-toggle {
       position: fixed; top: 14px; right: 14px;
       background: rgba(0,0,0,0.45);
-      border: none; border-radius: 4px;
-      color: rgba(212,165,116,0.6);
+      border: 1px solid rgba(212,165,116,0.5); border-radius: 4px;
+      color: rgba(212,165,116,0.7);
       font-size: 0.75rem; letter-spacing: 0.05em;
       padding: 6px 10px; cursor: pointer; z-index: 10;
-      transition: color 0.2s;
+      transition: color 0.2s, border-color 0.2s;
     }
-    #light-toggle:hover { color: #d4a574; }
-    #light-toggle.on  { color: #ffe8a0; }
+    #light-toggle:hover { color: #d4a574; border-color: #d4a574; }
+    #light-toggle.on  { color: #ffe8a0; border-color: #ffe8a0; }
 
     /* Hint text */
     #hint {
@@ -118,7 +118,7 @@
 </div>
 
 <a id="back-link" href="./">← Acervo</a>
-<button id="light-toggle" title="Ligar/desligar luz">☀︎</button>
+<button id="light-toggle" title="Ascender Luz">☀︎</button>
 <p id="hint">arraste para girar · scroll para avançar · clique em um álbum</p>
 
 <script type="module">
@@ -281,6 +281,7 @@ document.getElementById('light-toggle').addEventListener('click', function () {
   ambientLight.intensity = lightsOn ? 1.0 : 0.10;
   headSpot.visible = !lightsOn;
   this.classList.toggle('on', lightsOn);
+  this.title = lightsOn ? 'Apagar Luz' : 'Ascender Luz';
 });
 
 // ─── Starfield ───────────────────────────────────────────────────────────────
