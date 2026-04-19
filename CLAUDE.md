@@ -13,7 +13,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **js/uqt.js** — Core app logic: virtual grid, album/track rendering, playback control, search/filtering
 - **js/uqt-albums.js** — Metadata database (album-centric: title, artist, year, path, tracks)
 - **js/uqt-albums.json.gz** — Gzipped JSON loaded async by uqt.js via pako (replaces blocking script tag)
-- **uqt.css** — Styling
+- **assets/uqt.css** — Styling
+- **assets/capa.jpg** — Default/placeholder cover image (400x400)
 
 The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses with pako, then renders albums into a virtual scrolling grid. Album paths in the JSON map directly to file paths on the audio server.
 
