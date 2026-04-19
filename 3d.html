@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>UQT · Universo</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232a2620;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a1814;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23d4a574' stroke-width='8'/%3E%3Ccircle cx='100' cy='100' r='15' fill='none' stroke='%23d4a574' stroke-width='2'/%3E%3Cpath d='M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60' fill='none' stroke='%23d4a574' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
   <script type="importmap">
   {
     "imports": {
@@ -18,7 +19,7 @@
     body, html {
       width: 100%; height: 100%;
       overflow: hidden;
-      background: #201d18;
+      background: #0a0906;
       font-family: system-ui, -apple-system, sans-serif;
       color: #e8e0d0;
     }
@@ -32,7 +33,7 @@
     /* Loading overlay */
     #loading {
       position: fixed; inset: 0;
-      background: #201d18;
+      background: #0a0906;
       display: flex; align-items: center; justify-content: center;
       z-index: 100;
       transition: opacity 0.7s ease;
@@ -78,13 +79,14 @@
     #hint {
       position: fixed; bottom: 20px; left: 50%;
       transform: translateX(-50%);
-      font-size: 0.7rem; color: rgba(212,165,116,0.4);
+      font-size: 0.7rem; color: rgba(212,165,116,0.6);
       letter-spacing: 0.08em;
       pointer-events: none;
-      transition: opacity 1.5s ease;
       white-space: nowrap;
+      background: rgba(0,0,0,0.45);
+      border-radius: 4px;
+      padding: 6px 10px;
     }
-    #hint.hidden { opacity: 0; }
 
     @media (max-width: 600px) {
       #focus-info { max-width: 200px; font-size: 0.85em; }
@@ -143,14 +145,16 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.1;
+renderer.toneMapping = THREE.LinearToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 // ─── Scene ───────────────────────────────────────────────────────────────────
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x201d18);
-scene.fog = new THREE.FogExp2(0x201d18, 0.0018);
+scene.background = new THREE.Color(0x0a0906);
+scene.fog = new THREE.FogExp2(0x0a0906, 0.0007);
 
 // ─── Camera ──────────────────────────────────────────────────────────────────
 
@@ -223,6 +227,38 @@ renderer.domElement.addEventListener('touchmove', (e) => {
   }
 }, { passive: true });
 
+// ─── Lighting ────────────────────────────────────────────────────────────────
+
+// 50% dark baseline everywhere
+scene.add(new THREE.AmbientLight(0xffffff, 0.10));
+
+// ambient(0.10) + spot(0.90) = 1.0 at cone centre; warm yellow-white; wider cone
+const headSpot = new THREE.SpotLight(0xfff4cc, 0.90, 0, 0.52, 0.5, 0);
+const spotTarget = new THREE.Object3D();
+spotTarget.position.set(0, 0, -50); // camera looks in -Z in local space
+camera.add(headSpot);
+camera.add(spotTarget);
+headSpot.target = spotTarget;
+headSpot.castShadow = true;
+headSpot.shadow.mapSize.set(isMobile ? 512 : 1024, isMobile ? 512 : 1024);
+headSpot.shadow.camera.near = 10;
+headSpot.shadow.camera.far = 900;
+headSpot.shadow.bias = -0.003;
+headSpot.shadow.normalBias = 0.05;
+scene.add(camera);
+
+// ─── Room ─────────────────────────────────────────────────────────────────────
+
+const roomMesh = new THREE.Mesh(
+  new THREE.BoxGeometry(780, 780, 780),
+  new THREE.MeshLambertMaterial({ color: 0x2a2018, side: THREE.BackSide })
+);
+roomMesh.receiveShadow = true;
+roomMesh.raycast = () => {};
+scene.add(roomMesh);
+
+function animateFire(_t) {}
+
 // ─── Starfield ───────────────────────────────────────────────────────────────
 
 function buildStarfield() {
@@ -245,6 +281,24 @@ function buildStarfield() {
   const stars = new THREE.Points(geo, mat);
   stars.raycast = () => {};
   scene.add(stars);
+}
+
+// ─── Overlap resolution ───────────────────────────────────────────────────────
+
+function resolveOverlaps(positions, size) {
+  const minDist2 = (size * 1.05) ** 2;
+  const bump = size * 0.5;
+  const dir = new THREE.Vector3();
+  for (let iter = 0; iter < 3; iter++) {
+    for (let i = 0; i < positions.length; i++) {
+      for (let j = i + 1; j < positions.length; j++) {
+        if (positions[i].distanceToSquared(positions[j]) < minDist2) {
+          dir.copy(positions[j]).normalize();
+          positions[j].addScaledVector(dir, bump);
+        }
+      }
+    }
+  }
 }
 
 // ─── Fibonacci sphere ────────────────────────────────────────────────────────
@@ -270,13 +324,15 @@ function fibonacciPoints(n, radius) {
 const BOX_DEPTH = PLANE_SIZE * 0.03;
 
 // Shared side materials — warm beige with subtle shading
-const sideR    = new THREE.MeshBasicMaterial({ color: 0xe8dcc8 });
-const sideL    = new THREE.MeshBasicMaterial({ color: 0xc8bcaa });
-const sideT    = new THREE.MeshBasicMaterial({ color: 0xe0d4bc });
-const sideB    = new THREE.MeshBasicMaterial({ color: 0xbcb09a });
-const sideBack = new THREE.MeshBasicMaterial({ color: 0xb0a490 });
+const sideR    = new THREE.MeshLambertMaterial({ color: 0xe8dcc8 });
+const sideL    = new THREE.MeshLambertMaterial({ color: 0xc8bcaa });
+const sideT    = new THREE.MeshLambertMaterial({ color: 0xe0d4bc });
+const sideB    = new THREE.MeshLambertMaterial({ color: 0xbcb09a });
+const sideBack = new THREE.MeshLambertMaterial({ color: 0xb0a490 });
 
-const placeholderFrontMat = new THREE.MeshBasicMaterial({ color: 0xd4a574 });
+const placeholderFrontMat = new THREE.MeshPhongMaterial({
+  color: 0xd4a574, shininess: 2, specular: 0x050505,
+});
 function getDecadeFrontMat(_year) { return placeholderFrontMat; }
 
 // BoxGeometry face order: [+X, -X, +Y, -Y, +Z(front), -Z(back)]
@@ -295,7 +351,8 @@ function buildAlbumMeshes(albums, positions) {
   albums.forEach((album, i) => {
     const mesh = new THREE.Mesh(sharedGeo, boxMats(getDecadeFrontMat(album.year)));
     mesh.position.copy(positions[i]);
-    mesh.lookAt(0, 0, 0); // +Z already faces origin for non-camera objects
+    mesh.lookAt(0, 0, 0);
+    mesh.castShadow = true;
     mesh.userData = { album, index: i, textureLoaded: false, loading: false };
     albumGroup.add(mesh);
     albumMeshes.push(mesh);
@@ -376,24 +433,19 @@ function fetchTexture(index) {
       const gc = document.createElement('canvas'); gc.width = gc.height = S;
       const gx = gc.getContext('2d');
       gx.drawImage(tex.image, 0, 0, S, S);
-      const grad = gx.createLinearGradient(0, 0, S * 0.7, S * 0.7);
-      grad.addColorStop(0,    'rgba(255,255,255,0.20)');
-      grad.addColorStop(0.40, 'rgba(255,255,255,0.07)');
-      grad.addColorStop(0.75, 'rgba(255,255,255,0.01)');
-      grad.addColorStop(1,    'rgba(255,255,255,0)');
-      gx.fillStyle = grad;
-      gx.fillRect(0, 0, S, S);
+      // Broad soft wash — upper-left ambient glow
+      const grad = gx.createLinearGradient(0, 0, S * 0.75, S * 0.75);
       const glossTex = new THREE.CanvasTexture(gc);
       glossTex.colorSpace = THREE.SRGBColorSpace;
       glossTex.generateMipmaps = true;
       glossTex.minFilter = THREE.LinearMipmapLinearFilter;
       mesh.material = [
-        new THREE.MeshBasicMaterial({ color: cr }),       // +X right
-        new THREE.MeshBasicMaterial({ color: cl }),       // -X left
-        new THREE.MeshBasicMaterial({ color: ct }),       // +Y top
-        new THREE.MeshBasicMaterial({ color: cb }),       // -Y bottom
-        new THREE.MeshBasicMaterial({ map: glossTex }),   // +Z front (cover + gloss)
-        new THREE.MeshBasicMaterial({ color: ck }),       // -Z back
+        new THREE.MeshLambertMaterial({ color: cr }),       // +X right
+        new THREE.MeshLambertMaterial({ color: cl }),       // -X left
+        new THREE.MeshLambertMaterial({ color: ct }),       // +Y top
+        new THREE.MeshLambertMaterial({ color: cb }),       // -Y bottom
+        new THREE.MeshPhongMaterial({ map: glossTex, shininess: 2, specular: 0x050505 }),  // +Z front
+        new THREE.MeshLambertMaterial({ color: ck }),       // -Z back
       ];
       mesh.userData.frontMat = mesh.material[4];
       mesh.userData.textureLoaded = true;
@@ -495,126 +547,8 @@ function doRaycast(cx, cy) {
   raycaster.setFromCamera(pointer, camera);
   const hits = raycaster.intersectObjects(albumGroup.children, false);
   if (hits.length > 0) {
-    selectAlbum(hits[0].object);
-  } else {
-    deselectAlbum();
-  }
-}
-
-// ─── Info canvas texture ──────────────────────────────────────────────────────
-
-function wrapText(ctx, text, x, y, maxW, lineH) {
-  const words = text.split(' ');
-  let line = '';
-  for (const word of words) {
-    const test = line ? line + ' ' + word : word;
-    if (ctx.measureText(test).width > maxW && line) {
-      ctx.fillText(line, x, y);
-      line = word;
-      y += lineH;
-    } else {
-      line = test;
-    }
-  }
-  ctx.fillText(line, x, y);
-  return y + lineH;
-}
-
-function makeInfoTexture(album) {
-  const S = 512;
-  const c = document.createElement('canvas');
-  c.width = S; c.height = S;
-  const ctx = c.getContext('2d');
-
-  ctx.fillStyle = '#07060f';
-  ctx.fillRect(0, 0, S, S);
-
-  const pad = 40;
-  const mid = S / 2;
-
-  ctx.textAlign = 'center';
-
-  // Artist
-  ctx.fillStyle = '#d4a574';
-  ctx.font = '500 26px system-ui,sans-serif';
-  let y = 110;
-  y = wrapText(ctx, album.artist, mid, y, S - pad * 2, 34);
-
-  // Divider
-  y += 14;
-  ctx.strokeStyle = 'rgba(212,165,116,0.25)';
-  ctx.lineWidth = 1;
-  ctx.beginPath(); ctx.moveTo(pad * 2, y); ctx.lineTo(S - pad * 2, y); ctx.stroke();
-  y += 28;
-
-  // Title
-  ctx.fillStyle = '#f0ece4';
-  ctx.font = 'bold 32px system-ui,sans-serif';
-  y = wrapText(ctx, album.title, mid, y, S - pad * 2, 40);
-
-  // Year · tracks
-  y += 12;
-  ctx.fillStyle = '#555';
-  ctx.font = '22px system-ui,sans-serif';
-  const tracks = album.tracks?.length ?? 0;
-  ctx.fillText(`${album.year}  ·  ${tracks} faixas`, mid, y);
-
-  // Button
-  const btnY = S - 72;
-  const btnW = 220, btnH = 44, btnX = mid - btnW / 2, btnR = 6;
-  ctx.fillStyle = '#d4a574';
-  ctx.beginPath();
-  ctx.roundRect(btnX, btnY, btnW, btnH, btnR);
-  ctx.fill();
-  ctx.fillStyle = '#0a0806';
-  ctx.font = 'bold 22px system-ui,sans-serif';
-  ctx.fillText('Ver no Acervo UQT →', mid, btnY + 30);
-
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  return tex;
-}
-
-// Scratch objects for rotation math
-const _lm = new THREE.Matrix4();
-const _lq = new THREE.Quaternion();
-const _origin = new THREE.Vector3(0, 0, 0);
-const _worldUp = new THREE.Vector3(0, 1, 0);
-
-function naturalQuat(pos) {
-  // Quaternion a mesh at `pos` needs to face origin (same as lookAt(0,0,0))
-  _lm.lookAt(_origin, pos, _worldUp);
-  return new THREE.Quaternion().setFromRotationMatrix(_lm);
-}
-
-function selectAlbum(mesh) {
-  if (activeMesh === mesh) {
-    window.location.href = `./?album=${encodeURIComponent(mesh.userData.album.path)}`;
-    return;
-  }
-  if (activeMesh) restoreMesh(activeMesh);
-  activeMesh = mesh;
-
-  // Swap front face to info card
-  mesh.userData.savedFrontMat = mesh.material[4];
-  mesh.material[4] = new THREE.MeshBasicMaterial({ map: makeInfoTexture(mesh.userData.album) });
-}
-
-function restoreMesh(mesh) {
-  if (mesh.userData.savedFrontMat) {
-    mesh.material[4].map?.dispose();
-    mesh.material[4].dispose();
-    mesh.material[4] = mesh.userData.savedFrontMat;
-    mesh.userData.savedFrontMat = null;
-  }
-  // Mark for rotation restore
-  mesh.userData.restoreQuat = naturalQuat(basePositions[mesh.userData.index]);
-}
-
-function deselectAlbum() {
-  if (activeMesh) {
-    restoreMesh(activeMesh);
-    activeMesh = null;
+    const album = hits[0].object.userData.album;
+    window.location.href = `./?album=${encodeURIComponent(album.path)}`;
   }
 }
 
@@ -653,7 +587,9 @@ function startRenderLoop() {
     frame++;
 
     controls.update();
-    animateScene(clock.getElapsedTime(), frame);
+    const t = clock.getElapsedTime();
+    animateFire(t);
+    animateScene(t, frame);
     updatePriorities(frame);
     renderer.render(scene, camera);
   }
@@ -677,6 +613,7 @@ async function main() {
     setStatus(`Posicionando ${withCover.length} álbuns...`);
     buildStarfield();
     const positions = fibonacciPoints(withCover.length, SPHERE_RADIUS);
+    resolveOverlaps(positions, PLANE_SIZE);
     buildAlbumMeshes(withCover, positions);
     initAnimationData();
     setProgress(70);
@@ -695,10 +632,6 @@ async function main() {
         overlay.style.pointerEvents = 'none';
         setTimeout(() => overlay.remove(), 750);
 
-        // Auto-hide hint
-        setTimeout(() => {
-          document.getElementById('hint')?.classList.add('hidden');
-        }, 6000);
       });
     });
 

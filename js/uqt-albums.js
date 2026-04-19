@@ -4,6 +4,7 @@ db = {
       "title": "acesa ao vivo em são luis do maranhão",
       "year": 2011,
       "path": "2011 - Alcione - Acesa – Ao vivo em São Luis do Maranhão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "de teresina á são luis",
@@ -96,6 +97,7 @@ db = {
       "title": "Duas Faces (Jam Session)",
       "year": 2011,
       "path": "2011 - Alcione - Duas Faces",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Duas Faces",
@@ -216,6 +218,7 @@ db = {
       "title": "Flor Morena",
       "year": 2011,
       "path": "2011 - Aline Calixto - Flor Morena",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gemada Carioca",
@@ -322,6 +325,7 @@ db = {
       "title": "Sou Suspeita Estou Sujeita Não sou Santa",
       "year": 2011,
       "path": "2011 - Anelis - Sou Suspeita Estou Sujeita Nao Sou Santa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulher segundo meu pai",
@@ -449,6 +453,7 @@ db = {
       "title": "Sou Suspeita Estou Sujeita Não sou Santa",
       "year": 2011,
       "path": "UQT2011_Anelis-SouSuspeitaEstouSujeitaNaoSouSanta",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Mulher segundo meu pai",
@@ -576,6 +581,7 @@ db = {
       "title": "batuques e romances",
       "year": 2011,
       "path": "2011 - Arlindo Cruz - Batuques e romances",
+      "has_cover": true,
       "tracks": [
         {
           "title": "como um caso de amor",
@@ -689,6 +695,7 @@ db = {
       "title": "Nosso Samba tá na Rua",
       "year": 2011,
       "path": "2011 - Beth Carvalho - Nosso Samba Tá Na Rua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nosso Samba tá na Rua",
@@ -802,6 +809,7 @@ db = {
       "title": "Bodas de Coral no Samba Brasileiro",
       "year": 2011,
       "path": "2011 - Bodas de Coral no Samba Brasileiro – Dona Ivone Lara e Délcio de Carvalho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Derradeira Melodia",
@@ -915,6 +923,7 @@ db = {
       "title": "Da Afonso Pena À Paulista",
       "year": 2011,
       "path": "2011 - Camiranga - Da Afonso Pena A Paulista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Banzo Brabo",
@@ -1014,6 +1023,7 @@ db = {
       "title": "Da Afonso Pena À Paulista",
       "year": 2011,
       "path": "UQT2011_Camiranga-DaAfonsoPenaAPaulista",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Banzo Brabo",
@@ -1113,6 +1123,7 @@ db = {
       "title": "Ser Feliz",
       "year": 2011,
       "path": "2011 - Caraivana - Ser Feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ser feliz",
@@ -1226,6 +1237,7 @@ db = {
       "title": "Ser Feliz",
       "year": 2011,
       "path": "UQT2011_Caraivana-SerFeliz",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ser feliz",
@@ -1339,6 +1351,7 @@ db = {
       "title": "dá licença de contar",
       "year": 2011,
       "path": "2011 - Carlinhos Vergueiro - Dá licença de contar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "saudosa maloca",
@@ -1431,6 +1444,7 @@ db = {
       "title": "Trilhos - Terra Firme",
       "year": 2011,
       "path": "2011 - Casuarina - Trilhos - Terra Firme",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Terra Firme",
@@ -1537,6 +1551,7 @@ db = {
       "title": "Brasileirice",
       "year": 2011,
       "path": "2011 - Dorina - Brasileirice",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cândidas Neves",
@@ -1643,6 +1658,7 @@ db = {
       "title": "o samba aqui já esquentou",
       "year": 2011,
       "path": "2011 - Dudu Nobre - O samba aqui esquentou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o samba aqui já esquentou",
@@ -1728,6 +1744,7 @@ db = {
       "title": "Fabiana Cozza",
       "year": 2011,
       "path": "2011 - Fabiana Cozza - Fabiana Cozza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sandália Amarela",
@@ -1820,6 +1837,7 @@ db = {
       "title": "Malandro também ama",
       "year": 2011,
       "path": "2011 - Leandro Sapucahy - Malandro também ama",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A que mais deixa saudade",
@@ -1926,6 +1944,7 @@ db = {
       "title": "Maíra Freitas",
       "year": 2011,
       "path": "2011 - Maíra Freitas - Maíra Freitas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O voo da Mosca",
@@ -2018,6 +2037,7 @@ db = {
       "title": "Hora de Realizar",
       "year": 2011,
       "path": "2011 - Marquinho PQD - Hora de Realizar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nosso Filme",
@@ -2117,6 +2137,7 @@ db = {
       "title": "Lambendo a cria",
       "year": 2011,
       "path": "2011 - Martinho da Vila - Lambendo a cria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lambendo a cria",
@@ -2237,6 +2258,7 @@ db = {
       "title": "Cor Da Minha Raça",
       "year": 2011,
       "path": "2011 - Noca da Portela - Cor Da Minha Raça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ilumina",
@@ -2329,6 +2351,7 @@ db = {
       "title": "Quinteto Abanã",
       "year": 2011,
       "path": "2011 - Quinteto Abana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ária de Oxum",
@@ -2372,6 +2395,7 @@ db = {
       "title": "Quinteto Abanã",
       "year": 2011,
       "path": "UQT2011_QuintetoAbana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ária de Oxum",
@@ -2415,6 +2439,7 @@ db = {
       "title": "Canto de Rei",
       "year": 2011,
       "path": "2011 - Reinaldo - Canto de Rei",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Levar fé",
@@ -2521,6 +2546,7 @@ db = {
       "title": "Prazer Eu Sou Bebeto",
       "year": 2010,
       "path": "UQT2010_PrazerEuSouBebeto",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Charme",
@@ -2634,6 +2660,7 @@ db = {
       "title": "Quinteto Violado Canta Adoniran Barbosa e Jackson do Pandeiro",
       "year": 2010,
       "path": "2010 - Quinteto Violado Canta Adoniran Barbosa Jackson Pandeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cabo Tenório",
@@ -2754,6 +2781,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 13: Braguinha",
       "year": 2010,
       "path": "2010 - Raizes MPB13Braguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -2860,6 +2888,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 13: Braguinha",
       "year": 2010,
       "path": "UQT2010_RaizesMPB13Braguinha",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -2966,6 +2995,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 15: Jackson do Pandeiro",
       "year": 2010,
       "path": "2010 - Raizes MPB15Jackson Do Pandeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Forró em Caruaru",
@@ -3072,6 +3102,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 15: Jackson do Pandeiro",
       "year": 2010,
       "path": "UQT2010_RaizesMPB15JacksonDoPandeiro",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Forró em Caruaru",
@@ -3178,6 +3209,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 16: Paulo Vanzolini",
       "year": 2010,
       "path": "2010 - Raizes MPB16Paulo Vanzolini",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ronda",
@@ -3284,6 +3316,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 16: Paulo Vanzolini",
       "year": 2010,
       "path": "UQT2010_RaizesMPB16PauloVanzolini",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ronda",
@@ -3390,6 +3423,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 17: Sílvio Caldas",
       "year": 2010,
       "path": "2010 - Raizes MPB17Silvio Caldas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chão de estrelas",
@@ -3496,6 +3530,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 17: Sílvio Caldas",
       "year": 2010,
       "path": "UQT2010_RaizesMPB17SilvioCaldas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Chão de estrelas",
@@ -3602,6 +3637,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 18: Chiquinha Gonzaga",
       "year": 2010,
       "path": "2010 - Raizes MPB18Chiquinha Gonzaga",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Atraente",
@@ -3708,6 +3744,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 18: Chiquinha Gonzaga",
       "year": 2010,
       "path": "UQT2010_RaizesMPB18ChiquinhaGonzaga",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Atraente",
@@ -3814,6 +3851,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 19: Jacob do Bandolim",
       "year": 2010,
       "path": "2010 - Raizes MPB19Jacob Do Bandolim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noites cariocas",
@@ -3920,6 +3958,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 19: Jacob do Bandolim",
       "year": 2010,
       "path": "UQT2010_RaizesMPB19JacobDoBandolim",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Noites cariocas",
@@ -4026,6 +4065,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 20: Ernesto Nazareth",
       "year": 2010,
       "path": "2010 - Raizes MPB20Ernesto Nazareth",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Odeon",
@@ -4132,6 +4172,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 20: Ernesto Nazareth",
       "year": 2010,
       "path": "UQT2010_RaizesMPB20ErnestoNazareth",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Odeon",
@@ -4238,6 +4279,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 21: Ismael Silva",
       "year": 2010,
       "path": "2010 - Raizes MPB21Ismael Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se você jurar",
@@ -4344,6 +4386,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 21: Ismael Silva",
       "year": 2010,
       "path": "UQT2010_RaizesMPB21IsmaelSilva",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Se você jurar",
@@ -4450,6 +4493,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 22: Assis Valente",
       "year": 2010,
       "path": "2010 - Raizes MPB22Assis Valente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil pandeiro",
@@ -4556,6 +4600,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 22: Assis Valente",
       "year": 2010,
       "path": "UQT2010_RaizesMPB22AssisValente",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Brasil pandeiro",
@@ -4662,6 +4707,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 23: Geraldo Pereira",
       "year": 2010,
       "path": "2010 - Raizes MPB23Geraldo Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cabritada malsucedida",
@@ -4768,6 +4814,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 23: Geraldo Pereira",
       "year": 2010,
       "path": "UQT2010_RaizesMPB23GeraldoPereira",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Cabritada malsucedida",
@@ -4874,6 +4921,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 24: Waldir Azevedo",
       "year": 2010,
       "path": "2010 - Raizes MPB24Waldir Azevedo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasileirinho",
@@ -4980,6 +5028,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 24: Waldir Azevedo",
       "year": 2010,
       "path": "UQT2010_RaizesMPB24WaldirAzevedo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Brasileirinho",
@@ -5086,6 +5135,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 25: Sinhô",
       "year": 2010,
       "path": "2010 - Raizes MPB25Sinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A favela vai abaixo",
@@ -5192,6 +5242,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 25: Sinhô",
       "year": 2010,
       "path": "UQT2010_RaizesMPB25Sinho",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A favela vai abaixo",
@@ -5298,6 +5349,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 14: Herivelto Martins",
       "year": 2010,
       "path": "2010 - RaizesMPB14 HeriveltoMartins",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ave Maria no morro",
@@ -5404,6 +5456,7 @@ db = {
       "title": "Coleção Folha Raízes da Música Popular Brasileira Vol. 14: Herivelto Martins",
       "year": 2010,
       "path": "UQT2010_RaizesMPB14_HeriveltoMartins",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ave Maria no morro",
@@ -5510,6 +5563,7 @@ db = {
       "title": "Canções Para Embalar Marujos",
       "year": 2010,
       "path": "2010 - Renato Goda - Cancoes Para Embalar Marujos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Primeiro Round",
@@ -5609,6 +5663,7 @@ db = {
       "title": "Canções Para Embalar Marujos",
       "year": 2010,
       "path": "UQT2010_RenatoGoda-CancoesParaEmbalarMarujos",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Primeiro Round",
@@ -5708,6 +5763,7 @@ db = {
       "title": "Amizade Sincera",
       "year": 2010,
       "path": "2010 - Renato Teixeira Sergio Reis - Amizade Sincera",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Comitiva Esperança",
@@ -5807,6 +5863,7 @@ db = {
       "title": "Amizade Sincera",
       "year": 2010,
       "path": "UQT2010_RenatoTeixeiraSergioReis-AmizadeSincera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Comitiva Esperança",
@@ -5906,6 +5963,7 @@ db = {
       "title": "Sambas-de-Enredo 2010 Grupo A",
       "year": 2010,
       "path": "2010 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquaticópolis",
@@ -5998,6 +6056,7 @@ db = {
       "title": "Sambas-de-Enredo 2010 Grupo Especial",
       "year": 2010,
       "path": "2010 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Histórias sem fim",
@@ -6090,6 +6149,7 @@ db = {
       "title": "Sambas-de-Enredo 2010 Grupo Rio de Janeiro 1",
       "year": 2010,
       "path": "2010 - Sambas-de-enredo Grupo Rio de Janeiro 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bonecas. Impossível não se Apaixonar por elas…",
@@ -6182,6 +6242,7 @@ db = {
       "title": "Duetos",
       "year": 2010,
       "path": "2010 - Teresa Cristina - Duetos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Depois de tanto amor",
@@ -6288,6 +6349,7 @@ db = {
       "title": "Melhor Assim",
       "year": 2010,
       "path": "2010 - Teresa Cristina - Melhor Assim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Voz de uma Pessoa Vitoriosa / Maria Joana / Cantando",
@@ -6394,6 +6456,7 @@ db = {
       "title": "Muleke Tião",
       "year": 2010,
       "path": "2010 - Tiãozinho da Mocidade - Mulekê Tião",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulekẽ Tião",
@@ -6500,6 +6563,7 @@ db = {
       "title": "Peso é Peso",
       "year": 2010,
       "path": "2010 - Tuco & Batalhão de Sambistas - Peso é Peso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Batalhão",
@@ -6634,6 +6698,7 @@ db = {
       "title": "Vida da minha Vida",
       "year": 2010,
       "path": "2010 - Zeca Pagodinho - Vida da minha Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vida da minha Vida",
@@ -6747,6 +6812,7 @@ db = {
       "title": "o que vai ficar pelo salão",
       "year": 2010,
       "path": "2011 - Gabriel Cavalcante - O que vai ficar pelo salão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "seu camafeu",
@@ -6853,6 +6919,7 @@ db = {
       "title": "quando o canto é reza",
       "year": 0,
       "path": "2010 - Roberta Sá & Trio Madeira Brasil - Quando o canto é reza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mandingo",
@@ -6952,6 +7019,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2010 - Samba Social Clube 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por um Dia de Graça",
@@ -6988,6 +7056,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2010 - Terreiro Grande E Cristina Buarque Cantam Candeia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba da Antiga - Viver - Canção da liberdade",
@@ -7066,6 +7135,7 @@ db = {
       "title": "preceito",
       "year": 0,
       "path": "2010 - Toninho Geraes - Preceito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "são longuinho",
@@ -7172,6 +7242,7 @@ db = {
       "title": "pra gente fazer mais um samba",
       "year": 0,
       "path": "2010 - Wilson das Neves - Pra gente fazer mais um samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pra gente fazer mais um samba",
@@ -7271,6 +7342,7 @@ db = {
       "title": "Nossa Verdade",
       "year": null,
       "path": "2011 - Fundo de Quintal - Nossa Verdade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nossa Verdade",
@@ -7384,6 +7456,7 @@ db = {
       "title": "Roberta Nistra",
       "year": 2011,
       "path": "2011 - Roberta Nistra - Roberta Nistra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mãe-Africa",
@@ -7476,6 +7549,7 @@ db = {
       "title": "Sambas-de-Enredo 2011 Grupo A",
       "year": 2011,
       "path": "2011 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem sou eu sem Você?",
@@ -7561,6 +7635,7 @@ db = {
       "title": "Sambas-de-Enredo 2011 Grupo B",
       "year": 2011,
       "path": "2011 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hilária Batista de Almeida",
@@ -7653,6 +7728,7 @@ db = {
       "title": "Sambas-de-Enredo 2011 Grupo Especial",
       "year": 2011,
       "path": "2011 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Esta Noite Levarei sua Alma",
@@ -7745,6 +7821,7 @@ db = {
       "title": "Ao Vivo com Amigos",
       "year": null,
       "path": "2011 - Zeca Pagodinho - Ao Vivo com os Amigos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lenço",
@@ -7879,6 +7956,7 @@ db = {
       "title": "Duas Faces (Ao Vivo Na Mangueira)",
       "year": 2012,
       "path": "2012 - Alcione - Duas Faces Ao Vivo Na Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri:  Tem Dendê / Figa De Guiné",
@@ -8006,6 +8084,7 @@ db = {
       "title": "Cartão De Visita",
       "year": 2012,
       "path": "2012 - Almir Guinéto - Cartão De Visita",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mãe Iemanjá",
@@ -8098,6 +8177,7 @@ db = {
       "title": "Hoje É O Melhor Lugar",
       "year": 2012,
       "path": "2012 - Ana Costa - Hoje É O Melhor Lugar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filosofia De Vida",
@@ -8211,6 +8291,7 @@ db = {
       "title": "Batuques Do Meu Lugar",
       "year": 2012,
       "path": "2012 - Arlindo Cruz - Batuques Do Meu Lugar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Batuques Do Meu Lugar",
@@ -8226,6 +8307,7 @@ db = {
       "title": "Boêmio De Verdade",
       "year": 2012,
       "path": "2012 - Bicudo da Ilha - Boêmio De Verdade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boêmio De Verdade",
@@ -8332,6 +8414,7 @@ db = {
       "title": "Fred Camacho",
       "year": 2012,
       "path": "2012 - Fred Camacho - Fred Camacho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Em Busca Da Sorte",
@@ -8438,6 +8521,7 @@ db = {
       "title": "Jorginho do Império ao Vivo",
       "year": 2012,
       "path": "2012 - Jorginho do Império - Jorginho do Império ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Naquela Mesa",
@@ -8544,6 +8628,7 @@ db = {
       "title": "Meu Samba",
       "year": 2012,
       "path": "2012 - Marquinhos Diniz - Meu Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Samba",
@@ -8643,6 +8728,7 @@ db = {
       "title": "4.5 Atual",
       "year": 2012,
       "path": "2012 - Martinho da Vila - 45 Atual",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menina Moça",
@@ -8749,6 +8835,7 @@ db = {
       "title": "Não Tente Compreender",
       "year": 2012,
       "path": "2012 - Mart’nália - Não Tente Compreender",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Namora Comigo",
@@ -8848,6 +8935,7 @@ db = {
       "title": "Pra Desengomar",
       "year": 2012,
       "path": "2012 - Moyseis Marques - Pra Desengomar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra Desengomar",
@@ -8940,6 +9028,7 @@ db = {
       "title": "O Que É Meu",
       "year": 2012,
       "path": "2012 - Nilze Carvalho - O Que É Meu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Banho De Manjericão",
@@ -9046,6 +9135,7 @@ db = {
       "title": "Quinteto",
       "year": 2012,
       "path": "2012 - Quinteto em Branco e Preto - Quinteto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Guardião Dos Nossos Ancestrais",
@@ -9159,6 +9249,7 @@ db = {
       "title": "Sambas-de-Enredo 2012 Grupo A",
       "year": 2012,
       "path": "2012 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Exaltação do Unidos do Viradouro",
@@ -9293,6 +9384,7 @@ db = {
       "title": "Sambas-de-Enredo 2012 Grupo B",
       "year": 2012,
       "path": "2012 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Cartas não Mentem Jamais!",
@@ -9378,6 +9470,7 @@ db = {
       "title": "Sambas-de-Enredo 2012 Grupo Especial",
       "year": 2012,
       "path": "2012 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "São Luís. Poema Encantado do Maranhão",
@@ -9477,6 +9570,7 @@ db = {
       "title": "Homenagens Vol.1",
       "year": 2012,
       "path": "2012 - Velha Guarda da Mangueira - Homenagens Vol1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Exaltação Á Mangueira",
@@ -9555,6 +9649,7 @@ db = {
       "title": "Consagração",
       "year": 2012,
       "path": "2012 - Wanderley Monteiro - Consagração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Consagração",
@@ -9661,6 +9756,7 @@ db = {
       "title": "Com & sem sal",
       "year": 2012,
       "path": "2012 - Yeda Maranhão - Com & Sem Sal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sonhos de Nelson Cavaquinho",
@@ -9753,6 +9849,7 @@ db = {
       "title": "Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
       "year": 2012,
       "path": "2012 - Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Em Um Outdoor",
@@ -9866,6 +9963,7 @@ db = {
       "title": "programa ensaio tv cultura arlindo cruz",
       "year": 2010,
       "path": "2009 - Arlindo Cruz - Programa Ensaio - TV Cultura",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu lugar",
@@ -9951,6 +10049,7 @@ db = {
       "title": "Adoniran 100 Anos",
       "year": 2010,
       "path": "2010 - Adoniram 100 anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um samba no Bixiga",
@@ -10120,6 +10219,7 @@ db = {
       "title": "Voz e Viô",
       "year": 2010,
       "path": "2010 - Affonsinho - Voz E Vio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Acontece que",
@@ -10198,6 +10298,7 @@ db = {
       "title": "Cansado",
       "year": 2010,
       "path": "2010 - AlexSant Anna - CansadoEP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Basta Morrer",
@@ -10248,6 +10349,7 @@ db = {
       "title": "Eu Sou Assim",
       "year": 2010,
       "path": "2010 - André Renato - Eu Sou Assim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Sou Assim",
@@ -10354,6 +10456,7 @@ db = {
       "title": "Anna Clara Valente E. P.",
       "year": 2010,
       "path": "2010 - Anna Clara Valente - EP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Dia de Sol",
@@ -10390,6 +10493,7 @@ db = {
       "title": "Onde Mora O Segredo",
       "year": 2010,
       "path": "2010 - Aricia Mess - Onde Mora O Segredo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde Mora O Segredo",
@@ -10475,6 +10579,7 @@ db = {
       "title": "Ao Vivo Lá Em Casa",
       "year": 2010,
       "path": "2010 - Arnaldo Antunes - Ao Vivo La Em Casa DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Já Fui Uma Brasa",
@@ -10658,6 +10763,7 @@ db = {
       "title": "Pãozinho de Açúcar: Arranco de Varsóvia Canta Martinho da Vila",
       "year": 2010,
       "path": "2010 - Arranco De Varsovia Canta Martinho Da Vila DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canta, canta minha gente - Casa de bamba",
@@ -10785,6 +10891,7 @@ db = {
       "title": "Pãozinho de Açúcar: Arranco de Varsóvia Canta Martinho da Vila",
       "year": 2010,
       "path": "UQT2010_ArrancoDeVarsoviaCantaMartinhoDaVilaDVD",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Canta, canta minha gente - Casa de bamba",
@@ -10912,6 +11019,7 @@ db = {
       "title": "Chico Violão",
       "year": 2010,
       "path": "2010 - Arthur Nestrovsky - Chico Violao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquela mulher",
@@ -11025,6 +11133,7 @@ db = {
       "title": "Chico Violão",
       "year": 2010,
       "path": "UQT2010_ArthurNestrovsky-ChicoViolao",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Aquela mulher",
@@ -11138,6 +11247,7 @@ db = {
       "title": "EP",
       "year": 2010,
       "path": "2010 - Associacao Livre - EP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Martin, Camilo y Juan",
@@ -11167,6 +11277,7 @@ db = {
       "title": "EP",
       "year": 2010,
       "path": "UQT2010_AssociacaoLivre-EP",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Martin, Camilo y Juan",
@@ -11196,6 +11307,7 @@ db = {
       "title": "De Ponta Cabeça",
       "year": 2010,
       "path": "2010 - Aurea Martins - De Ponta Cabeca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Me Diz Ó Deus",
@@ -11302,6 +11414,7 @@ db = {
       "title": "De Ponta Cabeça",
       "year": 2010,
       "path": "UQT2010_AureaMartins-DePontaCabeca",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Me Diz Ó Deus",
@@ -11408,6 +11521,7 @@ db = {
       "title": "Badi Assad (Áudio do DVD)",
       "year": 2010,
       "path": "2010 - Badi Assad DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A bela e a fera - Feminina",
@@ -11528,6 +11642,7 @@ db = {
       "title": "Badi Assad (Áudio do DVD)",
       "year": 2010,
       "path": "UQT2010_BadiAssadDVD",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A bela e a fera - Feminina",
@@ -11648,6 +11763,7 @@ db = {
       "title": "Banda Pequi, Leila Pinheiro & Nelson Faria",
       "year": 2010,
       "path": "2010 - Banda Pequi Leila Pinheiro Nelson Faria",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Brooklyn High",
@@ -11726,6 +11842,7 @@ db = {
       "title": "Banda Pequi, Leila Pinheiro & Nelson Faria",
       "year": 2010,
       "path": "UQT2010_BandaPequiLeilaPinheiroNelsonFaria",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Brooklyn High",
@@ -11804,6 +11921,7 @@ db = {
       "title": "Passagens",
       "year": 2010,
       "path": "2010 - Belen Perez Muniz - Passagens",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Tabuleiro Da Baiana",
@@ -11903,6 +12021,7 @@ db = {
       "title": "Passagens",
       "year": 2010,
       "path": "UQT2010_BelenPerezMuniz-Passagens",
+      "has_cover": false,
       "tracks": [
         {
           "title": "No Tabuleiro Da Baiana",
@@ -12002,6 +12121,7 @@ db = {
       "title": "Outros Clássicos",
       "year": 2010,
       "path": "2010 - Beto Guedes - Outros Classicos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O medo de amar e o medo de ser livre",
@@ -12129,6 +12249,7 @@ db = {
       "title": "Outros Clássicos",
       "year": 2010,
       "path": "UQT2010_BetoGuedes-OutrosClassicos",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O medo de amar e o medo de ser livre",
@@ -12256,6 +12377,7 @@ db = {
       "title": "Vidas Volantes",
       "year": 2010,
       "path": "2010 - Brecule - Vidas Volantes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Lago",
@@ -12313,6 +12435,7 @@ db = {
       "title": "Vidas Volantes",
       "year": 2010,
       "path": "UQT2010_Brecule-VidasVolantes",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Samba do Lago",
@@ -12370,6 +12493,7 @@ db = {
       "title": "EP",
       "year": 2010,
       "path": "2010 - Cabruera - Visagem EP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Visagem",
@@ -12420,6 +12544,7 @@ db = {
       "title": "EP",
       "year": 2010,
       "path": "UQT2010_Cabruera_-_Visagem_EP",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Visagem",
@@ -12470,6 +12595,7 @@ db = {
       "title": "Adobró",
       "year": 2010,
       "path": "2010 - Carlinhos Brown - Adobro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Adobró",
@@ -12555,6 +12681,7 @@ db = {
       "title": "Adobró",
       "year": 2010,
       "path": "UQT2010_CarlinhosBrown-Adobro",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Adobró",
@@ -12640,6 +12767,7 @@ db = {
       "title": "Diminuto",
       "year": 2010,
       "path": "2010 - Carlinhos Brown - Diminuto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Centro da Saudade",
@@ -12718,6 +12846,7 @@ db = {
       "title": "Diminuto",
       "year": 2010,
       "path": "UQT2010_CarlinhosBrown-Diminuto",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Centro da Saudade",
@@ -12796,6 +12925,7 @@ db = {
       "title": "Mi Bossa Nova",
       "year": 2010,
       "path": "2010 - Carmen Cuesta - Mi Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Triste",
@@ -12881,6 +13011,7 @@ db = {
       "title": "Mi Bossa Nova",
       "year": 2010,
       "path": "UQT2010_CarmenCuesta-MiBossaNova",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Triste",
@@ -12966,6 +13097,7 @@ db = {
       "title": "Hoje",
       "year": 2010,
       "path": "2010 - Carmen Miranda Hoje",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Uva de caminhão",
@@ -13058,6 +13190,7 @@ db = {
       "title": "Hoje",
       "year": 2010,
       "path": "UQT2010_CarmenMirandaHoje",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Uva de caminhão",
@@ -13150,6 +13283,7 @@ db = {
       "title": "Primavera",
       "year": 2010,
       "path": "2010 - Catia Werneck - Primavera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Outro alguém",
@@ -13235,6 +13369,7 @@ db = {
       "title": "Primavera",
       "year": 2010,
       "path": "UQT2010_CatiaWerneck-Primavera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Outro alguém",
@@ -13320,6 +13455,7 @@ db = {
       "title": "Pra Que Chorar",
       "year": 2010,
       "path": "2010 - Celso Sim Arthur Nestrovski - Pra Que Chorar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Favor",
@@ -13440,6 +13576,7 @@ db = {
       "title": "Pra Que Chorar",
       "year": 2010,
       "path": "UQT2010_CelsoSimArthurNestrovski-PraQueChorar",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Um Favor",
@@ -13560,6 +13697,7 @@ db = {
       "title": "Chorolê",
       "year": 2010,
       "path": "2010 - Chorole",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bole Bole",
@@ -13638,6 +13776,7 @@ db = {
       "title": "Chorolê",
       "year": 2010,
       "path": "UQT2010_Chorole",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Bole Bole",
@@ -13716,6 +13855,7 @@ db = {
       "title": "MiM: Um Disco Romântico",
       "year": 2010,
       "path": "2010 - Cohen Marcela - Mi M Um Disco Romantico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra Longe",
@@ -13780,6 +13920,7 @@ db = {
       "title": "MiM: Um Disco Romântico",
       "year": 2010,
       "path": "UQT2010_CohenMarcela-MiMUmDiscoRomantico",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pra Longe",
@@ -13844,6 +13985,7 @@ db = {
       "title": "Presente",
       "year": 2010,
       "path": "2010 - Delia Fischer - Presente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vozes No Mar",
@@ -13943,6 +14085,7 @@ db = {
       "title": "Irresistível Miudinho: Deneil Laranjeira Interpreta Alfredo Gama",
       "year": 2010,
       "path": "2010 - Deneil Laranjeira - Irresistivel Miudinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Miudinho",
@@ -14042,6 +14185,7 @@ db = {
       "title": "Irresistível Miudinho: Deneil Laranjeira Interpreta Alfredo Gama",
       "year": 2010,
       "path": "UQT2010_DeneilLaranjeira-IrresistivelMiudinho",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Miudinho",
@@ -14141,6 +14285,7 @@ db = {
       "title": "Fogo No Balão",
       "year": 2010,
       "path": "2010 - Diapasao - Fogo No Balao",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Arrebol",
@@ -14191,6 +14336,7 @@ db = {
       "title": "Fogo No Balão",
       "year": 2010,
       "path": "UQT2010_Diapasao-FogoNoBalao",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Arrebol",
@@ -14241,6 +14387,7 @@ db = {
       "title": "Sou Eu Ao Vivo (Áudio do DVD)",
       "year": 2010,
       "path": "2010 - Diogo Nogueira - Sou Eu DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deus É Mais",
@@ -14403,6 +14550,7 @@ db = {
       "title": "Sou Eu Ao Vivo (Áudio do DVD)",
       "year": 2010,
       "path": "UQT2010_DiogoNogueira-SouEuDVD",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Deus É Mais",
@@ -14565,6 +14713,7 @@ db = {
       "title": "Sou Eu",
       "year": 2010,
       "path": "2010 - Diogo Nogueira - Sou eu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tô te querendo",
@@ -14685,6 +14834,7 @@ db = {
       "title": "Disney: Adventures In Samba",
       "year": 2010,
       "path": "2010 - Disney Adventures In Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquarela do Brasil",
@@ -14791,6 +14941,7 @@ db = {
       "title": "Disney: Adventures In Samba",
       "year": 2010,
       "path": "UQT2010_DisneyAdventuresInSamba",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Aquarela do Brasil",
@@ -14897,6 +15048,7 @@ db = {
       "title": "Ária",
       "year": 2010,
       "path": "2010 - Djavan - Aria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Disfarça e Chora",
@@ -14989,6 +15141,7 @@ db = {
       "title": "Ária",
       "year": 2010,
       "path": "UQT2010_Djavan-Aria",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Disfarça e Chora",
@@ -15081,6 +15234,7 @@ db = {
       "title": "Fronteiras",
       "year": 2010,
       "path": "2010 - Duo Graffiti - Fronteiras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "História do Tango - Bordel 1900",
@@ -15173,6 +15327,7 @@ db = {
       "title": "Fronteiras",
       "year": 2010,
       "path": "UQT2010_DuoGraffiti-Fronteiras",
+      "has_cover": false,
       "tracks": [
         {
           "title": "História do Tango - Bordel 1900",
@@ -15265,6 +15420,7 @@ db = {
       "title": "É Com Esse Que Eu Vou CD 1",
       "year": 2010,
       "path": "2010 - E Com Esse Que Eu Vou CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se eu tivesse um milhão - E o vento levou - Chora, doutor",
@@ -15371,6 +15527,7 @@ db = {
       "title": "É Com Esse Que Eu Vou CD 1",
       "year": 2010,
       "path": "UQT2010_EComEsseQueEuVouCD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Se eu tivesse um milhão - E o vento levou - Chora, doutor",
@@ -15477,6 +15634,7 @@ db = {
       "title": "É Com Esse Que Eu Vou CD 2",
       "year": 2010,
       "path": "2010 - E Com Esse Que Eu Vou CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Casal feliz - Solteiro é melhor - Nega maluca",
@@ -15583,6 +15741,7 @@ db = {
       "title": "É Com Esse Que Eu Vou CD 2",
       "year": 2010,
       "path": "UQT2010_EComEsseQueEuVouCD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Casal feliz - Solteiro é melhor - Nega maluca",
@@ -15689,6 +15848,7 @@ db = {
       "title": "Pelas Calçadas do Brasil",
       "year": 2010,
       "path": "2010 - Emerson Urso - Pelas Calcadas Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pelas calçadas do Brasil",
@@ -15802,6 +15962,7 @@ db = {
       "title": "Pelas Calçadas do Brasil",
       "year": 2010,
       "path": "UQT2010_EmersonUrso-PelasCalcadasDoBrasil",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pelas calçadas do Brasil",
@@ -15915,6 +16076,7 @@ db = {
       "title": "Só Danço Samba",
       "year": 2010,
       "path": "2010 - Emilio Santiago - So Danco Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só danço samba",
@@ -16021,6 +16183,7 @@ db = {
       "title": "Só Danço Samba",
       "year": 2010,
       "path": "UQT2010_EmilioSantiago-SoDancoSamba",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Só danço samba",
@@ -16127,6 +16290,7 @@ db = {
       "title": "The Crossing",
       "year": 2010,
       "path": "2010 - Eumir Deodato - The Crossing",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Double Face",
@@ -16198,6 +16362,7 @@ db = {
       "title": "The Crossing",
       "year": 2010,
       "path": "UQT2010_EumirDeodato-TheCrossing",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Double Face",
@@ -16269,6 +16434,7 @@ db = {
       "title": "Rugas Na Pele do Samba",
       "year": 2010,
       "path": "2010 - Fernando Salem - Rugas Na Pele Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Diferente",
@@ -16368,6 +16534,7 @@ db = {
       "title": "Rugas Na Pele do Samba",
       "year": 2010,
       "path": "UQT2010_FernandoSalem-RugasNaPeleDoSamba",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Samba Diferente",
@@ -16467,6 +16634,7 @@ db = {
       "title": "Copacabana",
       "year": 2010,
       "path": "2010 - Fino Coletivo - Copacabana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Batida de trovão",
@@ -16573,6 +16741,7 @@ db = {
       "title": "Copacabana",
       "year": 2010,
       "path": "UQT2010_Fino_Coletivo-Copacabana",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Batida de trovão",
@@ -16679,6 +16848,7 @@ db = {
       "title": "O Que Vai Ficar Pelo Salão",
       "year": 2010,
       "path": "2010 - Gabriel Cavalcante - O Que Vai Ficar Pelo Salao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seu Camafeu",
@@ -16785,6 +16955,7 @@ db = {
       "title": "O Que Vai Ficar Pelo Salão",
       "year": 2010,
       "path": "UQT2010_GabrielCavalcante-OQueVaiFicarPeloSalao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seu Camafeu",
@@ -16891,6 +17062,7 @@ db = {
       "title": "Divina, Maravilhosa",
       "year": 2010,
       "path": "2010 - Gal Costa - Divina Maravilhosa CD02",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Acontece",
@@ -16997,6 +17169,7 @@ db = {
       "title": "Divina, Maravilhosa",
       "year": 2010,
       "path": "UQT2010_GalCosta-DivinaMaravilhosaCD02",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Acontece",
@@ -17103,6 +17276,7 @@ db = {
       "title": "Geração SP",
       "year": 2010,
       "path": "2010 - Geracao SP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tatata",
@@ -17209,6 +17383,7 @@ db = {
       "title": "Geração SP",
       "year": 2010,
       "path": "UQT2010_GeracaoSP",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tatata",
@@ -17315,6 +17490,7 @@ db = {
       "title": "Eu Sou Brasil",
       "year": 2010,
       "path": "2010 - Graca Braga - Eu Sou Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Dona do Samba",
@@ -17421,6 +17597,7 @@ db = {
       "title": "Eu Sou Brasil",
       "year": 2010,
       "path": "UQT2010_GracaBraga-EuSouBrasil",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Dona do Samba",
@@ -17527,6 +17704,7 @@ db = {
       "title": "Retoque",
       "year": 2010,
       "path": "2010 - Henry Burnett Paulo Vieira - Retoque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Casadoiro",
@@ -17668,6 +17846,7 @@ db = {
       "title": "Retoque",
       "year": 2010,
       "path": "UQT2010_HenryBurnettPauloVieira-Retoque",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Casadoiro",
@@ -17809,6 +17988,7 @@ db = {
       "title": "Instrumental Vol. 1 - Coletânea Fina Flor",
       "year": 2010,
       "path": "2010 - Instrumental Vol1Coletanea Fina Flor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Doce veneno",
@@ -17915,6 +18095,7 @@ db = {
       "title": "Instrumental Vol. 1 - Coletânea Fina Flor",
       "year": 2010,
       "path": "UQT2010_InstrumentalVol1ColetaneaFinaFlor",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Doce veneno",
@@ -18021,6 +18202,7 @@ db = {
       "title": "Pretobrás II: Maldito Vírgula",
       "year": 2010,
       "path": "2010 - Itamar Assumpcao - Pretobras II",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maldito Vírgula",
@@ -18127,6 +18309,7 @@ db = {
       "title": "Pretobrás II: Maldito Vírgula",
       "year": 2010,
       "path": "UQT2010_ItamarAssumpcao-PretobrasII",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Maldito Vírgula",
@@ -18233,6 +18416,7 @@ db = {
       "title": "Pretobrás III: Devia Ser Proibido",
       "year": 2010,
       "path": "2010 - Itamar Assumpcao - Pretobras III",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Anteontem (Melo da UTI)",
@@ -18346,6 +18530,7 @@ db = {
       "title": "Pretobrás III: Devia Ser Proibido",
       "year": 2010,
       "path": "UQT2010_ItamarAssumpcao-PretobrasIII",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Anteontem (Melo da UTI)",
@@ -18459,6 +18644,7 @@ db = {
       "title": "O Samba em minha Vida",
       "year": 2010,
       "path": "2010 - Ito Melodia - O Samba em minha Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fuzuê",
@@ -18551,6 +18737,7 @@ db = {
       "title": "Jabu",
       "year": 2010,
       "path": "2010 - Jabu Morales - Jabu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Melão com Lira",
@@ -18629,6 +18816,7 @@ db = {
       "title": "Jabu",
       "year": 2010,
       "path": "UQT2010_JabuMorales-Jabu",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Melão com Lira",
@@ -18707,6 +18895,7 @@ db = {
       "title": "Hola, Que Tal?",
       "year": 2010,
       "path": "2010 - Jasmins Do Paraiso - Hola Que Tal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malucos Mutantes",
@@ -18778,6 +18967,7 @@ db = {
       "title": "Hola, Que Tal?",
       "year": 2010,
       "path": "UQT2010_JasminsDoParaiso-HolaQueTal",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Malucos Mutantes",
@@ -18849,6 +19039,7 @@ db = {
       "title": "Do Morro Ao Asfalto",
       "year": 2010,
       "path": "2010 - Joao Do Morro - Do Morro Ao Asfalto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ninguém Segura",
@@ -18941,6 +19132,7 @@ db = {
       "title": "Do Morro Ao Asfalto",
       "year": 2010,
       "path": "UQT2010_JoaoDoMorro-DoMorroAoAsfalto",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ninguém Segura",
@@ -19033,6 +19225,7 @@ db = {
       "title": "Sambolero",
       "year": 2010,
       "path": "2010 - Joao Donato - Sambolero",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amazonas",
@@ -19125,6 +19318,7 @@ db = {
       "title": "Sambolero",
       "year": 2010,
       "path": "UQT2010_JoaoDonato-Sambolero",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Amazonas",
@@ -19217,6 +19411,7 @@ db = {
       "title": "Juliana R.",
       "year": 2010,
       "path": "2010 - Juliana R",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fuga",
@@ -19295,6 +19490,7 @@ db = {
       "title": "Juliana R.",
       "year": 2010,
       "path": "UQT2010_JulianaR",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Fuga",
@@ -19373,6 +19569,7 @@ db = {
       "title": "EP 2010",
       "year": 2010,
       "path": "2010 - K Padocia EP2010",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Madrugada São José",
@@ -19430,6 +19627,7 @@ db = {
       "title": "EP 2010",
       "year": 2010,
       "path": "UQT2010_KPadociaEP2010",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Madrugada São José",
@@ -19487,6 +19685,7 @@ db = {
       "title": "Lenine.doc Trilhas",
       "year": 2010,
       "path": "2010 - Lenine Doc Trilhas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquilo que dá no coração",
@@ -19579,6 +19778,7 @@ db = {
       "title": "Lenine.doc Trilhas",
       "year": 2010,
       "path": "UQT2010_LenineDocTrilhas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Aquilo que dá no coração",
@@ -19671,6 +19871,7 @@ db = {
       "title": "Leopoldina",
       "year": 2010,
       "path": "2010 - Leopoldina Elisa Azevedo - Leopoldina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ngana",
@@ -19756,6 +19957,7 @@ db = {
       "title": "Leopoldina",
       "year": 2010,
       "path": "UQT2010_LeopoldinaElisaAzevedo-Leopoldina",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ngana",
@@ -19841,6 +20043,7 @@ db = {
       "title": "Asia",
       "year": 2010,
       "path": "2010 - Lisa Ono - Asia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "When Will You Come Again",
@@ -19919,6 +20122,7 @@ db = {
       "title": "Devoção",
       "year": 2010,
       "path": "2010 - Luiza Dionizio - Devoção",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pensando bem",
@@ -20018,6 +20222,7 @@ db = {
       "title": "Acústico MTV II",
       "year": 2010,
       "path": "2010 - Lulu Santos - Acustico MTVII",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E tudo mais",
@@ -20124,6 +20329,7 @@ db = {
       "title": "Acústico MTV II",
       "year": 2010,
       "path": "UQT2010_LuluSantos-AcusticoMTVII",
+      "has_cover": false,
       "tracks": [
         {
           "title": "E tudo mais",
@@ -20230,6 +20436,7 @@ db = {
       "title": "Uma Outra Qualquer Por Aí",
       "year": 2010,
       "path": "2010 - Manuela Rodrigues - Uma Outra Qualquer Por Ai",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Genius",
@@ -20322,6 +20529,7 @@ db = {
       "title": "Uma Outra Qualquer Por Aí",
       "year": 2010,
       "path": "UQT2010_ManuelaRodrigues-UmaOutraQualquerPorAi",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Genius",
@@ -20414,6 +20622,7 @@ db = {
       "title": "Choro Brasilero",
       "year": 2010,
       "path": "2010 - Mao Na Roda - Choro Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1x0",
@@ -20506,6 +20715,7 @@ db = {
       "title": "Choro Brasilero",
       "year": 2010,
       "path": "UQT2010_MaoNaRoda-ChoroBrasileiro",
+      "has_cover": false,
       "tracks": [
         {
           "title": "1x0",
@@ -20598,6 +20808,7 @@ db = {
       "title": "MTV Ao Vivo",
       "year": 2010,
       "path": "2010 - Marcelo Camelo - MTV Ao Vivo DVD",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Passeando",
@@ -20732,6 +20943,7 @@ db = {
       "title": "MTV Ao Vivo",
       "year": 2010,
       "path": "UQT2010_MarceloCamelo-MTVAoVivoDVD",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Passeando",
@@ -20866,6 +21078,7 @@ db = {
       "title": "Marcelo D2 Canta Bezerra da Silva",
       "year": 2010,
       "path": "2010 - Marcelo D2Canta Bezerra Da Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Não Fosse O Samba",
@@ -20979,6 +21192,7 @@ db = {
       "title": "Marcelo D2 Canta Bezerra da Silva",
       "year": 2010,
       "path": "UQT2010_MarceloD2CantaBezerraDaSilva",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Se Não Fosse O Samba",
@@ -21092,6 +21306,7 @@ db = {
       "title": "Feito Pra Acabar",
       "year": 2010,
       "path": "2010 - Marcelo Jeneci - Feito Pra Acabar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Felicidade",
@@ -21191,6 +21406,7 @@ db = {
       "title": "Feito Pra Acabar",
       "year": 2010,
       "path": "UQT2010_MarceloJeneci-FeitoPraAcabar",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Felicidade",
@@ -21290,6 +21506,7 @@ db = {
       "title": "Desacelera",
       "year": 2010,
       "path": "2010 - Marcio Lugo - Desacelera",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desacelera",
@@ -21368,6 +21585,7 @@ db = {
       "title": "Desacelera",
       "year": 2010,
       "path": "UQT2010_MarcioLugo-Desacelera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Desacelera",
@@ -21446,6 +21664,7 @@ db = {
       "title": "Varal Diverso",
       "year": 2010,
       "path": "2010 - Marco Vilane - Varal Diverso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tralha",
@@ -21545,6 +21764,7 @@ db = {
       "title": "Varal Diverso",
       "year": 2010,
       "path": "UQT2010_MarcoVilane-VaralDiverso",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tralha",
@@ -21644,6 +21864,7 @@ db = {
       "title": "Amor Festa Devoção Cd 1",
       "year": 2010,
       "path": "2010 - Maria Bethania - Amor Festa Devocao CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "01 Santa Bárbara",
@@ -21778,6 +21999,7 @@ db = {
       "title": "Amor Festa Devoção Cd 1",
       "year": 2010,
       "path": "UQT2010_MariaBethania-AmorFestaDevocaoCD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "01 Santa Bárbara",
@@ -21912,6 +22134,7 @@ db = {
       "title": "Amor Festa Devoção CD 2",
       "year": 2010,
       "path": "2010 - Maria Bethania - Amor Festa Devocao CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não Identificado",
@@ -22046,6 +22269,7 @@ db = {
       "title": "Amor Festa Devoção CD 2",
       "year": 2010,
       "path": "UQT2010_MariaBethania-AmorFestaDevocaoCD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Não Identificado",
@@ -22180,6 +22404,7 @@ db = {
       "title": "Amor, Festa, Devoção Ao Vivo (Áudio DVD)",
       "year": 2010,
       "path": "2010 - Maria Bethania - Amor Festa Devocao DVD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Santa Bárbara",
@@ -22342,6 +22567,7 @@ db = {
       "title": "Amor, Festa, Devoção Ao Vivo (Áudio DVD)",
       "year": 2010,
       "path": "UQT2010_MariaBethania-AmorFestaDevocaoDVD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Santa Bárbara",
@@ -22504,6 +22730,7 @@ db = {
       "title": "Amor, Festa, Devoção Ao Vivo (Áudio DVD)",
       "year": 2010,
       "path": "2010 - Maria Bethania - Amor Festa Devocao DVD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Doce viola",
@@ -22631,6 +22858,7 @@ db = {
       "title": "Amor, Festa, Devoção Ao Vivo (Áudio DVD)",
       "year": 2010,
       "path": "UQT2010_MariaBethania-AmorFestaDevocaoDVD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Doce viola",
@@ -22758,6 +22986,7 @@ db = {
       "title": "Mariana Baltar",
       "year": 2010,
       "path": "2010 - Mariana Baltar - Mariana Baltar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tia Eulália na xiba",
@@ -22850,6 +23079,7 @@ db = {
       "title": "Santo de Casa Ao Vivo",
       "year": 2010,
       "path": "2010 - Mariene De Castro - Santo De Casa Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudação - Temporal",
@@ -22963,6 +23193,7 @@ db = {
       "title": "Santo de Casa Ao Vivo",
       "year": 2010,
       "path": "UQT2010_MarieneDeCastro-SantoDeCasaAoVivo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Saudação - Temporal",
@@ -23076,6 +23307,7 @@ db = {
       "title": "Marina de La Riva Ao Vivo",
       "year": 2010,
       "path": "2010 - Marina De La Riva Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Central Constancia",
@@ -23189,6 +23421,7 @@ db = {
       "title": "Marina de La Riva Ao Vivo",
       "year": 2010,
       "path": "UQT2010_MarinaDeLaRivaAoVivo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Central Constancia",
@@ -23302,6 +23535,7 @@ db = {
       "title": "O Samba Vai",
       "year": 2010,
       "path": "2010 - Mario Adnet - O Samba Vai",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sem tirar nem pôr",
@@ -23394,6 +23628,7 @@ db = {
       "title": "O Samba Vai",
       "year": 2010,
       "path": "UQT2010_MarioAdnet-OSambaVai",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Sem tirar nem pôr",
@@ -23486,6 +23721,7 @@ db = {
       "title": "4 Loas",
       "year": 2010,
       "path": "2010 - Marku Ribas - 4Loas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aurora da Revolução",
@@ -23571,6 +23807,7 @@ db = {
       "title": "4 Loas",
       "year": 2010,
       "path": "UQT2010_MarkuRibas-4Loas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Aurora da Revolução",
@@ -23656,6 +23893,7 @@ db = {
       "title": "Em África Ao Vivo",
       "year": 2010,
       "path": "2010 - Mart’nália - Em África ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cabide",
@@ -23783,6 +24021,7 @@ db = {
       "title": "Cinco Sentidos",
       "year": 2010,
       "path": "2010 - Mateus Aleluia - Cinco Sentidos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ogum pa",
@@ -23868,6 +24107,7 @@ db = {
       "title": "Cinco Sentidos",
       "year": 2010,
       "path": "UQT2010_MateusAleluia-CincoSentidos",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ogum pa",
@@ -23953,6 +24193,7 @@ db = {
       "title": "Franciscos",
       "year": 2010,
       "path": "2010 - Mateus Sartori - Franciscos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pandeiro é meu nome",
@@ -24038,6 +24279,7 @@ db = {
       "title": "Franciscos",
       "year": 2010,
       "path": "UQT2010_MateusSartori-Franciscos",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pandeiro é meu nome",
@@ -24123,6 +24365,7 @@ db = {
       "title": "Monique Kessous",
       "year": 2010,
       "path": "2010 - Monique Kessous",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coração",
@@ -24215,6 +24458,7 @@ db = {
       "title": "Monique Kessous",
       "year": 2010,
       "path": "UQT2010_MoniqueKessous",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Coração",
@@ -24307,6 +24551,7 @@ db = {
       "title": "Muito",
       "year": 2010,
       "path": "2010 - Moska - Muito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Devagar, divagar ou de vagar",
@@ -24378,6 +24623,7 @@ db = {
       "title": "Muito",
       "year": 2010,
       "path": "UQT2010_Moska-Muito",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Devagar, divagar ou de vagar",
@@ -24449,6 +24695,7 @@ db = {
       "title": "Pouco",
       "year": 2010,
       "path": "2010 - Moska - Pouco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Semicoisas",
@@ -24520,6 +24767,7 @@ db = {
       "title": "Pouco",
       "year": 2010,
       "path": "UQT2010_Moska-Pouco",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Semicoisas",
@@ -24591,6 +24839,7 @@ db = {
       "title": "Ao Vivo No Auditório Ibirapuera (Áudio do DVD)",
       "year": 2010,
       "path": "2010 - Moveis Coloniais De Acaju - Ao Vivo No Auditorio Ibirapuera",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seria o Rolex?",
@@ -24732,6 +24981,7 @@ db = {
       "title": "Ao Vivo No Auditório Ibirapuera (Áudio do DVD)",
       "year": 2010,
       "path": "UQT2010_MoveisColoniaisDeAcaju-AoVivoNoAuditorioIbirapuera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Seria o Rolex?",
@@ -24873,6 +25123,7 @@ db = {
       "title": "Uma Coisa É Uma Coisa Outra Coisa É Outra Coisa",
       "year": 2010,
       "path": "2010 - Mu Chebabi - Uma Coisa E Uma Coisa Outra Coisa E Outra Coisa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Morena",
@@ -24958,6 +25209,7 @@ db = {
       "title": "Uma Coisa É Uma Coisa Outra Coisa É Outra Coisa",
       "year": 2010,
       "path": "UQT2010_MuChebabi-UmaCoisaEUmaCoisaOutraCoisaEOutraCoisa",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Morena",
@@ -25043,6 +25295,7 @@ db = {
       "title": "Azul",
       "year": 2010,
       "path": "2010 - Nina Becker - Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ela Adora",
@@ -25121,6 +25374,7 @@ db = {
       "title": "Azul",
       "year": 2010,
       "path": "UQT2010_NinaBecker-Azul",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ela Adora",
@@ -25199,6 +25453,7 @@ db = {
       "title": "Vermelho",
       "year": 2010,
       "path": "2010 - Nina Becker - Vermelho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Madrugada Branca",
@@ -25277,6 +25532,7 @@ db = {
       "title": "Vermelho",
       "year": 2010,
       "path": "UQT2010_NinaBecker-Vermelho",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Madrugada Branca",
@@ -25355,6 +25611,7 @@ db = {
       "title": "Noel Rosa 100 Anos de Celebração",
       "year": 2010,
       "path": "2010 - Noel Rosa – 100 anos de celebração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feitiço Da Vila",
@@ -25482,6 +25739,7 @@ db = {
       "title": "Villa-Lobos: Floresta do Amazonas",
       "year": 2010,
       "path": "2010 - OSESP - Villa Lobos Floresta Do Amazonas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ouverture",
@@ -25651,6 +25909,7 @@ db = {
       "title": "Villa-Lobos: Floresta do Amazonas",
       "year": 2010,
       "path": "UQT2010_OSESP-VillaLobosFlorestaDoAmazonas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ouverture",
@@ -25820,6 +26079,7 @@ db = {
       "title": "Herói Trancado",
       "year": 2010,
       "path": "2010 - Ortinho - Heroi Trancado",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Cara do Outro Lado",
@@ -25905,6 +26165,7 @@ db = {
       "title": "Herói Trancado",
       "year": 2010,
       "path": "UQT2010_Ortinho-HeroiTrancado",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Cara do Outro Lado",
@@ -25990,6 +26251,7 @@ db = {
       "title": "Música de Brinquedo",
       "year": 2010,
       "path": "2010 - Pato Fu - Musicade Brinquedo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Primavera (Vai Chuva)",
@@ -26082,6 +26344,7 @@ db = {
       "title": "Música de Brinquedo",
       "year": 2010,
       "path": "UQT2010_PatoFu-MusicadeBrinquedo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Primavera (Vai Chuva)",
@@ -26174,6 +26437,7 @@ db = {
       "title": "Silêncio",
       "year": 2010,
       "path": "2010 - Paula Marchesini - Silencio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Voz",
@@ -26231,6 +26495,7 @@ db = {
       "title": "Silêncio",
       "year": 2010,
       "path": "UQT2010_PaulaMarchesini-Silencio",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Voz",
@@ -26288,6 +26553,7 @@ db = {
       "title": "Navilouca Ao Vivo",
       "year": 2010,
       "path": "2010 - Pedro Luis A Parede - Navilouca Ao Vivo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Caramujo Jah - Quebra Quilos",
@@ -26394,6 +26660,7 @@ db = {
       "title": "Navilouca Ao Vivo",
       "year": 2010,
       "path": "UQT2010_PedroLuisAParede-NaviloucaAoVivo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Caramujo Jah - Quebra Quilos",
@@ -26500,6 +26767,7 @@ db = {
       "title": "Passeando Por Aí",
       "year": 2010,
       "path": "2010 - Pingarilho - Passeando Por Ai",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passeando por ai",
@@ -26606,6 +26874,7 @@ db = {
       "title": "Passeando Por Aí",
       "year": 2010,
       "path": "UQT2010_Pingarilho-PasseandoPorAi",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Passeando por ai",
@@ -26712,6 +26981,7 @@ db = {
       "title": "Pitanga Em Pé de Amora",
       "year": 2010,
       "path": "2010 - Pitanga Em Pe De Amora",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem Ouvirá",
@@ -26804,6 +27074,7 @@ db = {
       "title": "Pitanga Em Pé de Amora",
       "year": 2010,
       "path": "UQT2010_PitangaEmPeDeAmora",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Quem Ouvirá",
@@ -26896,6 +27167,7 @@ db = {
       "title": "Prazer Eu Sou Bebeto",
       "year": 2010,
       "path": "2010 - Prazer Eu Sou Bebeto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Charme",
@@ -27009,6 +27281,7 @@ db = {
       "title": "dom de passarinho",
       "year": 2009,
       "path": "1996 - Edil Pacheco - Dom de passarinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "dom de passarinho",
@@ -27115,6 +27388,7 @@ db = {
       "title": "tempo e vida",
       "year": 2009,
       "path": "2000 - Nelson Rufino - Tempo e vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tempo e vida",
@@ -27207,6 +27481,7 @@ db = {
       "title": "Águaluz",
       "year": 2009,
       "path": "2009 - Alexandre Andres - Agualuz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Águaluz",
@@ -27299,6 +27574,7 @@ db = {
       "title": "Baião de Domingo",
       "year": 2009,
       "path": "2009 - Alexandre Gismonti Trio - Baiao De Domingo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Baião de Domingo",
@@ -27384,6 +27660,7 @@ db = {
       "title": "Aline Calixto",
       "year": 2009,
       "path": "2009 - Aline Calixto - Aline Calixto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Original",
@@ -27483,6 +27760,7 @@ db = {
       "title": "novos alvos",
       "year": 2009,
       "path": "2009 - Ana Costa - Novos alvos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba cria lei",
@@ -27568,6 +27846,7 @@ db = {
       "title": "Orações Aos Orixás",
       "year": 2009,
       "path": "2009 - Ana Flavia - Oracoes Aos Orixas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ponto",
@@ -27653,6 +27932,7 @@ db = {
       "title": "Retratos do Rio",
       "year": 2009,
       "path": "2009 - Anselmo Mazzoni - Retratos Do Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A valsa de uma cidade",
@@ -27752,6 +28032,7 @@ db = {
       "title": "Interiores",
       "year": 2009,
       "path": "2009 - Argonautas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cataventos",
@@ -27844,6 +28125,7 @@ db = {
       "title": "Bootleg'09 [outros críticos]",
       "year": 2009,
       "path": "2009 - Bootleg - 09 Outros Criticos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A mentira",
@@ -27957,6 +28239,7 @@ db = {
       "title": "Caraivana",
       "year": 2009,
       "path": "2009 - Caraivana",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Noites Cariocas",
@@ -28056,6 +28339,7 @@ db = {
       "title": "Chiquinha em Revista",
       "year": 2009,
       "path": "2009 - Chiquinha em Revista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passos no Choro",
@@ -28155,6 +28439,7 @@ db = {
       "title": "Trilogia",
       "year": 2009,
       "path": "2009 - Choro Club - Trilogia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cantilena",
@@ -28247,6 +28532,7 @@ db = {
       "title": "Samba de Roque",
       "year": 2009,
       "path": "2009 - Clecia Queiroz - Samba de Roque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Licuri",
@@ -28346,6 +28632,7 @@ db = {
       "title": "Capanga Moderna",
       "year": 2009,
       "path": "2009 - Diogo Guanabara Macaxeira Jazz - Capanga Moderna",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tema Para Baden",
@@ -28417,6 +28704,7 @@ db = {
       "title": "Djavan Por Elas",
       "year": 2009,
       "path": "2009 - Djavan Por Elas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tanta saudade",
@@ -28523,6 +28811,7 @@ db = {
       "title": "Djavan Por Eles",
       "year": 2009,
       "path": "2009 - Djavan Por Eles",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Linha do Equador",
@@ -28629,6 +28918,7 @@ db = {
       "title": "Duofel Plays The Beatles",
       "year": 2009,
       "path": "2009 - Duofel Plays The Beatles",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eleanor Rigby",
@@ -28714,6 +29004,7 @@ db = {
       "title": "Piquenique",
       "year": 2009,
       "path": "2009 - Ed Motta - Piquenique",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha Vida toda com Você",
@@ -28806,6 +29097,7 @@ db = {
       "title": "elas cantam paulinho da viola",
       "year": 2009,
       "path": "2009 - Elas cantam Paulinho da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tudo se transformou",
@@ -28884,6 +29176,7 @@ db = {
       "title": "Bem Me Quer Mal Me Quer",
       "year": 2009,
       "path": "2009 - Erika Machado - Bem Me Quer Mal Me Quer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tanto Faz",
@@ -28983,6 +29276,7 @@ db = {
       "title": "Todo Domingos",
       "year": 2009,
       "path": "2009 - Flavia Bittencourt - Todo Domingos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lamento Sertanejo",
@@ -29082,6 +29376,7 @@ db = {
       "title": "Fred Hersch Plays Jobim",
       "year": 2009,
       "path": "2009 - Fred Hersch Plays Jobim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por toda minha vida",
@@ -29153,6 +29448,7 @@ db = {
       "title": "A Essência do Amanhecer",
       "year": 2009,
       "path": "2009 - Gabriel Sater - A Essencia Do Amanhecer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sonhos de aço",
@@ -29245,6 +29541,7 @@ db = {
       "title": "Geraldinho do Cavaco: 50 Anos Sambas e Choros",
       "year": 2009,
       "path": "2009 - Geraldinho do Cavaco e Convidados 50 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Simplesmente você",
@@ -29365,6 +29662,7 @@ db = {
       "title": "Gilberto Monteiro",
       "year": 2009,
       "path": "2009 - Gilberto Monteiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Lua e Sol",
@@ -29450,6 +29748,7 @@ db = {
       "title": "Grupo Patuá",
       "year": 2009,
       "path": "2009 - Grupo Patua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Métodos e Medidas",
@@ -29563,6 +29862,7 @@ db = {
       "title": "De Bandolim A Bandolim",
       "year": 2009,
       "path": "2009 - Hamilton de Holanda e Joel Nascimento - De Bandolim A Bandolim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tu Passaste Por Este Jardim",
@@ -29641,6 +29941,7 @@ db = {
       "title": "brigador - ilessi canta pedro amorim e paulo césar pinheiro",
       "year": 2009,
       "path": "2009 - Ilessi - Brigador – Ilessi canta Pedro Amorim e Paulo César Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brigador",
@@ -29719,6 +30020,7 @@ db = {
       "title": "Bim Bom: The Complete João Gilberto Songbook",
       "year": 2009,
       "path": "2009 - Ithamara K Juarez M - Bim Bom The Complete Joao G Songbook",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bim Bom",
@@ -29811,6 +30113,7 @@ db = {
       "title": "Grandes Pequeninos",
       "year": 2009,
       "path": "2009 - Jair Oliveira - Grandes Pequeninos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O bebê chegou!",
@@ -29903,6 +30206,7 @@ db = {
       "title": "Pra Ouvir",
       "year": 2009,
       "path": "2009 - Janaina Assis - Pra Ouvir",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rota",
@@ -29974,6 +30278,7 @@ db = {
       "title": "Juizo que dá Samba",
       "year": 2009,
       "path": "2009 - João Martins - Juízo que dá Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lendas da Mata",
@@ -30066,6 +30371,7 @@ db = {
       "title": "Juliana Ribeiro",
       "year": 2009,
       "path": "2009 - Juliana Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beira da Maré",
@@ -30116,6 +30422,7 @@ db = {
       "title": "Leandro Sapucahy Cantando Roberto Ribeiro",
       "year": 2009,
       "path": "2009 - Leandro Sapucahy Cantando Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estrela de Madureira",
@@ -30222,6 +30529,7 @@ db = {
       "title": "O Rio e O Mar",
       "year": 2009,
       "path": "2009 - Marcio Montarroyos - O Rio e O Mar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Copa blues",
@@ -30307,6 +30615,7 @@ db = {
       "title": "Afro Samba Jazz: A Música de Baden Powell",
       "year": 2009,
       "path": "2009 - Mario Adnet Philippe Baden Powell - Afro Samba Jazz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto de Xangô",
@@ -30413,6 +30722,7 @@ db = {
       "title": "Noites de Gala Ao Vivo",
       "year": 2009,
       "path": "2009 - Monica Salmaso - Noites de Gala Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Volta do Malandro",
@@ -30526,6 +30836,7 @@ db = {
       "title": "Imã",
       "year": 2009,
       "path": "2009 - Moreno Domenico Kassin - Ima",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chorume",
@@ -30625,6 +30936,7 @@ db = {
       "title": "Zoombido Vol. 2 (Áudio do DVD)",
       "year": 2009,
       "path": "2009 - Moska - ZoombidoII DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sou Dela",
@@ -30794,6 +31106,7 @@ db = {
       "title": "fases do coração",
       "year": 2009,
       "path": "2009 - Moyseis Marques - Fases Do Coração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "entre os girassóis",
@@ -30893,6 +31206,7 @@ db = {
       "title": "Narrativas de Catarina",
       "year": 2009,
       "path": "2009 - Narrativas De Catarina",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Santos reis",
@@ -30999,6 +31313,7 @@ db = {
       "title": "Eternamente Nelson (Áudio do DVD)",
       "year": 2009,
       "path": "2009 - Nelson Goncalves - Eternamente Nelson DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apresentação",
@@ -31147,6 +31462,7 @@ db = {
       "title": "Tempo e Vida",
       "year": 2009,
       "path": "2009 - Nelson Rufino - Tempo E Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tempo e Vida",
@@ -31239,6 +31555,7 @@ db = {
       "title": "Nicola Conte Presents Viagem 2",
       "year": 2009,
       "path": "2009 - Nicola Conte Presents Viagem2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sambinha",
@@ -31373,6 +31690,7 @@ db = {
       "title": "Noel Poeta da Vila",
       "year": 2009,
       "path": "2009 - Noel Poeta da Vila Trilha Sonora do Filme",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feitio de Oração",
@@ -31584,6 +31902,7 @@ db = {
       "title": "OBMJ - Orquestra Brasileira de Música Jamaicana",
       "year": 2009,
       "path": "2009 - OBMJ - Orquestra Brasileira de Musica Jamaicana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Guarani",
@@ -31641,6 +31960,7 @@ db = {
       "title": "Pixinguinha Sinfônico",
       "year": 2009,
       "path": "2009 - Orq Petrobras Sinfonica - Pixinguinha Sinfonico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -31719,6 +32039,7 @@ db = {
       "title": "Pixinguinha Sinfônico Popular",
       "year": 2009,
       "path": "2009 - Orq Sinfonica Do Recife - Pixinguinha Sinfonico Popular",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Paciente",
@@ -31797,6 +32118,7 @@ db = {
       "title": "Afrobossanova",
       "year": 2009,
       "path": "2009 - Paulo Moura Armandinho - Afrobossanova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chovendo na Roseira",
@@ -31882,6 +32204,7 @@ db = {
       "title": "Pimenteira",
       "year": 2009,
       "path": "2009 - Pedro Miranda - Pimenteira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hello my Girl",
@@ -31974,6 +32297,7 @@ db = {
       "title": "Pequeno Cidadão",
       "year": 2009,
       "path": "2009 - Pequeno Cidadao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pequeno Cidadão",
@@ -32073,6 +32397,7 @@ db = {
       "title": "A Viagem de Villa-Lobos",
       "year": 2009,
       "path": "2009 - Projeto B - A Viagem De Villa-Lobos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prole do Bebê Nº 1 - Bruxa (A Boneca de Pano)",
@@ -32144,6 +32469,7 @@ db = {
       "title": "Afternoon With Jobim",
       "year": 2009,
       "path": "2009 - Quartet Sensitive - Afternoon With Jobim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No More Blues",
@@ -32222,6 +32548,7 @@ db = {
       "title": "Quase Em Silêncio",
       "year": 2009,
       "path": "2009 - Rafael Macedo - Quase Em Silencio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que tal (Tao) na lama do Tom (tom)",
@@ -32307,6 +32634,7 @@ db = {
       "title": "Volume Um",
       "year": 2009,
       "path": "2009 - Raul Boeira - Volume Um",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O poder da benzedura",
@@ -32399,6 +32727,7 @@ db = {
       "title": "Sim, Eu Minto!",
       "year": 2009,
       "path": "2009 - Rebobina - Sim Eu Minto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Esquecer",
@@ -32470,6 +32799,7 @@ db = {
       "title": "pra se ter alegria",
       "year": 2009,
       "path": "2009 - Roberta Sá - Pra se ter alegria – Ao vivo no Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o pedido",
@@ -32576,6 +32906,7 @@ db = {
       "title": "Naquele Tempo",
       "year": 2009,
       "path": "2009 - Roland Dyens - Naquele Tempo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Proezas de Solon",
@@ -32661,6 +32992,7 @@ db = {
       "title": "samba social clube 02",
       "year": 2009,
       "path": "2009 - Samba Social Clube 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vai passar",
@@ -32767,6 +33099,7 @@ db = {
       "title": "ao vivo vol 3",
       "year": 2009,
       "path": "2009 - Samba Social Clube 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "só chora quem ama",
@@ -32887,6 +33220,7 @@ db = {
       "title": "sambas-de-enredo 2009 grupo a",
       "year": 2009,
       "path": "2009 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1. São Clemente",
@@ -32965,6 +33299,7 @@ db = {
       "title": "Sambas-de-Enredo 2009 Grupo Especial",
       "year": 2009,
       "path": "2009 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Chuveiro da Alegria quem Banha o Corpo, Lava a Alma na Folia",
@@ -33057,6 +33392,7 @@ db = {
       "title": "Sambas-de-Enredo 2009 Grupo Rio de Janeiro 1",
       "year": 2009,
       "path": "2009 - Sambas de Enredo Grupo Rio de Janeiro 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vinho, Néctar dos Deuses - A Celebração da Vida",
@@ -33163,6 +33499,7 @@ db = {
       "title": "Samba Pesado",
       "year": 2009,
       "path": "2009 - Sandalia De Prata - Samba Pesado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Reza Forte",
@@ -33255,6 +33592,7 @@ db = {
       "title": "Tantinho Canta Padeirinho da Mangueira",
       "year": 2009,
       "path": "2009 - Tantinho da Mangueira - Tantinho Canta Padeirinho da Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Modificado",
@@ -33361,6 +33699,7 @@ db = {
       "title": "The New Brazilian Music",
       "year": 2009,
       "path": "2009 - The New Brazilian Music Part1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dois",
@@ -33502,6 +33841,7 @@ db = {
       "title": "The New Brazilian Music",
       "year": 2009,
       "path": "2009 - The New Brazilian Music Part2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amor Brejeiro",
@@ -33636,6 +33976,7 @@ db = {
       "title": "turma do estácio canta a essência do samba",
       "year": 2009,
       "path": "2009 - Turma do Estácio - Turma do Estácio canta a essência do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "madrugada no estácio",
@@ -33742,6 +34083,7 @@ db = {
       "title": "Uma Prova de Amor - Ao Vivo",
       "year": 2009,
       "path": "2009 - Zeca Pagodinho - Uma Prova de Amor - Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deixa a Vida me Levar",
@@ -33862,6 +34204,7 @@ db = {
       "title": "Tango",
       "year": 2009,
       "path": "2009 - gato Negro - Tango",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pampero",
@@ -33954,6 +34297,7 @@ db = {
       "title": "Samba É Aracy de Almeida",
       "year": 2008,
       "path": "1966 - Samba E Aracy De Almeida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Triste Cuíca",
@@ -34032,6 +34376,7 @@ db = {
       "title": "história da mpb sinhô",
       "year": 2008,
       "path": "1971 - História da MPB Vol33 - Sinhô",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pé de anjo",
@@ -34096,6 +34441,7 @@ db = {
       "title": "nosso samba",
       "year": 2008,
       "path": "1978 - Conjunto Nosso Samba - Nosso Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pra minha iaiá",
@@ -34181,6 +34527,7 @@ db = {
       "title": "feliz da vida",
       "year": 2008,
       "path": "1994 - Agepê - Feliz Da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cheiro de primavera",
@@ -34266,6 +34613,7 @@ db = {
       "title": "Maré",
       "year": 2008,
       "path": "2008 - Adriana Calcanhoto - Mare",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maré",
@@ -34351,6 +34699,7 @@ db = {
       "title": "aula de samba",
       "year": 2008,
       "path": "2008 - Aula de samba – A história do Brasil através do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exaltação a tiradentes",
@@ -34436,6 +34785,7 @@ db = {
       "title": "Até Sangrar",
       "year": 2008,
       "path": "2008 - Aurea Martins - Ate Sangrar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ilusão À Toa -  Pensando Em Ti",
@@ -34542,6 +34892,7 @@ db = {
       "title": "Uma Nota Sobre A Outra",
       "year": 2008,
       "path": "2008 - Benjamin Taubkin - Uma Nota Sobre A Outra",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Sabiá Voou",
@@ -34634,6 +34985,7 @@ db = {
       "title": "Bossa Queen",
       "year": 2008,
       "path": "2008 - Bossa Queen",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Love of My Life",
@@ -34719,6 +35071,7 @@ db = {
       "title": "Camerata de Violões",
       "year": 2008,
       "path": "2008 - Camerata De Violoes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Congada",
@@ -34832,6 +35185,7 @@ db = {
       "title": "Estrada Real de Villa Rica",
       "year": 2008,
       "path": "2008 - Celso Adolfo - Estrada Real De Villa Rica",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Barcarola Lusitana",
@@ -34966,6 +35320,7 @@ db = {
       "title": "Chill: Brazil Vol. 5 CD1",
       "year": 2008,
       "path": "2008 - ChillBrazilVol5cd 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Madrugada",
@@ -35086,6 +35441,7 @@ db = {
       "title": "Angenor",
       "year": 2008,
       "path": "2008 - Cida Moreira - Angenor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Canção Que Chegou",
@@ -35206,6 +35562,7 @@ db = {
       "title": "Como Nossos Pais",
       "year": 2008,
       "path": "2008 - Como Nossos Pais",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Coisinha Do Pai",
@@ -35312,6 +35669,7 @@ db = {
       "title": "Sendo Eu",
       "year": 2008,
       "path": "2008 - Companhia Itinerante - Sendo Eu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sendo Eu",
@@ -35404,6 +35762,7 @@ db = {
       "title": "Os AfroSambas de Baden Powell e Vinicius de Moraes",
       "year": 2008,
       "path": "2008 - Coral Unifesp - Os Afro Sambas De B Pe VM",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Consolação",
@@ -35496,6 +35855,7 @@ db = {
       "title": "o samba informal de mauro duarte",
       "year": 2008,
       "path": "2008 - Cristina Buarque e Samba de Fato - O samba informal de Mauro Duarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lenha na fogueira",
@@ -35714,6 +36074,7 @@ db = {
       "title": "roda de samba ao vivo",
       "year": 2008,
       "path": "2008 - Dudu Nobre - Roda de samba ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sinhá sinhá . gamação . peixeiro granfino . sinhá sinhá",
@@ -35841,6 +36202,7 @@ db = {
       "title": "Ensaio Sobre A Cegueira",
       "year": 2008,
       "path": "2008 - Ensaio Sobre A Cegueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Drama 3",
@@ -35954,6 +36316,7 @@ db = {
       "title": "Eu Gostaria de Ouvir: Mostra de Música Contemporânea",
       "year": 2008,
       "path": "2008 - Eu Gostaria de Ouvir Vol. 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Closed Captions (Guilherme Antonio Ferreira)",
@@ -36025,6 +36388,7 @@ db = {
       "title": "Andança",
       "year": 2008,
       "path": "2008 - Gra ynaAuguscikPaulinhoGarcia - Andanca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Andança",
@@ -36131,6 +36495,7 @@ db = {
       "title": "Guilherme Vergueiro & Paulinho Lima: Parceria",
       "year": 2008,
       "path": "2008 - Guilherme Vergueiro E Paulinho Lima Parceria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não vou reclamar",
@@ -36223,6 +36588,7 @@ db = {
       "title": "Oficina do Forró",
       "year": 2008,
       "path": "2008 - Hugo Luna e Antonio Costa - Oficina do Forro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vôo de Arribação",
@@ -36336,6 +36702,7 @@ db = {
       "title": "eu e o samba",
       "year": 2008,
       "path": "2008 - Leci Brandão - Eu e o samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "desperta pra felicidade",
@@ -36449,6 +36816,7 @@ db = {
       "title": "A Vida É Uma Festa",
       "year": 2008,
       "path": "2008 - Luiz Ayrão - A Vida É Uma Festa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Vida É Uma Festa",
@@ -36541,6 +36909,7 @@ db = {
       "title": "Naturalmente",
       "year": 2008,
       "path": "2008 - Margareth Menezes - Naturalmente",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Mulher de Coronel",
@@ -36626,6 +36995,7 @@ db = {
       "title": "Bis Bossa Nova CD 1",
       "year": 2008,
       "path": "2008 - Marisa - Bis Bossa Nova CD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Só Em Teus Braços",
@@ -36732,6 +37102,7 @@ db = {
       "title": "Bis Bossa Nova CD 2",
       "year": 2008,
       "path": "2008 - Marisa - Bis Bossa Nova CD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Amor Em Paz",
@@ -36838,6 +37209,7 @@ db = {
       "title": "Michael In Bossa",
       "year": 2008,
       "path": "2008 - Michael In Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beat It",
@@ -36944,6 +37316,7 @@ db = {
       "title": "Noites de Gala, Samba na Rua Ao Vivo (Áudio DVD)",
       "year": 2008,
       "path": "2008 - Monica Salmaso - Noites De Gala Samba Na Rua DVD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Volta do Malandro",
@@ -37022,6 +37395,7 @@ db = {
       "title": "Noites de Gala, Samba na Rua Ao Vivo (Áudio DVD)",
       "year": 2008,
       "path": "2008 - Monica Salmaso - Noites De Gala Samba Na Rua DVD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pulo do Gato",
@@ -37079,6 +37453,7 @@ db = {
       "title": "Zoombido",
       "year": 2008,
       "path": "2008 - Moska - Zoombido",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Do it",
@@ -37178,6 +37553,7 @@ db = {
       "title": "Mulheres de Hollanda (Áudio do DVD)",
       "year": 2008,
       "path": "2008 - Mulheres De Hollanda DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Las muchachas de Copacabana",
@@ -37298,6 +37674,7 @@ db = {
       "title": "No Escuro",
       "year": 2008,
       "path": "2008 - NandoAzymuth - No Escuro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Escuro",
@@ -37390,6 +37767,7 @@ db = {
       "title": "Natal Bem Brasileiro",
       "year": 2008,
       "path": "2008 - Natal Bem Brasileiro",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Boas festas",
@@ -37496,6 +37874,7 @@ db = {
       "title": "Legends Of The Preacher",
       "year": 2008,
       "path": "2008 - Nation Beat - Legends Of The Preacher",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Onde Tem Cerveja Tem Mulher",
@@ -37616,6 +37995,7 @@ db = {
       "title": "Versátil",
       "year": 2008,
       "path": "2008 - Nelson Sargento - Versátil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nas Asas da Canção",
@@ -37736,6 +38116,7 @@ db = {
       "title": "Nomes & Músicas",
       "year": 2008,
       "path": "2008 - Nomes e Musicas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Espanhola",
@@ -37821,6 +38202,7 @@ db = {
       "title": "Pixinguinha No Cinema",
       "year": 2008,
       "path": "2008 - Pixinguinha No Cinema - Sol Sobre A Lama",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Abertura",
@@ -37941,6 +38323,7 @@ db = {
       "title": "Dois Mundos",
       "year": 2008,
       "path": "2008 - Quarteto Rio Vermelho - Dois Mundos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Trajetória",
@@ -38012,6 +38395,7 @@ db = {
       "title": "patrimônio da humanidade",
       "year": 2008,
       "path": "2008 - Quinteto em Branco e Preto - Patrimônio da humanidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "patrimônio da humanidade",
@@ -38111,6 +38495,7 @@ db = {
       "title": "Bossa Eterna",
       "year": 2008,
       "path": "2008 - Raul de Souza - Bossa Eterna",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bossa eterna",
@@ -38189,6 +38574,7 @@ db = {
       "title": "Mulheres da Mangueira",
       "year": 2008,
       "path": "2008 - Rosemary - Mulheres da Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulheres da Mangueira",
@@ -38302,6 +38688,7 @@ db = {
       "title": "Samba Meets Boogie Woogie",
       "year": 2008,
       "path": "2008 - Samba Meets Boogie Woogie",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Adeus América",
@@ -38415,6 +38802,7 @@ db = {
       "title": "samba social clube",
       "year": 2008,
       "path": "2008 - Samba Social Clube",
+      "has_cover": true,
       "tracks": [
         {
           "title": "é preciso muito amor",
@@ -38521,6 +38909,7 @@ db = {
       "title": "sambas-de-enredo 2008 grupo a",
       "year": 2008,
       "path": "2008 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1. Acadêmicos da Rocinha",
@@ -38599,6 +38988,7 @@ db = {
       "title": "Sambas-de-Enredo 2008 Grupo B",
       "year": 2008,
       "path": "2008 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Reino das Águas de Olokum",
@@ -38705,6 +39095,7 @@ db = {
       "title": "Sambas-de-Enredo 2008 Grupo Especial",
       "year": 2008,
       "path": "2008 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Macapaba: Equinócio Solar. Viagens Fantásticas ao Meio do Mundo",
@@ -38797,6 +39188,7 @@ db = {
       "title": "Eu Não Sou Nenhuma Santa",
       "year": 2008,
       "path": "2008 - Silvia Machete - Eu Nao Sou Nenhuma Santa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Simplesmente Mulher",
@@ -38903,6 +39295,7 @@ db = {
       "title": "Sintonizando Recife",
       "year": 2008,
       "path": "2008 - Sintonizando Recife",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lágrimas Pretas",
@@ -39023,6 +39416,7 @@ db = {
       "title": "que samba bom",
       "year": 2008,
       "path": "2008 - Sururu na roda - Que samba bom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "que samba bom",
@@ -39129,6 +39523,7 @@ db = {
       "title": "Cape Horn",
       "year": 2008,
       "path": "2008 - T Horta A E Santo - Cape Horn",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cape Horn",
@@ -39221,6 +39616,7 @@ db = {
       "title": "Na Gafieira",
       "year": 2008,
       "path": "2008 - Thiago França - Nas Gafieira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Gafieira",
@@ -39334,6 +39730,7 @@ db = {
       "title": "pelos quatro cantos",
       "year": 2008,
       "path": "2008 - Toque de Arte - Pelos Quatro Cantos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "foi um rio que passou em minha vida",
@@ -39426,6 +39823,7 @@ db = {
       "title": "Tributo A Bezerra da Silva",
       "year": 2008,
       "path": "2008 - Tributo a Bezerra da Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apresentação",
@@ -39553,6 +39951,7 @@ db = {
       "title": "uma noite noel rosa",
       "year": 2008,
       "path": "2008 - Uma noite Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "fita amarela",
@@ -39666,6 +40065,7 @@ db = {
       "title": "convidados especiais",
       "year": 2008,
       "path": "2008 - Velha Guarda da Mangueira - Convidados especiais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exaltacão a mangueira",
@@ -39800,6 +40200,7 @@ db = {
       "title": "Memória do Samba Paulista",
       "year": 2008,
       "path": "2008 - Velha Guarda do Peruche - Memoria do Samba Paulista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filial de Samba",
@@ -39906,6 +40307,7 @@ db = {
       "title": "Baita Negão",
       "year": 2008,
       "path": "2008 - Virginia Rosa - Baita Negao",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Sambamba",
@@ -39991,6 +40393,7 @@ db = {
       "title": "Delicado",
       "year": 2008,
       "path": "2008 - Warley Henrique - Delicado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Delicado",
@@ -40069,6 +40472,7 @@ db = {
       "title": "Uma Prova de Amor",
       "year": 2008,
       "path": "2008 - Zeca Pagodinho - Uma Prova de Amor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Uma Prova de Amor",
@@ -40189,6 +40593,7 @@ db = {
       "title": "pra iluminar ao vivo",
       "year": 2008,
       "path": "2009 - Eduardo Gudin e Leila Pinheiro - Pra iluminar ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pra iluminar",
@@ -40316,6 +40721,7 @@ db = {
       "title": "Profissão Compositor",
       "year": 2007,
       "path": "2006 - Délcio Carvalho - Profissão compositor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Religião",
@@ -40422,6 +40828,7 @@ db = {
       "title": "A Música de Dolores Duran",
       "year": 2007,
       "path": "2007 - A Musica De Dolores Duran",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Noite do Meu Bem",
@@ -40577,6 +40984,7 @@ db = {
       "title": "A Música de Dolores Duran",
       "year": 2007,
       "path": "UQT2007_AMusicaDeDoloresDuran",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Noite do Meu Bem",
@@ -40732,6 +41140,7 @@ db = {
       "title": "Batucada Groove",
       "year": 2007,
       "path": "2007 - Alfredo Paixao - Batucada Groove",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pode chegar",
@@ -40817,6 +41226,7 @@ db = {
       "title": "Batucada Groove",
       "year": 2007,
       "path": "UQT2007_AlfredoPaixao-BatucadaGroove",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pode chegar",
@@ -40902,6 +41312,7 @@ db = {
       "title": "Almanaque da Rádio Nacional",
       "year": 2007,
       "path": "2007 - Almanaque Da Radio Nacional",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quando Canta o Brasil",
@@ -41134,6 +41545,7 @@ db = {
       "title": "Almanaque da Rádio Nacional",
       "year": 2007,
       "path": "UQT2007_AlmanaqueDaRadioNacional",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Quando Canta o Brasil",
@@ -41366,6 +41778,7 @@ db = {
       "title": "sambista perfeito",
       "year": 2007,
       "path": "2007 - Arlindo Cruz - Sambista Perfeito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu lugar",
@@ -41479,6 +41892,7 @@ db = {
       "title": "Gershwin & Jobim: Here To Stay",
       "year": 2007,
       "path": "2007 - BR6 - Here To Stay Gershwin Jobim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Waters of March - Rhapsody in blue",
@@ -41571,6 +41985,7 @@ db = {
       "title": "Gershwin & Jobim: Here To Stay",
       "year": 2007,
       "path": "UQT2007_BR6-HereToStayGershwinJobim",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Waters of March - Rhapsody in blue",
@@ -41663,6 +42078,7 @@ db = {
       "title": "Benê, O Flautista: Solista e Cantor CD 1",
       "year": 2007,
       "path": "2007 - Bene O Flautista - CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gorgulho",
@@ -41797,6 +42213,7 @@ db = {
       "title": "Benê, O Flautista: Solista e Cantor CD 1",
       "year": 2007,
       "path": "UQT2007_BeneOFlautista-CD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Gorgulho",
@@ -41931,6 +42348,7 @@ db = {
       "title": "Benê, O Flautista: Benê & Pixinga CD 2",
       "year": 2007,
       "path": "2007 - Bene O Flautista - CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1x0",
@@ -42107,6 +42525,7 @@ db = {
       "title": "Benê, O Flautista: Benê & Pixinga CD 2",
       "year": 2007,
       "path": "UQT2007_BeneOFlautista-CD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "1x0",
@@ -42283,6 +42702,7 @@ db = {
       "title": "Benê, O Flautista: O Regional (Parte 1) CD 3",
       "year": 2007,
       "path": "2007 - Bene O Flautista - CD3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passarinho do Má",
@@ -42438,6 +42858,7 @@ db = {
       "title": "Benê, O Flautista: O Regional (Parte 1) CD 3",
       "year": 2007,
       "path": "UQT2007_BeneOFlautista-CD3",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Passarinho do Má",
@@ -42593,6 +43014,7 @@ db = {
       "title": "Benê, O Flautista: O Regional (Parte 2) CD 4",
       "year": 2007,
       "path": "2007 - Bene O Flautista - CD4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Passarinhos da Carioca",
@@ -42741,6 +43163,7 @@ db = {
       "title": "Benê, O Flautista: O Regional (Parte 2) CD 4",
       "year": 2007,
       "path": "UQT2007_BeneOFlautista-CD4",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Os Passarinhos da Carioca",
@@ -42889,6 +43312,7 @@ db = {
       "title": "Berço do Samba de São Mateus",
       "year": 2007,
       "path": "2007 - Berco do Samba de Sao Mateus",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba lá em São Mateus - Samba Certo",
@@ -43009,6 +43433,7 @@ db = {
       "title": "Berço do Samba de São Mateus",
       "year": 2007,
       "path": "UQT2007_Berco_do_Samba_de_Sao_Mateus",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Samba lá em São Mateus - Samba Certo",
@@ -43129,6 +43554,7 @@ db = {
       "title": "beth carvalho canta o samba da bahia",
       "year": 2007,
       "path": "2007 - Beth Carvalho - Beth Carvalho Canta O Samba Da Bahia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ilha de maré",
@@ -43263,6 +43689,7 @@ db = {
       "title": "certidão",
       "year": 2007,
       "path": "2007 - Casuarina - Certidão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "certidão",
@@ -43369,6 +43796,7 @@ db = {
       "title": "Saraivada",
       "year": 2007,
       "path": "2007 - Chico Saraiva - Saraivada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coco",
@@ -43468,6 +43896,7 @@ db = {
       "title": "Saraivada",
       "year": 2007,
       "path": "UQT2007_ChicoSaraiva-Saraivada",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Coco",
@@ -43567,6 +43996,7 @@ db = {
       "title": "Nosso Tempo",
       "year": 2007,
       "path": "2007 - Choro Ensemble - Nosso Tempo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gostosinho",
@@ -43659,6 +44089,7 @@ db = {
       "title": "Nosso Tempo",
       "year": 2007,
       "path": "UQT2007_ChoroEnsemble-NossoTempo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Gostosinho",
@@ -43751,6 +44182,7 @@ db = {
       "title": "cidade do samba",
       "year": 2007,
       "path": "2007 - Cidade do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mulheres",
@@ -43885,6 +44317,7 @@ db = {
       "title": "Mina de Choro",
       "year": 2007,
       "path": "2007 - Corta Jaca - Mina De Choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Monstro Do Pântano",
@@ -43991,6 +44424,7 @@ db = {
       "title": "Mina de Choro",
       "year": 2007,
       "path": "UQT2007_CortaJaca-MinaDeChoro",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Monstro Do Pântano",
@@ -44097,6 +44531,7 @@ db = {
       "title": "cristina buarque e terreiro grande ao vivo",
       "year": 2007,
       "path": "2007 - Cristina Buarque e Terreiro Grande ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o meu nome já caiu no esquecimento . eu não sou do morro . não deixo saudade . você me abandonou . quantas lágrimas",
@@ -44133,6 +44568,7 @@ db = {
       "title": "Profissão Compositor",
       "year": 2007,
       "path": "2007 - Delcio Carvalho - Profissao Compositor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Religião",
@@ -44239,6 +44675,7 @@ db = {
       "title": "Profissão Compositor",
       "year": 2007,
       "path": "UQT2007_DelcioCarvalho-ProfissaoCompositor",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Religião",
@@ -44345,6 +44782,7 @@ db = {
       "title": "inédito e eterno encontros musicais",
       "year": 2007,
       "path": "2007 - Délcio Carvalho - Inédito e eterno – Encontros musicais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não ha mais você",
@@ -44451,6 +44889,7 @@ db = {
       "title": "diogo nogueira ao vivo",
       "year": 2007,
       "path": "2007 - Diogo Nogueira - Diogo Nogueira ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "poder da criação",
@@ -44557,6 +44996,7 @@ db = {
       "title": "os mais belo sambas enredos de todos os tempos",
       "year": 2007,
       "path": "2007 - Dudu Nobre - Os mais belos sambas enredo de todos os tempos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "batucada 1",
@@ -44663,6 +45103,7 @@ db = {
       "title": "Jardim Abandonado",
       "year": 2007,
       "path": "2007 - Duo Assad - Jardim Abandonado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Trem para Codisburgo",
@@ -44776,6 +45217,7 @@ db = {
       "title": "Jardim Abandonado",
       "year": 2007,
       "path": "UQT2007_DuoAssad-JardimAbandonado",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Trem para Codisburgo",
@@ -44889,6 +45331,7 @@ db = {
       "title": "Beba-Me - Elza Soares Ao Vivo",
       "year": 2007,
       "path": "2007 - Elza Soares - Beba-Me - Elza Soares Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Guri",
@@ -44995,6 +45438,7 @@ db = {
       "title": "Eu Não Sou Cachorro, Mesmo",
       "year": 2007,
       "path": "2007 - Eu Nao Sou Cachorro Mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tortura de Amor",
@@ -45108,6 +45552,7 @@ db = {
       "title": "Eu Não Sou Cachorro, Mesmo",
       "year": 2007,
       "path": "UQT2007_Eu_Nao_Sou_Cachorro__Mesmo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tortura de Amor",
@@ -45221,6 +45666,7 @@ db = {
       "title": "Ao Vivo no Rio",
       "year": 2007,
       "path": "2007 - Eumir Deodato Trio - Ao Vivo No Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Whistle Bump",
@@ -45320,6 +45766,7 @@ db = {
       "title": "Ao Vivo no Rio",
       "year": 2007,
       "path": "UQT2007_EumirDeodatoTrio-AoVivoNoRio",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Whistle Bump",
@@ -45419,6 +45866,7 @@ db = {
       "title": "TorradoParra",
       "year": 2007,
       "path": "2007 - Fernando Torrado Parra - Torrado Parra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tinta do Amor",
@@ -45560,6 +46008,7 @@ db = {
       "title": "TorradoParra",
       "year": 2007,
       "path": "UQT2007_FernandoTorradoParra-TorradoParra",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tinta do Amor",
@@ -45701,6 +46150,7 @@ db = {
       "title": "o quintal do samba",
       "year": 2007,
       "path": "2007 - Fundo de Quintal - O Quintal Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a amizade",
@@ -45814,6 +46264,7 @@ db = {
       "title": "Fina Batucada",
       "year": 2007,
       "path": "2007 - Galocantô - Fina Batucada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fina Batucada",
@@ -45941,6 +46392,7 @@ db = {
       "title": "O Brasil Existe Em Mim",
       "year": 2007,
       "path": "2007 - Geraldo Azevedo - O Brasil Existe Em Mim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Que Me Faz Cantar",
@@ -46040,6 +46492,7 @@ db = {
       "title": "O Brasil Existe Em Mim",
       "year": 2007,
       "path": "UQT2007_Geraldo_Azevedo_-_O_Brasil_Existe_Em_Mim",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Que Me Faz Cantar",
@@ -46139,6 +46592,7 @@ db = {
       "title": "Casa de Villa",
       "year": 2007,
       "path": "2007 - Guinga - Casa De Villa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mar De Maracanã",
@@ -46231,6 +46685,7 @@ db = {
       "title": "Casa de Villa",
       "year": 2007,
       "path": "UQT2007_Guinga-CasaDeVilla",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Mar De Maracanã",
@@ -46323,6 +46778,7 @@ db = {
       "title": "Dialetto Carioca",
       "year": 2007,
       "path": "2007 - Guinga - Dialetto Carioca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Di Menor",
@@ -46422,6 +46878,7 @@ db = {
       "title": "Dialetto Carioca",
       "year": 2007,
       "path": "UQT2007_Guinga-DialettoCarioca",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Di Menor",
@@ -46521,6 +46978,7 @@ db = {
       "title": "Vamos Acabar Com O Baile: A Música de Garoto",
       "year": 2007,
       "path": "2007 - Henrique Cazes Marcello Goncalves - Vamos Acabar Com O Baile",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gente Humilde",
@@ -46620,6 +47078,7 @@ db = {
       "title": "Vamos Acabar Com O Baile: A Música de Garoto",
       "year": 2007,
       "path": "UQT2007_HenriqueCazesMarcelloGoncalves-VamosAcabarComOBaile",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Gente Humilde",
@@ -46719,6 +47178,7 @@ db = {
       "title": "Hurtmold",
       "year": 2007,
       "path": "2007 - Hurtmold",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olvécio e Bica",
@@ -46776,6 +47236,7 @@ db = {
       "title": "Hurtmold",
       "year": 2007,
       "path": "UQT2007_Hurtmold",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Olvécio e Bica",
@@ -46833,6 +47294,7 @@ db = {
       "title": "Na linha do samba",
       "year": 2007,
       "path": "2007 - Ione Papas - Na linha do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Som Sagrado",
@@ -46946,6 +47408,7 @@ db = {
       "title": "Uma Porção de Marias",
       "year": 2007,
       "path": "2007 - Jane Duboc e Arismar Espirito Santo - Uma Porcao de Marias",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Maria",
@@ -47031,6 +47494,7 @@ db = {
       "title": "Uma Porção de Marias",
       "year": 2007,
       "path": "UQT2007_Jane_Duboc_e_Arismar_Espirito_Santo_-_Uma_Porcao_de_Marias",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Maria",
@@ -47116,6 +47580,7 @@ db = {
       "title": "Jovelina - Duetos",
       "year": 2007,
       "path": "2007 - Jovelina Pérola Negra - Jovelina - Duetos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Luz Do Repente / Feirinha Da Pavuna / Bagaço Da Laranja",
@@ -47222,6 +47687,7 @@ db = {
       "title": "Live In Europe",
       "year": 2007,
       "path": "2007 - Lica Cecato Romero Lubambo Live In Europe",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Rã",
@@ -47321,6 +47787,7 @@ db = {
       "title": "Live In Europe",
       "year": 2007,
       "path": "UQT2007_LicaCecatoRomeroLubamboLiveInEurope",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Rã",
@@ -47420,6 +47887,7 @@ db = {
       "title": "Entrevista Com Stela do Patrocínio",
       "year": 2007,
       "path": "2007 - Lincoln Antonio Georgette Fadel - Entrevista Com Stela Do Patrocinio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -47533,6 +48001,7 @@ db = {
       "title": "Entrevista Com Stela do Patrocínio",
       "year": 2007,
       "path": "UQT2007_LincolnAntonioGeorgetteFadel-EntrevistaComStelaDoPatrocinio",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Abertura",
@@ -47646,6 +48115,7 @@ db = {
       "title": "Brazil",
       "year": 2007,
       "path": "2007 - Los Angeles Guitar Quartet - Brazil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mas que nada",
@@ -47745,6 +48215,7 @@ db = {
       "title": "Brazil",
       "year": 2007,
       "path": "UQT2007_LosAngelesGuitarQuartet-Brazil",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Mas que nada",
@@ -47844,6 +48315,7 @@ db = {
       "title": "Social",
       "year": 2007,
       "path": "2007 - Marcelinho da Lua - Social",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Papo de Ya Ya",
@@ -47929,6 +48401,7 @@ db = {
       "title": "Social",
       "year": 2007,
       "path": "UQT2007_Marcelinho_da_Lua_-_Social",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Papo de Ya Ya",
@@ -48014,6 +48487,7 @@ db = {
       "title": "Dentro do Mar Tem Rio Ao Vivo CD 1",
       "year": 2007,
       "path": "2007 - Maria Bethania - Dentro Do Mar Tem Rio Ao Vivo CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Floresta do Amazonas | Canto de Nanã",
@@ -48120,6 +48594,7 @@ db = {
       "title": "Dentro do Mar Tem Rio Ao Vivo CD 1",
       "year": 2007,
       "path": "UQT2007_MariaBethania-DentroDoMarTemRioAoVivoCD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Floresta do Amazonas | Canto de Nanã",
@@ -48226,6 +48701,7 @@ db = {
       "title": "Dentro do Mar Tem Rio Ao Vivo CD 2",
       "year": 2007,
       "path": "2007 - Maria Bethania - Dentro Do Mar Tem Rio Ao Vivo CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Memórias do Mar | Texto",
@@ -48297,6 +48773,7 @@ db = {
       "title": "Dentro do Mar Tem Rio Ao Vivo CD 2",
       "year": 2007,
       "path": "UQT2007_MariaBethania-DentroDoMarTemRioAoVivoCD2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Memórias do Mar | Texto",
@@ -48368,6 +48845,7 @@ db = {
       "title": "É Melhor Ser Alegre Que Ser Triste: Maria Creuza Interpreta Baden Powell",
       "year": 2007,
       "path": "2007 - Maria Creuza - E Melhor Ser Alegre Que Ser Triste",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Berimbau",
@@ -48453,6 +48931,7 @@ db = {
       "title": "É Melhor Ser Alegre Que Ser Triste: Maria Creuza Interpreta Baden Powell",
       "year": 2007,
       "path": "UQT2007_Maria_Creuza_-_E_Melhor_Ser_Alegre_Que_Ser_Triste",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Berimbau",
@@ -48538,6 +49017,7 @@ db = {
       "title": "Trio 202 Ao Vivo New York & São Paulo",
       "year": 2007,
       "path": "2007 - N Ayres U Rocha T Ferragutti - Trio202Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Danço Samba",
@@ -48623,6 +49103,7 @@ db = {
       "title": "Trio 202 Ao Vivo New York & São Paulo",
       "year": 2007,
       "path": "UQT2007_NAyresURochaTFerragutti-Trio202AoVivo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Só Danço Samba",
@@ -48708,6 +49189,7 @@ db = {
       "title": "Tocando Para O Interior",
       "year": 2007,
       "path": "2007 - Nailor Proveta - Tocando Para O Interior",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olhando A Banda da Calçada",
@@ -48807,6 +49289,7 @@ db = {
       "title": "Tocando Para O Interior",
       "year": 2007,
       "path": "UQT2007_NailorProveta-TocandoParaOInterior",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Olhando A Banda da Calçada",
@@ -48906,6 +49389,7 @@ db = {
       "title": "OSESP, Banda Mantiqueira e Mônica Salmaso",
       "year": 2007,
       "path": "2007 - OSESP Banda Mantiqueira Monica Salmaso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Rã",
@@ -48991,6 +49475,7 @@ db = {
       "title": "OSESP, Banda Mantiqueira e Mônica Salmaso",
       "year": 2007,
       "path": "UQT2007_OSESPBandaMantiqueiraMonicaSalmaso",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Rã",
@@ -49076,6 +49561,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "2007 - Paulinho Moska - Novo De Novo P1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tudo Novo De Novo",
@@ -49147,6 +49633,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "UQT2007_Paulinho_Moska_-___Novo_De_Novo_P1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tudo Novo De Novo",
@@ -49218,6 +49705,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "2007 - Paulinho Moska - Novo De Novo P2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Seu Olhar",
@@ -49289,6 +49777,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "UQT2007_Paulinho_Moska_-___Novo_De_Novo_P2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Seu Olhar",
@@ -49360,6 +49849,7 @@ db = {
       "title": "Acústico MTV",
       "year": 2007,
       "path": "2007 - Paulinho da Viola - Acústico MTV",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Timoneiro",
@@ -49473,6 +49963,7 @@ db = {
       "title": "Redemoinho",
       "year": 2007,
       "path": "2007 - Paulo Freire - Redemoinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fieira",
@@ -49565,6 +50056,7 @@ db = {
       "title": "Redemoinho",
       "year": 2007,
       "path": "UQT2007_PauloFreire-Redemoinho",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Fieira",
@@ -49657,6 +50149,7 @@ db = {
       "title": "O Som de Dorival Caymmi",
       "year": 2007,
       "path": "2007 - Paulo Moura E Ociladoce - O Som De Dorival Caymmi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite de Temporal",
@@ -49742,6 +50235,7 @@ db = {
       "title": "O Som de Dorival Caymmi",
       "year": 2007,
       "path": "UQT2007_PauloMouraEOciladoce-OSomDeDorivalCaymmi",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Noite de Temporal",
@@ -49827,6 +50321,7 @@ db = {
       "title": "Sinfonia Popular Capixaba",
       "year": 2007,
       "path": "2007 - Paulo Sodre - Sinfonia Capixaba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -49905,6 +50400,7 @@ db = {
       "title": "Pindorama",
       "year": 2007,
       "path": "2007 - Pindorama",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Frevereiro",
@@ -49983,6 +50479,7 @@ db = {
       "title": "Rancho Carnavalesco Flor do Sereno",
       "year": 2007,
       "path": "2007 - Rancho Carnavalesco Flor Do Sereno",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rancho Novo",
@@ -50089,6 +50586,7 @@ db = {
       "title": "Dez Anos Depois",
       "year": 2007,
       "path": "2007 - Renato Anesi - Dez Anos Depois",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Baião do Poré",
@@ -50174,6 +50672,7 @@ db = {
       "title": "Geringonça",
       "year": 2007,
       "path": "2007 - Ricardo Tete - Geringonca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Geringonça",
@@ -50266,6 +50765,7 @@ db = {
       "title": "Das Ilhas Mestiças",
       "year": 2007,
       "path": "2007 - Rodrigo Lessa - Das Ilhas Mesticas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Calango mindelo",
@@ -50365,6 +50865,7 @@ db = {
       "title": "Sambas-de-Enredo 2007 Grupo A",
       "year": 2007,
       "path": "2007 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Com todo o Gás, a Caprichosos Acende a Chama do Carnaval",
@@ -50443,6 +50944,7 @@ db = {
       "title": "Sambas-de-Enredo 2007 Grupo B",
       "year": 2007,
       "path": "2007 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Grande Estadista do Brasil - João Maria José Francisco Xavier de Paula Luís Antônio Domingos Rafael de Bragança",
@@ -50549,6 +51051,7 @@ db = {
       "title": "Sambas-de-Enredo 2007 Grupo C",
       "year": 2007,
       "path": "2007 - Sambas de Enredo Grupo C",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ganga-Zumba - Raiz da Liberdade",
@@ -50669,6 +51172,7 @@ db = {
       "title": "Sambas-de-Enredo 2007 Grupo Especial",
       "year": 2007,
       "path": "2007 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Transformações da Vida",
@@ -50768,6 +51272,7 @@ db = {
       "title": "Cantigas",
       "year": 2007,
       "path": "2007 - Socorro Lira - Cantigas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tema d'um Brinquedo Chamado Viver (Chorinho-Canção)",
@@ -50867,6 +51372,7 @@ db = {
       "title": "Tim Maia In Concert",
       "year": 2007,
       "path": "2007 - Tim Maia In Concert P1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A Festa do Santo Reis",
@@ -50924,6 +51430,7 @@ db = {
       "title": "Tim Maia In Concert",
       "year": 2007,
       "path": "2007 - Tim Maia In Concert P2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Descobridor dos Sete Mares",
@@ -50974,6 +51481,7 @@ db = {
       "title": "Uma História do Choro CD1",
       "year": 2007,
       "path": "2007 - Uma Historia Do Choro CD1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Flor Amorosa",
@@ -51024,6 +51532,7 @@ db = {
       "title": "raridades zeca pagodinho",
       "year": 2007,
       "path": "2007 - Zeca Pagodinho - Raridades",
+      "has_cover": true,
       "tracks": [
         {
           "title": "leilão",
@@ -51130,6 +51639,7 @@ db = {
       "title": "Malandros Maneiros",
       "year": 2007,
       "path": "2007 - Zé Luiz - Malandros Maneiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fuga",
@@ -51222,6 +51732,7 @@ db = {
       "title": "Quem Menos Tem É Quem Mais Oferece",
       "year": 2006,
       "path": "2006 - A Filial - Quem Menos Tem E Quem Mais Oferece",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Gosto Tanto",
@@ -51321,6 +51832,7 @@ db = {
       "title": "Direito de Sambar",
       "year": 2006,
       "path": "2006 - Adriana Moreira - Direito De Sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Direito de Sambar",
@@ -51427,6 +51939,7 @@ db = {
       "title": "Direito de sambar. Adriana Moreira canta Batatinha",
       "year": 2006,
       "path": "2006 - Adriana Moreira - Direito de sambar – Adriana Moreira canta Batatinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Direito de sambar",
@@ -51533,6 +52046,7 @@ db = {
       "title": "uma nova paixão ao vivo",
       "year": 2006,
       "path": "2006 - Alcione - Uma nova paixão – Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se não é amor",
@@ -51639,6 +52153,7 @@ db = {
       "title": "Por Causa do Samba",
       "year": 2006,
       "path": "2006 - Alegre Correa Ana Paula Da Silva - Por Causa Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto Brasileiro Interlude",
@@ -51759,6 +52274,7 @@ db = {
       "title": "Guaratiba Brasil",
       "year": 2006,
       "path": "2006 - Antonio Mello - Guaratiba Brasil",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Se Oriente",
@@ -51844,6 +52360,7 @@ db = {
       "title": "aquarela do samba",
       "year": 2006,
       "path": "2006 - Aquarela do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando eu vim de minas",
@@ -51950,6 +52467,7 @@ db = {
       "title": "Brasileirinho: Choro In Rio",
       "year": 2006,
       "path": "2006 - Brasileirinho Choro In Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Machucando",
@@ -52091,6 +52609,7 @@ db = {
       "title": "Cachaça dá Samba!",
       "year": 2006,
       "path": "2006 - Cachaça dá samba Alfredo Del-Penho e Pedro Paulo Malta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ai, Cachaça! / Bebida, Mulher, Orgia",
@@ -52197,6 +52716,7 @@ db = {
       "title": "Eternamente: 55 Anos de Carreira",
       "year": 2006,
       "path": "2006 - Cauby Peixoto - Eternamente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Volto A Cantar Pra Vocês",
@@ -52359,6 +52879,7 @@ db = {
       "title": "Ninguém Anda Sozinho",
       "year": 2006,
       "path": "2006 - Chau Do Pife - Ninguem Anda Sozinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lamento Sertanejo",
@@ -52444,6 +52965,7 @@ db = {
       "title": "Edu Krieger",
       "year": 2006,
       "path": "2006 - Edu Krieger - Edu Krieger",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ciranda Do Mundo",
@@ -52550,6 +53072,7 @@ db = {
       "title": "Já Tô Te Esperando",
       "year": 2006,
       "path": "2006 - Edu Ribeiro - Ja To Te Esperando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Já tô te esperando",
@@ -52628,6 +53151,7 @@ db = {
       "title": "Um Jeito de Fazer Samba",
       "year": 2006,
       "path": "2006 - Eduardo Gudin e Notícias dum Brasil - Um Jeito de Fazer Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Jeito de Fazer Samba",
@@ -52734,6 +53258,7 @@ db = {
       "title": "Quizomba",
       "year": 2006,
       "path": "2006 - Eduardo Nazarian - Quizomba",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Quizomba",
@@ -52826,6 +53351,7 @@ db = {
       "title": "Gafieira de Bolso",
       "year": 2006,
       "path": "2006 - Eduardo Neves - Gafieira De Bolso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gafieira de Bolso",
@@ -52911,6 +53437,7 @@ db = {
       "title": "Onda Tropicale",
       "year": 2006,
       "path": "2006 - Fiorella Mannoia - Onda Tropicale",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canzoni e Momenti",
@@ -53010,6 +53537,7 @@ db = {
       "title": "Pela Hora",
       "year": 2006,
       "path": "2006 - Fundo de Quintal - Pela Hora",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pela Hora",
@@ -53116,6 +53644,7 @@ db = {
       "title": "Instrumental",
       "year": 2006,
       "path": "2006 - Gabriel Sater - Instrumental",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Turuniño",
@@ -53187,6 +53716,7 @@ db = {
       "title": "Sol de Laranja",
       "year": 2006,
       "path": "2006 - Ju Noleto - Sol De Laranja",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sol de laranja",
@@ -53265,6 +53795,7 @@ db = {
       "title": "Futurismo",
       "year": 2006,
       "path": "2006 - Kassin 2 - Futurismo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O seu lugar",
@@ -53413,6 +53944,7 @@ db = {
       "title": "Laércio de Freitas Homenageia Jacob do Bandolim",
       "year": 2006,
       "path": "2006 - Laercio De Freitas Homenageia Jacob Do Bandolim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boas vindas",
@@ -53512,6 +54044,7 @@ db = {
       "title": "Festa das manhãs",
       "year": 2006,
       "path": "2006 - Leandro Fregonesi - Festa das manhãs",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Festa das manhãs",
@@ -53639,6 +54172,7 @@ db = {
       "title": "canções afirmativas",
       "year": 2006,
       "path": "2006 - Leci Brandão - Canções afirmativas - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "só quero te namorar",
@@ -53745,6 +54279,7 @@ db = {
       "title": "Legendários do Brasil",
       "year": 2006,
       "path": "2006 - Legendarios Do Brasil - Jairzinho, Brito, Altair, Jair Marinho, Marco Antônio e Roberto Miranda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "País Tropical",
@@ -53830,6 +54365,7 @@ db = {
       "title": "29 Poemas Lidos Pelo Autor",
       "year": 2006,
       "path": "2006 - Manuel Bandeira - 29Poemas Lidos Pelo Autor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite Morta",
@@ -54041,6 +54577,7 @@ db = {
       "title": "Stella Del Mattino",
       "year": 2006,
       "path": "2006 - Marco Pereira - Stella Del Mattino",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Baixa do Sapateiro",
@@ -54105,6 +54642,7 @@ db = {
       "title": "Brasileira Ao Vivo",
       "year": 2006,
       "path": "2006 - Margareth Menezes - Brasileira Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Faraó, Dinvidade do Egito",
@@ -54211,6 +54749,7 @@ db = {
       "title": "Orações Na Voz de Maria Bethânia",
       "year": 2006,
       "path": "2006 - Maria Bethania - Oracoes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Oração de Fernando Pessoa",
@@ -54282,6 +54821,7 @@ db = {
       "title": "Memórias de Minh´alma",
       "year": 2006,
       "path": "2006 - Marquinhos de Oswaldo Cruz - Memórias de Minh´alma",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os olhos não podem ver",
@@ -54388,6 +54928,7 @@ db = {
       "title": "mart'nália ao vivo em berlim",
       "year": 2006,
       "path": "2006 - Mart’nália - Mart’nália em Berlim ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nas águas de amaralina",
@@ -54515,6 +55056,7 @@ db = {
       "title": "Casa Forte: Mauro Senise Toca Edu Lobo",
       "year": 2006,
       "path": "2006 - Mauro Senise Toca Edu Lobo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arpoador",
@@ -54614,6 +55156,7 @@ db = {
       "title": "Milágrimas",
       "year": 2006,
       "path": "2006 - Milagrimas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Epígrafe:Caxangá",
@@ -54741,6 +55284,7 @@ db = {
       "title": "Sem Compromisso",
       "year": 2006,
       "path": "2006 - Moacyr Luz e Armando Marçal - Sem Compromisso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Primeira Vez",
@@ -54833,6 +55377,7 @@ db = {
       "title": "Choro Nosso de Cada Dia",
       "year": 2006,
       "path": "2006 - Nego Nelson - Choro Nosso de Cada Dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Choro Amazônico",
@@ -54939,6 +55484,7 @@ db = {
       "title": "Ney Conceição",
       "year": 2006,
       "path": "2006 - Ney Conceicao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alone",
@@ -55003,6 +55549,7 @@ db = {
       "title": "O Violão e o Samba",
       "year": 2006,
       "path": "2006 - O Violão e o Samba - Dorina, Cláudio Jorge e Carlinhos 7 Cordas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Irajá",
@@ -55095,6 +55642,7 @@ db = {
       "title": "Paz e Futebol A Selection Of Brazilian Songs Compiled By Jazzanova",
       "year": 2006,
       "path": "2006 - Paz E Futebol A Selection Of Brazilian Songs",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Paz E Futebol",
@@ -55243,6 +55791,7 @@ db = {
       "title": "coisa com coisa",
       "year": 2006,
       "path": "2006 - Pedro Miranda - Coisa com coisa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "amor sem preconceito",
@@ -55335,6 +55884,7 @@ db = {
       "title": "Amazonas",
       "year": 2006,
       "path": "2006 - Raizes Caboclas - Amazonas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amazônia é Brasil",
@@ -55413,6 +55963,7 @@ db = {
       "title": "Cara da gente",
       "year": 2006,
       "path": "2006 - Roberto Serrão - Cara da gente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1. Prazer e suor",
@@ -55519,6 +56070,7 @@ db = {
       "title": "Samba Goal - Powered By R10",
       "year": 2006,
       "path": "2006 - Samba Goal Powered By R10",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Goleador",
@@ -55625,6 +56177,7 @@ db = {
       "title": "Sambas-de-Enredo 2006 Grupo A",
       "year": 2006,
       "path": "2006 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bahia de todos os Deuses",
@@ -55703,6 +56256,7 @@ db = {
       "title": "Sambas-de-Enredo 2006 Grupo B",
       "year": 2006,
       "path": "2006 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Amanhã",
@@ -55795,6 +56349,7 @@ db = {
       "title": "Sambas-de-Enredo 2006 Grupo C",
       "year": 2006,
       "path": "2006 - Sambas de Enredo Grupo C",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Do Oiapoque ao Chuí, o Sereno é o Brasil",
@@ -55908,6 +56463,7 @@ db = {
       "title": "Sambas-de-Enredo 2006 Grupo Especial",
       "year": 2006,
       "path": "2006 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Poços de Caldas Derrama sobre a Terra suas Águas Milagrosas: Do Caos Inicial à Explosão da Vida - A Nave Mãe da Existência",
@@ -56014,6 +56570,7 @@ db = {
       "title": "Sepé Tiaraju e o Povo Guarani",
       "year": 2006,
       "path": "2006 - Sepe Tiaraju EO Povo Guarani",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mateando com Sepé",
@@ -56085,6 +56642,7 @@ db = {
       "title": "Piano Works Vol. V: Around Brazil",
       "year": 2006,
       "path": "2006 - Simon Nabatov - Piano Works Vol. V Around Brazil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desde que o samba é samba",
@@ -56170,6 +56728,7 @@ db = {
       "title": "Disco 1",
       "year": 2006,
       "path": "2006 - Tantinho da Mangueira - Tantinho, Memória Em Verde Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boa noite",
@@ -56290,6 +56849,7 @@ db = {
       "title": "Toquinho & Orquestra Jazz Sinfônica",
       "year": 2006,
       "path": "2006 - Toquinho E Orquestra Jazz Sinfonica",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jobimniana",
@@ -56368,6 +56928,7 @@ db = {
       "title": "Viragem",
       "year": 2006,
       "path": "2006 - Um Trio Viralata - Viragem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brinquedo nº 1: Bilboquê",
@@ -56446,6 +57007,7 @@ db = {
       "title": "Spot São Paulo",
       "year": 2006,
       "path": "2006 - V. A. - Spot S o Paulo p1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "She's My Shoo Shoo",
@@ -56503,6 +57065,7 @@ db = {
       "title": "Singles, Lados B e Raridades (Parte 1)",
       "year": 2006,
       "path": "2006 - Wilson Simonal Singles Raridades - A",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Terezinha De Jesus",
@@ -56644,6 +57207,7 @@ db = {
       "title": "Um Violão na Roda de Choro",
       "year": 2006,
       "path": "2006 - Ze Paulo Becker - Um Violao Na Roda Do Choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Batuca!",
@@ -56722,6 +57286,7 @@ db = {
       "title": "Acústico MTV 2 - Gafieira",
       "year": 2006,
       "path": "2006 - Zeca Pagodinho - Acústico MTV 2 - Gafieira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beija-me",
@@ -56842,6 +57407,7 @@ db = {
       "title": "Solo e Muito Bem Acompanhado",
       "year": 2006,
       "path": "2006 - Zezo Ribeiro - Solo e Muito Bem Acompanhado",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pixarrinha",
@@ -56934,6 +57500,7 @@ db = {
       "title": "Solo e Muito Bem Acompanhado",
       "year": 2006,
       "path": "UQT2006_Zezo_Ribeiro_-_Solo_e_Muito_Bem_Acompanhado",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pixarrinha",
@@ -57026,6 +57593,7 @@ db = {
       "title": "cantoria",
       "year": 2005,
       "path": "1995 - Hermínio Bello de Carvalho - Cantoria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cantoria",
@@ -57202,6 +57770,7 @@ db = {
       "title": "mart'nália ao vivo",
       "year": 2005,
       "path": "2004 - Mart’nália - Mart’nália ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "beco",
@@ -57294,6 +57863,7 @@ db = {
       "title": "Alaíde Costa Canta Hermínio Bello de Carvalho",
       "year": 2005,
       "path": "2005 - Alaide Costa Canta Herminio Bello De Carvalho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Valha-me Deus",
@@ -57400,6 +57970,7 @@ db = {
       "title": "uma nova paixão",
       "year": 2005,
       "path": "2005 - Alcione - Uma nova paixão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "uma nova paixão",
@@ -57520,6 +58091,7 @@ db = {
       "title": "Aliéksey Vianna Plays Sérgio Assad",
       "year": 2005,
       "path": "2005 - Alieksey Viana Plays Sergio Assad",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquarelle - Divertimento",
@@ -57626,6 +58198,7 @@ db = {
       "title": "Aquela Canção",
       "year": 2005,
       "path": "2005 - Aquela Cancao",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Anoiteceu",
@@ -57718,6 +58291,7 @@ db = {
       "title": "Na cadência do samba",
       "year": 2005,
       "path": "2005 - Arranco de Varsóvia - Na cadência do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Força da Imaginação",
@@ -57810,6 +58384,7 @@ db = {
       "title": "O canto da Baixada",
       "year": 2005,
       "path": "2005 - Bira da Vila - O canto da Baixada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O daquí, o dalí e o de lá",
@@ -57923,6 +58498,7 @@ db = {
       "title": "Ary, O Brasileiro",
       "year": 2005,
       "path": "2005 - Bons Tempos - Ary O Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rio de Janeiro",
@@ -58015,6 +58591,7 @@ db = {
       "title": "Vale Dos Tambores 1",
       "year": 2005,
       "path": "2005 - Carlos Henrique Machado Freitas - Vale dos Tambores CD 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Canto Dos Quilombos",
@@ -58149,6 +58726,7 @@ db = {
       "title": "Castelo Rá-Tim-Bum",
       "year": 2005,
       "path": "2005 - Castelo Ra - Tim-Bum",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -58283,6 +58861,7 @@ db = {
       "title": "Casuarina",
       "year": 2005,
       "path": "2005 - Casuarina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pranto de Poeta",
@@ -58368,6 +58947,7 @@ db = {
       "title": "De Uns Tempos Pra Cá",
       "year": 2005,
       "path": "2005 - Chico Cesar - De Uns Tempos Pra Ca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra Cinema",
@@ -58460,6 +59040,7 @@ db = {
       "title": "Chico Pinheiro",
       "year": 2005,
       "path": "2005 - Chico Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tocador de Violão",
@@ -58566,6 +59147,7 @@ db = {
       "title": "clara nunes canta tom e chico",
       "year": 2005,
       "path": "2005 - Clara Nunes - Clara Nunes canta Tom e Chico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sabiá",
@@ -58651,6 +59233,7 @@ db = {
       "title": "Corta Jaca",
       "year": 2005,
       "path": "2005 - Corta Jaca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maxixando",
@@ -58750,6 +59333,7 @@ db = {
       "title": "Bem que Mereci",
       "year": 2005,
       "path": "2005 - Élton Medeiros - Bem que Mereci",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Velha Poeira",
@@ -58863,6 +59447,7 @@ db = {
       "title": "Espaço Imaginário",
       "year": 2005,
       "path": "2005 - Fabiano De Castro - Espaco Imaginario",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Espaço Imaginário",
@@ -58948,6 +59533,7 @@ db = {
       "title": "Palavra Nordestina",
       "year": 2005,
       "path": "2005 - Fernando Rocha Nonato Luiz - Palavra Nordestina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feira de Caruaru",
@@ -59075,6 +59661,7 @@ db = {
       "title": "Galo Preto 30 Anos",
       "year": 2005,
       "path": "2005 - Galo Preto - 30Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Café pra dois",
@@ -59174,6 +59761,7 @@ db = {
       "title": "Intimidade Acústica",
       "year": 2005,
       "path": "2005 - Geraldo Espindola - Intimidade Acustica",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É Necessário",
@@ -59308,6 +59896,7 @@ db = {
       "title": "tributo a caco velho",
       "year": 2005,
       "path": "2005 - Germano Mathias - Tributo á Caco Velho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu fraco é mulher",
@@ -59414,6 +60003,7 @@ db = {
       "title": "timoneiro",
       "year": 2005,
       "path": "2005 - Herminio Bello de Carvalho - Timoneiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "alecrim",
@@ -59534,6 +60124,7 @@ db = {
       "title": "Tons",
       "year": 2005,
       "path": "2005 - Izabel Padovani Ronaldo Saggiorato - Tons",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O belo na tarde",
@@ -59626,6 +60217,7 @@ db = {
       "title": "noventa anos de samba",
       "year": 2005,
       "path": "2005 - Jamelão - Noventa Anos De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pout-pourri",
@@ -59732,6 +60324,7 @@ db = {
       "title": "Real Grandeza",
       "year": 2005,
       "path": "2005 - Jards Macale - Real Grandeza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olho de Lince",
@@ -59817,6 +60410,7 @@ db = {
       "title": "a arte de joão nogueira",
       "year": 2005,
       "path": "2005 - João Nogueira - A arte de João Nogueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pimenta no vatapá",
@@ -59965,6 +60559,7 @@ db = {
       "title": "juliana diniz",
       "year": 2005,
       "path": "2005 - Juliana Diniz - Juliana Diniz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "amor proibido",
@@ -60064,6 +60659,7 @@ db = {
       "title": "Um Cantar a Vontade",
       "year": 2005,
       "path": "2005 - Luiz Carlos da Vila - Um Cantar A Vontade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Kizomba, Festa da Raça",
@@ -60170,6 +60766,7 @@ db = {
       "title": "MTV Apresenta Cordel do Fogo Encantado",
       "year": 2005,
       "path": "2005 - MTV Apresenta Cordel Do Fogo Encantado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A chegada de Zé do Né na Lagoa de Dentro",
@@ -60353,6 +60950,7 @@ db = {
       "title": "Melodia Positiva",
       "year": 2005,
       "path": "2005 - Mama Quilla - Melodia Positiva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Intro",
@@ -60438,6 +61036,7 @@ db = {
       "title": "Afinidade: Violão e Gaita",
       "year": 2005,
       "path": "2005 - Marco Pereira e Gabriel Grossi - Afinidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulher Rendeira",
@@ -60516,6 +61115,7 @@ db = {
       "title": "brasilatinidade",
       "year": 2005,
       "path": "2005 - Martinho da Vila - Brasilatinidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando essa onda passar",
@@ -60629,6 +61229,7 @@ db = {
       "title": "brasilatinidade ao vivo",
       "year": 2005,
       "path": "2005 - Martinho da Vila - Brasilatinidade ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sonho de um sonho",
@@ -60728,6 +61329,7 @@ db = {
       "title": "menino do rio",
       "year": 2005,
       "path": "2005 - Mart’nália - Menino do Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pra mart'nália",
@@ -60841,6 +61443,7 @@ db = {
       "title": "Meu Amigo Geraldo Pereira",
       "year": 2005,
       "path": "2005 - Nadinho da Ilha - Meu Amigo Geraldo Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Até Quarta-feira /  Vai, que Depois eu vou",
@@ -60947,6 +61550,7 @@ db = {
       "title": "O Coronel E O Lobisomem",
       "year": 2005,
       "path": "2005 - O Coronel e O Lobisomem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sereia",
@@ -61018,6 +61622,7 @@ db = {
       "title": "Orquestra Sinfônica do Estado de São Paulo & Banda Mantiqueira",
       "year": 2005,
       "path": "2005 - OSESP Banda Mantiqueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bachianas Brasileiras nº 4 (Aria)",
@@ -61082,6 +61687,7 @@ db = {
       "title": "Orquestra Mediterrânea",
       "year": 2005,
       "path": "2005 - Orquestra Mediterranea",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Suíte Oriental",
@@ -61181,6 +61787,7 @@ db = {
       "title": "Cry My Guitar",
       "year": 2005,
       "path": "2005 - Raphael Rabello - Cry My Guitar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ainda Me Recordo",
@@ -61280,6 +61887,7 @@ db = {
       "title": "Tempos Quase Modernos (DVD Audio)",
       "year": 2005,
       "path": "2005 - Roberto Mendes - Tempos Quase Modernos DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vila do Adeus",
@@ -61414,6 +62022,7 @@ db = {
       "title": "Na Rota do Choro",
       "year": 2005,
       "path": "2005 - Rosivaldo Cordeiro E Grupo Jacobiando - Na Rota Do Choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Metido a besta",
@@ -61506,6 +62115,7 @@ db = {
       "title": "Salve Jorge",
       "year": 2005,
       "path": "2005 - Salve Jorge",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Jorge Da Capadócia",
@@ -61612,6 +62222,7 @@ db = {
       "title": "Sambas-de-Enredo 2005 Grupo A",
       "year": 2005,
       "path": "2005 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Mundo sem Fronteiras",
@@ -61697,6 +62308,7 @@ db = {
       "title": "Sambas-de-Enredo 2005 Grupo B",
       "year": 2005,
       "path": "2005 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Monarco, Voz e Memória do Samba, um Passado de Glória",
@@ -61789,6 +62401,7 @@ db = {
       "title": "Sambas-de-Enredo 2005 Grupo Especial",
       "year": 2005,
       "path": "2005 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Vento Corta as Terras dos Pampas. Em Nome do Pai, do Filho e do Espírito Guarani. Sete Povos na fé e na dor... Sete Missões de Amor.",
@@ -61895,6 +62508,7 @@ db = {
       "title": "Cru",
       "year": 2005,
       "path": "2005 - Seu Jorge - Cru",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tive Razão",
@@ -61973,6 +62587,7 @@ db = {
       "title": "Sou Velha-guarda, muito prazer",
       "year": 2005,
       "path": "2005 - Velha-Guarda da Vila Isabel - Sou Velha Guarda, Muito Prazer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Velha-guarda . No embalo da Vila . Renascer das cinzas",
@@ -62051,6 +62666,7 @@ db = {
       "title": "Tributo a Mauro Duarte",
       "year": 2005,
       "path": "2005 - Walter Alfaiate - Tributo a Mauro Duarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ainda Precisarás de mim",
@@ -62143,6 +62759,7 @@ db = {
       "title": "Á Vera",
       "year": 2005,
       "path": "2005 - Zeca Pagodinho - À Vera",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra São Jorge",
@@ -62242,6 +62859,7 @@ db = {
       "title": "ensaio do dia",
       "year": 2004,
       "path": "1984 - Eduardo Gudin - Ensaio do dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coração aberto",
@@ -62334,6 +62952,7 @@ db = {
       "title": "Bandolim do Brasil",
       "year": 2004,
       "path": "2004 - Afonso Machado - Bandolim Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Que É Que Há?",
@@ -62440,6 +63059,7 @@ db = {
       "title": "faz uma loucura por mim",
       "year": 2004,
       "path": "2004 - Alcione - Faz uma loucura por mim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "faz uma loucura por mim",
@@ -62567,6 +63187,7 @@ db = {
       "title": "Abismo de Rosas",
       "year": 2004,
       "path": "2004 - Alessandro Penezzi - Abismo De Rosas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasileirinho",
@@ -62687,6 +63308,7 @@ db = {
       "title": "Azulejando",
       "year": 2004,
       "path": "2004 - Antonio Carlos Bigonha - Azulejando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Azulejando",
@@ -62772,6 +63394,7 @@ db = {
       "title": "Bar do Mineiro",
       "year": 2004,
       "path": "2004 - Bar do Mineiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feitiço",
@@ -62885,6 +63508,7 @@ db = {
       "title": "a madrinha do samba convida",
       "year": 2004,
       "path": "2004 - Beth Carvalho - A Madrinha Do Samba Ao Vivo Convida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "andança",
@@ -63026,6 +63650,7 @@ db = {
       "title": "Pega eu",
       "year": 2004,
       "path": "2004 - Bezerra da Silva - Pega eu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandragem dá um tempo",
@@ -63132,6 +63757,7 @@ db = {
       "title": "Bibi Canta Piaf",
       "year": 2004,
       "path": "2004 - Bibi Ferreira - Bibi Canta Piaf",
+      "has_cover": true,
       "tracks": [
         {
           "title": "La Foule",
@@ -63252,6 +63878,7 @@ db = {
       "title": "Inside Carlito Marrón (Áudio DVD)",
       "year": 2004,
       "path": "2004 - Carlinhos Brown - Inside Carlito Marron DVD",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carlito Marrón",
@@ -63337,6 +63964,7 @@ db = {
       "title": "Byrd And Brazil CD 1",
       "year": 2004,
       "path": "2004 - Charlie Byrd - Byrd And Brazil CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Primeira Palavra (The First Word)",
@@ -63401,6 +64029,7 @@ db = {
       "title": "Choros, Chorinhos & Chorões #2 CD1",
       "year": 2004,
       "path": "2004 - Choros Chorinhos e Choroes Vol 2 CD 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Remexendo",
@@ -63507,6 +64136,7 @@ db = {
       "title": "raridades clara nunes",
       "year": 2004,
       "path": "2004 - Clara Nunes - Raridades",
+      "has_cover": true,
       "tracks": [
         {
           "title": "insensatez",
@@ -63676,6 +64306,7 @@ db = {
       "title": "mestre do samba",
       "year": 2004,
       "path": "2004 - Cyro Monteiro - Mestre do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "falsa baiana",
@@ -63796,6 +64427,7 @@ db = {
       "title": "Noite de Estrelas",
       "year": 2004,
       "path": "2004 - Dilermando Reis - Noite De Estrelas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite de lua",
@@ -63951,6 +64583,7 @@ db = {
       "title": "Sincerely Hot",
       "year": 2004,
       "path": "2004 - Domenico 2 - Sincerely Hot",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alegria, vai lá",
@@ -64050,6 +64683,7 @@ db = {
       "title": "sempre a cantar",
       "year": 2004,
       "path": "2004 - Dona Ivone Lara - Sempre a cantar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "na própria palma",
@@ -64156,6 +64790,7 @@ db = {
       "title": "Divino Cacuriá de Teté",
       "year": 2004,
       "path": "2004 - Dona Tete - Divino Cacuria de Tete",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nossa Senhora da Guia",
@@ -64248,6 +64883,7 @@ db = {
       "title": "dudu nobre ao vivo",
       "year": 2004,
       "path": "2004 - Dudu Nobre - Dudu Nobre ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "água da minha sede",
@@ -64396,6 +65032,7 @@ db = {
       "title": "O Samba É Meu Dom",
       "year": 2004,
       "path": "2004 - Fabiana Cozza - O samba é meu dom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Samba É Meu Dom",
@@ -64474,6 +65111,7 @@ db = {
       "title": "fundo de quintal ao vivo convida",
       "year": 2004,
       "path": "2004 - Fundo de Quintal - Fundo De Quintal Ao Vivo Convida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu não quero mais",
@@ -64594,6 +65232,7 @@ db = {
       "title": "Great Jewish Music: Jacob do Bandolim",
       "year": 2004,
       "path": "2004 - Great Jewish Music Jacob Do Bandolim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noites Cariocas",
@@ -64686,6 +65325,7 @@ db = {
       "title": "MPBaby Moda de Viola",
       "year": 2004,
       "path": "2004 - Heraldo do Monte - MPBaby Moda de Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maringá",
@@ -64785,6 +65425,7 @@ db = {
       "title": "O Eterno Mangueirense",
       "year": 2004,
       "path": "2004 - Jamelão - O Eterno Mangueirense",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Exaltação À Mangueira",
@@ -64940,6 +65581,7 @@ db = {
       "title": "No compasso do meu coração",
       "year": 2004,
       "path": "2004 - Leandro Fregonesi - No compasso do meu coração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mão no couro",
@@ -65053,6 +65695,7 @@ db = {
       "title": "Homenagem a Milton Nascimento",
       "year": 2004,
       "path": "2004 - Luiz Avellar - Homenagem a Milton Nascimento",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Canção da América",
@@ -65159,6 +65802,7 @@ db = {
       "title": "Inéditas & Sucessos Ao Vivo",
       "year": 2004,
       "path": "2004 - Luiz Ayrão - Inéditas & Sucessos Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não Se Deve Brincar Com Amor",
@@ -65258,6 +65902,7 @@ db = {
       "title": "Intérprete",
       "year": 2004,
       "path": "2004 - Luiz Ayrão - Intérprete",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Rosas Não Falam",
@@ -65364,6 +66009,7 @@ db = {
       "title": "nosso show",
       "year": 2004,
       "path": "2004 - Marquinho Sathan - Nosso show - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pura semente",
@@ -65491,6 +66137,7 @@ db = {
       "title": "conexões ao vivo",
       "year": 2004,
       "path": "2004 - Martinho da Vila - Conexões ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "menina moça . casa de bamba . o pequeno burguês",
@@ -65534,6 +66181,7 @@ db = {
       "title": "Iaiá",
       "year": 2004,
       "path": "2004 - Monica Salmaso - Iaia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Moro na Roça",
@@ -65633,6 +66281,7 @@ db = {
       "title": "Vagabundo",
       "year": 2004,
       "path": "2004 - Ney Matogrosso E Pedro Luis EA Parede - Vagabundo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A ordem é samba",
@@ -65739,6 +66388,7 @@ db = {
       "title": "Na Lapa",
       "year": 2004,
       "path": "2004 - Nicolas Krassik - Na Lapa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Krassik De Ramos",
@@ -65845,6 +66495,7 @@ db = {
       "title": "Polcas e Boas",
       "year": 2004,
       "path": "2004 - Orlando Massiere - Polcas E Boas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Escovando O Breque",
@@ -65916,6 +66567,7 @@ db = {
       "title": "Ofício: Brasileiro",
       "year": 2004,
       "path": "2004 - Paulo César Feital - Ofício - Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cinelândia",
@@ -66022,6 +66674,7 @@ db = {
       "title": "Água de Beber",
       "year": 2004,
       "path": "2004 - Quarteto Maogani - Agua De Beber",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lamento no morro",
@@ -66128,6 +66781,7 @@ db = {
       "title": "Sudaka",
       "year": 2004,
       "path": "2004 - Ramiro Musotto - Sudaka",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Caminho",
@@ -66206,6 +66860,7 @@ db = {
       "title": "Braseiro",
       "year": 2004,
       "path": "2004 - Roberta Sá - Braseiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Sambo Mesmo",
@@ -66284,6 +66939,7 @@ db = {
       "title": "Garota Diferente",
       "year": 2004,
       "path": "2004 - Rosalia De Souza - Garota Diferente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Adriana (performed by The Five Corners Quintet)",
@@ -66369,6 +67025,7 @@ db = {
       "title": "Sambas-de-Enredo 2004 Grupo A",
       "year": 2004,
       "path": "2004 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dorival Caymmi, o mar e o Tempo nas Areias de Copacabana",
@@ -66461,6 +67118,7 @@ db = {
       "title": "Sambas-de-Enredo 2004 Grupo Especial",
       "year": 2004,
       "path": "2004 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manôa - Manaus - Amazônia - Terra Santa... Que Alimenta o Corpo, Equilibra a Alma e Transmite a Paz",
@@ -66567,6 +67225,7 @@ db = {
       "title": "Música Preta Brasileira Ao Vivo",
       "year": 2004,
       "path": "2004 - Sandra De Sa - Musica Preta Brasileira Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Joga fora",
@@ -66701,6 +67360,7 @@ db = {
       "title": "Brasil - El Arte de la Guitarra \"en Buenos Aires\"",
       "year": 2004,
       "path": "2004 - Sebastiao Tapajos - Arte de la Guitarra en Buenos Aires",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Favela",
@@ -66793,6 +67453,7 @@ db = {
       "title": "Sérgio Santos",
       "year": 2004,
       "path": "2004 - Sergio Santos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feito do Nada",
@@ -66906,6 +67567,7 @@ db = {
       "title": "Sexteto Maurício Carrilho + 2",
       "year": 2004,
       "path": "2004 - Sexteto Mauricio Carrilho e 2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Já Foi",
@@ -67012,6 +67674,7 @@ db = {
       "title": "sururu na roda",
       "year": 2004,
       "path": "2004 - Sururu na Roda - Sururu na Roda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "minha embaixada chegou",
@@ -67111,6 +67774,7 @@ db = {
       "title": "Surica",
       "year": 2004,
       "path": "2004 - Tia Surica - Surica",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Você foi um Atraso em meu Caminho",
@@ -67217,6 +67881,7 @@ db = {
       "title": "These Are The Songs (Tim Maia Canta Em Inglês)",
       "year": 2004,
       "path": "2004 - Tim Maia - These Are The Songs",
+      "has_cover": false,
       "tracks": [
         {
           "title": "These Are The Songs",
@@ -67323,6 +67988,7 @@ db = {
       "title": "Segura O Cordão",
       "year": 2004,
       "path": "2004 - Tine - Segura O Cordao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mané Bacurau",
@@ -67429,6 +68095,7 @@ db = {
       "title": "Beleza! Beleza!! Beleza!!!",
       "year": 2004,
       "path": "2004 - Trio Mocoto - Beleza Beleza Beleza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beleza! Beleza!! Beleza!!!",
@@ -67528,6 +68195,7 @@ db = {
       "title": "Ao Vivo",
       "year": 2004,
       "path": "2004 - Trio Traquitana - Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pecado capital",
@@ -67620,6 +68288,7 @@ db = {
       "title": "Os Bambas da Viola",
       "year": 2004,
       "path": "2004 - V. A. - Os Bambas da Viola",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ibérica",
@@ -67733,6 +68402,7 @@ db = {
       "title": "São Paulo e a Lua",
       "year": 2004,
       "path": "2004 - V. A. - S o Paulo E A Lua p1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Paulista",
@@ -67804,6 +68474,7 @@ db = {
       "title": "o talento de waldir azevedo",
       "year": 2004,
       "path": "2004 - Waldir Azevedo - O talento de Waldir Azevedo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brasileirinho",
@@ -67910,6 +68581,7 @@ db = {
       "title": "Vida de Compositor",
       "year": 2004,
       "path": "2004 - Wanderley Monteiro - Vida de Compositor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vida de Compositor",
@@ -68016,6 +68688,7 @@ db = {
       "title": "Brasão de Orfeu",
       "year": 2004,
       "path": "2004 - Wilson das Neves - Brasão de Orfeu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Imperial",
@@ -68115,6 +68788,7 @@ db = {
       "title": "Live In Concert Obrigado Brazil",
       "year": 2004,
       "path": "2004 - Yo Yo Ma - Obrigado Brazil Live In Concert",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Libertango",
@@ -68221,6 +68895,7 @@ db = {
       "title": "Esteio",
       "year": 2004,
       "path": "2004 - Ze Modesto - Esteio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Diadorando",
@@ -68320,6 +68995,7 @@ db = {
       "title": "faz uma loucura por mim ao vivo",
       "year": 2004,
       "path": "2005 - Alcione - Faz uma loucura por mim ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "primo do jazz",
@@ -68461,6 +69137,7 @@ db = {
       "title": "Singles, Lados B e Raridades (Parte 2)",
       "year": 2004,
       "path": "2006 - Wilson Simonal Singles Raridades - B",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Terezinha",
@@ -68623,6 +69300,7 @@ db = {
       "title": "programa ensaio mauro duarte e noca da portela",
       "year": 2003,
       "path": "2000 - Mauro Duarte e Noca da Portela - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a alegria continua",
@@ -68771,6 +69449,7 @@ db = {
       "title": "A Flor e o Espinho",
       "year": 2003,
       "path": "2003 - A Flor e o Espinho - Guilherme de Brito e Trio Madeira Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Dono das Calçadas",
@@ -68863,6 +69542,7 @@ db = {
       "title": "alcione ao vivo 2",
       "year": 2003,
       "path": "2003 - Alcione - Alcione ao vivo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não deixe o samba morrer . pandeiro é o meu nome",
@@ -68955,6 +69635,7 @@ db = {
       "title": "beth carvalho canta cartola",
       "year": 2003,
       "path": "2003 - Beth Carvalho - Beth Carvalho Canta Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "as rosas não falam",
@@ -69047,6 +69728,7 @@ db = {
       "title": "o samba me pegou",
       "year": 2003,
       "path": "2003 - Edil Pacheco - O samba me pegou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cantiga de sereia",
@@ -69153,6 +69835,7 @@ db = {
       "title": "Vivo Feliz",
       "year": 2003,
       "path": "2003 - Elza Soares - Vivo Feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Intro",
@@ -69231,6 +69914,7 @@ db = {
       "title": "F to G",
       "year": 2003,
       "path": "2003 - Filo Machado Guennoshin - F To G",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rio",
@@ -69323,6 +70007,7 @@ db = {
       "title": "festa pra comunidade",
       "year": 2003,
       "path": "2003 - Fundo de Quintal - Festa Pra Comunidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não ta nem aí",
@@ -69429,6 +70114,7 @@ db = {
       "title": "A Flor E O Espinho",
       "year": 2003,
       "path": "2003 - Guilherme De Brito Trio Madeira Brasil - A Flor EO Espinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Dono das Calçadas",
@@ -69521,6 +70207,7 @@ db = {
       "title": "Brazil Classics",
       "year": 2003,
       "path": "2003 - Iara Negrete - Brazil Classics",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desafinado",
@@ -69648,6 +70335,7 @@ db = {
       "title": "O Sax de Ouro Vol. 5",
       "year": 2003,
       "path": "2003 - Ivanildo Sax De Ouro - O Sax De Ouro Vol5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "I Can't Stop Loving You",
@@ -69754,6 +70442,7 @@ db = {
       "title": "Só Deixo O Meu Coração Na Mão De Quem Pode",
       "year": 2003,
       "path": "2003 - Katia B - So Deixo Meu Coracao Na Mao De Quem Pode",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Deixo O Meu Coração Na Mão De Quem Pode",
@@ -69832,6 +70521,7 @@ db = {
       "title": "a cara do povo",
       "year": 2003,
       "path": "2003 - Leci Brandão - Leci Brandão – A cara do povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "perdoa",
@@ -69952,6 +70642,7 @@ db = {
       "title": "Ilustre Rebeldia",
       "year": 2003,
       "path": "2003 - Luciana Costa - Ilustre Rebeldia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu quero é botar meu bloco na rua",
@@ -70051,6 +70742,7 @@ db = {
       "title": "Dança",
       "year": 2003,
       "path": "2003 - Marcelo Onofri Quinteto - Danca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um trem para as estrelas",
@@ -70136,6 +70828,7 @@ db = {
       "title": "Bossa Nova Dreams",
       "year": 2003,
       "path": "2003 - Mark Bracken - Bossa Nova Dreams",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mas Que Nada",
@@ -70221,6 +70914,7 @@ db = {
       "title": "Canções Que Um Dia Você Já Assobiou",
       "year": 2003,
       "path": "2003 - Mauricio Pereira Turbilhao De Ritmos - Cancoes Que Um Dia Voce Ja Assobiou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "El Presidente",
@@ -70341,6 +71035,7 @@ db = {
       "title": "Compositores",
       "year": 2003,
       "path": "2003 - Miucha - Compositores",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pode Ir",
@@ -70447,6 +71142,7 @@ db = {
       "title": "Samba da Cidade",
       "year": 2003,
       "path": "2003 - Moacyr Luz - Samba da Cidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tudo que eu Vivi",
@@ -70532,6 +71228,7 @@ db = {
       "title": "Lembranças Cariocas",
       "year": 2003,
       "path": "2003 - N Carvalho P Miranda PP Malta - Lembrancas Cariocas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Alvorada/Quem Me Vê Sorrindo/Não Quero Mais Amar A Ninguém",
@@ -70638,6 +71335,7 @@ db = {
       "title": "noite ilustrada canta lupicinio rodrigues",
       "year": 2003,
       "path": "2003 - Noite Ilustrada - Noite Ilustrada Canta Lupicinio Rodrigues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se acaso você chegasse",
@@ -70737,6 +71435,7 @@ db = {
       "title": "Canção do Amor Demais: Olívia Byington Canta Tom e Vinícius",
       "year": 2003,
       "path": "2003 - Olivia Byington - Cancao Do Amor Demais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chega de Saudade",
@@ -70836,6 +71535,7 @@ db = {
       "title": "Tudo Novo de Novo",
       "year": 2003,
       "path": "2003 - Paulinho Moska - Tudo Novo De Novo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tudo Novo de Novo",
@@ -70942,6 +71642,7 @@ db = {
       "title": "o lamento do samba",
       "year": 2003,
       "path": "2003 - Paulo César Pinheiro - O lamento do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o lamento do samba",
@@ -71048,6 +71749,7 @@ db = {
       "title": "Brincadeira de Viola",
       "year": 2003,
       "path": "2003 - Paulo Freire - Brincadeira De Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ó Maninha",
@@ -71154,6 +71856,7 @@ db = {
       "title": "Sentimento popular",
       "year": 2003,
       "path": "2003 - Quinteto em Branco e Preto - Sentimento Popular",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Novo viver",
@@ -71267,6 +71970,7 @@ db = {
       "title": "MPBaby  Cantigas de Roda Vol. 2",
       "year": 2003,
       "path": "2003 - Reginaldo Frazzatto Jr - MP Baby Cantigas De Roda Vol2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pirulito que bate, bate",
@@ -71373,6 +72077,7 @@ db = {
       "title": "pra sambar",
       "year": 2003,
       "path": "2003 - Reinaldo - Pra sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lua prateada",
@@ -71472,6 +72177,7 @@ db = {
       "title": "Rio Classic And New Brazilian Flavours CD 1",
       "year": 2003,
       "path": "2003 - Rio Classic And New Brazilian Flavours CD 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Even Now",
@@ -71585,6 +72291,7 @@ db = {
       "title": "Sambas-de-Enredo 2003 Grupo A",
       "year": 2003,
       "path": "2003 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Gênio da Inocentes e a Lâmpada Maravilhosa",
@@ -71677,6 +72384,7 @@ db = {
       "title": "Sambas-de-Enredo 2003 Grupo Especial",
       "year": 2003,
       "path": "2003 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Dez Mandamentos: O Samba da Paz Canta a Saga da Liberdade",
@@ -71783,6 +72491,7 @@ db = {
       "title": "Derramando Alegria",
       "year": 2003,
       "path": "2003 - Sombrinha - Derramando Alegria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não Tem mais Volta",
@@ -71896,6 +72605,7 @@ db = {
       "title": "Afro Bossa",
       "year": 2003,
       "path": "2003 - The Ipanemas - Afro Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Suspeita",
@@ -71988,6 +72698,7 @@ db = {
       "title": "Tributo A Grandes Poetas da MPB Dorival Caymmi",
       "year": 2003,
       "path": "2003 - Tributo A Grandes Poetas da MPB Dorival Caymmi",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Só Louco",
@@ -72094,6 +72805,7 @@ db = {
       "title": "Trio Calafrio",
       "year": 2003,
       "path": "2003 - Trio Calafrio - Barbeirinho do Jacarezinho, Luiz Grande e Marquinhos Diniz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Partido em Três",
@@ -72200,6 +72912,7 @@ db = {
       "title": "Take Five",
       "year": 2003,
       "path": "2003 - Two For Brazil - Take Five",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meio de Campo (Mid Field)",
@@ -72306,6 +73019,7 @@ db = {
       "title": "Fractal",
       "year": 2003,
       "path": "2003 - Ulisses Rocha - Fractal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chove chuva",
@@ -72384,6 +73098,7 @@ db = {
       "title": "Viola de Arame",
       "year": 2003,
       "path": "2003 - Viola De Arame",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Andaluz",
@@ -72483,6 +73198,7 @@ db = {
       "title": "Pronto!",
       "year": 2003,
       "path": "2003 - Wandi Doratiotto - Pronto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fio da Navalha",
@@ -72596,6 +73312,7 @@ db = {
       "title": "Acústico MTV Zeca Pagodinho",
       "year": 2003,
       "path": "2003 - Zeca Pagodinho - Acústico MTV",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quando eu Contar (Iaiá) / Brincadeira tem Hora",
@@ -72744,6 +73461,7 @@ db = {
       "title": "Sambas-de-Enredo 2004 Grupo B",
       "year": 2003,
       "path": "2004 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Bela Adormecida",
@@ -72843,6 +73561,7 @@ db = {
       "title": "pagode do arlindo",
       "year": 2003,
       "path": "2006 - Arlindo Cruz - Pagode do Arlindo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bom ambiente",
@@ -72942,6 +73661,7 @@ db = {
       "title": "ao vivo",
       "year": 2002,
       "path": "2002 - Alcione - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sufoco . o surdo",
@@ -73062,6 +73782,7 @@ db = {
       "title": "inéditas de pixinguinha",
       "year": 2002,
       "path": "2002 - Água de Moringa - As inéditas de Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "viva joão da baiana",
@@ -73161,6 +73882,7 @@ db = {
       "title": "a gíria é cultura do povo",
       "year": 2002,
       "path": "2002 - Bezerra da Silva - A gíria é a cultura do povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a gíria é cultura do povo",
@@ -73267,6 +73989,7 @@ db = {
       "title": "chegue mais",
       "year": 2002,
       "path": "2002 - Dudu Nobre - Cheque mais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chegue mais",
@@ -73366,6 +74089,7 @@ db = {
       "title": "Do Coccix Até O Pescoço",
       "year": 2002,
       "path": "2002 - Elza Soares - Do Coccix Até O Pescoço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dura Na Queda",
@@ -73465,6 +74189,7 @@ db = {
       "title": "ao vivo no cacique de ramos",
       "year": 2002,
       "path": "2002 - Fundo de Quintal - Ao Vivo No Cacique De Ramos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vem pra mim . oitava cor",
@@ -73571,6 +74296,7 @@ db = {
       "title": "o samba das rodas",
       "year": 2002,
       "path": "2002 - Gallotti - O samba das rodas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "morrendo de saudade . não é assim",
@@ -73677,6 +74403,7 @@ db = {
       "title": "Talento de Bamba",
       "year": 2002,
       "path": "2002 - Germano Mathias - Talento de bamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Produto brasileiro",
@@ -73783,6 +74510,7 @@ db = {
       "title": "Cada vez Melhor",
       "year": 2002,
       "path": "2002 - Jamelão - Cada Vez Melhor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boa Noite",
@@ -73889,6 +74617,7 @@ db = {
       "title": "jorge aragão ao vivo convida",
       "year": 2002,
       "path": "2002 - Jorge Aragão - Jorge Aragão Ao Vivo Convida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "aria cantiliena",
@@ -74002,6 +74731,7 @@ db = {
       "title": "a filha da dona leci",
       "year": 2002,
       "path": "2002 - Leci Brandão - A filha de dona Lecy – Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "maria de um só joão . luz do teu olhar",
@@ -74115,6 +74845,7 @@ db = {
       "title": "voz e coração",
       "year": 2002,
       "path": "2002 - Martinho da Vila - Voz e coração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nós dois",
@@ -74221,6 +74952,7 @@ db = {
       "title": "Pé do meu Samba",
       "year": 2002,
       "path": "2002 - Mart’nália - Pé do meu Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filosofia",
@@ -74327,6 +75059,7 @@ db = {
       "title": "acerto de contas de paulo vanzolini disco1",
       "year": 2002,
       "path": "2002 - Paulo Vanzolini - Acerto de contas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bandeira de guerra",
@@ -74699,6 +75432,7 @@ db = {
       "title": "15 anos de samba",
       "year": 2002,
       "path": "2002 - Reinaldo - 15 Anos de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apelo",
@@ -74805,6 +75539,7 @@ db = {
       "title": "volta por cima",
       "year": 2002,
       "path": "2002 - Roberto Silva - Volta por cima",
+      "has_cover": true,
       "tracks": [
         {
           "title": "notícia",
@@ -74904,6 +75639,7 @@ db = {
       "title": "Sambas-de-Enredo 2002 Grupo A",
       "year": 2002,
       "path": "2002 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Asas: Sonho de Muitos, Privilégio de Poucos, Tecnologia de Todos",
@@ -74996,6 +75732,7 @@ db = {
       "title": "Sambas-de-Enredo 2002 Grupo Especial",
       "year": 2002,
       "path": "2002 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Goitacazes... Tupi or not Tupi, in a South American Way",
@@ -75102,6 +75839,7 @@ db = {
       "title": "Samba na Medida",
       "year": 2002,
       "path": "2002 - Walter Alfaiate - Samba na Medida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bateram em minha Porta",
@@ -75194,6 +75932,7 @@ db = {
       "title": "Deixa a Vida me Levar",
       "year": 2002,
       "path": "2002 - Zeca Pagodinho - Deixa a Vida me Levar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Modo de Ser",
@@ -75300,6 +76039,7 @@ db = {
       "title": "participacão especial",
       "year": 2002,
       "path": "2002 - Zeca Pagodinho - Participação especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "insensato destino",
@@ -75406,6 +76146,7 @@ db = {
       "title": "Uma História Do Samba",
       "year": 2002,
       "path": "2003 - Monarco - Uma História do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nossos Pioneiros",
@@ -75505,6 +76246,7 @@ db = {
       "title": "A Música Brasileira Deste Século Por Seus Autores e Intérpretes Vol. 5 - CD 12",
       "year": 2001,
       "path": "2000 - A música brasileira deste século por seus autores e intérpretes Programa ensaio – Sambas da Bahia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Diplomacia",
@@ -75702,6 +76444,7 @@ db = {
       "title": "a música brasileira deste século por seus autores e intérpretes vol. 4 - cd 02",
       "year": 2001,
       "path": "2000 - Aracy de Almeida - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a voz do morto",
@@ -75843,6 +76586,7 @@ db = {
       "title": "programa ensaio blecaute",
       "year": 2001,
       "path": "2000 - Blecaute - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "general da banda",
@@ -76026,6 +76770,7 @@ db = {
       "title": "programa ensaio cyro monteiro",
       "year": 2001,
       "path": "2000 - Cyro Monteiro - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "você errou",
@@ -76202,6 +76947,7 @@ db = {
       "title": "programa ensaio ismael silva",
       "year": 2001,
       "path": "2000 - Ismael Silva - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não há",
@@ -76294,6 +77040,7 @@ db = {
       "title": "programa ensaio paulo vanzolini",
       "year": 2001,
       "path": "2000 - Paulo Vanzolini - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ronda",
@@ -76421,6 +77168,7 @@ db = {
       "title": "Samba Vadio",
       "year": 2001,
       "path": "2001 - Agrião - Samba Vadio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Hora do Amor",
@@ -76527,6 +77275,7 @@ db = {
       "title": "a paixão tem memória",
       "year": 2001,
       "path": "2001 - Alcione - A paixão tem memória",
+      "has_cover": true,
       "tracks": [
         {
           "title": "além da cama",
@@ -76633,6 +77382,7 @@ db = {
       "title": "nome sagrado beth carvalho canta nelson cavaquinho",
       "year": 2001,
       "path": "2001 - Beth Carvalho - Nome Sagrado Beth Carvalho Canta Nelson Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "folhas secas",
@@ -76753,6 +77503,7 @@ db = {
       "title": "casquinha da portela",
       "year": 2001,
       "path": "2001 - Casquinha - Casquinha da Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "maria sambamba",
@@ -76845,6 +77596,7 @@ db = {
       "title": "coisa de chefe",
       "year": 2001,
       "path": "2001 - Cláudio Jorge - Coisa de chefe",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o samba melhor no brasil",
@@ -76951,6 +77703,7 @@ db = {
       "title": "sem tostão 2... a crise continua...",
       "year": 2001,
       "path": "2001 - Cristina Buarque e Henrique Cazes - Sem tostão 2 A crise continua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não tem tradução",
@@ -77043,6 +77796,7 @@ db = {
       "title": "moleque dudu",
       "year": 2001,
       "path": "2001 - Dudu Nobre - Moleque Dudu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quero um cafuné",
@@ -77156,6 +77910,7 @@ db = {
       "title": "luzes da mesma luz",
       "year": 2001,
       "path": "2001 - Eduardo Gudin e Fátima Guedes - Luzes da mesma luz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "abertura (instrumental)",
@@ -77262,6 +78017,7 @@ db = {
       "title": "Aurora de Paz",
       "year": 2001,
       "path": "2001 - Élton Medeiros - Aurora da paz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aurora De Paz",
@@ -77368,6 +78124,7 @@ db = {
       "title": "O Dono Das Calçadas",
       "year": 2001,
       "path": "2001 - Galo Preto, Nelson Sargento e Soraya Ravenle - O Dono Das Calçadas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Dono Das Calçadas",
@@ -77481,6 +78238,7 @@ db = {
       "title": "jamelão 25 anos",
       "year": 2001,
       "path": "2001 - Jamelão - Warner 25 Anos - Jamelão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exaltação a mangueira",
@@ -77587,6 +78345,7 @@ db = {
       "title": "minha alma canta",
       "year": 2001,
       "path": "2001 - João Nogueira - Minha alma canta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "na baixa do sapateiro",
@@ -77693,6 +78452,7 @@ db = {
       "title": "todas",
       "year": 2001,
       "path": "2001 - Jorge Aragão - Todas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "doce amizade",
@@ -77792,6 +78552,7 @@ db = {
       "title": "jorginho do império 20 super sucessos",
       "year": 2001,
       "path": "2001 - Jorginho do Império - 20 Super sucessos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "dona de casa",
@@ -77940,6 +78701,7 @@ db = {
       "title": "leci brandão e convidados",
       "year": 2001,
       "path": "2001 - Leci Brandão e convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba é a nossa cara",
@@ -78032,6 +78794,7 @@ db = {
       "title": "martinho da vila da roça e da cidade",
       "year": 2001,
       "path": "2001 - Martinho da Vila - Martinho da vila, da roça e da cidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tô na roça e na cidade",
@@ -78138,6 +78901,7 @@ db = {
       "title": "perfil de um sambista",
       "year": 2001,
       "path": "2001 - Noite Ilustrada - Perfil De Um Sambista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "perfil de um sambista",
@@ -78244,6 +79008,7 @@ db = {
       "title": "pagode pra valer volume 03",
       "year": 2001,
       "path": "2001 - Reinaldo - Pagode pra valer – Volume 03",
+      "has_cover": true,
       "tracks": [
         {
           "title": "até de manha",
@@ -78343,6 +79108,7 @@ db = {
       "title": "Sambas-de-Enredo 2001 Grupo A",
       "year": 2001,
       "path": "2001 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E aí, tem Patrocínio? Temos: José",
@@ -78435,6 +79201,7 @@ db = {
       "title": "Sambas-de-Enredo 2001 Grupo B",
       "year": 2001,
       "path": "2001 - Sambas de Enredo Grupo B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Canto da Guerreira - Homenagem a Clara Nunes",
@@ -78513,6 +79280,7 @@ db = {
       "title": "Sambas-de-Enredo 2001 Grupo Especial",
       "year": 2001,
       "path": "2001 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cana-Caiana, Cana Roxa, Cana Fita, Cana Preta, Amarela, Pernambuco... Quero vê Descê o Suco, na Pancada do Ganzá!",
@@ -78619,6 +79387,7 @@ db = {
       "title": "Caymmi",
       "year": 2000,
       "path": "1972 - Dorival Caymmi - Caymmi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Promessa de Pescador",
@@ -78718,6 +79487,7 @@ db = {
       "title": "Blue Brazil Blue Note In A Latin Groove Vol. 3",
       "year": 2000,
       "path": "1994 - Blue Brazil Blue Note Vol3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Das Cinco",
@@ -78873,6 +79643,7 @@ db = {
       "title": "programa ensaio adoniran barbosa",
       "year": 2000,
       "path": "2000 - Adoniran Barbosa - A música brasileira deste século por seus autores e intérpretes Programa ensaio – Adoniran Barbosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "saudosa maloca",
@@ -79000,6 +79771,7 @@ db = {
       "title": "nos bares da vida",
       "year": 2000,
       "path": "2000 - Alcione - Nos bares da vida ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "este seu olhar",
@@ -79155,6 +79927,7 @@ db = {
       "title": "arlindo cruz e sombrinha ao vivo",
       "year": 2000,
       "path": "2000 - Arlindo Cruz e Sombrinha - Arlindo Cruz e Sombrinha - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "é sempre assim",
@@ -79261,6 +80034,7 @@ db = {
       "title": "pagode de mesa volume 2",
       "year": 2000,
       "path": "2000 - Beth Carvalho - Pagode De Mesa 2 - Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "água de chuva no mar",
@@ -79381,6 +80155,7 @@ db = {
       "title": "malandro é malandro mané é mané",
       "year": 2000,
       "path": "2000 - Bezerra da Silva - Malandro é malandro e mané é mané",
+      "has_cover": true,
       "tracks": [
         {
           "title": "os dps de são paulo",
@@ -79487,6 +80262,7 @@ db = {
       "title": "programa ensaio bucy moreira",
       "year": 2000,
       "path": "2000 - Bucy Moreira - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não põe a mão",
@@ -79628,6 +80404,7 @@ db = {
       "title": "programa ensaio conjunto época de ouro",
       "year": 2000,
       "path": "2000 - Conjunto Época de Ouro - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cuidado, violão",
@@ -79713,6 +80490,7 @@ db = {
       "title": "ganha-se pouco mas è divertido",
       "year": 2000,
       "path": "2000 - Cristina Buarque - Ganha-se pouco mas é divertido – Cristina Buarque canta Wilson Batista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sambei 24 horas",
@@ -79819,6 +80597,7 @@ db = {
       "title": "programa ensaio dona ivone lara",
       "year": 2000,
       "path": "2000 - Dona Ivone Lara - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "acreditar . sonho meu . minha verdade",
@@ -79925,6 +80704,7 @@ db = {
       "title": "nosso grito",
       "year": 2000,
       "path": "2000 - Fundo de Quintal - Nosso Grito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nosso grito",
@@ -80038,6 +80818,7 @@ db = {
       "title": "programa ensaio geraldo filme",
       "year": 2000,
       "path": "2000 - Geraldo Filme - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "batuque de pirapora",
@@ -80116,6 +80897,7 @@ db = {
       "title": "programa ensaio germano mathias",
       "year": 2000,
       "path": "2000 - Germano Mathias - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a situação do escurinho",
@@ -80250,6 +81032,7 @@ db = {
       "title": "programa ensaio guilherme de brito",
       "year": 2000,
       "path": "2000 - Guilherme de Brito - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando eu me chamar saudade",
@@ -80384,6 +81167,7 @@ db = {
       "title": "Noel Por Ione",
       "year": 2000,
       "path": "2000 - Ione Papas - Noel por Ione",
+      "has_cover": true,
       "tracks": [
         {
           "title": "São Coisas Nossas",
@@ -80497,6 +81281,7 @@ db = {
       "title": "Por Força Do Hábito",
       "year": 2000,
       "path": "2000 - Jamelão - Por Força Do Hábito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por Força Do Hábito",
@@ -80603,6 +81388,7 @@ db = {
       "title": "programa ensaio joão nogueira",
       "year": 2000,
       "path": "2000 - João Nogueira - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "e lá vou eu",
@@ -80709,6 +81495,7 @@ db = {
       "title": "jorge aragão ao vivo2",
       "year": 2000,
       "path": "2000 - Jorge Aragão - Jorge Aragão Ao Vivo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu e você sempre",
@@ -80815,6 +81602,7 @@ db = {
       "title": "eu sou assim",
       "year": 2000,
       "path": "2000 - Leci Brandão - Eu sou assim - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "canta canta minha gente . quem é do mar não enjoa . madalena do jucú . casa de bamba",
@@ -80935,6 +81723,7 @@ db = {
       "title": "programa ensaio lupicínio rodrigues",
       "year": 2000,
       "path": "2000 - Lupicínio Rodrigues - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vingança",
@@ -81055,6 +81844,7 @@ db = {
       "title": "lusofonia",
       "year": 2000,
       "path": "2000 - Martinho da Vila - Lusofonia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lusofonia",
@@ -81161,6 +81951,7 @@ db = {
       "title": "programa ensaio nelson cavaquinho",
       "year": 2000,
       "path": "2000 - Nelson Cavaquinho - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "choro do adeus",
@@ -81344,6 +82135,7 @@ db = {
       "title": "a verdade de nelson rufino",
       "year": 2000,
       "path": "2000 - Nelson Rufino - A verdade de Nelson Rufino",
+      "has_cover": true,
       "tracks": [
         {
           "title": "marejou",
@@ -81450,6 +82242,7 @@ db = {
       "title": "noel pela primeira vez (volume 1)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ingênua",
@@ -81507,6 +82300,7 @@ db = {
       "title": "noel pela primeira vez (volume 2)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "palpite",
@@ -81725,6 +82519,7 @@ db = {
       "title": "noel pela primeira vez (volume 3)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "rir",
@@ -81950,6 +82745,7 @@ db = {
       "title": "noel pela primeira vez (volume 4)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "você só... mente",
@@ -82154,6 +82950,7 @@ db = {
       "title": "noel pela primeira vez (volume 5)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "triste cuíca",
@@ -82358,6 +83155,7 @@ db = {
       "title": "noel pela primeira vez (volume 6)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 6",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o maior castigo que eu te dou",
@@ -82583,6 +83381,7 @@ db = {
       "title": "noel pela primeira vez (volume 1)",
       "year": 2000,
       "path": "2000 - Noel pela primeira vez volume 7",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ingênua",
@@ -82640,6 +83439,7 @@ db = {
       "title": "pagode da tia doca",
       "year": 2000,
       "path": "2000 - Pagode da Tia Doca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tendência",
@@ -82788,6 +83588,7 @@ db = {
       "title": "pagode pra valer volume 02",
       "year": 2000,
       "path": "2000 - Reinaldo - Pagode pra valer – Volume 02",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se o samba começar",
@@ -82894,6 +83695,7 @@ db = {
       "title": "Sambas-de-Enredo 2000 Grupo A",
       "year": 2000,
       "path": "2000 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Envergo, mas não Quebro",
@@ -82986,6 +83788,7 @@ db = {
       "title": "Sambas-de-Enredo 2000 Grupo Especial",
       "year": 2000,
       "path": "2000 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem Descobriu o Brasil, foi seu Cabral, no dia 22 de Abril, 2 Meses Depois do Carnaval",
@@ -83092,6 +83895,7 @@ db = {
       "title": "Tudo Azul",
       "year": 2000,
       "path": "2000 - Velha Guarda da Portela - Tudo Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Portela desde os Tempos de Criança",
@@ -83107,6 +83911,7 @@ db = {
       "title": "Velhas Companheiras - Mangueira & Portela",
       "year": 2000,
       "path": "2000 - Velhas Companheiras - Mangueira & Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alvorada / Manhã Brasileira",
@@ -83213,6 +84018,7 @@ db = {
       "title": "Água da Minha Sede",
       "year": 2000,
       "path": "2000 - Zeca Pagodinho - Água da Minha Sede",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Água da minha Sede",
@@ -83326,6 +84132,7 @@ db = {
       "title": "Juras de Amor",
       "year": 2000,
       "path": "2000 - Zeca Pagodinho - Juras de Amor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jura",
@@ -83432,6 +84239,7 @@ db = {
       "title": "através do espelho",
       "year": 2000,
       "path": "2001 - João Nogueira através do espelho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nó na madeira",
@@ -83573,6 +84381,7 @@ db = {
       "title": "claridade uma homenagem a clara nunes",
       "year": 1999,
       "path": "1999 - Alcione - Claridade – Uma homenagem a Clara Nunes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mineira . morena de angola",
@@ -83679,6 +84488,7 @@ db = {
       "title": "Bezerra da Silva ao Vivo",
       "year": 1999,
       "path": "1999 - Bezerra da Silva - Bezerra da Silva ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aqueles Morros",
@@ -83813,6 +84623,7 @@ db = {
       "title": "pérolas finas",
       "year": 1999,
       "path": "1999 - Ederaldo Gentil - Pérola finas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "luandê",
@@ -83912,6 +84723,7 @@ db = {
       "title": "Só Cartola",
       "year": 1999,
       "path": "1999 - Élton Medeiros, Nelson Sargento e Grupo Galo Preto - Só Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem me vê Sorrindo / Sei Chorar / Alegria",
@@ -84060,6 +84872,7 @@ db = {
       "title": "chega pra sambar",
       "year": 1999,
       "path": "1999 - Fundo de Quintal - Chega Pra Sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chega pra sambar",
@@ -84159,6 +84972,7 @@ db = {
       "title": "História do Samba Paulista",
       "year": 1999,
       "path": "1999 - História do samba Paulista I",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vissungo",
@@ -84307,6 +85121,7 @@ db = {
       "title": "jorge aragão ao vivo",
       "year": 1999,
       "path": "1999 - Jorge Aragão - Jorge Aragão Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coisa de pele",
@@ -84406,6 +85221,7 @@ db = {
       "title": "Tocando o Samba",
       "year": 1999,
       "path": "1999 - Jorge Aragão - Tocando O Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Perfume e Musica",
@@ -84512,6 +85328,7 @@ db = {
       "title": "Auto-estima",
       "year": 1999,
       "path": "1999 - Leci Brandão - Auto-estima",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nota Máxima",
@@ -84625,6 +85442,7 @@ db = {
       "title": "É Sim, Sinhô",
       "year": 1999,
       "path": "1999 - Lira Carioca, Clara Sandroni e Marcos Sacramento - É sim, Sinhô",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A favela vai abaixo",
@@ -84934,6 +85752,7 @@ db = {
       "title": "mangueira sambas de terreiro e outros sambas",
       "year": 1999,
       "path": "1999 - Mangueira - Sambas de terreiro e outros sambas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sala de recepção",
@@ -85341,6 +86160,7 @@ db = {
       "title": "O Pai da Alegria",
       "year": 1999,
       "path": "1999 - Martinho da Vila - O Pai da Alegria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pro Amor Render",
@@ -85447,6 +86267,7 @@ db = {
       "title": "Pirajá - Esquina Carioca",
       "year": 1999,
       "path": "1999 - Pirajá - Esquina Carioca - Uma Noite com a Raiz do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Patrão Prenda seu Gado / Jogo Rasteiro",
@@ -85581,6 +86402,7 @@ db = {
       "title": "pagode pra valer",
       "year": 1999,
       "path": "1999 - Reinaldo - Pagode pra valer – Reinaldo e seus convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brilho no olhar",
@@ -85659,6 +86481,7 @@ db = {
       "title": "Sambas-de-Enredo 1999 Grupo A",
       "year": 1999,
       "path": "1999 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Dono da Terra",
@@ -85737,6 +86560,7 @@ db = {
       "title": "Sambas-de-Enredo 1999 Grupo Especial",
       "year": 1999,
       "path": "1999 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Século do Samba",
@@ -85843,6 +86667,7 @@ db = {
       "title": "Zeca Pagodinho ao Vivo",
       "year": 1999,
       "path": "1999 - Zeca Pagodinho - Zeca Pagodinho ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Faixa Amarela",
@@ -85984,6 +86809,7 @@ db = {
       "title": "tudo dança - choros, maxixes, sambas",
       "year": 1999,
       "path": "1999 - Zé da Velha e Silvério Pontes - Tudo dança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bole-bole",
@@ -86083,6 +86909,7 @@ db = {
       "title": "agô, pixinguinha! 100 anos",
       "year": 1998,
       "path": "1997 - Agô, Pixinguinha! - 100 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "carinhoso",
@@ -86294,6 +87121,7 @@ db = {
       "title": "chico buarque de mangueira",
       "year": 1998,
       "path": "1997 - Chico Buarque de Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chão de esmeraldas",
@@ -86372,6 +87200,7 @@ db = {
       "title": "pixinguinha",
       "year": 1998,
       "path": "1997 - Paulo Moura & Os Batutas - Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ainda me recordo",
@@ -86492,6 +87321,7 @@ db = {
       "title": "celebração",
       "year": 1998,
       "path": "1998 - Alcione - Celebração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "estranha loucura",
@@ -86640,6 +87470,7 @@ db = {
       "title": "Samba de Cartola",
       "year": 1998,
       "path": "1998 - Arranco de Varsóvia - Samba de Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Sol Nascerá",
@@ -86739,6 +87570,7 @@ db = {
       "title": "Diplomacia: Antologia de Um Sambista",
       "year": 1998,
       "path": "1998 - Batatinha - Diplomacia - Antologia de um sambista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Depois Eu Volto",
@@ -86866,6 +87698,7 @@ db = {
       "title": "pérolas do pagode",
       "year": 1998,
       "path": "1998 - Beth Carvalho - Pérolas Do Pagode",
+      "has_cover": true,
       "tracks": [
         {
           "title": "olho por olho . senhora rezadeira . o izaura",
@@ -86972,6 +87805,7 @@ db = {
       "title": "eu tô de pé",
       "year": 1998,
       "path": "1998 - Bezerra da Silva - Eu tô de pé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ressuscita ele",
@@ -87078,6 +87912,7 @@ db = {
       "title": "provando e comprovando sua versatilidade",
       "year": 1998,
       "path": "1998 - Bezerra da Silva - Provando e comprovando sua versatilidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coisa bendita",
@@ -87184,6 +88019,7 @@ db = {
       "title": "casa da mãe joana",
       "year": 1998,
       "path": "1998 - Casa da Mãe Joana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "docê de coco",
@@ -87283,6 +88119,7 @@ db = {
       "title": "pra tirar o chapéu",
       "year": 1998,
       "path": "1998 - Eduardo Gudin e Notícias dum Brasil - Pra tirar o chapéu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "violão gentil",
@@ -87389,6 +88226,7 @@ db = {
       "title": "João de todos os Sambas",
       "year": 1998,
       "path": "1998 - João Nogueira - João de todos os Sambas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Haja Coracão",
@@ -87495,6 +88333,7 @@ db = {
       "title": "sambaí",
       "year": 1998,
       "path": "1998 - Jorge Aragão - Sambaí",
+      "has_cover": true,
       "tracks": [
         {
           "title": "fria lição",
@@ -87594,6 +88433,7 @@ db = {
       "title": "3.0 turbinado",
       "year": 1998,
       "path": "1998 - Martinho da Vila - 30 Turbinado ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "batuque na cozinha . prenda o seu gado . pelo telefone",
@@ -87728,6 +88568,7 @@ db = {
       "title": "Mandingueiro",
       "year": 1998,
       "path": "1998 - Moacyr Luz - Mandingueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jogo Rasteiro",
@@ -87813,6 +88654,7 @@ db = {
       "title": "Sambas-de-Enredo 1998 Grupo A",
       "year": 1998,
       "path": "1998 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Elymar Super Popular",
@@ -87835,6 +88677,7 @@ db = {
       "title": "Sambas-de-Enredo 1998 Grupo Especial",
       "year": 1998,
       "path": "1998 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Orfeu, o Negro do Carnaval",
@@ -87934,6 +88777,7 @@ db = {
       "title": "Zeca Pagodinho",
       "year": 1998,
       "path": "1998 - Zeca Pagodinho - Zeca Pagodinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seu Balancê",
@@ -88047,6 +88891,7 @@ db = {
       "title": "Hoje é Dia de Festa",
       "year": 1997,
       "path": "1977 - Zeca Pagodinho - Hoje é Dia de Festa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Dono da Dor",
@@ -88153,6 +88998,7 @@ db = {
       "title": "pés",
       "year": 1997,
       "path": "1997 - Almir Guinéto - Pés",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brilho no olhar",
@@ -88245,6 +89091,7 @@ db = {
       "title": "Samba é a nossa Cara",
       "year": 1997,
       "path": "1997 - Arlindo Cruz e Sombrinha - Samba é a nossa Cara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Causa mais Nobre",
@@ -88337,6 +89184,7 @@ db = {
       "title": "Quem é de Sambar",
       "year": 1997,
       "path": "1997 - Arranco de Varsóvia - Quem é de Sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem é de Sambar",
@@ -88422,6 +89270,7 @@ db = {
       "title": "assis valente mpb compositores",
       "year": 1997,
       "path": "1997 - Assis Valente - MPB Compositores",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brasil pandeiro",
@@ -88514,6 +89363,7 @@ db = {
       "title": "butiquim do martinho",
       "year": 1997,
       "path": "1997 - Butiquim do Martinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sururu",
@@ -88599,6 +89449,7 @@ db = {
       "title": "Trajetória",
       "year": 1997,
       "path": "1997 - Elza Soares - Trajetória",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rio De Janeiro",
@@ -88705,6 +89556,7 @@ db = {
       "title": "livre pra sonhar",
       "year": 1997,
       "path": "1997 - Fundo de Quintal - Livre Pra Sonhar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "livre pra sonhar",
@@ -88797,6 +89649,7 @@ db = {
       "title": "a voz do samba vol 01",
       "year": 1997,
       "path": "1997 - Jamelão - A Voz Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apoteose do samba",
@@ -89092,6 +89945,7 @@ db = {
       "title": "sambista a bordo",
       "year": 1997,
       "path": "1997 - Jorge Aragão - Sambista A Bordo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "loucuras de uma paixão",
@@ -89184,6 +90038,7 @@ db = {
       "title": "uma festa no samba",
       "year": 1997,
       "path": "1997 - Luiz Carlos da Vila - Uma Festa No Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "só por um momento",
@@ -89269,6 +90124,7 @@ db = {
       "title": "20 Super Sucessos - Noite Ilustrada",
       "year": 1997,
       "path": "1997 - Noite Ilustrada - 20 Super Sucessos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Toalha De Mesa / Pedrinhas De Cor / Idade De Fazer Bobagem / Marina / Balada Nº 7... / O Neguinho E A Senhorita / Volta Por Cima",
@@ -89417,6 +90273,7 @@ db = {
       "title": "Especial",
       "year": 1997,
       "path": "1997 - Noite Ilustrada - Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Quando O Tempo Passar / Perdoa / Samba Da Rosa / Louco / Cabeça Fria / Madame Fulana De Tal",
@@ -89467,6 +90324,7 @@ db = {
       "title": "Sambas-de-Enredo 1997 Grupo A",
       "year": 1997,
       "path": "1997 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sérgio Cabral, a Cara do Rio",
@@ -89545,6 +90403,7 @@ db = {
       "title": "Sambas-de-Enredo 1997 Grupo Especial",
       "year": 1997,
       "path": "1997 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Corpo e Alma na Avenida",
@@ -89665,6 +90524,7 @@ db = {
       "title": "Barão Vermelho 2",
       "year": 1996,
       "path": "1983 - Barao Vermelho2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Intro - Menina mimada",
@@ -89743,6 +90603,7 @@ db = {
       "title": "Nelson Cavaquinho Quando eu me chamar saudade",
       "year": 1996,
       "path": "1991 - Nelson Cavaquinho - Quando Eu Me Chamar Saudade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Folhas secas",
@@ -89877,6 +90738,7 @@ db = {
       "title": "meus momentos",
       "year": 1996,
       "path": "1994 - Luiz Ayrão - Coleção Meus Momentos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "porta aberta",
@@ -89983,6 +90845,7 @@ db = {
       "title": "tempo de guarnicê",
       "year": 1996,
       "path": "1996 - Alcione - Tempo de guarnicê",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tempo de guarnicê",
@@ -90089,6 +90952,7 @@ db = {
       "title": "Ataulfo Alves: A Você Vol. 2",
       "year": 1996,
       "path": "1996 - Ataulfo Alves - A você – Ataulfo Alves Vol 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Você",
@@ -90244,6 +91108,7 @@ db = {
       "title": "brasileira da gema",
       "year": 1996,
       "path": "1996 - Beth Carvalho - Brasileira Da Gema",
+      "has_cover": true,
       "tracks": [
         {
           "title": "salve são sebastião",
@@ -90350,6 +91215,7 @@ db = {
       "title": "meu samba é duro na queda",
       "year": 1996,
       "path": "1996 - Bezerra da Silva - Meu Samba é duro na queda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tira gosto",
@@ -90463,6 +91329,7 @@ db = {
       "title": "mais feliz",
       "year": 1996,
       "path": "1996 - Élton Medeiros - Mais feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mais feliz",
@@ -90576,6 +91443,7 @@ db = {
       "title": "Nas Ondas do Partido",
       "year": 1996,
       "path": "1996 - Fundo de Quintal - Nas Ondas Do Partido",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nas Ondas do Partido",
@@ -90668,6 +91536,7 @@ db = {
       "title": "chico buarque letra e música",
       "year": 1996,
       "path": "1996 - João Nogueira e Marinho Boffa - Chico Buarque - Letra e música",
+      "has_cover": true,
       "tracks": [
         {
           "title": "feijoada completa",
@@ -90767,6 +91636,7 @@ db = {
       "title": "samba guerreiro",
       "year": 1996,
       "path": "1996 - Jovelina Pérola Negra - Samba guerreiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba guerreiro",
@@ -90845,6 +91715,7 @@ db = {
       "title": "somos da mesma tribo",
       "year": 1996,
       "path": "1996 - Leci Brandão - Somos da mesma tribo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a terceira idade",
@@ -90972,6 +91843,7 @@ db = {
       "title": "A Personalidade Do Samba",
       "year": 1996,
       "path": "1996 - Luiz Ayrão - A Personalidade Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amor Amante",
@@ -91078,6 +91950,7 @@ db = {
       "title": "Zumbi 300 Anos - Canto Banto",
       "year": 1996,
       "path": "1996 - Nei Lopes - Zumbi 300 Anos - Canto Banto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nosso Nome, Resistência",
@@ -91170,6 +92043,7 @@ db = {
       "title": "Manda Me Chamar",
       "year": 1996,
       "path": "1996 - Noca da Portela e Roberto Serrão - Manda me chamar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manda Me Chamar",
@@ -91283,6 +92157,7 @@ db = {
       "title": "Bebadosamba",
       "year": 1996,
       "path": "1996 - Paulinho da Viola - Bebadosamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quando o Samba Chama",
@@ -91389,6 +92264,7 @@ db = {
       "title": "Sambas-de-Enredo 1996 Grupo A",
       "year": 1996,
       "path": "1996 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se a Canoa não Virar, a São Clemente Chega Lá",
@@ -91467,6 +92343,7 @@ db = {
       "title": "Sambas-de-Enredo 1996 Grupo Especial",
       "year": 1996,
       "path": "1996 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Imperatriz Leopoldinense Honrosamente Apresenta \"Leopoldina, a Imperatriz do Brasil\"",
@@ -91601,6 +92478,7 @@ db = {
       "title": "O Som Sagrado de Wilson das Neves",
       "year": 1996,
       "path": "1996 - Wilson das Neves - O som sagrado de Wilson das Neves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Samba é meu Dom",
@@ -91707,6 +92585,7 @@ db = {
       "title": "Deixa Clarear",
       "year": 1996,
       "path": "1996 - Zeca Pagodinho - Deixa Clarear",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Verdade",
@@ -91799,6 +92678,7 @@ db = {
       "title": "mais feliz",
       "year": 1996,
       "path": "2006 - Marquinho Sathan - Mais feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pra te levar ao paraíso",
@@ -91898,6 +92778,7 @@ db = {
       "title": "profissão cantora",
       "year": 1995,
       "path": "1995 - Alcione - Profissão cantora",
+      "has_cover": true,
       "tracks": [
         {
           "title": "fora de ocasião",
@@ -92018,6 +92899,7 @@ db = {
       "title": "Acima de Deus, só Deus",
       "year": 1995,
       "path": "1995 - Almir Guinéto - Acima de Deus, só Deus",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só sei que te amo",
@@ -92103,6 +92985,7 @@ db = {
       "title": "contra o verdadeiro canalha!",
       "year": 1995,
       "path": "1995 - Bezerra da Silva - Contra o verdadeiro canalha!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "verdadeiro canalha",
@@ -92195,6 +93078,7 @@ db = {
       "title": "sem tostão, a crise não é boato",
       "year": 1995,
       "path": "1995 - Cristina Buarque e Henrique Cazes - Sem tostão A crise não é boato",
+      "has_cover": true,
       "tracks": [
         {
           "title": "três apitos",
@@ -92259,6 +93143,7 @@ db = {
       "title": "eduardo gudin & notícias dum brasil",
       "year": 1995,
       "path": "1995 - Eduardo Gudin e Notícias dum Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "rosa dos tempos",
@@ -92358,6 +93243,7 @@ db = {
       "title": "palco iluminado",
       "year": 1995,
       "path": "1995 - Fundo de Quintal - Palco Iluminado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vem me dar um beijo . tô querendo",
@@ -92457,6 +93343,7 @@ db = {
       "title": "anjos da guarda",
       "year": 1995,
       "path": "1995 - Leci Brandão - Anjos da guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "esqueci você",
@@ -92556,6 +93443,7 @@ db = {
       "title": "luz",
       "year": 1995,
       "path": "1995 - Marquinho Sathan - Luz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "luz",
@@ -92655,6 +93543,7 @@ db = {
       "title": "tá delícia, tá gostoso",
       "year": 1995,
       "path": "1995 - Martinho da Vila - Tá delicia, tá gostoso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mulheres",
@@ -92747,6 +93636,7 @@ db = {
       "title": "voce não me pega",
       "year": 1995,
       "path": "1995 - Martinho da Vila e Rildo Hora - Você não me pega",
+      "has_cover": true,
       "tracks": [
         {
           "title": "preto ferreira",
@@ -92825,6 +93715,7 @@ db = {
       "title": "Resgatando",
       "year": 1995,
       "path": "1995 - Noite Ilustrada - Resagatando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Posso Sim",
@@ -92917,6 +93808,7 @@ db = {
       "title": "Sambas-de-Enredo 1995 Grupo A",
       "year": 1995,
       "path": "1995 - Sambas de Enredo Grupo A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Domingo é dia de Quinta",
@@ -93058,6 +93950,7 @@ db = {
       "title": "Sambas-de-Enredo 1995 Grupo Especial",
       "year": 1995,
       "path": "1995 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mais Vale um Jegue que me Carregue, que um Camelo que me Derrube... Lá no Ceará",
@@ -93178,6 +94071,7 @@ db = {
       "title": "Samba pras Moças",
       "year": 1995,
       "path": "1995 - Zeca Pagodinho - Samba pras Moças",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba pras Moças",
@@ -93277,6 +94171,7 @@ db = {
       "title": "minha cara",
       "year": 1995,
       "path": "1998 - Mart’nália - Minha cara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "não me balança mais",
@@ -93369,6 +94264,7 @@ db = {
       "title": "50 Anos de Samba",
       "year": 1994,
       "path": "1993 - Batatinha - Cinquenta anos de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arrogância",
@@ -93447,6 +94343,7 @@ db = {
       "title": "A Viagem de Gonzaga e Gonzaguinha",
       "year": 1994,
       "path": "1994 - A Viagem de Gonzagao e Gonzaguinha Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fala de Gonzaguinha",
@@ -93623,6 +94520,7 @@ db = {
       "title": "O Poeta Da Bexiga",
       "year": 1994,
       "path": "1994 - Adoniran Barbosa O Poeta Do Bexiga",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tiro Ao Álvaro",
@@ -93701,6 +94599,7 @@ db = {
       "title": "A Fábrica Do Poema",
       "year": 1994,
       "path": "1994 - Adriana Calcanhotto - A Fabrica do Poema",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por Que Você Faz Cinema",
@@ -93814,6 +94713,7 @@ db = {
       "title": "brasil de oliveira da silva do samba",
       "year": 1994,
       "path": "1994 - Alcione - Brasil de Oliveira da Silva do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "certas coisas",
@@ -93920,6 +94820,7 @@ db = {
       "title": "Cássia Eller",
       "year": 1994,
       "path": "1994 - Cassia Eller Box",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Partners",
@@ -94019,6 +94920,7 @@ db = {
       "title": "resgate",
       "year": 1994,
       "path": "1994 - Cristina Buarque - Resgate",
+      "has_cover": true,
       "tracks": [
         {
           "title": "amor proibido . eu perdi você . adeus, eu vou partir",
@@ -94111,6 +95013,7 @@ db = {
       "title": "Esquinas",
       "year": 1994,
       "path": "1994 - Djavan - Esquinas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samurai",
@@ -94217,6 +95120,7 @@ db = {
       "title": "Caymmi Em Família",
       "year": 1994,
       "path": "1994 - Dori Nana Danilo e Dorival Caymmi - Caymmi em Familia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vamos falar de Tereza",
@@ -94330,6 +95234,7 @@ db = {
       "title": "Dorival",
       "year": 1994,
       "path": "1994 - Dorival",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Oração Da Mãe Menininha",
@@ -94415,6 +95320,7 @@ db = {
       "title": "Espelho das Águas Ao Vivo",
       "year": 1994,
       "path": "1994 - Duofel Badal Roy - Espelho Das Aguas Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do indiano doido",
@@ -94444,6 +95350,7 @@ db = {
       "title": "carta musicada",
       "year": 1994,
       "path": "1994 - Fundo de Quintal - Carta Musicada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vai lá, vai lá",
@@ -94536,6 +95443,7 @@ db = {
       "title": "homenagem a mauro duarte",
       "year": 1994,
       "path": "1994 - Homenagem a Mauro Duarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lama",
@@ -94663,6 +95571,7 @@ db = {
       "title": "parceria joão nogueira e paulo césar pinheiro",
       "year": 1994,
       "path": "1994 - João Nogueira e Paulo César Pinheiro - Parceria Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "espelho",
@@ -94790,6 +95699,7 @@ db = {
       "title": "a modernidade da tradiçâo",
       "year": 1994,
       "path": "1994 - Marcos Sacramento - A modernidade da tradição",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a volta do malandro - largo da lapa",
@@ -94875,6 +95785,7 @@ db = {
       "title": "ao rio de janeiro",
       "year": 1994,
       "path": "1994 - Martinho da Vila - Ao Rio de Janeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pãozinho de açucar",
@@ -94967,6 +95878,7 @@ db = {
       "title": "da vila e da viola",
       "year": 1994,
       "path": "1994 - Neguinho da Beija-Flor - Da Vila & da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "foi um rio que passou em minha vida",
@@ -95073,6 +95985,7 @@ db = {
       "title": "a vida é assim",
       "year": 1994,
       "path": "1994 - Os Originais do Samba - A vida é assim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a vida é assim",
@@ -95151,6 +96064,7 @@ db = {
       "title": "Sambas-de-Enredo 1994 Grupo 1",
       "year": 1994,
       "path": "1994 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Rota dos Mercadores",
@@ -95257,6 +96171,7 @@ db = {
       "title": "Sambas-de-Enredo 1994 Grupo Especial",
       "year": 1994,
       "path": "1994 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rio de lá pra cá",
@@ -95377,6 +96292,7 @@ db = {
       "title": "Um cidadão do samba",
       "year": 1994,
       "path": "2005 - Jorginho do Império - Um cidadão do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Artimanhas de mulher",
@@ -95455,6 +96371,7 @@ db = {
       "title": "Arlindinho",
       "year": 1993,
       "path": "1993 - Arlindo Cruz - Arlindinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dora",
@@ -95554,6 +96471,7 @@ db = {
       "title": "Nome",
       "year": 1993,
       "path": "1993 - Arnaldo Antunes - Nome",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fênis",
@@ -95723,6 +96641,7 @@ db = {
       "title": "ataulfo alves - vida de minha vida vol 1",
       "year": 1993,
       "path": "1993 - Ataulfo Alves - Vida de minha vida – Ataufo Alves Vol 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sexta-feira",
@@ -95878,6 +96797,7 @@ db = {
       "title": "Best Of Sérgio Mendes & Brasil '65",
       "year": 1993,
       "path": "1993 - Best Of Sergio Mendes Brasil65",
+      "has_cover": true,
       "tracks": [
         {
           "title": "So Nice",
@@ -95963,6 +96883,7 @@ db = {
       "title": "beth carvalho canta o samba de são paulo",
       "year": 1993,
       "path": "1993 - Beth Carvalho - Beth Carvalho Canta O Samba De São Paulo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "iracema",
@@ -96139,6 +97060,7 @@ db = {
       "title": "Equatorial Blues",
       "year": 1993,
       "path": "1993 - Bruce Henry - Equatorial Blues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Purple Haze",
@@ -96217,6 +97139,7 @@ db = {
       "title": "Saudades",
       "year": 1993,
       "path": "1993 - Dom Um Romao - Saudades",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pacífica - Estrela da Manhã",
@@ -96288,6 +97211,7 @@ db = {
       "title": "escolas de samba enredos- vila isabel",
       "year": 1993,
       "path": "1993 - Escolas de Samba Enredos – Vila Isabel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quatro séculos de modas e costumes . iaiá do cais dourado . glórias gaúchas",
@@ -96366,6 +97290,7 @@ db = {
       "title": "A Batucada dos nossos Tantãs",
       "year": 1993,
       "path": "1993 - Fundo de Quintal - A Batucada Dos Nossos Tantãs",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Batucada dos nossos Tantãns",
@@ -96458,6 +97383,7 @@ db = {
       "title": "O Sorriso Do Gato De Alice",
       "year": 1993,
       "path": "1993 - Gal Costa - O Sorriso Do Gato De Alice",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bahia, Minha Preta",
@@ -96543,6 +97469,7 @@ db = {
       "title": "Vou na Fé",
       "year": 1993,
       "path": "1993 - Jovelina Pérola Negra - Vou na Fé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sorriso de Banjo",
@@ -96628,6 +97555,7 @@ db = {
       "title": "atitude",
       "year": 1993,
       "path": "1993 - Leci Brandão - Atitude",
+      "has_cover": true,
       "tracks": [
         {
           "title": "zé brasileiro",
@@ -96720,6 +97648,7 @@ db = {
       "title": "um ombro amigo",
       "year": 1993,
       "path": "1993 - Leci Brandão - Um ombro amigo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cara pintada",
@@ -96812,6 +97741,7 @@ db = {
       "title": "Acervo Especial",
       "year": 1993,
       "path": "1993 - Linda e Dircinha Batista - Acervo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vingança",
@@ -96932,6 +97862,7 @@ db = {
       "title": "Live In Moscow MCMXCII",
       "year": 1993,
       "path": "1993 - Live In Moscow MCMXCIICD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Era só começo nosso fim",
@@ -96996,6 +97927,7 @@ db = {
       "title": "Samba Brasil!",
       "year": 1993,
       "path": "1993 - Luiz Ayrão - Samba Brasil!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Renda Negra",
@@ -97081,6 +98013,7 @@ db = {
       "title": "MPB-4 Canta Milton Nascimento",
       "year": 1993,
       "path": "1993 - MPB - 4 Canta Milton Nascimento",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Milagre dos Peixes",
@@ -97201,6 +98134,7 @@ db = {
       "title": "Carioca",
       "year": 1993,
       "path": "1993 - Nonato Luiz E Tulio Mourao - Carioca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carioca",
@@ -97279,6 +98213,7 @@ db = {
       "title": "Tropical Heart",
       "year": 1993,
       "path": "1993 - Oscar Castro Neves - Tropical Heart",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Holding With An Open Hand",
@@ -97378,6 +98313,7 @@ db = {
       "title": "Samba e Choro Negro",
       "year": 1993,
       "path": "1993 - Paulinho da Viola - Samba e Choro Negro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde a Dor não Tem Razão",
@@ -97477,6 +98413,7 @@ db = {
       "title": "Quebra Cabeça",
       "year": 1993,
       "path": "1993 - Quebra Cabeca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gaviota",
@@ -97569,6 +98506,7 @@ db = {
       "title": "Minha Paixão",
       "year": 1993,
       "path": "1993 - Samba Som Sete - Minha Paixão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha paixão",
@@ -97647,6 +98585,7 @@ db = {
       "title": "Sambas-de-Enredo 1993 Grupo 1",
       "year": 1993,
       "path": "1993 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Galo Cantou e Lucas Saboreou",
@@ -97753,6 +98692,7 @@ db = {
       "title": "Sambas-de-Enredo 1993 Grupo Especial",
       "year": 1993,
       "path": "1993 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Dança da Lua",
@@ -97859,6 +98799,7 @@ db = {
       "title": "The Caju Collection",
       "year": 1993,
       "path": "1993 - The Caju Collection",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Baixa do Sapateiro",
@@ -97965,6 +98906,7 @@ db = {
       "title": "Timbalada",
       "year": 1993,
       "path": "1993 - Timbalada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulatê do Bundê",
@@ -98064,6 +99006,7 @@ db = {
       "title": "Alô, Mundo!",
       "year": 1993,
       "path": "1993 - Zeca Pagodinho - Alô, Mundo!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cabelo no Pão Careca",
@@ -98163,6 +99106,7 @@ db = {
       "title": "ataufo alves",
       "year": 1992,
       "path": "1961 - Ataulfo Alves - É bossa mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meus tempos de criança",
@@ -98255,6 +99199,7 @@ db = {
       "title": "sombrinha",
       "year": 1992,
       "path": "1982 - Sombrinha - Sombrinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "gavião calçudo",
@@ -98333,6 +99278,7 @@ db = {
       "title": "Senhas",
       "year": 1992,
       "path": "1992 - Adriana Calcanhotto - Senhas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Senhas",
@@ -98432,6 +99378,7 @@ db = {
       "title": "pulsa coração",
       "year": 1992,
       "path": "1992 - Alcione - Pulsa coração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "delírios de amor",
@@ -98531,6 +99478,7 @@ db = {
       "title": "Ao Vivo",
       "year": 1992,
       "path": "1992 - Almir Sater Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cavaleiro da lua",
@@ -98616,6 +99564,7 @@ db = {
       "title": "Ritual Beating System",
       "year": 1992,
       "path": "1992 - Bahia Black - Ritual Beating System",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Retrato Calado",
@@ -98687,6 +99636,7 @@ db = {
       "title": "perólas 25 anos de samba",
       "year": 1992,
       "path": "1992 - Beth Carvalho - Pérolas - 25 Anos De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exaltação a mangueira . a mangueira não morreu",
@@ -98779,6 +99729,7 @@ db = {
       "title": "Presidente Caô Caô",
       "year": 1992,
       "path": "1992 - Bezerra da Silva - Presidente caô, caô",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Assombração de barraco",
@@ -98871,6 +99822,7 @@ db = {
       "title": "Sentimentos",
       "year": 1992,
       "path": "1992 - Conjunto Pernambucano De Choro - Sentimentos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sentimentos",
@@ -98984,6 +99936,7 @@ db = {
       "title": "Coisa de Acender",
       "year": 1992,
       "path": "1992 - Djavan - Coisa de Acender",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Rota do Indivíduo (Ferrugem)",
@@ -99055,6 +100008,7 @@ db = {
       "title": "Gonzaguinha No Samba",
       "year": 1992,
       "path": "1992 - Gonzaguinha No Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Que É O Que É?",
@@ -99175,6 +100129,7 @@ db = {
       "title": "Acústico MTV",
       "year": 1992,
       "path": "1992 - Joao Bosco - Acustico MTV",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Odilê Odilá - Zona De Fronteira",
@@ -99239,6 +100194,7 @@ db = {
       "title": "Chorando estrelas",
       "year": 1992,
       "path": "1992 - Jorge Aragão - Chorando Estrelas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Terceira vez",
@@ -99317,6 +100273,7 @@ db = {
       "title": "José Miguel Wisnik",
       "year": 1992,
       "path": "1992 - Jose Miguel Wisnik",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se meu mundo cair",
@@ -99430,6 +100387,7 @@ db = {
       "title": "comprometida",
       "year": 1992,
       "path": "1992 - Leci Brandão - Comprometida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bate tambor",
@@ -99529,6 +100487,7 @@ db = {
       "title": "no templo da criação",
       "year": 1992,
       "path": "1992 - Martinho da Vila - No templo da criação",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba do trabalhador",
@@ -99628,6 +100587,7 @@ db = {
       "title": "A voz do Samba",
       "year": 1992,
       "path": "1992 - Monarco - A voz do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deixa meu Nome em paz",
@@ -99720,6 +100680,7 @@ db = {
       "title": "Sorrindo Por Tudo",
       "year": 1992,
       "path": "1992 - Noite Ilustrada - Sorrindo Por Tudo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou Continuar",
@@ -99798,6 +100759,7 @@ db = {
       "title": "nas nuvens de algodão",
       "year": 1992,
       "path": "1992 - Pedrinho da flor - Nas nuvens de algodão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nas nuvens de algodão",
@@ -99876,6 +100838,7 @@ db = {
       "title": "Bossa Nova",
       "year": 1992,
       "path": "1992 - Quarteto Em Cy - Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Refém da Solidão - Pra Que Chorar? - Consolação",
@@ -99975,6 +100938,7 @@ db = {
       "title": "Sambas-de-Enredo 1992 Grupo 1",
       "year": 1992,
       "path": "1992 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mandacaru, Fruta-Flor do Querer",
@@ -100081,6 +101045,7 @@ db = {
       "title": "Sambas-de-Enredo 1992 Grupo Especial",
       "year": 1992,
       "path": "1992 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sonhar não Custa nada, ou quase nada",
@@ -100173,6 +101138,7 @@ db = {
       "title": "Rio Revisited",
       "year": 1992,
       "path": "1992 - Tom Jobim Gal Costa - Rio Revisited",
+      "has_cover": true,
       "tracks": [
         {
           "title": "One Note Samba",
@@ -100265,6 +101231,7 @@ db = {
       "title": "Um dos Poetas do Samba",
       "year": 1992,
       "path": "1992 - Zeca Pagodinho - Um dos Poetas do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fiquei Amarrado na sua Blusinha",
@@ -100357,6 +101324,7 @@ db = {
       "title": "Mais que Feliz",
       "year": 1992,
       "path": "1992 - Zé Catimba - Mais que Feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mais do que se quis",
@@ -100435,6 +101403,7 @@ db = {
       "title": "soneto de prazer",
       "year": 1992,
       "path": "2002 - Reinaldo - Soneto de prazer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "soneto de prazer",
@@ -100513,6 +101482,7 @@ db = {
       "title": "50 anos de samba de breque",
       "year": 1991,
       "path": "1984 - Moreira da Silva - 50 Anos de samba de breque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "fui ao dentista",
@@ -100612,6 +101582,7 @@ db = {
       "title": "promessa",
       "year": 1991,
       "path": "1991 - Alcione - Promessa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "medo",
@@ -100711,6 +101682,7 @@ db = {
       "title": "As Melhores Canções Gaúchas Vol. 1",
       "year": 1991,
       "path": "1991 - As Melhores Can es Gauchas Vol. 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Céu, Sol, Sul, Terra e Cor",
@@ -100859,6 +101831,7 @@ db = {
       "title": "ao vivo no olympia",
       "year": 1991,
       "path": "1991 - Beth Carvalho - Ao Vivo No Olympia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "andança",
@@ -100993,6 +101966,7 @@ db = {
       "title": "intérprete",
       "year": 1991,
       "path": "1991 - Beth Carvalho - Intérprete",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o meu guri",
@@ -101092,6 +102066,7 @@ db = {
       "title": "Partideiro da Pesada",
       "year": 1991,
       "path": "1991 - Bezerra da Silva - Partideiro da pesada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sequestraram Minha Sogra",
@@ -101184,6 +102159,7 @@ db = {
       "title": "Bruce Henry",
       "year": 1991,
       "path": "1991 - Bruce Henry",
+      "has_cover": true,
       "tracks": [
         {
           "title": "There will never be another you",
@@ -101262,6 +102238,7 @@ db = {
       "title": "cor da paz",
       "year": 1991,
       "path": "1991 - Dominguinhos do Estácio - Cor da paz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bastou dizer adeus",
@@ -101354,6 +102331,7 @@ db = {
       "title": "Afoxé",
       "year": 1991,
       "path": "1991 - Ernie Watts - Afoxe",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The Green Giant, Part I",
@@ -101446,6 +102424,7 @@ db = {
       "title": "Beijo",
       "year": 1991,
       "path": "1991 - Grupo Beijo Coral Usp - Beijo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ai que saudade d'ocê",
@@ -101545,6 +102524,7 @@ db = {
       "title": "Romântico Demais",
       "year": 1991,
       "path": "1991 - Jamelão - Romântico Demais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Exaltação À Mangueira",
@@ -101658,6 +102638,7 @@ db = {
       "title": "The Magic Bonfá",
       "year": 1991,
       "path": "1991 - Luiz Bonfa - The Magic Bonfa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rio Acima",
@@ -101778,6 +102759,7 @@ db = {
       "title": "Kindala",
       "year": 1991,
       "path": "1991 - Margareth Menezes - Kindala",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fé cega, faca amolada",
@@ -101877,6 +102859,7 @@ db = {
       "title": "Autóctone",
       "year": 1991,
       "path": "1991 - Marku Ribas - Autoctone2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Kalimba",
@@ -101955,6 +102938,7 @@ db = {
       "title": "Poetas de Calçada",
       "year": 1991,
       "path": "1991 - Neguinho da Beija-Flor - Poetas de Calçada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Rapa Coco . Vem Pagodeiro",
@@ -102047,6 +103031,7 @@ db = {
       "title": "inéditas de nelson sargento",
       "year": 1991,
       "path": "1991 - Nelson Sargento - Inéditas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "berço do samba",
@@ -102132,6 +103117,7 @@ db = {
       "title": "noel rosa songbook",
       "year": 1991,
       "path": "1991 - Noel Rosa - Songbook Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "três apitos",
@@ -102280,6 +103266,7 @@ db = {
       "title": "Papel Assinado",
       "year": 1991,
       "path": "1991 - Reinaldo - Papel assinado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tem Que ter Fé",
@@ -102372,6 +103359,7 @@ db = {
       "title": "Sambas-de-Enredo 1991 Grupo 1",
       "year": 1991,
       "path": "1991 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canaã – A Terra Prometida Brasil",
@@ -102464,6 +103452,7 @@ db = {
       "title": "Sambas-de-Enredo 1991 Grupo Especial",
       "year": 1991,
       "path": "1991 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chuê, Chuá, as Águas vão Rolar",
@@ -102584,6 +103573,7 @@ db = {
       "title": "Pixote",
       "year": 1991,
       "path": "1991 - Zeca Pagodinho - Pixote",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pixote",
@@ -102683,6 +103673,7 @@ db = {
       "title": "escolas de samba enredos mocidade independente de padre miguel",
       "year": 1991,
       "path": "1993 - Escolas de Samba Enredos – Mocidade Independente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chue chua, as águas vão rolar",
@@ -102761,6 +103752,7 @@ db = {
       "title": "escolas de samba enredos união da ilha do governador",
       "year": 1991,
       "path": "1993 - Escolas de Samba Enredos – União da Ilha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "de bar em bar, didi um poeta",
@@ -102839,6 +103831,7 @@ db = {
       "title": "no tom da mangueira",
       "year": 1991,
       "path": "1993 - No Tom da Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "piano na mangueira",
@@ -102945,6 +103938,7 @@ db = {
       "title": "programa ensaio marçal",
       "year": 1991,
       "path": "2000 - Marçal - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "agora é cinza",
@@ -103079,6 +104073,7 @@ db = {
       "title": "Enguiço",
       "year": 1990,
       "path": "1990 - Adriana Calcanhotto - Enguico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Enguiço",
@@ -103157,6 +104152,7 @@ db = {
       "title": "Baden Powell Live At The Rio Jazz Club",
       "year": 1990,
       "path": "1990 - Baden Powell Live At The Rio Jazz Club",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Introdução - Valsa de Eurydice",
@@ -103256,6 +104252,7 @@ db = {
       "title": "eu não sou santo",
       "year": 1990,
       "path": "1990 - Bezerra da Silva - Eu não sou Santo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "só quando morcego doar sangue",
@@ -103348,6 +104345,7 @@ db = {
       "title": "Cássia Eller",
       "year": 1990,
       "path": "1990 - Cassia Eller Box",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ja Deu Pra Sentir - Tutu",
@@ -103433,6 +104431,7 @@ db = {
       "title": "fundo de quintal ao vivo",
       "year": 1990,
       "path": "1990 - Fundo de Quintal - Fundo De Quintal Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a flor e o samba . samba da antiga",
@@ -103560,6 +104559,7 @@ db = {
       "title": "Uma Parte de Nós",
       "year": 1990,
       "path": "1990 - Gilson Peranzzetta E Mauro Senise - Uma Parte De Nos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na rede pelo lado de fora",
@@ -103631,6 +104631,7 @@ db = {
       "title": "a seu favor",
       "year": 1990,
       "path": "1990 - Jorge Aragão - A Seu Favor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "papel de pão",
@@ -103709,6 +104710,7 @@ db = {
       "title": "Luiz Ayrão",
       "year": 1990,
       "path": "1990 - Luiz Ayrão - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alô Nova York",
@@ -103794,6 +104796,7 @@ db = {
       "title": "Entre amigos",
       "year": 1990,
       "path": "1990 - Marçal - Entre amigos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dona Invocada",
@@ -103844,6 +104847,7 @@ db = {
       "title": "Elegibo",
       "year": 1990,
       "path": "1990 - Margareth Menezes - Elegibo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Uma História De Ifá (Elegibô)",
@@ -103936,6 +104940,7 @@ db = {
       "title": "martinho da vida",
       "year": 1990,
       "path": "1990 - Martinho da Vila - Martinho da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "amo e acho pouco",
@@ -104028,6 +105033,7 @@ db = {
       "title": "simplesmente mauro diniz",
       "year": 1990,
       "path": "1990 - Mauro Diniz - Simplesmente Mauro Diniz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cais do grande amor",
@@ -104120,6 +105126,7 @@ db = {
       "title": "Violão e Outras Coisas",
       "year": 1990,
       "path": "1990 - Nelson Angelo - Violao E Outras Coisas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O caminho e a paisagem",
@@ -104191,6 +105198,7 @@ db = {
       "title": "Coisa Sentimental",
       "year": 1990,
       "path": "1990 - Reinaldo - Coisa Sentimental",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ela não Entendeu",
@@ -104269,6 +105277,7 @@ db = {
       "title": "Sambas-de-Enredo 1990 Grupo 1-A",
       "year": 1990,
       "path": "1990 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Heróis da Resistência",
@@ -104375,6 +105384,7 @@ db = {
       "title": "Sambas-de-Enredo 1990 Grupo 1-B",
       "year": 1990,
       "path": "1990 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Porque sou Carioca",
@@ -104467,6 +105477,7 @@ db = {
       "title": "Interpreta Clássicos da Bossa Nova",
       "year": 1990,
       "path": "1990 - Tim Maia Interpreta Classicos Da Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Folha de Papel",
@@ -104545,6 +105556,7 @@ db = {
       "title": "Mania da Gente",
       "year": 1990,
       "path": "1990 - Zeca Pagodinho - Mania da Gente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Yaô Cadê a Samba / Outro Recado / Hino da Portela",
@@ -104637,6 +105649,7 @@ db = {
       "title": "Guitar Workshop in Rio",
       "year": 1990,
       "path": "1992 - Guitar Workshop In Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lamentos do Morro",
@@ -104743,6 +105756,7 @@ db = {
       "title": "O Carnaval De Beth Carvalho E Martinho Da Vila",
       "year": 1990,
       "path": "1994 - O Carnaval de Beth Carvalho e Martinho da Vila",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carnaval De Salão - Marchas",
@@ -104821,6 +105835,7 @@ db = {
       "title": "Homenagem a Paulo da Portela",
       "year": 1989,
       "path": "1988 - Velha Guarda da Portela - Homenagem A Paulo Da Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Linda Guanabara",
@@ -104913,6 +105928,7 @@ db = {
       "title": "simplesmente marrom",
       "year": 1989,
       "path": "1989 - Alcione - Simplesmente marrom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "um ser de luz",
@@ -105019,6 +106035,7 @@ db = {
       "title": "Seresta Brasileira",
       "year": 1989,
       "path": "1989 - Baden Powell - Seresta Brasileira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rosa",
@@ -105097,6 +106114,7 @@ db = {
       "title": "saudades da guanabara",
       "year": 1989,
       "path": "1989 - Beth Carvalho - Saudades Da Guanabara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "saudades da guanabara",
@@ -105196,6 +106214,7 @@ db = {
       "title": "o grande presidente",
       "year": 1989,
       "path": "1989 - Beth Carvalho e João Nogueira - O Grande Presidente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "doutor getúlio",
@@ -105274,6 +106293,7 @@ db = {
       "title": "se não fosse o samba",
       "year": 1989,
       "path": "1989 - Bezerra da Silva - Se não fosse o samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o bom pastor",
@@ -105366,6 +106386,7 @@ db = {
       "title": "eduardo gudin & vânia bastos",
       "year": 1989,
       "path": "1989 - Eduardo Gudin e Vânia Bastos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mensagem",
@@ -105444,6 +106465,7 @@ db = {
       "title": "Popular Brasileira",
       "year": 1989,
       "path": "1989 - Elba Ramalho - Popular Brasileira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jogo de Cintura",
@@ -105522,6 +106544,7 @@ db = {
       "title": "The Sun Is Out",
       "year": 1989,
       "path": "1989 - Flora Purim E Airto Moreira - The Sun Is Out",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Do Cantor",
@@ -105600,6 +106623,7 @@ db = {
       "title": "Ciranda do Povo",
       "year": 1989,
       "path": "1989 - Fundo de Quintal - Ciranda Do Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Miudinho meu bem, Miudinho",
@@ -105692,6 +106716,7 @@ db = {
       "title": "Tributo A Grandes Poetas da MPB Dorival Caymmi",
       "year": 1989,
       "path": "1989 - Grandes Autores Dorival Caymmi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Louco",
@@ -105798,6 +106823,7 @@ db = {
       "title": "A Floresta do Amazonas",
       "year": 1989,
       "path": "1989 - JCA Brasil N Matogrosso W Tiso - A Floresta do Amazonas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -105967,6 +106993,7 @@ db = {
       "title": "Amigos Chegados",
       "year": 1989,
       "path": "1989 - Jovelina Pérola Negra - Amigos Chegados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amigos Chegados",
@@ -106059,6 +107086,7 @@ db = {
       "title": "Forró do Gonzagão",
       "year": 1989,
       "path": "1989 - Luiz Gonzaga - Forro Do Gonzagao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Asa Branca",
@@ -106165,6 +107193,7 @@ db = {
       "title": "Lição de Amor",
       "year": 1989,
       "path": "1989 - Macarrão do Banjo - Lição de Amor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Paira no ar",
@@ -106243,6 +107272,7 @@ db = {
       "title": "Pela Sombra",
       "year": 1989,
       "path": "1989 - Marçal - Pela Sombra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Juntar as Mágoas",
@@ -106335,6 +107365,7 @@ db = {
       "title": "Próxima Parada",
       "year": 1989,
       "path": "1989 - Marina Lima - Proxima Parada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "$ Cara",
@@ -106413,6 +107444,7 @@ db = {
       "title": "Graça Divina",
       "year": 1989,
       "path": "1989 - Marquinho Sathan - Graça Divina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jogo de Azar",
@@ -106505,6 +107537,7 @@ db = {
       "title": "Jade",
       "year": 1989,
       "path": "1989 - Mauro Senise - Jade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feria de tristãn narvaja",
@@ -106569,6 +107602,7 @@ db = {
       "title": "Inéditas",
       "year": 1989,
       "path": "1989 - Monarco - Inéditas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Homenagem á Carlos Cachaça",
@@ -106654,6 +107688,7 @@ db = {
       "title": "Rá-Tim-Bum",
       "year": 1989,
       "path": "1989 - Ra - Tim-Bum Edu Lobo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rá-Tim-Bum (Abertura)",
@@ -106746,6 +107781,7 @@ db = {
       "title": "Sambas-de-Enredo 1989 Grupo 1-A",
       "year": 1989,
       "path": "1989 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quem vai Querer?",
@@ -106894,6 +107930,7 @@ db = {
       "title": "Sambas-de-Enredo 1989 Grupo 1-B",
       "year": 1989,
       "path": "1989 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Num Passe de Mágica",
@@ -106986,6 +108023,7 @@ db = {
       "title": "Teca Calazans Canta Villa-Lobos",
       "year": 1989,
       "path": "1989 - Teca Calazans Canta Villa - Lobos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Modinha",
@@ -107092,6 +108130,7 @@ db = {
       "title": "Mangueira Chegou",
       "year": 1989,
       "path": "1989 - Velha Guarda da Mangueira - Mangueira Chegou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Berço do Samba",
@@ -107191,6 +108230,7 @@ db = {
       "title": "Boêmio Feliz",
       "year": 1989,
       "path": "1989 - Zeca Pagodinho - Boêmio Feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade Louca",
@@ -107283,6 +108323,7 @@ db = {
       "title": "Brazil - Roots - Samba",
       "year": 1989,
       "path": "Brazil - Roots - Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Peso na Balança",
@@ -107424,6 +108465,7 @@ db = {
       "title": "Ouro & Cobre",
       "year": 1988,
       "path": "1988 - Alcione - Ouro & Cobre",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Toque Macio",
@@ -107523,6 +108565,7 @@ db = {
       "title": "olhos da vida",
       "year": 1988,
       "path": "1988 - Almir Guinéto - Olhos da vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tanta promessa",
@@ -107615,6 +108658,7 @@ db = {
       "title": "alma do brasil",
       "year": 1988,
       "path": "1988 - Beth Carvalho - Alma Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vestida de samba",
@@ -107707,6 +108751,7 @@ db = {
       "title": "violência gera violência",
       "year": 1988,
       "path": "1988 - Bezerra da Silva - Violência gera violência",
+      "has_cover": true,
       "tracks": [
         {
           "title": "candidato caô caô",
@@ -107799,6 +108844,7 @@ db = {
       "title": "Voltei",
       "year": 1988,
       "path": "1988 - Elza Soares - Voltei",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Voltei / Bom-Dia Portela / Malandro",
@@ -107877,6 +108923,7 @@ db = {
       "title": "raíz e flor",
       "year": 1988,
       "path": "1988 - Jorge Aragão - Raíz E Flor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "de jorge aragão para arlindo",
@@ -107941,6 +108988,7 @@ db = {
       "title": "sorriso aberto",
       "year": 1988,
       "path": "1988 - Jovelina Pérola Negra - Sorriso aberto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sorriso aberto",
@@ -108033,6 +109081,7 @@ db = {
       "title": "Maria",
       "year": 1988,
       "path": "1988 - Maria Bethania - Maria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A terra tremeu / Ofá",
@@ -108118,6 +109167,7 @@ db = {
       "title": "Mistura da Raça",
       "year": 1988,
       "path": "1988 - Martinho da Vila - Festa da Raça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Kizomba, Festa da Raça",
@@ -108203,6 +109253,7 @@ db = {
       "title": "Mauro Senise",
       "year": 1988,
       "path": "1988 - Mauro Senise",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria três filhos",
@@ -108274,6 +109325,7 @@ db = {
       "title": "Moacyr Luz",
       "year": 1988,
       "path": "1988 - Moacyr Luz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Mar No Maracanã",
@@ -108345,6 +109397,7 @@ db = {
       "title": "A Força Da Razão",
       "year": 1988,
       "path": "1988 - Noite Ilustrada - A Força Da Razão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Samba da Minha Terra / Requebre Que Eu Dou Um Doce / Vatapá / Rosa Morena / Maracangalha / Saudade da Bahia / João Valentão",
@@ -108416,6 +109469,7 @@ db = {
       "title": "Este Tal de Borghettinho",
       "year": 1988,
       "path": "1988 - Renato Borghetti - Este Tal De Borghettinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "La Puñalada",
@@ -108515,6 +109569,7 @@ db = {
       "title": "Cartas, Canções e Palavras",
       "year": 1988,
       "path": "1988 - Sa Guarabyra - Cartas Cancoes E Palavras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cartas, canções e palavras",
@@ -108600,6 +109655,7 @@ db = {
       "title": "Sambas-de-Enredo 1988 Grupo 1-A",
       "year": 1988,
       "path": "1988 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Templo do Absurdo - Bar Brasil",
@@ -108734,6 +109790,7 @@ db = {
       "title": "Sambas-de-Enredo 1988 Grupo 1-B",
       "year": 1988,
       "path": "1988 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Burle Marx",
@@ -108826,6 +109883,7 @@ db = {
       "title": "Jeito Moleque",
       "year": 1988,
       "path": "1988 - Zeca Pagodinho - Jeito Moleque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jeito Moleque",
@@ -108918,6 +109976,7 @@ db = {
       "title": "Trem Caipira",
       "year": 1987,
       "path": "1985 - Egberto Gismonti - Trem Caipira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Trenzinho Do Caipira",
@@ -108982,6 +110041,7 @@ db = {
       "title": "nosso nome: resistência",
       "year": 1987,
       "path": "1987 - Alcione - Nosso nome - Resistência",
+      "has_cover": true,
       "tracks": [
         {
           "title": "raio de luar",
@@ -109081,6 +110141,7 @@ db = {
       "title": "perfume de champagne",
       "year": 1987,
       "path": "1987 - Almir Guinéto - Perfume De Champagne",
+      "has_cover": true,
       "tracks": [
         {
           "title": "folia de reis",
@@ -109173,6 +110234,7 @@ db = {
       "title": "Suspeito",
       "year": 1987,
       "path": "1987 - Arrigo Barnabe - Suspeito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Êxtase",
@@ -109258,6 +110320,7 @@ db = {
       "title": "beth carvalho ao vivo em montreux",
       "year": 1987,
       "path": "1987 - Beth Carvalho - Live At Montreux",
+      "has_cover": true,
       "tracks": [
         {
           "title": "da melhor qualidade",
@@ -109343,6 +110406,7 @@ db = {
       "title": "Justiça Social",
       "year": 1987,
       "path": "1987 - Bezerra da Silva - Justiça Social",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fofoqueiro é a Imagem do Cão",
@@ -109435,6 +110499,7 @@ db = {
       "title": "Denny de Lima",
       "year": 1987,
       "path": "1987 - Denny de Lima - Denny de Lima",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Céu da boca",
@@ -109513,6 +110578,7 @@ db = {
       "title": "Eu Sou Negão",
       "year": 1987,
       "path": "1987 - Geronimo - Eu sou Negao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jubiabá",
@@ -109542,6 +110608,7 @@ db = {
       "title": "Heitor TP",
       "year": 1987,
       "path": "1987 - Heitor TP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Descaso",
@@ -109620,6 +110687,7 @@ db = {
       "title": "Recantando Mágoas - Lupi, A Dor E Eu",
       "year": 1987,
       "path": "1987 - Jamelão - Recantando Mágoas – Lupi, A Dor E Eu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Rosa",
@@ -109698,6 +110766,7 @@ db = {
       "title": "jorginho do império",
       "year": 1987,
       "path": "1987 - Jorginho do Império - Jorginho do Império",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu vi que te amo",
@@ -109790,6 +110859,7 @@ db = {
       "title": "luz do repente",
       "year": 1987,
       "path": "1987 - Jovelina Pérola Negra - Luz do repente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "conselho de vizinho",
@@ -109882,6 +110952,7 @@ db = {
       "title": "Que País é Este 1978/1987",
       "year": 1987,
       "path": "1987 - Legiao Urbana - Que Pais E Este",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que País é Este",
@@ -109953,6 +111024,7 @@ db = {
       "title": "De Todos Os Cantos",
       "year": 1987,
       "path": "1987 - Luiz Ayrão - De Todos Os Cantos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Ano Sem Você",
@@ -110038,6 +111110,7 @@ db = {
       "title": "mart'nália",
       "year": 1987,
       "path": "1987 - Mart’nália - Mart’nália",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nunca mais",
@@ -110130,6 +111203,7 @@ db = {
       "title": "cantar a paz",
       "year": 1987,
       "path": "1987 - Mauro Diniz - Cantar a paz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "timida tentação",
@@ -110208,6 +111282,7 @@ db = {
       "title": "Aplauso Do Povo",
       "year": 1987,
       "path": "1987 - Noite Ilustrada - Aplauso Do Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Andorinha / Dedo De Luva / Vícios / Transplante / Quatro Velas / Pedra 90 / Disse Me Disse",
@@ -110286,6 +111361,7 @@ db = {
       "title": "Sorri pra Vida",
       "year": 1987,
       "path": "1987 - Roberto Ribeiro - Sorri pra Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sorri pra Vida",
@@ -110378,6 +111454,7 @@ db = {
       "title": "Um Toque a Mais",
       "year": 1987,
       "path": "1987 - Samba Som Sete - Um Toque A Mais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Galho na cabeça",
@@ -110470,6 +111547,7 @@ db = {
       "title": "Sambas-de-Enredo 1987 Grupo 1-A (Top Tape)",
       "year": 1987,
       "path": "1987 - Sambas de Enredo Grupo 1-A Top Tape",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E por que não?",
@@ -110646,6 +111724,7 @@ db = {
       "title": "Pergunte A Quem Conhece",
       "year": 1987,
       "path": "1987 - Thaide e DJ Hum - Pergunte A Quem Conhece",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Corpo Fechado",
@@ -110710,6 +111789,7 @@ db = {
       "title": "Villa-Violão: Obra Completa Para Violão Solo",
       "year": 1987,
       "path": "1987 - Turibio Santos - Villa-Violao Obra Completa Para Violao Solo",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Prelúdio No. 1",
@@ -110879,6 +111959,7 @@ db = {
       "title": "Um Trem Para As Estrelas",
       "year": 1987,
       "path": "1987 - Um Trem Para As Estrelas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra Fazer O Sol Nascer",
@@ -111027,6 +112108,7 @@ db = {
       "title": "Ha Sempre Um Nome De Mulher Disc 1",
       "year": 1987,
       "path": "1987 - V. A. - Ha Sempre Um Nome de Mulher 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Citaçao de Pierrô - Mulher",
@@ -111133,6 +112215,7 @@ db = {
       "title": "Baleia Azul",
       "year": 1987,
       "path": "1987 - Victor Biglione - Baleia Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Marrakech",
@@ -111190,6 +112273,7 @@ db = {
       "title": "Patota de Cosme",
       "year": 1987,
       "path": "1987 - Zeca Pagodinho - Patota de Cosme",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Patota de Cosme",
@@ -111282,6 +112366,7 @@ db = {
       "title": "pura semente",
       "year": 1987,
       "path": "1989 - Marquinho Sathan - Pura semente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pura semente",
@@ -111374,6 +112459,7 @@ db = {
       "title": "escolas de samba enredos estácio de sá",
       "year": 1987,
       "path": "1993 - Escolas de Samba Enredos – Estacio de Sá",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o tititi do sapoti",
@@ -111445,6 +112531,7 @@ db = {
       "title": "wilson batista, o samba foi sua glória",
       "year": 1986,
       "path": "1985 - Wilson Batista, o samba foi sua glória Joyce e Roberto Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "programa no tempo de noel almirante entrevista wilson batista",
@@ -111516,6 +112603,7 @@ db = {
       "title": "fruto e raiz",
       "year": 1986,
       "path": "1986 - Alcione - Fruto e raiz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "garoto maroto",
@@ -111615,6 +112703,7 @@ db = {
       "title": "Assis Valente",
       "year": 1986,
       "path": "1986 - Assis Valente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil pandeiro",
@@ -111714,6 +112803,7 @@ db = {
       "title": "Hector Villa-Lobos, Bachianas Brasileiras1, 5 &7",
       "year": 1986,
       "path": "1986 - Barbara Hendricks - Bachianas Brasileiras n 5 -1 -7",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aria (Cantilena)",
@@ -111785,6 +112875,7 @@ db = {
       "title": "Bebel Gilberto",
       "year": 1986,
       "path": "1986 - Bebel Gilberto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mais Feliz",
@@ -111828,6 +112919,7 @@ db = {
       "title": "beth",
       "year": 1986,
       "path": "1986 - Beth Carvalho - Beth",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nas veias do brasil",
@@ -111927,6 +113019,7 @@ db = {
       "title": "alô malandragem, maloca o flagrante",
       "year": 1986,
       "path": "1986 - Bezerra da Silva - Alô malandragem, maloca o flagrante",
+      "has_cover": true,
       "tracks": [
         {
           "title": "malandragem dá um tempo",
@@ -112019,6 +113112,7 @@ db = {
       "title": "Cacuriá",
       "year": 1986,
       "path": "1986 - Cacuria de Dona Tete",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Choro Da Lera",
@@ -112118,6 +113212,7 @@ db = {
       "title": "Chôro no Céu",
       "year": 1986,
       "path": "1986 - Choro No Ceu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pedacinhos do Céu",
@@ -112210,6 +113305,7 @@ db = {
       "title": "chôro no céu: chôros famosos, solistas inesquecíveis",
       "year": 1986,
       "path": "1986 - Chôro no céu Chôros famosos, solistas inesquecíveis",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pedacinho do céu",
@@ -112302,6 +113398,7 @@ db = {
       "title": "balãozinho",
       "year": 1986,
       "path": "1986 - Eduardo Gudin - Balãozinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "balãozinho",
@@ -112366,6 +113463,7 @@ db = {
       "title": "The Magicians",
       "year": 1986,
       "path": "1986 - Flora Purim E Airto - The Magicians",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sweet Baby Blues",
@@ -112437,6 +113535,7 @@ db = {
       "title": "O Mapa da Mina",
       "year": 1986,
       "path": "1986 - Fundo de Quintal - O Mapa Da Mina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chua Chua / Fui Passear no Norte / Moema Morenou / Baiana Serrana / Serei teu iô iô",
@@ -112529,6 +113628,7 @@ db = {
       "title": "coisa de pele",
       "year": 1986,
       "path": "1986 - Jorge Aragão - Coisa De Pele",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coisa de pele",
@@ -112607,6 +113707,7 @@ db = {
       "title": "Dois",
       "year": 1986,
       "path": "1986 - Legiao Urbana - Dois",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Daniel na Cova dos Leões",
@@ -112699,6 +113800,7 @@ db = {
       "title": "O Rock Errou",
       "year": 1986,
       "path": "1986 - Lobao - O Rock Errou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -112784,6 +113886,7 @@ db = {
       "title": "Lulu",
       "year": 1986,
       "path": "1986 - Lulu Santos - Lulu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Casa",
@@ -112862,6 +113965,7 @@ db = {
       "title": "Falsa Consideração",
       "year": 1986,
       "path": "1986 - Marquinho Sathan - Falsa Consideração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Me Engana que eu Gosto",
@@ -112954,6 +114058,7 @@ db = {
       "title": "Melhores Momentos de Chico e Caetano Ao Vivo",
       "year": 1986,
       "path": "1986 - Melhores Momentos De Chico E Caetano Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Festa Imodesta",
@@ -113039,6 +114144,7 @@ db = {
       "title": "Encanto da Paisagem",
       "year": 1986,
       "path": "1986 - Nelson Sargento - Encanto Da Paisagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Encanto da Paisagem",
@@ -113131,6 +114237,7 @@ db = {
       "title": "Cada Vez Melhor",
       "year": 1986,
       "path": "1986 - Noite Ilustrada - Cada Vez Melhor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Toalha De Mesa / Pedrinhas De Cor / Idade De Fazer Bobagem / Marina / Balada Nº 7 (Mané Garrincha) / O Neguinho E A Senhorita / Volta Por Cima",
@@ -113202,6 +114309,7 @@ db = {
       "title": "Selvagem?",
       "year": 1986,
       "path": "1986 - Os Paralamas Do Sucesso - Selvagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alagados",
@@ -113287,6 +114395,7 @@ db = {
       "title": "Pindorama",
       "year": 1986,
       "path": "1986 - Pau Brasil - Pindorama",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pindorama",
@@ -113351,6 +114460,7 @@ db = {
       "title": "Garoto",
       "year": 1986,
       "path": "1986 - Paulo Bellinati - Garoto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gente Humilde",
@@ -113436,6 +114546,7 @@ db = {
       "title": "Pique Brasileiro",
       "year": 1986,
       "path": "1986 - Pique Brasileiro - Aluisio Machado, David Correa e Gracia do Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estrela de Oiá",
@@ -113514,6 +114625,7 @@ db = {
       "title": "retrato cantado de um amor",
       "year": 1986,
       "path": "1986 - Reinaldo - Retrato cantado de uma amor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "retrato cantado de um amor",
@@ -113606,6 +114718,7 @@ db = {
       "title": "Sambas-de-Enredo 1986 Grupo 1-A (Top Tape)",
       "year": 1986,
       "path": "1986 - Sambas de Enredo Grupo 1-A Top-Tape",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil não Seremos Jamais, ou Seremos?",
@@ -113754,6 +114867,7 @@ db = {
       "title": "Sambas-de-Enredo 1986 Grupo 1-B",
       "year": 1986,
       "path": "1986 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Candeia, Luz da Inspiração",
@@ -113846,6 +114960,7 @@ db = {
       "title": "Heitor Villa-Lobos: Concertos Para Solista e Orquestra",
       "year": 1986,
       "path": "1986 - T Santos P Moura N Devos Orq Camara Brasileira - Villa Lobos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Concerto para Violão e Pequena Orquestra [Allegro preciso]",
@@ -113917,6 +115032,7 @@ db = {
       "title": "Doce Recordação",
       "year": 1986,
       "path": "1986 - Velha Guarda da Portela - Doce Recordação",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hino Da Velha Guarda Da Portela",
@@ -114009,6 +115125,7 @@ db = {
       "title": "Xangai Canta Cantigas, Incelenças, Puluxias e Tiranas de Elomar",
       "year": 1986,
       "path": "1986 - Xangai Canta Cantigas Incelencas Puluxias E Tiranas De Elomar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desafio",
@@ -114087,6 +115204,7 @@ db = {
       "title": "Zeca Pagodinho",
       "year": 1986,
       "path": "1986 - Zeca Pagodinho - Zeca Pagodinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "S.P.C",
@@ -114179,6 +115297,7 @@ db = {
       "title": "a malandragem entrou em greve",
       "year": 1986,
       "path": "1987 - Os Originais do Samba - A malandragem entro em greve",
+      "has_cover": true,
       "tracks": [
         {
           "title": "volta coracao",
@@ -114271,6 +115390,7 @@ db = {
       "title": "mussum",
       "year": 1986,
       "path": "1997 - Mussum - Mussum",
+      "has_cover": true,
       "tracks": [
         {
           "title": "because forever",
@@ -114363,6 +115483,7 @@ db = {
       "title": "fogo da vida",
       "year": 1985,
       "path": "1985 - Alcione - Fogo da vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "faz corpo mole",
@@ -114455,6 +115576,7 @@ db = {
       "title": "das bencoes que viram com os novos amanhas",
       "year": 1985,
       "path": "1985 - Beth Carvalho - Das Bênçãos Que Viram Com Os Novos Amanhãs",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cinelândia",
@@ -114547,6 +115669,7 @@ db = {
       "title": "Somos Todos Iguais",
       "year": 1985,
       "path": "1985 - Elza Soares - Somos Todos Iguais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Osso, Pele E Pano",
@@ -114632,6 +115755,7 @@ db = {
       "title": "Entre Amigos",
       "year": 1985,
       "path": "1985 - Entre Amigos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canção da América",
@@ -114717,6 +115841,7 @@ db = {
       "title": "divina luz",
       "year": 1985,
       "path": "1985 - Fundo de Quintal - Divina Luz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "parabéns pra você",
@@ -114809,6 +115934,7 @@ db = {
       "title": "A Luz do Solo",
       "year": 1985,
       "path": "1985 - Geraldo Azevedo - A Luz Do Solo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A voz do morto",
@@ -114901,6 +116027,7 @@ db = {
       "title": "de amor é bom",
       "year": 1985,
       "path": "1985 - João Nogueira - De amor é bom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "de amor é bom",
@@ -114979,6 +116106,7 @@ db = {
       "title": "Tango",
       "year": 1985,
       "path": "1985 - Laurindo Almeida e Charlie Byrd - Tango",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Orchids in the moonlight",
@@ -115064,6 +116192,7 @@ db = {
       "title": "leci brandão",
       "year": 1985,
       "path": "1985 - Leci Brandão - Leci Brandão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "papai vadiou",
@@ -115163,6 +116292,7 @@ db = {
       "title": "Samba Na Crista",
       "year": 1985,
       "path": "1985 - Luiz Ayrão - Samba Na Crista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Portela Dividida",
@@ -115255,6 +116385,7 @@ db = {
       "title": "Recompensa",
       "year": 1985,
       "path": "1985 - Marçal - Recompensa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E lá que eu Moro",
@@ -115326,6 +116457,7 @@ db = {
       "title": "Todas",
       "year": 1985,
       "path": "1985 - Marina Lima - Todas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Difícil",
@@ -115404,6 +116536,7 @@ db = {
       "title": "Jugando En Buenos Aires",
       "year": 1985,
       "path": "1985 - Mauricio Einhorn - Jugando En Buenos Aires",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Matices para Maurício",
@@ -115468,6 +116601,7 @@ db = {
       "title": "Ofício de Puxador",
       "year": 1985,
       "path": "1985 - Neguinho da Beija-Flor - Ofício de Puxador",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ofício de Puxador",
@@ -115553,6 +116687,7 @@ db = {
       "title": "as flores em vida",
       "year": 1985,
       "path": "1985 - Nelson Cavaquinho - As flores em vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "devia ser condenada",
@@ -115638,6 +116773,7 @@ db = {
       "title": "Rosa Maria... Sings The Blues...",
       "year": 1985,
       "path": "1985 - Rosa Maria Sings The Blues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lady sings the blues",
@@ -115723,6 +116859,7 @@ db = {
       "title": "Sambas-Enredo 1985 Grupo 1-A",
       "year": 1985,
       "path": "1985 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abram Alas, que eu Quero Passar",
@@ -115815,6 +116952,7 @@ db = {
       "title": "Sambas-de-Enredo 1985 Grupo 1-B",
       "year": 1985,
       "path": "1985 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ibrahim, de Leve eu Chego lá",
@@ -115900,6 +117038,7 @@ db = {
       "title": "Cristal",
       "year": 1985,
       "path": "1985 - Simone - Cristal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tinha de Ser",
@@ -115978,6 +117117,7 @@ db = {
       "title": "Sorriso Novo",
       "year": 1985,
       "path": "2005 - Almir Guineto - Sorriso Novo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jibóia",
@@ -116070,6 +117210,7 @@ db = {
       "title": "da cor do brasil",
       "year": 1984,
       "path": "1984 - Alcione - Da cor do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mangueira estação primeira",
@@ -116162,6 +117303,7 @@ db = {
       "title": "partido alto nota 10",
       "year": 1984,
       "path": "1984 - Aniceto do Império - Partido alto nota 10",
+      "has_cover": true,
       "tracks": [
         {
           "title": "partido alto",
@@ -116254,6 +117396,7 @@ db = {
       "title": "o melhor de ataulfo alves",
       "year": 1984,
       "path": "1984 - Ataulfo Alves - O melhor de Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ai que saudade da amélia",
@@ -116360,6 +117503,7 @@ db = {
       "title": "Carlos Poyares No Clube Do Choro",
       "year": 1984,
       "path": "1984 - Carlos Poyares No Clube Do Choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dinorah",
@@ -116452,6 +117596,7 @@ db = {
       "title": "Seja Sambista Também",
       "year": 1984,
       "path": "1984 - Fundo de Quintal - Seja Sambista Também",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cantei só pra Distrair / Cadê Iô Iô",
@@ -116544,6 +117689,7 @@ db = {
       "title": "Profana",
       "year": 1984,
       "path": "1984 - Gal Costa - Profana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vaca Profana",
@@ -116622,6 +117768,7 @@ db = {
       "title": "Canto Negro",
       "year": 1984,
       "path": "1984 - Ile Aye - Canto Negro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que Bloco É Esse?",
@@ -116707,6 +117854,7 @@ db = {
       "title": "Legião Urbana",
       "year": 1984,
       "path": "1984 - Legiao Urbana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Será",
@@ -116792,6 +117940,7 @@ db = {
       "title": "Alegria Geral",
       "year": 1984,
       "path": "1984 - Luiz Ayrão - Alegria Geral",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É Da Juventude",
@@ -116884,6 +118033,7 @@ db = {
       "title": "Grávido",
       "year": 1984,
       "path": "1984 - Luiz Gonzaga Jr - Gravido",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lindo Lago do Amor",
@@ -116962,6 +118112,7 @@ db = {
       "title": "Tudo Azul",
       "year": 1984,
       "path": "1984 - Lulu Santos - Tudo Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Força Do Destino",
@@ -117054,6 +118205,7 @@ db = {
       "title": "Corazón Americano",
       "year": 1984,
       "path": "1984 - M Nascimento M Sosa y L Gieco - Corazon Americano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Río de las penas",
@@ -117146,6 +118298,7 @@ db = {
       "title": "Martinho da Vila Isabel",
       "year": 1984,
       "path": "1984 - Martinho da Vila - Martinho da Vila Isabel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha Viola",
@@ -117231,6 +118384,7 @@ db = {
       "title": "partido alto nota 10 vol. 5 | assalto no ônibus",
       "year": 1984,
       "path": "1984 - Partido alto nota 10 Vol 5 - Assalto no ônibus Genaro e Bebeto di São João",
+      "has_cover": true,
       "tracks": [
         {
           "title": "assalto no ônibus",
@@ -117337,6 +118491,7 @@ db = {
       "title": "Sambas-Enredo 1984 Grupo 1-A",
       "year": 1984,
       "path": "1984 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Gigante em Berço Esplêndido",
@@ -117429,6 +118584,7 @@ db = {
       "title": "Sambas-de-Enredo 1984 Grupo 1-B",
       "year": 1984,
       "path": "1984 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Conto Lendário de Marabá",
@@ -117521,6 +118677,7 @@ db = {
       "title": "Bem Natural",
       "year": 1984,
       "path": "1984 - Serginho Meriti - Bem Natural",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coro Come",
@@ -117599,6 +118756,7 @@ db = {
       "title": "Desejos",
       "year": 1984,
       "path": "1984 - Simone - Desejos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Desejo Só Não Basta",
@@ -117677,6 +118835,7 @@ db = {
       "title": "Sufocante",
       "year": 1984,
       "path": "1984 - Tim Maia - Sufocante",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Debaixo do Manacá",
@@ -117755,6 +118914,7 @@ db = {
       "title": "Tudo e Todas As Coisas",
       "year": 1984,
       "path": "1984 - Uakti - Tudo E Todas As Coisas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Água - Vidro",
@@ -117819,6 +118979,7 @@ db = {
       "title": "o canto dos escravos",
       "year": 1983,
       "path": "1982 - Clementina de Jesus, Doca e Geraldo Filme - O canto dos escravos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "canto i",
@@ -117925,6 +119086,7 @@ db = {
       "title": "Almas e Corações",
       "year": 1983,
       "path": "1983 - Alcione - Almas e Corações",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um ser de Luz",
@@ -118017,6 +119179,7 @@ db = {
       "title": "Falta Você",
       "year": 1983,
       "path": "1983 - Avendano Junior - Falta Voce",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pablo",
@@ -118109,6 +119272,7 @@ db = {
       "title": "Produto do Morro",
       "year": 1983,
       "path": "1983 - Bezerra da Silva - Produto do Morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pai Véio 171",
@@ -118201,6 +119365,7 @@ db = {
       "title": "Radioatividade",
       "year": 1983,
       "path": "1983 - Blitz - Radioatividade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A última ficha",
@@ -118293,6 +119458,7 @@ db = {
       "title": "geraldo pereira acervo funarte",
       "year": 1983,
       "path": "1983 - Geraldo Pereira - Acervo funarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando ela samba . falsa baiana . mais um milagre",
@@ -118350,6 +119516,7 @@ db = {
       "title": "Carinhoso",
       "year": 1983,
       "path": "1983 - Jair Rodrigues - Carinhoso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ronda",
@@ -118449,6 +119616,7 @@ db = {
       "title": "bem transado",
       "year": 1983,
       "path": "1983 - João Nogueira - Bem transado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se segura segurança",
@@ -118527,6 +119695,7 @@ db = {
       "title": "viva meu samba",
       "year": 1983,
       "path": "1983 - Jorginho do Império - Viva meu samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "doeu",
@@ -118605,6 +119774,7 @@ db = {
       "title": "Novidades",
       "year": 1983,
       "path": "1983 - Luiz Ayrão - Novidades",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Flor De Amaralina",
@@ -118690,6 +119860,7 @@ db = {
       "title": "Quem Não Tem Esperança Não Tem Horizonte...",
       "year": 1983,
       "path": "1983 - Luiz Ayrão - Quem Não Tem Esperança Não Tem Horizonte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Águia Na Cabeça",
@@ -118782,6 +119953,7 @@ db = {
       "title": "Meu Canto",
       "year": 1983,
       "path": "1983 - Luiz Carlos Da Vila - Meu Canto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bandeira da fé",
@@ -118874,6 +120046,7 @@ db = {
       "title": "luiz carlos da vila",
       "year": 1983,
       "path": "1983 - Luiz Carlos da Vila - Luiz Carlos da Vila",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bandeira de fé",
@@ -118966,6 +120139,7 @@ db = {
       "title": "Alô, Alô Brasil",
       "year": 1983,
       "path": "1983 - Luiz Gonzaga Jr - Alo Alo Brasil",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Alô Alô Brasil",
@@ -119058,6 +120232,7 @@ db = {
       "title": "novas palavras",
       "year": 1983,
       "path": "1983 - Martinho da Vila - Novas palavras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "balaio de gato e de rato",
@@ -119150,6 +120325,7 @@ db = {
       "title": "choro de menina volume 4",
       "year": 1983,
       "path": "1983 - Nilze Carvalho - Choro de menina – Vol 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bole-bole",
@@ -119228,6 +120404,7 @@ db = {
       "title": "partido em 5 volume 04",
       "year": 1983,
       "path": "1983 - Partido Em 5 Volume 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "afinal",
@@ -119320,6 +120497,7 @@ db = {
       "title": "Roberto Ribeiro",
       "year": 1983,
       "path": "1983 - Roberto Ribeiro - Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Ganza do Seu Leitão",
@@ -119412,6 +120590,7 @@ db = {
       "title": "Sambas-Enredo 1983 Grupo 1-A",
       "year": 1983,
       "path": "1983 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mãe Baiana, Mãe",
@@ -119504,6 +120683,7 @@ db = {
       "title": "Sambas-de-Enredo 1983 Grupo 1-B",
       "year": 1983,
       "path": "1983 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Santos e Pecados",
@@ -119596,6 +120776,7 @@ db = {
       "title": "O Descobridor dos Sete Mares",
       "year": 1983,
       "path": "1983 - Tim Maia - O Descobridor de 7 Mares",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Descobridor dos Sete Mares",
@@ -119674,6 +120855,7 @@ db = {
       "title": "zé keti",
       "year": 1982,
       "path": "1973 - Zé Ketti - Zé Ketti",
+      "has_cover": true,
       "tracks": [
         {
           "title": "acender as velas",
@@ -119759,6 +120941,7 @@ db = {
       "title": "Alceu Valença Ao Vivo",
       "year": 1982,
       "path": "1982 - Alceu Valenca Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Guerreiro",
@@ -119844,6 +121027,7 @@ db = {
       "title": "dez anos depois",
       "year": 1982,
       "path": "1982 - Alcione - 10 Anos depois",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sufoco . lá vem você . menino sem juízo",
@@ -119922,6 +121106,7 @@ db = {
       "title": "Entre duas palavras",
       "year": 1982,
       "path": "1982 - Andre Geraissati - Entre Duas Palavras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mágico",
@@ -119958,6 +121143,7 @@ db = {
       "title": "As Aventuras da Blitz",
       "year": 1982,
       "path": "1982 - As Aventuras Da Blitz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Blitz Cabeluda",
@@ -120057,6 +121243,7 @@ db = {
       "title": "Um Cavaquinho No Sertão",
       "year": 1982,
       "path": "1982 - Benedito Costa - Um Cavaquinho No Sertao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cavaquinho Fronteiriço",
@@ -120149,6 +121336,7 @@ db = {
       "title": "E um punhado de bambas",
       "year": 1982,
       "path": "1982 - Bezerra da Silva - Bezerra da Silva e um punhado de bambas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aqueles morros",
@@ -120234,6 +121422,7 @@ db = {
       "title": "Documento Inédito",
       "year": 1982,
       "path": "1982 - Cartola - Documento Inédito",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que Sejam Bem-vindos",
@@ -120298,6 +121487,7 @@ db = {
       "title": "Trem Azul",
       "year": 1982,
       "path": "1982 - Elis Regina - Trem Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aprendendo a Jogar",
@@ -120481,6 +121671,7 @@ db = {
       "title": "Página Musical",
       "year": 1982,
       "path": "1982 - Geronimo - Pagina Musical",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arzinho da Ribeira",
@@ -120573,6 +121764,7 @@ db = {
       "title": "O Homem dos Quarenta",
       "year": 1982,
       "path": "1982 - João Nogueira - O Homem dos Quarenta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Homem dos Quarenta",
@@ -120651,6 +121843,7 @@ db = {
       "title": "choro de menina volume 2",
       "year": 1982,
       "path": "1982 - Nilze Carvalho - Choro de menina – Vol 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brasileirinho",
@@ -120729,6 +121922,7 @@ db = {
       "title": "A Profesia",
       "year": 1982,
       "path": "1982 - Noite Ilustrada - A Profecia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filho Meu",
@@ -120807,6 +122001,7 @@ db = {
       "title": "A toda Hora rola uma Estória",
       "year": 1982,
       "path": "1982 - Paulinho da Viola - A toda Hora Rola uma Estória",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rumo dos Ventos",
@@ -120885,6 +122080,7 @@ db = {
       "title": "Robson Jorge e Lincoln Olivetti",
       "year": 1982,
       "path": "1982 - Robson Jorge E Lincoln Olivetti",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jorgea Corisco",
@@ -120977,6 +122173,7 @@ db = {
       "title": "Sambas-Enredo 1982 Grupo 1-A",
       "year": 1982,
       "path": "1982 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde Canta o Sabiá",
@@ -121069,6 +122266,7 @@ db = {
       "title": "Sambas-de-Enredo 1982 Grupo 1-B",
       "year": 1982,
       "path": "1982 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Casamento da Dona Baratinha",
@@ -121161,6 +122359,7 @@ db = {
       "title": "Sambas-de-Enredo 1982 Grupo 2-A",
       "year": 1982,
       "path": "1982 - Sambas de Enredo Grupo 2-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alegre Mundo das Reinações",
@@ -121232,6 +122431,7 @@ db = {
       "title": "Vida é tão bela menina",
       "year": 1982,
       "path": "1982 - Serginho Meriti - Vida tão bela menina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu vou fazer",
@@ -121324,6 +122524,7 @@ db = {
       "title": "choro de menina volume 3",
       "year": 1982,
       "path": "1983 - Nilze Carvalho - Choro de menina – Vol 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "um a zero",
@@ -121416,6 +122617,7 @@ db = {
       "title": "Brasil Viola",
       "year": 1981,
       "path": "1981 - Adauto Santos - Brasil Viola",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Pagode",
@@ -121522,6 +122724,7 @@ db = {
       "title": "alcione",
       "year": 1981,
       "path": "1981 - Alcione - Alcione",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sem perdão",
@@ -121614,6 +122817,7 @@ db = {
       "title": "o suburbano",
       "year": 1981,
       "path": "1981 - Almir Guinéto - O suburbano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o suburbano",
@@ -121706,6 +122910,7 @@ db = {
       "title": "Nossa Dança",
       "year": 1981,
       "path": "1981 - Banda De Pau E Corda - Nossa Danca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nossa dança",
@@ -121784,6 +122989,7 @@ db = {
       "title": "samba partido e outras comidas",
       "year": 1981,
       "path": "1981 - Bezerra da Silva - Samba partido e outras comidas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "asa à cobra",
@@ -121876,6 +123082,7 @@ db = {
       "title": "clara",
       "year": 1981,
       "path": "1981 - Clara Nunes - Clara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "portela na avenida",
@@ -121954,6 +123161,7 @@ db = {
       "title": "fogo calmo das velas",
       "year": 1981,
       "path": "1981 - Eduardo Gudin - Fogo calmo das velas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "anúncio classificado",
@@ -122032,6 +123240,7 @@ db = {
       "title": "Sanfona",
       "year": 1981,
       "path": "1981 - Egberto Gismonti - Sanfona",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maracatu",
@@ -122110,6 +123319,7 @@ db = {
       "title": "samba e no fundo do quintal volume 2",
       "year": 1981,
       "path": "1981 - Fundo de Quintal - Samba É No Fundo De Quintal - Volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bebeto loteria",
@@ -122146,6 +123356,7 @@ db = {
       "title": "Inclinações Musicais",
       "year": 1981,
       "path": "1981 - Geraldo Azevedo - Inclinacoes Musicais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caravelas",
@@ -122231,6 +123442,7 @@ db = {
       "title": "jorginho do império",
       "year": 1981,
       "path": "1981 - Jorginho do Império - Jorginho do Império",
+      "has_cover": true,
       "tracks": [
         {
           "title": "compadre ciúme",
@@ -122323,6 +123535,7 @@ db = {
       "title": "Coração Criança",
       "year": 1981,
       "path": "1981 - Luiz Ayrão - Coração Criança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coração Criança",
@@ -122415,6 +123628,7 @@ db = {
       "title": "sentimentos",
       "year": 1981,
       "path": "1981 - Martinho da Vila - Sentimentos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ex-amor",
@@ -122507,6 +123721,7 @@ db = {
       "title": "choro de menina",
       "year": 1981,
       "path": "1981 - Nilze Carvalho - Choro de menina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "noites cariocas",
@@ -122599,6 +123814,7 @@ db = {
       "title": "Missa a 5 Vozes",
       "year": 1981,
       "path": "1981 - Orquestra Ribeiro Bastos - Missa A 5 Vozes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Missa a 5 Vozes - 1. Kyrie",
@@ -122642,6 +123858,7 @@ db = {
       "title": "Saltimbancos Trapalhões",
       "year": 1981,
       "path": "1981 - Saltimbancos Trapalhoes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Piruetas",
@@ -122713,6 +123930,7 @@ db = {
       "title": "Sambas-Enredo 1981 Grupo 1-A",
       "year": 1981,
       "path": "1981 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O teu Cabelo não Nega (Só dá Lalá)",
@@ -122791,6 +124009,7 @@ db = {
       "title": "Sambas-de-Enredo 1981 Grupo 1-B",
       "year": 1981,
       "path": "1981 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amor, Sublime Amor",
@@ -122897,6 +124116,7 @@ db = {
       "title": "Sambas-de-Enredo 1981 Grupo 2-A",
       "year": 1981,
       "path": "1981 - Sambas de Enredo Grupo 2-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Grandes Festas do Rio nas Quatro Estações",
@@ -122968,6 +124188,7 @@ db = {
       "title": "Sambas-de-Enredo 1981 Grupo 2-B",
       "year": 1981,
       "path": "1981 - Sambas de Enredo Grupo 2-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Papai, Mamãe e Vovó",
@@ -123046,6 +124267,7 @@ db = {
       "title": "Bons momentos",
       "year": 1981,
       "path": "1981 - Serginho Meriti - Bons momentos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bons momentos",
@@ -123110,6 +124332,7 @@ db = {
       "title": "Tributo A Marcus Pereira",
       "year": 1981,
       "path": "1981 - Tributo A Marcus Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Engenho De Flores",
@@ -123202,6 +124425,7 @@ db = {
       "title": "Qué Qui Tu Tem Canário",
       "year": 1981,
       "path": "1981 - Xangai - Que Qui Tu Tem Canario",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cantoria do galo",
@@ -123280,6 +124504,7 @@ db = {
       "title": "Zé Côco do Riachão",
       "year": 1981,
       "path": "1981 - Ze Coco Do Riachao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Asa Branca",
@@ -123372,6 +124597,7 @@ db = {
       "title": "escolas de samba enredos- imperatriz leopoldinense",
       "year": 1981,
       "path": "1993 - Escolas de Samba Enredos – Imperatriz Leopoldinense",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o teu cabelo não nega",
@@ -123450,6 +124676,7 @@ db = {
       "title": "A Arte Negra de Wilson Moreira e Nei Lopes",
       "year": 1980,
       "path": "1980 - A Arte Negra De Wilson Moreira E Nei Lopes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Chora Quem Ama / Goiabada Cascão / Mel e Mamão com Açucar / Coisa da Antiga",
@@ -123521,6 +124748,7 @@ db = {
       "title": "A Bênção Tia Amélia",
       "year": 1980,
       "path": "1980 - A Bencao Tia Amelia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Choro Serenata",
@@ -123613,6 +124841,7 @@ db = {
       "title": "e vamos a luta",
       "year": 1980,
       "path": "1980 - Alcione - E vamos á luta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quadro de ismael",
@@ -123705,6 +124934,7 @@ db = {
       "title": "Ana de Hollanda",
       "year": 1980,
       "path": "1980 - Ana De Hollanda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "I Waikiri",
@@ -123790,6 +125020,7 @@ db = {
       "title": "As Melhores Cordas do Brasil",
       "year": 1980,
       "path": "1980 - As Melhores Cordas Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Asa Branca",
@@ -123868,6 +125099,7 @@ db = {
       "title": "sentimento brasileiro",
       "year": 1980,
       "path": "1980 - Beth Carvalho - Sentimento Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a chuva cai",
@@ -123960,6 +125192,7 @@ db = {
       "title": "partido alto nota 10 vol. 3",
       "year": 1980,
       "path": "1980 - Bezerra da Silva - Partido alto nota 10 Vol 3 – Bezerra e Rey Jordão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mulambo só",
@@ -124045,6 +125278,7 @@ db = {
       "title": "Brasil Brazil",
       "year": 1980,
       "path": "1980 - Brasil Brazil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tico-Tico No Fubá",
@@ -124137,6 +125371,7 @@ db = {
       "title": "Na Ponta da Língua",
       "year": 1980,
       "path": "1980 - Carlinhos Vergueiro - Na Ponta Da Lingua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Copo na mão",
@@ -124229,6 +125464,7 @@ db = {
       "title": "Casa De Caboclo",
       "year": 1980,
       "path": "1980 - Casa De Caboclo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Casa De Caboclo",
@@ -124321,6 +125557,7 @@ db = {
       "title": "Violão",
       "year": 1980,
       "path": "1980 - Celso Machado - Violao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Motivo Barroco",
@@ -124399,6 +125636,7 @@ db = {
       "title": "Brasil Mestiço",
       "year": 1980,
       "path": "1980 - Clara Nunes - Brasil Mestiço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Morena de Angola",
@@ -124491,6 +125729,7 @@ db = {
       "title": "Frevo de Bloco",
       "year": 1980,
       "path": "1980 - Conjunto Romancal - Frevo De Bloco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Marcha Da Folia",
@@ -124583,6 +125822,7 @@ db = {
       "title": "Capim do Vale",
       "year": 1980,
       "path": "1980 - Elba Ramalho - Capim Do Vale",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caldeirão Dos Mitos",
@@ -124675,6 +125915,7 @@ db = {
       "title": "Negra Elza, Elza Negra",
       "year": 1980,
       "path": "1980 - Elza Soares - Negra Elza, Elza Negra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Como Lutei",
@@ -124753,6 +125994,7 @@ db = {
       "title": "Ontem Ao Luar",
       "year": 1980,
       "path": "1980 - Emilio Escobar - Ontem Ao Luar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandrinha",
@@ -124845,6 +126087,7 @@ db = {
       "title": "Reunião de Bacana",
       "year": 1980,
       "path": "1980 - Exporta Samba - Reunião de Bacana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mato Queimado",
@@ -124937,6 +126180,7 @@ db = {
       "title": "samba e no fundo de quintal volume1",
       "year": 1980,
       "path": "1980 - Fundo de Quintal - Samba É No Fundo De Quintal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "você quer voltar",
@@ -125029,6 +126273,7 @@ db = {
       "title": "geraldo filme",
       "year": 1980,
       "path": "1980 - Geraldo Filme - Geraldo Filme",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tradição",
@@ -125121,6 +126366,7 @@ db = {
       "title": "Evocação V",
       "year": 1980,
       "path": "1980 - Geraldo Pereira - Evocação V",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Escurinha",
@@ -125220,6 +126466,7 @@ db = {
       "title": "Gonzagão e Gonzaguinha Juntos",
       "year": 1980,
       "path": "1980 - Gonzagao e Gonzaguinha Juntos",
+      "has_cover": false,
       "tracks": [
         {
           "title": "A vida do viajante",
@@ -125312,6 +126559,7 @@ db = {
       "title": "Boca do Povo",
       "year": 1980,
       "path": "1980 - João Nogueira - Boca do Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Poder da Criação",
@@ -125404,6 +126652,7 @@ db = {
       "title": "Essa tal Criatura",
       "year": 1980,
       "path": "1980 - Leci Brandão - Essa tal Criatura",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Essa tal Criatura",
@@ -125489,6 +126738,7 @@ db = {
       "title": "mano decio apresenta a velha guarda do império",
       "year": 1980,
       "path": "1980 - Mano Décio da Viola - Mano Décio apresenta a Velha-Guarda do Império",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cuidado vovó . olhos de jabuticaba . pelo amor de deus",
@@ -125518,6 +126768,7 @@ db = {
       "title": "portuñol latino americano",
       "year": 1980,
       "path": "1980 - Martinho da Vila - Portunol Latino Americano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "disritmia",
@@ -125596,6 +126847,7 @@ db = {
       "title": "samba enredo",
       "year": 1980,
       "path": "1980 - Martinho da Vila - Samba-Enredo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quatro séculos de modas e costumes",
@@ -125688,6 +126940,7 @@ db = {
       "title": "Massafeira Livre",
       "year": 1980,
       "path": "1980 - Massafeira Livre d1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Aurora",
@@ -125780,6 +127033,7 @@ db = {
       "title": "Terreiro",
       "year": 1980,
       "path": "1980 - Monarco - Terreiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Homenagem a Velha Guarda",
@@ -125872,6 +127126,7 @@ db = {
       "title": "Música Regional Do Brasil",
       "year": 1980,
       "path": "1980 - Musica Regional Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Revoada",
@@ -125964,6 +127219,7 @@ db = {
       "title": "maos dadas",
       "year": 1980,
       "path": "1980 - Noca da Portela - Mãos dadas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vem",
@@ -126056,6 +127312,7 @@ db = {
       "title": "Pau Brasil",
       "year": 1980,
       "path": "1980 - Pau Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Renascer",
@@ -126148,6 +127405,7 @@ db = {
       "title": "A Massa",
       "year": 1980,
       "path": "1980 - Raimundo Sodre - A Massa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A massa",
@@ -126233,6 +127491,7 @@ db = {
       "title": "abrindo espaço",
       "year": 1980,
       "path": "1980 - Samba Som Sete - Abrindo Espaço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sonho de um sonho",
@@ -126325,6 +127584,7 @@ db = {
       "title": "Sambas-Enredo 1980 Grupo 1-A",
       "year": 1980,
       "path": "1980 - Sambas de Enredo Grupo 1-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tropicália Maravilha",
@@ -126403,6 +127663,7 @@ db = {
       "title": "Sambas-de-Enredo 1980 Grupo 1-B",
       "year": 1980,
       "path": "1980 - Sambas de Enredo Grupo 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É a Maior - Emilinha Borba",
@@ -126495,6 +127756,7 @@ db = {
       "title": "Piraretã",
       "year": 1980,
       "path": "1980 - Tete Espindola - Pirareta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Piraretã",
@@ -126587,6 +127849,7 @@ db = {
       "title": "Rota-Mar",
       "year": 1980,
       "path": "1980 - Zeca Do Trombone - Rota Mar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rota do Mar",
@@ -126679,6 +127942,7 @@ db = {
       "title": "Breque, Samba e Pagode",
       "year": 1980,
       "path": "1980 - Zé Ventura - Breque, Samba e Pagode",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sevente de Pedro",
@@ -126771,6 +128035,7 @@ db = {
       "title": "Frutificar",
       "year": 1979,
       "path": "1979 - A Cor Do Som - Frutificar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Frutificar",
@@ -126849,6 +128114,7 @@ db = {
       "title": "Seu Último Show Gravado Ao Vivo",
       "year": 1979,
       "path": "1979 - Adoniran Barbosa - Seu Ultimo Show Gravado Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura: Trem Das Onze",
@@ -126948,6 +128214,7 @@ db = {
       "title": "Arruar",
       "year": 1979,
       "path": "1979 - Banda De Pau E Corda - Arruar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cavalo Manso",
@@ -127047,6 +128314,7 @@ db = {
       "title": "beth carvalho no pagode",
       "year": 1979,
       "path": "1979 - Beth Carvalho - Beth Carvalho No Pagode",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coisinha do pai",
@@ -127139,6 +128407,7 @@ db = {
       "title": "partido alto nota 10 vol. 2",
       "year": 1979,
       "path": "1979 - Bezerra da Silva - Partido alto nota 10 Vol 2 – Pega eu – Bezerra e seus convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pega eu",
@@ -127231,6 +128500,7 @@ db = {
       "title": "Momento Brasileiro",
       "year": 1979,
       "path": "1979 - Billy Eckstine - Momento Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cidade Maravilhosa",
@@ -127302,6 +128572,7 @@ db = {
       "title": "Laço de Cobra",
       "year": 1979,
       "path": "1979 - Celeste - Laco De Cobra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Laço de Cobra",
@@ -127394,6 +128665,7 @@ db = {
       "title": "Esperança",
       "year": 1979,
       "path": "1979 - Clara Nunes - Esperança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Banho de Manjericão",
@@ -127486,6 +128758,7 @@ db = {
       "title": "Série Grandes Autores, Grandes Intérpretes Vol. 4: Ary Barroso",
       "year": 1979,
       "path": "1979 - Claudia Moreno - Ary Barroso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Folha Morta",
@@ -127571,6 +128844,7 @@ db = {
       "title": "clementina e convidados",
       "year": 1979,
       "path": "1979 - Clementina de Jesus - Clementina e convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tantas você fez",
@@ -127663,6 +128937,7 @@ db = {
       "title": "Grande Missa Nordestina",
       "year": 1979,
       "path": "1979 - Clovis Salgado Orq Coral UFPB - Grande Missa Nordestina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "I - Kyrie",
@@ -127706,6 +128981,7 @@ db = {
       "title": "Disco Síntese da Coleção Música Popular do Nordeste",
       "year": 1979,
       "path": "1979 - Disco Sintese Musica Popular Do Nordeste",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade",
@@ -127805,6 +129081,7 @@ db = {
       "title": "Senhora Da Terra",
       "year": 1979,
       "path": "1979 - Elza Soares - Senhora Da Terra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Põe Pimenta",
@@ -127897,6 +129174,7 @@ db = {
       "title": "Saudades do Brasil",
       "year": 1979,
       "path": "1979 - Eudoxia De Barros - Saudades Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudades Do Brasil - Sorocaba",
@@ -128010,6 +129288,7 @@ db = {
       "title": "Terra",
       "year": 1979,
       "path": "1979 - Francisco Mario - Terra",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ouro Preto",
@@ -128109,6 +129388,7 @@ db = {
       "title": "Hermeto Pascoal Meets Sadao Watanabe",
       "year": 1979,
       "path": "1979 - Hermeto Pascoal Sadao Watanabe - HP Meets SW",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Japanese Radio intro",
@@ -128194,6 +129474,7 @@ db = {
       "title": "Evocação II: Chiquinha Gonzaga",
       "year": 1979,
       "path": "1979 - L Brandao V Carvalho e Gupo - Evocacao II Chiquinha Gonzaga",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Atraente",
@@ -128279,6 +129560,7 @@ db = {
       "title": "Amigos",
       "year": 1979,
       "path": "1979 - Luiz Ayrão - Amigos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fim De Comédia",
@@ -128371,6 +129653,7 @@ db = {
       "title": "Gonzaguinha da Vida",
       "year": 1979,
       "path": "1979 - Luiz Gonzaga Jr - Gonzaguinha da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "João Do Amor Divino",
@@ -128470,6 +129753,7 @@ db = {
       "title": "Cantigas de Roda e Canções Infantis do Norte de Minas Gerais",
       "year": 1979,
       "path": "1979 - Madrigal Infantil De Montes Claros - Cantigas De Roda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pandolelê",
@@ -128583,6 +129867,7 @@ db = {
       "title": "Nordestino",
       "year": 1979,
       "path": "1979 - Marcus Vinicius - Nordestino",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Velho Faceta",
@@ -128675,6 +129960,7 @@ db = {
       "title": "Terreiro, Sala E Salão",
       "year": 1979,
       "path": "1979 - Martinho da Vila - Terreiro, Sala E Salão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deixa A Fumaça Entrar",
@@ -128746,6 +130032,7 @@ db = {
       "title": "Samba É Isso Vol. 3: Ao Meu Amigo Chico",
       "year": 1979,
       "path": "1979 - Milton Banana Trio - Samba E Isso3Ao Meu Amigo Chico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cálice - Quando O Carnaval Chegar",
@@ -128852,6 +130139,7 @@ db = {
       "title": "Um Piano Dentro da Noite",
       "year": 1979,
       "path": "1979 - Moacyr Peixoto - Um Piano Dentro Da Noite",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Misty",
@@ -128923,6 +130211,7 @@ db = {
       "title": "Nova História da MPB Vol. 65: Johnny Alf e os Precursores da Bossa Nova",
       "year": 1979,
       "path": "1979 - NHMPB Vol65Johnny Alf",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rapaz de bem",
@@ -128987,6 +130276,7 @@ db = {
       "title": "Nova História da MPB Vol. 66: Pedro Caetano e Claudionor Cruz",
       "year": 1979,
       "path": "1979 - NHMPB66Pedro Caetano E Claudionor Cruz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Foi uma pedra que rolou",
@@ -129051,6 +130341,7 @@ db = {
       "title": "Nara Canta En Castellano",
       "year": 1979,
       "path": "1979 - Nara Canta En Castellano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Detrás Del Horizonte (Além do Horizonte)",
@@ -129136,6 +130427,7 @@ db = {
       "title": "sonho de um sambista",
       "year": 1979,
       "path": "1979 - Nelson Sargento - Falso Moralista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "triângulo amoroso",
@@ -129228,6 +130520,7 @@ db = {
       "title": "Clima Total",
       "year": 1979,
       "path": "1979 - Os Originais do Samba - Clima Total",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mundo De Paz",
@@ -129313,6 +130606,7 @@ db = {
       "title": "partido em 6",
       "year": 1979,
       "path": "1979 - Partido em 6",
+      "has_cover": true,
       "tracks": [
         {
           "title": "melhor que uma só duas ou três",
@@ -129405,6 +130699,7 @@ db = {
       "title": "Zumbido",
       "year": 1979,
       "path": "1979 - Paulinho da Viola - Zumbido",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chico Brito",
@@ -129497,6 +130792,7 @@ db = {
       "title": "paulo vanzolini por ele mesmo",
       "year": 1979,
       "path": "1979 - Paulo Vanzolini - Paulo Vanzolini por ele mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bandeira de guerra",
@@ -129596,6 +130892,7 @@ db = {
       "title": "roda de samba vol. 3",
       "year": 1979,
       "path": "1979 - Roda de samba Vol 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "é manhã",
@@ -129688,6 +130985,7 @@ db = {
       "title": "Sambas-Enredo 1979 Grupo 1-A",
       "year": 1979,
       "path": "1979 - Sambas de Enredo Grupo 1-A e 1-B",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Paraíso da Loucura",
@@ -129808,6 +131106,7 @@ db = {
       "title": "Sambas-de-Enredo 1979 Grupo 1-B",
       "year": 1979,
       "path": "1979 - Sambas de Enredo Grupo 2-A",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Guerra do Reino Divino",
@@ -129900,6 +131199,7 @@ db = {
       "title": "Vento Nordeste",
       "year": 1979,
       "path": "1979 - Terezinha De Jesus - Vento Nordeste",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vento Nordeste",
@@ -129992,6 +131292,7 @@ db = {
       "title": "Zé Luiz",
       "year": 1979,
       "path": "1979 - Ze Luiz Mazziotti - Ze Luiz",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Bastante",
@@ -130077,6 +131378,7 @@ db = {
       "title": "identificacão",
       "year": 1979,
       "path": "1979 - Zé Ketti - Identificação",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tamborim",
@@ -130155,6 +131457,7 @@ db = {
       "title": "Ao Vivo Montreux International Jazz Festival",
       "year": 1978,
       "path": "1978 - A Cor Do Som - Ao Vivo Montreux",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dança Saci",
@@ -130219,6 +131522,7 @@ db = {
       "title": "Tipo Exportação",
       "year": 1978,
       "path": "1978 - Agepê - Tipo Exportação",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mundo Bom",
@@ -130297,6 +131601,7 @@ db = {
       "title": "alerta geral",
       "year": 1978,
       "path": "1978 - Alcione - Alerta geral",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sufoco",
@@ -130389,6 +131694,7 @@ db = {
       "title": "antologia do samba-choro",
       "year": 1978,
       "path": "1978 - Antologia do samba choro Gilberto Gil e Germano Mathias",
+      "has_cover": true,
       "tracks": [
         {
           "title": "acertei no milhar",
@@ -130467,6 +131773,7 @@ db = {
       "title": "Assim... Amém",
       "year": 1978,
       "path": "1978 - Banda De Pau E Corda - Assim Amem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Areia",
@@ -130559,6 +131866,7 @@ db = {
       "title": "de pé no chao",
       "year": 1978,
       "path": "1978 - Beth Carvalho - De Pé No Chão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vou festejar",
@@ -130651,6 +131959,7 @@ db = {
       "title": "Axé! Gente Amiga do Samba",
       "year": 1978,
       "path": "1978 - Candeia - Axé! Gente Amiga do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pintura sem Arte",
@@ -130708,6 +132017,7 @@ db = {
       "title": "Contra Corrente",
       "year": 1978,
       "path": "1978 - Carlinhos Vergueiro - Contra Corrente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prendas do lar",
@@ -130793,6 +132103,7 @@ db = {
       "title": "Do Feitio de um Bamba",
       "year": 1978,
       "path": "1978 - Conjunto Nosso Samba - Do Feitio De Um Bamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Do Feitio de um Bamba",
@@ -130885,6 +132196,7 @@ db = {
       "title": "Arrebém",
       "year": 1978,
       "path": "1978 - Cristina Buarque - Arrebem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Golpe Errado",
@@ -130963,6 +132275,7 @@ db = {
       "title": "No Projeto Pixinguinha",
       "year": 1978,
       "path": "1978 - D Monteiro e L Alves - Doris e Lucio No Projeto Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mudando de Conversa",
@@ -131055,6 +132368,7 @@ db = {
       "title": "Samba minha Verdade, Samba minha Raíz",
       "year": 1978,
       "path": "1978 - Dona Ivone Lara - Samba minha Verdade, Samba minha Raíz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha Verdade",
@@ -131147,6 +132461,7 @@ db = {
       "title": "Heitor Villa-Lobos: Obra Completa Para Violão Solo",
       "year": 1978,
       "path": "1978 - Duo Assad - Heitor Villa-Lobos1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Prelúdio nº 1",
@@ -131225,6 +132540,7 @@ db = {
       "title": "coração marginal",
       "year": 1978,
       "path": "1978 - Eduardo Gudin - Coração marginal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "velho ateu",
@@ -131247,6 +132563,7 @@ db = {
       "title": "Pilão + Raça = Elza",
       "year": 1978,
       "path": "1978 - Elza Soares - Pilão + Raça = Elza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Língua De Pilão",
@@ -131339,6 +132656,7 @@ db = {
       "title": "Série Grandes Autores - Grandes Intérpretes Vol. 3 - Autor: Orestes Barbosa, Intérprete: Emílio Escobar",
       "year": 1978,
       "path": "1978 - Emilio Escobar - Orestes Barbosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arranha Céu",
@@ -131417,6 +132735,7 @@ db = {
       "title": "Galo Preto",
       "year": 1978,
       "path": "1978 - Galo Preto - Galo Preto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Recado",
@@ -131509,6 +132828,7 @@ db = {
       "title": "Vida Boêmia",
       "year": 1978,
       "path": "1978 - João Nogueira - Vida Boêmia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bares da Cidade",
@@ -131601,6 +132921,7 @@ db = {
       "title": "O Pássaro",
       "year": 1978,
       "path": "1978 - Joel Nascimento - O Passaro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não sei porque",
@@ -131693,6 +133014,7 @@ db = {
       "title": "O Povo Canta",
       "year": 1978,
       "path": "1978 - Luiz Ayrão - O Povo Canta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Povo Canta",
@@ -131785,6 +133107,7 @@ db = {
       "title": "o imperador",
       "year": 1978,
       "path": "1978 - Mano Décio da Viola - O imperador",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mandei buscar",
@@ -131877,6 +133200,7 @@ db = {
       "title": "Marçal Interpreta Bide e Marçal",
       "year": 1978,
       "path": "1978 - Marçal - Marçal Interpreta Bide e Marçal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Agora é Cinza / Meu Primeiro Amor / A Primeira vez / A Carta",
@@ -131934,6 +133258,7 @@ db = {
       "title": "Filme Nacional",
       "year": 1978,
       "path": "1978 - Marilia Barbosa - Filme Nacional",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manifesto",
@@ -132019,6 +133344,7 @@ db = {
       "title": "tendinha",
       "year": 1978,
       "path": "1978 - Martinho da Vila - Tendinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "minha comadre . garçom",
@@ -132069,6 +133395,7 @@ db = {
       "title": "Marçal Interpreta Bide e Marçal",
       "year": 1978,
       "path": "1978 - Mestre Marcal - Interpreta Bide E Marcal",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Agora É Cinza - Meu Primeiro Amor - A Primeira Vez -  A Carta",
@@ -132126,6 +133453,7 @@ db = {
       "title": "água benta",
       "year": 1978,
       "path": "1978 - Mussum - Àgua benta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chiclete de hortelã",
@@ -132218,6 +133546,7 @@ db = {
       "title": "Nova História da MPB Vol. 56: Ivan Lins & Luiz Gonzaga Jr.",
       "year": 1978,
       "path": "1978 - NHMPB Vol56Ivan Lins Luiz Gonzaga Jr",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Madalena",
@@ -132282,6 +133611,7 @@ db = {
       "title": "Não Me Deixe Só",
       "year": 1978,
       "path": "1978 - Noite Ilustrada - Não Me Deixe Só",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Flores Do Mal",
@@ -132374,6 +133704,7 @@ db = {
       "title": "Nova História da MPB Vol. 35: Capiba & Nelson Ferreira",
       "year": 1978,
       "path": "1978 - Nova Historia Da MPB Vol35Capiba Nelson Ferreira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Bethânia",
@@ -132438,6 +133769,7 @@ db = {
       "title": "Nova História Da Música Popular Brasileira Vol.49 - Adoniran Barbosa e Paulo Vanzolini",
       "year": 1978,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol49 – Adoniran Barbosa E Paulo Vanzolini",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudosa Maloca",
@@ -132502,6 +133834,7 @@ db = {
       "title": "Aniversário do Tarzan",
       "year": 1978,
       "path": "1978 - Os Originais do Samba - Aniversário do Tarzan",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aniversário do Tarzan",
@@ -132594,6 +133927,7 @@ db = {
       "title": "Paulinho da Viola",
       "year": 1978,
       "path": "1978 - Paulinho da Viola - Paulinho Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sentimento Perdido",
@@ -132686,6 +134020,7 @@ db = {
       "title": "Até A Amazônia?!",
       "year": 1978,
       "path": "1978 - Quinteto Violado - Ate A Amazonia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Conto do Canto",
@@ -132778,6 +134113,7 @@ db = {
       "title": "Babilônia",
       "year": 1978,
       "path": "1978 - Rita Lee - Babilonia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Miss Brasil 2000",
@@ -132849,6 +134185,7 @@ db = {
       "title": "Roberto Ribeiro",
       "year": 1978,
       "path": "1978 - Roberto Ribeiro - Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Todo Menino é um Rei",
@@ -132941,6 +134278,7 @@ db = {
       "title": "Radamés Gnattali: Obras Para Piano",
       "year": 1978,
       "path": "1978 - RobertoSzidon - Radames GnattaliObrasParaPiano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manhosamente",
@@ -133012,6 +134350,7 @@ db = {
       "title": "Sambas-Enredo 1978 Grupo 1",
       "year": 1978,
       "path": "1978 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Criação do Mundo na Tradição Nagô",
@@ -133090,6 +134429,7 @@ db = {
       "title": "Sambas-de-Enredo 1978 Grupo 2",
       "year": 1978,
       "path": "1978 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vamos Brincar de ser Criança",
@@ -133182,6 +134522,7 @@ db = {
       "title": "Cigarra",
       "year": 1978,
       "path": "1978 - Simone - Cigarra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cigarra",
@@ -133260,6 +134601,7 @@ db = {
       "title": "Disco Club",
       "year": 1978,
       "path": "1978 - Tim Maia Disco Club",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Fim de Voltar",
@@ -133338,6 +134680,7 @@ db = {
       "title": "Violas & Repentes - V Congresso Nacional De Violeiros - Disco 1",
       "year": 1978,
       "path": "1978 - Violas E Repentes V Congresso Nacional De Violeiros Disco1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Sou Martelo De Aço, Você Pedra De Granito",
@@ -133395,6 +134738,7 @@ db = {
       "title": "Xangô da Mangueira Vol.3",
       "year": 1978,
       "path": "1978 - Xangô da Mangueira - Xangô da Mangueira Vol3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dá no Nêgo",
@@ -133487,6 +134831,7 @@ db = {
       "title": "Zé Ramalho",
       "year": 1978,
       "path": "1978 - Ze Ramalho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Avôhai",
@@ -133593,6 +134938,7 @@ db = {
       "title": "Nova História da MPB Vol. 11: Luiz Gonzaga & Humberto Teixeira",
       "year": 1977,
       "path": "1976 - Nova Historia Da MPB Vol11 - Luiz Gonzaga Humberto Teixeira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Baião",
@@ -133657,6 +135003,7 @@ db = {
       "title": "Abel Ferreira & Filhos",
       "year": 1977,
       "path": "1977 - Abel Ferreira E Filhos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ingênuo",
@@ -133749,6 +135096,7 @@ db = {
       "title": "pra que chorar",
       "year": 1977,
       "path": "1977 - Alcione - Pra que chorar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ilha de maré",
@@ -133834,6 +135182,7 @@ db = {
       "title": "Os Mais Famosos Tangos",
       "year": 1977,
       "path": "1977 - Angela Maria - Os Mais Famosos Tangos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ouvindo-te",
@@ -133926,6 +135275,7 @@ db = {
       "title": "Baden Powell Canta Vinícius de Moraes e Paulo César Pinheiro",
       "year": 1977,
       "path": "1977 - Baden Powell Canta Vinicius De Moraes E Paulo Cesar Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Labareda",
@@ -133997,6 +135347,7 @@ db = {
       "title": "Nos Botequins da Vida",
       "year": 1977,
       "path": "1977 - Beth Carvalho - Nos Botequins da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saco de Feijão",
@@ -134089,6 +135440,7 @@ db = {
       "title": "partido alto nota 10",
       "year": 1977,
       "path": "1977 - Bezerra da Silva - Partido alto nota 10 – Bezerra e Genaro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a necessidade",
@@ -134181,6 +135533,7 @@ db = {
       "title": "Verde que te Quero Rosa",
       "year": 1977,
       "path": "1977 - Cartola - Verde que te Quero Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Verde que te Quero Rosa",
@@ -134273,6 +135626,7 @@ db = {
       "title": "Chorinho",
       "year": 1977,
       "path": "1977 - Chorinhos Marcus Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -134365,6 +135719,7 @@ db = {
       "title": "Choro Novo: \"Brasileirinho\" I Festival Nacional do Choro Disco 1",
       "year": 1977,
       "path": "1977 - Choro Novo Disco1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ivair",
@@ -134457,6 +135812,7 @@ db = {
       "title": "Choro Novo: \"Brasileirinho\" I Festival Nacional do Choro Disco 2",
       "year": 1977,
       "path": "1977 - Choro Novo Disco2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pão Com Manteiga",
@@ -134549,6 +135905,7 @@ db = {
       "title": "as forças da natureza",
       "year": 1977,
       "path": "1977 - Clara Nunes - As forças da natureza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "as forças da natureza",
@@ -134641,6 +135998,7 @@ db = {
       "title": "conjunto época de ouro interpreta pixinguinha e benedito lacerda",
       "year": 1977,
       "path": "1977 - Conjunto Época de Ouro interpreta Pixinguina e Benedito Lacerda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "flauta e pandeiro",
@@ -134733,6 +136091,7 @@ db = {
       "title": "5 Anos de Jazz",
       "year": 1977,
       "path": "1977 - Dick Farney Trio - 5Anos De Jazz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Branderburg Gate",
@@ -134783,6 +136142,7 @@ db = {
       "title": "Latino América Para Duas Guitarras",
       "year": 1977,
       "path": "1977 - DuoAssad OrquestraArmorial - LatinoAmericaParaDuasGuitarras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Concerto para 2 Violões, Oboé e Orquestra de Cordas 1º Movimento: Allegro moderato",
@@ -134847,6 +136207,7 @@ db = {
       "title": "Feito Para Ouvir",
       "year": 1977,
       "path": "1977 - Emílio Santiago - Feito Para Ouvir",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beijo Partido",
@@ -134932,6 +136293,7 @@ db = {
       "title": "Cidadão do Mundo",
       "year": 1977,
       "path": "1977 - Fernando Lona - Cidadao Do Mundo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desencanto",
@@ -135024,6 +136386,7 @@ db = {
       "title": "Gente do Choro",
       "year": 1977,
       "path": "1977 - Gente do Choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasileirinho",
@@ -135102,6 +136465,7 @@ db = {
       "title": "I Festival Nacional do Choro: As 12 Finalistas",
       "year": 1977,
       "path": "1977 - I Festival Nacional Do Choro As12Finalistas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Homenagem ao Época de Ouro",
@@ -135145,6 +136509,7 @@ db = {
       "title": "espelho",
       "year": 1977,
       "path": "1977 - João Nogueira - Espelho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pimenta no vatapá",
@@ -135237,6 +136602,7 @@ db = {
       "title": "Luiz Ayrão",
       "year": 1977,
       "path": "1977 - Luiz Ayrão - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulher à Brasileira",
@@ -135329,6 +136695,7 @@ db = {
       "title": "Moleque Gonzaguinha",
       "year": 1977,
       "path": "1977 - Luiz Gonzaga Jr - Moleque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dias de Santos e Silvas",
@@ -135407,6 +136774,7 @@ db = {
       "title": "História de Um Bandolim",
       "year": 1977,
       "path": "1977 - Luperce Miranda - Historia De Um Bandolim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "História de um Bandolim",
@@ -135499,6 +136867,7 @@ db = {
       "title": "Antologia De Marchinhas",
       "year": 1977,
       "path": "1977 - Marlene - Antologia Da Marchinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-Pourri Joubert De Carvalho",
@@ -135577,6 +136946,7 @@ db = {
       "title": "presente",
       "year": 1977,
       "path": "1977 - Martinho da Vila - Presente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vai ou não vai",
@@ -135669,6 +137039,7 @@ db = {
       "title": "Batucada, Mestre Andre e sua bateria",
       "year": 1977,
       "path": "1977 - Mestre André - Batucada – Mestre André e sua bateria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Repiques Mandam No Samba",
@@ -135761,6 +137132,7 @@ db = {
       "title": "Nana",
       "year": 1977,
       "path": "1977 - Nana Caymmi - Nana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dona Olímpia",
@@ -135853,6 +137225,7 @@ db = {
       "title": "Vale Uma Parada",
       "year": 1977,
       "path": "1977 - Noite Ilustrada - Vale Uma Parada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandro",
@@ -135973,6 +137346,7 @@ db = {
       "title": "Nova História da MPB Vol. 13: Gilberto Gil",
       "year": 1977,
       "path": "1977 - Nova Historia Da MPB Vol13 - Gilberto Gil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Domingo no parque",
@@ -136037,6 +137411,7 @@ db = {
       "title": "Nova História Da MPB Vol.08 - Lamartine Babo",
       "year": 1977,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol08 – Lamartine Babo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Teu Cabelo Não Nega",
@@ -136101,6 +137476,7 @@ db = {
       "title": "Nova História Da MPB Vol.12 - Assis Valente",
       "year": 1977,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol12 – Assis Valente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Camisa Listrada",
@@ -136165,6 +137541,7 @@ db = {
       "title": "Nova História da Música Popular Brasileira Vol. 14 - Ary Barroso",
       "year": 1977,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol14 – Ary Barroso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Batucada Da Vida",
@@ -136222,6 +137599,7 @@ db = {
       "title": "nova história da mpb silas de oliveira e mano décio da viola",
       "year": 1977,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol21 – Silas De Oliveira E Mano Décio Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "na água do rio",
@@ -136286,6 +137664,7 @@ db = {
       "title": "Antologia da Bossa Nova: 20 Anos Depois",
       "year": 1977,
       "path": "1977 - O Quarteto - Antologia Da Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Zelão - O Nosso Olhar",
@@ -136364,6 +137743,7 @@ db = {
       "title": "Os Bons Sambistas Vão Voltar",
       "year": 1977,
       "path": "1977 - Os Originais do Samba - Os bons sambistas vão voltar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou Levando Meu Canto",
@@ -136456,6 +137836,7 @@ db = {
       "title": "partido em 5 volume 03",
       "year": 1977,
       "path": "1977 - Partido Em 5 Volume 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sou mais o samba",
@@ -136555,6 +137936,7 @@ db = {
       "title": "Quatro grandes do samba",
       "year": 1977,
       "path": "1977 - Quatro Grandes Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não vem",
@@ -136647,6 +138029,7 @@ db = {
       "title": "Sweet Lucy",
       "year": 1977,
       "path": "1977 - Raul De Souza - Sweet Lucy",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sweet Lucy",
@@ -136711,6 +138094,7 @@ db = {
       "title": "Poeira Pura",
       "year": 1977,
       "path": "1977 - Roberto Ribeiro - Poeira Pura",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Liberdade",
@@ -136803,6 +138187,7 @@ db = {
       "title": "roberto riberti",
       "year": 1977,
       "path": "1977 - Roberto Riberti - Roberto Riberti",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apenas mais um",
@@ -136909,6 +138294,7 @@ db = {
       "title": "Sambas-Enredo 1977 Grupo 1",
       "year": 1977,
       "path": "1977 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Panapanã, O Segredo do Amor",
@@ -137001,6 +138387,7 @@ db = {
       "title": "Sambas-de-Enredo 1977 Grupo 2",
       "year": 1977,
       "path": "1977 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Banzo",
@@ -137093,6 +138480,7 @@ db = {
       "title": "Crioula",
       "year": 1977,
       "path": "1977 - Sonia Santos - Crioula",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Lavadeira",
@@ -137185,6 +138573,7 @@ db = {
       "title": "Meu interior",
       "year": 1977,
       "path": "1977 - Tião Motorista - Meu Interior",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dizem",
@@ -137277,6 +138666,7 @@ db = {
       "title": "Uma Noite No 706",
       "year": 1977,
       "path": "1977 - Uma Noite No706",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Medley 1",
@@ -137299,6 +138689,7 @@ db = {
       "title": "Viva A Nau Catarineta!",
       "year": 1977,
       "path": "1977 - Viva A Nau Catarineta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Truléu Da Marieta",
@@ -137391,6 +138782,7 @@ db = {
       "title": "os bambas do partido alto",
       "year": 1977,
       "path": "1978 - Os bambas do partido alto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "primavera",
@@ -137441,6 +138833,7 @@ db = {
       "title": "Toalha da Saudade",
       "year": 1976,
       "path": "1973 - Batatinha - Toalha da saudade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Toalha da saudade",
@@ -137533,6 +138926,7 @@ db = {
       "title": "histórias das escolas de samba volume 3",
       "year": 1976,
       "path": "1975 - Histórias das escolas de samba Volume 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "homenagem",
@@ -137597,6 +138991,7 @@ db = {
       "title": "histórias das escolas de samba volume 4",
       "year": 1976,
       "path": "1975 - Histórias das escolas de samba Volume 4 O maior mesmo era Noel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "amanhecer",
@@ -137654,6 +139049,7 @@ db = {
       "title": "Maria Creuza E Os Grandes Mestres Do Samba",
       "year": 1976,
       "path": "1975 - Maria Creuza - Maria Creuza E Os Grandes Mestres Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chega Pra Lá",
@@ -137746,6 +139142,7 @@ db = {
       "title": "partido em 5 volume 02",
       "year": 1976,
       "path": "1975 - Partido Em 5 Volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "história de pescador",
@@ -137852,6 +139249,7 @@ db = {
       "title": "morte de um poeta",
       "year": 1976,
       "path": "1976 - Alcione - A morte de um poeta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "morte de um poeta",
@@ -137944,6 +139342,7 @@ db = {
       "title": "Arthur Moreira Lima Interpreta Frederic Chopin Vol. 1",
       "year": 1976,
       "path": "1976 - Arthur Moreira Lima Interpreta Chopin Vol1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Balada Nº 1 Em Sol Menor, Op. 23",
@@ -138022,6 +139421,7 @@ db = {
       "title": "O Rei do Côco Vol. II",
       "year": 1976,
       "path": "1976 - Bezerra da Silva - O rei do cõco - Volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Não Souber Dizer",
@@ -138114,6 +139514,7 @@ db = {
       "title": "Cartola",
       "year": 1976,
       "path": "1976 - Cartola - Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Mundo é um Moinho",
@@ -138206,6 +139607,7 @@ db = {
       "title": "clementina de jesus homenagem a carlos cachaca",
       "year": 1976,
       "path": "1976 - Clementina de Jesus - Convidado especial - Carlos Cachaça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pergunte ao joão",
@@ -138298,6 +139700,7 @@ db = {
       "title": "nira gongo",
       "year": 1976,
       "path": "1976 - Conjunto Baluartes - Nira Gongo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "por favor",
@@ -138383,6 +139786,7 @@ db = {
       "title": "clube do choro",
       "year": 1976,
       "path": "1976 - Conjunto Época de Ouro - Clube do choro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o boemio",
@@ -138475,6 +139879,7 @@ db = {
       "title": "nosso samba",
       "year": 1976,
       "path": "1976 - Conjunto Nosso Samba - Nosso Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "jandira",
@@ -138567,6 +139972,7 @@ db = {
       "title": "Dick Farney",
       "year": 1976,
       "path": "1976 - Dick Farney",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aeromoça",
@@ -138659,6 +140065,7 @@ db = {
       "title": "Tudo Isto É Amor Vol. 2",
       "year": 1976,
       "path": "1976 - Dick Farney Claudette Soares - Tudo Isso E Amor Vol2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chuva",
@@ -138744,6 +140151,7 @@ db = {
       "title": "Disco Síntese da Coleção Música Popular do Norte",
       "year": 1976,
       "path": "1976 - Disco Sintese Musica Popular Do Norte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rolinha",
@@ -138885,6 +140293,7 @@ db = {
       "title": "Pequenino",
       "year": 1976,
       "path": "1976 - Ederaldo Gentil - Pequenino",
+      "has_cover": true,
       "tracks": [
         {
           "title": "In-lê-in-lá",
@@ -138977,6 +140386,7 @@ db = {
       "title": "o importante e que a nossa emoção sobreviva vol 2",
       "year": 1976,
       "path": "1976 - Eduardo Gudin, Márcia e Paulo César Pinheiro - O Importante É Que A Nossa Emoção Sobreviva 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "velho passarinho",
@@ -139069,6 +140479,7 @@ db = {
       "title": "Falso Brilhante",
       "year": 1976,
       "path": "1976 - Elis Regina - Falso Brilhante",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Como Nossos Pais",
@@ -139147,6 +140558,7 @@ db = {
       "title": "Lição De Vida",
       "year": 1976,
       "path": "1976 - Elza Soares - Lição De Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandro",
@@ -139239,6 +140651,7 @@ db = {
       "title": "Encontro com a Velha Guarda",
       "year": 1976,
       "path": "1976 - Encontro com a Velha Guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade do Passado",
@@ -139317,6 +140730,7 @@ db = {
       "title": "África Brasil",
       "year": 1976,
       "path": "1976 - Jorge Ben - Africa Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ponta de lança africano (Umbabarauma)",
@@ -139402,6 +140816,7 @@ db = {
       "title": "eu e meu pandeiro",
       "year": 1976,
       "path": "1976 - Jorginho do Império - Eu e meu pandeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "água no feijão",
@@ -139501,6 +140916,7 @@ db = {
       "title": "Urbana",
       "year": 1976,
       "path": "1976 - Leo Karan - Urbana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Charlotte",
@@ -139593,6 +141009,7 @@ db = {
       "title": "Luiz Ayrão",
       "year": 1976,
       "path": "1976 - Luiz Ayrão - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Conto Até Dez",
@@ -139685,6 +141102,7 @@ db = {
       "title": "Começaria Tudo Outra Vez...",
       "year": 1976,
       "path": "1976 - Luiz Gonzaga Jr. - Comecaria Tudo Outra Vez",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Nem Ligo",
@@ -139763,6 +141181,7 @@ db = {
       "title": "Trem dos Condenados",
       "year": 1976,
       "path": "1976 - Marcus Vinicius - Trem Dos Condenados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Trem Dos Condenados",
@@ -139869,6 +141288,7 @@ db = {
       "title": "rosa do povo",
       "year": 1976,
       "path": "1976 - Martinho da Vila - Rosa do Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "claustrofobia",
@@ -139954,6 +141374,7 @@ db = {
       "title": "Noite Ilustrada",
       "year": 1976,
       "path": "1976 - Noite Ilustrada - Noite Ilustrada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Velho Companheiro",
@@ -140053,6 +141474,7 @@ db = {
       "title": "Nova História da MPB Vol.02 - Dorival Caymmi",
       "year": 1976,
       "path": "1976 - Nova História Da Música Popular Brasileira Vol02 – Dorival Caymmi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Da Minha Terra",
@@ -140110,6 +141532,7 @@ db = {
       "title": "Memórias Cantando",
       "year": 1976,
       "path": "1976 - Paulinho da Viola - Memórias Cantando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nova Ilusão",
@@ -140202,6 +141625,7 @@ db = {
       "title": "Entradas e Bandeiras",
       "year": 1976,
       "path": "1976 - Rita Lee Tutti Frutti - Entradas E Bandeiras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Corista de rock",
@@ -140273,6 +141697,7 @@ db = {
       "title": "Arrasta Povo",
       "year": 1976,
       "path": "1976 - Roberto Ribeiro - Arrasta Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tempo ê",
@@ -140365,6 +141790,7 @@ db = {
       "title": "Sambas-Enredo 1976 Grupo 1",
       "year": 1976,
       "path": "1976 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Reino da Mãe do Ouro",
@@ -140471,6 +141897,7 @@ db = {
       "title": "Sambas-de-Enredo 1976 Grupo 2",
       "year": 1976,
       "path": "1976 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Acalanto para Uiara",
@@ -140563,6 +141990,7 @@ db = {
       "title": "Ponto de Partida",
       "year": 1976,
       "path": "1976 - Sergio Ricardo - Ponto De Partida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ponto de Partida",
@@ -140606,6 +142034,7 @@ db = {
       "title": "Tim Maia",
       "year": 1976,
       "path": "1976 - Tim Maia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dance Enquanto É Tempo",
@@ -140691,6 +142120,7 @@ db = {
       "title": "Vassourinha",
       "year": 1976,
       "path": "1976 - Vassourinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seu Libório",
@@ -140783,6 +142213,7 @@ db = {
       "title": "Soy Latino Americano",
       "year": 1976,
       "path": "1976 - Ze Rodrix - Soy Latino Americano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Soy latino americano",
@@ -140896,6 +142327,7 @@ db = {
       "title": "Deu  zebra",
       "year": 1976,
       "path": "1976 - Zuzuca - Deu zebra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Colibri",
@@ -141002,6 +142434,7 @@ db = {
       "title": "Escolas de Samba Enredos - Beija-Flor",
       "year": 1976,
       "path": "1993 - Escolas de Samba Enredos – Beija-Flor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sonhar com Rei dá Leão",
@@ -141080,6 +142513,7 @@ db = {
       "title": "O Rei do Côco",
       "year": 1975,
       "path": "1973 - Bezerra da Silva - O rei do côco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Rei do Côco",
@@ -141172,6 +142606,7 @@ db = {
       "title": "Zé Di... Samba",
       "year": 1975,
       "path": "1974 - Zé Di - Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Outro bouquet",
@@ -141250,6 +142685,7 @@ db = {
       "title": "Abertura - Festival Da Nova Música Brasileira",
       "year": 1975,
       "path": "1975 - Abertura Festival da Nova Musica Brasileira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tamanco Malandrinho",
@@ -141342,6 +142778,7 @@ db = {
       "title": "Ademilde Fonseca",
       "year": 1975,
       "path": "1975 - Ademilde Fonseca",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Lamento",
@@ -141434,6 +142871,7 @@ db = {
       "title": "Adoniran Barbosa",
       "year": 1975,
       "path": "1975 - Adoniran Barbosa - Adoniran Barbosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Morro da Casa Verde",
@@ -141526,6 +142964,7 @@ db = {
       "title": "claridade",
       "year": 1975,
       "path": "1975 - Clara Nunes - Claridade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o mar serenou",
@@ -141618,6 +143057,7 @@ db = {
       "title": "Di Melo",
       "year": 1975,
       "path": "1975 - Di Melo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Kilariô",
@@ -141710,6 +143150,7 @@ db = {
       "title": "Série Temas n. 1: Fim de Caso/Reconciliação/Solidariedade",
       "year": 1975,
       "path": "1975 - Eduardo Conde Yvette - Serie Temas No1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Conselho",
@@ -141802,6 +143243,7 @@ db = {
       "title": "eduardo gudin",
       "year": 1975,
       "path": "1975 - Eduardo Gudin - Mãos vazias",
+      "has_cover": true,
       "tracks": [
         {
           "title": "derradeiro porto",
@@ -141894,6 +143336,7 @@ db = {
       "title": "o importante é que a nossa emoção sobreviva",
       "year": 1975,
       "path": "1975 - Eduardo Gudin, Márcia e Paulo César Pinheiro - O Importante É Que A Nossa Emoção Sobreviva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "veneno",
@@ -141944,6 +143387,7 @@ db = {
       "title": "Nos Braços Do Samba",
       "year": 1975,
       "path": "1975 - Elza Soares - Nos Braços Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Primeiro Eu",
@@ -142036,6 +143480,7 @@ db = {
       "title": "Ave Noturna",
       "year": 1975,
       "path": "1975 - Fagner - Ave Noturna",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fracassos",
@@ -142114,6 +143559,7 @@ db = {
       "title": "Brasil Romântico",
       "year": 1975,
       "path": "1975 - Geraldo Vespar - Brasil Romantico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Garota de Ipanema",
@@ -142206,6 +143652,7 @@ db = {
       "title": "histórias das escolas de samba volume 2",
       "year": 1975,
       "path": "1975 - Histórias das escolas de samba Volume 2 O samba sem regulamento",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o quitandeiro",
@@ -142270,6 +143717,7 @@ db = {
       "title": "Solta O Pavão",
       "year": 1975,
       "path": "1975 - Jorge Ben - Solta O Pavao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Zagueiro",
@@ -142362,6 +143810,7 @@ db = {
       "title": "Gil & Jorge - Ogum Xangô",
       "year": 1975,
       "path": "1975 - Jorge Ben Gilberto Gil - Ogum Xango",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu glorioso São Cristovão",
@@ -142433,6 +143882,7 @@ db = {
       "title": "Viagem encantada",
       "year": 1975,
       "path": "1975 - Jorginho do Império - Viagem encantada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na beira do mar",
@@ -142476,6 +143926,7 @@ db = {
       "title": "antes que eu volte a ser nada",
       "year": 1975,
       "path": "1975 - Leci Brandão - Antes que eu volte a ser nada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "antes que eu volte a ser nada",
@@ -142561,6 +144012,7 @@ db = {
       "title": "Missão",
       "year": 1975,
       "path": "1975 - Luiz Ayrão - Missão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudades Da República",
@@ -142653,6 +144105,7 @@ db = {
       "title": "maravilha de cenário",
       "year": 1975,
       "path": "1975 - Martinho da Vila - Maravilha de cenário",
+      "has_cover": true,
       "tracks": [
         {
           "title": "aquarela brasileira",
@@ -142745,6 +144198,7 @@ db = {
       "title": "Meu Primeiro Amor",
       "year": 1975,
       "path": "1975 - Nara Leao - Meu Primeiro Amor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Atirei o pau no gato",
@@ -142844,6 +144298,7 @@ db = {
       "title": "O Forró Vai Ser Doutor",
       "year": 1975,
       "path": "1975 - Odair Cabeca De Poeta Grupo Capote - O Forro Vai Ser Doutor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sertão De Nova York",
@@ -142936,6 +144391,7 @@ db = {
       "title": "Os Maiores Sambas-Enredo de Todos Os Tempos Vol. 3",
       "year": 1975,
       "path": "1975 - Os Maiores Sambas - Enredo De Todos Os Tempos Vol3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Macunaíma (Portela)",
@@ -143014,6 +144470,7 @@ db = {
       "title": "Alegria de sambar",
       "year": 1975,
       "path": "1975 - Os Originais do Samba - Alegria de sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Confidências de um sambista",
@@ -143120,6 +144577,7 @@ db = {
       "title": "os maiores sambas-enredo de todos os tempos vol. 3",
       "year": 1975,
       "path": "1975 - Os maiores sambas-enredos de todos os tempos – Vol 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "macunaíma",
@@ -143149,6 +144607,7 @@ db = {
       "title": "Paulinho da Viola",
       "year": 1975,
       "path": "1975 - Paulinho da Viola - Paulinho Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E a Vida Continua",
@@ -143234,6 +144693,7 @@ db = {
       "title": "sambistas unidos",
       "year": 1975,
       "path": "1975 - Picolino da Portela - Sambista unidos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "deixa a portela passar",
@@ -143326,6 +144786,7 @@ db = {
       "title": "Molejo",
       "year": 1975,
       "path": "1975 - Roberto Ribeiro - Molejo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sinto",
@@ -143418,6 +144879,7 @@ db = {
       "title": "Sambas-Enredo 1975 Grupo 1",
       "year": 1975,
       "path": "1975 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Macunaíma, Herói de nossa Gente",
@@ -143510,6 +144972,7 @@ db = {
       "title": "Sambas-de-Enredo 1975 Grupo 2",
       "year": 1975,
       "path": "1975 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dona Flor e seus dois Maridos",
@@ -143616,6 +145079,7 @@ db = {
       "title": "Gotas d'Água",
       "year": 1975,
       "path": "1975 - Simone - Gotas D Agua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gota d'Água",
@@ -143701,6 +145165,7 @@ db = {
       "title": "Tim Maia Racional Vol. 1",
       "year": 1975,
       "path": "1975 - Tim Maia Racional Vol 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Imunização Racional",
@@ -143772,6 +145237,7 @@ db = {
       "title": "Velho batuqueiro",
       "year": 1975,
       "path": "1975 - Xangô da Mangueira - Velho Batuqueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carolina meu bem",
@@ -143864,6 +145330,7 @@ db = {
       "title": "Radamés Gnattali Sexteto",
       "year": 1975,
       "path": "1985 - Radames Gnattali Sexteto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1 X 0",
@@ -143928,6 +145395,7 @@ db = {
       "title": "Adoniran e Convidados",
       "year": 1975,
       "path": "2006 - Adoniran Barbosa - Adoniran e Convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fica mais um pouco",
@@ -144034,6 +145502,7 @@ db = {
       "title": "polêmica: wilson batista x noel rosa",
       "year": 1974,
       "path": "1956 - Roberto Paiva e Francisco Egydio - Polêmica – Wilson Batista X Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lenço no pescoço",
@@ -144105,6 +145574,7 @@ db = {
       "title": "Adoniran Barbosa",
       "year": 1974,
       "path": "1974 - Adoniran Barbosa - Adoniran Barbosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abrigo de Vagabundos",
@@ -144197,6 +145667,7 @@ db = {
       "title": "Virgin Land",
       "year": 1974,
       "path": "1974 - Airto Moreira - Virgin Land",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Stanley's Tune",
@@ -144254,6 +145725,7 @@ db = {
       "title": "Baiano E Os Novos Caetanos",
       "year": 1974,
       "path": "1974 - Baiano E Os Novos Caetanos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vô Batê Pá Tu",
@@ -144339,6 +145811,7 @@ db = {
       "title": "Redenção",
       "year": 1974,
       "path": "1974 - Banda De Pau E Corda - Redencao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Flor d'Água",
@@ -144431,6 +145904,7 @@ db = {
       "title": "pra seu governo",
       "year": 1974,
       "path": "1974 - Beth Carvalho - Prá Seu Governo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "miragem",
@@ -144523,6 +145997,7 @@ db = {
       "title": "a música de paulo vanzolini",
       "year": 1974,
       "path": "1974 - Carmen Costa e Paulo Marques - A música de Paulo Vanzolini",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mulher que não dá samba",
@@ -144615,6 +146090,7 @@ db = {
       "title": "Cartola",
       "year": 1974,
       "path": "1974 - Cartola - Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Disfarça e Chora",
@@ -144707,6 +146183,7 @@ db = {
       "title": "Gabriela",
       "year": 1974,
       "path": "1974 - Chico Maranhao - Gabriela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gabriela",
@@ -144792,6 +146269,7 @@ db = {
       "title": "cinco só",
       "year": 1974,
       "path": "1974 - Cinco só - 5 só",
+      "has_cover": true,
       "tracks": [
         {
           "title": "fim de festa",
@@ -144884,6 +146362,7 @@ db = {
       "title": "brasileiro profisão esperança",
       "year": 1974,
       "path": "1974 - Clara Nunes e Paulo Gracindo - Brasileiro profissão esperança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ternura antiga . ninguém me ama . valsa de uma cidade . menino grande . estrada do sol . a noite do meu bem . manha de carnaval . frevo número dois do recife . castigo . fim de caso . por causa de você",
@@ -144906,6 +146385,7 @@ db = {
       "title": "Coral da Universidade de São Paulo",
       "year": 1974,
       "path": "1974 - Coral Da USP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Frevos Diversos: Evocação / Chuva, Suor E Cerveja / A Dor De Uma Saudade / Trio Elétrico",
@@ -144984,6 +146464,7 @@ db = {
       "title": "Elza Soares",
       "year": 1974,
       "path": "1974 - Elza Soares - Elza Soares",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bom Dia, Portela",
@@ -145076,6 +146557,7 @@ db = {
       "title": "Frevo Ao Vivo",
       "year": 1974,
       "path": "1974 - Frevo Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura: Zé Pereira / Vassourinhas",
@@ -145182,6 +146664,7 @@ db = {
       "title": "história das escolas de samba império serrano",
       "year": 1974,
       "path": "1974 - História das Escolas de Samba – Império",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sou imperial",
@@ -145274,6 +146757,7 @@ db = {
       "title": "Os Melhores Sambas Enredo 75",
       "year": 1974,
       "path": "1974 - Jamelão - Os Melhores Sambas de Enredo 75",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Imagens Poéticas De Jorge De Lima",
@@ -145352,6 +146836,7 @@ db = {
       "title": "E lá Vou eu",
       "year": 1974,
       "path": "1974 - João Nogueira - E lá Vou eu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E Lá Vou eu (Mensageiro)",
@@ -145444,6 +146929,7 @@ db = {
       "title": "Nós",
       "year": 1974,
       "path": "1974 - Johnny Alf - Nos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudações",
@@ -145522,6 +147008,7 @@ db = {
       "title": "A Tábua de Esmeralda",
       "year": 1974,
       "path": "1974 - Jorge Ben - A Tabua De Esmeralda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os alquimistas estão chegando os alquimistas",
@@ -145614,6 +147101,7 @@ db = {
       "title": "Luiz Ayrão",
       "year": 1974,
       "path": "1974 - Luiz Ayrão - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Silêncio Da Madrugada",
@@ -145706,6 +147194,7 @@ db = {
       "title": "gravações originais",
       "year": 1974,
       "path": "1974 - Lupicínio Rodrigues - Gravações originais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "felicidade",
@@ -145798,6 +147287,7 @@ db = {
       "title": "capitulo maior da história do samba",
       "year": 1974,
       "path": "1974 - Mano Décio da Viola - Capítulo maior da história do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "santos em outros tempos",
@@ -145890,6 +147380,7 @@ db = {
       "title": "A Cena Muda",
       "year": 1974,
       "path": "1974 - Maria Bethania - A Cena Muda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Faixa 1",
@@ -145912,6 +147403,7 @@ db = {
       "title": "canta canta minha gente",
       "year": 1974,
       "path": "1974 - Martinho da Vila - Canta canta minha gente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "canta canta minha gente",
@@ -146004,6 +147496,7 @@ db = {
       "title": "Os Melhores Sambas de Todos os Tempos",
       "year": 1974,
       "path": "1974 - Os Novos Batutas - Os Melhores Sambas de Todos os Tempos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ai que Saudades da Amélia / Formosa",
@@ -146082,6 +147575,7 @@ db = {
       "title": "Pra Que Tristeza",
       "year": 1974,
       "path": "1974 - Os Originais do Samba - Pra que tristeza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade e Flores",
@@ -146174,6 +147668,7 @@ db = {
       "title": "Fados Brasileiros",
       "year": 1974,
       "path": "1974 - Paula Ribas - Fados Brasileiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudades Do Brasil Em Portugal",
@@ -146266,6 +147761,7 @@ db = {
       "title": "Paulistana",
       "year": 1974,
       "path": "1974 - Paulistana - Retrato de Uma Cidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Louvação de Anchieta",
@@ -146379,6 +147875,7 @@ db = {
       "title": "A Feira",
       "year": 1974,
       "path": "1974 - Quinteto Violado - A Feira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Assum preto",
@@ -146464,6 +147961,7 @@ db = {
       "title": "Sambas-Enredo 1974 Grupo 1",
       "year": 1974,
       "path": "1974 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Mundo Melhor de Pixinguinha",
@@ -146542,6 +148040,7 @@ db = {
       "title": "Sambas-de-Enredo 1974 Grupo 2",
       "year": 1974,
       "path": "1974 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Devaneios de um Poeta",
@@ -146641,6 +148140,7 @@ db = {
       "title": "I Believe",
       "year": 1974,
       "path": "1974 - Sergio Mendes Brasil77 - I Believe",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Davy",
@@ -146719,6 +148219,7 @@ db = {
       "title": "Saravá Vinicius!",
       "year": 1974,
       "path": "1974 - V Moraes Quarteto Em Cy Toquinho - Sarava Vinicius",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vinicius Presenta A Todos Los Participantes Del Show",
@@ -146846,6 +148347,7 @@ db = {
       "title": "zuzuca",
       "year": 1974,
       "path": "1974 - Zuzuca - Zuzuca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sonhos de menina",
@@ -146952,6 +148454,7 @@ db = {
       "title": "Conjunto Nosso Samba",
       "year": 1974,
       "path": "1975 - Conjunto Nosso Samba - Conjunto Nosso Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Ouro e Madeira",
@@ -147037,6 +148540,7 @@ db = {
       "title": "história das escolas de samba mangueira",
       "year": 1974,
       "path": "1975 - História das Escolas de Samba – Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a mais querida",
@@ -147129,6 +148633,7 @@ db = {
       "title": "história das escolas de samba salgueiro",
       "year": 1974,
       "path": "1975 - História das Escolas de Samba – Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "morro inspiracão",
@@ -147214,6 +148719,7 @@ db = {
       "title": "roda de samba n.2",
       "year": 1974,
       "path": "1975 - Roda de samba n2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "proteção",
@@ -147292,6 +148798,7 @@ db = {
       "title": "Velho de Guerra",
       "year": 1973,
       "path": "1973 - Abilio Manoel - Velho De Guerra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Era Uma Vez",
@@ -147384,6 +148891,7 @@ db = {
       "title": "Antonio Carlos & Jocafi",
       "year": 1973,
       "path": "1973 - Antonio Carlos E Jocafi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Teimosa",
@@ -147476,6 +148984,7 @@ db = {
       "title": "canto por um novo dia",
       "year": 1973,
       "path": "1973 - Beth Carvalho - Canto Por Um Novo Dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "hora de chorar",
@@ -147575,6 +149084,7 @@ db = {
       "title": "Bom Balanço em Bossa Nova",
       "year": 1973,
       "path": "1973 - Carlos Penha - Bom Balanco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bom Balanço",
@@ -147667,6 +149177,7 @@ db = {
       "title": "Apresentamos Nosso Cassiano",
       "year": 1973,
       "path": "1973 - Cassiano - Apresentamos Nosso Cassiano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Vale",
@@ -147745,6 +149256,7 @@ db = {
       "title": "clara nunes 1973",
       "year": 1973,
       "path": "1973 - Clara Nunes - Clara Nunes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tristeza pé no chão",
@@ -147837,6 +149349,7 @@ db = {
       "title": "marinheiro só",
       "year": 1973,
       "path": "1973 - Clementina de Jesus - Marinheiro só",
+      "has_cover": true,
       "tracks": [
         {
           "title": "marinheiro só",
@@ -147943,6 +149456,7 @@ db = {
       "title": "Caymmi Também É de Rancho",
       "year": 1973,
       "path": "1973 - Dorival Caymmi - Caymmi Tamb m E de Rancho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Das Rosas",
@@ -148035,6 +149549,7 @@ db = {
       "title": "Elza Soares",
       "year": 1973,
       "path": "1973 - Elza Soares - Elza Soares",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Não Toco Berimbau",
@@ -148127,6 +149642,7 @@ db = {
       "title": "filosofia do samba",
       "year": 1973,
       "path": "1973 - Èlton Medeiros - Élton Medeiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "avenida fechada",
@@ -148219,6 +149735,7 @@ db = {
       "title": "Um Piano Sobe O Morro",
       "year": 1973,
       "path": "1973 - Joao Roberto Kelly - Um Piano Sobe O Morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ninguém Tasca",
@@ -148311,6 +149828,7 @@ db = {
       "title": "João Roberto Kelly Apresenta Rio Dá Samba",
       "year": 1973,
       "path": "1973 - Joao Roberto Kelly Apresenta Rio Da Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Danca do Bole Bole",
@@ -148403,6 +149921,7 @@ db = {
       "title": "10 Anos Depois",
       "year": 1973,
       "path": "1973 - Jorge Ben - 10Anos Depois",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por Causa De Você, Menina/Chove Chuva/Mas Que Nada",
@@ -148467,6 +149986,7 @@ db = {
       "title": "Dor de Cotovelo",
       "year": 1973,
       "path": "1973 - Lupicinio Rodrigues - Dor de Cotovelo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se É Verdade",
@@ -148559,6 +150079,7 @@ db = {
       "title": "Transamba",
       "year": 1973,
       "path": "1973 - Marcos Moran e Samba Som 7 - Transamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Partido Alto",
@@ -148651,6 +150172,7 @@ db = {
       "title": "origens",
       "year": 1973,
       "path": "1973 - Martinho da Vila - Origens",
+      "has_cover": true,
       "tracks": [
         {
           "title": "casa um da vila . larga meu pé . eu quero essa mulher assim mesmo . me deixa em paz . mora na filosofia . a fonte secou . lamento da lavadeira",
@@ -148743,6 +150265,7 @@ db = {
       "title": "Milton Banana",
       "year": 1973,
       "path": "1973 - Milton Banana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Do lado direito da rua direita",
@@ -148835,6 +150358,7 @@ db = {
       "title": "Consagração",
       "year": 1973,
       "path": "1973 - Moreira da Silva - Consagração - Ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Rei do Cangaço",
@@ -148927,6 +150451,7 @@ db = {
       "title": "Nelson Cavaquinho",
       "year": 1973,
       "path": "1973 - Nelson Cavaquinho - Nelson Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Juízo Final",
@@ -149026,6 +150551,7 @@ db = {
       "title": "irmão do samba",
       "year": 1973,
       "path": "1973 - Noite Ilustrada - Irmão Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "testamento",
@@ -149118,6 +150644,7 @@ db = {
       "title": "cobras criadas",
       "year": 1973,
       "path": "1973 - Os Partideiros do Plá - Cobras criadas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cara de pau",
@@ -149210,6 +150737,7 @@ db = {
       "title": "Nervos de Aço",
       "year": 1973,
       "path": "1973 - Paulinho da Viola - Nervos de Aço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sentimentos",
@@ -149288,6 +150816,7 @@ db = {
       "title": "Paulo DIniz",
       "year": 1973,
       "path": "1973 - Paulo Diniz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou-me embora",
@@ -149373,6 +150902,7 @@ db = {
       "title": "Estão Voltando os Bons Tempos",
       "year": 1973,
       "path": "1973 - Pedrinho Rodrigues E Os Nacionais - Estao Voltando Os Bons Tempos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lata D'Água - Levanta Mangueir",
@@ -149451,6 +150981,7 @@ db = {
       "title": "Adeus Guanabara",
       "year": 1973,
       "path": "1973 - Pedrinho Rodrigues e Samba Som Sete - Adeus Guanabara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tenha pena de mim / Deus me perdoe / Implorar / Fechei a porta / Maior é deus / Deus lhe pague",
@@ -149522,6 +151053,7 @@ db = {
       "title": "Phono 73: O Canto de Um Povo Vol. 1",
       "year": 1973,
       "path": "1973 - Phono 73 Vol 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Regra Três",
@@ -149614,6 +151146,7 @@ db = {
       "title": "Phono 73: O Canto de Um Povo Vol. 2",
       "year": 1973,
       "path": "1973 - Phono 73 Vol 2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "É Com Esse Que Eu Vou",
@@ -149699,6 +151232,7 @@ db = {
       "title": "Phono 73: O Canto de Um Povo Vol. 3",
       "year": 1973,
       "path": "1973 - Phono 73 Vol 3",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Diz Que Eu Fui Por Aí",
@@ -149770,6 +151304,7 @@ db = {
       "title": "Roda de samba",
       "year": 1973,
       "path": "1973 - Roda de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Água boa é no meu poço - Samba do trabalhador",
@@ -149841,6 +151376,7 @@ db = {
       "title": "Sebastião Tapajós, Maria Nazareth & Arnaldo Henriques",
       "year": 1973,
       "path": "1973 - S Tapajos M Nazareth A Henriques",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Medlley",
@@ -149933,6 +151469,7 @@ db = {
       "title": "Sambas da Bahia",
       "year": 1973,
       "path": "1973 - Samba da Bahia - Riachão, Batatinha e Panela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou chegando",
@@ -150032,6 +151569,7 @@ db = {
       "title": "Sambas-Enredo 1973 Grupo 1",
       "year": 1973,
       "path": "1973 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pasárgada, o Amigo do Rei",
@@ -150110,6 +151648,7 @@ db = {
       "title": "Sambas-de-Enredo 1973 Grupo 2",
       "year": 1973,
       "path": "1973 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Imortais da Música Brasileira",
@@ -150202,6 +151741,7 @@ db = {
       "title": "Iº Acto",
       "year": 1973,
       "path": "1973 - Ze Rodrix - I Ato",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Casca de Caracol",
@@ -150280,6 +151820,7 @@ db = {
       "title": "Opus Pop Nº 2",
       "year": 1973,
       "path": "1973 - Zimbo Trio - Opus Pop Nº2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sevilla",
@@ -150351,6 +151892,7 @@ db = {
       "title": "clara clarice clara",
       "year": 1972,
       "path": "1972 - Clara Nunes - Clara Clarice Clara",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sempre mangueira",
@@ -150436,6 +151978,7 @@ db = {
       "title": "Dóris",
       "year": 1972,
       "path": "1972 - Doris Monteiro - Doris",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ora, Acho Que Vou-Me Embora",
@@ -150535,6 +152078,7 @@ db = {
       "title": "Preciso Aprender A Ser Só Vol. 1",
       "year": 1972,
       "path": "1972 - Elizeth Cardoso - Preciso Aprender A Ser So Vol. 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Elizeth",
@@ -150620,6 +152164,7 @@ db = {
       "title": "Preciso Aprender A Ser Só Vol. 2",
       "year": 1972,
       "path": "1972 - Elizeth Cardoso - Preciso Aprender A Ser So Vol. 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Herança",
@@ -150719,6 +152264,7 @@ db = {
       "title": "Sangue, Suor E Raça",
       "year": 1972,
       "path": "1972 - Elza Soares & Roberto Ribeiro - Sangue, Suor E Raça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Swing Nêgão / Brasil Pandeiro / O Samba Agora Vai / E Com Esse Que Eu Vou",
@@ -150818,6 +152364,7 @@ db = {
       "title": "Elza Pede Passagem",
       "year": 1972,
       "path": "1972 - Elza Soares - Elza Pede Passagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cheguendengo",
@@ -150903,6 +152450,7 @@ db = {
       "title": "Prelude",
       "year": 1972,
       "path": "1972 - Eumir Deodato - Prelude",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Also Sprach Zarathustra",
@@ -150953,6 +152501,7 @@ db = {
       "title": "Jamelão Interpreta Lupicínio Rodrigues",
       "year": 1972,
       "path": "1972 - Jamelão - Jamelão Interpreta Lupcínio Rodrigues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu pecado",
@@ -151045,6 +152594,7 @@ db = {
       "title": "compactos joão nogueira",
       "year": 1972,
       "path": "1972 - João Nogueira - Compactos - -",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu sou tamborim",
@@ -151109,6 +152659,7 @@ db = {
       "title": "o grito do subúrbio com som da lapa",
       "year": 1972,
       "path": "1972 - João Nogueira - O grito do subúrbio com som da Lapa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "morrendo verso em verso",
@@ -151201,6 +152752,7 @@ db = {
       "title": "Laércio de Freitas e O Som Roceiro",
       "year": 1972,
       "path": "1972 - Laercio De Freitas EO Som Roceiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mammy Blue",
@@ -151286,6 +152838,7 @@ db = {
       "title": "CPS: Luiz Ayrão",
       "year": 1972,
       "path": "1972 - Luiz Ayrão - CPS - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Ano Sem Você",
@@ -151308,6 +152861,7 @@ db = {
       "title": "Batuque na Cozinha",
       "year": 1972,
       "path": "1972 - Martinho da Vila - Batuque na Cozinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Balança Povo",
@@ -151393,6 +152947,7 @@ db = {
       "title": "Milton Banana",
       "year": 1972,
       "path": "1972 - Milton Banana",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Essa Menina",
@@ -151485,6 +153040,7 @@ db = {
       "title": "nelson cavaquinho série documento",
       "year": 1972,
       "path": "1972 - Nelson Cavaquinho - Nelson Cavaquinho Série Documento",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando eu me chamar saudade",
@@ -151577,6 +153133,7 @@ db = {
       "title": "samba é comigo mesmo",
       "year": 1972,
       "path": "1972 - Noite Ilustrada - Samba É Comigo Mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "falei",
@@ -151669,6 +153226,7 @@ db = {
       "title": "Os Maiores Sambas Enredo de Todos Os Tempos Vol. 2",
       "year": 1972,
       "path": "1972 - Os Maiores Sambas - Enredo De Todos Os Tempos Vol2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alô... Alô... Taí Carmen Miranda",
@@ -151761,6 +153319,7 @@ db = {
       "title": "na cucuruca do samba",
       "year": 1972,
       "path": "1972 - Os Partideiros do Plá - Na cucuruca do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nó na cana",
@@ -151853,6 +153412,7 @@ db = {
       "title": "os maiores sambas-enredo de todos os tempos vol. 2",
       "year": 1972,
       "path": "1972 - Os maiores sambas-enredos de todos os tempos – Vol 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "alô alô, taí carmen miranda",
@@ -151945,6 +153505,7 @@ db = {
       "title": "A Dança da Solidão",
       "year": 1972,
       "path": "1972 - Paulinho da Viola - A Dança da Solidão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Guardei minha Viola",
@@ -152037,6 +153598,7 @@ db = {
       "title": "Quarteto Em Cy",
       "year": 1972,
       "path": "1972 - Quarteto Em Cy",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quando O Carnaval Chegar",
@@ -152122,6 +153684,7 @@ db = {
       "title": "Quincas Berro D'Água",
       "year": 1972,
       "path": "1972 - Quincas Berro D Agua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto De Nanã",
@@ -152165,6 +153728,7 @@ db = {
       "title": "Em Busca do Ouro",
       "year": 1972,
       "path": "1972 - Ruy Maurity - Em Busca Do Ouro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Em Busca Do Ouro",
@@ -152257,6 +153821,7 @@ db = {
       "title": "Terra",
       "year": 1972,
       "path": "1972 - Sa Rodrix e Guarabira - Terra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os anos 60",
@@ -152328,6 +153893,7 @@ db = {
       "title": "Sambas-Enredo 1972 Grupo 1",
       "year": 1972,
       "path": "1972 - Sambas de Enredo Grupo 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ilu Ayê",
@@ -152420,6 +153986,7 @@ db = {
       "title": "Sambas-de-Enredo 1972 Grupo 2",
       "year": 1972,
       "path": "1972 - Sambas de Enredo Grupo 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chiquinha Gonzaga, Alma Cantante do Brasil",
@@ -152526,6 +154093,7 @@ db = {
       "title": "Sebastião Tapajós & Pedro dos Santos",
       "year": 1972,
       "path": "1972 - Sebastiao Tapajos E Pedro Dos Santos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estudio nº 1",
@@ -152618,6 +154186,7 @@ db = {
       "title": "Tim Maia",
       "year": 1972,
       "path": "1972 - Tim Maia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Idade",
@@ -152710,6 +154279,7 @@ db = {
       "title": "rei do partido alto",
       "year": 1972,
       "path": "1972 - Xangô da Mangueira - O Rei do Partido-alto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "moro na roça",
@@ -152802,6 +154372,7 @@ db = {
       "title": "escolas de samba enredos portela",
       "year": 1972,
       "path": "1993 - Escolas de Samba Enredos – Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ilu ayê",
@@ -152880,6 +154451,7 @@ db = {
       "title": "Filosofia do Samba",
       "year": 1971,
       "path": "1971 - Candeia - Filosofia do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filosofia do Samba",
@@ -152972,6 +154544,7 @@ db = {
       "title": "O Bom É O Juca",
       "year": 1971,
       "path": "1971 - Carlos Magno - O Bom EO Juca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Bom É O Juca",
@@ -153064,6 +154637,7 @@ db = {
       "title": "Imagem e Som",
       "year": 1971,
       "path": "1971 - Cassiano - Imagem E Som",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lenda",
@@ -153156,6 +154730,7 @@ db = {
       "title": "Carlos, ERASMO...",
       "year": 1971,
       "path": "1971 - Erasmo Carlos - Carlos ERASMO",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Noite, Na Cama",
@@ -153255,6 +154830,7 @@ db = {
       "title": "Fa-Tal: Gal A Todo Vapor CD 1",
       "year": 1971,
       "path": "1971 - Fa - Tal Gal A Todo Vapor CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dê Um Rolê",
@@ -153333,6 +154909,7 @@ db = {
       "title": "Fa-Tal: Gal A Todo Vapor CD 2",
       "year": 1971,
       "path": "1971 - Fa - Tal Gal A Todo Vapor CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fruta Gogóia",
@@ -153404,6 +154981,7 @@ db = {
       "title": "Os maiores sambas-enredo de todos os tempos I",
       "year": 1971,
       "path": "1971 - GRES Acadêmicos do Salgueiro apresenta - Os maiores sambas-enredos de todos os tempos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O mundo encantado de Monteiro Lobato (Mangueira)",
@@ -153496,6 +155074,7 @@ db = {
       "title": "Samba É Comigo Mesmo",
       "year": 1971,
       "path": "1971 - Germano Mathias - Samba é comigo mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bola branca (Loteria esportiva)",
@@ -153588,6 +155167,7 @@ db = {
       "title": "Negro É Lindo",
       "year": 1971,
       "path": "1971 - Jorge Ben - Negro E Lindo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rita Jeep",
@@ -153666,6 +155246,7 @@ db = {
       "title": "memorias de um sargento de milícias",
       "year": 1971,
       "path": "1971 - Martinho da Vila - Memórias de um sargento de milícias",
+      "has_cover": true,
       "tracks": [
         {
           "title": "segure tudo",
@@ -153751,6 +155332,7 @@ db = {
       "title": "GRES Acadêmicos Do Salgueiro Apresenta Os Maiores Sambas-Enredos De Todos Os Tempos",
       "year": 1971,
       "path": "1971 - Os Maiores Sambas Enredo De Todos Os Tempos Vol1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Mundo Encantado de Monteiro Lobato (Mangueira - Samba-Enredo 1967)",
@@ -153843,6 +155425,7 @@ db = {
       "title": "Exportação",
       "year": 1971,
       "path": "1971 - Os Originais do Samba - Exportação",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Uma praça e você",
@@ -153942,6 +155525,7 @@ db = {
       "title": "Paulinho da Viola",
       "year": 1971,
       "path": "1971 - Paulinho da Viola - Paulinho Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Num Samba Curto",
@@ -154034,6 +155618,7 @@ db = {
       "title": "portela de novo",
       "year": 1971,
       "path": "1971 - Portela de novo – Portela carnaval 71",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba na realidade",
@@ -154119,6 +155704,7 @@ db = {
       "title": "Quem samba fica... Adelzon Alves mete bronca e a moçada do samba dá o recado",
       "year": 1971,
       "path": "1971 - Quem samba fica Adelzon Alves mete bronca e a moçada do samba dá o recado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulher Valente é Minha Mãe",
@@ -154211,6 +155797,7 @@ db = {
       "title": "Sambas-de-Enredo 1971 2º Grupo",
       "year": 1971,
       "path": "1971 - Sambas de Enredo 2º Grupo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "São Francisco a Caminho do Sertão",
@@ -154289,6 +155876,7 @@ db = {
       "title": "Sambas-Enredo 1971 (Festival de Sambas Enredo)",
       "year": 1971,
       "path": "1971 - Sambas de Enredo Festival de Sambas de Enredo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Festa para um Rei Negro",
@@ -154367,6 +155955,7 @@ db = {
       "title": "Tim Maia",
       "year": 1971,
       "path": "1971 - Tim Maia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Festa do Santo Reis",
@@ -154459,6 +156048,7 @@ db = {
       "title": "Trio Ternura",
       "year": 1971,
       "path": "1971 - Trio Ternura",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sol Quarenta Graus",
@@ -154551,6 +156141,7 @@ db = {
       "title": "Vinícius de Moraes, Maria Bethânia y Toquinho en La Fusa",
       "year": 1971,
       "path": "1971 - V Moraes M Bethania Toquinho En La Fusa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A tonga da mironga do kabuletê",
@@ -154636,6 +156227,7 @@ db = {
       "title": "o autêntico jamelão - o bom",
       "year": 1970,
       "path": "1965 - Jamelão - O Autêntico Jamelão O Bom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quem samba fica",
@@ -154721,6 +156313,7 @@ db = {
       "title": "Voltei",
       "year": 1970,
       "path": "1970 - Abílio Martins - Voltei",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Parei na sua",
@@ -154827,6 +156420,7 @@ db = {
       "title": "Vol. 2",
       "year": 1970,
       "path": "1970 - Baden Powell Quartet V2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Perdão",
@@ -154877,6 +156471,7 @@ db = {
       "title": "Baden Powell Quartet Vol. 1",
       "year": 1970,
       "path": "1970 - Baden Powell Quartet Vol1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra que Chorar",
@@ -154934,6 +156529,7 @@ db = {
       "title": "Baden Powell Quartet Vol. 3",
       "year": 1970,
       "path": "1970 - Baden Powell Quartet Vol3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Corba",
@@ -154984,6 +156580,7 @@ db = {
       "title": "Dóris, Miltinho e Charme",
       "year": 1970,
       "path": "1970 - Doris Monteiro Miltinho E Charme",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Felicidade / Tristeza De Nós Dois / Nunca Mais / Chega De Saudade",
@@ -155048,6 +156645,7 @@ db = {
       "title": "Falou e Disse",
       "year": 1970,
       "path": "1970 - Elizeth Cardoso - Falou E Disse",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É de Lei",
@@ -155140,6 +156738,7 @@ db = {
       "title": "Sambas E Mais Sambas",
       "year": 1970,
       "path": "1970 - Elza Soares - Sambas E Mais Sambas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mas, Que Nada",
@@ -155260,6 +156859,7 @@ db = {
       "title": "Armandinho",
       "year": 1970,
       "path": "1970 - Geraldo Ribeiro - Armandinho Neves",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Valsa nº 3",
@@ -155352,6 +156952,7 @@ db = {
       "title": "Debut EP",
       "year": 1970,
       "path": "1970 - Ivan Lins Debut EP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Novamente Nós",
@@ -155388,6 +156989,7 @@ db = {
       "title": "Mais Um Som",
       "year": 1970,
       "path": "1970 - Johnny Alf - Mais Um Som",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pisou na bola",
@@ -155501,6 +157103,7 @@ db = {
       "title": "Obnoxius",
       "year": 1970,
       "path": "1970 - Jose Mauro - Obnoxius",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Obnoxius",
@@ -155586,6 +157189,7 @@ db = {
       "title": "The New Face of Bonfá",
       "year": 1970,
       "path": "1970 - Luiz Bonfa - The New Face Of Bonfa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Window girl",
@@ -155671,6 +157275,7 @@ db = {
       "title": "Onda Nova do Brasil",
       "year": 1970,
       "path": "1970 - Luiz Eca Sagrada Familia - Onda Nova Do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Homem da Sucursal - Barravento",
@@ -155749,6 +157354,7 @@ db = {
       "title": "meu laiaraia",
       "year": 1970,
       "path": "1970 - Martinho da Vila - Meu laiárará",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu laiaraiá",
@@ -155841,6 +157447,7 @@ db = {
       "title": "Mina Canta O Brasil",
       "year": 1970,
       "path": "1970 - Mina Canta O Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto De Ossanha",
@@ -155926,6 +157533,7 @@ db = {
       "title": "moringoeira",
       "year": 1970,
       "path": "1970 - Moreira da Silva - Mo “Ringo” Eira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o sequestro de ringo",
@@ -156018,6 +157626,7 @@ db = {
       "title": "Papo Furado",
       "year": 1970,
       "path": "1970 - Noite ilustrada e Isaura Garcia - Papo Furado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Você Não Quer, Nem Eu / Recado / Sem Saída / Duvide-O-Dó / Fechei A Porta / Quem Ri Melhor / Atire A Primeira Pedra",
@@ -156047,6 +157656,7 @@ db = {
       "title": "samba de partido alto",
       "year": 1970,
       "path": "1970 - Os Partideiros - Samba de partido alto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a paz do coração",
@@ -156139,6 +157749,7 @@ db = {
       "title": "Sucessos Da Juventude Em Tempo De Samba",
       "year": 1970,
       "path": "1970 - Os Sambacanas - Sucessos Da Juventude Em Tempo De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hey Jude",
@@ -156210,6 +157821,7 @@ db = {
       "title": "Paulinho Nogueira Canta Suas Composições",
       "year": 1970,
       "path": "1970 - Paulinho Nogueira Canta Suas Composicoes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menina",
@@ -156302,6 +157914,7 @@ db = {
       "title": "Sambas-Enredo 1970",
       "year": 1970,
       "path": "1970 - Sambas de Enredo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Cântico á Natureza",
@@ -156380,6 +157993,7 @@ db = {
       "title": "Sambas-de-Enredo 1970 2º Grupo",
       "year": 1970,
       "path": "1970 - Sambas de Enredo 2º Grupo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Segredos e Encantos da Bahia",
@@ -156458,6 +158072,7 @@ db = {
       "title": "Sargentelli e o Sambão - O botequim da pesada",
       "year": 1970,
       "path": "1970 - Sargentelli e o sambão - O botequim da pesada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Viva meu samba-Mundo de zinco",
@@ -156550,6 +158165,7 @@ db = {
       "title": "Sensitive Sound of Sonia Rosa",
       "year": 1970,
       "path": "1970 - The Sensitive Sound Of Sonia Rosa Sadao Watanabe",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The Girl From Ipanema",
@@ -156642,6 +158258,7 @@ db = {
       "title": "Samba e Talento",
       "year": 1970,
       "path": "1970 - Tião Motorista - Samba e talento",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hora da Razão",
@@ -156734,6 +158351,7 @@ db = {
       "title": "Tide",
       "year": 1970,
       "path": "1970 - Tom Jobim - Tide",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Girl from Ipanema",
@@ -156833,6 +158451,7 @@ db = {
       "title": "portela passado de glória",
       "year": 1970,
       "path": "1970 - Velha Guarda da Portela - Portela Passado De Glória",
+      "has_cover": true,
       "tracks": [
         {
           "title": "levanta cedo",
@@ -156939,6 +158558,7 @@ db = {
       "title": "Vinícius De Moraes En la Fusa con Maria Creuza y Toquinho",
       "year": 1970,
       "path": "1970 - Vinicius De Moraes En La Fusa Con M Creuza E Toquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Copa Do Mundo",
@@ -157052,6 +158672,7 @@ db = {
       "title": "Samba Tropi",
       "year": 1970,
       "path": "1970 - Wilson Das Neves - Samba Tropi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Na Hey Hey Kiss Me Goodbye",
@@ -157144,6 +158765,7 @@ db = {
       "title": "Mexico '70",
       "year": 1970,
       "path": "1970 - Wilson Simonal - Mexico70",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aqui É O País Do Futebol",
@@ -157236,6 +158858,7 @@ db = {
       "title": "ataulfo alves e suas pastoras",
       "year": 1969,
       "path": "1959 - Ataulfo Alves - Ataulfo Alves e suas Pastoras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sei que é covardia",
@@ -157328,6 +158951,7 @@ db = {
       "title": "Os Maiores Choros do Século",
       "year": 1969,
       "path": "1969 - Altamiro Carrilho - Os Maiores Choros Do Seculo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -157434,6 +159058,7 @@ db = {
       "title": "Compacto Duplo",
       "year": 1969,
       "path": "1969 - Armandinho Macedo - Compacto Duplo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Divagando Pelo Cais",
@@ -157470,6 +159095,7 @@ db = {
       "title": "Ary Barroso e Billy Blanco Na Voz de Isaura Garcia Vol. 2",
       "year": 1969,
       "path": "1969 - Ary Barroso Billy Blanco Na Voz De Isaura Garcia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Viva meu samba",
@@ -157562,6 +159188,7 @@ db = {
       "title": "partido alto no samba",
       "year": 1969,
       "path": "1969 - Ary Guarda - Ary Guarda, partido alto no samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chorei sofri penei",
@@ -157654,6 +159281,7 @@ db = {
       "title": "Batatinha & Companhia Ilimitada",
       "year": 1969,
       "path": "1969 - Batatinha - Batatinha & Companhia Ilimitada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Diplomacia . Só eu sei",
@@ -157690,6 +159318,7 @@ db = {
       "title": "A Beleza que Canta",
       "year": 1969,
       "path": "1969 - Clara Nunes - A Beleza que Canta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Esquina em Esquina",
@@ -157782,6 +159411,7 @@ db = {
       "title": "Pronta Pra Consumo",
       "year": 1969,
       "path": "1969 - Cynara - Pronta Para Consumo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquele Abraço",
@@ -157874,6 +159504,7 @@ db = {
       "title": "Meu Samba, Minha Vida",
       "year": 1969,
       "path": "1969 - Cyro Monteiro - Meu samba, minha vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saquinho de Dinheiro",
@@ -157966,6 +159597,7 @@ db = {
       "title": "Doido Varrido",
       "year": 1969,
       "path": "1969 - Demonios Da Garoa - Doido Varrido",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Você Foi Mais Uma",
@@ -158058,6 +159690,7 @@ db = {
       "title": "Dom Salvador",
       "year": 1969,
       "path": "1969 - Dom Salvador",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tio Macrô",
@@ -158150,6 +159783,7 @@ db = {
       "title": "Balançam na Sucata",
       "year": 1969,
       "path": "1969 - Elizeth Cardoso E Zimbo Trio Balancam Na Sucata",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Perdão",
@@ -158228,6 +159862,7 @@ db = {
       "title": "Elza, Miltinho e Samba Vol. 3",
       "year": 1969,
       "path": "1969 - Elza Soares & Miltinho - Elza, Miltinho e Samba Vol 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-pourri: Juntinhos De Novo / Não Manche O Meu Panamá / O Sorriso Do Paulinho / Oito Mulheres (Pode Falar Quem Quiser) / Embrulho Que Eu Carrego / Despacho",
@@ -158299,6 +159934,7 @@ db = {
       "title": "Elza, Carnaval & Samba",
       "year": 1969,
       "path": "1969 - Elza Soares - Elza, Carnaval & Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bahia De Todos Os Deuses",
@@ -158405,6 +160041,7 @@ db = {
       "title": "Uma Noite No Drink",
       "year": 1969,
       "path": "1969 - Helena De Lima - Uma Noite No Drink",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seleção de Noel Rosa",
@@ -158497,6 +160134,7 @@ db = {
       "title": "Jair de todos os Sambas",
       "year": 1969,
       "path": "1969 - Jair Rodrigues - Jair de todos os Sambas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bahia de todos ss Deuses",
@@ -158596,6 +160234,7 @@ db = {
       "title": "Jorge Ben",
       "year": 1969,
       "path": "1969 - Jorge Ben",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Criola",
@@ -158681,6 +160320,7 @@ db = {
       "title": "La Bossa Nova De Hugo Y Osvaldo",
       "year": 1969,
       "path": "1969 - La Bossa Nova De Hugo Y Osvaldo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sueño Y Realidad",
@@ -158773,6 +160413,7 @@ db = {
       "title": "Brasil Dia & Noite Vol. 3",
       "year": 1969,
       "path": "1969 - Luiz Arruda Paes E Sua Orquestra - Brasil Dia E Noite Vol3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que Pena",
@@ -158865,6 +160506,7 @@ db = {
       "title": "CPS: Luiz Ayrão",
       "year": 1969,
       "path": "1969 - Luiz Ayrão - CPS - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sozinho na Multidão",
@@ -158887,6 +160529,7 @@ db = {
       "title": "Panicali e As Novelas",
       "year": 1969,
       "path": "1969 - Lyrio Panicali - Panicali E As Novelas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Ponte Dos Suspiros",
@@ -158993,6 +160636,7 @@ db = {
       "title": "Maria Bethânia",
       "year": 1969,
       "path": "1969 - Maria Bethania",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Yê-Melê",
@@ -159078,6 +160722,7 @@ db = {
       "title": "Big Parada",
       "year": 1969,
       "path": "1969 - Orquestra Tropical - Big Parada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menininha do portão",
@@ -159170,6 +160815,7 @@ db = {
       "title": "os originais do samba",
       "year": 1969,
       "path": "1969 - Os Originais do Samba - Os Originais do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cadê tereza",
@@ -159262,6 +160908,7 @@ db = {
       "title": "os cinco crioulos",
       "year": 1969,
       "path": "1969 - Os cinco crioulos - Os 5 crioulos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "gargalhei",
@@ -159347,6 +160994,7 @@ db = {
       "title": "Chegou Portela",
       "year": 1969,
       "path": "1969 - Picolino da Portela - Chegou Portela - Picolino E Seu Samba Partido Alto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Portela querida",
@@ -159453,6 +161101,7 @@ db = {
       "title": "Roberto Carlos",
       "year": 1969,
       "path": "1969 - Roberto Carlos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Flores do Jardim de Nossa Casa",
@@ -159545,6 +161194,7 @@ db = {
       "title": "RECEITA DE SAMBA",
       "year": 1969,
       "path": "1969 - Roberto Silva - Receita de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Debaixo da vela",
@@ -159637,6 +161287,7 @@ db = {
       "title": "Sambas-Enredo 1969 (Festival de Samba)",
       "year": 1969,
       "path": "1969 - Sambas de Enredo Festival de Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Heróis da Liberdade",
@@ -159715,6 +161366,7 @@ db = {
       "title": "Um é Pouco, Dois é Bom, Este Som Três É Demais!",
       "year": 1969,
       "path": "1969 - Som Tres - Um E Pouco Dois E Bom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tanga",
@@ -159807,6 +161459,7 @@ db = {
       "title": "Terra À Vista",
       "year": 1969,
       "path": "1969 - Terra Trio - Terra A Vista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nega Manhosa",
@@ -159892,6 +161545,7 @@ db = {
       "title": "CPD: Os Melhores Sambas Enrêdos",
       "year": 1969,
       "path": "1970 - Elza Soares - CPD - Os Melhores Sambas Enrêdos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lendas E Mistérios Da Amazônia",
@@ -159928,6 +161582,7 @@ db = {
       "title": "escolas de samba enredos império serrano",
       "year": 1969,
       "path": "1993 - Escolas de Samba Enredos – Império Serrano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "heróis da liberdade",
@@ -160006,6 +161661,7 @@ db = {
       "title": "Sambas E Mais Sambas Vol. 2",
       "year": 1969,
       "path": "2003 - Elza Soares - Sambas E Mais Sambas Vol 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bloco De Sujo",
@@ -160168,6 +161824,7 @@ db = {
       "title": "Elza Soares - Baterista: Wilson das Neves",
       "year": 1968,
       "path": "1961 - Elza Soares - Elza Soares - Baterista - Wilson Das Neves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Balanço Zona Sul",
@@ -160260,6 +161917,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 1",
       "year": 1968,
       "path": "1967 - 3o Festival MPB TV Record Vol 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Ponteio",
@@ -160352,6 +162010,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 1",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 1",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Benvinda",
@@ -160444,6 +162103,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 2",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Memórias De Marta Saré",
@@ -160536,6 +162196,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 3",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 3",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Rosa Da Gente",
@@ -160614,6 +162275,7 @@ db = {
       "title": "Tributo a Chico Buarque",
       "year": 1968,
       "path": "1968 - Aecio Flavio E Sua Orquestra De Cordas - Tributo A Chico Buarque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Até Segunda Feira",
@@ -160706,6 +162368,7 @@ db = {
       "title": "O Som de Baden Powell",
       "year": 1968,
       "path": "1968 - Baden Powell - O Som De Baden Powell",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto De Ossanha",
@@ -160784,6 +162447,7 @@ db = {
       "title": "Gravado No México",
       "year": 1968,
       "path": "1968 - Carlos Lyra - Gravado No Mexico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Ninguém",
@@ -160890,6 +162554,7 @@ db = {
       "title": "você passa e eu acho graca",
       "year": 1968,
       "path": "1968 - Clara Nunes - Você passa e eu acho graça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "você não é como as flores",
@@ -160975,6 +162640,7 @@ db = {
       "title": "Elza, Miltinho E Samba Vol. 2",
       "year": 1968,
       "path": "1968 - Elza Soares & Miltinho - Elza, Miltinho e Samba Vol 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Diálogo De Crioulos",
@@ -161032,6 +162698,7 @@ db = {
       "title": "Som Psicodélico",
       "year": 1968,
       "path": "1968 - Formula7",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Watermelon Man",
@@ -161124,6 +162791,7 @@ db = {
       "title": "Eu e O Violão",
       "year": 1968,
       "path": "1968 - Geraldo Vespar - Eu EO Violao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sá Marina",
@@ -161216,6 +162884,7 @@ db = {
       "title": "Grupo Manifesto Nº 2",
       "year": 1968,
       "path": "1968 - Grupo Manifesto N2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Redentora",
@@ -161301,6 +162970,7 @@ db = {
       "title": "isto é nosso",
       "year": 1968,
       "path": "1968 - Jacob do Bandolim - Isto é nosso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "entre mil... você",
@@ -161393,6 +163063,7 @@ db = {
       "title": "O Sucesso",
       "year": 1968,
       "path": "1968 - Jamelão - O Sucesso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Solidão",
@@ -161485,6 +163156,7 @@ db = {
       "title": "CPS: Luiz Ayrão",
       "year": 1968,
       "path": "1968 - Luiz Ayrão - CPS - Luiz Ayrão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Liberdade Liberdade",
@@ -161507,6 +163179,7 @@ db = {
       "title": "Os 6 Mais Numa Imagem Barroca",
       "year": 1968,
       "path": "1968 - Luiz Eca Radames Gnatalli - Os6Mais Numa Imagem Barroca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carolina",
@@ -161599,6 +163272,7 @@ db = {
       "title": "Recital Na Boite Barroco",
       "year": 1968,
       "path": "1968 - Maria Bethania - Recital Na Boite Barroco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Marginália II",
@@ -161712,6 +163386,7 @@ db = {
       "title": "Milton Banana Trio",
       "year": 1968,
       "path": "1968 - Milton Banana Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Todo Dia é Dia",
@@ -161804,6 +163479,7 @@ db = {
       "title": "O Trio",
       "year": 1968,
       "path": "1968 - Milton Banana Trio - O Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Perdão",
@@ -161896,6 +163572,7 @@ db = {
       "title": "Nara Leão",
       "year": 1968,
       "path": "1968 - Nara Leao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lindonéia",
@@ -162002,6 +163679,7 @@ db = {
       "title": "O Melhor da Velha Guarda",
       "year": 1968,
       "path": "1968 - O melhor da Velha-Guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quero morrer cantando",
@@ -162094,6 +163772,7 @@ db = {
       "title": "Tropicalíssimo",
       "year": 1968,
       "path": "1968 - Os Velhinhos Transviados - Tropicalissimo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Soy Louco Por Ti,  America",
@@ -162186,6 +163865,7 @@ db = {
       "title": "Paulo Moura Quarteto",
       "year": 1968,
       "path": "1968 - Paulo Moura Quarteto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lamento Do Morro",
@@ -162264,6 +163944,7 @@ db = {
       "title": "O Sambista",
       "year": 1968,
       "path": "1968 - Pedrinho Rodrigues - O sambista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fecha a janela",
@@ -162356,6 +164037,7 @@ db = {
       "title": "pixinguinha 70",
       "year": 1968,
       "path": "1968 - Pixinguinha - Pixinguinha 70",
+      "has_cover": true,
       "tracks": [
         {
           "title": "carinhoso",
@@ -162441,6 +164123,7 @@ db = {
       "title": "Em Cy Maior",
       "year": 1968,
       "path": "1968 - Quarteto Em Cy - Em Cy Maior",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Frevo Do Orfeu",
@@ -162526,6 +164209,7 @@ db = {
       "title": "Retrato em Branco e Preto",
       "year": 1968,
       "path": "1968 - Quarteto004 - Retrato Em Branco E Preto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Retrato em Branco e Preto",
@@ -162618,6 +164302,7 @@ db = {
       "title": "O Inimitável",
       "year": 1968,
       "path": "1968 - Roberto Carlos - O Inimitavel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E Não Vou Mais Deixar Você Tão Só",
@@ -162710,6 +164395,7 @@ db = {
       "title": "Ronnie Von",
       "year": 1968,
       "path": "1968 - Ronnie Von",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Novo Cantar",
@@ -162802,6 +164488,7 @@ db = {
       "title": "Sadao Meets Brazilian Friends",
       "year": 1968,
       "path": "1968 - Sadao Watanabe - Sadao Meets Brazilian Friends",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bim Bom",
@@ -162894,6 +164581,7 @@ db = {
       "title": "Sambas-Enredo 1968 (Festival de Samba)",
       "year": 1968,
       "path": "1968 - Sambas de Enredo Festival de Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dona Beja, a Feiticeira de Araxá",
@@ -162951,6 +164639,7 @@ db = {
       "title": "sambas de enredo 1968 grupo 1",
       "year": 1968,
       "path": "1968 - Sambas-Enredo As dez grandes escolas cantam para a posteridade seus sambas-enredo de",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba, festa de um povo",
@@ -163029,6 +164718,7 @@ db = {
       "title": "We and The Sea",
       "year": 1968,
       "path": "1968 - Tamba4 - We And The Sea",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O morro (The hill)",
@@ -163086,6 +164776,7 @@ db = {
       "title": "Agora É Samba",
       "year": 1968,
       "path": "1968 - The Pops - Agora E Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Agora É Samba - Medley 1",
@@ -163178,6 +164869,7 @@ db = {
       "title": "Walter Wanderley Set: When It Was Done",
       "year": 1968,
       "path": "1968 - Walter Wanderley - When It Was Done",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Open Your Arms",
@@ -163263,6 +164955,7 @@ db = {
       "title": "Alegria Alegria Vol. 2 ou Quem Não Tem Swing Morre Com A Boca Cheia de Formiga",
       "year": 1968,
       "path": "1968 - Wilson Simonal - Alegria Alegria Vol. 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sá Marina",
@@ -163355,6 +165048,7 @@ db = {
       "title": "olha o partido aí",
       "year": 1968,
       "path": "Olha o partido aí! - Gravado ao vivo nos 40 anos de samba da Mangueira – Xangô da Mangueira, Padeirinho, Jorge Zagaia, Aniceto e Jorginho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quem mandou duvidar",
@@ -163440,6 +165134,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 2",
       "year": 1967,
       "path": "1967 - 3o Festival MPB TV Record Vol 2",
+      "has_cover": false,
       "tracks": [
         {
           "title": "O Cantador",
@@ -163532,6 +165227,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 3",
       "year": 1967,
       "path": "1967 - 3o Festival MPB TV Record Vol 3",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Gabriela",
@@ -163624,6 +165320,7 @@ db = {
       "title": "exaltasão a villa lobos",
       "year": 1967,
       "path": "1967 - Ala dos compositores da Mangueira - Exaltação a Villa-Lobos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exaltasão a villa lobos",
@@ -163702,6 +165399,7 @@ db = {
       "title": "El Trovador",
       "year": 1967,
       "path": "1967 - Altemar Dutra - El Trovador",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pelas",
@@ -163794,6 +165492,7 @@ db = {
       "title": "Berlin Festival Guitar Workshop",
       "year": 1967,
       "path": "1967 - Berlin Festival Guitar Workshop",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lazy River - Elmer's Boggie",
@@ -163844,6 +165543,7 @@ db = {
       "title": "More Brazilian Byrd",
       "year": 1967,
       "path": "1967 - Charlie Byrd - More Brazilian Byrd",
+      "has_cover": true,
       "tracks": [
         {
           "title": "One Note Samba (Samba De Uma Nota So)",
@@ -163929,6 +165629,7 @@ db = {
       "title": "Barra Limpa",
       "year": 1967,
       "path": "1967 - Conjunto Carcara - Barra Limpa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Monday, Monday",
@@ -164021,6 +165722,7 @@ db = {
       "title": "Elza, Miltinho e Samba",
       "year": 1967,
       "path": "1967 - Elza Soares & Miltinho - Elza, Miltinho e Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Com que Roupa / Se você Jurar",
@@ -164113,6 +165815,7 @@ db = {
       "title": "CPD: Elza Soares",
       "year": 1967,
       "path": "1967 - Elza Soares - CPD - Elza Soares",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Palmas No Portão",
@@ -164149,6 +165852,7 @@ db = {
       "title": "O Máximo Em Samba",
       "year": 1967,
       "path": "1967 - Elza Soares - O Máximo Em Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Mundo Encantado De Monteiro Lobato",
@@ -164269,6 +165973,7 @@ db = {
       "title": "Compacto Duplo",
       "year": 1967,
       "path": "1967 - ElzaSoares - Compacto Duplo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Palmas no portão",
@@ -164305,6 +166010,7 @@ db = {
       "title": "Encontro Com Adelino Moreira",
       "year": 1967,
       "path": "1967 - Encontro Com Adelino Moreira",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Noite de Saudade",
@@ -164411,6 +166117,7 @@ db = {
       "title": "Forma '66",
       "year": 1967,
       "path": "1967 - Forma66",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apelo",
@@ -164510,6 +166217,7 @@ db = {
       "title": "Francis Albert Sinatra & Antonio Carlos Jobim",
       "year": 1967,
       "path": "1967 - Francis Albert Sinatra Antonio Carlos Jobim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The Girl From Ipanema (Garota De Ipanema)",
@@ -164588,6 +166296,7 @@ db = {
       "title": "Manifesto Musical",
       "year": 1967,
       "path": "1967 - Grupo Manifesto - Manifesto Musical",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Margarida",
@@ -164680,6 +166389,7 @@ db = {
       "title": "vibrações",
       "year": 1967,
       "path": "1967 - Jacob do Bandolim e Conjunto Época de Ouro - Vibrações",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vibracões",
@@ -164772,6 +166482,7 @@ db = {
       "title": "Work of Love",
       "year": 1967,
       "path": "1967 - Lenita Bruno - Work Of Love",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canta, Canta Mais",
@@ -164864,6 +166575,7 @@ db = {
       "title": "Samba Sempre Samba",
       "year": 1967,
       "path": "1967 - Musitrio - Sempre Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade da Bahia",
@@ -164956,6 +166668,7 @@ db = {
       "title": "Nana",
       "year": 1967,
       "path": "1967 - Nana Caymmi - Nana (1)",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Morrer de Amor",
@@ -165034,6 +166747,7 @@ db = {
       "title": "Noel Rosa",
       "year": 1967,
       "path": "1967 - Noel Rosa - Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "menina dos olhos",
@@ -165140,6 +166854,7 @@ db = {
       "title": "O Som do Milton Banana Trio",
       "year": 1967,
       "path": "1967 - O Som Do Milton Banana Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Roda",
@@ -165232,6 +166947,7 @@ db = {
       "title": "samba no duro",
       "year": 1967,
       "path": "1967 - Os cinco crioulos - Samba no duro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o mundo encantado de monteiro lobato",
@@ -165324,6 +167040,7 @@ db = {
       "title": "Fly Me To The Moon",
       "year": 1967,
       "path": "1967 - Sadao Watanabe - Fly Me To The Moon",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The girl from Ipanema",
@@ -165416,6 +167133,7 @@ db = {
       "title": "Som Nove",
       "year": 1967,
       "path": "1967 - Som Nove",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra Que Chorar",
@@ -165508,6 +167226,7 @@ db = {
       "title": "Vinicius / Caymmi no Zum Zum",
       "year": 1967,
       "path": "1967 - Vinicius e Caymmi No Zum Zum",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bom Dia, Amigo - Carta Ao Tom - Berimbau",
@@ -165586,6 +167305,7 @@ db = {
       "title": "sucessos de zé keti",
       "year": 1967,
       "path": "1967 - Zé Ketti - Sucessos De Zé Ketti",
+      "has_cover": true,
       "tracks": [
         {
           "title": "prece de esperança",
@@ -165671,6 +167391,7 @@ db = {
       "title": "escolas de samba enredos mangueira",
       "year": 1967,
       "path": "1993 - Escolas de Samba Enredos – Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o mundo encantado de monteiro lobato",
@@ -165749,6 +167470,7 @@ db = {
       "title": "A Ternura de Wanderléa",
       "year": 1966,
       "path": "1966 - A Ternura De Wanderlea",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boa Noite Meu Bem",
@@ -165855,6 +167577,7 @@ db = {
       "title": "A 3ª Dimensão de Lennie Dale com Trio 3-D",
       "year": 1966,
       "path": "1966 - A3a Dimensao De Lennie Dale Trio3D",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mensagem",
@@ -165919,6 +167642,7 @@ db = {
       "title": "Look To The Rainbow",
       "year": 1966,
       "path": "1966 - Astrud Gilberto - Look To The Rainbow",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Berimbau",
@@ -166011,6 +167735,7 @@ db = {
       "title": "Balançando Com Milton Banana Trio",
       "year": 1966,
       "path": "1966 - BalancandoCom MiltonBananaTrio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cidade Vazia",
@@ -166103,6 +167828,7 @@ db = {
       "title": "clementina de jesus",
       "year": 1966,
       "path": "1966 - Clementina de Jesus - Clementina de Jesus",
+      "has_cover": true,
       "tracks": [
         {
           "title": "piedade",
@@ -166181,6 +167907,7 @@ db = {
       "title": "Samba Ao Vivo",
       "year": 1966,
       "path": "1966 - Conjunto Balambossa - Samba Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Triste",
@@ -166273,6 +168000,7 @@ db = {
       "title": "Bossa",
       "year": 1966,
       "path": "1966 - Conjunto Copacabana Bossa - Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arrastão",
@@ -166365,6 +168093,7 @@ db = {
       "title": "Apresenta Samba Jovem",
       "year": 1966,
       "path": "1966 - Conjunto Jovem Brasa Apresenta Samba Jovem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jovem Brasa",
@@ -166457,6 +168186,7 @@ db = {
       "title": "Show Telecoteco, Opus nº 1",
       "year": 1966,
       "path": "1966 - Cyro Monteiro & Dilermando Pinheiro - Show Telecoteco, Opus nº 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apresentação / Minha Palhoça / Alô João / Para me Livrar do mal / A Mulher que eu Gosto / Volta pra Casa Emília / Deus me Perdoe / Pedra que Rolou / Lulú de Madame / Se Acaso você Chegasse",
@@ -166472,6 +168202,7 @@ db = {
       "title": "Dois & Ela",
       "year": 1966,
       "path": "1966 - Dois E Ela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Formosa",
@@ -166564,6 +168295,7 @@ db = {
       "title": "Muito Elizeth",
       "year": 1966,
       "path": "1966 - Elizeth Cardoso - Muito Elizeth",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mundo Melhor",
@@ -166656,6 +168388,7 @@ db = {
       "title": "A Bossa Eterna de Elizeth e Cyro",
       "year": 1966,
       "path": "1966 - Elizeth Cardoso Cyro Monteiro - A Bossa Eterna",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nega / Faço Um Le-Le-Le / Dance Mais Um Bocado / Deixa Andar / Já Vai?",
@@ -166720,6 +168453,7 @@ db = {
       "title": "Com A Bola Branca",
       "year": 1966,
       "path": "1966 - Elza Soares - Com A Bola Branca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quizumba",
@@ -166812,6 +168546,7 @@ db = {
       "title": "5 Anos de Canção",
       "year": 1966,
       "path": "1966 - Geraldo Vandre - 5Anos De Cancao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Porta Estandarte",
@@ -166904,6 +168639,7 @@ db = {
       "title": "Herb Alpert Presents Sergio Mendes & Brasil '66",
       "year": 1966,
       "path": "1966 - Herb Alpert Presents Sergio Mendes Brasil66",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mas Que Nada",
@@ -166982,6 +168718,7 @@ db = {
       "title": "Uma Brasa com Joni Maza",
       "year": 1966,
       "path": "1966 - Joni Maza E Seu Conjunto - Uma Brasa Com Joni Maza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Medlley (Ai, que saudades da Amélia/Juracy/Helena,Helena/Aurora/Madalena foi embora",
@@ -167060,6 +168797,7 @@ db = {
       "title": "José Roberto Trio",
       "year": 1966,
       "path": "1966 - Jose Roberto Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto De Ossanha",
@@ -167152,6 +168890,7 @@ db = {
       "title": "Nova Bossa Nova",
       "year": 1966,
       "path": "1966 - Jota Junior E Seu Conjunto - Nova Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Molejo Dela",
@@ -167244,6 +168983,7 @@ db = {
       "title": "Leny Andrade",
       "year": 1966,
       "path": "1966 - Leny Andrade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saravá",
@@ -167322,6 +169062,7 @@ db = {
       "title": "MPB-4",
       "year": 1966,
       "path": "1966 - MPB - 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manhã De Liberdade",
@@ -167400,6 +169141,7 @@ db = {
       "title": "MPB-4",
       "year": 1966,
       "path": "1966 - MPB - 4 (2)",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Manhã De Liberdade",
@@ -167478,6 +169220,7 @@ db = {
       "title": "MPB-4",
       "year": 1966,
       "path": "UQT1966_MPB-4",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Manhã De Liberdade",
@@ -167556,6 +169299,7 @@ db = {
       "title": "A vez do morro",
       "year": 1966,
       "path": "1966 - Mensageiros do samba da Portela - A vez do morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Esta Melodia",
@@ -167648,6 +169392,7 @@ db = {
       "title": "Samba + Samba = Miltinho",
       "year": 1966,
       "path": "1966 - Miltinho Samba Mais Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "...e o Juiz Apitou - Juracy -",
@@ -167740,6 +169485,7 @@ db = {
       "title": "Morte e Vida Severina - Trilha Sonora da Peça Teatral",
       "year": 1966,
       "path": "1966 - Morte E Vida Severina PUCSP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lado A",
@@ -167762,6 +169508,7 @@ db = {
       "title": "depois do carnaval",
       "year": 1966,
       "path": "1966 - Noite Ilustrada - Depois Do Carnaval",
+      "has_cover": true,
       "tracks": [
         {
           "title": "rio, não és criança",
@@ -167854,6 +169601,7 @@ db = {
       "title": "Pinta O Sete",
       "year": 1966,
       "path": "1966 - Primo E Seu Conjunto - Pinta O7",
+      "has_cover": true,
       "tracks": [
         {
           "title": "João Quatrocentão",
@@ -167946,6 +169694,7 @@ db = {
       "title": "Quarteto em Cy",
       "year": 1966,
       "path": "1966 - Quarteto Em Cy",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vamos pranchar",
@@ -168045,6 +169794,7 @@ db = {
       "title": "Samba Pra Frente",
       "year": 1966,
       "path": "1966 - Samba Trio - Samba Pra Frente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arrastão",
@@ -168137,6 +169887,7 @@ db = {
       "title": "Sammy Davis Jr. Sings Laurindo Plays",
       "year": 1966,
       "path": "1966 - Sammy Davis Jr Sings Laurindo Plays",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Here is That Rainy Day",
@@ -168222,6 +169973,7 @@ db = {
       "title": "samba pede passagem",
       "year": 1966,
       "path": "1966 - Show – Samba pede passagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lenço no pescoço . deixa de arrastar . moçinho da vila . palpite infeliz . frankstein da vila . feitiço da vila",
@@ -168314,6 +170066,7 @@ db = {
       "title": "Thelma Canta Nélson Cavaquinho",
       "year": 1966,
       "path": "1966 - Thelma Canta Nelson Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Luz Negra",
@@ -168406,6 +170159,7 @@ db = {
       "title": "eternamente samba",
       "year": 1966,
       "path": "1967 - Ataulfo Alves - Eternamente samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pois é . a morena sou eu . sai do meu caminho . conte o caso direito . duro com duro . o vento que venta lá . na ginga do samba",
@@ -168477,6 +170231,7 @@ db = {
       "title": "Samba na Madrugada",
       "year": 1966,
       "path": "1968 - Élton Medeiros e Paulinho da Viola - Samba na Madrugada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arvoredo",
@@ -168562,6 +170317,7 @@ db = {
       "title": "Sambas Em Duas Bossas",
       "year": 1965,
       "path": "1964 - Os Azes Da Bossa - Samba Em Duas Bossas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Faceira",
@@ -168654,6 +170410,7 @@ db = {
       "title": "Roda de Samba Vol. 2",
       "year": 1965,
       "path": "1965 - A Voz Do Morro - Roda De Samba Vol2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Recado",
@@ -168760,6 +170517,7 @@ db = {
       "title": "Sou Sem Paz",
       "year": 1965,
       "path": "1965 - Adilson Godoy - Sou Sem Paz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prece a Chuva",
@@ -168852,6 +170610,7 @@ db = {
       "title": "Uma Flauta Em Serenata",
       "year": 1965,
       "path": "1965 - Altamiro Carrilho - Uma Flauta Em Serenata",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por Um Beijo (Terna Saudade)",
@@ -168944,6 +170703,7 @@ db = {
       "title": "Billy Nencioli & Baden Powell",
       "year": 1965,
       "path": "1965 - Baden Powell Billy Nencioli",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Si Rien Ne Va",
@@ -169029,6 +170789,7 @@ db = {
       "title": "4 Na Bossa",
       "year": 1965,
       "path": "1965 - Breno Sauer Quarteto - 4Na Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Você",
@@ -169121,6 +170882,7 @@ db = {
       "title": "Chico Fim De Noite Apresenta Chico Feitosa",
       "year": 1965,
       "path": "1965 - Chico Feitosa - Chico Fim De Noite",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fim De Noite",
@@ -169199,6 +170961,7 @@ db = {
       "title": "Roda de Samba",
       "year": 1965,
       "path": "1965 - Conjunto A Voz do Morro - Roda de Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pecadora",
@@ -169305,6 +171068,7 @@ db = {
       "title": "Roda de Samba 2",
       "year": 1965,
       "path": "1965 - Conjunto A Voz do Morro - Roda de Samba 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Recado",
@@ -169411,6 +171175,7 @@ db = {
       "title": "Incêndio No Samba",
       "year": 1965,
       "path": "1965 - Corisco E Os Sambaloucos - Incendio No Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bicho do Mato",
@@ -169503,6 +171268,7 @@ db = {
       "title": "Discoteca Dançante No. 5",
       "year": 1965,
       "path": "1965 - Discoteca Dancante Nr5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Samba da Minha Terra",
@@ -169609,6 +171375,7 @@ db = {
       "title": "Elizete sobe o morro",
       "year": 1965,
       "path": "1965 - Elisete Cardoso - Elizete sobre o morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou partir",
@@ -169701,6 +171468,7 @@ db = {
       "title": "Elizeth Sobe O Morro",
       "year": 1965,
       "path": "1965 - Elizeth Cardoso - Elizeth Sobe O Morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou Partir",
@@ -169793,6 +171561,7 @@ db = {
       "title": "Um Show de Elza",
       "year": 1965,
       "path": "1965 - Elza Soares - Um Show De Elza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ocultei",
@@ -169885,6 +171654,7 @@ db = {
       "title": "Flora É M.P.M.",
       "year": 1965,
       "path": "1965 - Flora Purim - Flora EMPM",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Morte De Um Deus De Sal",
@@ -170019,6 +171789,7 @@ db = {
       "title": "Forma 65",
       "year": 1965,
       "path": "1965 - Forma65",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Reza",
@@ -170104,6 +171875,7 @@ db = {
       "title": "Maria da Graça (Compacto Simples)",
       "year": 1965,
       "path": "1965 - Gal Costa - Maria Da Graca CS",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu Vim Da Bahia",
@@ -170126,6 +171898,7 @@ db = {
       "title": "Big Ben",
       "year": 1965,
       "path": "1965 - Jorge Ben - Big Ben",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Bahia tem",
@@ -170218,6 +171991,7 @@ db = {
       "title": "Maria Bethânia",
       "year": 1965,
       "path": "1965 - Maria Bethania",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Manhã",
@@ -170310,6 +172084,7 @@ db = {
       "title": "Vê",
       "year": 1965,
       "path": "1965 - Milton Banana Trio - Ve",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Resolução",
@@ -170402,6 +172177,7 @@ db = {
       "title": "A Viagem",
       "year": 1965,
       "path": "1965 - Mittchel Ruff Duo - A Viagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tanto canto",
@@ -170487,6 +172263,7 @@ db = {
       "title": "Myrzo",
       "year": 1965,
       "path": "1965 - Myrzo Barroso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O que se Faz",
@@ -170579,6 +172356,7 @@ db = {
       "title": "caminhando",
       "year": 1965,
       "path": "1965 - Noite Ilustrada - Caminhando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "caminhando",
@@ -170671,6 +172449,7 @@ db = {
       "title": "Os Boêmios",
       "year": 1965,
       "path": "1965 - Os Boemios",
+      "has_cover": true,
       "tracks": [
         {
           "title": "André De Sapato Novo",
@@ -170763,6 +172542,7 @@ db = {
       "title": "Pery",
       "year": 1965,
       "path": "1965 - Pery Ribeiro - Pery",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deus Brasileiro",
@@ -170855,6 +172635,7 @@ db = {
       "title": "Rio, Capital de Bossa Nova",
       "year": 1965,
       "path": "1965 - Rio Capital De Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Garota de Ipanema",
@@ -170933,6 +172714,7 @@ db = {
       "title": "Bossa Nova",
       "year": 1965,
       "path": "1965 - Ritmo Da Bossa - Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desafinado",
@@ -171011,6 +172793,7 @@ db = {
       "title": "Uma Rosa Com Bossa",
       "year": 1965,
       "path": "1965 - Rosa Maria - Uma Rosa Com Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Capoeira de Oxalá",
@@ -171103,6 +172886,7 @@ db = {
       "title": "Sambossa/5",
       "year": 1965,
       "path": "1965 - Sambossa5 - Sambossa5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ela Vai, Ela Vem",
@@ -171195,6 +172979,7 @@ db = {
       "title": "In Person at El Matador",
       "year": 1965,
       "path": "1965 - Sergio Mendes Brazil65 - In Person At The Matador",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Reza",
@@ -171280,6 +173065,7 @@ db = {
       "title": "show opinião",
       "year": 1965,
       "path": "1965 - Show Opinião Nara Leão, Zé Ketti e João do Vale",
+      "has_cover": true,
       "tracks": [
         {
           "title": "peba na pimenta",
@@ -171442,6 +173228,7 @@ db = {
       "title": "Tamba Trio EP",
       "year": 1965,
       "path": "1965 - Tamba Trio EP",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba De Verão",
@@ -171478,6 +173265,7 @@ db = {
       "title": "Thelma",
       "year": 1965,
       "path": "1965 - Thelma",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Yemanjá",
@@ -171570,6 +173358,7 @@ db = {
       "title": "Um Show de Bossa em Bossa Copa",
       "year": 1965,
       "path": "1965 - Um Show De Bossa Em Bossa Copa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Garota Moderna",
@@ -171669,6 +173458,7 @@ db = {
       "title": "Quarteto Bossamba",
       "year": 1965,
       "path": "1965 - Walter Wanderley - Quarteto Bossamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nanã",
@@ -171761,6 +173551,7 @@ db = {
       "title": "A Bossa No Paramount",
       "year": 1964,
       "path": "1964 - A Bossa No Paramount",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Terra de Ninguém",
@@ -171825,6 +173616,7 @@ db = {
       "title": "A Nova Bossa Nova de Roberto Menescal e Seu Conjunto",
       "year": 1964,
       "path": "1964 - A Nova Bossa Nova De Roberto Menescal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba De Verão",
@@ -171917,6 +173709,7 @@ db = {
       "title": "O Melhor da Noite",
       "year": 1964,
       "path": "1964 - Aecio Flavio e Seu Conjunto - O Melhor da Noite",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Você e Eu",
@@ -172009,6 +173802,7 @@ db = {
       "title": "Samba Oba!",
       "year": 1964,
       "path": "1964 - Carioca E Orquestra - Samba Oba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boato",
@@ -172101,6 +173895,7 @@ db = {
       "title": "É Dona da Bossa",
       "year": 1964,
       "path": "1964 - Claudette Soares - E Dona Da Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prá Que Chorar",
@@ -172193,6 +173988,7 @@ db = {
       "title": "Na Roda Do Samba",
       "year": 1964,
       "path": "1964 - Elza Soares - Na Roda Do Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Roda Do Samba",
@@ -172285,6 +174081,7 @@ db = {
       "title": "Sacundin Ben Samba",
       "year": 1964,
       "path": "1964 - Jorge Ben - Sacundin Ben Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Anjo Azul",
@@ -172377,6 +174174,7 @@ db = {
       "title": "Guitar From Ipanema",
       "year": 1964,
       "path": "1964 - Laurindo Almeida - Guitar From Ipanema",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The girl from Ipanema",
@@ -172462,6 +174260,7 @@ db = {
       "title": "Nova Dimensão",
       "year": 1964,
       "path": "1964 - Lyrio Panicali - Nova Dimensao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lágrima Flor",
@@ -172554,6 +174353,7 @@ db = {
       "title": "Os Gatos",
       "year": 1964,
       "path": "1964 - Os Gatos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canadian Sunset",
@@ -172646,6 +174446,7 @@ db = {
       "title": "Bossa-Nova Bossa-Nova Bossa-Nova",
       "year": 1964,
       "path": "1964 - Pedrinho Mattar Trio - Bossa Nova Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Pro Pedrinho",
@@ -172738,6 +174539,7 @@ db = {
       "title": "Pery Muito Mais Bossa",
       "year": 1964,
       "path": "1964 - Pery Ribeiro - Pery Muito Mais Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Berimbau",
@@ -172830,6 +174632,7 @@ db = {
       "title": "À Vontade Mesmo",
       "year": 1964,
       "path": "1964 - Raul De Souza - A Vontade Mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "À Vontade Mesmo",
@@ -172915,6 +174718,7 @@ db = {
       "title": "Sambalanço Trio",
       "year": 1964,
       "path": "1964 - Sambalanco Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samblues",
@@ -173007,6 +174811,7 @@ db = {
       "title": "Getz Au Go Go",
       "year": 1964,
       "path": "1964 - Stan Getz Astrud Gilberto - Getz Au Go Go",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Corcovado",
@@ -173085,6 +174890,7 @@ db = {
       "title": "Sucessos Odeon 64",
       "year": 1964,
       "path": "1964 - Sucessos Odeon64",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que Queres Tu De Mim",
@@ -173191,6 +174997,7 @@ db = {
       "title": "Tempo",
       "year": 1964,
       "path": "1964 - Tamba Trio - Tempo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Borandá",
@@ -173283,6 +175090,7 @@ db = {
       "title": "De Amor Se Fala",
       "year": 1964,
       "path": "1964 - Tito Madi - De Amor Se Fala",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ah, Não Sei",
@@ -173375,6 +175183,7 @@ db = {
       "title": "From All Sides",
       "year": 1964,
       "path": "1964 - Vince Guaraldi Bola Sete - From All Sides",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Choro",
@@ -173439,6 +175248,7 @@ db = {
       "title": "Nova Onda",
       "year": 1964,
       "path": "1964 - Ze Maria E Seu Conjunto - Nova Onda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nova Onda",
@@ -173531,6 +175341,7 @@ db = {
       "title": "Rio... Suave É A Noite",
       "year": 1964,
       "path": "1964 - Zezinho E Seu Conjunto - Rio Suave EA Noite",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Consolação",
@@ -173623,6 +175434,7 @@ db = {
       "title": "Jovem Guarda",
       "year": 1964,
       "path": "1965 - Roberto Carlos - Jovem Guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quero Que Vá Tudo Pro Inferno",
@@ -173715,6 +175527,7 @@ db = {
       "title": "A Arte Maior de Leny Andrade",
       "year": 1963,
       "path": "1963 - A Arte Maior De Leny Andrade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Do Avião",
@@ -173807,6 +175620,7 @@ db = {
       "title": "Voa Meu Samba",
       "year": 1963,
       "path": "1963 - Alberto Mota E Seu Conjunto - Voa Meu Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tamborim",
@@ -173899,6 +175713,7 @@ db = {
       "title": "Brasamba",
       "year": 1963,
       "path": "1963 - C Fischer J Pass B Shank - Brasamba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasamba",
@@ -173977,6 +175792,7 @@ db = {
       "title": "O Comendador da Bossa Nova",
       "year": 1963,
       "path": "1963 - Caco Velho - O comendador da bossa nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde está",
@@ -174069,6 +175885,7 @@ db = {
       "title": "Caterina Valente & Luiz Bonfá",
       "year": 1963,
       "path": "1963 - Caterina Valente E Luiz Bonfa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mania de Maria",
@@ -174161,6 +175978,7 @@ db = {
       "title": "Eduardo Lobo Em Bossa Nova",
       "year": 1963,
       "path": "1963 - Edu Lobo - Eduardo Lobo Em Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alguém Sob Medida",
@@ -174197,6 +176015,7 @@ db = {
       "title": "Sambossa",
       "year": 1963,
       "path": "1963 - Elza Soares - Sambossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rosa Morena",
@@ -174317,6 +176136,7 @@ db = {
       "title": "Atualíssima",
       "year": 1963,
       "path": "1963 - Isaura Garcia - Atualissima",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Carrinho",
@@ -174409,6 +176229,7 @@ db = {
       "title": "A Bossa Do Balanço",
       "year": 1963,
       "path": "1963 - Joao Mello - A Bossa Do Balanco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gostoso É Sambar",
@@ -174501,6 +176322,7 @@ db = {
       "title": "Samba Esquema Novo",
       "year": 1963,
       "path": "1963 - Jorge Ben - Samba Esquema Novo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mas Que Nada",
@@ -174593,6 +176415,7 @@ db = {
       "title": "100% Bossa",
       "year": 1963,
       "path": "1963 - Julinho E Seu Piston - 100PC Bossa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Influência Do Jazz",
@@ -174685,6 +176508,7 @@ db = {
       "title": "Los Bossambistas y La Bossa Nova",
       "year": 1963,
       "path": "1963 - Los Bossambistas Y La Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Promessa",
@@ -174777,6 +176601,7 @@ db = {
       "title": "Meu Baile Inesquecível",
       "year": 1963,
       "path": "1963 - Meu Baile Inesquecivel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Baile Inesquecível",
@@ -174876,6 +176701,7 @@ db = {
       "title": "Os Cariocas",
       "year": 1963,
       "path": "1963 - Os Cariocas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Valsa de uma Cidade",
@@ -174968,6 +176794,7 @@ db = {
       "title": "Mais Bossa Com Os Cariocas",
       "year": 1963,
       "path": "1963 - Os Cariocas - Mais Bossa Com Os Cariocas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Telefone",
@@ -175060,6 +176887,7 @@ db = {
       "title": "Os 7 Diabos",
       "year": 1963,
       "path": "1963 - Os7Diabos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Agora É Cinza",
@@ -175152,6 +176980,7 @@ db = {
       "title": "Bossa Nova das Américas",
       "year": 1963,
       "path": "1963 - Osmar Milani - Bossa Nova Das Americas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Balanço das Notas",
@@ -175244,6 +177073,7 @@ db = {
       "title": "Um Piston Em Bossa Nova",
       "year": 1963,
       "path": "1963 - Papudinho E Carlos Piper - Um Piston Em Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não Me Diga Adeus",
@@ -175336,6 +177166,7 @@ db = {
       "title": "Bossa Nova",
       "year": 1963,
       "path": "1963 - Pedrinho Mattar E Seu Conjunto - Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Pato",
@@ -175428,6 +177259,7 @@ db = {
       "title": "Pedrinho Rodrigues",
       "year": 1963,
       "path": "1963 - Pedrinho Rodrigues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nenem",
@@ -175520,6 +177352,7 @@ db = {
       "title": "Recado Novo de Luiz Bonfá",
       "year": 1963,
       "path": "1963 - Recado Novo De Luiz Bonfa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menina Flor",
@@ -175612,6 +177445,7 @@ db = {
       "title": "Amor En Bossa Nova",
       "year": 1963,
       "path": "1963 - Reginaldo Bessa - Amor En Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Dissonante",
@@ -175704,6 +177538,7 @@ db = {
       "title": "Metais e Vozes Em Festival",
       "year": 1963,
       "path": "1963 - Severino Filho E Sua Orquestra - Metais E Vozes Em Festival",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Holiday for Strings",
@@ -175796,6 +177631,7 @@ db = {
       "title": "Bossa Nova Jazz Samba",
       "year": 1963,
       "path": "1963 - The Bossa Nova Modern Quartet - Bossa Nova Jazz Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bossa Nova Jazz Samba",
@@ -175874,6 +177710,7 @@ db = {
       "title": "The Composer of \"Desafinado\", Plays",
       "year": 1963,
       "path": "1963 - Tom Jobim - The Composer Of Desafinado Plays",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The Girl From Ipanema",
@@ -175966,6 +177803,7 @@ db = {
       "title": "Villa-Lobos: 12 Estudos Para Violão",
       "year": 1963,
       "path": "1963 - Turibio Santos - Villa Lobos12Estudos Para Violao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estudo Nr. 1 em Mi Menor",
@@ -176058,6 +177896,7 @@ db = {
       "title": "Tudo Azul",
       "year": 1963,
       "path": "1963 - Ze Maria E Seu Orgao - Tudo Azul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tudo Azul",
@@ -176150,6 +177989,7 @@ db = {
       "title": "escolas de samba enredos acadêmicos do  salgueiro",
       "year": 1963,
       "path": "1993 - Escolas de Samba Enredos – Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chica da silva",
@@ -176228,6 +178068,7 @@ db = {
       "title": "Jamelão Canta Para Enamorados",
       "year": 1962,
       "path": "1960 - Jamelao Canta Para Enamorados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Foi assim",
@@ -176320,6 +178161,7 @@ db = {
       "title": "benedicto lacerda e pixinguinha",
       "year": 1962,
       "path": "1962 - Benedito Lacerda e Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "andré de sapato novo",
@@ -176412,6 +178254,7 @@ db = {
       "title": "Cal Tjader Plays The Contemporary Music of Mexico And Brazil",
       "year": 1962,
       "path": "1962 - Cal Tjader Plays The Contemporary Music Of Mexico And Brazil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vai Querer",
@@ -176504,6 +178347,7 @@ db = {
       "title": "É Samba",
       "year": 1962,
       "path": "1962 - Dalva Barbosa - E Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só vale a pena",
@@ -176596,6 +178440,7 @@ db = {
       "title": "Dick Farney Apresenta Sua Orquestra No Auditório de O Globo",
       "year": 1962,
       "path": "1962 - Dick Farney Apresenta Sua Orq No Audit O Globo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lover",
@@ -176681,6 +178526,7 @@ db = {
       "title": "Dick Farney Show",
       "year": 1962,
       "path": "1962 - Dick Farney Show",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Somos Dois",
@@ -176773,6 +178619,7 @@ db = {
       "title": "Big Band Bossa Nova",
       "year": 1962,
       "path": "1962 - Enoch Light - Big Band Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Desafinado",
@@ -176865,6 +178712,7 @@ db = {
       "title": "Bossa With A Beat",
       "year": 1962,
       "path": "1962 - Exposito E Sua Orquestra - Bossa With A Beat",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Garota De Ipanema",
@@ -176957,6 +178805,7 @@ db = {
       "title": "Ginga no Asfalto",
       "year": 1962,
       "path": "1962 - Germano Mathias - Ginga no asfalto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Espingardina",
@@ -177049,6 +178898,7 @@ db = {
       "title": "Primas e Bordões",
       "year": 1962,
       "path": "1962 - Jacob do Bandolim e Conjunto Época de Ouro - Primas e Bordões",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Teu Beijo",
@@ -177141,6 +178991,7 @@ db = {
       "title": "Jamelão Canta para Enamorados",
       "year": 1962,
       "path": "1962 - Jamelão - Jamelão Canta Para Enamorados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Foi Assim",
@@ -177233,6 +179084,7 @@ db = {
       "title": "Bossa Nova Nos \"States\"",
       "year": 1962,
       "path": "1962 - Juarez E Seu Conjunto - Bossa Nova Nos States",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Toff",
@@ -177325,6 +179177,7 @@ db = {
       "title": "Doucement, Mon Amour...",
       "year": 1962,
       "path": "1962 - Les4Cadillacs - Doucement Mon Amour",
+      "has_cover": true,
       "tracks": [
         {
           "title": "As Times Goes By",
@@ -177417,6 +179270,7 @@ db = {
       "title": "Brasil É Samba",
       "year": 1962,
       "path": "1962 - Luiz Arruda Paes E Sua Orquestra - Brasil E Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Viva meu Samba",
@@ -177509,6 +179363,7 @@ db = {
       "title": "O \"Tal\" ... Malandro",
       "year": 1962,
       "path": "1962 - Moreira Da Silva - O Tal Malandro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Rei Do Gatilho",
@@ -177601,6 +179456,7 @@ db = {
       "title": "Noel Rosa & Portinho Dá Samba",
       "year": 1962,
       "path": "1962 - Noel Rosa E Portinho Da Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Palpite infeliz",
@@ -177693,6 +179549,7 @@ db = {
       "title": "Percussão Em Festa",
       "year": 1962,
       "path": "1962 - Os Saxsambistas Brasileiros - Percussao Em Festa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tico-Tico No Fubá",
@@ -177785,6 +179642,7 @@ db = {
       "title": "Jazza Nova",
       "year": 1962,
       "path": "1962 - Paulo Alencar - Jazza Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Verbo Amar",
@@ -177863,6 +179721,7 @@ db = {
       "title": "The Great Hits of Brazil",
       "year": 1962,
       "path": "1962 - Paulo Alencar E Sua Orquestra - The Great Hits Of Brazil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba do Morro",
@@ -177955,6 +179814,7 @@ db = {
       "title": "Recordando Carlinhos Guinle",
       "year": 1962,
       "path": "1962 - Recordando Carlinhos Guinle",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não Tem Solução",
@@ -178033,6 +179893,7 @@ db = {
       "title": "Tamba Trio",
       "year": 1962,
       "path": "1962 - Tamba Trio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tamba",
@@ -178139,6 +180000,7 @@ db = {
       "title": "O Melhor Para Dançar",
       "year": 1961,
       "path": "1961 - Altamiro Carrilho Aloysio Figueiredo - O Melhor Para Dancar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Melodia Em F",
@@ -178231,6 +180093,7 @@ db = {
       "title": "O Samba em Pesoa",
       "year": 1961,
       "path": "1961 - Aracy de Almeida - O samba em pessoa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tenha Pena de Mim",
@@ -178323,6 +180186,7 @@ db = {
       "title": "Sambas Em Brasa",
       "year": 1961,
       "path": "1961 - Carioca E Sua Orquestra De Metais - Sambas Em Brasa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba em Brasa",
@@ -178415,6 +180279,7 @@ db = {
       "title": "Melodias Favoritas da Tela",
       "year": 1961,
       "path": "1961 - Cipo E Seu Conjunto - Melodias Favoritas Da Tela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Love is Many Splendored Thing - On the Sunny Side of the Street",
@@ -178479,6 +180344,7 @@ db = {
       "title": "A Bossa Negra",
       "year": 1961,
       "path": "1961 - Elza Soares - A Bossa Negra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tenha Pena de Mim (Ai, Ai Meu Deus)",
@@ -178571,6 +180437,7 @@ db = {
       "title": "O Samba É Elza Soares",
       "year": 1961,
       "path": "1961 - Elza Soares - O Samba É Elza Soares",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu E O Rio",
@@ -178663,6 +180530,7 @@ db = {
       "title": "É Tempo de Samba",
       "year": 1961,
       "path": "1961 - Erlon Chaves E Sua Orquestra - E Tempo De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É Fácil Dizer Adeus",
@@ -178755,6 +180623,7 @@ db = {
       "title": "Bossa Hugo",
       "year": 1961,
       "path": "1961 - Hugo Luiz Seu Violao E Ritmo - Bossa Hugo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Feitio de Oração",
@@ -178847,6 +180716,7 @@ db = {
       "title": "Tio Samba",
       "year": 1961,
       "path": "1961 - Lucio Alves - Tio Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sem Cessar ( All the Way )",
@@ -178939,6 +180809,7 @@ db = {
       "title": "Sua Excelência",
       "year": 1961,
       "path": "1961 - Luiz Wanderley - Sua Excelencia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rei Pelé",
@@ -179031,6 +180902,7 @@ db = {
       "title": "Bossa Nova",
       "year": 1961,
       "path": "1961 - Os7Velhinhos - Bossa Nova",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Garota de Ipanema - Garota Moderna",
@@ -179109,6 +180981,7 @@ db = {
       "title": "Ritmo Fantástico",
       "year": 1961,
       "path": "1961 - Rubens Bassini - Ritmo Fantastico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Céu E Mar",
@@ -179201,6 +181074,7 @@ db = {
       "title": "samba do morro e do asfalto escola de samba império serrano",
       "year": 1961,
       "path": "1961 - Samba do morro e do asfalto – Escola de Samba Império Serrano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o império desce",
@@ -179251,6 +181125,7 @@ db = {
       "title": "Dance Moderno",
       "year": 1961,
       "path": "1961 - Sergio Mendes - Dance Moderno",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Oba-La-La",
@@ -179343,6 +181218,7 @@ db = {
       "title": "Samba Nouvelle Vague",
       "year": 1961,
       "path": "1961 - Sivuca - Samba Nouvelle Vague",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba De Uma Nota Só",
@@ -179498,6 +181374,7 @@ db = {
       "title": "Heitor Villa-Lobos: Forest Of The Amazon",
       "year": 1960,
       "path": "1959 - Heitor Villa - Lobos Bidu Sayao-Forest Of The Amazon",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Overture",
@@ -179639,6 +181516,7 @@ db = {
       "title": "16 Seleções de Sucessos Vol. 2",
       "year": 1960,
       "path": "1960 - Angela Maria - 16Selecoes De Sucessos Vol2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "João Valentão",
@@ -179759,6 +181637,7 @@ db = {
       "title": "Samba Irresistível",
       "year": 1960,
       "path": "1960 - Case E Seu Conjunto - Samba Irresistivel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Acaso Você Chegasse",
@@ -179851,6 +181730,7 @@ db = {
       "title": "Os Farroupilhas Na TV",
       "year": 1960,
       "path": "1960 - Conjunto Farroupilha - Os Farroupilhas Na TV",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Baixa Do Sapateiro",
@@ -179943,6 +181823,7 @@ db = {
       "title": "A Noite Do Meu Bem",
       "year": 1960,
       "path": "1960 - Elza Laranjeira - A Noite Do Meu Bem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Noite Do Meu Bem",
@@ -180035,6 +181916,7 @@ db = {
       "title": "Se Acaso Você Chegasse",
       "year": 1960,
       "path": "1960 - Elza Soares - Se Acaso Você Chegasse",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Acaso Você Chegasse",
@@ -180162,6 +182044,7 @@ db = {
       "title": "As 16 Cirandas de Villa-Lobos",
       "year": 1960,
       "path": "1960 - Homero de Magalhaes - As 16 Cirandas de Villa-Lobos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Terezinha de Jesus",
@@ -180282,6 +182165,7 @@ db = {
       "title": "Sambas do Rio",
       "year": 1960,
       "path": "1960 - Lana Bittencourt - Sambas Do Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amor Amor",
@@ -180374,6 +182258,7 @@ db = {
       "title": "Fabulosa!!!",
       "year": 1960,
       "path": "1960 - Leny Eversong - Fabulosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sol de Verão (Theme From A Summer Place)",
@@ -180466,6 +182351,7 @@ db = {
       "title": "... Interpreta Dolores Duran",
       "year": 1960,
       "path": "1960 - Lucio Alves Interpreta Dolores Duran",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Idéias Erradas",
@@ -180558,6 +182444,7 @@ db = {
       "title": "Maysa Canta Sucessos",
       "year": 1960,
       "path": "1960 - Maysa Canta Sucessos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ri",
@@ -180650,6 +182537,7 @@ db = {
       "title": "Um Novo Astro",
       "year": 1960,
       "path": "1960 - Miltinho Sexteto Sideral - Um Novo Astro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ri",
@@ -180742,6 +182630,7 @@ db = {
       "title": "Cara De Boboca",
       "year": 1960,
       "path": "1960 - Noite Ilustrada - Cara De Boboca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cara de boboca",
@@ -180827,6 +182716,7 @@ db = {
       "title": "Pisando Corações",
       "year": 1960,
       "path": "1960 - Osny Silva - Pisando Coracoes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite Cheia de Estrelas",
@@ -180919,6 +182809,7 @@ db = {
       "title": "Amor Em HI-FI",
       "year": 1960,
       "path": "1960 - Sylvia Telles - Amor Em HIFI",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba Torto",
@@ -181004,6 +182895,7 @@ db = {
       "title": "eu, ataulfo alves",
       "year": 1960,
       "path": "1969 - Ataulfo Alves - Eu, Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tempo perdido . saudades do meu barracão . saudade dela . sei que é covardia . boêmio . errei erramos . o bonde de são januário . leva meu samba",
@@ -181026,6 +182918,7 @@ db = {
       "title": "Primeira Audição",
       "year": 1959,
       "path": "1958 - Jorge Goulart - -Primeira Audicao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Além do Céu",
@@ -181118,6 +183011,7 @@ db = {
       "title": "Viva O Samba",
       "year": 1959,
       "path": "1959 - Breno Sauer Quinteto - Viva O Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Solução",
@@ -181210,6 +183104,7 @@ db = {
       "title": "Pafunça",
       "year": 1959,
       "path": "1959 - Demonios da Garoa - Pafunca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pafunça",
@@ -181302,6 +183197,7 @@ db = {
       "title": "Dick Farney e Seu Jazz Moderno",
       "year": 1959,
       "path": "1959 - Dick Farney E Seu Jazz Moderno",
+      "has_cover": true,
       "tracks": [
         {
           "title": "The Lady is a Tramp",
@@ -181380,6 +183276,7 @@ db = {
       "title": "Drink no Rio de Janeiro",
       "year": 1959,
       "path": "1959 - Djalma Ferreira E Os Milionarios Do Ritmo - Drink No RJ",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fala Amor",
@@ -181451,6 +183348,7 @@ db = {
       "title": "Meu Querido Violão",
       "year": 1959,
       "path": "1959 - Luiz Bonfa - Meu Querido Violao",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mosaico",
@@ -181543,6 +183441,7 @@ db = {
       "title": "Luiz Gonzaga Canta Seus Sucessos Com Zedantas",
       "year": 1959,
       "path": "1959 - Luiz Gonzaga Canta Seus Sucessos Com Zedantas",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Sabiá",
@@ -181635,6 +183534,7 @@ db = {
       "title": "Maysa É Maysa... É Maysa, É Maysa!",
       "year": 1959,
       "path": "1959 - Maysa E Maysa E Maysa E Maysa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Deus",
@@ -181727,6 +183627,7 @@ db = {
       "title": "A Volta do Malandro",
       "year": 1959,
       "path": "1959 - Moreira Da Silva - A Volta Do Malandro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gago Apaixonado",
@@ -181819,6 +183720,7 @@ db = {
       "title": "Samba Internacional",
       "year": 1959,
       "path": "1959 - Orquestra Pan American - Samba Internacional",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apito No Samba",
@@ -181911,6 +183813,7 @@ db = {
       "title": "Os Carnavais de Lamartine Babo",
       "year": 1959,
       "path": "1959 - Os Carnavais De Lamartine Babo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hino Do Carnaval Brasileiro / Aí Hein / Uma Andorinha Não Faz Verão / Rasguei A Minha Fantasia / Boa Bola / Moleque Indigesto / Ride Palhaço",
@@ -181975,6 +183878,7 @@ db = {
       "title": "Arrasta A Sandália",
       "year": 1959,
       "path": "1959 - Os Satélites - Arrasta A Sandalia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Arrasta a sandália",
@@ -182067,6 +183971,7 @@ db = {
       "title": "Um Passeio Com O Trio Nagô",
       "year": 1959,
       "path": "1959 - Um Passeio Com O Trio Nago",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chega de saudade",
@@ -182159,6 +184064,7 @@ db = {
       "title": "Onde Estou?",
       "year": 1958,
       "path": "1958 - Almir Ribeiro - Onde Estou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde estou?",
@@ -182272,6 +184178,7 @@ db = {
       "title": "Cantem Conosco",
       "year": 1958,
       "path": "1958 - Aloysio De Oliveira - Cantem Conosco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Saudade Da Bahia",
@@ -182364,6 +184271,7 @@ db = {
       "title": "Vida Noturna",
       "year": 1958,
       "path": "1958 - Caco Velho - Vida Noturna",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Botina Estranha",
@@ -182456,6 +184364,7 @@ db = {
       "title": "Vida Noturna nº1",
       "year": 1958,
       "path": "1958 - Caco Velho - Vida Noturna Nº 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Botina estranha",
@@ -182548,6 +184457,7 @@ db = {
       "title": "Em Continência Ao Samba",
       "year": 1958,
       "path": "1958 - Germano Mathias - Em continência ao samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Guarde a sandália dela",
@@ -182640,6 +184550,7 @@ db = {
       "title": "Modinhas Fora De Moda",
       "year": 1958,
       "path": "1958 - Lenita Bruno - Modinhas Fora De Moda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cantigas",
@@ -182739,6 +184650,7 @@ db = {
       "title": "Descendo o Morro",
       "year": 1958,
       "path": "1958 - Roberto Silva - Descendo o Morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Indecisão",
@@ -182831,6 +184743,7 @@ db = {
       "title": "Accarezzame",
       "year": 1958,
       "path": "1958 - Simonetti E Seu Conjunto - Accarezzame",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Accarezzame",
@@ -182923,6 +184836,7 @@ db = {
       "title": "Raízes da Mangueira",
       "year": 1958,
       "path": "1973 - Raízes da Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Capital do Samba / Exaltação á Mangueira / A Mangueira é Muito Grande / Sempre Mangueira / Semente do Samba / Boa Noite /",
@@ -183015,6 +184929,7 @@ db = {
       "title": "a vitoriosa escola de samba da portela",
       "year": 1957,
       "path": "1957 - A vitoriosa escola de samba da Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "exibição de ritmo",
@@ -183121,6 +185036,7 @@ db = {
       "title": "Uma Noite No Cave",
       "year": 1957,
       "path": "1957 - Almir Ribeiro - Ao Vivo No Cave",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fui eu",
@@ -183185,6 +185101,7 @@ db = {
       "title": "Quando Os Maestros Se Encontram Com Ângela Maria",
       "year": 1957,
       "path": "1957 - Angela Maria - Quando Os Maestros Se Encontram",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dora",
@@ -183249,6 +185166,7 @@ db = {
       "title": "Eu Vou Pra Maracangalha",
       "year": 1957,
       "path": "1957 - Dorival Caymmi - Eu Vou Pra Maracangalha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maracangalha",
@@ -183313,6 +185231,7 @@ db = {
       "title": "Noturno",
       "year": 1957,
       "path": "1957 - Elizeth Cardoso - Noturno",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na Baixa Do Sapateiro",
@@ -183391,6 +185310,7 @@ db = {
       "title": "Aí Vem O Samba",
       "year": 1957,
       "path": "1957 - Escola De Samba Academicos Do Salgueiro - Ai Vem O Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ensaio De Ritmo Nr. 1",
@@ -183483,6 +185403,7 @@ db = {
       "title": "Trio do Fafá",
       "year": 1957,
       "path": "1957 - Fafa Lemos - Trio Do Fafa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um Violino Nel Mio Cuore",
@@ -183575,6 +185496,7 @@ db = {
       "title": "O Sambista Diferente",
       "year": 1957,
       "path": "1957 - Germano Mathias - Germano Mathias, o sambista diferente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha Nega Na Janela",
@@ -183639,6 +185561,7 @@ db = {
       "title": "Leny Eversong na América do Norte",
       "year": 1957,
       "path": "1957 - Leny Eversong Na America Do Norte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "I Can't Give You Anything But Love",
@@ -183724,6 +185647,7 @@ db = {
       "title": "Walt Disney Na América Do Sul",
       "year": 1957,
       "path": "1957 - Leo Perachi E Sua Orq - Walt Disney Na America Do Sul",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Os Quindins De Yayá",
@@ -183816,6 +185740,7 @@ db = {
       "title": "Noite e Dia com Luiz Bonfá e Eduardo Lincoln",
       "year": 1957,
       "path": "1957 - Luiz Bonfa Ed Lincoln - Noite E Dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passeio no Rio",
@@ -183908,6 +185833,7 @@ db = {
       "title": "Carícia",
       "year": 1957,
       "path": "1957 - Sylvia Telles - Caricia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Por Causa De Você",
@@ -183972,6 +185898,7 @@ db = {
       "title": "Brasil Dia e Noite",
       "year": 1956,
       "path": "1956 - Luiz Arruda Paes - Brasil Dia E Noite",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Aquarela do Brasil",
@@ -184064,6 +185991,7 @@ db = {
       "title": "Um Piano na Madrugada",
       "year": 1956,
       "path": "1956 - Luiz Eca - Um Piano Na Madrugada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Secret Love",
@@ -184128,6 +186056,7 @@ db = {
       "title": "Zequinha de Abreu",
       "year": 1956,
       "path": "1956 - Orlando Silveira e Seu Conjunto - Zequinha de Abreu",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Tardes em Lindóia",
@@ -184192,6 +186121,7 @@ db = {
       "title": "5 Companheiros...",
       "year": 1956,
       "path": "1956 - Pixinguinha - 5Companheiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Um a Zero",
@@ -184284,6 +186214,7 @@ db = {
       "title": "A voz do sangue",
       "year": 1956,
       "path": "1961 - Caco Velho - A voz do sangue",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A voz do sangue",
@@ -184320,6 +186251,7 @@ db = {
       "title": "a velha-guarda",
       "year": 1955,
       "path": "1955 - A Velha Guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "que perigo",
@@ -184377,6 +186309,7 @@ db = {
       "title": "Sucessos Em Desfile",
       "year": 1955,
       "path": "1955 - Carolina Cardoso De Menezes - Sucessos Em Desfile",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria Boa",
@@ -184441,6 +186374,7 @@ db = {
       "title": "Dalva de Oliveira Com Orquestra de Roberto Inglez",
       "year": 1955,
       "path": "1955 - Dalva de Oliveira Com Orquestra de Roberto Inglez",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fim de comédia",
@@ -184505,6 +186439,7 @@ db = {
       "title": "Sambas de Caymmi",
       "year": 1955,
       "path": "1955 - Dorival Caymmi - Sambas de Caymmi",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sábado em Copacabana",
@@ -184569,6 +186504,7 @@ db = {
       "title": "o samba na voz do sambista",
       "year": 1955,
       "path": "1955 - Ismael Silva - O samba na voz do sambista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se você jurar",
@@ -184633,6 +186569,7 @@ db = {
       "title": "Noel Rosa na voz Romântica de Nelson Gonçalves",
       "year": 1955,
       "path": "1955 - Nelson Gonçalves - Noel Rosa na voz Romântica de Nelson Gonçalves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Último Desejo",
@@ -184697,6 +186634,7 @@ db = {
       "title": "Sambas em Desfile",
       "year": 1955,
       "path": "1955 - Zaccarias e sua Orquestra - Sambas em Desfile",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Está Chegando a Hora",
@@ -184761,6 +186699,7 @@ db = {
       "title": "10 Dedos Mágicos Num Violão De Ouro",
       "year": 1954,
       "path": "1954 - Carlos Barbosa Lima - 10Dedos Magicos Num Violao De Ouro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fuga",
@@ -184853,6 +186792,7 @@ db = {
       "title": "Sinfonia do Rio de Janeiro",
       "year": 1954,
       "path": "1954 - Sinfonia Do Rio De Janeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Montanha, O Sol E O Mar (Sinfonia Em Tempo De Samba)",
@@ -184903,6 +186843,7 @@ db = {
       "title": "nelson cavaquinho 78 rpm",
       "year": 1943,
       "path": "Nelson Cavaquinho - Nelson Cavaquinho 78RPM",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apresenta-me aquela mulher",
@@ -185002,6 +186943,7 @@ db = {
       "title": "vassourinha",
       "year": 1941,
       "path": "1969 - Vassourinha - Vassourinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "seu libório",
@@ -185094,6 +187036,7 @@ db = {
       "title": "geraldo pereira 78 rpm",
       "year": 1939,
       "path": "Geraldo Pereira - Geraldo Pereira 78RPM",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se você sair chorando",
@@ -185501,6 +187444,7 @@ db = {
       "title": "alvaiade 78 rpm",
       "year": 1938,
       "path": "Alvaiade - Alvaiade 78RPM",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o coração ordena",
@@ -185621,6 +187565,7 @@ db = {
       "title": "bide e marçal 78 rpm",
       "year": 1933,
       "path": "1933 - Armando Marçal & Bide – Recordings –",
+      "has_cover": true,
       "tracks": [
         {
           "title": "agora é cinza",
@@ -185762,6 +187707,7 @@ db = {
       "title": "A Casa Edison e Seu Tempo - 1902-1929 - Ilustrações Musicais (CD 3)",
       "year": 1921,
       "path": "2008 - A Casa Edison E Seu Tempo CD3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A espingarda",
@@ -185924,6 +187870,7 @@ db = {
       "title": "A Casa Edison e Seu Tempo - 1902-1929 - Ilustrações Musicais (CD 2)",
       "year": 1912,
       "path": "2008 - A Casa Edison E Seu Tempo CD2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cruzes, Minha Prima",
@@ -186086,6 +188033,7 @@ db = {
       "title": "A Casa Edison e Seu Tempo - 1902-1929 - Ilustrações Musicais (CD 1)",
       "year": 1902,
       "path": "2008 - A Casa Edison E Seu Tempo CD1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Hino Nacional",
@@ -186262,6 +188210,7 @@ db = {
       "title": "A Casa Edison e Seu Tempo - 1902-1929 - Ilustrações Musicais (CD 4)",
       "year": 1902,
       "path": "2008 - A Casa Edison E Seu Tempo CD4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Macumba",
@@ -186459,6 +188408,7 @@ db = {
       "title": "ismael canta ismael",
       "year": 0,
       "path": "1956 - Ismael Silva - Ismael canta Ismael",
+      "has_cover": true,
       "tracks": [
         {
           "title": "arrependido",
@@ -186551,6 +188501,7 @@ db = {
       "title": "na batida do samba",
       "year": 0,
       "path": "1956 - Risadinha - Na batida do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se acaso você chegasse",
@@ -186615,6 +188566,7 @@ db = {
       "title": "aí vem o samba",
       "year": 0,
       "path": "1957 - Aí Vem O Samba - Acadêmicos do Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ensaio de ritmo nr. 1",
@@ -186707,6 +188659,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1957 - Demônios da Garoa - Saudosa Maloca com Os Demônios da Garoa nos sambas de Adoniran Barbosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "saudosa maloca",
@@ -186771,6 +188724,7 @@ db = {
       "title": "heitor dos prazeres e sua gente",
       "year": 0,
       "path": "1957 - Heitor dos Prazeres - Heitor dos Prazeres e sua gente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nada de rock rock",
@@ -186835,6 +188789,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1957 - Jamelão - Escolas De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Supremo olhar",
@@ -186913,6 +188868,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1959 - Escolas de Samba em Desfile",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bateria",
@@ -187019,6 +188975,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1959 - Roberto Silva - Descendo o Morro Volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "aos pés da cruz",
@@ -187111,6 +189068,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1960 - Roberto Silva - Descendo o Morro Volume 3",
+      "has_cover": true,
       "tracks": [
         {
           "title": "curare",
@@ -187203,6 +189161,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1961 - Roberto Silva - Descendo o Morro Volume 4",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mãe solteira",
@@ -187295,6 +189254,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1962 - Jamelão - Aqui Mora O Ritmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O tango do fim",
@@ -187387,6 +189347,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1962 - Monsueto - Mora Na Filosofia Dos Sambas De Monsueto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bateria e solo de percussão",
@@ -187479,6 +189440,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1962 - Samba no chão - Portela e Império Serrano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jaqueira Da Portela",
@@ -187585,6 +189547,7 @@ db = {
       "title": "grandes sucessos da escola de samba portela",
       "year": 0,
       "path": "1963 - Grandes sucessos da escola de samba Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "piau",
@@ -187677,6 +189640,7 @@ db = {
       "title": "samba oracão no morro",
       "year": 0,
       "path": "1963 - Samba, oração do morro Escola de samba Império Serrano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "chorei por você",
@@ -187769,6 +189733,7 @@ db = {
       "title": "ala dos compositores",
       "year": 0,
       "path": "1965 - Alas dos compositores - Escola de samba acadêmicos do Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o vil metal",
@@ -187840,6 +189805,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1965 - Cartola - CPD - O Divino Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O sol nascerá",
@@ -187876,6 +189842,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1965 - Conjunto Rosa de Ouro - Rosa De Ouro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rosa De Ouro - Quatro Crioulos - Dona Carola - Pam Pam Pam",
@@ -187954,6 +189921,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1966 - Aracy de Almeida - Samba É Aracy De Almeida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "triste cuica",
@@ -188032,6 +190000,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1966 - Roberto Silva - Saudade Em Forma De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amigo leal",
@@ -188117,6 +190086,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1966 - Tudo O Que Mais Nos Uniu - Eduardo Gudin, Márcia e Paulo César Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Santo dia",
@@ -188237,6 +190207,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1967 - Conjunto Rosa de Ouro - Rosa De Ouro Nº 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "E A Rosa Voltou - Rosa De Ouro - Quatro Crioulos - Cântico A Natureza",
@@ -188301,6 +190272,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1967 - Nem Todo Crioulo É Doido – Martinho Da Vila E Seus Convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pra que dinheiro",
@@ -188400,6 +190372,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1967 - Onze Sambas E Uma Capoeira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba erudito",
@@ -188492,6 +190465,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1967 - Viva o samba!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Festas Tradicionais do Rio de Janeiro",
@@ -188591,6 +190565,7 @@ db = {
       "title": "ataulfo alves e seus sucessos",
       "year": 0,
       "path": "1968 - Ataulfo Alves - Ataulfo Alves e seus sucessos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sei que é covardia",
@@ -188683,6 +190658,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Conjunto A Voz do Morro - Os Sambistas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cuidado",
@@ -188796,6 +190772,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Fala, Mangueira Cartola, Clementina de Jesus, Carlos Cachaça etc",
+      "has_cover": true,
       "tracks": [
         {
           "title": "enquanto houver mangueira . la em mangueira . mundo de zinco",
@@ -188853,6 +190830,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Gente da antiga Clementina de Jesus, João da Bahiana e Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "os oito batutas",
@@ -188945,6 +190923,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Mudando de Conversa Cyro Monteiro, Nora Ney, Clementina de Jesus e Conjunto Rosa de Ouro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lamento",
@@ -189016,6 +190995,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Noite Ilustrada - Eu Sou O Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "homenagem ao malandro",
@@ -189122,6 +191102,7 @@ db = {
       "title": "samba no duro vol 2",
       "year": 0,
       "path": "1968 - Os cinco crioulos - Samba no duro - Volume 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "primeira escola",
@@ -189214,6 +191195,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1968 - Paulinho da Viola - Paulinho Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vai amigo",
@@ -189306,6 +191288,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - A voz do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "3. Primeira figura",
@@ -189398,6 +191381,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - Ao mestre Ataulpho com carinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sexta-feira",
@@ -189490,6 +191474,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - Beth Carvalho - Andança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "um amor em cada coracão",
@@ -189582,6 +191567,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - Conjunto Nosso Samba - De Onde O Samba Vem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nhem nhem nhem . iaiá do cais dourado . parei na sua . casa de bamba",
@@ -189681,6 +191667,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - Martinho da Vila - Martinho da Vila",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boa noite . Carnaval de ilusões . Caramba",
@@ -189780,6 +191767,7 @@ db = {
       "title": "revivendo o mestre ataulfo",
       "year": 0,
       "path": "1969 - Noite Ilustrada - Revivendo O Mestre Ataulpho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meus tempos de criança",
@@ -189872,6 +191860,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1969 - Paulinho da Viola - CPD - Sinal Fechado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sinal fechado",
@@ -189908,6 +191897,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Ataulfo Alves - Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ai! Que saudades de Amélia",
@@ -190000,6 +191990,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Candeia - Coisa da antiga",
+      "has_cover": true,
       "tracks": [
         {
           "title": "dia de graça",
@@ -190092,6 +192083,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Cinco só - Roda de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "baiana louca",
@@ -190170,6 +192162,7 @@ db = {
       "title": "A história do samba verdadeiro",
       "year": 0,
       "path": "1970 - Darcy da Mangueira - A História Do Samba Verdadeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba festa de um povo",
@@ -190262,6 +192255,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol01 – Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "último desejo",
@@ -190326,6 +192320,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol02 – Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "carinhoso",
@@ -190390,6 +192385,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol07 – Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ai que saudade da amélia",
@@ -190454,6 +192450,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol10 – Lupicínio Rodrigues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se acaso você chegasse",
@@ -190518,6 +192515,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol12 – Ismael Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "se você jurar",
@@ -190582,6 +192580,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol14 – Assis Valente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "camisa listrada",
@@ -190646,6 +192645,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - História da MPB Vol17 – Cartola e Nelson Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "luz negra",
@@ -190710,6 +192710,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Nelson Cavaquinho - Depoimento do poeta",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Luz negra",
@@ -190802,6 +192803,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Os Originais do Samba - Samba é de lei",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tá chegando fevereiro",
@@ -190894,6 +192896,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1970 - Paulinho da Viola - Foi Um Rio Que Passou Em Minha Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Para Não Contrariar Você",
@@ -190993,6 +192996,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - Clara Nunes - Clara Nunes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "aruandê aruanda",
@@ -191099,6 +193103,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - História da MPB Vol21 – Herivelto Martins",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ave maria no morro",
@@ -191163,6 +193168,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - História da MPB Vol26 – Paulinho da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "14 anos",
@@ -191227,6 +193233,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - História da MPB Vol31 – Geraldo Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "falsa baiana",
@@ -191291,6 +193298,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - História da MPB Vol35 – Wilson Batista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "oh! seu oscar",
@@ -191355,6 +193363,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - Jorginho Pessanha - “Tô” muito na minha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A sorte mudou",
@@ -191447,6 +193456,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1971 - Paulinho da Viola - Paulinho Da Viola - 2",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Perder e ganhar",
@@ -191553,6 +193563,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1972 - História da MPB Vol45 – Adoniran Barbosa e Paulo Vazolini",
+      "has_cover": true,
       "tracks": [
         {
           "title": "praça clóvis",
@@ -191617,6 +193628,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1972 - História da MPB Vol46 – Elton Medeiros e o Samba de Morro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "rosa de ouro",
@@ -191695,6 +193707,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1972 - História da MPB Vol48 – Donga e os Primitivos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vou te abandonar",
@@ -191773,6 +193786,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1972 - Minha Portela querida Escola de samba Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Voltei",
@@ -191872,6 +193886,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1972 - Zuzuca - O Bom Sambista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sou batuqueiro sim",
@@ -191978,6 +193993,7 @@ db = {
       "title": "eduardo gudin",
       "year": 0,
       "path": "1973 - Eduardo Gudin - Eduardo Gudin",
+      "has_cover": true,
       "tracks": [
         {
           "title": "olha o que ela fez",
@@ -192063,6 +194079,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Ismael Silva - Se Você Jurar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Antonico",
@@ -192155,6 +194172,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Jorginho Pessanha - Autêntico - Jorginho “Império” Pessanha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tempo de paz",
@@ -192247,6 +194265,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Monsueto - Grandes Autores",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mora na filosofia",
@@ -192339,6 +194358,7 @@ db = {
       "title": "É preciso cantar",
       "year": 0,
       "path": "1973 - Os Originais do Samba - É preciso cantar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É preciso cantar",
@@ -192431,6 +194451,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Os Partideiros Do Plá Metem Bronca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menininha do Gantuá",
@@ -192523,6 +194544,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Roberto Ribeiro - Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "É ela",
@@ -192608,6 +194630,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Roberto Ribeiro e Simone - Á Bruxelles - Brasil Export 73",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bamboleo",
@@ -192665,6 +194688,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1973 - Velha da Portela - Velha No Partido Em 5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu deus do céu",
@@ -192729,6 +194753,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - A Música De Donga",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amigo do povo",
@@ -192821,6 +194846,7 @@ db = {
       "title": "as minas do rei salomão",
       "year": 0,
       "path": "1974 - As minas do rei Salomão Salgueiro - Ala dos compositores",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o segredo das minas do rei salomão",
@@ -192913,6 +194939,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - Candeia - Samba De Roda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brinde ao cansaço",
@@ -192977,6 +195004,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - Clara Nunes - Alvorecer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "menino deus",
@@ -193062,6 +195090,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - Cristina Buarque - Cristina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quantas Lágrimas",
@@ -193161,6 +195190,7 @@ db = {
       "title": "história das escolas de samba portela",
       "year": 0,
       "path": "1974 - História das Escolas de Samba - Portela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "brasil de ontem",
@@ -193253,6 +195283,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - Osvaldinho da Cuíca e Grupo Vai-Vai - Vamos sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vai-Vai",
@@ -193338,6 +195369,7 @@ db = {
       "title": "Paulo César Pinheiro",
       "year": 0,
       "path": "1974 - Paulo César Pinheiro - Paulo César Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maior é deus",
@@ -193430,6 +195462,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1974 - Samba é isso aí, gente boa!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Herdeiro",
@@ -193536,6 +195569,7 @@ db = {
       "title": "a voz do samba",
       "year": 0,
       "path": "1975 - Alcione - A voz do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "história de pescador",
@@ -193628,6 +195662,7 @@ db = {
       "title": "a popularidade de ataufo alves",
       "year": 0,
       "path": "1975 - Ataulfo Alves - A popularidade de Ataulfo Alves Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "na cadência do samba",
@@ -193706,6 +195741,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Beth Carvalho - Pandeiro E Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "só queria ser feliz",
@@ -193791,6 +195827,7 @@ db = {
       "title": "samba canto livre de um povo",
       "year": 0,
       "path": "1975 - Ederaldo Gentil - Samba, canto livre de um povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a saudade me mata",
@@ -193883,6 +195920,7 @@ db = {
       "title": "fusão do samba",
       "year": 0,
       "path": "1975 - Gracia do Salgueiro e Velha da Portela - Fusão do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "janela da favela",
@@ -193989,6 +196027,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Histórias das escolas de samba Volume 1",
+      "has_cover": true,
       "tracks": [
         {
           "title": "depoimento de bide",
@@ -194053,6 +196092,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Histórias das escolas de samba Volume 5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "velha-guarda da portela",
@@ -194117,6 +196157,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Histórias das escolas de samba Volume 6 Portela sete anos de glória",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sublime pergaminho",
@@ -194181,6 +196222,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Histórias das escolas de samba Volume 7 Surge os acadêmicos do Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "61 anos de república",
@@ -194245,6 +196287,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Histórias das escolas de samba Volume 8 As campeãs dos últimos 10 anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "carnaval de ilusões",
@@ -194309,6 +196352,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - João Nogueira - Vem Quem Tem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nó na madeira",
@@ -194401,6 +196445,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1975 - Partido Em 5",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Lá vai viola",
@@ -194486,6 +196531,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Beth Carvalho - Mundo melhor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "antes ele do que eu",
@@ -194578,6 +196624,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Carlos Cachaça - Carlos Cachaça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Todo Amor",
@@ -194670,6 +196717,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Clara Nunes - Canto Das Três Raças",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto das três raças",
@@ -194748,6 +196796,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Cristina Buarque - Prato e faca",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sempre teu amor",
@@ -194840,6 +196889,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - História Do Brasil Através Dos Sambas-De-Enredo - O Negro No Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Navio Negreiro",
@@ -194932,6 +196982,7 @@ db = {
       "title": "Samba",
       "year": 0,
       "path": "1976 - Jorginho do Império - Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olêlê olálá",
@@ -195010,6 +197061,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Leci Brandão - Questão De Gosto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ser mulher",
@@ -195102,6 +197154,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Mano Décio da Viola - O legendário Mano Décio da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "heróis da liberdade",
@@ -195194,6 +197247,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Monarco - Monarco",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O quitandeiro",
@@ -195286,6 +197340,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Nova História Da Música Popular Brasileira Vol03 – Paulinho da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Recado",
@@ -195350,6 +197405,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Nova História Da Música Popular Brasileira Vol05 – Lupicínio Rodrigues",
+      "has_cover": true,
       "tracks": [
         {
           "title": "felicidade",
@@ -195414,6 +197470,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Nova História Da Música Popular Brasileira Vol07 – Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lamento",
@@ -195478,6 +197535,7 @@ db = {
       "title": "Em Verso e Prosa",
       "year": 0,
       "path": "1976 - Os Originais do Samba - Em verso e prosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Testamento de partideiro",
@@ -195570,6 +197628,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Paulinho da Viola - Memórias Chorando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cinco companheiros",
@@ -195655,6 +197714,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1976 - Xangô da Mangueira - Chão da Mangueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mineiro mineiro",
@@ -195747,6 +197807,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Candeia - Luz Da Inspiração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Riquezas do nosso Brasil",
@@ -195839,6 +197900,7 @@ db = {
       "title": "cabeça feita",
       "year": 0,
       "path": "1977 - Nadinho da Ilha - Cabeça feita",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cabeça feita",
@@ -195931,6 +197993,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol09 – Noel Rosa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quando o samba acabou",
@@ -195988,6 +198051,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol17 – Ismael Silva",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nosso amor",
@@ -196045,6 +198109,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol26 – Sinhô",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o pé de anjo",
@@ -196109,6 +198174,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol29 – Ataulfo Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mulata assanhada",
@@ -196173,6 +198239,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol30 – Herivelto Martins",
+      "has_cover": true,
       "tracks": [
         {
           "title": "caminhemos",
@@ -196237,6 +198304,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1977 - Nova História Da Música Popular Brasileira Vol31 – Monsueto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "ziriguidum",
@@ -196301,6 +198369,7 @@ db = {
       "title": "bate outra vez",
       "year": 0,
       "path": "1978 - Cartola - bate outra vez",
+      "has_cover": true,
       "tracks": [
         {
           "title": "as rosas não falam",
@@ -196393,6 +198462,7 @@ db = {
       "title": "guerreira",
       "year": 0,
       "path": "1978 - Clara Nunes - Guerreira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "guerreira",
@@ -196485,6 +198555,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Gisa Nogueira - Gisa Nogueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Verdade aparente",
@@ -196577,6 +198648,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol34 – Wilson Batista",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lenço no pescoço",
@@ -196641,6 +198713,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol36 – Donga E Os Primititivos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "acorda adalgisa",
@@ -196719,6 +198792,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol37 – Martinho da Vila",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Menina moça",
@@ -196776,6 +198850,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol40 – Nelson Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rugas",
@@ -196840,6 +198915,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol47 – Geraldo Pereira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "você está sumindo",
@@ -196904,6 +198980,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol52 – Candeia E Elton Medeiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mascarada",
@@ -196968,6 +199045,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Nova História Da Música Popular Brasileira Vol64 – Bide, Marçal E O Estácio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a malandragem",
@@ -197025,6 +199103,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Sambistas de Bossa & Sambas de Breque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Você Está Sumindo",
@@ -197145,6 +199224,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1978 - Sinhô – Ana Maria Brandão interpreta Sinhô",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jura",
@@ -197237,6 +199317,7 @@ db = {
       "title": "gostoso veneno",
       "year": 0,
       "path": "1979 - Alcione - Gostoso veneno",
+      "has_cover": true,
       "tracks": [
         {
           "title": "menino sem juízo",
@@ -197266,6 +199347,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1979 - Cartola - Cartola 70 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o inverno do meu tempo",
@@ -197358,6 +199440,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1979 - Dona Ivone Lara - Sorriso De Criança",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sorriso de criança",
@@ -197443,6 +199526,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1979 - História da MPB Vol64 – Bide, Marçal e o Estácio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a malandragem",
@@ -197500,6 +199584,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1979 - João Nogueira - Clube do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "súplica",
@@ -197592,6 +199677,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1979 - Roberto Ribeiro - Coisas Da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vazio",
@@ -197684,6 +199770,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - A música genial de Pixinguinha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Carinhoso",
@@ -197762,6 +199849,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Bezerra da Silva - Partido muito alto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "colina maldita",
@@ -197854,6 +199942,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Cristina Buarque - Vejo Amanhecer",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bastidores",
@@ -197946,6 +200035,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Élton Medeiros - Élton Medeiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na mesa de um botequim",
@@ -198038,6 +200128,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Henricão - Recomeço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só vendo que beleza",
@@ -198130,6 +200221,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Mussum - Mussum",
+      "has_cover": true,
       "tracks": [
         {
           "title": "descobrimento do brasil",
@@ -198215,6 +200307,7 @@ db = {
       "title": "paulo césar pinheiro",
       "year": 0,
       "path": "1980 - Paulo César Pinheiro - Paulo César Pinheiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pelas ruas da cidade",
@@ -198300,6 +200393,7 @@ db = {
       "title": "Qualquer lugar",
       "year": 0,
       "path": "1980 - Renato da Rocinha - Qualquer lugar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Qualquer lugar",
@@ -198392,6 +200486,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1980 - Roberto Ribeiro - Fala Meu Povo!",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Resto de esperança",
@@ -198484,6 +200579,7 @@ db = {
       "title": "na fonte",
       "year": 0,
       "path": "1981 - Beth Carvalho - Na Fonte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "virada",
@@ -198583,6 +200679,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1981 - Dona Ivone Lara - Sorriso Negro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A sereia Guiomar",
@@ -198675,6 +200772,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1981 - João Nogueira - Wilson, Geraldo, Noel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Louco",
@@ -198767,6 +200865,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1981 - Jorge Aragão - Jorge Aragão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "concentração",
@@ -198845,6 +200944,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1981 - Paulinho da Viola - Paulinho Da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Onde a dor não tem razão",
@@ -198937,6 +201037,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1981 - Roberto Ribeiro - Massa, Raça e Emoção",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passagens",
@@ -199029,6 +201130,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1982 - Alcione - Vamos Arrepiar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite pelo dia",
@@ -199121,6 +201223,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1982 - Almir Guinéto - A Chave Do Perdão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não tenho ambição",
@@ -199213,6 +201316,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1982 - Beth Carvalho - Traço De União",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Força da imaginação",
@@ -199305,6 +201409,7 @@ db = {
       "title": "alegria minha gente serra dos meus sonhos dourados",
       "year": 0,
       "path": "1982 - Dona Ivone Lara - Alegria minha gente Serra dos meus sonhos dourados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "samba de roda pra salvador",
@@ -199376,6 +201481,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1982 - Martinho da Vila - Verso e reverso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eta mundo grande",
@@ -199461,6 +201567,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1982 - Roberto Ribeiro - Fantasias",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fumo De Rolo",
@@ -199553,6 +201660,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1983 - Beth Carvalho - Suor No Rosto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "suor no rosto",
@@ -199652,6 +201760,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1983 - Nei Lopes - Negro Mesmo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A epopéia de Zumbi",
@@ -199730,6 +201839,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1983 - Partido alto nota 10 Vol 4 – Genaro e Bebeto di São João",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mata o véio",
@@ -199794,6 +201904,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1983 - Paulinho da Viola - Prisma Luminoso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Tempo Não Apagou",
@@ -199872,6 +201983,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1984 - Beth Carvalho - Coração Feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "toque de malicia",
@@ -199887,6 +201999,7 @@ db = {
       "title": "Cartola entre amigos",
       "year": 0,
       "path": "1984 - Cartola Entre Amigos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil terra adorada . Não",
@@ -199965,6 +202078,7 @@ db = {
       "title": "nos pagodes da vida",
       "year": 0,
       "path": "1984 - Fundo de Quintal - Nos Pagodes Da Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "caciqueando",
@@ -200057,6 +202171,7 @@ db = {
       "title": "pelas terras do pau-brasil",
       "year": 0,
       "path": "1984 - João Nogueira - Pelas terra do pau-brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "xingu",
@@ -200135,6 +202250,7 @@ db = {
       "title": "De Palmares ao tamborim",
       "year": 0,
       "path": "1984 - Roberto Ribeiro - De Palmares Ao Tamborim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "De Palmares ao tamborim",
@@ -200227,6 +202343,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Almir Guinéto - Sorriso Novo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jibóia",
@@ -200312,6 +202429,7 @@ db = {
       "title": "Malandro Rife",
       "year": 0,
       "path": "1985 - Bezerra da Silva - Malandro Rife",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bicho feroz",
@@ -200404,6 +202522,7 @@ db = {
       "title": "o samba descontraido de capri",
       "year": 0,
       "path": "1985 - Caprí - O samba descontraido de Caprí",
+      "has_cover": true,
       "tracks": [
         {
           "title": "baixinho injuriado",
@@ -200496,6 +202615,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Cristina Buarque e Mauro Duarte - Cristina e Mauro Duarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sorri de mim",
@@ -200560,6 +202680,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Grupo Natal - Partido Do Povo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Violência",
@@ -200652,6 +202773,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Jovelina Pérola Negra - Pérola Negra",
+      "has_cover": true,
       "tracks": [
         {
           "title": "o dia se zangou",
@@ -200737,6 +202859,7 @@ db = {
       "title": "Pra esfriar a cabeça",
       "year": 0,
       "path": "1985 - Luiz Carlos da Vila - Pra Esfriar A Cabeça",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tudo se ilumina",
@@ -200829,6 +202952,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Martinho da Vila - Criações E Recriações",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Recriando a criação",
@@ -200921,6 +203045,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - O Partido Muito Alto De Wilson Moreira & Nei Lopes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mocotó do Tião",
@@ -201013,6 +203138,7 @@ db = {
       "title": "raça brasileira",
       "year": 0,
       "path": "1985 - Raça brasileira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "raça brasileira",
@@ -201105,6 +203231,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1985 - Roberto Ribeiro - Corrente De Aço",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandros maneiros",
@@ -201197,6 +203324,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - Almir Guinéto - Almir Guinéto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caxambu",
@@ -201289,6 +203417,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - Assis Valente - Assis Valente",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil pandeiro",
@@ -201311,6 +203440,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - João Nogueira - João Nogueira",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boteco do Arlindo",
@@ -201389,6 +203519,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - Marçal - Senti Firmeza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "contos de areia",
@@ -201474,6 +203605,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - Martinho da Vila - Batuqueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rabo De Cometa",
@@ -201559,6 +203691,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1986 - Wilson Moreira - Peso Na Balança Série Grandes Sambistas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "peso na balança",
@@ -201644,6 +203777,7 @@ db = {
       "title": "do fundo do nosso quintal",
       "year": 0,
       "path": "1987 - Fundo de Quintal - Do Fundo Do Nosso Quintal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu não quero mais",
@@ -201750,6 +203884,7 @@ db = {
       "title": "feito diadema",
       "year": 0,
       "path": "1987 - Ircéa - Feito Diadema",
+      "has_cover": true,
       "tracks": [
         {
           "title": "feito diadema",
@@ -201828,6 +203963,7 @@ db = {
       "title": "dignidade",
       "year": 0,
       "path": "1987 - Leci Brandão - Dignidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vai ter que me aturar",
@@ -201927,6 +204063,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1987 - Marçal - Sem meu tamborim não vou",
+      "has_cover": true,
       "tracks": [
         {
           "title": "canto forte",
@@ -202012,6 +204149,7 @@ db = {
       "title": "Coração de malandro",
       "year": 0,
       "path": "1987 - Martinho da Vila - Coração De Malandro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que preta que nêga",
@@ -202104,6 +204242,7 @@ db = {
       "title": "Meu Sorriso",
       "year": 0,
       "path": "1987 - Neguinho da Beija-Flor - Meu sorriso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1. Flor",
@@ -202210,6 +204349,7 @@ db = {
       "title": "aquela imagem",
       "year": 0,
       "path": "1987 - Reinaldo - Aquela imagem",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coisa de amante",
@@ -202260,6 +204400,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1988 - Candeia - Funarte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não vou te perdoar",
@@ -202345,6 +204486,7 @@ db = {
       "title": "vinil raridades",
       "year": 0,
       "path": "1988 - Fundo de Quintal - O Show Tem Que Continuar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "oitava cor",
@@ -202437,6 +204579,7 @@ db = {
       "title": "joão",
       "year": 0,
       "path": "1988 - João Nogueira - João",
+      "has_cover": true,
       "tracks": [
         {
           "title": "foia de amor",
@@ -202508,6 +204651,7 @@ db = {
       "title": "A incrível bateria do mestre Marçal",
       "year": 0,
       "path": "1988 - Marçal - A Incrível Bateria De Mestre Marçal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A incrível bateria",
@@ -202572,6 +204716,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1988 - Moacyr Luz - Moacyr Luz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O mar no Maracanã",
@@ -202643,6 +204788,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1988 - Roberto Ribeiro - Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Devaneios e tramas",
@@ -202735,6 +204881,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1989 - Almir Guinéto - Jeito De Amar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lado a lado",
@@ -202827,6 +204974,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1989 - Martinho da Vila - O Canto Das Lavadeiras",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pelos caminhos do som",
@@ -202919,6 +205067,7 @@ db = {
       "title": "Sangue, Suor E Samba",
       "year": 0,
       "path": "1989 - Os Originais do Samba - Sangue, suor e samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O rei da cocada preta",
@@ -203004,6 +205153,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1989 - Paulinho da Viola - Eu Canto Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Eu canto samba",
@@ -203096,6 +205246,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1989 - Reinaldo - Reinaldo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "vem pra ser meu refrão",
@@ -203174,6 +205325,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1990 - Alcione - Emoções Reais",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Beija-flor",
@@ -203280,6 +205432,7 @@ db = {
       "title": "De bem com vida",
       "year": 0,
       "path": "1991 - Almir Guinéto - De Bem Com A Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Motivo",
@@ -203372,6 +205525,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1991 - Cartola - Cartola ao vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "alvorada",
@@ -203457,6 +205611,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1991 - Fundo de Quintal - É Aí Que Quebra A Rocha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pagodeando",
@@ -203556,6 +205711,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1991 - Jovelina Pérola Negra - Sangue bom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "No Mesmo Manto",
@@ -203648,6 +205804,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1991 - Martinho da Vila - Vai Meu Samba, Vai",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vai meu samba",
@@ -203684,6 +205841,7 @@ db = {
       "title": "bem melhor",
       "year": 0,
       "path": "1991 - Noite Ilustrada - Bem Melhor",
+      "has_cover": true,
       "tracks": [
         {
           "title": "errei sim . segredo . palhaço . tudo acabado . a grande verdade . fim de comédia",
@@ -203755,6 +205913,7 @@ db = {
       "title": "Okolofé",
       "year": 0,
       "path": "1991 - Wilson Moreira - Okolofé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Formiga miúda . Shopping samba",
@@ -203840,6 +205999,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1992 - João Nogueira - Além Do Espelho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Além do espelho",
@@ -203925,6 +206085,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1992 - Roberto Ribeiro - Brasil samba – Série academia brasileira de música volume 6",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu drama . acreditar . todo menino e um rei . vazio",
@@ -204017,6 +206178,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1993 - Bezerra da Silva - Cocada Boa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Overdose de Cocada",
@@ -204102,6 +206264,7 @@ db = {
       "title": "sambas enredo de todos os tempos",
       "year": 0,
       "path": "1993 - Marçal - Sambas enredo de todos os tempos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "lendas e mistérios da amazonia",
@@ -204215,6 +206378,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1993 - Marquinho Sathan - Meu Dia-A-Dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Não sou aprendiz",
@@ -204314,6 +206478,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1994 - Jorge Aragão - Acena",
+      "has_cover": true,
       "tracks": [
         {
           "title": "como um rei",
@@ -204392,6 +206557,7 @@ db = {
       "title": "Pintura na tela",
       "year": 0,
       "path": "1994 - Sombrinha - Pintura Na Tela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Marcas no leito",
@@ -204463,6 +206629,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1995 - Cartola - Série Aplauso",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O inverno do meu tempo",
@@ -204569,6 +206736,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1995 - Clara com vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "morena de angola",
@@ -204675,6 +206843,7 @@ db = {
       "title": "Raças Brasil",
       "year": 0,
       "path": "1995 - Luiz Carlos da Vila - Raças Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba que nem Rita chora",
@@ -204767,6 +206936,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1995 - Moacyr Luz - Vitória Da Ilusão",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Itajara",
@@ -204887,6 +207057,7 @@ db = {
       "title": "aldir blanc 50 anos",
       "year": 0,
       "path": "1996 - Aldir Blanc - 50 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apresentação",
@@ -205042,6 +207213,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1996 - Arlindo Cruz e Sombrinha - Da música",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu não sou o que ela pensou . não fique a se torturar . vai pro lado de lá",
@@ -205134,6 +207306,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1996 - Guilherme de Brito - Folhas Secas Série Grandes Sambistas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Delirio",
@@ -205226,6 +207399,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1996 - Toque de Prima - O samba é o meu dom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "abre a porta ai",
@@ -205318,6 +207492,7 @@ db = {
       "title": "75 anos de samba",
       "year": 0,
       "path": "1996 - Zé Ketti - 75 Anos De Samba Série Grandes Sambistas",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Opinião",
@@ -205410,6 +207585,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1996 - Zé Renato - Natural do Rio de Janeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Opinião",
@@ -205502,6 +207678,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1997 - Alcione - Valeu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "valeu demais",
@@ -205608,6 +207785,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1997 - Dona Ivone Lara - Bodas De Ouro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba de roda pra Salvador",
@@ -205700,6 +207878,7 @@ db = {
       "title": "A alegria continua",
       "year": 0,
       "path": "1997 - Élton Medeiros, Zé Renato e Mariana Moraes - A Alegria Continua",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vivo meu samba",
@@ -205855,6 +208034,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1997 - Martinho da Vila - Coisas de deus",
+      "has_cover": true,
       "tracks": [
         {
           "title": "minha e tua",
@@ -205961,6 +208141,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1997 - Paulinho da Viola - Bebadachama",
+      "has_cover": true,
       "tracks": [
         {
           "title": "coracão vulgar . momento de fraqueza . o velório do heitor",
@@ -206151,6 +208332,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1998 - Arlindo Cruz e Sombrinha - Pra ser feliz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "é sempre assim",
@@ -206257,6 +208439,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1998 - Água de Moringa - Saracoteando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fon-Fon",
@@ -206377,6 +208560,7 @@ db = {
       "title": "Eterna chama Candeia",
       "year": 0,
       "path": "1998 - Eterna Chama - Candeia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minhas madrugadas",
@@ -206476,6 +208660,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1998 - Élton Medeiros e Márcia - Cartola 90 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sala de recepção",
@@ -206582,6 +208767,7 @@ db = {
       "title": "fundo de quintal e convidados",
       "year": 0,
       "path": "1998 - Fundo de Quintal - Fundo De Quintal E Convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nem lá nem cá",
@@ -206674,6 +208860,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1998 - Luiz Carlos da Vila - A Luz Do Vencedor Luiz Carlos Da Vila Canta Candeia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A luz de um vencedor",
@@ -206787,6 +208974,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1998 - Walter Alfaiate - Olha Aí",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olha Aí",
@@ -206893,6 +209081,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Almir Guinéto - Almir Guinéto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caxambu",
@@ -206999,6 +209188,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Beth Carvalho - Pagode De Mesa - Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "bar da neguinha",
@@ -207035,6 +209225,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Bezerra da Silva - Focus - O Essencial De Bezerra Da Sila",
+      "has_cover": true,
       "tracks": [
         {
           "title": "overdose de cocada",
@@ -207183,6 +209374,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Cartola - O Sol Nascerá",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que infeliz sorte",
@@ -207331,6 +209523,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Dudu Nobre - Dudu Nobre",
+      "has_cover": true,
       "tracks": [
         {
           "title": "no mexe mexe, no bole bole",
@@ -207437,6 +209630,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Nei Lopes - Sincopando O Breque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Baile No Elite",
@@ -207536,6 +209730,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Paulinho da Viola e Toquinho - Sinal Aberto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nada de novo . que maravilha",
@@ -207719,6 +209914,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "1999 - Velha Guarda da Mangueira - Velha-Guarda da Mangueira e convidados",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mangueira chegou",
@@ -207825,6 +210021,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Beth Carvalho - A música brasileira deste século por seus autores e intérpretes Programa ensaio – Beth Carvalho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "minha vontade",
@@ -207980,6 +210177,7 @@ db = {
       "title": "A lua e o conhaque",
       "year": 0,
       "path": "2000 - Délcio Carvalho - A Lua E O Conhaque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Fio de melodia",
@@ -208107,6 +210305,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Dorina - Sambacom",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vivência no morro",
@@ -208213,6 +210412,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Fundo de Quintal - Simplicidade – Fundo De Quintal Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "docê refugio . caciqueando",
@@ -208326,6 +210526,7 @@ db = {
       "title": "Bar da esquina",
       "year": 0,
       "path": "2000 - Jorge Aragão - Bar Da Esquina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minta meu sonho",
@@ -208432,6 +210633,7 @@ db = {
       "title": "programa ensaio manacéia",
       "year": 0,
       "path": "2000 - Manacéia - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "quantas lágrimas",
@@ -208545,6 +210747,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Mauro Diniz - Samba Com Realidade",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha doce paixão",
@@ -208651,6 +210854,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Nei Lopes - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Luxuosos transatlânticos",
@@ -208722,6 +210926,7 @@ db = {
       "title": "De letra e musica",
       "year": 0,
       "path": "2000 - Nei Lopes - De Letra & Música",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Senhora liberdade",
@@ -208835,6 +211040,7 @@ db = {
       "title": "riqueza do brasil",
       "year": 0,
       "path": "2000 - Quinteto em Branco e Preto - Riqueza do Brasil",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nova psicologia",
@@ -208948,6 +211154,7 @@ db = {
       "title": "riqueza do brasil",
       "year": 0,
       "path": "2000 - Riqueza do Brasil - Quinteto em branco e preto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "nova psicologia",
@@ -209061,6 +211268,7 @@ db = {
       "title": "programa ensaio roberto silva",
       "year": 0,
       "path": "2000 - Roberto Silva - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "normélia",
@@ -209167,6 +211375,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2000 - Velha Guarda Do Salgueiro - Velha Guarda do Salgueiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quilombo dos Palmares",
@@ -209245,6 +211454,7 @@ db = {
       "title": "Programa ensaio Zeca Pagodinho",
       "year": 0,
       "path": "2000 - Zeca Pagodinho - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba pras moças",
@@ -209379,6 +211589,7 @@ db = {
       "title": "Programa ensaio  Zé Keti",
       "year": 0,
       "path": "2000 - Zé Ketti - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mascara negra",
@@ -209506,6 +211717,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Almir Guinéto - Todos Os Pagodes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "saco cheio",
@@ -209605,6 +211817,7 @@ db = {
       "title": "samba",
       "year": 0,
       "path": "2001 - Almmirzinho - Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "gravatá",
@@ -209725,6 +211938,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Cartola - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Que infeliz sorte",
@@ -209831,6 +212045,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Fundo de Quintal - Papo De Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "papo de samba",
@@ -209937,6 +212152,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Guilherme de Brito - Samba guardado",
+      "has_cover": true,
       "tracks": [
         {
           "title": "consciência",
@@ -210029,6 +212245,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Moacyr Luz - Na Galeria",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Leva meu coração",
@@ -210121,6 +212338,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Nelson Sargento - Flores Em Vida",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A noite se repete",
@@ -210213,6 +212431,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Paulinho da Viola e Os Quatro Crioulos - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quatro crioulos",
@@ -210319,6 +212538,7 @@ db = {
       "title": "samba de botequim",
       "year": 0,
       "path": "2001 - Toninho Geraes - Samba de botequim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cafe na cama",
@@ -210425,6 +212645,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2001 - Zeca Apresenta Quintal Do Pagodinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tá na hora",
@@ -210538,6 +212759,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Argemiro - Argemiro Patrocínio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu sofrimento . tudo mudou tão de repente",
@@ -210651,6 +212873,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Arlindo Cruz e Sombrinha - Hoje tem samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "consciência",
@@ -210764,6 +212987,7 @@ db = {
       "title": "programa ensaio élton medeiros",
       "year": 0,
       "path": "2002 - Élton Medeiros - A música brasileira deste século por seus autores e intérpretes Programa ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "pressentimento",
@@ -210891,6 +213115,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Jair do Cavaquinho - Seu Jair Do Cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Doce na feira",
@@ -211004,6 +213229,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - O Samba É Minha Nobreza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Morro . Gorgear da passarada . Ao romper da aurora . Na linha do mar . Manhã brasileira . Esta melodia",
@@ -211124,6 +213350,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Roberto Ribeiro - A Música Brasileira Deste Século Por Seus Autores E Intérpretes Programa Ensaio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vazio",
@@ -211251,6 +213478,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Sururu na Roda - Arco Da Velha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasil Pandeiro - Izaura",
@@ -211364,6 +213592,7 @@ db = {
       "title": "a musica de paulinho da viola",
       "year": 0,
       "path": "2002 - Teresa Cristina & Grupo Semente - A música de Paulinho da Viola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "meu mundo é hoje",
@@ -211568,6 +213797,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2002 - Wilson Moreira - Entidades I",
+      "has_cover": true,
       "tracks": [
         {
           "title": "oloãn",
@@ -211674,6 +213904,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Bezerra da Silva - Meu bom juíz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Semente (Ao Vivo)",
@@ -211710,6 +213941,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Dorina - Sambas De Almir",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abençalgueiro",
@@ -211809,6 +214041,7 @@ db = {
       "title": "Memorável samba",
       "year": 0,
       "path": "2003 - Marcos Sacramento - Memorável Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Deixa falar",
@@ -211901,6 +214134,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Noite Ilustrada - Ao Mestre Com Carinho - Noite Ilustrada Canta Ataulpho Alves",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ai que saudade da Amélia",
@@ -212007,6 +214241,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Paulinho da Viola - Meu Tempo É Hoje",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Mundo È Hoje",
@@ -212127,6 +214362,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Tributo a Waldir Azevedo O mestre do cavaquinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Brasileirinho",
@@ -212254,6 +214490,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2003 - Um ser de luz saudação a Clara Nunes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a deusa dos orixás",
@@ -212458,6 +214695,7 @@ db = {
       "title": "Maxixe não é samba",
       "year": 0,
       "path": "2003 - Vó Maria - Maxixe Não É Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pelo telefone",
@@ -212557,6 +214795,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - A Comunidade Samba Da Vela",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Irmãos de fé",
@@ -212705,6 +214944,7 @@ db = {
       "title": "divino samba meu",
       "year": 0,
       "path": "2004 - Dona Inah - Divino samba meu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "peregrino",
@@ -212797,6 +215037,7 @@ db = {
       "title": "Da noite pro dia",
       "year": 0,
       "path": "2004 - Jorge Aragão - Da Noite Pro Dia",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sede",
@@ -212917,6 +215158,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Luiz Carlos da Vila - Benza, Deus",
+      "has_cover": true,
       "tracks": [
         {
           "title": "benza deus",
@@ -213023,6 +215265,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Martinho da Vila - Conexões",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Como Você",
@@ -213129,6 +215372,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Nei Lopes - Partido Ao Cubo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba de eleguá",
@@ -213235,6 +215479,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Pedro Paulo Malta e Alfredo Del-Penho - Dois bicudos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "1. Baile no bola",
@@ -213341,6 +215586,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Roque Ferreira - Tem Samba No Mar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Cavalo De São Jorge",
@@ -213447,6 +215693,7 @@ db = {
       "title": "A vida me fez assim",
       "year": 0,
       "path": "2004 - Teresa Cristina & Grupo Semente - A Vida Me Fez Assim",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Acalanto",
@@ -213560,6 +215807,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2004 - Toque de Prima - Daqui, dali e o de lá",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Cabô Meu Pai",
@@ -213666,6 +215914,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Adalto Magalha - Samba De Tradição",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na hora de voltar",
@@ -213772,6 +216021,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Banda Glória - Passarinho",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tua",
@@ -213885,6 +216135,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Casuarina - Casuarina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pranto De Poeta",
@@ -213970,6 +216221,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Dudu Nobre - Festa em meu coração",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a labareda me pegou . são cosme quer vadiar . me chamou pra sambar",
@@ -214076,6 +216328,7 @@ db = {
       "title": "Matrizes",
       "year": 0,
       "path": "2005 - Luiz Carlos da Vila e Cláudio Jorge - Matrizes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O daqui, o dali e o de lá",
@@ -214175,6 +216428,7 @@ db = {
       "title": "luiz grande",
       "year": 0,
       "path": "2005 - Luiz Grande - Luiz Grande",
+      "has_cover": true,
       "tracks": [
         {
           "title": "sambando com os braços",
@@ -214267,6 +216521,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Moacyr Luz - A Sedução Carioca Do Poeta Brasileiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noite carioca",
@@ -214359,6 +216614,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Moacyr Luz - Violão & Voz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coração do agreste",
@@ -214458,6 +216714,7 @@ db = {
       "title": "Estava faltando você",
       "year": 0,
       "path": "2005 - Nilze Carvalho - Estava Faltando Você",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estava faltando você",
@@ -214564,6 +216821,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Samba Do trabalhador - Renascença Samba Clube",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O sonho não acabou",
@@ -214691,6 +216949,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Silvio Modesto - Oficina do samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Produto do meio do samba",
@@ -214846,6 +217105,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2005 - Teresa Cristina & Grupo Semente - O Mundo É Meu Lugar - Ao Vivo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gorjear da passarada . A vida me fez assim",
@@ -214966,6 +217226,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2006 - Ana Costa - Meu Carnaval",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Raças Brasil",
@@ -215072,6 +217333,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2006 - Beth Carvalho - 40 Anos De Carreira Ao Vivo No Theatro Municipal",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Apoteose ao samba",
@@ -215276,6 +217538,7 @@ db = {
       "title": "sacramentos",
       "year": 0,
       "path": "2006 - Marcos Sacramento - Sacramentos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "desconsideração",
@@ -215375,6 +217638,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2006 - Mariana Baltar - Uma Dama Também Quer Se Divertir",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pressentimento",
@@ -215481,6 +217745,7 @@ db = {
       "title": "Roberto Ribeiro Duetos",
       "year": 0,
       "path": "2006 - Roberto Ribeiro - Duetos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Malandros maneiros",
@@ -215573,6 +217838,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2006 - Velha Guarda do Império Serrano - Um Show De Velha Guarda",
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Império tocou reunir . Não me perguntes",
@@ -215679,6 +217945,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Alcione - De tudo que eu gosto",
+      "has_cover": true,
       "tracks": [
         {
           "title": "perdeu perdeu",
@@ -215785,6 +218052,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Délcio Carvalho - Inédito e eterno - Acústico",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Dor De Amor",
@@ -215891,6 +218159,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Délcio Carvalho - Inédito e eterno - Roda de samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Minha verdade",
@@ -215997,6 +218266,7 @@ db = {
       "title": "Samba meu",
       "year": 0,
       "path": "2007 - Maria Rita - Samba meu",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Samba meu",
@@ -216096,6 +218366,7 @@ db = {
       "title": "Do brasil e do mundo",
       "year": 0,
       "path": "2007 - Martinho da Vila - Do Brasil E Do Mundo",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vou viajar",
@@ -216209,6 +218480,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Moyseis Marques - Moyseis Marques",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Nomes de favela",
@@ -216315,6 +218587,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Teresa Cristina & Grupo Semente - Delicada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "cantar",
@@ -216421,6 +218694,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2007 - Viva Cartola - 100 Anos",
+      "has_cover": true,
       "tracks": [
         {
           "title": "basta de clamares inocência",
@@ -216513,6 +218787,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2008 - Banda Glória - Banda Glória Convida Cristina Buarque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu romance",
@@ -216619,6 +218894,7 @@ db = {
       "title": "cartola 100 anos o autor e seus interpretes",
       "year": 0,
       "path": "2008 - Cartola - Cartola 100 anos – O autor e seus intérpretes",
+      "has_cover": true,
       "tracks": [
         {
           "title": "catedral do inferno",
@@ -216823,6 +219099,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2008 - Dona Inah - Olha Quem Chega",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Olha quem chega",
@@ -216943,6 +219220,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2008 - Fabiana Cozza - Quando o céu clarear",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Incensa",
@@ -217056,6 +219334,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2008 - Mart’nália - Madrugada",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alivio",
@@ -217155,6 +219434,7 @@ db = {
       "title": "acesa",
       "year": 0,
       "path": "2009 - Alcione - Acesa",
+      "has_cover": true,
       "tracks": [
         {
           "title": "eu não domino essa paixão",
@@ -217261,6 +219541,7 @@ db = {
       "title": "mtv ao vivo arlindo cruz",
       "year": 0,
       "path": "2009 - Arlindo Cruz - Acústico MTV – Arlindo Cruz",
+      "has_cover": true,
       "tracks": [
         {
           "title": "abertura",
@@ -217458,6 +219739,7 @@ db = {
       "title": "mtv apresenta casuarina",
       "year": 0,
       "path": "2009 - Casuarina - MTV Apresenta - Casuarina",
+      "has_cover": true,
       "tracks": [
         {
           "title": "canto do trabalhador",
@@ -217550,6 +219832,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Diogo Nogueira - Tô Fazendo A Minha Parte",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tô fazendo a minha parte",
@@ -217656,6 +219939,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Dona Ivone Lara - Canto de Rainha",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Serra Dos Meus Sonhos Dourados",
@@ -217762,6 +220046,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Dorina - Samba de fé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Zé Tambozeiro . Banho De Fé",
@@ -217854,6 +220139,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Edu Krieger - Correnteza",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Correnteza",
@@ -217946,6 +220232,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Galocantô - Lirísmo Do Rio",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Resistência",
@@ -218059,6 +220346,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Leandro Sapucahy - Leandro Sapucahy Cantando Roberto Ribeiro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Estrela de Madureira",
@@ -218165,6 +220453,7 @@ db = {
       "title": "Nasci pra cantar e sambar",
       "year": 0,
       "path": "2009 - Mário Sérgio - Nasci pra cantar e sambar",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Na laje",
@@ -218271,6 +220560,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Moacyr Luz - Batucando",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Vida da minha vida",
@@ -218363,6 +220653,7 @@ db = {
       "title": "Nego",
       "year": 0,
       "path": "2009 - Nego - Canções Americanas em Versões Brasileiras de Carlos Rennó e Jaques Morelenbaum (2009)",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Meu Romance",
@@ -218469,6 +220760,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Nei Lopes - Chutando O Balde",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Chutando o balde",
@@ -218589,6 +220881,7 @@ db = {
       "title": "Filhos da fé",
       "year": 0,
       "path": "2009 - Partideiros do Cacique - Filhos Da Fé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filhos da fé",
@@ -218681,6 +220974,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2009 - Yeda Maranhão - Do Rio a São Luís",
+      "has_cover": true,
       "tracks": [
         {
           "title": "tô cheirando a saudade",
@@ -218759,6 +221053,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2010 - Cláudio Jorge - Amigo de fé",
+      "has_cover": true,
       "tracks": [
         {
           "title": "estrelinha e conchinha",
@@ -218872,6 +221167,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "2010 - Martinho da Vila - Poeta Da Cidade, Martinho Canta Noel",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Filosofia",
@@ -218978,6 +221274,7 @@ db = {
       "title": "Ao Vivo No Cachuera",
       "year": 0,
       "path": "Ao Vivo No Cachuera",
+      "has_cover": false,
       "tracks": [
         {
           "title": "Quem Ouvirá",
@@ -219028,6 +221325,7 @@ db = {
       "title": "Grupo Brasil Samba Seleção",
       "year": 0,
       "path": "Brasil samba seleção Os pagodeiros",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pot-Pourri 1",
@@ -219064,6 +221362,7 @@ db = {
       "title": "Luz Da Inspiração",
       "year": 0,
       "path": "Candeia - Luz da Inspiração CD contido no livro",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Diálogo entre joão baptista m. vargens e luís carlos magalhães",
@@ -219289,6 +221588,7 @@ db = {
       "title": "noel rosa de oliveira e... escola de samba",
       "year": 0,
       "path": "Noel Rosa de Oliveira - Noel Rosa de Oliveira e Escola de Samba",
+      "has_cover": true,
       "tracks": [
         {
           "title": "mensagem",
@@ -219381,6 +221681,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "Nova História Da Música Popular Brasileira Vol18 – Cartola",
+      "has_cover": true,
       "tracks": [
         {
           "title": "Divina Dama",
@@ -219445,6 +221746,7 @@ db = {
       "title": "Unknown",
       "year": 0,
       "path": "O samba de Chico Buarque",
+      "has_cover": true,
       "tracks": [
         {
           "title": "apesar de você",
@@ -219537,6 +221839,7 @@ db = {
       "title": "os grandes sambas de terreiro do império serrano",
       "year": 0,
       "path": "Os grandes sambas de terreiro do Império Serrano",
+      "has_cover": true,
       "tracks": [
         {
           "title": "a favela",
