@@ -2,7 +2,10 @@
 
 2026-04-19
 
-- 3D albums view
+- Redesign main layout: Playfair Display typography, sidebar track panel, new header with title/subtitle
+- 3D globe: Fibonacci sphere of 2,090 album covers, vinyl box geometry, spotlight headlamp, PCF shadows, click navigates to album
+- Bake `has_cover` into JSON; skip cover HTTP request when false; parallelize generate-albums with 16 workers
+- Popstate handler for browser back/forward with `?album=` share links
 
 2026-04-18
 

@@ -233,7 +233,7 @@ renderer.domElement.addEventListener('touchmove', (e) => {
 scene.add(new THREE.AmbientLight(0xffffff, 0.10));
 
 // ambient(0.10) + spot(0.90) = 1.0 at cone centre; warm yellow-white; wider cone
-const headSpot = new THREE.SpotLight(0xfff4cc, 0.90, 0, 0.52, 0.5, 0);
+const headSpot = new THREE.SpotLight(0xfff4cc, 0.90, 0, 0.572, 0.5, 0);
 const spotTarget = new THREE.Object3D();
 spotTarget.position.set(0, 0, -50); // camera looks in -Z in local space
 camera.add(headSpot);
