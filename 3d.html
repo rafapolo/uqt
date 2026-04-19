@@ -75,6 +75,18 @@
     }
     #back-link:hover { color: #d4a574; }
 
+    #light-toggle {
+      position: fixed; top: 14px; right: 14px;
+      background: rgba(0,0,0,0.45);
+      border: none; border-radius: 4px;
+      color: rgba(212,165,116,0.6);
+      font-size: 0.75rem; letter-spacing: 0.05em;
+      padding: 6px 10px; cursor: pointer; z-index: 10;
+      transition: color 0.2s;
+    }
+    #light-toggle:hover { color: #d4a574; }
+    #light-toggle.on  { color: #ffe8a0; }
+
     /* Hint text */
     #hint {
       position: fixed; bottom: 20px; left: 50%;
@@ -106,6 +118,7 @@
 </div>
 
 <a id="back-link" href="./">← Acervo</a>
+<button id="light-toggle" title="Ligar/desligar luz">☀︎</button>
 <p id="hint">arraste para girar · scroll para avançar · clique em um álbum</p>
 
 <script type="module">
@@ -230,7 +243,8 @@ renderer.domElement.addEventListener('touchmove', (e) => {
 // ─── Lighting ────────────────────────────────────────────────────────────────
 
 // 50% dark baseline everywhere
-scene.add(new THREE.AmbientLight(0xffffff, 0.10));
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.10);
+scene.add(ambientLight);
 
 // ambient(0.10) + spot(0.90) = 1.0 at cone centre; warm yellow-white; wider cone
 const headSpot = new THREE.SpotLight(0xfff4cc, 0.90, 0, 0.572, 0.5, 0);
@@ -258,6 +272,16 @@ roomMesh.raycast = () => {};
 scene.add(roomMesh);
 
 function animateFire(_t) {}
+
+// ─── Light toggle ─────────────────────────────────────────────────────────────
+
+let lightsOn = false;
+document.getElementById('light-toggle').addEventListener('click', function () {
+  lightsOn = !lightsOn;
+  ambientLight.intensity = lightsOn ? 1.0 : 0.10;
+  headSpot.visible = !lightsOn;
+  this.classList.toggle('on', lightsOn);
+});
 
 // ─── Starfield ───────────────────────────────────────────────────────────────
 
