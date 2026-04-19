@@ -1096,6 +1096,8 @@ audio {
 
   .filters-section {
     padding: var(--spacing-xs) var(--spacing-sm);
+    padding-bottom: 6px;
+    gap: 0;
   }
 
   /* Tracklist toggle button: visible on mobile */
@@ -1226,6 +1228,8 @@ audio {
 
   .filters-section {
     padding: var(--spacing-xs) var(--spacing-sm);
+    padding-bottom: 6px;
+    gap: 0;
   }
 }
 

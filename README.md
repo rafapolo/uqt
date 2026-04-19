@@ -46,7 +46,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ## 🛠️ Como Funciona
 
 ### Arquitetura
-- **Frontend**: HTML5 + CSS3 + JavaScript vanilla, servido pelo GitHub Pages
+- **Frontend**: HTML5 + CSS3 + JavaScript vanilla, servido pelo GitHub Pages (`assets/uqt.css`, `assets/capa.jpg`)
 - **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
 - **Rolagem virtual**: `VirtualGrid` em `js/uqt.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
