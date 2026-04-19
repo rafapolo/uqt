@@ -1,152 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Acervo UQT — 100 anos de MPB</title>
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Acervo UQT">
-	<meta property="og:title" content="Acervo UQT — 100 anos de MPB">
-	<meta property="og:description" content="1.658+ horas de Música Popular Brasileira.">
-	<meta property="og:url" content="https://rafapolo.github.io/uqt/">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Acervo UQT — 100 anos de MPB">
-	<meta name="twitter:description" content="1.658+ horas de Música Popular Brasileira.">
-	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232a2620;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a1814;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23d4a574' stroke-width='8'/%3E%3Ccircle cx='100' cy='100' r='15' fill='none' stroke='%23d4a574' stroke-width='2'/%3E%3Cpath d='M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60' fill='none' stroke='%23d4a574' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link href="uqt.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
-	<script src="js/uqt.js" defer></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Acervo UQT — 100 anos de MPB</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Acervo UQT" />
+        <meta property="og:title" content="Acervo UQT — 100 anos de MPB" />
+        <meta
+            property="og:description"
+            content="1.658+ horas de Música Popular Brasileira."
+        />
+        <meta property="og:url" content="https://rafapolo.github.io/uqt/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Acervo UQT — 100 anos de MPB" />
+        <meta
+            name="twitter:description"
+            content="1.658+ horas de Música Popular Brasileira."
+        />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232a2620;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a1814;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23d4a574' stroke-width='8'/%3E%3Ccircle cx='100' cy='100' r='15' fill='none' stroke='%23d4a574' stroke-width='2'/%3E%3Cpath d='M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60' fill='none' stroke='%23d4a574' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link href="uqt.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
+        <script src="js/uqt.js" defer></script>
+    </head>
 
-<body>
-	<header class="app-header">
-		<div class="header-content">
-			<div class="header-title">
-				<h1 class="app-title">Acervo UQT</h1>
-				<p class="app-subtitle">100 Anos de MPB</p>
-			</div>
-			<div class="header-stats">
-				<span class="music-count" data-short="1658h">1.658 horas de música</span>
-				<span id="mobile-stat-albums"></span>
-				<span id="mobile-stat-artists"></span>
-			</div>
-		</div>
-	</header>
+    <body>
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1 class="app-title">Acervo UQT</h1>
+                    <p class="app-subtitle">100 Anos de MPB</p>
+                </div>
+                <div class="header-stats">
+                    <span class="music-count" data-short="1658h"
+                        >1.658 horas de música</span
+                    >
+                    <span id="mobile-stat-albums"></span>
+                    <span id="mobile-stat-artists"></span>
+                </div>
+            </div>
+        </header>
 
-	<div class="app-layout">
-		<main class="main-content">
-			<div class="filters-section">
-				<div class="search-group">
-					<div class="search-wrapper">
-						<input id="search-input" type="text" class="search-input" placeholder="Busca por artista, álbum...">
-						<span id="search-count" class="search-count"></span>
-						<button id="search-clear" class="search-clear" aria-label="Limpar busca">✕</button>
-					</div>
-				</div>
-				<div class="decade-buttons" id="decade-buttons"></div>
-			</div>
-			<div class="albums-grid" id="albums-list"></div>
-		</main>
+        <div class="app-layout">
+            <main class="main-content">
+                <div class="filters-section">
+                    <div class="search-group">
+                        <div class="search-wrapper">
+                            <input
+                                id="search-input"
+                                type="text"
+                                class="search-input"
+                                placeholder="Busca por artista, álbum..."
+                            />
+                            <span id="search-count" class="search-count"></span>
+                            <button
+                                id="search-clear"
+                                class="search-clear"
+                                aria-label="Limpar busca"
+                            >
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                    <div class="decade-buttons" id="decade-buttons"></div>
+                </div>
+                <div class="albums-grid" id="albums-list"></div>
+            </main>
 
-		<aside class="tracks-panel">
-			<div class="album-header" id="album-header"></div>
-			<ol class="track-list" id="track-list"></ol>
-		</aside>
-	</div>
+            <aside class="tracks-panel">
+                <div class="album-header" id="album-header"></div>
+                <ol class="track-list" id="track-list"></ol>
+            </aside>
+        </div>
 
-	<audio id="audio"></audio>
+        <audio id="audio"></audio>
 
-	<footer class="player-bar">
-		<div id="now-playing-overlay" class="now-playing-overlay">
-			<div class="overlay-header">
-				<button id="overlay-close" class="overlay-close" aria-label="Fechar">↓</button>
-			</div>
-			<img id="overlay-cover" class="overlay-cover" alt="">
-			<div class="overlay-info">
-				<div id="overlay-track-title" class="overlay-track-title"></div>
-				<div id="overlay-track-artist" class="overlay-track-artist"></div>
-			</div>
-			<div class="overlay-progress-wrap">
-				<div class="progress-bar" id="overlay-progress-bar">
-					<div id="overlay-progress-fill" class="progress-fill"></div>
-				</div>
-				<div class="overlay-times">
-					<span id="overlay-time-current">0:00</span>
-					<span id="overlay-time-duration">0:00</span>
-				</div>
-			</div>
-			<div class="overlay-controls">
-				<button id="overlay-btn-prev" class="btn btn-control" title="Anterior">
-					<svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="19,20 9,12 19,4"/><rect x="5" y="4" width="3" height="16" rx="1"/></svg>
-				</button>
-				<button id="overlay-btn-play" class="btn btn-play overlay-btn-play" title="Play">
-					<svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5,3 20,12 5,21"/></svg>
-					<svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>
-				</button>
-				<button id="overlay-btn-next" class="btn btn-control" title="Próxima">
-					<svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="5,4 15,12 5,20"/><rect x="16" y="4" width="3" height="16" rx="1"/></svg>
-				</button>
-			</div>
-		</div>
+        <footer class="player-bar">
+            <div id="now-playing-overlay" class="now-playing-overlay">
+                <div class="overlay-header">
+                    <button
+                        id="overlay-close"
+                        class="overlay-close"
+                        aria-label="Fechar"
+                    >
+                        ↓
+                    </button>
+                </div>
+                <img id="overlay-cover" class="overlay-cover" alt="" />
+                <div class="overlay-info">
+                    <div
+                        id="overlay-track-title"
+                        class="overlay-track-title"
+                    ></div>
+                    <div
+                        id="overlay-track-artist"
+                        class="overlay-track-artist"
+                    ></div>
+                </div>
+                <div class="overlay-progress-wrap">
+                    <div class="progress-bar" id="overlay-progress-bar">
+                        <div
+                            id="overlay-progress-fill"
+                            class="progress-fill"
+                        ></div>
+                    </div>
+                    <div class="overlay-times">
+                        <span id="overlay-time-current">0:00</span>
+                        <span id="overlay-time-duration">0:00</span>
+                    </div>
+                </div>
+                <div class="overlay-controls">
+                    <button
+                        id="overlay-btn-prev"
+                        class="btn btn-control"
+                        title="Anterior"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="22"
+                            height="22"
+                        >
+                            <polygon points="19,20 9,12 19,4" />
+                            <rect x="5" y="4" width="3" height="16" rx="1" />
+                        </svg>
+                    </button>
+                    <button
+                        id="overlay-btn-play"
+                        class="btn btn-play overlay-btn-play"
+                        title="Play"
+                    >
+                        <svg
+                            class="icon-play"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="28"
+                            height="28"
+                        >
+                            <polygon points="5,3 20,12 5,21" />
+                        </svg>
+                        <svg
+                            class="icon-pause"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="28"
+                            height="28"
+                        >
+                            <rect x="5" y="4" width="4" height="16" rx="1" />
+                            <rect x="15" y="4" width="4" height="16" rx="1" />
+                        </svg>
+                    </button>
+                    <button
+                        id="overlay-btn-next"
+                        class="btn btn-control"
+                        title="Próxima"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="22"
+                            height="22"
+                        >
+                            <polygon points="5,4 15,12 5,20" />
+                            <rect x="16" y="4" width="3" height="16" rx="1" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
-		<div id="mobile-track-drawer" class="mobile-track-drawer">
-			<div class="drawer-header">
-				<img id="drawer-cover" class="drawer-cover" alt="" />
-				<div class="drawer-album-info">
-					<div id="drawer-album-title" class="drawer-album-title"></div>
-					<div id="drawer-album-meta" class="drawer-album-meta"></div>
-				</div>
-				<button id="drawer-close" class="drawer-close" aria-label="Fechar">✕</button>
-			</div>
-			<ol id="drawer-track-list" class="drawer-track-list"></ol>
-		</div>
+            <div id="mobile-track-drawer" class="mobile-track-drawer">
+                <div class="drawer-header">
+                    <img id="drawer-cover" class="drawer-cover" alt="" />
+                    <div class="drawer-album-info">
+                        <div
+                            id="drawer-album-title"
+                            class="drawer-album-title"
+                        ></div>
+                        <div
+                            id="drawer-album-meta"
+                            class="drawer-album-meta"
+                        ></div>
+                    </div>
+                    <button
+                        id="drawer-close"
+                        class="drawer-close"
+                        aria-label="Fechar"
+                    >
+                        ✕
+                    </button>
+                </div>
+                <ol id="drawer-track-list" class="drawer-track-list"></ol>
+            </div>
 
-		<div class="player-content">
-			<div class="now-playing-compact">
-				<img id="player-cover" class="player-cover" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232a2620;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a1814;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23d4a574' stroke-width='8'/%3E%3Ccircle cx='100' cy='100' r='15' fill='none' stroke='%23d4a574' stroke-width='2'/%3E%3Cpath d='M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60' fill='none' stroke='%23d4a574' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" alt="">
-				<div class="player-info">
-					<h3 id="player-title">Selecione uma música</h3>
-					<p id="player-artist"></p>
-				</div>
-			</div>
+            <div class="player-content">
+                <div class="now-playing-compact">
+                    <img
+                        id="player-cover"
+                        class="player-cover"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232a2620;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a1814;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23d4a574' stroke-width='8'/%3E%3Ccircle cx='100' cy='100' r='15' fill='none' stroke='%23d4a574' stroke-width='2'/%3E%3Cpath d='M 100 60 Q 120 80 120 100 Q 120 125 100 140 Q 80 125 80 100 Q 80 80 100 60' fill='none' stroke='%23d4a574' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+                        alt=""
+                    />
+                    <div class="player-info">
+                        <h3 id="player-title">Selecione um álbum</h3>
+                        <p id="player-artist"></p>
+                    </div>
+                </div>
 
-			<div class="player-controls">
-				<div class="controls-buttons">
-					<button id="btn-prev" class="btn btn-control" title="Anterior">
-						<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><polygon points="19,20 9,12 19,4"/><rect x="5" y="4" width="3" height="16" rx="1"/></svg>
-					</button>
-					<button id="btn-play" class="btn btn-play" title="Play">
-						<svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><polygon points="5,3 20,12 5,21"/></svg>
-						<svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>
-					</button>
-					<button id="btn-next" class="btn btn-control" title="Próxima">
-						<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><polygon points="5,4 15,12 5,20"/><rect x="16" y="4" width="3" height="16" rx="1"/></svg>
-					</button>
-					<button id="btn-tracklist" class="btn btn-tracklist mobile-only" title="Faixas">☰</button>
-				</div>
-				<div class="progress-container">
-					<span id="time-current" class="time">0:00</span>
-					<div class="progress-bar" id="main-progress-bar">
-						<div id="progress-fill" class="progress-fill"></div>
-					</div>
-					<span id="time-duration" class="time">0:00</span>
-				</div>
-			</div>
+                <div class="player-controls">
+                    <div class="controls-buttons">
+                        <button
+                            id="btn-prev"
+                            class="btn btn-control"
+                            title="Anterior"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                width="18"
+                                height="18"
+                            >
+                                <polygon points="19,20 9,12 19,4" />
+                                <rect
+                                    x="5"
+                                    y="4"
+                                    width="3"
+                                    height="16"
+                                    rx="1"
+                                />
+                            </svg>
+                        </button>
+                        <button id="btn-play" class="btn btn-play" title="Play">
+                            <svg
+                                class="icon-play"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                width="18"
+                                height="18"
+                            >
+                                <polygon points="5,3 20,12 5,21" />
+                            </svg>
+                            <svg
+                                class="icon-pause"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                width="18"
+                                height="18"
+                            >
+                                <rect
+                                    x="5"
+                                    y="4"
+                                    width="4"
+                                    height="16"
+                                    rx="1"
+                                />
+                                <rect
+                                    x="15"
+                                    y="4"
+                                    width="4"
+                                    height="16"
+                                    rx="1"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            id="btn-next"
+                            class="btn btn-control"
+                            title="Próxima"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                width="18"
+                                height="18"
+                            >
+                                <polygon points="5,4 15,12 5,20" />
+                                <rect
+                                    x="16"
+                                    y="4"
+                                    width="3"
+                                    height="16"
+                                    rx="1"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            id="btn-tracklist"
+                            class="btn btn-tracklist mobile-only"
+                            title="Faixas"
+                        >
+                            ☰
+                        </button>
+                    </div>
+                    <div class="progress-container">
+                        <span id="time-current" class="time">0:00</span>
+                        <div class="progress-bar" id="main-progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        <span id="time-duration" class="time">0:00</span>
+                    </div>
+                </div>
 
-			<div class="library-stats">
-				<button id="btn-shuffle" class="btn btn-control btn-extra" title="Aleatório">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="16 3 21 3 21 8"/><polyline points="16 21 21 21 21 16"/><path d="M4 20 21 3"/><path d="M4 4l5 5M16 16l5 5"/></svg>
-				</button>
-				<button id="btn-repeat" class="btn btn-control btn-extra" title="Repetir">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-				</button>
-				<div class="volume-control">
-					<svg id="volume-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path id="volume-wave" d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-					<input id="volume-slider" type="range" min="0" max="1" step="0.02" value="1" class="volume-slider">
-				</div>
-			</div>
-		</div>
-	</footer>
-</body>
+                <div class="library-stats">
+                    <button
+                        id="btn-shuffle"
+                        class="btn btn-control btn-extra"
+                        title="Aleatório"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            width="16"
+                            height="16"
+                        >
+                            <polyline points="16 3 21 3 21 8" />
+                            <polyline points="16 21 21 21 21 16" />
+                            <path d="M4 20 21 3" />
+                            <path d="M4 4l5 5M16 16l5 5" />
+                        </svg>
+                    </button>
+                    <button
+                        id="btn-repeat"
+                        class="btn btn-control btn-extra"
+                        title="Repetir"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            width="16"
+                            height="16"
+                        >
+                            <polyline points="17 1 21 5 17 9" />
+                            <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                            <polyline points="7 23 3 19 7 15" />
+                            <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <svg
+                            id="volume-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            width="16"
+                            height="16"
+                        >
+                            <polygon
+                                points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"
+                            />
+                            <path
+                                id="volume-wave"
+                                d="M15.54 8.46a5 5 0 0 1 0 7.07"
+                            />
+                        </svg>
+                        <input
+                            id="volume-slider"
+                            type="range"
+                            min="0"
+                            max="1"
+                            step="0.02"
+                            value="1"
+                            class="volume-slider"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

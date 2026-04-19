@@ -439,6 +439,15 @@ body {
   margin-bottom: 2px;
 }
 
+.artist-link {
+  cursor: pointer;
+}
+
+.artist-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 
 .track-list {
   flex: 1;
@@ -516,6 +525,15 @@ body {
   line-height: 1.3;
 }
 
+.track-artist.artist-link {
+  cursor: pointer;
+}
+
+.track-artist.artist-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 .track-duration {
   color: var(--color-text-muted);
   font-size: 0.7rem;
@@ -528,7 +546,7 @@ body {
 .player-bar {
   background: var(--color-surface);
   border-top: 2px solid var(--color-accent);
-  padding: var(--spacing-xs) var(--spacing-lg);
+  padding: 8px var(--spacing-lg);
   flex-shrink: 0;
   z-index: 200;
   backdrop-filter: blur(10px);
@@ -549,10 +567,10 @@ body {
 .player-content {
   max-width: 1600px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 2fr minmax(0, 1fr);
   gap: var(--spacing-lg);
   align-items: center;
-  justify-content: space-between;
 }
 
 .now-playing-compact {
@@ -605,16 +623,15 @@ body {
 }
 
 .player-controls {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 4px;
   align-items: center;
 }
 
 .controls-buttons {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: 4px;
   align-items: center;
   flex-shrink: 0;
 }
@@ -623,9 +640,9 @@ body {
   background: none;
   border: none;
   color: var(--color-accent);
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
-  padding: var(--spacing-xs);
+  padding: 6px;
   transition: var(--transition-fast);
   border-radius: 6px;
   display: flex;
@@ -651,14 +668,57 @@ body {
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
   color: var(--color-bg);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 
 .icon-play, .icon-pause { display: flex; pointer-events: none; }
 .btn-play .icon-pause { display: none; }
 .btn-play.playing .icon-play { display: none; }
 .btn-play.playing .icon-pause { display: flex; }
+.btn-play.loading .icon-play,
+.btn-play.loading .icon-pause { display: none; }
+.btn-play.loading::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0,0,0,0.25);
+  border-top-color: var(--color-bg);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  pointer-events: none;
+}
+.overlay-btn-play.loading::after {
+  width: 20px;
+  height: 20px;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  10%  { transform: translateX(0); }
+  85%  { transform: translateX(var(--marquee-distance)); }
+  95%  { transform: translateX(var(--marquee-distance)); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-active {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.marquee-active .marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll var(--marquee-duration, 12s) linear infinite;
+  animation-delay: 1.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-active .marquee-inner { animation: none; }
+}
 
 .btn-play:hover {
   background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
@@ -745,7 +805,7 @@ body {
   display: flex;
   gap: var(--spacing-xs);
   align-items: center;
-  flex-shrink: 0;
+  justify-self: end;
   padding-left: var(--spacing-lg);
   border-left: 1px solid var(--color-border);
 }
@@ -952,9 +1012,9 @@ audio {
   }
 
   .player-content {
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr;
     gap: var(--spacing-xs);
-    justify-content: center;
+    justify-items: center;
     padding: 0;
     height: auto;
     align-items: center;
@@ -983,10 +1043,9 @@ audio {
   }
 
   .player-controls {
-    flex: 1;
     flex-direction: column;
     gap: 2px;
-    width: auto;
+    width: 100%;
     align-items: center;
     min-width: 0;
   }
@@ -1000,11 +1059,6 @@ audio {
   .btn {
     font-size: 1rem;
     padding: 6px;
-  }
-
-  .btn-play {
-    width: 36px;
-    height: 36px;
   }
 
   /* Library stats: hidden on mobile */

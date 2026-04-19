@@ -1,6 +1,3 @@
-# Local task files (contain credentials & deployment notes)
-tasks/
-
 # OS
 .DS_Store
 Thumbs.db
