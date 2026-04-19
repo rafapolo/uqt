@@ -34,6 +34,9 @@ function attachArtistHandlers(container) {
       const input = u('#search-input').first();
       input.value = name;
       searchQuery = name;
+      activeDecade = null;
+      document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
       filterAlbums();
       input.focus();
     });
@@ -903,6 +906,11 @@ u(document).on('DOMContentLoaded', async function () {
   let searchDebounce;
   u('#search-input').on('input', function () {
     searchQuery = this.value;
+    if (searchQuery) {
+      activeDecade = null;
+      document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
+    }
     clearTimeout(searchDebounce);
     searchDebounce = setTimeout(filterAlbums, 150);
   });
