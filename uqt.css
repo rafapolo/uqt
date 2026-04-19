@@ -306,6 +306,23 @@ body {
   box-shadow: 0 6px 16px rgba(212, 165, 116, 0.3);
 }
 
+.decade-btn--globe {
+  background: #1a2535;
+  border-color: #2a4a7f;
+  color: #7aadff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+.decade-btn--globe:hover {
+  background: #1e2e45;
+  border-color: #4a8adf;
+  color: #a8ccff;
+  transform: translateY(-2px);
+}
+
 .albums-grid {
   flex: 1;
   overflow-y: auto;
