@@ -38,6 +38,7 @@ function attachArtistHandlers(container) {
       document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
       document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
       filterAlbums();
+      updateQueryInUrl(name, true);
       input.focus();
     });
   });
@@ -70,10 +71,23 @@ function getAlbumFromUrl() {
   return new URLSearchParams(window.location.search).get('album');
 }
 
+function getQueryFromUrl() {
+  return new URLSearchParams(window.location.search).get('q');
+}
+
 function generateAlbumUrl(album) {
-  const params = new URLSearchParams();
+  const params = new URLSearchParams(window.location.search);
   params.set('album', album.path);
-  return `${window.location.origin}${window.location.pathname}?${params}`;
+  return `${window.location.pathname}?${params}`;
+}
+
+function updateQueryInUrl(q, push) {
+  const params = new URLSearchParams(window.location.search);
+  if (q) params.set('q', q); else params.delete('q');
+  const url = `${window.location.pathname}?${params}`;
+  const state = selectedAlbum ? { album: selectedAlbum.path } : {};
+  if (push) window.history.pushState(state, '', url);
+  else window.history.replaceState(state, '', url);
 }
 
 function setMeta(attr, key, value) {
@@ -674,8 +688,15 @@ u(document).on('DOMContentLoaded', async function () {
     window.history.pushState({ album: album.path }, '', generateAlbumUrl(album));
   });
 
-  // Browser back/forward: restore album selection from history state
+  // Browser back/forward: restore album selection and search query from history state
   window.addEventListener('popstate', (e) => {
+    const q = new URLSearchParams(window.location.search).get('q') ?? '';
+    if (q !== searchQuery) {
+      searchQuery = q;
+      const input = document.getElementById('search-input');
+      if (input) input.value = q;
+      filterAlbums();
+    }
     const path = e.state?.album ?? new URLSearchParams(window.location.search).get('album');
     if (!path) return;
     const album = albums.find(a => a.path === path);
@@ -723,6 +744,15 @@ u(document).on('DOMContentLoaded', async function () {
   renderDecadeButtons();
   virtualGrid.setItems(filteredAlbums);
   updateLibraryStats();
+
+  // Restore search query from URL
+  const initialQuery = getQueryFromUrl();
+  if (initialQuery) {
+    searchQuery = initialQuery;
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = initialQuery;
+    filterAlbums();
+  }
 
   // Select initial album from URL or first in list
   const albumFromUrl = getAlbumFromUrl();
@@ -918,13 +948,14 @@ u(document).on('DOMContentLoaded', async function () {
       document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
     }
     clearTimeout(searchDebounce);
-    searchDebounce = setTimeout(filterAlbums, 150);
+    searchDebounce = setTimeout(() => { filterAlbums(); updateQueryInUrl(searchQuery.trim(), false); }, 150);
   });
 
   document.getElementById('search-clear')?.addEventListener('click', () => {
     searchQuery = '';
     u('#search-input').first().value = '';
     filterAlbums();
+    updateQueryInUrl('', false);
     u('#search-input').first().focus();
   });
 
