@@ -2,63 +2,65 @@
 
 2026-04-20
 
-- Singleton player across tabs: BroadcastChannel pauses other tabs when one starts playing
-- 3D globe: pull overlapping album inward to prevent z-fighting glitch during drift animation
-- Search: URL parameter support (`?q=`) for shareable search queries
-- Assets refactor: move css and capa to `assets/`, remove unused `uqt_artists.json`
-- Remove 139 albums with no S3 path from albums DB
-- 3D globe: light toggle button (top-right), golden border + pt labels when lights on, wider torch radius
-- 3D globe: entry button added to decade filter bar
-- Fix: search input resets decade filter to all
+- Globo 3D abre em nova aba quando o player está tocando (evita corte abrupto da música)
+- Player singleton entre abas: BroadcastChannel pausa outras abas ao iniciar reprodução
+- Globo 3D: corrige glitch visual puxando álbuns sobrepostos levemente para o centro
 
 2026-04-19
 
-- Redesign main layout: Playfair Display typography, sidebar track panel, new header with title/subtitle
-- 3D globe: Fibonacci sphere of 2,090 album covers, vinyl box geometry, spotlight headlamp, PCF shadows, click navigates to album
-- Bake `has_cover` into JSON; skip cover HTTP request when false; parallelize generate-albums with 16 workers
-- Popstate handler for browser back/forward with `?album=` share links
+- Busca com parâmetro de URL (`?q=`) para links compartilháveis com filtro
+- Globo 3D: botão de entrada adicionado à barra de filtros por década
+- Globo 3D: botão para ligar/apagar luz; borda dourada e rótulos em pt quando acesa; raio da tocha ampliado
+- Refatoração: css e capa movidos para `assets/`, `uqt_artists.json` removido
+- Removidos 139 álbuns sem caminho S3 do banco de dados
+- Correção: busca voltava a mostrar todos os álbuns ao limpar o filtro de década
+
+2026-04-19 (início)
+
+- Globo 3D: esfera de Fibonacci com 2.090 capas, geometria de caixinha de vinil, farol spotlight, sombras PCF, clique navega ao álbum
+- `has_cover` gravado no JSON; requisição de capa ignorada quando falso; geração paralelizada com 16 workers
+- Melhorias de UI em index.html e uqt.css
+- Popstate para navegação com botão voltar/avançar via `?album=`
 
 2026-04-18
 
-- Expand catalog to 1,658 hours; improve virtual grid and mobile drawer
-- Bake track durations into JSON; fix shared-URL mobile drawer
-- Media session API, cross-album shuffle, skeleton loading, touch seek
-- Mobile now-playing overlay with SVG controls
-- Search clear button, Spotify-style progress bar, keyboard shortcuts, repeat modes, localStorage
-persistence
-- Switch deploy workflow to Bun
-- Replace pako with native DecompressionStream; add search debounce
-- Async gzip data loading with virtual scrolling
+- Catálogo expandido para 1.658 horas; grid virtual e drawer mobile aprimorados
+- Durações das faixas gravadas no JSON; correção do drawer em links compartilhados
+- Media Session API, shuffle entre álbuns, skeleton loading, seek por toque
+- Overlay mobile de "tocando agora" com controles SVG
+- Botão limpar busca, barra de progresso estilo Spotify, atalhos de teclado, modos de repetição, persistência com localStorage
+- Deploy migrado para Bun; credenciais carregadas via `.env`
+- `pako` substituído por `DecompressionStream` nativa; debounce na busca
+- Carregamento assíncrono do JSON gzip com scroll virtual
 
 2026-04-17
 
-- Open Graph / Twitter Card meta tags for shared album links
-- Show track artist in gray below title for compilations
-- Shuffle, repeat, volume controls in desktop player bar
-- SVG play/pause toggle button
-- Header stats (albums, artists, hours) in single responsive row
-- Rethink mobile layout: compact header, full-height grid, slide-up track drawer
-- Fix lazy loading for cover images; scroll track list to top on album change
-- Remove auto-play on album select (prime only)
-- Lazy loading for album covers
+- Meta tags Open Graph e Twitter Card para links compartilhados
+- Artista da faixa exibido em cinza abaixo do título em compilações
+- Controles de shuffle, repetição e volume na barra do player (desktop)
+- Botão play/pause com ícones SVG
+- Estatísticas do acervo (álbuns, artistas, horas) em linha única responsiva
+- Layout mobile repensado: cabeçalho compacto, grid em altura total, drawer deslizante
+- Correção do lazy loading de capas; lista de faixas volta ao topo ao trocar álbum
+- Remoção do auto-play ao selecionar álbum (apenas prime da faixa)
 
 2026-04-16
 
-- Album-centric data model restructure
-- Shareable album URLs with copy-to-clipboard share button
-- Update browser URL when album is selected
-- Vinyl record SVG favicon
-- Spotify-style album grid redesign with metadata improvements
-- Haloy deployment with Docker support (uqt.xn--2dk.xyz)
-- Hetzner reverse proxy for zero-egress audio streaming
-- Fix CORB via proper CORS and MIME type handling in proxy
+- Modelo de dados reestruturado centrado em álbuns
+- URLs compartilháveis por álbum com botão copiar link
+- URL do navegador atualizada ao selecionar álbum
+- Favicon SVG de disco de vinil
+- Grid de álbuns redesenhado no estilo Spotify
+- Deploy via Haloy com suporte a Docker (uqt.xn--2dk.xyz)
+- Proxy reverso Hetzner para streaming de áudio sem custo de egresso
+- Correção de CORB via CORS e MIME types corretos no proxy
 
 2026-04-15
 
-- Redesign to Spotify-style album view with side-by-side layout
-- Modern responsive interface with custom player controls
-- Stream through Nginx proxy to avoid egress fees
+- Redesign para layout estilo Spotify com painel lateral
+- Interface responsiva moderna com controles de player customizados
+- Streaming via proxy Nginx para evitar custos de egresso
 
-2020-07-08  
+2020-07-08
 
-- Initial sketch
+- Esboço inicial
