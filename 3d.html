@@ -320,6 +320,9 @@ function resolveOverlaps(positions, size) {
         if (positions[i].distanceToSquared(positions[j]) < minDist2) {
           dir.copy(positions[j]).normalize();
           positions[j].addScaledVector(dir, bump);
+          // pull i slightly inward so the pair never shares the same radius plane
+          dir.copy(positions[i]).normalize();
+          positions[i].addScaledVector(dir, -1.5);
         }
       }
     }
