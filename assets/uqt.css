@@ -458,10 +458,11 @@ body {
 
 .year-link {
   cursor: pointer;
-  text-decoration: underline dotted;
-  text-underline-offset: 2px;
 }
-.year-link:hover { opacity: 0.75; }
+.year-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
 
 .artist-link {
   cursor: pointer;
