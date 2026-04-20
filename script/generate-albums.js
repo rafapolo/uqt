@@ -114,6 +114,7 @@ async function generateAlbums() {
   }
 
   const albums = Object.values(albumsByPath)
+    .filter(album => !album.path.startsWith('UQT'))
     .map(album => {
       album.tracks.sort((a, b) => a.num - b.num);
       const artists = [...new Set(album.tracks.map(t => t.artists))];
