@@ -827,6 +827,16 @@ u(document).on('DOMContentLoaded', async function () {
 
   audio.addEventListener('ended', playNext);
 
+  // Singleton player across tabs: pause this tab when another tab starts playing
+  if (typeof BroadcastChannel !== 'undefined') {
+    const TAB_ID = crypto.randomUUID();
+    const playerChannel = new BroadcastChannel('uqt-player');
+    audio.addEventListener('play', () => playerChannel.postMessage({ tabId: TAB_ID }));
+    playerChannel.onmessage = ({ data }) => {
+      if (data?.tabId !== TAB_ID) audio.pause();
+    };
+  }
+
   u('#btn-play').on('click', function () {
     if (audio.paused) {
       if (!currentTrack) {

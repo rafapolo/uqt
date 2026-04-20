@@ -1,5 +1,16 @@
 # Changelog
 
+2026-04-20
+
+- Singleton player across tabs: BroadcastChannel pauses other tabs when one starts playing
+- 3D globe: pull overlapping album inward to prevent z-fighting glitch during drift animation
+- Search: URL parameter support (`?q=`) for shareable search queries
+- Assets refactor: move css and capa to `assets/`, remove unused `uqt_artists.json`
+- Remove 139 albums with no S3 path from albums DB
+- 3D globe: light toggle button (top-right), golden border + pt labels when lights on, wider torch radius
+- 3D globe: entry button added to decade filter bar
+- Fix: search input resets decade filter to all
+
 2026-04-19
 
 - Redesign main layout: Playfair Display typography, sidebar track panel, new header with title/subtitle
