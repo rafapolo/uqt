@@ -456,6 +456,13 @@ body {
   margin-bottom: 2px;
 }
 
+.year-link {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+.year-link:hover { opacity: 0.75; }
+
 .artist-link {
   cursor: pointer;
 }
