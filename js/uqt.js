@@ -5,6 +5,7 @@ let filteredAlbums = [];
 let selectedAlbum = null;
 let currentTrack = null;
 let activeDecade = null;
+let activeYear = 0;
 let searchQuery = '';
 let shuffleOn = false;
 let repeatMode = 'off'; // 'off' | 'one' | 'all'
@@ -75,6 +76,10 @@ function getQueryFromUrl() {
   return new URLSearchParams(window.location.search).get('q');
 }
 
+function getYearFromUrl() {
+  return parseInt(new URLSearchParams(window.location.search).get('ano') || 0);
+}
+
 function generateAlbumUrl(album) {
   const params = new URLSearchParams(window.location.search);
   params.set('album', album.path);
@@ -88,6 +93,14 @@ function updateQueryInUrl(q, push) {
   const state = selectedAlbum ? { album: selectedAlbum.path } : {};
   if (push) window.history.pushState(state, '', url);
   else window.history.replaceState(state, '', url);
+}
+
+function updateYearInUrl(year) {
+  const params = new URLSearchParams(window.location.search);
+  if (year) params.set('ano', year); else params.delete('ano');
+  const url = `${window.location.pathname}?${params}`;
+  const state = selectedAlbum ? { album: selectedAlbum.path } : {};
+  window.history.replaceState(state, '', url);
 }
 
 function setMeta(attr, key, value) {
@@ -324,14 +337,15 @@ function filterAlbums() {
     const matchesDecade = activeDecade === null ||
       (activeDecade === 'noyear' ? !album.year :
       activeDecade === 'pre1940' ? album.year < 1950 : Math.floor(album.year / 10) * 10 === activeDecade);
-    return matchesSearch && matchesDecade;
+    const matchesYear = !activeYear || album.year === activeYear;
+    return matchesSearch && matchesDecade && matchesYear;
   });
   virtualGrid.setItems(filteredAlbums);
   updateLibraryStats();
 
   const countEl = document.getElementById('search-count');
   const clearBtn = document.getElementById('search-clear');
-  const isFiltered = !!searchQuery || activeDecade !== null;
+  const isFiltered = !!searchQuery || activeDecade !== null || !!activeYear;
   if (countEl) {
     countEl.textContent = `${filteredAlbums.length} álbun${filteredAlbums.length !== 1 ? 's' : ''}`;
     countEl.classList.toggle('visible', isFiltered);
@@ -358,6 +372,7 @@ function renderDecadeButtons() {
   todosBtn.dataset.decade = 'all';
   todosBtn.addEventListener('click', () => {
     activeDecade = null;
+    activeYear = 0; updateYearInUrl(0);
     searchQuery = '';
     u('#search-input').first().value = '';
     filterAlbums();
@@ -385,6 +400,7 @@ function renderDecadeButtons() {
   pre1940Btn.title = '1900–1949';
   pre1940Btn.addEventListener('click', () => {
     activeDecade = 'pre1940';
+    activeYear = 0; updateYearInUrl(0);
     searchQuery = '';
     u('#search-input').first().value = '';
     filterAlbums();
@@ -401,6 +417,7 @@ function renderDecadeButtons() {
     btn.title = `${decade}–${decade + 9}`;
     btn.addEventListener('click', () => {
       activeDecade = parseInt(btn.dataset.decade);
+      activeYear = 0; updateYearInUrl(0);
       searchQuery = '';
       u('#search-input').first().value = '';
       filterAlbums();
@@ -418,6 +435,7 @@ function renderDecadeButtons() {
     infBtn.title = 'Sem data';
     infBtn.addEventListener('click', () => {
       activeDecade = 'noyear';
+      activeYear = 0; updateYearInUrl(0);
       searchQuery = '';
       u('#search-input').first().value = '';
       filterAlbums();
@@ -447,8 +465,19 @@ function renderAlbumHeader() {
   info.innerHTML = `
     <h2>${selectedAlbum.name}</h2>
     <p><strong>${artistLinksHTML(selectedAlbum.artists)}</strong></p>
-    <p>${selectedAlbum.year} • ${selectedAlbum.tracks.length} canções</p>
+    <p><span class="year-link">${selectedAlbum.year}</span> • ${selectedAlbum.tracks.length} canções</p>
   `;
+
+  info.querySelector('.year-link')?.addEventListener('click', () => {
+    activeYear = selectedAlbum.year;
+    searchQuery = '';
+    activeDecade = null;
+    u('#search-input').first().value = '';
+    document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
+    updateYearInUrl(activeYear);
+    filterAlbums();
+  });
 
   attachArtistHandlers(info);
   container.replaceChildren(cover, info);
@@ -695,8 +724,10 @@ u(document).on('DOMContentLoaded', async function () {
   // Browser back/forward: restore album selection and search query from history state
   window.addEventListener('popstate', (e) => {
     const q = new URLSearchParams(window.location.search).get('q') ?? '';
-    if (q !== searchQuery) {
+    const yr = getYearFromUrl();
+    if (q !== searchQuery || yr !== activeYear) {
       searchQuery = q;
+      activeYear = yr;
       const input = document.getElementById('search-input');
       if (input) input.value = q;
       filterAlbums();
@@ -749,7 +780,7 @@ u(document).on('DOMContentLoaded', async function () {
   virtualGrid.setItems(filteredAlbums);
   updateLibraryStats();
 
-  // Restore search query from URL
+  // Restore search query and year filter from URL
   const initialQuery = getQueryFromUrl();
   if (initialQuery) {
     searchQuery = initialQuery;
@@ -757,6 +788,8 @@ u(document).on('DOMContentLoaded', async function () {
     if (searchInput) searchInput.value = initialQuery;
     filterAlbums();
   }
+  const initialYear = getYearFromUrl();
+  if (initialYear) { activeYear = initialYear; filterAlbums(); }
 
   // Select initial album from URL or first in list
   const albumFromUrl = getAlbumFromUrl();
@@ -958,6 +991,7 @@ u(document).on('DOMContentLoaded', async function () {
     searchQuery = this.value;
     if (searchQuery) {
       activeDecade = null;
+      activeYear = 0; updateYearInUrl(0);
       document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
       document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
     }
@@ -967,6 +1001,7 @@ u(document).on('DOMContentLoaded', async function () {
 
   document.getElementById('search-clear')?.addEventListener('click', () => {
     searchQuery = '';
+    activeYear = 0; updateYearInUrl(0);
     u('#search-input').first().value = '';
     filterAlbums();
     updateQueryInUrl('', false);
