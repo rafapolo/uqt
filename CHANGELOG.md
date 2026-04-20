@@ -2,6 +2,9 @@
 
 2026-04-20
 
+- Correção de codificação de caracteres nos metadados: tags ID3 em Latin-1 agora decodificadas corretamente (15 faixas corrigidas, ex: "dúvida", "jamelão", "joão nogueira")
+- `generate-albums.js` lê stdout do ffprobe como buffer e tenta re-decodificar como UTF-8 antes de manter Latin-1
+
 - Globo 3D abre em nova aba quando o player está tocando (evita corte abrupto da música)
 - Player singleton entre abas: BroadcastChannel pausa outras abas ao iniciar reprodução
 - Globo 3D: corrige glitch visual puxando álbuns sobrepostos levemente para o centro

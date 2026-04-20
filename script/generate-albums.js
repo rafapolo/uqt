@@ -11,19 +11,25 @@ const { execFile } = require('child_process');
 
 const CONCURRENCY = 16;
 
+// ID3 tags may be Latin-1 encoded; re-decode bytes as UTF-8 when valid, else keep Latin-1
+function fixEncoding(str) {
+  const asUtf8 = Buffer.from(str, 'latin1').toString('utf8');
+  return asUtf8.includes('\ufffd') ? str : asUtf8;
+}
+
 function getMP3Metadata(filePath) {
   return new Promise((resolve) => {
     execFile('ffprobe', [
       '-v', 'quiet', '-print_format', 'json', '-show_format', filePath
-    ], { encoding: 'utf-8' }, (err, stdout) => {
+    ], { encoding: 'buffer' }, (err, stdout) => {
       if (err) { resolve(null); return; }
       try {
-        const probe = JSON.parse(stdout);
+        const probe = JSON.parse(stdout.toString('latin1'));
         const tags = probe.format.tags || {};
         resolve({
-          title:    (tags.title  || path.basename(filePath, '.mp3')).trim(),
-          artist:   (tags.artist || 'Unknown').trim(),
-          album:    (tags.album  || 'Unknown').trim(),
+          title:    fixEncoding((tags.title  || path.basename(filePath, '.mp3')).trim()),
+          artist:   fixEncoding((tags.artist || 'Unknown').trim()),
+          album:    fixEncoding((tags.album  || 'Unknown').trim()),
           year:     parseInt(tags.date || tags.year || 0),
           tracknum: parseInt(tags.track?.split('/')[0] || 0),
           duration: Math.round(parseFloat(probe.format.duration) || 0)
