@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.1035.0",
     "@aws-sdk/lib-storage": "^3.0.0",
+    "fast-xml-parser": "^5.7.1",
     "sharp": "^0.33.0"
   },
   "devDependencies": {
     "esbuild": "^0.28.0"
+  },
+  "overrides": {
+    "fast-xml-parser": "^5.7.1"
   }
 }
