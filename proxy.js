@@ -86,6 +86,41 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  const botRegex = [
+    /scrapy|selenium|puppeteer|playwright|phantomjs|casperjs/i,
+    /headless\s*(chrome|browser)?/i,
+    /headlesschrome/i,
+    /automation\s*tool|automated\s*browser|bot\s*automation/i,
+    /httpclient|http\s*client/i,
+    /axios\/\d+|node-fetch|got\/\d+/i,
+    /mechanize|urllib|requests\/\d+/i,
+    /okhttp|retrofit/i,
+    /wget\/|httrack|aria2|lftp|webcopy/i,
+    /web\s*scraper|data\s*scraper|content\s*scraper/i,
+    /mass\s*(crawl|scrape|download)/i,
+    /bulk\s*(crawl|download|fetch)/i,
+    /site\s*crawler|link\s*crawler/i,
+    /botkit|dialogflow|rasa|botpress/i,
+    /datacenter\s*proxy|residential\s*proxy|rotating\s*proxy/i,
+    /proxy\s*rotation|proxy\s*pool/i,
+    /tor\s*exit|tor\s+network/i,
+    /jsdom|cheerio/i,
+    /selenium-webdriver/i,
+    /aws\s*lambda|google\s*cloud\s*functions|azure\s*functions/i,
+    /python-requests|python\s*urllib|aiohttp/i,
+    /go-http-client|java\/\d+\.\d+/i,
+    /bot\s*engine|crawler\s*engine|spider\s*engine/i,
+    /auto\s*fetch|auto\s*scrape|auto\s*crawl/i
+  ];
+
+  const ua = req.headers['user-agent'] || '';
+  if (botRegex.some(r => r.test(ua))) {
+    console.log(`[BLOCKED] bot: ${ua}`);
+    res.writeHead(403, { 'Content-Type': 'text/plain', ...corsHeaders });
+    res.end('Forbidden');
+    return;
+  }
+
   // Strip leading slash, drop query string, decode once.
   const path = decodeURI(req.url.replace(/^\/+/, '').split('?')[0]);
   if (!path) {
