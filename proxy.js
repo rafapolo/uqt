@@ -1,89 +1,114 @@
 #!/usr/bin/env node
-/**
- * Reverse proxy for Hetzner Object Storage (BUCKET_NAME bucket).
- * Uses S3 SDK to fetch private objects; no direct bucket access from clients.
- */
-const http = require('http');
-const { S3Client, GetObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3');
+const cluster = require('cluster');
+const os = require('os');
 
-const BUCKET = 'BUCKET_NAME';
-const PORT = 9001;
+if (cluster.isPrimary) {
+  const n = os.cpus().length;
+  console.log(`Primary ${process.pid}: forking ${n} workers`);
+  for (let i = 0; i < n; i++) cluster.fork();
+  cluster.on('exit', (worker, code, signal) => {
+    console.error(`Worker ${worker.process.pid} exited (${signal ?? code}), restarting`);
+    cluster.fork();
+  });
+} else {
+  const http = require('http');
+  const { S3Client, GetObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3');
+  const { NodeHttpHandler } = require('@smithy/node-http-handler');
 
-const s3 = new S3Client({
-  endpoint: process.env.S3_ENDPOINT,
-  region: 'hel1',
-  credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  },
-  forcePathStyle: true,
-});
+  process.on('uncaughtException', (err) => {
+    console.error('uncaughtException:', err.message);
+  });
+  process.on('unhandledRejection', (reason) => {
+    console.error('unhandledRejection:', reason);
+  });
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
-  'Access-Control-Allow-Headers': 'Range, Content-Type',
-  'Access-Control-Expose-Headers': 'Content-Length, Content-Type, Content-Range, ETag, Accept-Ranges',
-  'Cache-Control': 'public, max-age=31536000',
-  'X-Content-Type-Options': 'nosniff',
-};
+  const BUCKET = 'BUCKET_NAME';
+  const PORT = 9001;
+  const MAX_CONCURRENT = 80;
+  const REQUEST_TIMEOUT = 30000;
 
-function mimeFor(key) {
-  const k = key.toLowerCase();
-  if (k.endsWith('.mp3')) return 'audio/mpeg';
-  if (k.endsWith('.mp4') || k.endsWith('.m4a')) return 'audio/mp4';
-  if (k.endsWith('.jpg') || k.endsWith('.jpeg')) return 'image/jpeg';
-  if (k.endsWith('.png')) return 'image/png';
-  if (k.endsWith('.webp')) return 'image/webp';
-  if (k.endsWith('.json')) return 'application/json';
-  return 'application/octet-stream';
-}
+  let activeRequests = 0;
+  const ipCounts = new Map();
 
-async function handleObject(req, res, key) {
-  const isHead = req.method === 'HEAD';
-  try {
-    const cmd = isHead
-      ? new HeadObjectCommand({ Bucket: BUCKET, Key: key, Range: req.headers.range })
-      : new GetObjectCommand({ Bucket: BUCKET, Key: key, Range: req.headers.range });
-    const obj = await s3.send(cmd);
+  const s3 = new S3Client({
+    endpoint: process.env.S3_ENDPOINT,
+    region: 'hel1',
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    },
+    forcePathStyle: true,
+    requestHandler: new NodeHttpHandler({
+      connectionTimeout: 5000,
+      socketTimeout: 30000,
+      maxSockets: 150,
+      maxFreeSockets: 30,
+    }),
+  });
 
-    const headers = { ...corsHeaders, 'Content-Type': mimeFor(key) };
-    if (obj.ContentLength != null) headers['Content-Length'] = String(obj.ContentLength);
-    if (obj.ContentRange) headers['Content-Range'] = obj.ContentRange;
-    if (obj.AcceptRanges) headers['Accept-Ranges'] = obj.AcceptRanges;
-    if (obj.ETag) headers['ETag'] = obj.ETag;
-    if (obj.LastModified) headers['Last-Modified'] = obj.LastModified.toUTCString();
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+    'Access-Control-Allow-Headers': 'Range, Content-Type',
+    'Access-Control-Expose-Headers': 'Content-Length, Content-Type, Content-Range, ETag, Accept-Ranges',
+    'Cache-Control': 'public, max-age=31536000',
+    'X-Content-Type-Options': 'nosniff',
+  };
 
-    const status = obj.ContentRange ? 206 : 200;
-    res.writeHead(status, headers);
-    if (isHead || !obj.Body) return res.end();
-    obj.Body.on('error', (e) => { console.error('stream err:', e.message); res.destroy(); });
-    obj.Body.pipe(res);
-  } catch (err) {
-    const code = err.$metadata?.httpStatusCode ?? 500;
-    console.error(`[${code}] ${req.method} ${key}: ${err.name}`);
-    res.writeHead(code, { 'Content-Type': 'application/octet-stream', ...corsHeaders });
-    res.end(`${err.name}: ${err.message}`);
-  }
-}
-
-const server = http.createServer(async (req, res) => {
-  if (req.url === '/health') {
-    res.writeHead(200, { 'Content-Type': 'application/json', ...corsHeaders });
-    res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
-    return;
+  function mimeFor(key) {
+    const k = key.toLowerCase();
+    if (k.endsWith('.mp3')) return 'audio/mpeg';
+    if (k.endsWith('.mp4') || k.endsWith('.m4a')) return 'audio/mp4';
+    if (k.endsWith('.jpg') || k.endsWith('.jpeg')) return 'image/jpeg';
+    if (k.endsWith('.png')) return 'image/png';
+    if (k.endsWith('.webp')) return 'image/webp';
+    if (k.endsWith('.json')) return 'application/json';
+    return 'application/octet-stream';
   }
 
-  if (req.method === 'OPTIONS') {
-    res.writeHead(204, corsHeaders);
-    res.end();
-    return;
-  }
+  async function handleObject(req, res, key, ip) {
+    if (activeRequests >= MAX_CONCURRENT) {
+      res.writeHead(503, { 'Content-Type': 'text/plain', ...corsHeaders });
+      res.end('Too Many Requests');
+      return;
+    }
 
-  if (req.method !== 'GET' && req.method !== 'HEAD') {
-    res.writeHead(405, { ...corsHeaders, 'Content-Type': 'text/plain' });
-    res.end('Method Not Allowed');
-    return;
+    const isHead = req.method === 'HEAD';
+    const abort = new AbortController();
+    const timer = setTimeout(() => abort.abort(), REQUEST_TIMEOUT);
+    activeRequests++;
+
+    try {
+      const cmd = isHead
+        ? new HeadObjectCommand({ Bucket: BUCKET, Key: key, Range: req.headers.range })
+        : new GetObjectCommand({ Bucket: BUCKET, Key: key, Range: req.headers.range });
+      const obj = await s3.send(cmd, { abortSignal: abort.signal });
+
+      const headers = { ...corsHeaders, 'Content-Type': mimeFor(key) };
+      if (obj.ContentLength != null) headers['Content-Length'] = String(obj.ContentLength);
+      if (obj.ContentRange) headers['Content-Range'] = obj.ContentRange;
+      if (obj.AcceptRanges) headers['Accept-Ranges'] = obj.AcceptRanges;
+      if (obj.ETag) headers['ETag'] = obj.ETag;
+      if (obj.LastModified) headers['Last-Modified'] = obj.LastModified.toUTCString();
+
+      const status = obj.ContentRange ? 206 : 200;
+      res.writeHead(status, headers);
+      if (isHead || !obj.Body) { res.end(); return; }
+      obj.Body.on('error', (e) => { console.error('stream err:', e.message); res.destroy(); });
+      obj.Body.pipe(res);
+    } catch (err) {
+      const code = err.name === 'AbortError' ? 504 : (err.$metadata?.httpStatusCode ?? 500);
+      console.error(`[${code}] ${req.method} ${key}: ${err.name}`);
+      if (!res.headersSent) {
+        res.writeHead(code, { 'Content-Type': 'text/plain', ...corsHeaders });
+        res.end(err.name);
+      }
+    } finally {
+      clearTimeout(timer);
+      activeRequests--;
+      const n = (ipCounts.get(ip) ?? 1) - 1;
+      if (n <= 0) ipCounts.delete(ip); else ipCounts.set(ip, n);
+    }
   }
 
   const botRegex = [
@@ -110,29 +135,66 @@ const server = http.createServer(async (req, res) => {
     /python-requests|python\s*urllib|aiohttp/i,
     /go-http-client|java\/\d+\.\d+/i,
     /bot\s*engine|crawler\s*engine|spider\s*engine/i,
-    /auto\s*fetch|auto\s*scrape|auto\s*crawl/i
+    /auto\s*fetch|auto\s*scrape|auto\s*crawl/i,
   ];
 
-  const ua = req.headers['user-agent'] || '';
-  if (botRegex.some(r => r.test(ua))) {
-    console.log(`[BLOCKED] bot: ${ua}`);
-    res.writeHead(403, { 'Content-Type': 'text/plain', ...corsHeaders });
-    res.end('Forbidden');
-    return;
-  }
+  const server = http.createServer(async (req, res) => {
+    if (req.url === '/health') {
+      res.writeHead(200, { 'Content-Type': 'application/json', ...corsHeaders });
+      res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
+      return;
+    }
 
-  // Strip leading slash, drop query string, decode once.
-  const path = decodeURI(req.url.replace(/^\/+/, '').split('?')[0]);
-  if (!path) {
-    res.writeHead(404, { ...corsHeaders, 'Content-Type': 'text/plain' });
-    res.end('Not Found');
-    return;
-  }
+    if (req.method === 'OPTIONS') {
+      res.writeHead(204, corsHeaders);
+      res.end();
+      return;
+    }
 
-  console.log(`[${new Date().toISOString()}] ${req.method} ${path}`);
-  await handleObject(req, res, path);
-});
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      res.writeHead(405, { ...corsHeaders, 'Content-Type': 'text/plain' });
+      res.end('Method Not Allowed');
+      return;
+    }
 
-server.listen(PORT, () => {
-  console.log(`UQT Proxy listening on :${PORT} -> s3://${BUCKET}/`);
-});
+    const ua = req.headers['user-agent'] || '';
+    if (botRegex.some(r => r.test(ua))) {
+      console.log(`[BLOCKED] bot: ${ua}`);
+      res.writeHead(403, { 'Content-Type': 'text/plain', ...corsHeaders });
+      res.end('Forbidden');
+      return;
+    }
+
+    const ip = (req.headers['x-forwarded-for'] ?? '').split(',')[0].trim()
+               || req.socket.remoteAddress;
+    const ipActive = ipCounts.get(ip) ?? 0;
+    if (ipActive >= 5) {
+      res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '5', ...corsHeaders });
+      res.end('Too Many Requests');
+      return;
+    }
+    ipCounts.set(ip, ipActive + 1);
+
+    const path = decodeURI(req.url.replace(/^\/+/, '').split('?')[0]);
+    if (!path) {
+      ipCounts.set(ip, (ipCounts.get(ip) ?? 1) - 1);
+      res.writeHead(404, { ...corsHeaders, 'Content-Type': 'text/plain' });
+      res.end('Not Found');
+      return;
+    }
+
+    console.log(`[${new Date().toISOString()}] w${process.pid} ${req.method} ${path}`);
+    await handleObject(req, res, path, ip);
+  });
+
+  server.maxConnections = 500;
+  server.keepAliveTimeout = 10000;
+  server.headersTimeout = 15000;
+  server.setTimeout(REQUEST_TIMEOUT);
+
+  server.on('error', (err) => console.error('server error:', err.message));
+
+  server.listen(PORT, () => {
+    console.log(`Worker ${process.pid} listening on :${PORT} -> s3://${BUCKET}/`);
+  });
+}
