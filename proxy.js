@@ -106,8 +106,10 @@ if (cluster.isPrimary) {
     } finally {
       clearTimeout(timer);
       activeRequests--;
-      const n = (ipCounts.get(ip) ?? 1) - 1;
-      if (n <= 0) ipCounts.delete(ip); else ipCounts.set(ip, n);
+      if (ip) {
+        const n = (ipCounts.get(ip) ?? 1) - 1;
+        if (n <= 0) ipCounts.delete(ip); else ipCounts.set(ip, n);
+      }
     }
   }
 
@@ -165,22 +167,25 @@ if (cluster.isPrimary) {
       return;
     }
 
-    const ip = (req.headers['x-forwarded-for'] ?? '').split(',')[0].trim()
-               || req.socket.remoteAddress;
-    const ipActive = ipCounts.get(ip) ?? 0;
-    if (ipActive >= 5) {
-      res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '5', ...corsHeaders });
-      res.end('Too Many Requests');
-      return;
-    }
-    ipCounts.set(ip, ipActive + 1);
-
     const path = decodeURI(req.url.replace(/^\/+/, '').split('?')[0]);
     if (!path) {
-      ipCounts.set(ip, (ipCounts.get(ip) ?? 1) - 1);
       res.writeHead(404, { ...corsHeaders, 'Content-Type': 'text/plain' });
       res.end('Not Found');
       return;
+    }
+
+    const isAudio = /\.(mp3|mp4|m4a)$/i.test(path);
+    const ip = isAudio
+      ? ((req.headers['x-forwarded-for'] ?? '').split(',')[0].trim() || req.socket.remoteAddress)
+      : null;
+    if (ip) {
+      const ipActive = ipCounts.get(ip) ?? 0;
+      if (ipActive >= 5) {
+        res.writeHead(429, { 'Content-Type': 'text/plain', 'Retry-After': '5', ...corsHeaders });
+        res.end('Too Many Requests');
+        return;
+      }
+      ipCounts.set(ip, ipActive + 1);
     }
 
     console.log(`[${new Date().toISOString()}] w${process.pid} ${req.method} ${path}`);
