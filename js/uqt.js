@@ -40,6 +40,7 @@ function attachArtistHandlers(container) {
       document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
       filterAlbums();
       updateQueryInUrl(name, true);
+      closeMobileDrawer();
       input.focus();
     });
   });
@@ -341,7 +342,6 @@ function filterAlbums() {
     return matchesSearch && matchesDecade && matchesYear;
   });
   virtualGrid.setItems(filteredAlbums);
-  updateLibraryStats();
 
   const countEl = document.getElementById('search-count');
   const clearBtn = document.getElementById('search-clear');

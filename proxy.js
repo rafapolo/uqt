@@ -113,36 +113,13 @@ if (cluster.isPrimary) {
     }
   }
 
-  const botRegex = [
-    /scrapy|selenium|puppeteer|playwright|phantomjs|casperjs/i,
-    /headless\s*(chrome|browser)?/i,
-    /headlesschrome/i,
-    /automation\s*tool|automated\s*browser|bot\s*automation/i,
-    /httpclient|http\s*client/i,
-    /axios\/\d+|node-fetch|got\/\d+/i,
-    /mechanize|urllib|requests\/\d+/i,
-    /okhttp|retrofit/i,
-    /wget\/|httrack|aria2|lftp|webcopy/i,
-    /web\s*scraper|data\s*scraper|content\s*scraper/i,
-    /mass\s*(crawl|scrape|download)/i,
-    /bulk\s*(crawl|download|fetch)/i,
-    /site\s*crawler|link\s*crawler/i,
-    /botkit|dialogflow|rasa|botpress/i,
-    /datacenter\s*proxy|residential\s*proxy|rotating\s*proxy/i,
-    /proxy\s*rotation|proxy\s*pool/i,
-    /tor\s*exit|tor\s+network/i,
-    /jsdom|cheerio/i,
-    /selenium-webdriver/i,
-    /aws\s*lambda|google\s*cloud\s*functions|azure\s*functions/i,
-    /python-requests|python\s*urllib|aiohttp/i,
-    /go-http-client|java\/\d+\.\d+/i,
-    /bot\s*engine|crawler\s*engine|spider\s*engine/i,
-    /auto\s*fetch|auto\s*scrape|auto\s*crawl/i,
-  ];
+  const botRegex = /scrapy|selenium(?:-webdriver)?|puppeteer|playwright|phantomjs|casperjs|headless\s*(chrome|browser)?|headlesschrome|automation\s*tool|automated\s*browser|bot\s*automation|httpclient|http\s*client|axios\/\d+|node-fetch|got\/\d+|mechanize|urllib|requests\/\d+|okhttp|retrofit|wget\/|httrack|aria2|lftp|webcopy|web\s*scraper|data\s*scraper|content\s*scraper|mass\s*(crawl|scrape|download)|bulk\s*(crawl|download|fetch)|site\s*crawler|link\s*crawler|botkit|dialogflow|rasa|botpress|datacenter\s*proxy|residential\s*proxy|rotating\s*proxy|proxy\s*rotation|proxy\s*pool|tor\s*exit|tor\s+network|jsdom|cheerio|aws\s*lambda|google\s*cloud\s*functions|azure\s*functions|python-requests|python\s*urllib|aiohttp|go-http-client|java\/\d+\.\d+|bot\s*engine|crawler\s*engine|spider\s*engine|auto\s*fetch|auto\s*scrape|auto\s*crawl/i;
 
   const server = http.createServer(async (req, res) => {
+    req.on('error', (err) => console.error('req error:', err.message));
+
     if (req.url === '/health') {
-      res.writeHead(200, { 'Content-Type': 'application/json', ...corsHeaders });
+      res.writeHead(200, { 'Content-Type': 'application/json', ...corsHeaders, 'Cache-Control': 'no-cache' });
       res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
       return;
     }
@@ -160,7 +137,7 @@ if (cluster.isPrimary) {
     }
 
     const ua = req.headers['user-agent'] || '';
-    if (botRegex.some(r => r.test(ua))) {
+    if (botRegex.test(ua)) {
       console.log(`[BLOCKED] bot: ${ua}`);
       res.writeHead(403, { 'Content-Type': 'text/plain', ...corsHeaders });
       res.end('Forbidden');
@@ -169,8 +146,8 @@ if (cluster.isPrimary) {
 
     const path = decodeURI(req.url.replace(/^\/+/, '').split('?')[0]);
     if (!path) {
-      res.writeHead(404, { ...corsHeaders, 'Content-Type': 'text/plain' });
-      res.end('Not Found');
+      res.writeHead(301, { Location: 'https://rafapolo.github.io/uqt/3d', ...corsHeaders });
+      res.end();
       return;
     }
 
