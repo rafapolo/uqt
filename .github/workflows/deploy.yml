@@ -20,10 +20,18 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), 'index.html') ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), '3d.html') ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), 'js/') ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), 'assets/')
     steps:
       - uses: actions/checkout@v4
 
       - uses: oven-sh/setup-bun@v2
+        with:
+          cache: true
 
       - name: Install
         run: bun install
@@ -36,12 +44,13 @@ jobs:
           cp index.html dist/
           cp 3d.html dist/
           cp js/uqt-albums.json.gz dist/js/
+          cp assets/capa.jpg dist/assets/
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
-  deploy:
+  deploy-pages:
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -50,3 +59,26 @@ jobs:
     steps:
       - id: deploy
         uses: actions/deploy-pages@v4
+
+  deploy-proxy:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), 'proxy.js') ||
+      contains(toJson(github.event.commits.*.modified + github.event.commits.*.added), 'Dockerfile')
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install haloy
+        run: bun add -g haloy
+
+      - name: Deploy proxy to haloy
+        run: haloy deploy
+        env:
+          HALOY_API_TOKEN: ${{ secrets.HALOY_API_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
