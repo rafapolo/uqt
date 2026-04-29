@@ -20,7 +20,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
 
       - name: Install haloy
-        run: bun add -g haloy
+        run: bun add -g haloy@0.1.0-beta.39
 
       - name: Deploy proxy to haloy
         run: haloy deploy
