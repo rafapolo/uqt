@@ -17,3 +17,6 @@ env:
   - name: S3_ENDPOINT
     from:
       env: S3_ENDPOINT
+  - name: S3_BUCKET
+    from:
+      env: S3_BUCKET

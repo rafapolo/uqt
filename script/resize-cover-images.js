@@ -9,7 +9,7 @@ const path = require('path');
 const sharp = require('sharp');
 const { S3Client, PutObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3');
 
-const S3_BUCKET = 'BUCKET_NAME';
+const S3_BUCKET = process.env.S3_BUCKET;
 const S3_REGION = 'hel1';
 const TARGET_WIDTH = 200;
 const SOURCE_DIR = '/Volumes/EXTRA/bkps/sambaderaiz';

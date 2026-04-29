@@ -22,7 +22,7 @@ if (cluster.isPrimary) {
     console.error('unhandledRejection:', reason);
   });
 
-  const BUCKET = 'BUCKET_NAME';
+  const BUCKET = process.env.S3_BUCKET;
   const PORT = 9001;
   const MAX_CONCURRENT = 80;
   const REQUEST_TIMEOUT = 30000;

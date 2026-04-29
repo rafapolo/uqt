@@ -59,7 +59,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 1. Browser carrega `index.html` do GitHub Pages (sem bloqueio — `uqt-albums.js` não é mais um script tag)
 2. `uqt.js` faz `fetch('js/uqt-albums.json.gz')`, descomprime com pako e renderiza o grid
 3. Ao clicar em um álbum, constrói a URL `https://uqt.ミ.xyz/uqt/{path}/{file}`
-4. Proxy recebe a requisição e faz `GetObject` assinado no bucket `BUCKET_NAME/uqt/{path}/{file}`
+4. Proxy recebe a requisição e faz `GetObject` assinado no bucket `$S3_BUCKET/uqt/{path}/{file}`
 5. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
 
 ### Frontend

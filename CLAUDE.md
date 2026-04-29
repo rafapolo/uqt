@@ -33,7 +33,7 @@ The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses wit
 1. App loads HTML → loads js/uqt-albums.js to populate UI
 2. User clicks album → primes first track (loads audio src, updates player) without auto-playing; user presses play to start
 3. User clicks play → constructs URL: `https://uqt.xn--2dk.xyz/uqt/{encoded_album_path}/{encoded_track_file}`
-4. Proxy receives request, forwards to S3: `https://BUCKET_NAME.../BUCKET_NAME/uqt/{path}`
+4. Proxy receives request, forwards to S3: `https://$S3_BUCKET.../$S3_BUCKET/uqt/{path}`
 5. S3 returns file with headers set by proxy
 
 ## Key Technical Notes
@@ -43,7 +43,7 @@ The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses wit
 - **Album selection**: Clicking an album primes the first track (sets `audio.src`, calls `audio.load()`, updates player UI) without auto-playing. Play button starts audio.
 - **CORS**: The proxy adds CORS headers to all responses; app runs cross-origin from haloy.
 - **Content-Type**: Proxy explicitly sets correct MIME types to prevent CORB (Cross-Origin Read Blocking) errors in browsers.
-- **S3 bucket policy**: `BUCKET_NAME` allows public `GetObject` on `*` and `PutObject`/`DeleteObject` on `uqt/*` for the service account key.
+- **S3 bucket policy**: `$S3_BUCKET` allows public `GetObject` on `*` and `PutObject`/`DeleteObject` on `uqt/*` for the service account key.
 
 ## Common Development Tasks
 
@@ -54,7 +54,7 @@ node proxy.js
 # Test: curl -I http://localhost:9001/health
 ```
 
-The proxy will forward requests to the live S3 bucket (BUCKET_NAME), so you need S3 files present to test audio/cover playback.
+The proxy will forward requests to the live S3 bucket ($S3_BUCKET), so you need S3 files present to test audio/cover playback.
 
 ### Regenerating Album Database
 When MP3 files are added/updated in `unzips/`, regenerate the JSON database:
@@ -88,14 +88,14 @@ Album-centric format: `db = {"albums": [...]}`
 }
 ```
 
-Album `path` is used to construct URLs: the proxy expects files at `s3://BUCKET_NAME/uqt/{path}/{filename}`.
+Album `path` is used to construct URLs: the proxy expects files at `s3://$S3_BUCKET/uqt/{path}/{filename}`.
 
 ### Resizing and Uploading Cover Images
 When new albums are added, generate and upload resized covers (200px wide) to S3:
 ```bash
 node script/resize-cover-images.js
 ```
-Requires `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` in `.env` with write access to `BUCKET_NAME/uqt/*`. Source covers read from `/Volumes/EXTRA/bkps/sambaderaiz`. Skips albums already uploaded.
+Requires `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` in `.env` with write access to `$S3_BUCKET/uqt/*`. Source covers read from `/Volumes/EXTRA/bkps/sambaderaiz`. Skips albums already uploaded.
 
 ### Deploying to Haloy
 ```bash
@@ -105,9 +105,9 @@ Requires `HALOY_API_TOKEN` env var. Deploys proxy.js + Dockerfile to uqt.xn--2dk
 
 ## S3 Sync Status
 
-Audio files and cover images are synced to the S3 bucket (`$S3_ENDPOINT/BUCKET_NAME/uqt/`). This is an ongoing process. Until files are fully synced, audio playback will return 404. Expected paths are:
-- `BUCKET_NAME/uqt/{album_path}/{track_file}` (e.g., `BUCKET_NAME/uqt/2009 - Artist - Album/01 Track.mp3`)
-- `BUCKET_NAME/uqt/{album_path}/capa-min.jpg` (cover image, resized 200px width)
+Audio files and cover images are synced to the S3 bucket (`$S3_ENDPOINT/$S3_BUCKET/uqt/`). This is an ongoing process. Until files are fully synced, audio playback will return 404. Expected paths are:
+- `$S3_BUCKET/uqt/{album_path}/{track_file}` (e.g., `$S3_BUCKET/uqt/2009 - Artist - Album/01 Track.mp3`)
+- `$S3_BUCKET/uqt/{album_path}/capa-min.jpg` (cover image, resized 200px width)
 
 ## Recent Fixes
 
@@ -120,7 +120,7 @@ Audio files and cover images are synced to the S3 bucket (`$S3_ENDPOINT/BUCKET_N
 
 ## Troubleshooting
 
-**Audio returns 404**: Check if files exist on S3 at `$S3_ENDPOINT/BUCKET_NAME/uqt/{path}`. If sync is incomplete, files may not be available yet.
+**Audio returns 404**: Check if files exist on S3 at `$S3_ENDPOINT/$S3_BUCKET/uqt/{path}`. If sync is incomplete, files may not be available yet.
 
 **Proxy not routing through haloy**: Haloy deployment requires valid `HALOY_API_TOKEN`. Verify with `haloy status` (will error if token is missing).
 

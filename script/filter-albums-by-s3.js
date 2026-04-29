@@ -7,7 +7,7 @@ const path = require('path');
 const zlib = require('zlib');
 
 const MC_ALIAS = 'hetzner';
-const BUCKET   = 'BUCKET_NAME';
+const BUCKET   = process.env.S3_BUCKET;
 const PREFIX   = 'uqt';
 const MC_BASE  = `${MC_ALIAS}/${BUCKET}/${PREFIX}`;
 

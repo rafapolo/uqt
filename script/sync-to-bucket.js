@@ -9,7 +9,7 @@ const { Upload } = require('@aws-sdk/lib-storage');
 // ── Config ────────────────────────────────────────────────────────────────────
 
 const LOCAL_DIR  = '/Volumes/EXTRA/bkps/sambaderaiz';
-const BUCKET     = 'BUCKET_NAME';
+const BUCKET     = process.env.S3_BUCKET;
 const PREFIX     = 'uqt/';
 const ENDPOINT   = process.env.S3_ENDPOINT;
 const CONCURRENCY = 20;

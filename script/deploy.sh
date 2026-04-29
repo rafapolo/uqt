@@ -102,7 +102,7 @@ fi
 
 # Test connectivity
 echo "  Testing bucket access..."
-aws s3 ls s3://BUCKET_NAME/uqt/ \
+aws s3 ls s3://$S3_BUCKET/uqt/ \
   --endpoint-url "$S3_ENDPOINT" \
   --region hel1 2>/dev/null | head -1 > /dev/null && echo "  ✅ Bucket accessible" || {
   echo "  ⚠️  Bucket may be unreachable, continuing anyway..."
@@ -110,7 +110,7 @@ aws s3 ls s3://BUCKET_NAME/uqt/ \
 
 # Sync JSON
 echo "  Uploading JSON..."
-aws s3 cp js/uqt.json s3://BUCKET_NAME/uqt/uqt.json \
+aws s3 cp js/uqt.json s3://$S3_BUCKET/uqt/uqt.json \
   --endpoint-url "$S3_ENDPOINT" \
   --region hel1 && echo "  ✅ JSON uploaded" || echo "  ⚠️  JSON upload failed"
 
@@ -119,18 +119,18 @@ echo "  Syncing files to bucket..."
 if ! mc alias list hel1 &>/dev/null; then
   mc alias set hel1 "$S3_ENDPOINT" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY"
 fi
-mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/BUCKET_NAME/uqt/ --overwrite 2>&1 || {
+mc mirror "/Volumes/EXTRA/bkps/sambaderaiz/" hel1/$S3_BUCKET/uqt/ --overwrite 2>&1 || {
   echo "  ⚠️  Some files failed to sync, continuing..."
 }
 
 # 4. Show stats
 echo ""
 echo "4️⃣  Bucket statistics:"
-TOTAL=$(aws s3 ls s3://BUCKET_NAME/uqt/ \
+TOTAL=$(aws s3 ls s3://$S3_BUCKET/uqt/ \
   --endpoint-url "$S3_ENDPOINT" \
   --region hel1 \
   --recursive 2>/dev/null | wc -l)
-COVERS=$(aws s3 ls s3://BUCKET_NAME/uqt/ \
+COVERS=$(aws s3 ls s3://$S3_BUCKET/uqt/ \
   --endpoint-url "$S3_ENDPOINT" \
   --region hel1 \
   --recursive 2>/dev/null | grep '.jpg$' | wc -l)
