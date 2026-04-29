@@ -753,6 +753,12 @@ u(document).on('DOMContentLoaded', async function () {
     if (item && selectedAlbum) playTrack(selectedAlbum.tracks[parseInt(item.dataset.trackIdx)]);
   });
 
+  // Delegated click: mobile drawer track list
+  document.querySelector('#drawer-track-list')?.addEventListener('click', e => {
+    const item = e.target.closest('[data-track-idx]');
+    if (item && selectedAlbum) playTrack(selectedAlbum.tracks[parseInt(item.dataset.trackIdx)]);
+  });
+
 
 // Show loading skeleton
   const skeletonEl = document.createElement('div');
