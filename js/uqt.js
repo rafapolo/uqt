@@ -82,10 +82,22 @@ function getYearFromUrl() {
   return parseInt(new URLSearchParams(window.location.search).get('ano') || 0);
 }
 
-function generateAlbumUrl(album) {
+function getTrackNumFromUrl() {
+  return parseInt(new URLSearchParams(window.location.search).get('t') || 0);
+}
+
+function generateAlbumUrl(album, trackNum) {
   const params = new URLSearchParams(window.location.search);
   params.set('album', album.path);
+  if (trackNum) params.set('t', trackNum); else params.delete('t');
   return `${window.location.pathname}?${params}`;
+}
+
+function updateTrackInUrl(trackNum) {
+  const params = new URLSearchParams(window.location.search);
+  if (trackNum) params.set('t', trackNum); else params.delete('t');
+  const state = { album: selectedAlbum?.path, t: trackNum };
+  window.history.replaceState(state, '', `${window.location.pathname}?${params}`);
 }
 
 function updateQueryInUrl(q, push) {
@@ -576,6 +588,7 @@ function playTrack(track) {
   u('#btn-play').addClass('playing');
   renderTrackList();
   syncDrawerPlayingState();
+  updateTrackInUrl(track.num);
 }
 
 function renderMobileDrawer(album) {
@@ -731,7 +744,8 @@ u(document).on('DOMContentLoaded', async function () {
     }
 
     updateMetaTags(album);
-    window.history.pushState({ album: album.path }, '', generateAlbumUrl(album));
+    const primedNum = currentTrack?.num || 1;
+    window.history.pushState({ album: album.path, t: primedNum }, '', generateAlbumUrl(album, primedNum));
   });
 
   // Browser back/forward: restore album selection and search query from history state
@@ -755,6 +769,11 @@ u(document).on('DOMContentLoaded', async function () {
     virtualGrid.refresh();
     virtualGrid.scrollToSelected();
     renderAlbumHeader();
+    const restoredTrackNum = e.state?.t ?? getTrackNumFromUrl();
+    if (restoredTrackNum) {
+      const t = album.tracks.find(t => t.num === restoredTrackNum);
+      if (t) { currentTrack = t; updateNowPlaying(); }
+    }
     renderTrackList();
     renderMobileDrawer(album);
     updateMetaTags(album);
@@ -820,11 +839,22 @@ u(document).on('DOMContentLoaded', async function () {
     virtualGrid.setItems(filteredAlbums);
     virtualGrid.scrollToSelected();
     renderAlbumHeader();
+    const trackNumFromUrl = getTrackNumFromUrl();
+    if (trackNumFromUrl) {
+      const t = albumToSelect.tracks.find(t => t.num === trackNumFromUrl);
+      if (t) {
+        currentTrack = t;
+        updateNowPlaying();
+        const audio = u('#audio').first();
+        const newSrc = `${BASE_URL}/${t.file}`;
+        if (audio.src !== newSrc) { audio.src = newSrc; audio.load(); }
+      }
+    }
     renderTrackList();
     renderMobileDrawer(albumToSelect);
     if (albumFromUrl && isMobile()) openMobileDrawer();
     updateMetaTags(albumToSelect);
-    window.history.replaceState({ album: albumToSelect.path }, '', generateAlbumUrl(albumToSelect));
+    window.history.replaceState({ album: albumToSelect.path, t: trackNumFromUrl || null }, '', generateAlbumUrl(albumToSelect, trackNumFromUrl || null));
   }
 
   const playerCover = u('#player-cover').first();

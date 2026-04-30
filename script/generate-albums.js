@@ -39,6 +39,15 @@ function getMP3Metadata(filePath) {
   });
 }
 
+function parseFolderMeta(folderName) {
+  const parts = folderName.split(/ [–\-] /);
+  const year  = /^\d{4}$/.test(parts[0]) ? parseInt(parts[0]) : 0;
+  const artist = year
+    ? (parts.length >= 3 ? parts[1].trim() : null)
+    : (parts.length >= 2 ? parts[0].trim() : null);
+  return { year, artist };
+}
+
 function findMP3Files(dir) {
   let files = [];
   for (const item of fs.readdirSync(dir)) {
@@ -119,6 +128,9 @@ async function generateAlbums() {
       album.tracks.sort((a, b) => a.num - b.num);
       const artists = [...new Set(album.tracks.map(t => t.artists))];
       album.artist = artists.length === 1 ? artists[0] : 'Various Artists';
+      const fm = parseFolderMeta(album.path);
+      if (!album.year && fm.year)             album.year   = fm.year;
+      if (album.artist === 'Unknown' && fm.artist) album.artist = fm.artist;
       return album;
     })
     .sort((a, b) => b.year - a.year);

@@ -1,6 +1,2013 @@
 db = {
   "albums": [
     {
+      "title": "Duas Faces (Ao Vivo Na Mangueira)",
+      "year": 2012,
+      "path": "2012 - Alcione - Duas Faces Ao Vivo Na Mangueira",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Pot-pourri:  Tem Dendê / Figa De Guiné",
+          "num": 1,
+          "file": "1. Pot-pourri - Tem Dendê - Figa De Guiné.mp3",
+          "artists": "Alcione",
+          "duration": 226
+        },
+        {
+          "title": "Medo",
+          "num": 2,
+          "file": "2. Medo.mp3",
+          "artists": "Alcione",
+          "duration": 192
+        },
+        {
+          "title": "Beco Sem Saída",
+          "num": 3,
+          "file": "3. Beco Sem Saída.mp3",
+          "artists": "Alcione",
+          "duration": 182
+        },
+        {
+          "title": "Não Me Entrego A Mais Ninguém",
+          "num": 4,
+          "file": "4. Não Me Entrego A Mais Ninguém.mp3",
+          "artists": "Alcione",
+          "duration": 297
+        },
+        {
+          "title": "Verde E Rosa",
+          "num": 5,
+          "file": "5. Verde E Rosa.mp3",
+          "artists": "Alcione (part: Leci Brandão)",
+          "duration": 283
+        },
+        {
+          "title": "Chora Coração",
+          "num": 6,
+          "file": "6. Chora Coração.mp3",
+          "artists": "Alcione",
+          "duration": 237
+        },
+        {
+          "title": "Mulher Bombeiro",
+          "num": 7,
+          "file": "7. Mulher Bombeiro.mp3",
+          "artists": "Alcione",
+          "duration": 142
+        },
+        {
+          "title": "Meu Ébano",
+          "num": 8,
+          "file": "8. Meu Ébano.mp3",
+          "artists": "Alcione (part: MV Bil)l",
+          "duration": 215
+        },
+        {
+          "title": "Metade De Mim",
+          "num": 9,
+          "file": "9. Metade De Mim.mp3",
+          "artists": "Alcione",
+          "duration": 260
+        },
+        {
+          "title": "Só Seu Amor Pra Me Salvar",
+          "num": 10,
+          "file": "10. Só Seu Amor Pra Me Salvar.mp3",
+          "artists": "Alcione",
+          "duration": 210
+        },
+        {
+          "title": "Velho Barco",
+          "num": 11,
+          "file": "11. Velho Barco.mp3",
+          "artists": "Alcione",
+          "duration": 179
+        },
+        {
+          "title": "Na Mesma Proporção",
+          "num": 12,
+          "file": "12. Na Mesma Proporção.mp3",
+          "artists": "Alcione (part: Jorge Aragão)",
+          "duration": 260
+        },
+        {
+          "title": "Jamaica A São Luis",
+          "num": 13,
+          "file": "13. Jamaica A São Luis.mp3",
+          "artists": "Alcione",
+          "duration": 271
+        },
+        {
+          "title": "Poder Da Criação",
+          "num": 14,
+          "file": "14. Poder Da Criação.mp3",
+          "artists": "Alcione (part: Diogo Nogueira)",
+          "duration": 270
+        },
+        {
+          "title": "Duas Faces",
+          "num": 15,
+          "file": "15. Duas Faces.mp3",
+          "artists": "Alcione",
+          "duration": 261
+        },
+        {
+          "title": "O Filho Fiel, Sempre Mangueira",
+          "num": 16,
+          "file": "16. O Filho Fiel, Sempre Mangueira.mp3",
+          "artists": "Alcione (part: Bateria da Mangueira)",
+          "duration": 186
+        },
+        {
+          "title": "Brasil De Oliveira Da Silva Do Samba",
+          "num": 17,
+          "file": "17. Brasil De Oliveira Da Silva Do Samba.mp3",
+          "artists": "Alcione (part: Bateria da Mangueira)",
+          "duration": 344
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Cartão De Visita",
+      "year": 2012,
+      "path": "2012 - Almir Guinéto - Cartão De Visita",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Mãe Iemanjá",
+          "num": 1,
+          "file": "1. Mãe Iemanjá.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 202
+        },
+        {
+          "title": "Tá Tudo Mudado",
+          "num": 2,
+          "file": "2. Tá Tudo Mudado.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 247
+        },
+        {
+          "title": "Tambor",
+          "num": 3,
+          "file": "3. Tambor.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 200
+        },
+        {
+          "title": "Cartão De Visita",
+          "num": 4,
+          "file": "4. Cartão De Visita.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 256
+        },
+        {
+          "title": "Desabafo",
+          "num": 5,
+          "file": "5. Desabafo.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 196
+        },
+        {
+          "title": "Dom Do Criador",
+          "num": 6,
+          "file": "6. Dom Do Criador.mp3",
+          "artists": "Almir Guinéto (part: Adalto Magalha)",
+          "duration": 188
+        },
+        {
+          "title": "É Você",
+          "num": 7,
+          "file": "7. É Você.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 193
+        },
+        {
+          "title": "Outra Oportunidade",
+          "num": 8,
+          "file": "8. Outra Oportunidade.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 234
+        },
+        {
+          "title": "Partideiro Caseiro",
+          "num": 9,
+          "file": "9. Partideiro Caseiro.mp3",
+          "artists": "Almir Guinéto (part: Arlindo Cruz)",
+          "duration": 209
+        },
+        {
+          "title": "Paixão Falida",
+          "num": 10,
+          "file": "10. Paixão Falida.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 149
+        },
+        {
+          "title": "Sou Eu",
+          "num": 11,
+          "file": "11. Sou Eu.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 204
+        },
+        {
+          "title": "Homenagem Ao Mestre Neoci",
+          "num": 12,
+          "file": "12. Homenagem Ao Mestre Neoci.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 235
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Hoje É O Melhor Lugar",
+      "year": 2012,
+      "path": "2012 - Ana Costa - Hoje É O Melhor Lugar",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Filosofia De Vida",
+          "num": 1,
+          "file": "1. Filosofia De Vida.mp3",
+          "artists": "Ana Costa",
+          "duration": 210
+        },
+        {
+          "title": "Sou O Samba",
+          "num": 2,
+          "file": "2. Sou O Samba.mp3",
+          "artists": "Ana Costa",
+          "duration": 213
+        },
+        {
+          "title": "Hoje É O Melhor Lugar",
+          "num": 3,
+          "file": "3. Hoje É O Melhor Lugar.mp3",
+          "artists": "Ana Costa",
+          "duration": 244
+        },
+        {
+          "title": "Mais Feliz",
+          "num": 4,
+          "file": "4. Mais Feliz.mp3",
+          "artists": "Ana Costa",
+          "duration": 212
+        },
+        {
+          "title": "Perdeu",
+          "num": 5,
+          "file": "5. Perdeu.mp3",
+          "artists": "Ana Costa",
+          "duration": 213
+        },
+        {
+          "title": "Quem Me Dera",
+          "num": 6,
+          "file": "6. Quem Me Dera.mp3",
+          "artists": "Ana Costa",
+          "duration": 209
+        },
+        {
+          "title": "Fogo Sem A Chama",
+          "num": 7,
+          "file": "7. Fogo Sem A Chama.mp3",
+          "artists": "Ana Costa (part: Moyseis Marques)",
+          "duration": 236
+        },
+        {
+          "title": "No Bar",
+          "num": 8,
+          "file": "8. No Bar.mp3",
+          "artists": "Ana Costa",
+          "duration": 250
+        },
+        {
+          "title": "As Coisas Que Mamãe Me Ensinou",
+          "num": 9,
+          "file": "9. As Coisas Que Mamãe Me Ensinou.mp3",
+          "artists": "Ana Costa",
+          "duration": 215
+        },
+        {
+          "title": "Se Você For Coerente",
+          "num": 10,
+          "file": "10. Se Você For Coerente.mp3",
+          "artists": "Ana Costa",
+          "duration": 212
+        },
+        {
+          "title": "O Brilho Do Seu Olhar",
+          "num": 11,
+          "file": "11. O Brilho Do Seu Olhar.mp3",
+          "artists": "Ana Costa",
+          "duration": 249
+        },
+        {
+          "title": "Peso E Medida",
+          "num": 12,
+          "file": "12. Peso E Medida.mp3",
+          "artists": "Ana Costa",
+          "duration": 222
+        },
+        {
+          "title": "Cantador Da Felicidade",
+          "num": 13,
+          "file": "13. Cantador Da Felicidade.mp3",
+          "artists": "Ana Costa",
+          "duration": 231
+        },
+        {
+          "title": "Por Um Dia De Graça",
+          "num": 14,
+          "file": "14. Por Um Dia De Graça.mp3",
+          "artists": "Ana Costa",
+          "duration": 217
+        },
+        {
+          "title": "O Que É, O Que É...",
+          "num": 15,
+          "file": "15. O Que É, O Que É.mp3",
+          "artists": "Ana Costa",
+          "duration": 164
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Batuques Do Meu Lugar",
+      "year": 2012,
+      "path": "2012 - Arlindo Cruz - Batuques Do Meu Lugar",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Batuques Do Meu Lugar",
+          "num": 1,
+          "file": "13. Pot-pourri - Fora De Ocasião - Saudade Louca.mp3",
+          "artists": "Arlindo Cruz (part:",
+          "duration": 265
+        }
+      ],
+      "artist": "Arlindo Cruz (part:"
+    },
+    {
+      "title": "Boêmio De Verdade",
+      "year": 2012,
+      "path": "2012 - Bicudo da Ilha - Boêmio De Verdade",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Boêmio De Verdade",
+          "num": 1,
+          "file": "1. Boêmio De Verdade.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 238
+        },
+        {
+          "title": "Morena Malú",
+          "num": 2,
+          "file": "2. Morena Malú.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 197
+        },
+        {
+          "title": "Real Sonhador",
+          "num": 3,
+          "file": "3. Real Sonhador.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 301
+        },
+        {
+          "title": "Cruel Poluição",
+          "num": 4,
+          "file": "4. Cruel Poluição.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 199
+        },
+        {
+          "title": "A Água",
+          "num": 5,
+          "file": "5. A Água.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 212
+        },
+        {
+          "title": "A Amizade",
+          "num": 6,
+          "file": "6. A Amizade.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 291
+        },
+        {
+          "title": "Canto Da Cigarra",
+          "num": 7,
+          "file": "7. Canto Da Cigarra.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 237
+        },
+        {
+          "title": "Quem Ama É Quem Chora",
+          "num": 8,
+          "file": "8. Quem Ama É Quem Chora.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 213
+        },
+        {
+          "title": "Perfume De Festa",
+          "num": 9,
+          "file": "9. Perfume De Festa.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 196
+        },
+        {
+          "title": "Notícia Boa",
+          "num": 10,
+          "file": "10. Notícia Boa.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 167
+        },
+        {
+          "title": "Poeta E Menestrel",
+          "num": 11,
+          "file": "11. Poeta E Menestrel.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 243
+        },
+        {
+          "title": "Mil Amadas A Mais",
+          "num": 12,
+          "file": "12. Mil Amadas A Mais.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 139
+        },
+        {
+          "title": "Mania De Gostar",
+          "num": 13,
+          "file": "13. Mania De Gostar.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 163
+        },
+        {
+          "title": "Samba Exaltação Do Rio De Janeiro",
+          "num": 14,
+          "file": "14. Samba Exaltação Do Rio De Janeiro.mp3",
+          "artists": "Bicudo da Ilha",
+          "duration": 175
+        }
+      ],
+      "artist": "Bicudo da Ilha"
+    },
+    {
+      "title": "Fred Camacho",
+      "year": 2012,
+      "path": "2012 - Fred Camacho - Fred Camacho",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Em Busca Da Sorte",
+          "num": 1,
+          "file": "1. Em Busca Da Sorte.mp3",
+          "artists": "Fred Camacho",
+          "duration": 197
+        },
+        {
+          "title": "Quando O Mal Virar Mel",
+          "num": 2,
+          "file": "2. Quando O Mal Virar Mel.mp3",
+          "artists": "Fred Camacho",
+          "duration": 229
+        },
+        {
+          "title": "Nosso Enredo",
+          "num": 3,
+          "file": "3. Nosso Enredo.mp3",
+          "artists": "Fred Camacho",
+          "duration": 147
+        },
+        {
+          "title": "Pro Nosso Mundo Se Alegrar",
+          "num": 4,
+          "file": "4. Pro Nosso Mundo Se Alegrar.mp3",
+          "artists": "Fred Camacho (part: Arlindo Cruz)",
+          "duration": 224
+        },
+        {
+          "title": "Salto",
+          "num": 5,
+          "file": "5. Salto.mp3",
+          "artists": "Fred Camacho (part: Dudu Nobre)",
+          "duration": 170
+        },
+        {
+          "title": "Ou Não",
+          "num": 6,
+          "file": "6. Ou Não.mp3",
+          "artists": "Fred Camacho",
+          "duration": 186
+        },
+        {
+          "title": "Sal De Salgueiro",
+          "num": 7,
+          "file": "7. Sal De Salgueiro.mp3",
+          "artists": "Fred Camacho",
+          "duration": 202
+        },
+        {
+          "title": "O Que O Amor Me Faz",
+          "num": 8,
+          "file": "8. O Que O Amor Me Faz.mp3",
+          "artists": "Fred Camacho",
+          "duration": 183
+        },
+        {
+          "title": "Quem Eu Sou",
+          "num": 9,
+          "file": "9. Quem Eu Sou.mp3",
+          "artists": "Fred Camacho",
+          "duration": 206
+        },
+        {
+          "title": "Formiga Sem Asa",
+          "num": 10,
+          "file": "10. Formiga Sem Asa.mp3",
+          "artists": "Fred Camacho",
+          "duration": 226
+        },
+        {
+          "title": "Sonho Perdido",
+          "num": 11,
+          "file": "11. Sonho Perdido.mp3",
+          "artists": "Fred Camacho",
+          "duration": 193
+        },
+        {
+          "title": "Lente De Contato",
+          "num": 12,
+          "file": "12. Lente De Contato.mp3",
+          "artists": "Fred Camacho (part: Zeca Pagodinho)",
+          "duration": 220
+        },
+        {
+          "title": "Sempre Marcou",
+          "num": 13,
+          "file": "13. Sempre Marcou.mp3",
+          "artists": "Fred Camacho",
+          "duration": 208
+        },
+        {
+          "title": "Toca Aí",
+          "num": 14,
+          "file": "14. Toca Aí.mp3",
+          "artists": "Fred Camacho",
+          "duration": 208
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Jorginho do Império ao Vivo",
+      "year": 2012,
+      "path": "2012 - Jorginho do Império - Jorginho do Império ao Vivo",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Naquela Mesa",
+          "num": 1,
+          "file": "1. Naquela Mesa.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 211
+        },
+        {
+          "title": "Apoteose ao Samba",
+          "num": 2,
+          "file": "2. Apoteose Ao Samba.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 292
+        },
+        {
+          "title": "Hora de Chorar",
+          "num": 3,
+          "file": "3. Hora De Chorar.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 201
+        },
+        {
+          "title": "Obsessão",
+          "num": 4,
+          "file": "4. Obsessão.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 282
+        },
+        {
+          "title": "Amor Aventureiro",
+          "num": 5,
+          "file": "5. Amor Aventureiro.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 192
+        },
+        {
+          "title": "Apoteose ao Rio",
+          "num": 6,
+          "file": "6. Apoteose Ao Rio.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 148
+        },
+        {
+          "title": "É Preciso dar",
+          "num": 7,
+          "file": "7. É Preciso Dar.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 250
+        },
+        {
+          "title": "Folha Desabada",
+          "num": 8,
+          "file": "8. Folha Desabada.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 156
+        },
+        {
+          "title": "Amor Selvagem",
+          "num": 9,
+          "file": "9. Amor Selvagem.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 111
+        },
+        {
+          "title": "Compadre Ciúme",
+          "num": 10,
+          "file": "10. Compadre Ciúme.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 145
+        },
+        {
+          "title": "Eu vi que te amo",
+          "num": 11,
+          "file": "11. Eu Vi Que Te Amo.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 196
+        },
+        {
+          "title": "Tá Delícia, tá Gostoso",
+          "num": 12,
+          "file": "12. Tá Delícia, Tá Gostoso.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 219
+        },
+        {
+          "title": "Pout-Porri: Na Beira do mar / Dinheiro vem, Dinheiro vai / Água no Feijão / O que você tem, Garota",
+          "num": 13,
+          "file": "13. Pout-Porri - Na Beira Do Mar - Dinheiro Vem, Dinheiro Vai - Água No Feijão - O Que Você Tem, Garota.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 1115
+        },
+        {
+          "title": "E Verás que um Filho teu não foge á Luta",
+          "num": 14,
+          "file": "14. E Verás Que Um Filho Teu Não Foge Á Luta.mp3",
+          "artists": "Jorginho do Império",
+          "duration": 245
+        }
+      ],
+      "artist": "Jorginho do Império"
+    },
+    {
+      "title": "Meu Samba",
+      "year": 2012,
+      "path": "2012 - Marquinhos Diniz - Meu Samba",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Meu Samba",
+          "num": 1,
+          "file": "1. Meu Samba.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 225
+        },
+        {
+          "title": "Cueca Com Batom",
+          "num": 2,
+          "file": "2. Cueca Com Batom.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 174
+        },
+        {
+          "title": "Linha De Frente",
+          "num": 3,
+          "file": "3. Linha De Frente.mp3",
+          "artists": "Marquinhos Diniz (part: Zeca Pagodinho)",
+          "duration": 244
+        },
+        {
+          "title": "Do Bem Que Fiz",
+          "num": 4,
+          "file": "4. Do Bem Que Fiz.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 214
+        },
+        {
+          "title": "A Galinha Dos Ovos De Ouro",
+          "num": 5,
+          "file": "5. A Galinha Dos Ovos De Ouro.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 218
+        },
+        {
+          "title": "Parceiro Japonês",
+          "num": 6,
+          "file": "6. Parceiro Japonês.mp3",
+          "artists": "Marquinhos Diniz (part: Barbeirinho do Jacarezinho e Luiz Grande)",
+          "duration": 206
+        },
+        {
+          "title": "Xoxó Tinha Chuchu",
+          "num": 7,
+          "file": "7. Xoxó Tinha Chuchu.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 191
+        },
+        {
+          "title": "Valor Á Natureza",
+          "num": 8,
+          "file": "8. Valor Á Natureza.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 210
+        },
+        {
+          "title": "Com Dinheiro É Mole",
+          "num": 9,
+          "file": "9. Com Dinheiro É Mole.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 204
+        },
+        {
+          "title": "Aprenda A Lição / Siniztro",
+          "num": 10,
+          "file": "10. Pot-pourri - Aprenda A Lição - Siniztro.mp3",
+          "artists": "Marquinhos Diniz (part: Juninho Thybau e Dudu Nobre)",
+          "duration": 208
+        },
+        {
+          "title": "O Remédio É O Perdão",
+          "num": 11,
+          "file": "11. O Remédio É O Perdão.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 166
+        },
+        {
+          "title": "Vem Meu Grande Amor",
+          "num": 12,
+          "file": "12. Vem Meu Grande Amor.mp3",
+          "artists": "Marquinhos Diniz (part: Monarco)",
+          "duration": 153
+        },
+        {
+          "title": "O Dog É A Nossa Salvação",
+          "num": 13,
+          "file": "13. O Dog É A Nossa Salvação.mp3",
+          "artists": "Marquinhos Diniz",
+          "duration": 190
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "4.5 Atual",
+      "year": 2012,
+      "path": "2012 - Martinho da Vila - 45 Atual",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Menina Moça",
+          "num": 1,
+          "file": "1. Menina Moça.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 152
+        },
+        {
+          "title": "Pot-pourri: Boa Noite / Carnaval De Ilusões / Caramba",
+          "num": 2,
+          "file": "2. Pot-pourri - Boa Noite - Carnaval De Ilusões - Caramba.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 538
+        },
+        {
+          "title": "Casa De Bamba",
+          "num": 3,
+          "file": "3. Casa De Bamba.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 245
+        },
+        {
+          "title": "O Pequeno Burguês",
+          "num": 4,
+          "file": "4. O Pequeno Burguês.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 222
+        },
+        {
+          "title": "Quatro Séculos De Modas E Costumes",
+          "num": 5,
+          "file": "5. Quatro Séculos De Modas E Costumes.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 165
+        },
+        {
+          "title": "Yayá Do Cais Dourado",
+          "num": 6,
+          "file": "6. Iaiá do Cais Dourado.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 243
+        },
+        {
+          "title": "Quem É Do Mar Não Enjôa",
+          "num": 7,
+          "file": "7. Quem É Do Mar Não Enjôa.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 259
+        },
+        {
+          "title": "Brasil Mulato",
+          "num": 9,
+          "file": "9. Brasil Mulato.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 187
+        },
+        {
+          "title": "Tom Maior",
+          "num": 10,
+          "file": "10. Tom Maior.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 188
+        },
+        {
+          "title": "Pot-pourri: Parei Na Sua / Nhêm, Nhêm, Nhêm",
+          "num": 12,
+          "file": "12. Pot-pourri - Parei Na Sua - Nhêm, Nhêm, Nhêm.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 248
+        },
+        {
+          "title": "Grande Amor",
+          "num": 13,
+          "file": "13. Grande Amor.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 257
+        },
+        {
+          "title": "Samba Dos Passarinhos",
+          "num": 14,
+          "file": "14. Samba Dos Passarinhos.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 158
+        },
+        {
+          "title": "Pãozinho De Açúcar",
+          "num": 15,
+          "file": "15. Pãozinho De Açúcar.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 238
+        },
+        {
+          "title": "Partido-Alto De Roda",
+          "num": 16,
+          "file": "16. Partido-Alto De Roda.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 203
+        }
+      ],
+      "artist": "Martinho da Vila"
+    },
+    {
+      "title": "Não Tente Compreender",
+      "year": 2012,
+      "path": "2012 - Mart’nália - Não Tente Compreender",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Namora Comigo",
+          "num": 1,
+          "file": "1. Namora Comigo.mp3",
+          "artists": "Mart'nália",
+          "duration": 227
+        },
+        {
+          "title": "Surpresa",
+          "num": 2,
+          "file": "2. Surpresa.mp3",
+          "artists": "Mart'nália",
+          "duration": 243
+        },
+        {
+          "title": "Daquele Jeito",
+          "num": 3,
+          "file": "3. Daquele Jeito.mp3",
+          "artists": "Mart'nália",
+          "duration": 277
+        },
+        {
+          "title": "Depois Cura",
+          "num": 4,
+          "file": "4. Depois Cura.mp3",
+          "artists": "Mart'nália",
+          "duration": 197
+        },
+        {
+          "title": "Que Pena, Que Pena...",
+          "num": 5,
+          "file": "5. Que Pena, Que Pena.mp3",
+          "artists": "Mart'nália",
+          "duration": 237
+        },
+        {
+          "title": "Não Tente Compreender",
+          "num": 6,
+          "file": "6. Não Tente Compreender.mp3",
+          "artists": "Mart'nália",
+          "duration": 238
+        },
+        {
+          "title": "Intinerário",
+          "num": 7,
+          "file": "7. Intinerário.mp3",
+          "artists": "Mart'nália",
+          "duration": 251
+        },
+        {
+          "title": "Reversos Da Vida",
+          "num": 8,
+          "file": "8. Reversos Da Vida.mp3",
+          "artists": "Mart'nália",
+          "duration": 171
+        },
+        {
+          "title": "Eu Te Ofereço",
+          "num": 10,
+          "file": "10. Eu Te Ofereço.mp3",
+          "artists": "Mart'nália",
+          "duration": 279
+        },
+        {
+          "title": "Os Sinais",
+          "num": 11,
+          "file": "11. Os Sinais.mp3",
+          "artists": "Mart'nália",
+          "duration": 242
+        },
+        {
+          "title": "Demorou",
+          "num": 12,
+          "file": "12. Demorou.mp3",
+          "artists": "Mart'nália",
+          "duration": 281
+        },
+        {
+          "title": "Zero Muito",
+          "num": 13,
+          "file": "13. Zero Muito.mp3",
+          "artists": "Mart'nália",
+          "duration": 230
+        },
+        {
+          "title": "Vai Saber",
+          "num": 14,
+          "file": "14. Vai Saber.mp3",
+          "artists": "Mart'nália",
+          "duration": 215
+        }
+      ],
+      "artist": "Mart'nália"
+    },
+    {
+      "title": "Pra Desengomar",
+      "year": 2012,
+      "path": "2012 - Moyseis Marques - Pra Desengomar",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Pra Desengomar",
+          "num": 1,
+          "file": "1. Pra Desengomar.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 214
+        },
+        {
+          "title": "Bicho Do Mato",
+          "num": 2,
+          "file": "2. Bicho Do Mato.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 239
+        },
+        {
+          "title": "Deixa Estar",
+          "num": 3,
+          "file": "3. Deixa Estar.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 247
+        },
+        {
+          "title": "O Badabadá Do Talarico",
+          "num": 4,
+          "file": "4. O Badabadá Do Talarico.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 228
+        },
+        {
+          "title": "Um Samba De Amor",
+          "num": 5,
+          "file": "5. Um Samba De Amor.mp3",
+          "artists": "Moyseis Marques (part: Ana Costa)",
+          "duration": 260
+        },
+        {
+          "title": "O Lado Bom Da Incerteza",
+          "num": 6,
+          "file": "6. O Lado Bom Da Incerteza.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 210
+        },
+        {
+          "title": "Piuí",
+          "num": 7,
+          "file": "7. Piuí.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 226
+        },
+        {
+          "title": "Meu Canto É Pra Valer",
+          "num": 8,
+          "file": "8. Meu Canto É Pra Valer.mp3",
+          "artists": "Moyseis Marques (part: Moacyr Luz)",
+          "duration": 277
+        },
+        {
+          "title": "Xodó De Lamparina",
+          "num": 9,
+          "file": "9. Xodó De Lamparina.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 232
+        },
+        {
+          "title": "Pra Ter Seu Bem-Querer",
+          "num": 10,
+          "file": "10. Pra Ter Seu Bem-Querer.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 225
+        },
+        {
+          "title": "Como O Cravo Quer A Rosa",
+          "num": 11,
+          "file": "11. Como O Cravo Quer A Rosa.mp3",
+          "artists": "Moyseis Marques (part: Áurea Martins)",
+          "duration": 335
+        },
+        {
+          "title": "Não Deu",
+          "num": 12,
+          "file": "12. Não Deu.mp3",
+          "artists": "Moyseis Marques",
+          "duration": 246
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "O Que É Meu",
+      "year": 2012,
+      "path": "2012 - Nilze Carvalho - O Que É Meu",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Banho De Manjericão",
+          "num": 1,
+          "file": "1. Banho De Manjericão.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 239
+        },
+        {
+          "title": "Doces Recordações",
+          "num": 2,
+          "file": "2. Doces Recordações.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 203
+        },
+        {
+          "title": "Lamento Da Lavadeira",
+          "num": 3,
+          "file": "3. Lamento Da Lavadeira.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 149
+        },
+        {
+          "title": "Proposta De Paz",
+          "num": 4,
+          "file": "4. Proposta De Paz.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 206
+        },
+        {
+          "title": "Chorei",
+          "num": 5,
+          "file": "5. Chorei.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 174
+        },
+        {
+          "title": "Nordestino",
+          "num": 6,
+          "file": "6. Nordestino.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 207
+        },
+        {
+          "title": "Festa",
+          "num": 7,
+          "file": "7. Festa.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 122
+        },
+        {
+          "title": "Lua Cheia",
+          "num": 8,
+          "file": "8. Lua Cheia.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 173
+        },
+        {
+          "title": "Barracão",
+          "num": 9,
+          "file": "9. Barracão.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 188
+        },
+        {
+          "title": "Ela Sabe Quem É",
+          "num": 10,
+          "file": "10. Ela Sabe Quem É.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 254
+        },
+        {
+          "title": "Santa Cecília",
+          "num": 11,
+          "file": "11. Santa Cecília.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 225
+        },
+        {
+          "title": "Mal De Amor",
+          "num": 12,
+          "file": "12. Mal De Amor.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 177
+        },
+        {
+          "title": "O Que É Meu",
+          "num": 13,
+          "file": "13. O Que É Meu.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 180
+        },
+        {
+          "title": "Se Um Novo Amor Me Convidar",
+          "num": 14,
+          "file": "14. Se Um Novo Amor Me Convidar.mp3",
+          "artists": "Nilze Carvalho",
+          "duration": 151
+        }
+      ],
+      "artist": "Nilze Carvalho"
+    },
+    {
+      "title": "Quinteto",
+      "year": 2012,
+      "path": "2012 - Quinteto em Branco e Preto - Quinteto",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Guardião Dos Nossos Ancestrais",
+          "num": 1,
+          "file": "1. Guardião Dos Nossos Ancestrais.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 310
+        },
+        {
+          "title": "Beija-Flor",
+          "num": 2,
+          "file": "2. Beija-Flor.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 215
+        },
+        {
+          "title": "Samba Pop",
+          "num": 3,
+          "file": "3. Samba Pop.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 276
+        },
+        {
+          "title": "Maria Não Volta Mais",
+          "num": 4,
+          "file": "4. Maria Não Volta Mais.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 245
+        },
+        {
+          "title": "Resistir",
+          "num": 5,
+          "file": "5. Resistir.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 274
+        },
+        {
+          "title": "Vocabulário Do Brasil",
+          "num": 6,
+          "file": "6. Vocabulário Do Brasil.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 294
+        },
+        {
+          "title": "Entre Búzios E Santos",
+          "num": 7,
+          "file": "7. Entre Búzios E Santos.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 220
+        },
+        {
+          "title": "Feito Siameses",
+          "num": 8,
+          "file": "8. Feito Siameses.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 292
+        },
+        {
+          "title": "Pot-pourri: Encontro Da Velha Guarda / Pomar Da Vida / Que Poeira É Essa / Tem Que Sofrer / Me Leva Amor / Do Oiapoque Ao Chuí",
+          "num": 9,
+          "file": "9. Pot-pourri - Encontro Da Velha Guarda - Pomar Da Vida - Que Poeira É Essa - Tem Que Sofrer - Me Leva Amor - Do Oiapoque Ao Chuí.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 475
+        },
+        {
+          "title": "Fui Bandido",
+          "num": 10,
+          "file": "10. Fui Bandido.mp3",
+          "artists": "Quinteto em Branco e Preto (part: Edi Rock)",
+          "duration": 303
+        },
+        {
+          "title": "Mão Negra",
+          "num": 11,
+          "file": "11. Mão Negra.mp3",
+          "artists": "Quinteto em Branco e Preto (part: Sapopemba)",
+          "duration": 288
+        },
+        {
+          "title": "Renúncia Do Arvoredo",
+          "num": 12,
+          "file": "12. Renúncia Do Arvoredo.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 256
+        },
+        {
+          "title": "Uma Festa",
+          "num": 13,
+          "file": "13. Uma Festa.mp3",
+          "artists": "Quinteto em Branco e Preto (part: Dona Ivone Lara)",
+          "duration": 226
+        },
+        {
+          "title": "Pot-pourri: Sou São Mateus / O Samba Ainda Floresce",
+          "num": 14,
+          "file": "14. Pot-pourri - Sou São Mateus - O Samba Ainda Floresce.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 245
+        },
+        {
+          "title": "Futuro De Glória",
+          "num": 15,
+          "file": "15. Futuro De Glória.mp3",
+          "artists": "Quinteto em Branco e Preto",
+          "duration": 175
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Sambas-de-Enredo 2012 Grupo A",
+      "year": 2012,
+      "path": "2012 - Sambas de Enredo Grupo A",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Exaltação do Unidos do Viradouro",
+          "num": 1,
+          "file": "1. Unidos do Viradouro – Samba de Quadra.mp3",
+          "artists": "Unidos do Viradouro (intérprete: Dominguinhos do Estácio)",
+          "duration": 77
+        },
+        {
+          "title": "A Vida como ela é, Bonitinha mas Ordinária… Assim falou Nelson Rodrigues",
+          "num": 2,
+          "file": "2. Unidos do Viradouro.mp3",
+          "artists": "Unidos do Viradouro (intérpretes: Diego Nicolau, Gilberto Gomes, Leléu e Niu Souza)",
+          "duration": 350
+        },
+        {
+          "title": "Exaltação Estácio de Sá",
+          "num": 3,
+          "file": "3. Estácio de Sá – Samba de Quadra.mp3",
+          "artists": "Estácio de Sá (intérprete: Leandro Santos)",
+          "duration": 99
+        },
+        {
+          "title": "Luma de Oliveira: Coração de um País em Festa!",
+          "num": 4,
+          "file": "4. Estácio de Sá.mp3",
+          "artists": "Estácio de Sá (intérprete: Leandro Santos)",
+          "duration": 294
+        },
+        {
+          "title": "Exaltação Acadêmicos do Cubango",
+          "num": 5,
+          "file": "5. Acadêmicos do Cubango – Samba de Quadra.mp3",
+          "artists": "Acadêmicos do Cubango (intérprete: Marcelo Guimarães)",
+          "duration": 69
+        },
+        {
+          "title": "Barão de Mauá. O Sonho de um Brasil Moderno!",
+          "num": 6,
+          "file": "6. Acadêmicos do Cubango.mp3",
+          "artists": "Acadêmicos do Cubango (intérprete: Hugo Junior, Marcelo Guimarães e Sereno)",
+          "duration": 309
+        },
+        {
+          "title": "Exaltação Acadêmicos de Santa Cruz",
+          "num": 7,
+          "file": "7. Acadêmicos de Santa Cruz – Samba de Quadra.mp3",
+          "artists": "Acadêmicos de Santa Cruz (intérprete: Davi do Pandeiro)",
+          "duration": 67
+        },
+        {
+          "title": "Nas Ondas do Rádio… “Acorda Brasil para Escutar! O Show do Antônio Carlos esta no ar.”",
+          "num": 8,
+          "file": "8. Acadêmicos de Santa Cruz.mp3",
+          "artists": "Acadêmicos de Santa Cruz (intérprete: Davi do Pandeiro)",
+          "duration": 280
+        },
+        {
+          "title": "Exaltação Império Serrano",
+          "num": 9,
+          "file": "9. Império Serrano – Samba de Quadra.mp3",
+          "artists": "Império Serrano (intérprete: Arlindo Cruz e Tiãozinho Cruz)",
+          "duration": 80
+        },
+        {
+          "title": "Dona Ivone Lara, Enredo do meu Samba",
+          "num": 10,
+          "file": "10. Império Serrano.mp3",
+          "artists": "Império Serrano (intérprete: Arlindo Cruz e Tiãozinho Cruz)",
+          "duration": 260
+        },
+        {
+          "title": "Exaltação Império da Tijuca",
+          "num": 11,
+          "file": "11. Império da Tijuca – Samba de Quadra.mp3",
+          "artists": "Império da Tijuca (intérprete: Pixulé)",
+          "duration": 53
+        },
+        {
+          "title": "Utopias – Viagem aos Confins da Imaginação",
+          "num": 12,
+          "file": "12. Império da Tijuca.mp3",
+          "artists": "Império da Tijuca (intérprete: Pixulé)",
+          "duration": 303
+        },
+        {
+          "title": "Exaltação Inocentes de Belford Roxo",
+          "num": 13,
+          "file": "13. Inocentes de Belford Roxo – Samba de Quadra.mp3",
+          "artists": "Inocentes de Belford Roxo (intérprete: Thiago Brito)",
+          "duration": 65
+        },
+        {
+          "title": "Corumbá – Ópera Tupi-Guaikuru",
+          "num": 14,
+          "file": "14. Inocentes de Belford Roxo.mp3",
+          "artists": "Inocentes de Belford Roxo (intérprete: Thiago Brito)",
+          "duration": 365
+        },
+        {
+          "title": "Exaltação Acadêmicos da Rocinha",
+          "num": 15,
+          "file": "15. Acadêmicos da Rocinha – Samba de Quadra.mp3",
+          "artists": "Acadêmicos da Rocinha (intérprete: Anderson Paz)",
+          "duration": 71
+        },
+        {
+          "title": "Vou Colocar teu Nome na Praça",
+          "num": 16,
+          "file": "16. Acadêmicos da Rocinha.mp3",
+          "artists": "Acadêmicos da Rocinha (intérprete: Anderson Paz)",
+          "duration": 311
+        },
+        {
+          "title": "Exaltação Paraíso do Tuiuti",
+          "num": 17,
+          "file": "17. Paraíso do Tuiuti – Samba de Quadra.mp3",
+          "artists": "Paraíso do Tuiuti (intérprete: Daniel Silva)",
+          "duration": 92
+        },
+        {
+          "title": "A tal Mineira",
+          "num": 18,
+          "file": "18. Paraíso do Tuiuti.mp3",
+          "artists": "Paraíso do Tuiuti (intérprete: Daniel Silva)",
+          "duration": 350
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Sambas-de-Enredo 2012 Grupo B",
+      "year": 2012,
+      "path": "2012 - Sambas de Enredo Grupo B",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "As Cartas não Mentem Jamais!",
+          "num": 1,
+          "file": "1. União do Parque Curicica.mp3",
+          "artists": "União do Parque Curicica",
+          "duration": 313
+        },
+        {
+          "title": "Arte - Um Universo Fascinante",
+          "num": 2,
+          "file": "2. Unidos de Padre Miguel.mp3",
+          "artists": "Unidos de Padre Miguel (intérprete: Igor Vianna)",
+          "duration": 313
+        },
+        {
+          "title": "Brotando a Vida, Floresce a Arte de Dançar!",
+          "num": 3,
+          "file": "3. Arranco.mp3",
+          "artists": "Arranco",
+          "duration": 339
+        },
+        {
+          "title": "Mistérios e Magias no Sereno da Noite",
+          "num": 4,
+          "file": "4. Sereno de Campo Grande.mp3",
+          "artists": "Sereno de Campo Grande",
+          "duration": 258
+        },
+        {
+          "title": "O Pequeno Grande Rei",
+          "num": 5,
+          "file": "5. União de Jacarepaguá.mp3",
+          "artists": "União de Jacarepaguá (intérprete: Tiganá)",
+          "duration": 325
+        },
+        {
+          "title": "Ziraldo: Páginas de uma Vida de um Maluco Genial!",
+          "num": 6,
+          "file": "6. Tradição.mp3",
+          "artists": "Tradição",
+          "duration": 392
+        },
+        {
+          "title": "Flor de Lis - Símbolo Universal! Hoje se faz Presente no Nosso Carnaval!",
+          "num": 7,
+          "file": "7. Difícil é o Nome.mp3",
+          "artists": "Difícil é o Nome",
+          "duration": 320
+        },
+        {
+          "title": "Caruarú, a Princesinha do Nordeste!",
+          "num": 8,
+          "file": "8. Mocidade de Vicente de Carvalho.mp3",
+          "artists": "Mocidade de Vicente de Carvalho",
+          "duration": 283
+        },
+        {
+          "title": "A Caprichosos faz o seu Papel... Levanta, Sacode a Poeira e dá a Volta por Cima!",
+          "num": 9,
+          "file": "9. Caprichosos de Pilares.mp3",
+          "artists": "Caprichosos de Pilares (intérprete: Clóvis Pê)",
+          "duration": 342
+        },
+        {
+          "title": "Os Saltimbancos",
+          "num": 10,
+          "file": "10. Alegria da Zona Sul.mp3",
+          "artists": "Alegria da Zona Sul (intérprete: Edmilton di Bem)",
+          "duration": 322
+        },
+        {
+          "title": "A Vila na Magia dos Brinquedos",
+          "num": 11,
+          "file": "11. Unidos da Vila Santa Tereza.mp3",
+          "artists": "Unidos da Vila Santa Tereza",
+          "duration": 290
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Sambas-de-Enredo 2012 Grupo Especial",
+      "year": 2012,
+      "path": "2012 - Sambas de Enredo Grupo Especial",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "São Luís. Poema Encantado do Maranhão",
+          "num": 1,
+          "file": "1. Beija-Flor de Nilópolis.mp3",
+          "artists": "Beija-Flor de Nilópolis (Intérprete: Neguinho da Beija-Flor)",
+          "duration": 337
+        },
+        {
+          "title": "O dia em que toda a Realeza Desembarcou na Avenida para Coroar o Rei Luiz do Sertão",
+          "num": 2,
+          "file": "2. Unidos da Tijuca.mp3",
+          "artists": "Unidos da Tijuca (intérprete: Bruno Ribas)",
+          "duration": 348
+        },
+        {
+          "title": "Vou Festejar! Sou Cacique, sou Mangueira",
+          "num": 3,
+          "file": "3. Estação Primeira de Mangueira.mp3",
+          "artists": "Estação Primeira de Mangueira (intérpretes: Luizito, Ciganerey, Zé Paulo, Dudu Nobre, Xande de Pilares, Beth Carvalho, Sombrinha, Jorge Aragão e Vadinho da Mangueira)",
+          "duration": 372
+        },
+        {
+          "title": "Você Semba lá…. Que eu Sambo cá! O Canto Livre de Angola",
+          "num": 4,
+          "file": "4. Unidos de Vila Isabel.mp3",
+          "artists": "Unidos de Vila Isabel (intérprete: Tinga)",
+          "duration": 341
+        },
+        {
+          "title": "Cordel Branco e Encarnado",
+          "num": 5,
+          "file": "5. Acadêmicos do Salgueiro.mp3",
+          "artists": "Acadêmicos do Salgueiro (intérprete: Quinho, Serginho do Porto e Leonardo Bessa)",
+          "duration": 361
+        },
+        {
+          "title": "Jorge, Amado Jorge",
+          "num": 6,
+          "file": "6. Imperatriz Leopoldinense.mp3",
+          "artists": "Impertariz Leopoldinense (Dominguinhos do Estácio)",
+          "duration": 350
+        },
+        {
+          "title": "Por ti, Portinari, Rompendo a Tela, a Realidade",
+          "num": 7,
+          "file": "7. Mocidade Independente de Padre Miguel.mp3",
+          "artists": "Mocidade Independente de Padre Miguel (intérprete: Luizinho Andanças)",
+          "duration": 367
+        },
+        {
+          "title": "Da Seiva Materna ao Equilíbrio da Vida",
+          "num": 8,
+          "file": "8. Porto da Pedra.mp3",
+          "artists": "Porto da Pedra (intérprete: Wander Pires)",
+          "duration": 347
+        },
+        {
+          "title": "Uma Aventura Musical na Sapucaí",
+          "num": 9,
+          "file": "9. São Clemente.mp3",
+          "artists": "São Clemente (intérprete: Igor Sorriso)",
+          "duration": 297
+        },
+        {
+          "title": "Eu Acredito em você! E você?",
+          "num": 10,
+          "file": "10. Acadêmicos do Grande Rio.mp3",
+          "artists": "Acadêmicos do Grande Rio (Wantuir)",
+          "duration": 328
+        },
+        {
+          "title": "…E o Povo na Rua Cantando é Feito uma Reza, um Ritual…",
+          "num": 11,
+          "file": "11. Portela.mp3",
+          "artists": "Portela (Gilsinho)",
+          "duration": 350
+        },
+        {
+          "title": "De Londres ao Rio: Era um vez… Uma Ilha…",
+          "num": 12,
+          "file": "12. União da Ilha do Governador.mp3",
+          "artists": "União da Ilha do Governandor (intérprete: Ito Melodia)",
+          "duration": 323
+        },
+        {
+          "title": "O Artista da Alegria dá o tom na Folia",
+          "num": 13,
+          "file": "13. Renascer de Jacarepaguá.mp3",
+          "artists": "Renascer de Jacarepaguá (intérprete: Rogerinho Renascer)",
+          "duration": 352
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Homenagens Vol.1",
+      "year": 2012,
+      "path": "2012 - Velha Guarda da Mangueira - Homenagens Vol1",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Exaltação Á Mangueira",
+          "num": 1,
+          "file": "1. Exaltação Á Mangueira.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Grupo Toque de Arte)",
+          "duration": 230
+        },
+        {
+          "title": "Escurinha",
+          "num": 2,
+          "file": "2. Escurinha.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Fundo de Quintal)",
+          "duration": 158
+        },
+        {
+          "title": "Meninos Da Mangueira",
+          "num": 3,
+          "file": "3. Meninos Da Mangueira.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Sandra de Sá)",
+          "duration": 378
+        },
+        {
+          "title": "Yes, Nós Temos Braquinha",
+          "num": 4,
+          "file": "4. Yes, Nós Temos Braquinha.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Batuque na Cozinha)",
+          "duration": 348
+        },
+        {
+          "title": "O Mundo Encantado De Monteiro Lobato",
+          "num": 5,
+          "file": "5. O Mundo Encantado De Monteiro Lobato.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Lenine)",
+          "duration": 366
+        },
+        {
+          "title": "Lendas Do Abaeté",
+          "num": 6,
+          "file": "6. Lendas Do Abaeté.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Alcione)",
+          "duration": 277
+        },
+        {
+          "title": "Pot-pourri: Quem Samba Fica / Esta Melodia / Eu Agora Sou Feliz",
+          "num": 7,
+          "file": "7. Pot-pourri - Quem Samba Fica - Esta Melodia - Eu Agora Sou Feliz.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Délcio Carvalho e Jamelão Netto)",
+          "duration": 346
+        },
+        {
+          "title": "Estação Derradeira",
+          "num": 8,
+          "file": "8. Estação Derradeira.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Paulo Luiz e Paola)",
+          "duration": 252
+        },
+        {
+          "title": "Ordenes E Farei",
+          "num": 9,
+          "file": "9. Ordenes E Farei.mp3",
+          "artists": "Velha Guarda da Mangueira (part: Dorina)",
+          "duration": 220
+        },
+        {
+          "title": "Vou Festejar",
+          "num": 10,
+          "file": "10. Vou Festejar.mp3",
+          "artists": "Velha Guarda da Mangueira",
+          "duration": 321
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "Consagração",
+      "year": 2012,
+      "path": "2012 - Wanderley Monteiro - Consagração",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Consagração",
+          "num": 1,
+          "file": "1. Consagração.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 191
+        },
+        {
+          "title": "Fuga De Aparências",
+          "num": 2,
+          "file": "2. Fuga De Aparências.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 256
+        },
+        {
+          "title": "Nada Mais",
+          "num": 3,
+          "file": "3. Nada Mais.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 251
+        },
+        {
+          "title": "Chico E Nonô",
+          "num": 4,
+          "file": "4. Chico E Nonô.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 289
+        },
+        {
+          "title": "Espelho Da Canção",
+          "num": 5,
+          "file": "5. Espelho Da Canção.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 193
+        },
+        {
+          "title": "Teatro Da Vida",
+          "num": 6,
+          "file": "6. Teatro Da Vida.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 196
+        },
+        {
+          "title": "Número Sete",
+          "num": 7,
+          "file": "7. Número Sete.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 243
+        },
+        {
+          "title": "Perfil",
+          "num": 8,
+          "file": "8. Perfil.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 201
+        },
+        {
+          "title": "Um Sonho De Paz",
+          "num": 9,
+          "file": "9. Um Sonho De Paz.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 190
+        },
+        {
+          "title": "Refletor Das Estrelas",
+          "num": 10,
+          "file": "10. Refletor Das Estrelas.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 252
+        },
+        {
+          "title": "Pot-pourri: Meu Limite / O Que Passou / Para Enganar A Saudade",
+          "num": 11,
+          "file": "11. Pot-pourri - Meu Limite - O Que Passou - Para Enganar A Saudade.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 410
+        },
+        {
+          "title": "Em Paralelo",
+          "num": 12,
+          "file": "12. Em Paralelo.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 228
+        },
+        {
+          "title": "Telhado De Vidro",
+          "num": 13,
+          "file": "13. Telhado De Vidro.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 186
+        },
+        {
+          "title": "Rei Da Madrugada",
+          "num": 14,
+          "file": "14. Rei Da Madrugada.mp3",
+          "artists": "Wanderley Monteiro",
+          "duration": 286
+        }
+      ],
+      "artist": "Wanderley Monteiro"
+    },
+    {
+      "title": "Com & sem sal",
+      "year": 2012,
+      "path": "2012 - Yeda Maranhão - Com & Sem Sal",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Sonhos de Nelson Cavaquinho",
+          "num": 1,
+          "file": "1. Sonhos De Nelson Cavaquinho.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 192
+        },
+        {
+          "title": "O Preferido",
+          "num": 2,
+          "file": "2. O Preferido.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 180
+        },
+        {
+          "title": "Amor Correspondido",
+          "num": 3,
+          "file": "3. Amor Correspondido.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 172
+        },
+        {
+          "title": "Salgueiro Eterno",
+          "num": 4,
+          "file": "4. Salgueiro Eterno.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 197
+        },
+        {
+          "title": "De Novo em minha Vida",
+          "num": 5,
+          "file": "5. De Novo Em Minha Vida.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 182
+        },
+        {
+          "title": "Um Abraço lá no Salgueiro",
+          "num": 6,
+          "file": "6. Um Abraço Lá No Salgueiro.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 185
+        },
+        {
+          "title": "Só Louco pode ser Feliz",
+          "num": 7,
+          "file": "7. Só Louco Pode Ser Feliz.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 163
+        },
+        {
+          "title": "A Ala de Compositores",
+          "num": 8,
+          "file": "8. A Ala De Compositores.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 236
+        },
+        {
+          "title": "Corção sem Amor, Jardim sem Flor",
+          "num": 9,
+          "file": "9. Coração Sem Amor, Jardim Sem Flor.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 145
+        },
+        {
+          "title": "Orgulho da minha Vida",
+          "num": 10,
+          "file": "10. Orgulho Da Minha Vida.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 172
+        },
+        {
+          "title": "Vagando pelos Sonhos",
+          "num": 11,
+          "file": "11. Vagando Pelos Sonhos.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 207
+        },
+        {
+          "title": "Gratidão",
+          "num": 12,
+          "file": "12. Gratidão.mp3",
+          "artists": "Yeda Maranhão",
+          "duration": 148
+        }
+      ],
+      "artist": "Yeda Maranhão"
+    },
+    {
+      "title": "Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
+      "year": 2012,
+      "path": "2012 - Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Em Um Outdoor",
+          "num": 1,
+          "file": "1. Em Um Outdoor.mp3",
+          "artists": "Zeca Pagodinho",
+          "duration": 211
+        },
+        {
+          "title": "Mordomia",
+          "num": 2,
+          "file": "2. Mordomia.mp3",
+          "artists": "Almir Guinéto",
+          "duration": 207
+        },
+        {
+          "title": "Canto De Rainha",
+          "num": 3,
+          "file": "3. Canto De Rainha.mp3",
+          "artists": "Beth Carvalho, Arlindo Cruz e Sombrinha",
+          "duration": 192
+        },
+        {
+          "title": "Pot-pourri: Dolores E Suas Desilusões / Coração Em Desalinho",
+          "num": 4,
+          "file": "4. Pot-pourri - Dolores E Suas Desilusões - Coração Em Desalinho.mp3",
+          "artists": "Monarco, Mauro Diniz e Juliana Diniz",
+          "duration": 226
+        },
+        {
+          "title": "Pot-pourri: Conflito /caviar / Dona Esponja",
+          "num": 5,
+          "file": "5. Pot-pourri - Conflito - Caviar - Dona Esponja.mp3",
+          "artists": "Trio Calafrio",
+          "duration": 302
+        },
+        {
+          "title": "Pot-pourri: Roda Ciranda / Segure Tudo / Casa De Bamba",
+          "num": 6,
+          "file": "6. Pot-pourri - Roda Ciranda - Segure Tudo - Casa De Bamba.mp3",
+          "artists": "Martinho da Vila",
+          "duration": 211
+        },
+        {
+          "title": "Minta Meu Sonho",
+          "num": 7,
+          "file": "7. Minta Meu Sonho.mp3",
+          "artists": "Jorge Aragão",
+          "duration": 192
+        },
+        {
+          "title": "Quintal Do Céu",
+          "num": 9,
+          "file": "9. Quintal Do Céu.mp3",
+          "artists": "Seu Jorge",
+          "duration": 278
+        },
+        {
+          "title": "Mas Que Nada",
+          "num": 10,
+          "file": "10. Mas Que Nada.mp3",
+          "artists": "Jorge Ben Jor",
+          "duration": 277
+        },
+        {
+          "title": "Brincadeira Tem Hora",
+          "num": 11,
+          "file": "11. Brincadeira Tem Hora.mp3",
+          "artists": "Xande de Pilares",
+          "duration": 197
+        },
+        {
+          "title": "Letreiro",
+          "num": 12,
+          "file": "12. Letreiro.mp3",
+          "artists": "Dunga",
+          "duration": 175
+        },
+        {
+          "title": "A Voz Do Meu Samba",
+          "num": 13,
+          "file": "13. A Voz Do Meu Samba.mp3",
+          "artists": "Mumuzinho",
+          "duration": 220
+        },
+        {
+          "title": "Pot-pourri: Quando Eu Contar (Iaiá) / Deixa A Vida Me Levar",
+          "num": 14,
+          "file": "14. Pot-pourri - Quando Eu Contar Iaiá - Deixa A Vida Me Levar.mp3",
+          "artists": "Serginho Meriti",
+          "duration": 230
+        },
+        {
+          "title": "Pot-pourri: Alma Boêmia / Você É O Espinho E Não A Flor / A Vitória Demora, Mas Vem",
+          "num": 15,
+          "file": "15. Pot-pourri - Alma Boêmia - Você É O Espinho E Não A Flor - A Vitória Demora, Mas Vem.mp3",
+          "artists": "Arlindo Neto, Renato Milagres e Juninho Thybau",
+          "duration": 297
+        },
+        {
+          "title": "Pot-pourri: O Penetra / O Pai Coruja / O Vacilão",
+          "num": 16,
+          "file": "16. Pot-pourri - O Penetra - O Pai Coruja - O Vacilão.mp3",
+          "artists": "Zé Roberto",
+          "duration": 295
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
       "title": "acesa ao vivo em são luis do maranhão",
       "year": 2011,
       "path": "2011 - Alcione - Acesa – Ao vivo em São Luis do Maranhão",
@@ -1493,7 +3500,7 @@ db = {
     },
     {
       "title": "Nossa Verdade",
-      "year": null,
+      "year": 2011,
       "path": "2011 - Fundo de Quintal - Nossa Verdade",
       "has_cover": true,
       "tracks": [
@@ -1601,571 +3608,6 @@ db = {
           "file": "15. Pot-pourri - Conselho - Insensato Destino.mp3",
           "artists": "Fundo de Quintal",
           "duration": 231
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Duas Faces (Ao Vivo Na Mangueira)",
-      "year": 2012,
-      "path": "2012 - Alcione - Duas Faces Ao Vivo Na Mangueira",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Pot-pourri:  Tem Dendê / Figa De Guiné",
-          "num": 1,
-          "file": "1. Pot-pourri - Tem Dendê - Figa De Guiné.mp3",
-          "artists": "Alcione",
-          "duration": 226
-        },
-        {
-          "title": "Medo",
-          "num": 2,
-          "file": "2. Medo.mp3",
-          "artists": "Alcione",
-          "duration": 192
-        },
-        {
-          "title": "Beco Sem Saída",
-          "num": 3,
-          "file": "3. Beco Sem Saída.mp3",
-          "artists": "Alcione",
-          "duration": 182
-        },
-        {
-          "title": "Não Me Entrego A Mais Ninguém",
-          "num": 4,
-          "file": "4. Não Me Entrego A Mais Ninguém.mp3",
-          "artists": "Alcione",
-          "duration": 297
-        },
-        {
-          "title": "Verde E Rosa",
-          "num": 5,
-          "file": "5. Verde E Rosa.mp3",
-          "artists": "Alcione (part: Leci Brandão)",
-          "duration": 283
-        },
-        {
-          "title": "Chora Coração",
-          "num": 6,
-          "file": "6. Chora Coração.mp3",
-          "artists": "Alcione",
-          "duration": 237
-        },
-        {
-          "title": "Mulher Bombeiro",
-          "num": 7,
-          "file": "7. Mulher Bombeiro.mp3",
-          "artists": "Alcione",
-          "duration": 142
-        },
-        {
-          "title": "Meu Ébano",
-          "num": 8,
-          "file": "8. Meu Ébano.mp3",
-          "artists": "Alcione (part: MV Bil)l",
-          "duration": 215
-        },
-        {
-          "title": "Metade De Mim",
-          "num": 9,
-          "file": "9. Metade De Mim.mp3",
-          "artists": "Alcione",
-          "duration": 260
-        },
-        {
-          "title": "Só Seu Amor Pra Me Salvar",
-          "num": 10,
-          "file": "10. Só Seu Amor Pra Me Salvar.mp3",
-          "artists": "Alcione",
-          "duration": 210
-        },
-        {
-          "title": "Velho Barco",
-          "num": 11,
-          "file": "11. Velho Barco.mp3",
-          "artists": "Alcione",
-          "duration": 179
-        },
-        {
-          "title": "Na Mesma Proporção",
-          "num": 12,
-          "file": "12. Na Mesma Proporção.mp3",
-          "artists": "Alcione (part: Jorge Aragão)",
-          "duration": 260
-        },
-        {
-          "title": "Jamaica A São Luis",
-          "num": 13,
-          "file": "13. Jamaica A São Luis.mp3",
-          "artists": "Alcione",
-          "duration": 271
-        },
-        {
-          "title": "Poder Da Criação",
-          "num": 14,
-          "file": "14. Poder Da Criação.mp3",
-          "artists": "Alcione (part: Diogo Nogueira)",
-          "duration": 270
-        },
-        {
-          "title": "Duas Faces",
-          "num": 15,
-          "file": "15. Duas Faces.mp3",
-          "artists": "Alcione",
-          "duration": 261
-        },
-        {
-          "title": "O Filho Fiel, Sempre Mangueira",
-          "num": 16,
-          "file": "16. O Filho Fiel, Sempre Mangueira.mp3",
-          "artists": "Alcione (part: Bateria da Mangueira)",
-          "duration": 186
-        },
-        {
-          "title": "Brasil De Oliveira Da Silva Do Samba",
-          "num": 17,
-          "file": "17. Brasil De Oliveira Da Silva Do Samba.mp3",
-          "artists": "Alcione (part: Bateria da Mangueira)",
-          "duration": 344
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Cartão De Visita",
-      "year": 2012,
-      "path": "2012 - Almir Guinéto - Cartão De Visita",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Mãe Iemanjá",
-          "num": 1,
-          "file": "1. Mãe Iemanjá.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 202
-        },
-        {
-          "title": "Tá Tudo Mudado",
-          "num": 2,
-          "file": "2. Tá Tudo Mudado.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 247
-        },
-        {
-          "title": "Tambor",
-          "num": 3,
-          "file": "3. Tambor.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 200
-        },
-        {
-          "title": "Cartão De Visita",
-          "num": 4,
-          "file": "4. Cartão De Visita.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 256
-        },
-        {
-          "title": "Desabafo",
-          "num": 5,
-          "file": "5. Desabafo.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 196
-        },
-        {
-          "title": "Dom Do Criador",
-          "num": 6,
-          "file": "6. Dom Do Criador.mp3",
-          "artists": "Almir Guinéto (part: Adalto Magalha)",
-          "duration": 188
-        },
-        {
-          "title": "É Você",
-          "num": 7,
-          "file": "7. É Você.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 193
-        },
-        {
-          "title": "Outra Oportunidade",
-          "num": 8,
-          "file": "8. Outra Oportunidade.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 234
-        },
-        {
-          "title": "Partideiro Caseiro",
-          "num": 9,
-          "file": "9. Partideiro Caseiro.mp3",
-          "artists": "Almir Guinéto (part: Arlindo Cruz)",
-          "duration": 209
-        },
-        {
-          "title": "Paixão Falida",
-          "num": 10,
-          "file": "10. Paixão Falida.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 149
-        },
-        {
-          "title": "Sou Eu",
-          "num": 11,
-          "file": "11. Sou Eu.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 204
-        },
-        {
-          "title": "Homenagem Ao Mestre Neoci",
-          "num": 12,
-          "file": "12. Homenagem Ao Mestre Neoci.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 235
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Hoje É O Melhor Lugar",
-      "year": 2012,
-      "path": "2012 - Ana Costa - Hoje É O Melhor Lugar",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Filosofia De Vida",
-          "num": 1,
-          "file": "1. Filosofia De Vida.mp3",
-          "artists": "Ana Costa",
-          "duration": 210
-        },
-        {
-          "title": "Sou O Samba",
-          "num": 2,
-          "file": "2. Sou O Samba.mp3",
-          "artists": "Ana Costa",
-          "duration": 213
-        },
-        {
-          "title": "Hoje É O Melhor Lugar",
-          "num": 3,
-          "file": "3. Hoje É O Melhor Lugar.mp3",
-          "artists": "Ana Costa",
-          "duration": 244
-        },
-        {
-          "title": "Mais Feliz",
-          "num": 4,
-          "file": "4. Mais Feliz.mp3",
-          "artists": "Ana Costa",
-          "duration": 212
-        },
-        {
-          "title": "Perdeu",
-          "num": 5,
-          "file": "5. Perdeu.mp3",
-          "artists": "Ana Costa",
-          "duration": 213
-        },
-        {
-          "title": "Quem Me Dera",
-          "num": 6,
-          "file": "6. Quem Me Dera.mp3",
-          "artists": "Ana Costa",
-          "duration": 209
-        },
-        {
-          "title": "Fogo Sem A Chama",
-          "num": 7,
-          "file": "7. Fogo Sem A Chama.mp3",
-          "artists": "Ana Costa (part: Moyseis Marques)",
-          "duration": 236
-        },
-        {
-          "title": "No Bar",
-          "num": 8,
-          "file": "8. No Bar.mp3",
-          "artists": "Ana Costa",
-          "duration": 250
-        },
-        {
-          "title": "As Coisas Que Mamãe Me Ensinou",
-          "num": 9,
-          "file": "9. As Coisas Que Mamãe Me Ensinou.mp3",
-          "artists": "Ana Costa",
-          "duration": 215
-        },
-        {
-          "title": "Se Você For Coerente",
-          "num": 10,
-          "file": "10. Se Você For Coerente.mp3",
-          "artists": "Ana Costa",
-          "duration": 212
-        },
-        {
-          "title": "O Brilho Do Seu Olhar",
-          "num": 11,
-          "file": "11. O Brilho Do Seu Olhar.mp3",
-          "artists": "Ana Costa",
-          "duration": 249
-        },
-        {
-          "title": "Peso E Medida",
-          "num": 12,
-          "file": "12. Peso E Medida.mp3",
-          "artists": "Ana Costa",
-          "duration": 222
-        },
-        {
-          "title": "Cantador Da Felicidade",
-          "num": 13,
-          "file": "13. Cantador Da Felicidade.mp3",
-          "artists": "Ana Costa",
-          "duration": 231
-        },
-        {
-          "title": "Por Um Dia De Graça",
-          "num": 14,
-          "file": "14. Por Um Dia De Graça.mp3",
-          "artists": "Ana Costa",
-          "duration": 217
-        },
-        {
-          "title": "O Que É, O Que É...",
-          "num": 15,
-          "file": "15. O Que É, O Que É.mp3",
-          "artists": "Ana Costa",
-          "duration": 164
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Batuques Do Meu Lugar",
-      "year": 2012,
-      "path": "2012 - Arlindo Cruz - Batuques Do Meu Lugar",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Batuques Do Meu Lugar",
-          "num": 1,
-          "file": "13. Pot-pourri - Fora De Ocasião - Saudade Louca.mp3",
-          "artists": "Arlindo Cruz (part:",
-          "duration": 265
-        }
-      ],
-      "artist": "Arlindo Cruz (part:"
-    },
-    {
-      "title": "Boêmio De Verdade",
-      "year": 2012,
-      "path": "2012 - Bicudo da Ilha - Boêmio De Verdade",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Boêmio De Verdade",
-          "num": 1,
-          "file": "1. Boêmio De Verdade.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 238
-        },
-        {
-          "title": "Morena Malú",
-          "num": 2,
-          "file": "2. Morena Malú.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 197
-        },
-        {
-          "title": "Real Sonhador",
-          "num": 3,
-          "file": "3. Real Sonhador.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 301
-        },
-        {
-          "title": "Cruel Poluição",
-          "num": 4,
-          "file": "4. Cruel Poluição.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 199
-        },
-        {
-          "title": "A Água",
-          "num": 5,
-          "file": "5. A Água.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 212
-        },
-        {
-          "title": "A Amizade",
-          "num": 6,
-          "file": "6. A Amizade.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 291
-        },
-        {
-          "title": "Canto Da Cigarra",
-          "num": 7,
-          "file": "7. Canto Da Cigarra.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 237
-        },
-        {
-          "title": "Quem Ama É Quem Chora",
-          "num": 8,
-          "file": "8. Quem Ama É Quem Chora.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 213
-        },
-        {
-          "title": "Perfume De Festa",
-          "num": 9,
-          "file": "9. Perfume De Festa.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 196
-        },
-        {
-          "title": "Notícia Boa",
-          "num": 10,
-          "file": "10. Notícia Boa.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 167
-        },
-        {
-          "title": "Poeta E Menestrel",
-          "num": 11,
-          "file": "11. Poeta E Menestrel.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 243
-        },
-        {
-          "title": "Mil Amadas A Mais",
-          "num": 12,
-          "file": "12. Mil Amadas A Mais.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 139
-        },
-        {
-          "title": "Mania De Gostar",
-          "num": 13,
-          "file": "13. Mania De Gostar.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 163
-        },
-        {
-          "title": "Samba Exaltação Do Rio De Janeiro",
-          "num": 14,
-          "file": "14. Samba Exaltação Do Rio De Janeiro.mp3",
-          "artists": "Bicudo da Ilha",
-          "duration": 175
-        }
-      ],
-      "artist": "Bicudo da Ilha"
-    },
-    {
-      "title": "Fred Camacho",
-      "year": 2012,
-      "path": "2012 - Fred Camacho - Fred Camacho",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Em Busca Da Sorte",
-          "num": 1,
-          "file": "1. Em Busca Da Sorte.mp3",
-          "artists": "Fred Camacho",
-          "duration": 197
-        },
-        {
-          "title": "Quando O Mal Virar Mel",
-          "num": 2,
-          "file": "2. Quando O Mal Virar Mel.mp3",
-          "artists": "Fred Camacho",
-          "duration": 229
-        },
-        {
-          "title": "Nosso Enredo",
-          "num": 3,
-          "file": "3. Nosso Enredo.mp3",
-          "artists": "Fred Camacho",
-          "duration": 147
-        },
-        {
-          "title": "Pro Nosso Mundo Se Alegrar",
-          "num": 4,
-          "file": "4. Pro Nosso Mundo Se Alegrar.mp3",
-          "artists": "Fred Camacho (part: Arlindo Cruz)",
-          "duration": 224
-        },
-        {
-          "title": "Salto",
-          "num": 5,
-          "file": "5. Salto.mp3",
-          "artists": "Fred Camacho (part: Dudu Nobre)",
-          "duration": 170
-        },
-        {
-          "title": "Ou Não",
-          "num": 6,
-          "file": "6. Ou Não.mp3",
-          "artists": "Fred Camacho",
-          "duration": 186
-        },
-        {
-          "title": "Sal De Salgueiro",
-          "num": 7,
-          "file": "7. Sal De Salgueiro.mp3",
-          "artists": "Fred Camacho",
-          "duration": 202
-        },
-        {
-          "title": "O Que O Amor Me Faz",
-          "num": 8,
-          "file": "8. O Que O Amor Me Faz.mp3",
-          "artists": "Fred Camacho",
-          "duration": 183
-        },
-        {
-          "title": "Quem Eu Sou",
-          "num": 9,
-          "file": "9. Quem Eu Sou.mp3",
-          "artists": "Fred Camacho",
-          "duration": 206
-        },
-        {
-          "title": "Formiga Sem Asa",
-          "num": 10,
-          "file": "10. Formiga Sem Asa.mp3",
-          "artists": "Fred Camacho",
-          "duration": 226
-        },
-        {
-          "title": "Sonho Perdido",
-          "num": 11,
-          "file": "11. Sonho Perdido.mp3",
-          "artists": "Fred Camacho",
-          "duration": 193
-        },
-        {
-          "title": "Lente De Contato",
-          "num": 12,
-          "file": "12. Lente De Contato.mp3",
-          "artists": "Fred Camacho (part: Zeca Pagodinho)",
-          "duration": 220
-        },
-        {
-          "title": "Sempre Marcou",
-          "num": 13,
-          "file": "13. Sempre Marcou.mp3",
-          "artists": "Fred Camacho",
-          "duration": 208
-        },
-        {
-          "title": "Toca Aí",
-          "num": 14,
-          "file": "14. Toca Aí.mp3",
-          "artists": "Fred Camacho",
-          "duration": 208
         }
       ],
       "artist": "Various Artists"
@@ -3201,115 +4643,8 @@ db = {
       "artist": "Various Artists"
     },
     {
-      "title": "o que vai ficar pelo salão",
-      "year": 2010,
-      "path": "2011 - Gabriel Cavalcante - O que vai ficar pelo salão",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "seu camafeu",
-          "num": 1,
-          "file": "1. Seu camafeu.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 213
-        },
-        {
-          "title": "o que é de louça",
-          "num": 2,
-          "file": "2. O que é de louça.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 194
-        },
-        {
-          "title": "elmo de são jorge",
-          "num": 3,
-          "file": "3. Elmo José dos Santos de São Jorge.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 286
-        },
-        {
-          "title": "muralhas",
-          "num": 4,
-          "file": "4. Muralhas.mp3",
-          "artists": "áurea martins e gabriel cavalcante",
-          "duration": 182
-        },
-        {
-          "title": "mar maior",
-          "num": 5,
-          "file": "5. Mar maior.mp3",
-          "artists": "cristina buarque e gabriel cavalcante",
-          "duration": 213
-        },
-        {
-          "title": "velho batuqueiro",
-          "num": 6,
-          "file": "6. Velho batuqueiro.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 188
-        },
-        {
-          "title": "quando o samba veio me buscar",
-          "num": 7,
-          "file": "7. Quando o samba veio me buscar.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 252
-        },
-        {
-          "title": "djembê",
-          "num": 8,
-          "file": "8. Djembê.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 217
-        },
-        {
-          "title": "bodas de ilusão",
-          "num": 9,
-          "file": "9. Bodas de ilusão.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 310
-        },
-        {
-          "title": "choro de mulher",
-          "num": 10,
-          "file": "10. Choro de mulher.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 218
-        },
-        {
-          "title": "ponte partida",
-          "num": 11,
-          "file": "11. Ponte partida.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 244
-        },
-        {
-          "title": "na cantoria",
-          "num": 12,
-          "file": "12. Na cantoria.mp3",
-          "artists": "cristina buarque e gabriel cavalcante",
-          "duration": 226
-        },
-        {
-          "title": "o cio e a paz",
-          "num": 13,
-          "file": "13. O cio e a paz.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 290
-        },
-        {
-          "title": "o fino da vida",
-          "num": 14,
-          "file": "14. O fino da vida.mp3",
-          "artists": "gabriel cavalcante",
-          "duration": 305
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
       "title": "Ao Vivo com Amigos",
-      "year": null,
+      "year": 2011,
       "path": "2011 - Zeca Pagodinho - Ao Vivo com os Amigos",
       "has_cover": true,
       "tracks": [
@@ -3438,1448 +4773,6 @@ db = {
           "file": "18. Griselda.mp3",
           "artists": "Zeca Pagodinho (part: Arlindo Cruz e Sombrinha)",
           "duration": 163
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Jorginho do Império ao Vivo",
-      "year": 2012,
-      "path": "2012 - Jorginho do Império - Jorginho do Império ao Vivo",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Naquela Mesa",
-          "num": 1,
-          "file": "1. Naquela Mesa.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 211
-        },
-        {
-          "title": "Apoteose ao Samba",
-          "num": 2,
-          "file": "2. Apoteose Ao Samba.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 292
-        },
-        {
-          "title": "Hora de Chorar",
-          "num": 3,
-          "file": "3. Hora De Chorar.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 201
-        },
-        {
-          "title": "Obsessão",
-          "num": 4,
-          "file": "4. Obsessão.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 282
-        },
-        {
-          "title": "Amor Aventureiro",
-          "num": 5,
-          "file": "5. Amor Aventureiro.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 192
-        },
-        {
-          "title": "Apoteose ao Rio",
-          "num": 6,
-          "file": "6. Apoteose Ao Rio.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 148
-        },
-        {
-          "title": "É Preciso dar",
-          "num": 7,
-          "file": "7. É Preciso Dar.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 250
-        },
-        {
-          "title": "Folha Desabada",
-          "num": 8,
-          "file": "8. Folha Desabada.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 156
-        },
-        {
-          "title": "Amor Selvagem",
-          "num": 9,
-          "file": "9. Amor Selvagem.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 111
-        },
-        {
-          "title": "Compadre Ciúme",
-          "num": 10,
-          "file": "10. Compadre Ciúme.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 145
-        },
-        {
-          "title": "Eu vi que te amo",
-          "num": 11,
-          "file": "11. Eu Vi Que Te Amo.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 196
-        },
-        {
-          "title": "Tá Delícia, tá Gostoso",
-          "num": 12,
-          "file": "12. Tá Delícia, Tá Gostoso.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 219
-        },
-        {
-          "title": "Pout-Porri: Na Beira do mar / Dinheiro vem, Dinheiro vai / Água no Feijão / O que você tem, Garota",
-          "num": 13,
-          "file": "13. Pout-Porri - Na Beira Do Mar - Dinheiro Vem, Dinheiro Vai - Água No Feijão - O Que Você Tem, Garota.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 1115
-        },
-        {
-          "title": "E Verás que um Filho teu não foge á Luta",
-          "num": 14,
-          "file": "14. E Verás Que Um Filho Teu Não Foge Á Luta.mp3",
-          "artists": "Jorginho do Império",
-          "duration": 245
-        }
-      ],
-      "artist": "Jorginho do Império"
-    },
-    {
-      "title": "Meu Samba",
-      "year": 2012,
-      "path": "2012 - Marquinhos Diniz - Meu Samba",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Meu Samba",
-          "num": 1,
-          "file": "1. Meu Samba.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 225
-        },
-        {
-          "title": "Cueca Com Batom",
-          "num": 2,
-          "file": "2. Cueca Com Batom.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 174
-        },
-        {
-          "title": "Linha De Frente",
-          "num": 3,
-          "file": "3. Linha De Frente.mp3",
-          "artists": "Marquinhos Diniz (part: Zeca Pagodinho)",
-          "duration": 244
-        },
-        {
-          "title": "Do Bem Que Fiz",
-          "num": 4,
-          "file": "4. Do Bem Que Fiz.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 214
-        },
-        {
-          "title": "A Galinha Dos Ovos De Ouro",
-          "num": 5,
-          "file": "5. A Galinha Dos Ovos De Ouro.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 218
-        },
-        {
-          "title": "Parceiro Japonês",
-          "num": 6,
-          "file": "6. Parceiro Japonês.mp3",
-          "artists": "Marquinhos Diniz (part: Barbeirinho do Jacarezinho e Luiz Grande)",
-          "duration": 206
-        },
-        {
-          "title": "Xoxó Tinha Chuchu",
-          "num": 7,
-          "file": "7. Xoxó Tinha Chuchu.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 191
-        },
-        {
-          "title": "Valor Á Natureza",
-          "num": 8,
-          "file": "8. Valor Á Natureza.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 210
-        },
-        {
-          "title": "Com Dinheiro É Mole",
-          "num": 9,
-          "file": "9. Com Dinheiro É Mole.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 204
-        },
-        {
-          "title": "Aprenda A Lição / Siniztro",
-          "num": 10,
-          "file": "10. Pot-pourri - Aprenda A Lição - Siniztro.mp3",
-          "artists": "Marquinhos Diniz (part: Juninho Thybau e Dudu Nobre)",
-          "duration": 208
-        },
-        {
-          "title": "O Remédio É O Perdão",
-          "num": 11,
-          "file": "11. O Remédio É O Perdão.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 166
-        },
-        {
-          "title": "Vem Meu Grande Amor",
-          "num": 12,
-          "file": "12. Vem Meu Grande Amor.mp3",
-          "artists": "Marquinhos Diniz (part: Monarco)",
-          "duration": 153
-        },
-        {
-          "title": "O Dog É A Nossa Salvação",
-          "num": 13,
-          "file": "13. O Dog É A Nossa Salvação.mp3",
-          "artists": "Marquinhos Diniz",
-          "duration": 190
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "4.5 Atual",
-      "year": 2012,
-      "path": "2012 - Martinho da Vila - 45 Atual",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Menina Moça",
-          "num": 1,
-          "file": "1. Menina Moça.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 152
-        },
-        {
-          "title": "Pot-pourri: Boa Noite / Carnaval De Ilusões / Caramba",
-          "num": 2,
-          "file": "2. Pot-pourri - Boa Noite - Carnaval De Ilusões - Caramba.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 538
-        },
-        {
-          "title": "Casa De Bamba",
-          "num": 3,
-          "file": "3. Casa De Bamba.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 245
-        },
-        {
-          "title": "O Pequeno Burguês",
-          "num": 4,
-          "file": "4. O Pequeno Burguês.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 222
-        },
-        {
-          "title": "Quatro Séculos De Modas E Costumes",
-          "num": 5,
-          "file": "5. Quatro Séculos De Modas E Costumes.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 165
-        },
-        {
-          "title": "Yayá Do Cais Dourado",
-          "num": 6,
-          "file": "6. Iaiá do Cais Dourado.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 243
-        },
-        {
-          "title": "Quem É Do Mar Não Enjôa",
-          "num": 7,
-          "file": "7. Quem É Do Mar Não Enjôa.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 259
-        },
-        {
-          "title": "Brasil Mulato",
-          "num": 9,
-          "file": "9. Brasil Mulato.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 187
-        },
-        {
-          "title": "Tom Maior",
-          "num": 10,
-          "file": "10. Tom Maior.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 188
-        },
-        {
-          "title": "Pot-pourri: Parei Na Sua / Nhêm, Nhêm, Nhêm",
-          "num": 12,
-          "file": "12. Pot-pourri - Parei Na Sua - Nhêm, Nhêm, Nhêm.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 248
-        },
-        {
-          "title": "Grande Amor",
-          "num": 13,
-          "file": "13. Grande Amor.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 257
-        },
-        {
-          "title": "Samba Dos Passarinhos",
-          "num": 14,
-          "file": "14. Samba Dos Passarinhos.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 158
-        },
-        {
-          "title": "Pãozinho De Açúcar",
-          "num": 15,
-          "file": "15. Pãozinho De Açúcar.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 238
-        },
-        {
-          "title": "Partido-Alto De Roda",
-          "num": 16,
-          "file": "16. Partido-Alto De Roda.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 203
-        }
-      ],
-      "artist": "Martinho da Vila"
-    },
-    {
-      "title": "Não Tente Compreender",
-      "year": 2012,
-      "path": "2012 - Mart’nália - Não Tente Compreender",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Namora Comigo",
-          "num": 1,
-          "file": "1. Namora Comigo.mp3",
-          "artists": "Mart'nália",
-          "duration": 227
-        },
-        {
-          "title": "Surpresa",
-          "num": 2,
-          "file": "2. Surpresa.mp3",
-          "artists": "Mart'nália",
-          "duration": 243
-        },
-        {
-          "title": "Daquele Jeito",
-          "num": 3,
-          "file": "3. Daquele Jeito.mp3",
-          "artists": "Mart'nália",
-          "duration": 277
-        },
-        {
-          "title": "Depois Cura",
-          "num": 4,
-          "file": "4. Depois Cura.mp3",
-          "artists": "Mart'nália",
-          "duration": 197
-        },
-        {
-          "title": "Que Pena, Que Pena...",
-          "num": 5,
-          "file": "5. Que Pena, Que Pena.mp3",
-          "artists": "Mart'nália",
-          "duration": 237
-        },
-        {
-          "title": "Não Tente Compreender",
-          "num": 6,
-          "file": "6. Não Tente Compreender.mp3",
-          "artists": "Mart'nália",
-          "duration": 238
-        },
-        {
-          "title": "Intinerário",
-          "num": 7,
-          "file": "7. Intinerário.mp3",
-          "artists": "Mart'nália",
-          "duration": 251
-        },
-        {
-          "title": "Reversos Da Vida",
-          "num": 8,
-          "file": "8. Reversos Da Vida.mp3",
-          "artists": "Mart'nália",
-          "duration": 171
-        },
-        {
-          "title": "Eu Te Ofereço",
-          "num": 10,
-          "file": "10. Eu Te Ofereço.mp3",
-          "artists": "Mart'nália",
-          "duration": 279
-        },
-        {
-          "title": "Os Sinais",
-          "num": 11,
-          "file": "11. Os Sinais.mp3",
-          "artists": "Mart'nália",
-          "duration": 242
-        },
-        {
-          "title": "Demorou",
-          "num": 12,
-          "file": "12. Demorou.mp3",
-          "artists": "Mart'nália",
-          "duration": 281
-        },
-        {
-          "title": "Zero Muito",
-          "num": 13,
-          "file": "13. Zero Muito.mp3",
-          "artists": "Mart'nália",
-          "duration": 230
-        },
-        {
-          "title": "Vai Saber",
-          "num": 14,
-          "file": "14. Vai Saber.mp3",
-          "artists": "Mart'nália",
-          "duration": 215
-        }
-      ],
-      "artist": "Mart'nália"
-    },
-    {
-      "title": "Pra Desengomar",
-      "year": 2012,
-      "path": "2012 - Moyseis Marques - Pra Desengomar",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Pra Desengomar",
-          "num": 1,
-          "file": "1. Pra Desengomar.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 214
-        },
-        {
-          "title": "Bicho Do Mato",
-          "num": 2,
-          "file": "2. Bicho Do Mato.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 239
-        },
-        {
-          "title": "Deixa Estar",
-          "num": 3,
-          "file": "3. Deixa Estar.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 247
-        },
-        {
-          "title": "O Badabadá Do Talarico",
-          "num": 4,
-          "file": "4. O Badabadá Do Talarico.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 228
-        },
-        {
-          "title": "Um Samba De Amor",
-          "num": 5,
-          "file": "5. Um Samba De Amor.mp3",
-          "artists": "Moyseis Marques (part: Ana Costa)",
-          "duration": 260
-        },
-        {
-          "title": "O Lado Bom Da Incerteza",
-          "num": 6,
-          "file": "6. O Lado Bom Da Incerteza.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 210
-        },
-        {
-          "title": "Piuí",
-          "num": 7,
-          "file": "7. Piuí.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 226
-        },
-        {
-          "title": "Meu Canto É Pra Valer",
-          "num": 8,
-          "file": "8. Meu Canto É Pra Valer.mp3",
-          "artists": "Moyseis Marques (part: Moacyr Luz)",
-          "duration": 277
-        },
-        {
-          "title": "Xodó De Lamparina",
-          "num": 9,
-          "file": "9. Xodó De Lamparina.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 232
-        },
-        {
-          "title": "Pra Ter Seu Bem-Querer",
-          "num": 10,
-          "file": "10. Pra Ter Seu Bem-Querer.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 225
-        },
-        {
-          "title": "Como O Cravo Quer A Rosa",
-          "num": 11,
-          "file": "11. Como O Cravo Quer A Rosa.mp3",
-          "artists": "Moyseis Marques (part: Áurea Martins)",
-          "duration": 335
-        },
-        {
-          "title": "Não Deu",
-          "num": 12,
-          "file": "12. Não Deu.mp3",
-          "artists": "Moyseis Marques",
-          "duration": 246
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "O Que É Meu",
-      "year": 2012,
-      "path": "2012 - Nilze Carvalho - O Que É Meu",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Banho De Manjericão",
-          "num": 1,
-          "file": "1. Banho De Manjericão.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 239
-        },
-        {
-          "title": "Doces Recordações",
-          "num": 2,
-          "file": "2. Doces Recordações.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 203
-        },
-        {
-          "title": "Lamento Da Lavadeira",
-          "num": 3,
-          "file": "3. Lamento Da Lavadeira.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 149
-        },
-        {
-          "title": "Proposta De Paz",
-          "num": 4,
-          "file": "4. Proposta De Paz.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 206
-        },
-        {
-          "title": "Chorei",
-          "num": 5,
-          "file": "5. Chorei.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 174
-        },
-        {
-          "title": "Nordestino",
-          "num": 6,
-          "file": "6. Nordestino.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 207
-        },
-        {
-          "title": "Festa",
-          "num": 7,
-          "file": "7. Festa.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 122
-        },
-        {
-          "title": "Lua Cheia",
-          "num": 8,
-          "file": "8. Lua Cheia.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 173
-        },
-        {
-          "title": "Barracão",
-          "num": 9,
-          "file": "9. Barracão.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 188
-        },
-        {
-          "title": "Ela Sabe Quem É",
-          "num": 10,
-          "file": "10. Ela Sabe Quem É.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 254
-        },
-        {
-          "title": "Santa Cecília",
-          "num": 11,
-          "file": "11. Santa Cecília.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 225
-        },
-        {
-          "title": "Mal De Amor",
-          "num": 12,
-          "file": "12. Mal De Amor.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 177
-        },
-        {
-          "title": "O Que É Meu",
-          "num": 13,
-          "file": "13. O Que É Meu.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 180
-        },
-        {
-          "title": "Se Um Novo Amor Me Convidar",
-          "num": 14,
-          "file": "14. Se Um Novo Amor Me Convidar.mp3",
-          "artists": "Nilze Carvalho",
-          "duration": 151
-        }
-      ],
-      "artist": "Nilze Carvalho"
-    },
-    {
-      "title": "Quinteto",
-      "year": 2012,
-      "path": "2012 - Quinteto em Branco e Preto - Quinteto",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Guardião Dos Nossos Ancestrais",
-          "num": 1,
-          "file": "1. Guardião Dos Nossos Ancestrais.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 310
-        },
-        {
-          "title": "Beija-Flor",
-          "num": 2,
-          "file": "2. Beija-Flor.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 215
-        },
-        {
-          "title": "Samba Pop",
-          "num": 3,
-          "file": "3. Samba Pop.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 276
-        },
-        {
-          "title": "Maria Não Volta Mais",
-          "num": 4,
-          "file": "4. Maria Não Volta Mais.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 245
-        },
-        {
-          "title": "Resistir",
-          "num": 5,
-          "file": "5. Resistir.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 274
-        },
-        {
-          "title": "Vocabulário Do Brasil",
-          "num": 6,
-          "file": "6. Vocabulário Do Brasil.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 294
-        },
-        {
-          "title": "Entre Búzios E Santos",
-          "num": 7,
-          "file": "7. Entre Búzios E Santos.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 220
-        },
-        {
-          "title": "Feito Siameses",
-          "num": 8,
-          "file": "8. Feito Siameses.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 292
-        },
-        {
-          "title": "Pot-pourri: Encontro Da Velha Guarda / Pomar Da Vida / Que Poeira É Essa / Tem Que Sofrer / Me Leva Amor / Do Oiapoque Ao Chuí",
-          "num": 9,
-          "file": "9. Pot-pourri - Encontro Da Velha Guarda - Pomar Da Vida - Que Poeira É Essa - Tem Que Sofrer - Me Leva Amor - Do Oiapoque Ao Chuí.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 475
-        },
-        {
-          "title": "Fui Bandido",
-          "num": 10,
-          "file": "10. Fui Bandido.mp3",
-          "artists": "Quinteto em Branco e Preto (part: Edi Rock)",
-          "duration": 303
-        },
-        {
-          "title": "Mão Negra",
-          "num": 11,
-          "file": "11. Mão Negra.mp3",
-          "artists": "Quinteto em Branco e Preto (part: Sapopemba)",
-          "duration": 288
-        },
-        {
-          "title": "Renúncia Do Arvoredo",
-          "num": 12,
-          "file": "12. Renúncia Do Arvoredo.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 256
-        },
-        {
-          "title": "Uma Festa",
-          "num": 13,
-          "file": "13. Uma Festa.mp3",
-          "artists": "Quinteto em Branco e Preto (part: Dona Ivone Lara)",
-          "duration": 226
-        },
-        {
-          "title": "Pot-pourri: Sou São Mateus / O Samba Ainda Floresce",
-          "num": 14,
-          "file": "14. Pot-pourri - Sou São Mateus - O Samba Ainda Floresce.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 245
-        },
-        {
-          "title": "Futuro De Glória",
-          "num": 15,
-          "file": "15. Futuro De Glória.mp3",
-          "artists": "Quinteto em Branco e Preto",
-          "duration": 175
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Sambas-de-Enredo 2012 Grupo A",
-      "year": 2012,
-      "path": "2012 - Sambas de Enredo Grupo A",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Exaltação do Unidos do Viradouro",
-          "num": 1,
-          "file": "1. Unidos do Viradouro – Samba de Quadra.mp3",
-          "artists": "Unidos do Viradouro (intérprete: Dominguinhos do Estácio)",
-          "duration": 77
-        },
-        {
-          "title": "A Vida como ela é, Bonitinha mas Ordinária… Assim falou Nelson Rodrigues",
-          "num": 2,
-          "file": "2. Unidos do Viradouro.mp3",
-          "artists": "Unidos do Viradouro (intérpretes: Diego Nicolau, Gilberto Gomes, Leléu e Niu Souza)",
-          "duration": 350
-        },
-        {
-          "title": "Exaltação Estácio de Sá",
-          "num": 3,
-          "file": "3. Estácio de Sá – Samba de Quadra.mp3",
-          "artists": "Estácio de Sá (intérprete: Leandro Santos)",
-          "duration": 99
-        },
-        {
-          "title": "Luma de Oliveira: Coração de um País em Festa!",
-          "num": 4,
-          "file": "4. Estácio de Sá.mp3",
-          "artists": "Estácio de Sá (intérprete: Leandro Santos)",
-          "duration": 294
-        },
-        {
-          "title": "Exaltação Acadêmicos do Cubango",
-          "num": 5,
-          "file": "5. Acadêmicos do Cubango – Samba de Quadra.mp3",
-          "artists": "Acadêmicos do Cubango (intérprete: Marcelo Guimarães)",
-          "duration": 69
-        },
-        {
-          "title": "Barão de Mauá. O Sonho de um Brasil Moderno!",
-          "num": 6,
-          "file": "6. Acadêmicos do Cubango.mp3",
-          "artists": "Acadêmicos do Cubango (intérprete: Hugo Junior, Marcelo Guimarães e Sereno)",
-          "duration": 309
-        },
-        {
-          "title": "Exaltação Acadêmicos de Santa Cruz",
-          "num": 7,
-          "file": "7. Acadêmicos de Santa Cruz – Samba de Quadra.mp3",
-          "artists": "Acadêmicos de Santa Cruz (intérprete: Davi do Pandeiro)",
-          "duration": 67
-        },
-        {
-          "title": "Nas Ondas do Rádio… “Acorda Brasil para Escutar! O Show do Antônio Carlos esta no ar.”",
-          "num": 8,
-          "file": "8. Acadêmicos de Santa Cruz.mp3",
-          "artists": "Acadêmicos de Santa Cruz (intérprete: Davi do Pandeiro)",
-          "duration": 280
-        },
-        {
-          "title": "Exaltação Império Serrano",
-          "num": 9,
-          "file": "9. Império Serrano – Samba de Quadra.mp3",
-          "artists": "Império Serrano (intérprete: Arlindo Cruz e Tiãozinho Cruz)",
-          "duration": 80
-        },
-        {
-          "title": "Dona Ivone Lara, Enredo do meu Samba",
-          "num": 10,
-          "file": "10. Império Serrano.mp3",
-          "artists": "Império Serrano (intérprete: Arlindo Cruz e Tiãozinho Cruz)",
-          "duration": 260
-        },
-        {
-          "title": "Exaltação Império da Tijuca",
-          "num": 11,
-          "file": "11. Império da Tijuca – Samba de Quadra.mp3",
-          "artists": "Império da Tijuca (intérprete: Pixulé)",
-          "duration": 53
-        },
-        {
-          "title": "Utopias – Viagem aos Confins da Imaginação",
-          "num": 12,
-          "file": "12. Império da Tijuca.mp3",
-          "artists": "Império da Tijuca (intérprete: Pixulé)",
-          "duration": 303
-        },
-        {
-          "title": "Exaltação Inocentes de Belford Roxo",
-          "num": 13,
-          "file": "13. Inocentes de Belford Roxo – Samba de Quadra.mp3",
-          "artists": "Inocentes de Belford Roxo (intérprete: Thiago Brito)",
-          "duration": 65
-        },
-        {
-          "title": "Corumbá – Ópera Tupi-Guaikuru",
-          "num": 14,
-          "file": "14. Inocentes de Belford Roxo.mp3",
-          "artists": "Inocentes de Belford Roxo (intérprete: Thiago Brito)",
-          "duration": 365
-        },
-        {
-          "title": "Exaltação Acadêmicos da Rocinha",
-          "num": 15,
-          "file": "15. Acadêmicos da Rocinha – Samba de Quadra.mp3",
-          "artists": "Acadêmicos da Rocinha (intérprete: Anderson Paz)",
-          "duration": 71
-        },
-        {
-          "title": "Vou Colocar teu Nome na Praça",
-          "num": 16,
-          "file": "16. Acadêmicos da Rocinha.mp3",
-          "artists": "Acadêmicos da Rocinha (intérprete: Anderson Paz)",
-          "duration": 311
-        },
-        {
-          "title": "Exaltação Paraíso do Tuiuti",
-          "num": 17,
-          "file": "17. Paraíso do Tuiuti – Samba de Quadra.mp3",
-          "artists": "Paraíso do Tuiuti (intérprete: Daniel Silva)",
-          "duration": 92
-        },
-        {
-          "title": "A tal Mineira",
-          "num": 18,
-          "file": "18. Paraíso do Tuiuti.mp3",
-          "artists": "Paraíso do Tuiuti (intérprete: Daniel Silva)",
-          "duration": 350
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Sambas-de-Enredo 2012 Grupo B",
-      "year": 2012,
-      "path": "2012 - Sambas de Enredo Grupo B",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "As Cartas não Mentem Jamais!",
-          "num": 1,
-          "file": "1. União do Parque Curicica.mp3",
-          "artists": "União do Parque Curicica",
-          "duration": 313
-        },
-        {
-          "title": "Arte - Um Universo Fascinante",
-          "num": 2,
-          "file": "2. Unidos de Padre Miguel.mp3",
-          "artists": "Unidos de Padre Miguel (intérprete: Igor Vianna)",
-          "duration": 313
-        },
-        {
-          "title": "Brotando a Vida, Floresce a Arte de Dançar!",
-          "num": 3,
-          "file": "3. Arranco.mp3",
-          "artists": "Arranco",
-          "duration": 339
-        },
-        {
-          "title": "Mistérios e Magias no Sereno da Noite",
-          "num": 4,
-          "file": "4. Sereno de Campo Grande.mp3",
-          "artists": "Sereno de Campo Grande",
-          "duration": 258
-        },
-        {
-          "title": "O Pequeno Grande Rei",
-          "num": 5,
-          "file": "5. União de Jacarepaguá.mp3",
-          "artists": "União de Jacarepaguá (intérprete: Tiganá)",
-          "duration": 325
-        },
-        {
-          "title": "Ziraldo: Páginas de uma Vida de um Maluco Genial!",
-          "num": 6,
-          "file": "6. Tradição.mp3",
-          "artists": "Tradição",
-          "duration": 392
-        },
-        {
-          "title": "Flor de Lis - Símbolo Universal! Hoje se faz Presente no Nosso Carnaval!",
-          "num": 7,
-          "file": "7. Difícil é o Nome.mp3",
-          "artists": "Difícil é o Nome",
-          "duration": 320
-        },
-        {
-          "title": "Caruarú, a Princesinha do Nordeste!",
-          "num": 8,
-          "file": "8. Mocidade de Vicente de Carvalho.mp3",
-          "artists": "Mocidade de Vicente de Carvalho",
-          "duration": 283
-        },
-        {
-          "title": "A Caprichosos faz o seu Papel... Levanta, Sacode a Poeira e dá a Volta por Cima!",
-          "num": 9,
-          "file": "9. Caprichosos de Pilares.mp3",
-          "artists": "Caprichosos de Pilares (intérprete: Clóvis Pê)",
-          "duration": 342
-        },
-        {
-          "title": "Os Saltimbancos",
-          "num": 10,
-          "file": "10. Alegria da Zona Sul.mp3",
-          "artists": "Alegria da Zona Sul (intérprete: Edmilton di Bem)",
-          "duration": 322
-        },
-        {
-          "title": "A Vila na Magia dos Brinquedos",
-          "num": 11,
-          "file": "11. Unidos da Vila Santa Tereza.mp3",
-          "artists": "Unidos da Vila Santa Tereza",
-          "duration": 290
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Sambas-de-Enredo 2012 Grupo Especial",
-      "year": 2012,
-      "path": "2012 - Sambas de Enredo Grupo Especial",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "São Luís. Poema Encantado do Maranhão",
-          "num": 1,
-          "file": "1. Beija-Flor de Nilópolis.mp3",
-          "artists": "Beija-Flor de Nilópolis (Intérprete: Neguinho da Beija-Flor)",
-          "duration": 337
-        },
-        {
-          "title": "O dia em que toda a Realeza Desembarcou na Avenida para Coroar o Rei Luiz do Sertão",
-          "num": 2,
-          "file": "2. Unidos da Tijuca.mp3",
-          "artists": "Unidos da Tijuca (intérprete: Bruno Ribas)",
-          "duration": 348
-        },
-        {
-          "title": "Vou Festejar! Sou Cacique, sou Mangueira",
-          "num": 3,
-          "file": "3. Estação Primeira de Mangueira.mp3",
-          "artists": "Estação Primeira de Mangueira (intérpretes: Luizito, Ciganerey, Zé Paulo, Dudu Nobre, Xande de Pilares, Beth Carvalho, Sombrinha, Jorge Aragão e Vadinho da Mangueira)",
-          "duration": 372
-        },
-        {
-          "title": "Você Semba lá…. Que eu Sambo cá! O Canto Livre de Angola",
-          "num": 4,
-          "file": "4. Unidos de Vila Isabel.mp3",
-          "artists": "Unidos de Vila Isabel (intérprete: Tinga)",
-          "duration": 341
-        },
-        {
-          "title": "Cordel Branco e Encarnado",
-          "num": 5,
-          "file": "5. Acadêmicos do Salgueiro.mp3",
-          "artists": "Acadêmicos do Salgueiro (intérprete: Quinho, Serginho do Porto e Leonardo Bessa)",
-          "duration": 361
-        },
-        {
-          "title": "Jorge, Amado Jorge",
-          "num": 6,
-          "file": "6. Imperatriz Leopoldinense.mp3",
-          "artists": "Impertariz Leopoldinense (Dominguinhos do Estácio)",
-          "duration": 350
-        },
-        {
-          "title": "Por ti, Portinari, Rompendo a Tela, a Realidade",
-          "num": 7,
-          "file": "7. Mocidade Independente de Padre Miguel.mp3",
-          "artists": "Mocidade Independente de Padre Miguel (intérprete: Luizinho Andanças)",
-          "duration": 367
-        },
-        {
-          "title": "Da Seiva Materna ao Equilíbrio da Vida",
-          "num": 8,
-          "file": "8. Porto da Pedra.mp3",
-          "artists": "Porto da Pedra (intérprete: Wander Pires)",
-          "duration": 347
-        },
-        {
-          "title": "Uma Aventura Musical na Sapucaí",
-          "num": 9,
-          "file": "9. São Clemente.mp3",
-          "artists": "São Clemente (intérprete: Igor Sorriso)",
-          "duration": 297
-        },
-        {
-          "title": "Eu Acredito em você! E você?",
-          "num": 10,
-          "file": "10. Acadêmicos do Grande Rio.mp3",
-          "artists": "Acadêmicos do Grande Rio (Wantuir)",
-          "duration": 328
-        },
-        {
-          "title": "…E o Povo na Rua Cantando é Feito uma Reza, um Ritual…",
-          "num": 11,
-          "file": "11. Portela.mp3",
-          "artists": "Portela (Gilsinho)",
-          "duration": 350
-        },
-        {
-          "title": "De Londres ao Rio: Era um vez… Uma Ilha…",
-          "num": 12,
-          "file": "12. União da Ilha do Governador.mp3",
-          "artists": "União da Ilha do Governandor (intérprete: Ito Melodia)",
-          "duration": 323
-        },
-        {
-          "title": "O Artista da Alegria dá o tom na Folia",
-          "num": 13,
-          "file": "13. Renascer de Jacarepaguá.mp3",
-          "artists": "Renascer de Jacarepaguá (intérprete: Rogerinho Renascer)",
-          "duration": 352
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Homenagens Vol.1",
-      "year": 2012,
-      "path": "2012 - Velha Guarda da Mangueira - Homenagens Vol1",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Exaltação Á Mangueira",
-          "num": 1,
-          "file": "1. Exaltação Á Mangueira.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Grupo Toque de Arte)",
-          "duration": 230
-        },
-        {
-          "title": "Escurinha",
-          "num": 2,
-          "file": "2. Escurinha.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Fundo de Quintal)",
-          "duration": 158
-        },
-        {
-          "title": "Meninos Da Mangueira",
-          "num": 3,
-          "file": "3. Meninos Da Mangueira.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Sandra de Sá)",
-          "duration": 378
-        },
-        {
-          "title": "Yes, Nós Temos Braquinha",
-          "num": 4,
-          "file": "4. Yes, Nós Temos Braquinha.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Batuque na Cozinha)",
-          "duration": 348
-        },
-        {
-          "title": "O Mundo Encantado De Monteiro Lobato",
-          "num": 5,
-          "file": "5. O Mundo Encantado De Monteiro Lobato.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Lenine)",
-          "duration": 366
-        },
-        {
-          "title": "Lendas Do Abaeté",
-          "num": 6,
-          "file": "6. Lendas Do Abaeté.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Alcione)",
-          "duration": 277
-        },
-        {
-          "title": "Pot-pourri: Quem Samba Fica / Esta Melodia / Eu Agora Sou Feliz",
-          "num": 7,
-          "file": "7. Pot-pourri - Quem Samba Fica - Esta Melodia - Eu Agora Sou Feliz.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Délcio Carvalho e Jamelão Netto)",
-          "duration": 346
-        },
-        {
-          "title": "Estação Derradeira",
-          "num": 8,
-          "file": "8. Estação Derradeira.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Paulo Luiz e Paola)",
-          "duration": 252
-        },
-        {
-          "title": "Ordenes E Farei",
-          "num": 9,
-          "file": "9. Ordenes E Farei.mp3",
-          "artists": "Velha Guarda da Mangueira (part: Dorina)",
-          "duration": 220
-        },
-        {
-          "title": "Vou Festejar",
-          "num": 10,
-          "file": "10. Vou Festejar.mp3",
-          "artists": "Velha Guarda da Mangueira",
-          "duration": 321
-        }
-      ],
-      "artist": "Various Artists"
-    },
-    {
-      "title": "Consagração",
-      "year": 2012,
-      "path": "2012 - Wanderley Monteiro - Consagração",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Consagração",
-          "num": 1,
-          "file": "1. Consagração.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 191
-        },
-        {
-          "title": "Fuga De Aparências",
-          "num": 2,
-          "file": "2. Fuga De Aparências.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 256
-        },
-        {
-          "title": "Nada Mais",
-          "num": 3,
-          "file": "3. Nada Mais.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 251
-        },
-        {
-          "title": "Chico E Nonô",
-          "num": 4,
-          "file": "4. Chico E Nonô.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 289
-        },
-        {
-          "title": "Espelho Da Canção",
-          "num": 5,
-          "file": "5. Espelho Da Canção.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 193
-        },
-        {
-          "title": "Teatro Da Vida",
-          "num": 6,
-          "file": "6. Teatro Da Vida.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 196
-        },
-        {
-          "title": "Número Sete",
-          "num": 7,
-          "file": "7. Número Sete.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 243
-        },
-        {
-          "title": "Perfil",
-          "num": 8,
-          "file": "8. Perfil.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 201
-        },
-        {
-          "title": "Um Sonho De Paz",
-          "num": 9,
-          "file": "9. Um Sonho De Paz.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 190
-        },
-        {
-          "title": "Refletor Das Estrelas",
-          "num": 10,
-          "file": "10. Refletor Das Estrelas.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 252
-        },
-        {
-          "title": "Pot-pourri: Meu Limite / O Que Passou / Para Enganar A Saudade",
-          "num": 11,
-          "file": "11. Pot-pourri - Meu Limite - O Que Passou - Para Enganar A Saudade.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 410
-        },
-        {
-          "title": "Em Paralelo",
-          "num": 12,
-          "file": "12. Em Paralelo.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 228
-        },
-        {
-          "title": "Telhado De Vidro",
-          "num": 13,
-          "file": "13. Telhado De Vidro.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 186
-        },
-        {
-          "title": "Rei Da Madrugada",
-          "num": 14,
-          "file": "14. Rei Da Madrugada.mp3",
-          "artists": "Wanderley Monteiro",
-          "duration": 286
-        }
-      ],
-      "artist": "Wanderley Monteiro"
-    },
-    {
-      "title": "Com & sem sal",
-      "year": 2012,
-      "path": "2012 - Yeda Maranhão - Com & Sem Sal",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Sonhos de Nelson Cavaquinho",
-          "num": 1,
-          "file": "1. Sonhos De Nelson Cavaquinho.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 192
-        },
-        {
-          "title": "O Preferido",
-          "num": 2,
-          "file": "2. O Preferido.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 180
-        },
-        {
-          "title": "Amor Correspondido",
-          "num": 3,
-          "file": "3. Amor Correspondido.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 172
-        },
-        {
-          "title": "Salgueiro Eterno",
-          "num": 4,
-          "file": "4. Salgueiro Eterno.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 197
-        },
-        {
-          "title": "De Novo em minha Vida",
-          "num": 5,
-          "file": "5. De Novo Em Minha Vida.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 182
-        },
-        {
-          "title": "Um Abraço lá no Salgueiro",
-          "num": 6,
-          "file": "6. Um Abraço Lá No Salgueiro.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 185
-        },
-        {
-          "title": "Só Louco pode ser Feliz",
-          "num": 7,
-          "file": "7. Só Louco Pode Ser Feliz.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 163
-        },
-        {
-          "title": "A Ala de Compositores",
-          "num": 8,
-          "file": "8. A Ala De Compositores.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 236
-        },
-        {
-          "title": "Corção sem Amor, Jardim sem Flor",
-          "num": 9,
-          "file": "9. Coração Sem Amor, Jardim Sem Flor.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 145
-        },
-        {
-          "title": "Orgulho da minha Vida",
-          "num": 10,
-          "file": "10. Orgulho Da Minha Vida.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 172
-        },
-        {
-          "title": "Vagando pelos Sonhos",
-          "num": 11,
-          "file": "11. Vagando Pelos Sonhos.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 207
-        },
-        {
-          "title": "Gratidão",
-          "num": 12,
-          "file": "12. Gratidão.mp3",
-          "artists": "Yeda Maranhão",
-          "duration": 148
-        }
-      ],
-      "artist": "Yeda Maranhão"
-    },
-    {
-      "title": "Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
-      "year": 2012,
-      "path": "2012 - Zeca Apresenta O Quintal Do Pagodinho Ao Vivo",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Em Um Outdoor",
-          "num": 1,
-          "file": "1. Em Um Outdoor.mp3",
-          "artists": "Zeca Pagodinho",
-          "duration": 211
-        },
-        {
-          "title": "Mordomia",
-          "num": 2,
-          "file": "2. Mordomia.mp3",
-          "artists": "Almir Guinéto",
-          "duration": 207
-        },
-        {
-          "title": "Canto De Rainha",
-          "num": 3,
-          "file": "3. Canto De Rainha.mp3",
-          "artists": "Beth Carvalho, Arlindo Cruz e Sombrinha",
-          "duration": 192
-        },
-        {
-          "title": "Pot-pourri: Dolores E Suas Desilusões / Coração Em Desalinho",
-          "num": 4,
-          "file": "4. Pot-pourri - Dolores E Suas Desilusões - Coração Em Desalinho.mp3",
-          "artists": "Monarco, Mauro Diniz e Juliana Diniz",
-          "duration": 226
-        },
-        {
-          "title": "Pot-pourri: Conflito /caviar / Dona Esponja",
-          "num": 5,
-          "file": "5. Pot-pourri - Conflito - Caviar - Dona Esponja.mp3",
-          "artists": "Trio Calafrio",
-          "duration": 302
-        },
-        {
-          "title": "Pot-pourri: Roda Ciranda / Segure Tudo / Casa De Bamba",
-          "num": 6,
-          "file": "6. Pot-pourri - Roda Ciranda - Segure Tudo - Casa De Bamba.mp3",
-          "artists": "Martinho da Vila",
-          "duration": 211
-        },
-        {
-          "title": "Minta Meu Sonho",
-          "num": 7,
-          "file": "7. Minta Meu Sonho.mp3",
-          "artists": "Jorge Aragão",
-          "duration": 192
-        },
-        {
-          "title": "Quintal Do Céu",
-          "num": 9,
-          "file": "9. Quintal Do Céu.mp3",
-          "artists": "Seu Jorge",
-          "duration": 278
-        },
-        {
-          "title": "Mas Que Nada",
-          "num": 10,
-          "file": "10. Mas Que Nada.mp3",
-          "artists": "Jorge Ben Jor",
-          "duration": 277
-        },
-        {
-          "title": "Brincadeira Tem Hora",
-          "num": 11,
-          "file": "11. Brincadeira Tem Hora.mp3",
-          "artists": "Xande de Pilares",
-          "duration": 197
-        },
-        {
-          "title": "Letreiro",
-          "num": 12,
-          "file": "12. Letreiro.mp3",
-          "artists": "Dunga",
-          "duration": 175
-        },
-        {
-          "title": "A Voz Do Meu Samba",
-          "num": 13,
-          "file": "13. A Voz Do Meu Samba.mp3",
-          "artists": "Mumuzinho",
-          "duration": 220
-        },
-        {
-          "title": "Pot-pourri: Quando Eu Contar (Iaiá) / Deixa A Vida Me Levar",
-          "num": 14,
-          "file": "14. Pot-pourri - Quando Eu Contar Iaiá - Deixa A Vida Me Levar.mp3",
-          "artists": "Serginho Meriti",
-          "duration": 230
-        },
-        {
-          "title": "Pot-pourri: Alma Boêmia / Você É O Espinho E Não A Flor / A Vitória Demora, Mas Vem",
-          "num": 15,
-          "file": "15. Pot-pourri - Alma Boêmia - Você É O Espinho E Não A Flor - A Vitória Demora, Mas Vem.mp3",
-          "artists": "Arlindo Neto, Renato Milagres e Juninho Thybau",
-          "duration": 297
-        },
-        {
-          "title": "Pot-pourri: O Penetra / O Pai Coruja / O Vacilão",
-          "num": 16,
-          "file": "16. Pot-pourri - O Penetra - O Pai Coruja - O Vacilão.mp3",
-          "artists": "Zé Roberto",
-          "duration": 295
         }
       ],
       "artist": "Various Artists"
@@ -17673,6 +17566,113 @@ db = {
           "file": "15. O Garanhão.mp3",
           "artists": "Zeca Pagodinho",
           "duration": 241
+        }
+      ],
+      "artist": "Various Artists"
+    },
+    {
+      "title": "o que vai ficar pelo salão",
+      "year": 2010,
+      "path": "2011 - Gabriel Cavalcante - O que vai ficar pelo salão",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "seu camafeu",
+          "num": 1,
+          "file": "1. Seu camafeu.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 213
+        },
+        {
+          "title": "o que é de louça",
+          "num": 2,
+          "file": "2. O que é de louça.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 194
+        },
+        {
+          "title": "elmo de são jorge",
+          "num": 3,
+          "file": "3. Elmo José dos Santos de São Jorge.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 286
+        },
+        {
+          "title": "muralhas",
+          "num": 4,
+          "file": "4. Muralhas.mp3",
+          "artists": "áurea martins e gabriel cavalcante",
+          "duration": 182
+        },
+        {
+          "title": "mar maior",
+          "num": 5,
+          "file": "5. Mar maior.mp3",
+          "artists": "cristina buarque e gabriel cavalcante",
+          "duration": 213
+        },
+        {
+          "title": "velho batuqueiro",
+          "num": 6,
+          "file": "6. Velho batuqueiro.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 188
+        },
+        {
+          "title": "quando o samba veio me buscar",
+          "num": 7,
+          "file": "7. Quando o samba veio me buscar.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 252
+        },
+        {
+          "title": "djembê",
+          "num": 8,
+          "file": "8. Djembê.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 217
+        },
+        {
+          "title": "bodas de ilusão",
+          "num": 9,
+          "file": "9. Bodas de ilusão.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 310
+        },
+        {
+          "title": "choro de mulher",
+          "num": 10,
+          "file": "10. Choro de mulher.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 218
+        },
+        {
+          "title": "ponte partida",
+          "num": 11,
+          "file": "11. Ponte partida.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 244
+        },
+        {
+          "title": "na cantoria",
+          "num": 12,
+          "file": "12. Na cantoria.mp3",
+          "artists": "cristina buarque e gabriel cavalcante",
+          "duration": 226
+        },
+        {
+          "title": "o cio e a paz",
+          "num": 13,
+          "file": "13. O cio e a paz.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 290
+        },
+        {
+          "title": "o fino da vida",
+          "num": 14,
+          "file": "14. O fino da vida.mp3",
+          "artists": "gabriel cavalcante",
+          "duration": 305
         }
       ],
       "artist": "Various Artists"
@@ -161683,6 +161683,43 @@ db = {
       "artist": "Various Artists"
     },
     {
+      "title": "Grupo Brasil Samba Seleção",
+      "year": 1974,
+      "path": "Brasil samba seleção Os pagodeiros",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "Pot-Pourri 1",
+          "num": 1,
+          "file": "1. Divinhadalho Castigo da nêga Do samba não vou sair.mp3",
+          "artists": "Os Pagodeiros Dão O Recado",
+          "duration": 617
+        },
+        {
+          "title": "Pot-Pourri 2",
+          "num": 2,
+          "file": "2. Quem tem medo de perder não ganha Mas não me deixa.mp3",
+          "artists": "Os Pagodeiros Dão O Recado",
+          "duration": 370
+        },
+        {
+          "title": "Pot-Pourri 3",
+          "num": 3,
+          "file": "3. Faca e facão Mulher leviana Mania.mp3",
+          "artists": "Os Pagodeiros Dão O Recado",
+          "duration": 643
+        },
+        {
+          "title": "Pot-Pourri 4",
+          "num": 4,
+          "file": "4. No tabuleiro da baiana No fundo do mar.mp3",
+          "artists": "Os Pagodeiros Dão O Recado",
+          "duration": 379
+        }
+      ],
+      "artist": "Os Pagodeiros Dão O Recado"
+    },
+    {
       "title": "Cartola",
       "year": 1974,
       "path": "Nova História Da Música Popular Brasileira Vol18 – Cartola",
@@ -207761,43 +207798,6 @@ db = {
       "artist": "Various Artists"
     },
     {
-      "title": "Grupo Brasil Samba Seleção",
-      "year": 0,
-      "path": "Brasil samba seleção Os pagodeiros",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "Pot-Pourri 1",
-          "num": 1,
-          "file": "1. Divinhadalho Castigo da nêga Do samba não vou sair.mp3",
-          "artists": "Os Pagodeiros Dão O Recado",
-          "duration": 617
-        },
-        {
-          "title": "Pot-Pourri 2",
-          "num": 2,
-          "file": "2. Quem tem medo de perder não ganha Mas não me deixa.mp3",
-          "artists": "Os Pagodeiros Dão O Recado",
-          "duration": 370
-        },
-        {
-          "title": "Pot-Pourri 3",
-          "num": 3,
-          "file": "3. Faca e facão Mulher leviana Mania.mp3",
-          "artists": "Os Pagodeiros Dão O Recado",
-          "duration": 643
-        },
-        {
-          "title": "Pot-Pourri 4",
-          "num": 4,
-          "file": "4. No tabuleiro da baiana No fundo do mar.mp3",
-          "artists": "Os Pagodeiros Dão O Recado",
-          "duration": 379
-        }
-      ],
-      "artist": "Os Pagodeiros Dão O Recado"
-    },
-    {
       "title": "noel rosa de oliveira e... escola de samba",
       "year": 0,
       "path": "Noel Rosa de Oliveira - Noel Rosa de Oliveira e Escola de Samba",
@@ -207900,88 +207900,88 @@ db = {
           "title": "apesar de você",
           "num": 1,
           "file": "1. Apesar de você.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 230
         },
         {
           "title": "samba do grande amor",
           "num": 2,
           "file": "2. Samba do grande amor.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 160
         },
         {
           "title": "quem te viu, quem te vê",
           "num": 3,
           "file": "3. Quem te viu, quem te vê.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 205
         },
         {
           "title": "o meu guri",
           "num": 4,
           "file": "4. O meu guri.mp3",
-          "artists": "chico buarque",
+          "artists": "Chico Buarque",
           "duration": 237
         },
         {
           "title": "chão de esmeraldas",
           "num": 5,
           "file": "5. Chão de esmeraldas.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 161
         },
         {
           "title": "partido alto",
           "num": 6,
           "file": "6. Partido alto.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 232
         },
         {
           "title": "homenagem ao malandro",
           "num": 7,
           "file": "7. Homenagem ao malandro.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 216
         },
         {
           "title": "sem compromisso",
           "num": 8,
           "file": "8. Sem compromisso.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 128
         },
         {
           "title": "cotidiano",
           "num": 9,
           "file": "9. Cotidiano.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 145
         },
         {
           "title": "deixa a menina",
           "num": 10,
           "file": "10. Deixe a menina.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 126
         },
         {
           "title": "meu caro amigo",
           "num": 11,
           "file": "11. Meu caro amigo.mp3",
-          "artists": "Unknown",
+          "artists": "Chico Buarque",
           "duration": 259
         },
         {
           "title": "vai passar",
           "num": 12,
           "file": "12. Vai passar.mp3",
-          "artists": "chico buarque",
+          "artists": "Chico Buarque",
           "duration": 367
         }
       ],
-      "artist": "Various Artists"
+      "artist": "Chico Buarque"
     }
   ]
 }
