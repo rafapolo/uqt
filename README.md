@@ -21,6 +21,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
+- **Links compartilháveis por faixa**: URL inclui `?album=...&t=N` — compartilhe um álbum ou uma faixa específica diretamente
 - **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado — com debounce de 150ms
 - **Botão de limpar** (✕): Aparece no campo de busca ao digitar; limpa e reposiciona o foco
 - **Contagem de resultados**: Exibe quantos álbuns correspondem ao filtro ativo
@@ -52,7 +53,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
 - **Proxy**: Node.js com o SDK S3 — acessa o bucket privado na Hetzner usando credenciais; o bucket nunca é exposto diretamente ao cliente
 - **Deployment do proxy**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
-- **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `deploy.sh`
+- **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `deploy.sh`, `find-untagged.js`, `fix-missing-tags.py`, `fix-tags-mbsearch.py`, `fix-tags-audd.py`
 - **Fonts**: Playfair Display (títulos) + Inter (corpo)
 
 ### Fluxo de uma requisição

@@ -2,6 +2,11 @@
 
 2026-04-30
 
+- URL agora inclui parâmetro `t=N` por faixa — links compartilháveis apontam para faixa específica (ex: `?album=...&t=5`); URL atualiza a cada troca de faixa via `replaceState`; faixa é restaurada ao abrir o link ou navegar com voltar/avançar
+- `generate-albums.js`: fallback `parseFolderMeta()` extrai ano e artista do nome da pasta (`AAAA - Artista - Álbum`) quando as tags ID3 estão ausentes — evita `year: 0` e `artist: "Unknown"` no banco
+- Adicionados scripts de limpeza de tags ID3: `find-untagged.js` (detecta MP3s sem tags), `fix-missing-tags.py` (corrige por nome de pasta/arquivo), `fix-tags-mbsearch.py` (MusicBrainz), `fix-tags-audd.py` (AudD), `fix-tags-acoustid.py` (AcoustID)
+- 4.523 faixas com tags ausentes corrigidas (98,5% de 4.593); anos derivados de pasta, MusicBrainz e Discogs; artistas inferidos quando todos os tracks marcados como "Unknown"
+- Banco regenerado: artista "Chico Buarque" gravado nas 12 faixas de `O samba de Chico Buarque`; ano 1974 aplicado a `Os Pagodeiros Dão o Recado`; anos de Candeia (1978), Nelson Cavaquinho (1973), Cartola (1974) e Império Serrano (1973) corrigidos via lookup
 - Mobile: botões de década em linha única com scroll horizontal (sem quebra de linha)
 - Mobile: botão shuffle fixado à esquerda e botão de faixas (☰) à direita dos controles centrais do player
 
