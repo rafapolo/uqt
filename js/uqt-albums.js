@@ -6841,7 +6841,7 @@ db = {
       "title": "Primavera",
       "year": 2010,
       "path": "2010 - Catia Werneck - Primavera",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Outro alguém",
@@ -10964,7 +10964,7 @@ db = {
       "title": "MTV Ao Vivo",
       "year": 2010,
       "path": "2010 - Marcelo Camelo - MTV Ao Vivo DVD",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Passeando",
@@ -13881,7 +13881,7 @@ db = {
       "title": "Herói Trancado",
       "year": 2010,
       "path": "2010 - Ortinho - Heroi Trancado",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Cara do Outro Lado",
@@ -14118,7 +14118,7 @@ db = {
       "title": "Navilouca Ao Vivo",
       "year": 2010,
       "path": "2010 - Pedro Luis A Parede - Navilouca Ao Vivo",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caramujo Jah - Quebra Quilos",
@@ -18944,7 +18944,7 @@ db = {
       "title": "Caraivana",
       "year": 2009,
       "path": "2009 - Caraivana",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Noites Cariocas",
@@ -23886,7 +23886,7 @@ db = {
       "title": "Pixinguinha Sinfônico Popular",
       "year": 2009,
       "path": "2009 - Orq Sinfonica Do Recife - Pixinguinha Sinfonico Popular",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Paciente",
@@ -27018,7 +27018,7 @@ db = {
       "title": "Uma Nota Sobre A Outra",
       "year": 2008,
       "path": "2008 - Benjamin Taubkin - Uma Nota Sobre A Outra",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Sabiá Voou",
@@ -27893,7 +27893,7 @@ db = {
       "title": "Como Nossos Pais",
       "year": 2008,
       "path": "2008 - Como Nossos Pais",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Coisinha Do Pai",
@@ -29475,7 +29475,7 @@ db = {
       "title": "Naturalmente",
       "year": 2008,
       "path": "2008 - Margareth Menezes - Naturalmente",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Mulher de Coronel",
@@ -29561,7 +29561,7 @@ db = {
       "title": "Bis Bossa Nova CD 1",
       "year": 2008,
       "path": "2008 - Marisa - Bis Bossa Nova CD1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Só Em Teus Braços",
@@ -29668,7 +29668,7 @@ db = {
       "title": "Bis Bossa Nova CD 2",
       "year": 2008,
       "path": "2008 - Marisa - Bis Bossa Nova CD2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Amor Em Paz",
@@ -30433,7 +30433,7 @@ db = {
       "title": "Natal Bem Brasileiro",
       "year": 2008,
       "path": "2008 - Natal Bem Brasileiro",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Boas festas",
@@ -30782,7 +30782,7 @@ db = {
       "title": "Nomes & Músicas",
       "year": 2008,
       "path": "2008 - Nomes e Musicas",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Espanhola",
@@ -30868,7 +30868,7 @@ db = {
       "title": "Pixinguinha No Cinema",
       "year": 2008,
       "path": "2008 - Pixinguinha No Cinema - Sol Sobre A Lama",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Abertura",
@@ -32973,7 +32973,7 @@ db = {
       "title": "Baita Negão",
       "year": 2008,
       "path": "2008 - Virginia Rosa - Baita Negao",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Sambamba",
@@ -37868,7 +37868,7 @@ db = {
       "title": "Uma Porção de Marias",
       "year": 2007,
       "path": "2007 - Jane Duboc e Arismar Espirito Santo - Uma Porcao de Marias",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Maria",
@@ -39319,7 +39319,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "2007 - Paulinho Moska - Novo De Novo P1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Tudo Novo De Novo",
@@ -39391,7 +39391,7 @@ db = {
       "title": "+ Novo De Novo",
       "year": 2007,
       "path": "2007 - Paulinho Moska - Novo De Novo P2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Seu Olhar",
@@ -40914,7 +40914,7 @@ db = {
       "title": "Tim Maia In Concert",
       "year": 2007,
       "path": "2007 - Tim Maia In Concert P1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "A Festa do Santo Reis",
@@ -40972,7 +40972,7 @@ db = {
       "title": "Tim Maia In Concert",
       "year": 2007,
       "path": "2007 - Tim Maia In Concert P2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Descobridor dos Sete Mares",
@@ -41023,7 +41023,7 @@ db = {
       "title": "Uma História do Choro CD1",
       "year": 2007,
       "path": "2007 - Uma Historia Do Choro CD1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Flor Amorosa",
@@ -41367,7 +41367,7 @@ db = {
       "title": "Quem Menos Tem É Quem Mais Oferece",
       "year": 2006,
       "path": "2006 - A Filial - Quem Menos Tem E Quem Mais Oferece",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gosto Tanto",
@@ -42016,7 +42016,7 @@ db = {
       "title": "Guaratiba Brasil",
       "year": 2006,
       "path": "2006 - Antonio Mello - Guaratiba Brasil",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Se Oriente",
@@ -43205,7 +43205,7 @@ db = {
       "title": "Quizomba",
       "year": 2006,
       "path": "2006 - Eduardo Nazarian - Quizomba",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Quizomba",
@@ -47261,7 +47261,7 @@ db = {
       "title": "Spot São Paulo",
       "year": 2006,
       "path": "2006 - V. A. - Spot S o Paulo p1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "She's My Shoo Shoo",
@@ -48573,7 +48573,7 @@ db = {
       "title": "Aquela Canção",
       "year": 2005,
       "path": "2005 - Aquela Cancao",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Anoiteceu",
@@ -49080,7 +49080,7 @@ db = {
       "title": "Vale Dos Tambores 1",
       "year": 2005,
       "path": "2005 - Carlos Henrique Machado Freitas - Vale dos Tambores CD 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canto Dos Quilombos",
@@ -53290,7 +53290,7 @@ db = {
       "title": "Salve Jorge",
       "year": 2005,
       "path": "2005 - Salve Jorge",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Jorge Da Capadócia",
@@ -55758,7 +55758,7 @@ db = {
       "title": "Choros, Chorinhos & Chorões #2 CD1",
       "year": 2004,
       "path": "2004 - Choros Chorinhos e Choroes Vol 2 CD 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Remexendo",
@@ -57638,7 +57638,7 @@ db = {
       "title": "Homenagem a Milton Nascimento",
       "year": 2004,
       "path": "2004 - Luiz Avellar - Homenagem a Milton Nascimento",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Canção da América",
@@ -59152,7 +59152,7 @@ db = {
       "title": "Sudaka",
       "year": 2004,
       "path": "2004 - Ramiro Musotto - Sudaka",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Caminho",
@@ -60045,7 +60045,7 @@ db = {
       "title": "Sexteto Maurício Carrilho + 2",
       "year": 2004,
       "path": "2004 - Sexteto Mauricio Carrilho e 2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Já Foi",
@@ -60987,7 +60987,7 @@ db = {
       "title": "Os Bambas da Viola",
       "year": 2004,
       "path": "2004 - V. A. - Os Bambas da Viola",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ibérica",
@@ -61101,7 +61101,7 @@ db = {
       "title": "São Paulo e a Lua",
       "year": 2004,
       "path": "2004 - V. A. - S o Paulo E A Lua p1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Paulista",
@@ -61487,7 +61487,7 @@ db = {
       "title": "Live In Concert Obrigado Brazil",
       "year": 2004,
       "path": "2004 - Yo Yo Ma - Obrigado Brazil Live In Concert",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Libertango",
@@ -64157,7 +64157,7 @@ db = {
       "title": "Lembranças Cariocas",
       "year": 2003,
       "path": "2003 - N Carvalho P Miranda PP Malta - Lembrancas Cariocas",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Alvorada/Quem Me Vê Sorrindo/Não Quero Mais Amar A Ninguém",
@@ -103284,7 +103284,7 @@ db = {
       "title": "As Melhores Canções Gaúchas Vol. 1",
       "year": 1991,
       "path": "1991 - As Melhores Can es Gauchas Vol. 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Céu, Sol, Sul, Terra e Cor",
@@ -115520,7 +115520,7 @@ db = {
       "title": "Villa-Violão: Obra Completa Para Violão Solo",
       "year": 1987,
       "path": "1987 - Turibio Santos - Villa-Violao Obra Completa Para Violao Solo",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prelúdio No. 1",
@@ -116959,7 +116959,7 @@ db = {
       "title": "Cacuriá",
       "year": 1986,
       "path": "1986 - Cacuria de Dona Tete",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Choro Da Lera",
@@ -126624,7 +126624,7 @@ db = {
       "title": "O Descobridor dos Sete Mares",
       "year": 1983,
       "path": "1983 - Tim Maia - O Descobridor de 7 Mares",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Descobridor dos Sete Mares",
@@ -128995,7 +128995,7 @@ db = {
       "title": "Brasil Viola",
       "year": 1981,
       "path": "1981 - Adauto Santos - Brasil Viola",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Pagode",
@@ -133753,7 +133753,7 @@ db = {
       "title": "Gonzagão e Gonzaguinha Juntos",
       "year": 1980,
       "path": "1980 - Gonzagao e Gonzaguinha Juntos",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "A vida do viajante",
@@ -137235,7 +137235,7 @@ db = {
       "title": "Terra",
       "year": 1979,
       "path": "1979 - Francisco Mario - Terra",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ouro Preto",
@@ -139483,7 +139483,7 @@ db = {
       "title": "Zé Luiz",
       "year": 1979,
       "path": "1979 - Ze Luiz Mazziotti - Ze Luiz",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Bastante",
@@ -140838,7 +140838,7 @@ db = {
       "title": "Heitor Villa-Lobos: Obra Completa Para Violão Solo",
       "year": 1978,
       "path": "1978 - Duo Assad - Heitor Villa-Lobos1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Prelúdio nº 1",
@@ -141865,7 +141865,7 @@ db = {
       "title": "Marçal Interpreta Bide e Marçal",
       "year": 1978,
       "path": "1978 - Mestre Marcal - Interpreta Bide E Marcal",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Agora É Cinza - Meu Primeiro Amor - A Primeira Vez -  A Carta",
@@ -153981,7 +153981,7 @@ db = {
       "title": "Ademilde Fonseca",
       "year": 1975,
       "path": "1975 - Ademilde Fonseca",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Choro Chorão",
@@ -157330,7 +157330,7 @@ db = {
       "title": "Tim Maia Racional Vol. 1",
       "year": 1975,
       "path": "1975 - Tim Maia Racional Vol 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Imunização Racional",
@@ -178595,7 +178595,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 1",
       "year": 1968,
       "path": "1967 - 3o Festival MPB TV Record Vol 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Ponteio",
@@ -178688,7 +178688,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 1",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 1",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Benvinda",
@@ -178781,7 +178781,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 2",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Memórias De Marta Saré",
@@ -178874,7 +178874,7 @@ db = {
       "title": "4o. Festival da MPB (TV Record) Vol. 3",
       "year": 1968,
       "path": "1968 - 4o Festival MPB TV Record Vol 3",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Rosa Da Gente",
@@ -182635,7 +182635,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 2",
       "year": 1967,
       "path": "1967 - 3o Festival MPB TV Record Vol 2",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "O Cantador",
@@ -182728,7 +182728,7 @@ db = {
       "title": "3o. Festival da MPB (TV Record) Vol. 3",
       "year": 1967,
       "path": "1967 - 3o Festival MPB TV Record Vol 3",
-      "has_cover": false,
+      "has_cover": true,
       "tracks": [
         {
           "title": "Gabriela",
