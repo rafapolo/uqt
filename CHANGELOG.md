@@ -1,5 +1,10 @@
 # Changelog
 
+2026-04-30
+
+- Mobile: botões de década em linha única com scroll horizontal (sem quebra de linha)
+- Mobile: botão shuffle fixado à esquerda e botão de faixas (☰) à direita dos controles centrais do player
+
 2026-04-20
 
 - Correção de codificação de caracteres nos metadados: tags ID3 em Latin-1 agora decodificadas corretamente (15 faixas corrigidas, ex: "dúvida", "jamelão", "joão nogueira")

@@ -24,13 +24,13 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado — com debounce de 150ms
 - **Botão de limpar** (✕): Aparece no campo de busca ao digitar; limpa e reposiciona o foco
 - **Contagem de resultados**: Exibe quantos álbuns correspondem ao filtro ativo
-- **Filtro por década**: Botões compactos (Todos | 1900 | 1910 | 1920 ... 2010) — clique para explorar épocas específicas
+- **Filtro por década**: Botões compactos (Todos | <1940 | 1950 … 2010) — clique para explorar épocas; linha única com scroll horizontal no mobile
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
 - **Metadados precisos**: Carregados de `js/uqt-albums.json.gz` (693 KB, assíncrono) com contagem exata de artistas e álbuns
 
 ### 📱 Totalmente Responsivo
 - **Desktop**: Layout lado-a-lado (grid de álbuns + painel de faixas lateral com auto-scroll para a faixa tocando)
-- **Mobile**: Grid de álbuns em tela cheia; painel de faixas como drawer deslizante no player (botão ☰); header compacto com stats visíveis
+- **Mobile**: Grid de álbuns em tela cheia; painel de faixas como drawer deslizante no player (☰ à direita); shuffle (à esquerda) e controles centrais na barra do player; header compacto com stats visíveis
 
 ### 🎼 Funcionalidades de Áudio
 - **Seleção intencional**: Clique em um álbum para carregá-lo no player — o áudio só começa ao pressionar play
