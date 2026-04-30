@@ -11,6 +11,7 @@ let shuffleOn = false;
 let repeatMode = 'off'; // 'off' | 'one' | 'all'
 let renderedAlbum = null;
 const durationCache = new Map();
+let _toastEl = null, _countEl = null, _clearBtn = null, _emptyState = null;
 
 const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
 const failedCovers = new Set();
@@ -134,12 +135,12 @@ function formatTime(seconds) {
 
 let _toastTimer = null;
 function showToast(msg, duration = 3500) {
-  const el = document.getElementById('toast');
-  if (!el) return;
-  el.textContent = msg;
-  el.classList.add('show');
+  _toastEl ??= document.getElementById('toast');
+  if (!_toastEl) return;
   clearTimeout(_toastTimer);
-  _toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+  _toastEl.textContent = msg;
+  _toastEl.classList.add('show');
+  _toastTimer = setTimeout(() => _toastEl.classList.remove('show'), duration);
 }
 
 function loadCoverImage(imgElement, primaryUrl) {
@@ -353,16 +354,16 @@ function filterAlbums() {
   });
   virtualGrid.setItems(filteredAlbums);
 
-  const countEl = document.getElementById('search-count');
-  const clearBtn = document.getElementById('search-clear');
-  const emptyState = document.getElementById('empty-state');
+  _countEl ??= document.getElementById('search-count');
+  _clearBtn ??= document.getElementById('search-clear');
+  _emptyState ??= document.getElementById('empty-state');
   const isFiltered = !!searchQuery || activeDecade !== null || !!activeYear;
-  if (countEl) {
-    countEl.textContent = `${filteredAlbums.length} álbun${filteredAlbums.length !== 1 ? 's' : ''}`;
-    countEl.classList.toggle('visible', isFiltered);
+  if (_countEl) {
+    _countEl.textContent = `${filteredAlbums.length} álbun${filteredAlbums.length !== 1 ? 's' : ''}`;
+    _countEl.classList.toggle('visible', isFiltered);
   }
-  if (clearBtn) clearBtn.classList.toggle('visible', !!searchQuery);
-  if (emptyState) emptyState.hidden = filteredAlbums.length > 0;
+  if (_clearBtn) _clearBtn.classList.toggle('visible', !!searchQuery);
+  if (_emptyState) _emptyState.hidden = filteredAlbums.length > 0;
 }
 
 function updateLibraryStats() {
@@ -831,6 +832,21 @@ u(document).on('DOMContentLoaded', async function () {
     playerCover.src = PLACEHOLDER_COVER;
     playerCover.classList.add('placeholder');
   }
+  playerCover?.addEventListener('click', () => {
+    if (!currentTrack) return;
+    const playingAlbum = albums.find(a => a.tracks.includes(currentTrack));
+    if (!playingAlbum || playingAlbum === selectedAlbum) return;
+    selectedAlbum = playingAlbum;
+    renderedAlbum = null;
+    renderAlbumHeader();
+    renderTrackList();
+    virtualGrid.refresh();
+    virtualGrid.scrollToSelected();
+    if (isMobile()) {
+      renderMobileDrawer(playingAlbum);
+      openMobileDrawer();
+    }
+  });
 
   const audio = u('#audio').first();
 
