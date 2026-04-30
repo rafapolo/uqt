@@ -33384,6 +33384,99 @@ db = {
       "artist": "leila pinheiro & eduardo gudin"
     },
     {
+      "title": "O samba de Chico Buarque",
+      "year": 2008,
+      "path": "O samba de Chico Buarque",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "apesar de você",
+          "num": 1,
+          "file": "1. Apesar de você.mp3",
+          "artists": "Chico Buarque",
+          "duration": 230
+        },
+        {
+          "title": "samba do grande amor",
+          "num": 2,
+          "file": "2. Samba do grande amor.mp3",
+          "artists": "Chico Buarque",
+          "duration": 160
+        },
+        {
+          "title": "quem te viu, quem te vê",
+          "num": 3,
+          "file": "3. Quem te viu, quem te vê.mp3",
+          "artists": "Chico Buarque",
+          "duration": 205
+        },
+        {
+          "title": "o meu guri",
+          "num": 4,
+          "file": "4. O meu guri.mp3",
+          "artists": "Chico Buarque",
+          "duration": 237
+        },
+        {
+          "title": "chão de esmeraldas",
+          "num": 5,
+          "file": "5. Chão de esmeraldas.mp3",
+          "artists": "Chico Buarque",
+          "duration": 161
+        },
+        {
+          "title": "partido alto",
+          "num": 6,
+          "file": "6. Partido alto.mp3",
+          "artists": "Chico Buarque",
+          "duration": 232
+        },
+        {
+          "title": "homenagem ao malandro",
+          "num": 7,
+          "file": "7. Homenagem ao malandro.mp3",
+          "artists": "Chico Buarque",
+          "duration": 216
+        },
+        {
+          "title": "sem compromisso",
+          "num": 8,
+          "file": "8. Sem compromisso.mp3",
+          "artists": "Chico Buarque",
+          "duration": 128
+        },
+        {
+          "title": "cotidiano",
+          "num": 9,
+          "file": "9. Cotidiano.mp3",
+          "artists": "Chico Buarque",
+          "duration": 145
+        },
+        {
+          "title": "deixa a menina",
+          "num": 10,
+          "file": "10. Deixe a menina.mp3",
+          "artists": "Chico Buarque",
+          "duration": 126
+        },
+        {
+          "title": "meu caro amigo",
+          "num": 11,
+          "file": "11. Meu caro amigo.mp3",
+          "artists": "Chico Buarque",
+          "duration": 259
+        },
+        {
+          "title": "vai passar",
+          "num": 12,
+          "file": "12. Vai passar.mp3",
+          "artists": "Chico Buarque",
+          "duration": 367
+        }
+      ],
+      "artist": "Chico Buarque"
+    },
+    {
       "title": "Profissão Compositor",
       "year": 2007,
       "path": "2006 - Délcio Carvalho - Profissão compositor",
@@ -207889,99 +207982,6 @@ db = {
         }
       ],
       "artist": "noel rosa de oliveira"
-    },
-    {
-      "title": "O samba de Chico Buarque",
-      "year": 0,
-      "path": "O samba de Chico Buarque",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "apesar de você",
-          "num": 1,
-          "file": "1. Apesar de você.mp3",
-          "artists": "Chico Buarque",
-          "duration": 230
-        },
-        {
-          "title": "samba do grande amor",
-          "num": 2,
-          "file": "2. Samba do grande amor.mp3",
-          "artists": "Chico Buarque",
-          "duration": 160
-        },
-        {
-          "title": "quem te viu, quem te vê",
-          "num": 3,
-          "file": "3. Quem te viu, quem te vê.mp3",
-          "artists": "Chico Buarque",
-          "duration": 205
-        },
-        {
-          "title": "o meu guri",
-          "num": 4,
-          "file": "4. O meu guri.mp3",
-          "artists": "Chico Buarque",
-          "duration": 237
-        },
-        {
-          "title": "chão de esmeraldas",
-          "num": 5,
-          "file": "5. Chão de esmeraldas.mp3",
-          "artists": "Chico Buarque",
-          "duration": 161
-        },
-        {
-          "title": "partido alto",
-          "num": 6,
-          "file": "6. Partido alto.mp3",
-          "artists": "Chico Buarque",
-          "duration": 232
-        },
-        {
-          "title": "homenagem ao malandro",
-          "num": 7,
-          "file": "7. Homenagem ao malandro.mp3",
-          "artists": "Chico Buarque",
-          "duration": 216
-        },
-        {
-          "title": "sem compromisso",
-          "num": 8,
-          "file": "8. Sem compromisso.mp3",
-          "artists": "Chico Buarque",
-          "duration": 128
-        },
-        {
-          "title": "cotidiano",
-          "num": 9,
-          "file": "9. Cotidiano.mp3",
-          "artists": "Chico Buarque",
-          "duration": 145
-        },
-        {
-          "title": "deixa a menina",
-          "num": 10,
-          "file": "10. Deixe a menina.mp3",
-          "artists": "Chico Buarque",
-          "duration": 126
-        },
-        {
-          "title": "meu caro amigo",
-          "num": 11,
-          "file": "11. Meu caro amigo.mp3",
-          "artists": "Chico Buarque",
-          "duration": 259
-        },
-        {
-          "title": "vai passar",
-          "num": 12,
-          "file": "12. Vai passar.mp3",
-          "artists": "Chico Buarque",
-          "duration": 367
-        }
-      ],
-      "artist": "Chico Buarque"
     }
   ]
 }
