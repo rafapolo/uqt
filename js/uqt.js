@@ -934,6 +934,7 @@ u(document).on('DOMContentLoaded', async function () {
   document.getElementById('btn-tracklist')?.addEventListener('click', toggleMobileDrawer);
 
   const btnShuffle = document.getElementById('btn-shuffle');
+  const btnShuffleMobile = document.getElementById('btn-shuffle-mobile');
   const btnRepeat = document.getElementById('btn-repeat');
   const volumeSlider = document.getElementById('volume-slider');
 
@@ -946,20 +947,23 @@ u(document).on('DOMContentLoaded', async function () {
     localStorage.setItem('uqt-repeat', mode);
   }
 
+  function applyShuffle(val) {
+    shuffleOn = val;
+    btnShuffle?.classList.toggle('active', shuffleOn);
+    btnShuffleMobile?.classList.toggle('active', shuffleOn);
+    localStorage.setItem('uqt-shuffle', shuffleOn);
+  }
+
   // Restore persisted state
-  shuffleOn = localStorage.getItem('uqt-shuffle') === 'true';
-  btnShuffle?.classList.toggle('active', shuffleOn);
+  applyShuffle(localStorage.getItem('uqt-shuffle') === 'true');
   applyRepeatMode(localStorage.getItem('uqt-repeat') || 'off');
   const savedVolume = parseFloat(localStorage.getItem('uqt-volume') ?? '1');
   if (volumeSlider) volumeSlider.value = savedVolume;
   audio.volume = savedVolume;
   if (savedVolume === 0) document.getElementById('volume-wave').style.display = 'none';
 
-  btnShuffle?.addEventListener('click', () => {
-    shuffleOn = !shuffleOn;
-    btnShuffle.classList.toggle('active', shuffleOn);
-    localStorage.setItem('uqt-shuffle', shuffleOn);
-  });
+  btnShuffle?.addEventListener('click', () => applyShuffle(!shuffleOn));
+  btnShuffleMobile?.addEventListener('click', () => applyShuffle(!shuffleOn));
 
   btnRepeat?.addEventListener('click', () => {
     applyRepeatMode(repeatMode === 'off' ? 'one' : repeatMode === 'one' ? 'all' : 'off');

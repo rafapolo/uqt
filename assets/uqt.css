@@ -1076,7 +1076,8 @@ audio {
   }
 
   .controls-buttons {
-    width: auto;
+    position: relative;
+    width: 100%;
     justify-content: center;
     gap: 4px;
   }
@@ -1091,15 +1092,24 @@ audio {
     display: none;
   }
 
-  /* Decade buttons: compact */
+  /* Decade buttons: single scrollable row */
   .decade-btn {
     padding: 4px 8px;
     font-size: 0.78rem;
   }
 
   .decade-buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
     gap: 4px;
     margin-top: 6px;
+  }
+
+  .decade-buttons::-webkit-scrollbar {
+    display: none;
   }
 
   .filters-section {
@@ -1113,7 +1123,21 @@ audio {
     display: flex;
   }
 
+  #btn-shuffle-mobile {
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
   #btn-tracklist {
+    position: absolute;
+    right: 0;
     color: var(--color-accent);
     background: none;
     border: none;
@@ -1226,6 +1250,8 @@ audio {
   }
 
   .decade-buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 4px;
   }
 
