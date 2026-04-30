@@ -132,6 +132,16 @@ function formatTime(seconds) {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
+let _toastTimer = null;
+function showToast(msg, duration = 3500) {
+  const el = document.getElementById('toast');
+  if (!el) return;
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+}
+
 function loadCoverImage(imgElement, primaryUrl) {
   if (!primaryUrl) {
     imgElement.src = PLACEHOLDER_COVER;
@@ -345,12 +355,14 @@ function filterAlbums() {
 
   const countEl = document.getElementById('search-count');
   const clearBtn = document.getElementById('search-clear');
+  const emptyState = document.getElementById('empty-state');
   const isFiltered = !!searchQuery || activeDecade !== null || !!activeYear;
   if (countEl) {
     countEl.textContent = `${filteredAlbums.length} álbun${filteredAlbums.length !== 1 ? 's' : ''}`;
     countEl.classList.toggle('visible', isFiltered);
   }
   if (clearBtn) clearBtn.classList.toggle('visible', !!searchQuery);
+  if (emptyState) emptyState.hidden = filteredAlbums.length > 0;
 }
 
 function updateLibraryStats() {
@@ -834,7 +846,13 @@ u(document).on('DOMContentLoaded', async function () {
   audio.addEventListener('stalled',  () => setLoading(true));
   audio.addEventListener('canplay',  () => setLoading(false));
   audio.addEventListener('playing',  () => setLoading(false));
-  audio.addEventListener('error',    () => setLoading(false));
+  audio.addEventListener('error', () => {
+    setLoading(false);
+    if (currentTrack) {
+      showToast('Erro ao carregar áudio — pulando...');
+      setTimeout(playNext, 1500);
+    }
+  });
 
   const progressFill = document.querySelector('#progress-fill');
   const mainProgressBar = document.getElementById('main-progress-bar');
@@ -1009,14 +1027,16 @@ u(document).on('DOMContentLoaded', async function () {
     searchDebounce = setTimeout(() => { filterAlbums(); updateQueryInUrl(searchQuery.trim(), false); }, 150);
   });
 
-  document.getElementById('search-clear')?.addEventListener('click', () => {
+  const clearSearch = () => {
     searchQuery = '';
     activeYear = 0; updateYearInUrl(0);
     u('#search-input').first().value = '';
     filterAlbums();
     updateQueryInUrl('', false);
     u('#search-input').first().focus();
-  });
+  };
+  document.getElementById('search-clear')?.addEventListener('click', clearSearch);
+  document.getElementById('empty-clear-btn')?.addEventListener('click', clearSearch);
 
   document.addEventListener('keydown', e => {
     if (e.target.closest('input, textarea, [contenteditable]')) return;
