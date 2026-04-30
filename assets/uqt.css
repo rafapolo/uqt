@@ -271,7 +271,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 12px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -1160,7 +1159,6 @@ audio {
     scrollbar-width: none;
     justify-content: flex-start;
     gap: 4px;
-    margin-top: 6px;
   }
 
   .decade-buttons::-webkit-scrollbar {

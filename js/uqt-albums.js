@@ -182453,6 +182453,99 @@ db = {
       "artist": "Wilson Simonal"
     },
     {
+      "title": "noel rosa de oliveira e... escola de samba",
+      "year": 1968,
+      "path": "Noel Rosa de Oliveira - Noel Rosa de Oliveira e Escola de Samba",
+      "has_cover": true,
+      "tracks": [
+        {
+          "title": "mensagem",
+          "num": 1,
+          "file": "1. Mensagem.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 172
+        },
+        {
+          "title": "sambista na madrugada",
+          "num": 2,
+          "file": "2. Sambista na madrugada.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 148
+        },
+        {
+          "title": "castigo",
+          "num": 3,
+          "file": "3. Castigo.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 152
+        },
+        {
+          "title": "arataca",
+          "num": 4,
+          "file": "4. Arataca.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 127
+        },
+        {
+          "title": "não mandei você embora",
+          "num": 5,
+          "file": "5. Não mandei você embora.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 162
+        },
+        {
+          "title": "dói a alma",
+          "num": 6,
+          "file": "6. Dói a alma.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 158
+        },
+        {
+          "title": "festival de samba",
+          "num": 7,
+          "file": "7. Festival de samba.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 146
+        },
+        {
+          "title": "paixão de trovador",
+          "num": 8,
+          "file": "8. Paixão de trovador.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 155
+        },
+        {
+          "title": "decisão",
+          "num": 9,
+          "file": "9. Decisão.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 175
+        },
+        {
+          "title": "solidão",
+          "num": 10,
+          "file": "10. Solidão.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 142
+        },
+        {
+          "title": "serenata de luar",
+          "num": 11,
+          "file": "11. Serenata de luar.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 124
+        },
+        {
+          "title": "não te quero mais",
+          "num": 12,
+          "file": "12. Não te quero mais.mp3",
+          "artists": "Noel Rosa de Oliveira",
+          "duration": 169
+        }
+      ],
+      "artist": "Noel Rosa de Oliveira"
+    },
+    {
       "title": "olha o partido aí",
       "year": 1968,
       "path": "Olha o partido aí! - Gravado ao vivo nos 40 anos de samba da Mangueira – Xangô da Mangueira, Padeirinho, Jorge Zagaia, Aniceto e Jorginho",
@@ -207889,99 +207982,6 @@ db = {
         }
       ],
       "artist": "Various Artists"
-    },
-    {
-      "title": "noel rosa de oliveira e... escola de samba",
-      "year": 0,
-      "path": "Noel Rosa de Oliveira - Noel Rosa de Oliveira e Escola de Samba",
-      "has_cover": true,
-      "tracks": [
-        {
-          "title": "mensagem",
-          "num": 1,
-          "file": "1. Mensagem.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 172
-        },
-        {
-          "title": "sambista na madrugada",
-          "num": 2,
-          "file": "2. Sambista na madrugada.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 148
-        },
-        {
-          "title": "castigo",
-          "num": 3,
-          "file": "3. Castigo.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 152
-        },
-        {
-          "title": "arataca",
-          "num": 4,
-          "file": "4. Arataca.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 127
-        },
-        {
-          "title": "não mandei você embora",
-          "num": 5,
-          "file": "5. Não mandei você embora.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 162
-        },
-        {
-          "title": "dói a alma",
-          "num": 6,
-          "file": "6. Dói a alma.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 158
-        },
-        {
-          "title": "festival de samba",
-          "num": 7,
-          "file": "7. Festival de samba.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 146
-        },
-        {
-          "title": "paixão de trovador",
-          "num": 8,
-          "file": "8. Paixão de trovador.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 155
-        },
-        {
-          "title": "decisão",
-          "num": 9,
-          "file": "9. Decisão.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 175
-        },
-        {
-          "title": "solidão",
-          "num": 10,
-          "file": "10. Solidão.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 142
-        },
-        {
-          "title": "serenata de luar",
-          "num": 11,
-          "file": "11. Serenata de luar.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 124
-        },
-        {
-          "title": "não te quero mais",
-          "num": 12,
-          "file": "12. Não te quero mais.mp3",
-          "artists": "noel rosa de oliveira",
-          "duration": 169
-        }
-      ],
-      "artist": "noel rosa de oliveira"
     }
   ]
 }
