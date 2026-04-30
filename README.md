@@ -17,7 +17,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ### 🎨 Interface Spotify-Style Grid
 - **Grid de álbuns central**: Grade responsiva de capas com rolagem virtual — apenas ~30 cards no DOM independente do tamanho da biblioteca
 - **Painel de faixas lateral**: Clique em um álbum para exibir capa grande, info e lista de faixas
-- **Capas lazy-loaded**: 2.087 capas em `capa-min.jpg` (200px, ~10KB) carregadas sob demanda — sem impacto no carregamento inicial
+- **Capas lazy-loaded**: 2.143 capas em `capa-min.jpg` (200px, ~10KB) carregadas sob demanda — sem impacto no carregamento inicial
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
@@ -53,7 +53,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
 - **Proxy**: Node.js com o SDK S3 — acessa o bucket privado na Hetzner usando credenciais; o bucket nunca é exposto diretamente ao cliente
 - **Deployment do proxy**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
-- **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `deploy.sh`, `find-untagged.js`, `fix-missing-tags.py`, `fix-tags-mbsearch.py`, `fix-tags-audd.py`
+- **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `fetch-covers.py`, `deploy.sh`, `find-untagged.js`, `fix-missing-tags.py`, `fix-tags-mbsearch.py`, `fix-tags-audd.py`
 - **Fonts**: Playfair Display (títulos) + Inter (corpo)
 
 ### Fluxo de uma requisição

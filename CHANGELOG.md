@@ -1,5 +1,13 @@
 # Changelog
 
+2026-04-30 (tarde)
+
+- `script/fetch-covers.py`: busca capas faltantes no Discogs API (primário) e iTunes Search API (fallback); redimensiona para 200px e faz upload de `capa.jpg` + `capa-min.jpg` para o S3 — 54 de 77 álbuns sem capa cobertos (23 gravações raras de 1956–1980 sem match)
+- Total de álbuns com capa: 2.143 de 2.166 (era 2.089)
+- Botão de década "∞" (sem data) só aparece quando há álbuns sem ano — com 0 álbuns undated, botão não é exibido
+- `.decade-buttons`: `margin-top` removido em todos os breakpoints
+- Capa do álbum *Noel Rosa de Oliveira e Escola de Samba* (1968) baixada do Discogs e enviada ao S3
+
 2026-04-30
 
 - URL agora inclui parâmetro `t=N` por faixa — links compartilháveis apontam para faixa específica (ex: `?album=...&t=5`); URL atualiza a cada troca de faixa via `replaceState`; faixa é restaurada ao abrir o link ou navegar com voltar/avançar
