@@ -19,13 +19,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses with pako, then renders albums into a virtual scrolling grid. Album paths in the JSON map directly to file paths on the audio server.
 
 ### Backend/Infrastructure
-- **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to Hetzner S3 (endpoint set via `S3_ENDPOINT` env var). Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
+- **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to object storage (endpoint set via `S3_ENDPOINT` env var). Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
 - **haloy.yaml** — Deployment config; deploys proxy to uqt.xn--2dk.xyz
 - **Dockerfile** — Packages proxy.js for haloy deployment
 
 ### Scripts (`script/`)
 - **generate-albums.js** — Regenerates `js/uqt-albums.js` and `js/uqt-albums.json.gz` from MP3 files in `unzips/`
-- **sync-to-bucket.js** — Syncs local audio files to Hetzner S3 bucket
+- **sync-to-bucket.js** — Syncs local audio files to the object storage bucket
 - **resize-cover-images.js** — Resizes and uploads cover images to S3
 - **deploy.sh** — Server deployment script
 

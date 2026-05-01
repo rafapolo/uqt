@@ -2,7 +2,7 @@
 
 ## Overview
 
-`proxy.js` is a small Node reverse proxy that fronts the private Hetzner Object Storage bucket (endpoint read from `S3_ENDPOINT` env var). It serves audio and cover images to the web app with correct MIME types, CORS, long-lived cache headers, and HTTP Range support. It is deployed as a container via [haloy](https://haloy.ミ.xyz) and served publicly over HTTPS at **`https://uqt.ミ.xyz`**. Both the haloy host and the bucket live in Hetzner's HEL1 zone, so egress is free.
+`proxy.js` is a small Node reverse proxy that fronts the private object storage bucket (endpoint read from `S3_ENDPOINT` env var). It serves audio and cover images to the web app with correct MIME types, CORS, long-lived cache headers, and HTTP Range support. It is deployed as a container via [haloy](https://haloy.ミ.xyz) and served publicly over HTTPS at **`https://uqt.ミ.xyz`**. The web server and storage bucket are co-located, so egress is free.
 
 ## Architecture
 
@@ -21,8 +21,8 @@ The deploy is a single haloy call. Three env vars must be set in the shell that 
 
 ```bash
 export HALOY_API_TOKEN=...       # haloy control-plane token
-export AWS_ACCESS_KEY_ID=...     # Hetzner Object Storage access key
-export AWS_SECRET_ACCESS_KEY=... # Hetzner Object Storage secret
+export AWS_ACCESS_KEY_ID=...     # object storage access key
+export AWS_SECRET_ACCESS_KEY=... # object storage secret
 
 haloy deploy
 ```
@@ -78,7 +78,7 @@ It reads credentials from a local `.env` file and mirrors from the source path d
 
 ## Performance Notes
 
-- Zero egress: both the haloy host and the bucket are in Hetzner HEL1.
+- Zero egress: web server and bucket are co-located.
 - Latency overhead from the proxy hop is minimal.
 - `Cache-Control: public, max-age=31536000` (one year) — safe because the app never mutates a given path.
 - CORS enabled for all origins (`GET`, `HEAD`, `OPTIONS`).
