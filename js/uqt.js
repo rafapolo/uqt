@@ -86,6 +86,10 @@ function getTrackNumFromUrl() {
   return parseInt(new URLSearchParams(window.location.search).get('t') || 0);
 }
 
+function getPlayFromUrl() {
+  return new URLSearchParams(window.location.search).get('play') === '1';
+}
+
 function generateAlbumUrl(album, trackNum) {
   const params = new URLSearchParams(window.location.search);
   params.set('album', album.path);
@@ -848,7 +852,10 @@ u(document).on('DOMContentLoaded', async function () {
         const audio = u('#audio').first();
         const newSrc = `${BASE_URL}/${t.file}`;
         if (audio.src !== newSrc) { audio.src = newSrc; audio.load(); }
+        if (getPlayFromUrl()) safePlay(audio);
       }
+    } else if (getPlayFromUrl() && albumToSelect.tracks.length > 0) {
+      playTrack(albumToSelect.tracks[0]);
     }
     renderTrackList();
     renderMobileDrawer(albumToSelect);

@@ -21,7 +21,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
-- **Links compartilháveis por faixa**: URL inclui `?album=...&t=N` — compartilhe um álbum ou uma faixa específica diretamente
+- **Links compartilháveis por faixa**: URL inclui `?album=...&t=N` — compartilhe um álbum ou uma faixa específica; adicione `&play=1` para que o áudio inicie automaticamente ao abrir o link
 - **Busca em tempo real**: Filtre por nome do artista, álbum ou qualquer metadado — com debounce de 150ms
 - **Botão de limpar** (✕): Aparece no campo de busca ao digitar; limpa e reposiciona o foco
 - **Contagem de resultados**: Exibe quantos álbuns correspondem ao filtro ativo
@@ -51,8 +51,8 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
 - **Rolagem virtual**: `VirtualGrid` em `js/uqt.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
-- **Proxy**: Node.js com o SDK S3 — acessa o bucket privado na Hetzner usando credenciais; o bucket nunca é exposto diretamente ao cliente
-- **Deployment do proxy**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
+- **Servidor de mídia**: Node.js com o SDK S3 — acessa o armazenamento privado via credenciais; os arquivos nunca são expostos diretamente ao cliente
+- **Deployment**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
 - **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `fetch-covers.py`, `deploy.sh`, `find-untagged.js`, `fix-missing-tags.py`, `fix-tags-mbsearch.py`, `fix-tags-audd.py`
 - **Fonts**: Playfair Display (títulos) + Inter (corpo)
 
@@ -60,7 +60,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 1. Browser carrega `index.html` do GitHub Pages (sem bloqueio — `uqt-albums.js` não é mais um script tag)
 2. `uqt.js` faz `fetch('js/uqt-albums.json.gz')`, descomprime com pako e renderiza o grid
 3. Ao clicar em um álbum, constrói a URL `https://uqt.ミ.xyz/uqt/{path}/{file}`
-4. Proxy recebe a requisição e faz `GetObject` assinado no bucket `$S3_BUCKET/uqt/{path}/{file}`
+4. Servidor de mídia recebe a requisição e busca o arquivo no armazenamento privado
 5. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
 
 ### Frontend
@@ -85,13 +85,13 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Track list diffing**: `renderTrackList()` detecta se o álbum já está renderizado — ao trocar faixa no mesmo álbum, só atualiza `.playing` sem reconstruir o DOM (React-style reconciliation)
 
 ### Streaming e Deployment
-- **Proxy**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — bucket privado, GetObject assinado, `Range` suportado para seek/streaming
+- **Servidor de mídia**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — armazenamento privado, `Range` suportado para seek/streaming
 - **Capas**: `capa-min.jpg` (200px wide, 80% quality) — 159 MB → 21.8 MB vs originais; geradas por `script/resize-cover-images.js` com upload direto via AWS SDK
 - **Lazy loading**: `loading="lazy"` em todas as capas — zero impacto no carregamento inicial
 - **Deployment**: Haloy + Docker, rolling updates sem downtime
 - **SSL/TLS**: Let's Encrypt automático (Haloy)
 - **Health check**: `/health` retorna `{status, timestamp}`
-- **Zero egress**: proxy e bucket ambos na zona HEL1 da Hetzner
+- **Zero egress**: proxy e bucket na mesma zona de hospedagem
 
 Ver [Setup do Proxy](PROXY_SETUP.md)
 
@@ -101,9 +101,11 @@ Este é um projeto de arquivo/homenagem. Para sugerir melhorias:
 1. Abra uma [issue](https://github.com/rafapolo/uqt/issues)
 2. Ou submeta um [pull request](https://github.com/rafapolo/uqt/pulls)
 
-## 📝 Licença
+## 📝 Licença e direitos
 
-Respeite os direitos dos artistas e da coleção UQT original. Use este arquivo apenas para fins educacionais e de preservação cultural.
+Este acervo é mantido exclusivamente para fins educacionais e de preservação cultural. Os direitos sobre as gravações pertencem aos seus respectivos artistas e detentores. Nenhum conteúdo é disponibilizado para fins comerciais.
+
+Se você é titular de direitos e deseja que algum conteúdo seja removido, abra uma [issue](https://github.com/rafapolo/uqt/issues).
 
 ---
 

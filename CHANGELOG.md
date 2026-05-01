@@ -1,5 +1,9 @@
 # Changelog
 
+2026-05-01
+
+- Novo parâmetro de URL `?play=1`: ao abrir um link com `?album=...&t=N&play=1` a faixa especificada inicia automaticamente; com `?album=...&play=1` (sem `t=`) a primeira faixa do álbum é tocada — links de compartilhamento agora podem ser "click-to-play"
+
 2026-04-30 (tarde)
 
 - `script/fetch-covers.py`: busca capas faltantes no Discogs API (primário) e iTunes Search API (fallback); redimensiona para 200px e faz upload de `capa.jpg` + `capa-min.jpg` para o S3 — 54 de 77 álbuns sem capa cobertos (23 gravações raras de 1956–1980 sem match)
@@ -73,7 +77,7 @@
 - Favicon SVG de disco de vinil
 - Grid de álbuns redesenhado no estilo Spotify
 - Deploy via Haloy com suporte a Docker (uqt.xn--2dk.xyz)
-- Proxy reverso Hetzner para streaming de áudio sem custo de egresso
+- Proxy reverso para streaming de áudio sem custo de egresso
 - Correção de CORB via CORS e MIME types corretos no proxy
 
 2026-04-15
