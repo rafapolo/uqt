@@ -577,8 +577,13 @@ function renderTrackList() {
 function safePlay(audio) {
   const p = audio.play();
   if (p?.catch) p.catch(err => {
-    if (err.name !== 'AbortError' && err.name !== 'NotAllowedError')
+    if (err.name === 'NotAllowedError') {
+      const resume = () => { audio.play().catch(() => {}); document.removeEventListener('click', resume); document.removeEventListener('keydown', resume); };
+      document.addEventListener('click', resume, { once: true });
+      document.addEventListener('keydown', resume, { once: true });
+    } else if (err.name !== 'AbortError') {
       console.error('audio.play() failed:', err);
+    }
   });
 }
 
