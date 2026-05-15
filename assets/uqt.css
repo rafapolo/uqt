@@ -1313,6 +1313,7 @@ audio {
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 4px;
+    margin-top: 7px;
   }
 
   .decade-btn {
