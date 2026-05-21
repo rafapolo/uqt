@@ -23,6 +23,25 @@
   --transition-fast: all 0.2s ease-out;
 }
 
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 /* Reset & Base */
 * {
   margin: 0;
@@ -206,11 +225,12 @@ body {
   color: var(--color-text-muted);
 }
 
-.search-input:focus {
+.search-input:focus,
+.search-input:focus-visible {
   outline: none;
   border-color: var(--color-accent);
   background: var(--color-bg);
-  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
 }
 
 .search-group {
@@ -304,6 +324,11 @@ body {
   color: var(--color-bg);
   font-weight: 600;
   box-shadow: 0 6px 16px rgba(212, 165, 116, 0.3);
+}
+
+.decade-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .decade-btn--globe {
@@ -526,6 +551,18 @@ body {
   text-decoration: underline;
 }
 
+.artist-link:focus-visible,
+.year-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.album-item:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
 
 .track-list {
   flex: 1;
@@ -547,8 +584,15 @@ body {
   contain: content;
 }
 
-.track-item:hover {
+.track-item:hover,
+.track-item:focus-visible {
   background: var(--color-surface-light);
+  outline: none;
+}
+
+.track-item:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
 }
 
 .track-item.playing {
@@ -738,6 +782,11 @@ body {
 
 .btn:active {
   transform: scale(0.95);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .btn-play {

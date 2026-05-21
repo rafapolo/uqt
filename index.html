@@ -12,6 +12,7 @@
             content="1.658+ horas de Música Popular Brasileira."
         />
         <meta property="og:url" content="https://rafapolo.github.io/uqt/" />
+        <meta name="description" content="1.658+ horas de Música Popular Brasileira — acervo digital do UQT." />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Acervo UQT — 100 anos de MPB" />
         <meta
@@ -54,11 +55,15 @@
                 <div class="filters-section">
                     <div class="search-group">
                         <div class="search-wrapper">
+                            <label for="search-input" class="sr-only">Buscar por artista ou álbum</label>
                             <input
                                 id="search-input"
                                 type="text"
                                 class="search-input"
                                 placeholder="Busca por artista, álbum..."
+                                aria-label="Buscar por artista ou álbum"
+                                autocomplete="off"
+                                spellcheck="false"
                             />
                             <span id="search-count" class="search-count"></span>
                             <button
@@ -70,25 +75,26 @@
                             </button>
                         </div>
                     </div>
-                    <div class="decade-buttons" id="decade-buttons"></div>
+                    <nav class="decade-buttons" id="decade-buttons" aria-label="Filtrar por década"></nav>
                 </div>
-                <div class="albums-grid" id="albums-list"></div>
+                <div class="albums-grid" id="albums-list" role="list" aria-label="Álbuns"></div>
                 <div id="empty-state" hidden>
                     <p>Nenhum álbum encontrado</p>
                     <button id="empty-clear-btn">Limpar busca</button>
                 </div>
             </main>
 
-            <aside class="tracks-panel">
+            <aside class="tracks-panel" aria-label="Faixas do álbum">
                 <div class="album-header" id="album-header"></div>
-                <ol class="track-list" id="track-list"></ol>
+                <ol class="track-list" id="track-list" aria-label="Lista de faixas"></ol>
             </aside>
         </div>
 
         <audio id="audio"></audio>
         <div id="toast" role="status" aria-live="assertive"></div>
+        <div id="now-playing-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
-        <footer class="player-bar">
+        <footer class="player-bar" role="region" aria-label="Player de música">
             <div id="now-playing-overlay" class="now-playing-overlay">
                 <div class="overlay-header">
                     <button
@@ -127,6 +133,7 @@
                         id="overlay-btn-prev"
                         class="btn btn-control"
                         title="Anterior"
+                        aria-label="Faixa anterior"
                     >
                         <svg
                             viewBox="0 0 24 24"
@@ -142,6 +149,7 @@
                         id="overlay-btn-play"
                         class="btn btn-play overlay-btn-play"
                         title="Play"
+                        aria-label="Reproduzir"
                     >
                         <svg
                             class="icon-play"
@@ -167,6 +175,7 @@
                         id="overlay-btn-next"
                         class="btn btn-control"
                         title="Próxima"
+                        aria-label="Próxima faixa"
                     >
                         <svg
                             viewBox="0 0 24 24"
@@ -225,6 +234,8 @@
                             id="btn-shuffle-mobile"
                             class="btn btn-control mobile-only"
                             title="Aleatório"
+                            aria-label="Modo aleatório"
+                            aria-pressed="false"
                         >
                             <svg
                                 viewBox="0 0 24 24"
@@ -244,6 +255,7 @@
                             id="btn-prev"
                             class="btn btn-control"
                             title="Anterior"
+                            aria-label="Faixa anterior"
                         >
                             <svg
                                 viewBox="0 0 24 24"
@@ -261,7 +273,7 @@
                                 />
                             </svg>
                         </button>
-                        <button id="btn-play" class="btn btn-play" title="Play">
+                        <button id="btn-play" class="btn btn-play" title="Play" aria-label="Reproduzir">
                             <svg
                                 class="icon-play"
                                 viewBox="0 0 24 24"
@@ -298,6 +310,7 @@
                             id="btn-next"
                             class="btn btn-control"
                             title="Próxima"
+                            aria-label="Próxima faixa"
                         >
                             <svg
                                 viewBox="0 0 24 24"
@@ -319,13 +332,15 @@
                             id="btn-tracklist"
                             class="btn btn-tracklist mobile-only"
                             title="Faixas"
+                            aria-label="Ver lista de faixas"
+                            aria-expanded="false"
                         >
                             ☰
                         </button>
                     </div>
                     <div class="progress-container">
                         <span id="time-current" class="time">0:00</span>
-                        <div class="progress-bar" id="main-progress-bar">
+                        <div class="progress-bar" id="main-progress-bar" role="slider" aria-label="Posição na faixa" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
                             <div id="progress-fill" class="progress-fill"></div>
                         </div>
                         <span id="time-duration" class="time">0:00</span>
@@ -337,6 +352,8 @@
                         id="btn-shuffle"
                         class="btn btn-control btn-extra"
                         title="Aleatório"
+                        aria-label="Modo aleatório"
+                        aria-pressed="false"
                     >
                         <svg
                             viewBox="0 0 24 24"
@@ -356,6 +373,8 @@
                         id="btn-repeat"
                         class="btn btn-control btn-extra"
                         title="Repetir"
+                        aria-label="Repetir"
+                        aria-pressed="false"
                     >
                         <svg
                             viewBox="0 0 24 24"
@@ -397,6 +416,7 @@
                             step="0.02"
                             value="1"
                             class="volume-slider"
+                            aria-label="Volume"
                         />
                     </div>
                 </div>

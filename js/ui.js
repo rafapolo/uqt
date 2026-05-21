@@ -23,14 +23,14 @@ function artistLinksHTML(str) {
   const parts = str.split(/(, | e | & |&)/);
   return parts.map((p, i) =>
     i % 2 === 0
-      ? `<span class="artist-link" data-artist="${p.replace(/"/g, '&quot;')}">${p}</span>`
+      ? `<span class="artist-link" data-artist="${p.replace(/"/g, '&quot;')}" role="button" tabindex="0" aria-label="Buscar por ${p.replace(/"/g, '&quot;')}">${p}</span>`
       : p
   ).join('');
 }
 
 function attachArtistHandlers(container) {
   container.querySelectorAll('.artist-link[data-artist]').forEach(el => {
-    el.addEventListener('click', e => {
+    const handleArtistClick = e => {
       e.stopPropagation();
       const name = el.dataset.artist;
       const input = u('#search-input').first();
@@ -43,6 +43,10 @@ function attachArtistHandlers(container) {
       updateQueryInUrl(name, true);
       closeMobileDrawer();
       input.focus();
+    };
+    el.addEventListener('click', handleArtistClick);
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleArtistClick(e); }
     });
   });
 }
@@ -183,9 +187,20 @@ function isMobile() {
   return window.matchMedia('(max-width: 768px)').matches;
 }
 
-function openMobileDrawer()   { document.getElementById('mobile-track-drawer')?.classList.add('open'); }
-function closeMobileDrawer()  { document.getElementById('mobile-track-drawer')?.classList.remove('open'); }
-function toggleMobileDrawer() { document.getElementById('mobile-track-drawer')?.classList.toggle('open'); }
+function openMobileDrawer() {
+  document.getElementById('mobile-track-drawer')?.classList.add('open');
+  document.getElementById('btn-tracklist')?.setAttribute('aria-expanded', 'true');
+}
+function closeMobileDrawer() {
+  document.getElementById('mobile-track-drawer')?.classList.remove('open');
+  document.getElementById('btn-tracklist')?.setAttribute('aria-expanded', 'false');
+}
+function toggleMobileDrawer() {
+  const drawer = document.getElementById('mobile-track-drawer');
+  if (!drawer) return;
+  const isOpen = drawer.classList.toggle('open');
+  document.getElementById('btn-tracklist')?.setAttribute('aria-expanded', String(isOpen));
+}
 
 // ── Virtual Grid ──────────────────────────────────────────────────────────
 // Renders only visible album cards; ~30 DOM nodes instead of 2,164.
@@ -303,8 +318,18 @@ class VirtualGrid {
     if (selectedAlbum === album) item.classList.add('active');
     item.dataset.albumIdx = i;
     item.style.cssText = `position:absolute;width:${this.itemWidth}px;top:${pad + row * this.rowHeight}px;left:${pad + col * (this.itemWidth + gap)}px`;
+    item.setAttribute('role', 'listitem');
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('aria-label', `${album.name}, ${album.artists}, ${album.year || 'sem data'}`);
+    if (!item._keydownBound) {
+      item.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
+      });
+      item._keydownBound = true;
+    }
 
     cover.alt = album.name;
+    cover.setAttribute('aria-hidden', 'true');
     loadCoverImage(cover, album.cover);
     title.textContent = album.name;
     meta.textContent = `${album.artists} • ${album.year || '∞'}`;
@@ -532,10 +557,11 @@ function renderAlbumHeader() {
   info.innerHTML = `
     <h2>${selectedAlbum.name}</h2>
     <p><strong>${artistLinksHTML(selectedAlbum.artists)}</strong></p>
-    <p><span class="year-link">${selectedAlbum.year}</span> • ${selectedAlbum.tracks.length} canções</p>
+    <p><span class="year-link" role="button" tabindex="0" aria-label="Filtrar álbuns de ${selectedAlbum.year}">${selectedAlbum.year}</span> • ${selectedAlbum.tracks.length} canções</p>
   `;
 
-  info.querySelector('.year-link')?.addEventListener('click', () => {
+  const yearLinkEl = info.querySelector('.year-link');
+  const handleYearClick = () => {
     activeYear = selectedAlbum.year;
     searchQuery = '';
     activeDecade = null;
@@ -544,6 +570,10 @@ function renderAlbumHeader() {
     document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
     updateYearInUrl(activeYear);
     filterAlbums();
+  };
+  yearLinkEl?.addEventListener('click', handleYearClick);
+  yearLinkEl?.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleYearClick(); }
   });
 
   attachArtistHandlers(info);
@@ -573,8 +603,9 @@ function renderTrackList() {
 
   if (renderedAlbum === selectedAlbum) {
     container.querySelectorAll('[data-track-idx]').forEach(item => {
-      item.classList.toggle('playing',
-        selectedAlbum.tracks[parseInt(item.dataset.trackIdx)] === currentTrack);
+      const isPlaying = selectedAlbum.tracks[parseInt(item.dataset.trackIdx)] === currentTrack;
+      item.classList.toggle('playing', isPlaying);
+      item.setAttribute('aria-current', isPlaying ? 'true' : 'false');
     });
     container.querySelector('.track-item.playing')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     return;
@@ -587,19 +618,24 @@ function renderTrackList() {
     const item = document.createElement('li');
     item.className = 'track-item';
     item.dataset.trackIdx = idx;
-    if (currentTrack === track) item.classList.add('playing');
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('aria-label', `Faixa ${track.num}: ${track.title}`);
+    if (currentTrack === track) { item.classList.add('playing'); item.setAttribute('aria-current', 'true'); }
 
     const artistName = track.artists && track.artists !== selectedAlbum.artists ? track.artists : '';
     const artistLabel = artistName ? `<div class="track-artist">${artistLinksHTML(artistName)}</div>` : '';
     const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
     item.innerHTML = `
-      <span class="track-num">${track.num}</span>
+      <span class="track-num" aria-hidden="true">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
         ${artistLabel}
       </div>
-      <span class="track-duration">${dur}</span>
+      <span class="track-duration" aria-label="Duração: ${dur}">${dur}</span>
     `;
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
+    });
     if (artistName) attachArtistHandlers(item);
     frag.append(item);
   });
@@ -659,19 +695,24 @@ function renderMobileDrawer(album) {
     const item = document.createElement('li');
     item.className = 'track-item';
     item.dataset.trackIdx = idx;
-    if (currentTrack === track) item.classList.add('playing');
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('aria-label', `Faixa ${track.num}: ${track.title}`);
+    if (currentTrack === track) { item.classList.add('playing'); item.setAttribute('aria-current', 'true'); }
 
     const artistName = track.artists && track.artists !== album.artists ? track.artists : '';
     const artistLabel = artistName ? `<div class="track-artist">${artistLinksHTML(artistName)}</div>` : '';
     const dur = durationCache.has(track.file) ? formatTime(durationCache.get(track.file)) : '-';
     item.innerHTML = `
-      <span class="track-num">${track.num}</span>
+      <span class="track-num" aria-hidden="true">${track.num}</span>
       <div class="track-details">
         <div class="track-title">${track.title}</div>
         ${artistLabel}
       </div>
-      <span class="track-duration">${dur}</span>
+      <span class="track-duration" aria-label="Duração: ${dur}">${dur}</span>
     `;
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
+    });
     if (artistName) attachArtistHandlers(item);
     frag.append(item);
   });
@@ -696,12 +737,17 @@ function updateNowPlaying() {
   const folder = currentTrack.file.split('/')[0];
   const coverUrl = `${BASE_URL}/${folder}/capa-min.jpg`;
   const coverImg = u('#player-cover').first();
-  if (coverImg) { coverImg.loading = 'lazy'; loadCoverImage(coverImg, coverUrl); }
+  const coverAlt = currentTrack.album ? `Capa do álbum ${currentTrack.album}` : 'Capa do álbum';
+  if (coverImg) { coverImg.loading = 'lazy'; coverImg.alt = coverAlt; loadCoverImage(coverImg, coverUrl); }
   const drawerCover = document.getElementById('drawer-cover');
-  if (drawerCover) loadCoverImage(drawerCover, coverUrl);
+  if (drawerCover) { drawerCover.alt = coverAlt; loadCoverImage(drawerCover, coverUrl); }
   // Overlay
   const overlayCover = document.getElementById('overlay-cover');
-  if (overlayCover) loadCoverImage(overlayCover, coverUrl);
+  if (overlayCover) { overlayCover.alt = coverAlt; loadCoverImage(overlayCover, coverUrl); }
+
+  // Update aria-live now-playing status
+  const statusEl = document.getElementById('now-playing-status');
+  if (statusEl) statusEl.textContent = `Reproduzindo: ${currentTrack.title} — ${currentTrack.artists}`;
   const overlayTitle = document.getElementById('overlay-track-title');
   if (overlayTitle) overlayTitle.textContent = currentTrack.title;
   const overlayArtist = document.getElementById('overlay-track-artist');
@@ -934,8 +980,19 @@ u(document).on('DOMContentLoaded', async function () {
     overlayBtnPlay?.classList.toggle('loading', on);
   };
 
-  audio.addEventListener('play',     () => { u('#btn-play').addClass('playing');    overlayBtnPlay?.classList.add('playing'); document.getElementById('btn-play')?.classList.remove('autoplay-blocked'); });
-  audio.addEventListener('pause',    () => { u('#btn-play').removeClass('playing'); overlayBtnPlay?.classList.remove('playing'); });
+  audio.addEventListener('play',     () => {
+    u('#btn-play').addClass('playing');
+    overlayBtnPlay?.classList.add('playing');
+    document.getElementById('btn-play')?.classList.remove('autoplay-blocked');
+    document.getElementById('btn-play')?.setAttribute('aria-label', 'Pausar');
+    overlayBtnPlay?.setAttribute('aria-label', 'Pausar');
+  });
+  audio.addEventListener('pause',    () => {
+    u('#btn-play').removeClass('playing');
+    overlayBtnPlay?.classList.remove('playing');
+    document.getElementById('btn-play')?.setAttribute('aria-label', 'Reproduzir');
+    overlayBtnPlay?.setAttribute('aria-label', 'Reproduzir');
+  });
   audio.addEventListener('waiting',  () => setLoading(true));
   audio.addEventListener('stalled',  () => setLoading(true));
   audio.addEventListener('canplay',  () => setLoading(false));
@@ -959,6 +1016,7 @@ u(document).on('DOMContentLoaded', async function () {
     const cur = formatTime(audio.currentTime);
     progressFill.style.width = percent + '%';
     mainProgressBar.classList.toggle('has-progress', percent > 0);
+    mainProgressBar.setAttribute('aria-valuenow', Math.round(percent));
     u('#time-current').text(cur);
     if (overlayProgressFill) overlayProgressFill.style.width = percent + '%';
     if (overlayTimeCurrent) overlayTimeCurrent.textContent = cur;
@@ -1053,9 +1111,15 @@ u(document).on('DOMContentLoaded', async function () {
   function applyRepeatMode(mode) {
     repeatMode = mode;
     audio.loop = (mode === 'one');
-    btnRepeat?.classList.toggle('active', mode !== 'off');
+    const isActive = mode !== 'off';
+    btnRepeat?.classList.toggle('active', isActive);
     const titles = { off: 'Repetir', one: 'Repetir faixa', all: 'Repetir álbum' };
-    if (btnRepeat) btnRepeat.title = titles[mode];
+    const labels = { off: 'Repetir: desativado', one: 'Repetir faixa: ativado', all: 'Repetir álbum: ativado' };
+    if (btnRepeat) {
+      btnRepeat.title = titles[mode];
+      btnRepeat.setAttribute('aria-label', labels[mode]);
+      btnRepeat.setAttribute('aria-pressed', String(isActive));
+    }
     localStorage.setItem('uqt-repeat', mode);
   }
 
@@ -1063,6 +1127,14 @@ u(document).on('DOMContentLoaded', async function () {
     shuffleOn = val;
     btnShuffle?.classList.toggle('active', shuffleOn);
     btnShuffleMobile?.classList.toggle('active', shuffleOn);
+    if (btnShuffle) {
+      btnShuffle.setAttribute('aria-pressed', String(shuffleOn));
+      btnShuffle.setAttribute('aria-label', shuffleOn ? 'Modo aleatório: ativado' : 'Modo aleatório: desativado');
+    }
+    if (btnShuffleMobile) {
+      btnShuffleMobile.setAttribute('aria-pressed', String(shuffleOn));
+      btnShuffleMobile.setAttribute('aria-label', shuffleOn ? 'Modo aleatório: ativado' : 'Modo aleatório: desativado');
+    }
     localStorage.setItem('uqt-shuffle', shuffleOn);
   }
 
