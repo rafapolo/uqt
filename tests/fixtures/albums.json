@@ -1,0 +1,114 @@
+{
+  "albums": [
+    {
+      "title": "Construção",
+      "artist": "Chico Buarque",
+      "year": 1971,
+      "path": "1971 - Chico Buarque - Construção",
+      "has_cover": true,
+      "tracks": [
+        { "title": "Construção", "num": 1, "file": "01 Construção.mp3", "duration": 345 },
+        { "title": "Deus lhe Pague", "num": 2, "file": "02 Deus lhe Pague.mp3", "duration": 178 },
+        { "title": "Samba de Orly", "num": 3, "file": "03 Samba de Orly.mp3", "duration": 210 }
+      ]
+    },
+    {
+      "title": "Clube da Esquina",
+      "artist": "Milton Nascimento & Lô Borges",
+      "year": 1972,
+      "path": "1972 - Milton Nascimento - Clube da Esquina",
+      "has_cover": true,
+      "tracks": [
+        { "title": "Tudo que Você Podia Ser", "num": 1, "file": "01 Tudo que Você Podia Ser.mp3", "duration": 280 },
+        { "title": "Cais", "num": 2, "file": "02 Cais.mp3", "duration": 195 }
+      ]
+    },
+    {
+      "title": "Caetano Veloso",
+      "artist": "Caetano Veloso",
+      "year": 1968,
+      "path": "1968 - Caetano Veloso - Caetano Veloso",
+      "has_cover": false,
+      "tracks": [
+        { "title": "Alegria, Alegria", "num": 1, "file": "01 Alegria, Alegria.mp3", "duration": 165 },
+        { "title": "Tropicália", "num": 2, "file": "02 Tropicália.mp3", "duration": 200 }
+      ]
+    },
+    {
+      "title": "Getz/Gilberto",
+      "artist": "Stan Getz & João Gilberto",
+      "year": 1964,
+      "path": "1964 - Stan Getz - Getz Gilberto",
+      "has_cover": true,
+      "tracks": [
+        { "title": "The Girl from Ipanema", "num": 1, "file": "01 The Girl from Ipanema.mp3", "duration": 310, "artists": "Astrud Gilberto & Stan Getz" },
+        { "title": "Corcovado", "num": 2, "file": "02 Corcovado.mp3", "duration": 225, "artists": "João Gilberto" }
+      ]
+    },
+    {
+      "title": "Elis & Tom",
+      "artist": "Elis Regina & Tom Jobim",
+      "year": 1974,
+      "path": "1974 - Elis Regina - Elis & Tom",
+      "has_cover": true,
+      "tracks": [
+        { "title": "Águas de Março", "num": 1, "file": "01 Águas de Março.mp3", "duration": 210 },
+        { "title": "Boto", "num": 2, "file": "02 Boto.mp3", "duration": 185 },
+        { "title": "Só Tinha de Ser com Você", "num": 3, "file": "03 Só Tinha de Ser com Você.mp3", "duration": 168 }
+      ]
+    },
+    {
+      "title": "Songbook - Chico Buarque Vol. 1",
+      "artist": "Various Artists",
+      "year": 1994,
+      "path": "1994 - Various Artists - Songbook Chico Vol 1",
+      "has_cover": true,
+      "tracks": [
+        { "title": "A Banda", "num": 1, "file": "01 A Banda.mp3", "duration": 140, "artists": "Caetano Veloso" },
+        { "title": "Carolina", "num": 2, "file": "02 Carolina.mp3", "duration": 155, "artists": "Gal Costa" }
+      ]
+    },
+    {
+      "title": "Falso Brilhante",
+      "artist": "Elis Regina",
+      "year": 1976,
+      "path": "1976 - Elis Regina - Falso Brilhante",
+      "has_cover": true,
+      "tracks": [
+        { "title": "Como Nossos Pais", "num": 1, "file": "01 Como Nossos Pais.mp3", "duration": 234 },
+        { "title": "O Bêbado e a Equilibrista", "num": 2, "file": "02 O Bêbado e a Equilibrista.mp3", "duration": 198 }
+      ]
+    },
+    {
+      "title": "Saudade do Nordeste",
+      "artist": "Luiz Gonzaga",
+      "year": 1957,
+      "path": "1957 - Luiz Gonzaga - Saudade do Nordeste",
+      "has_cover": true,
+      "tracks": [
+        { "title": "Asa Branca", "num": 1, "file": "01 Asa Branca.mp3", "duration": 175 },
+        { "title": "Baião", "num": 2, "file": "02 Baião.mp3", "duration": 160 }
+      ]
+    },
+    {
+      "title": "Acervo Raro",
+      "artist": "Pixinguinha",
+      "year": 1930,
+      "path": "1930 - Pixinguinha - Acervo Raro",
+      "has_cover": false,
+      "tracks": [
+        { "title": "Carinhoso", "num": 1, "file": "01 Carinhoso.mp3", "duration": 190 }
+      ]
+    },
+    {
+      "title": "Sem Data",
+      "artist": "Artista Desconhecido",
+      "year": 0,
+      "path": "0000 - Artista Desconhecido - Sem Data",
+      "has_cover": false,
+      "tracks": [
+        { "title": "Faixa Sem Data", "num": 1, "file": "01 Faixa Sem Data.mp3", "duration": 120 }
+      ]
+    }
+  ]
+}
