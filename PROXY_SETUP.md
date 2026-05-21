@@ -11,7 +11,7 @@
 | `proxy.js` | Listens on `:9001`. Uses the AWS SDK (`@aws-sdk/client-s3`) with path-style addressing to fetch objects from `$S3_BUCKET`. Sets per-extension `Content-Type`, CORS headers, `Cache-Control: public, max-age=31536000`, and forwards `Range`/`Content-Range` for seeking. Exposes `GET /health`. |
 | `Dockerfile` | `node:18-alpine`, non-root `nodejs` user, `EXPOSE 9001`, container healthcheck hitting `/health`. |
 | `haloy.yaml` | Targets haloy server `haloy.ミ.xyz`, deploys to domain `uqt.ミ.xyz`, port `9001`, health check `/health`. Injects `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` from the environment. |
-| `js/uqt.js` | `BASE_URL = 'https://uqt.ミ.xyz/uqt'` (`js/uqt.js:26`). All track and cover URLs are built from this. |
+| `js/ui.js` | `BASE_URL = 'https://uqt.ミ.xyz/uqt'` (`js/ui.js:26`). All track and cover URLs are built from this. |
 
 A request to `https://uqt.ミ.xyz/uqt/<album>/<file>` maps to S3 object `$S3_BUCKET/uqt/<album>/<file>`.
 
@@ -73,7 +73,7 @@ It reads credentials from a local `.env` file and mirrors from the source path d
 - **`/health` returns 200 but object requests 5xx** — container is running without AWS credentials. Re-export `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` and redeploy.
 - **Browser logs CORB or MIME errors** — the extension isn't in the `mimeFor()` map in `proxy.js` (it falls back to `application/octet-stream`). Add it and redeploy.
 - **404 on an audio or cover URL** — file hasn't been synced yet. Check `$S3_BUCKET/uqt/<album.path>/<file>` exists; run `sync-to-bucket.js`.
-- **URLs show `%2520`** — something is double-encoding. `js/uqt.js` should call `encodeURI()` exactly once around the album path and filename (see commit `77f4c03`).
+- **URLs show `%2520`** — something is double-encoding. `js/ui.js` should call `encodeURI()` exactly once around the album path and filename (see commit `77f4c03`).
 - **haloy deploy fails** — confirm `HALOY_API_TOKEN` is set and valid; `haloy status` will surface auth issues.
 
 ## Performance Notes

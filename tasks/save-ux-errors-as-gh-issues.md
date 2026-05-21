@@ -141,9 +141,9 @@ Insert between the `OPTIONS` block (ends line 81) and the method guard (line 83)
 
 ---
 
-## Step 4 — `js/uqt.js`
+## Step 4 — `js/ui.js`
 
-File: `/Users/polux/Projetos/uqt/js/uqt.js`
+File: `/Users/polux/Projetos/uqt/js/ui.js`
 
 ### 4a. Prepend error reporting block (before line 1 `// State`)
 ```js

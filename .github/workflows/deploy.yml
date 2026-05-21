@@ -38,7 +38,7 @@ jobs:
       - name: Minify
         run: |
           mkdir -p dist/js dist/assets
-          bunx esbuild js/uqt.js  --bundle=false --minify --outfile=dist/js/uqt.js
+          bunx esbuild js/ui.js  --bundle=false --minify --outfile=dist/js/ui.js
           bunx esbuild assets/uqt.css --bundle=false --minify --outfile=dist/assets/uqt.css
           cp index.html dist/
           cp 3d.html dist/

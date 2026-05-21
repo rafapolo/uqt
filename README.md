@@ -5,9 +5,9 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ## 📊 Números
 
 ### Catálogo publicado
-- **2.303 álbuns** indexados
-- **28.742 faixas** indexadas
-- **816 artistas**
+- **2.155 álbuns** indexados
+- **26.808 faixas** indexadas
+- **855 artistas**
 - **~100 anos** de MPB (1902–2012)
 - **Período**: Samba, choro, bossa nova, MPB clássica e contemporânea
 - **1.658 horas** de música
@@ -17,7 +17,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ### 🎨 Interface Spotify-Style Grid
 - **Grid de álbuns central**: Grade responsiva de capas com rolagem virtual — apenas ~30 cards no DOM independente do tamanho da biblioteca
 - **Painel de faixas lateral**: Clique em um álbum para exibir capa grande, info e lista de faixas
-- **Capas lazy-loaded**: 2.143 capas em `capa-min.jpg` (200px, ~10KB) carregadas sob demanda — sem impacto no carregamento inicial
+- **Capas lazy-loaded**: 2.132 capas em `capa-min.jpg` (200px, ~10KB) carregadas sob demanda — sem impacto no carregamento inicial
 - **Player compacto**: Barra sticky no rodapé com controles de play/pausa/próxima, progresso e stats da biblioteca
 
 ### 🔍 Busca e Filtros Inteligentes
@@ -27,7 +27,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Contagem de resultados**: Exibe quantos álbuns correspondem ao filtro ativo
 - **Filtro por década**: Botões compactos (Todos | <1940 | 1950 … 2010) — clique para explorar épocas; linha única com scroll horizontal no mobile
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
-- **Metadados precisos**: Carregados de `js/uqt-albums.json.gz` (693 KB, assíncrono) com contagem exata de artistas e álbuns
+- **Metadados precisos**: Carregados de `js/uqt-albums.json.gz` (707 KB, assíncrono) com contagem exata de artistas e álbuns
 
 ### 📱 Totalmente Responsivo
 - **Desktop**: Layout lado-a-lado (grid de álbuns + painel de faixas lateral com auto-scroll para a faixa tocando)
@@ -49,7 +49,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ### Arquitetura
 - **Frontend**: HTML5 + CSS3 + JavaScript vanilla, servido pelo GitHub Pages (`assets/uqt.css`, `assets/capa.jpg`)
 - **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
-- **Rolagem virtual**: `VirtualGrid` em `js/uqt.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
+- **Rolagem virtual**: `VirtualGrid` em `js/ui.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
 - **Servidor de mídia**: Node.js com o SDK S3 — acessa o armazenamento privado via credenciais; os arquivos nunca são expostos diretamente ao cliente
 - **Deployment**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
@@ -58,7 +58,7 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 
 ### Fluxo de uma requisição
 1. Browser carrega `index.html` do GitHub Pages (sem bloqueio — `uqt-albums.js` não é mais um script tag)
-2. `uqt.js` faz `fetch('js/uqt-albums.json.gz')`, descomprime com pako e renderiza o grid
+2. `ui.js` faz `fetch('js/uqt-albums.json.gz')`, descomprime com pako e renderiza o grid
 3. Ao clicar em um álbum, constrói a URL `https://uqt.ミ.xyz/uqt/{path}/{file}`
 4. Servidor de mídia recebe a requisição e busca o arquivo no armazenamento privado
 5. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
@@ -79,9 +79,9 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 ## 🎯 Otimizações de Performance
 
 ### Carregamento de dados
-- **Gzip assíncrono**: `js/uqt-albums.json.gz` (693 KB) carregado via `fetch` + `DecompressionStream` nativa — elimina 4.8 MB de JS bloqueante no parse inicial
+- **Gzip assíncrono**: `js/uqt-albums.json.gz` (707 KB) carregado via `fetch` + `DecompressionStream` nativa — elimina 4.8 MB de JS bloqueante no parse inicial
 - **Virtual scrolling**: `VirtualGrid` renderiza ~30 cards em posicionamento absoluto; scroll event passivo + ResizeObserver — DOM nunca passa de ~100 nós
-- **Event delegation**: 3 listeners delegados substituem 2.164+ listeners individuais por álbum
+- **Event delegation**: 3 listeners delegados substituem 2.155+ listeners individuais por álbum
 - **Track list diffing**: `renderTrackList()` detecta se o álbum já está renderizado — ao trocar faixa no mesmo álbum, só atualiza `.playing` sem reconstruir o DOM (React-style reconciliation)
 
 ### Streaming e Deployment

@@ -10,9 +10,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Frontend
 - **index.html** — Main web app
-- **js/uqt.js** — Core app logic: virtual grid, album/track rendering, playback control, search/filtering
+- **js/ui.js** — Core app logic: virtual grid, album/track rendering, playback control, search/filtering
 - **js/uqt-albums.js** — Metadata database (album-centric: title, artist, year, path, tracks)
-- **js/uqt-albums.json.gz** — Gzipped JSON loaded async by uqt.js via pako (replaces blocking script tag)
+- **js/uqt-albums.json.gz** — Gzipped JSON loaded async by ui.js via pako (replaces blocking script tag)
 - **assets/uqt.css** — Styling
 - **assets/capa.jpg** — Default/placeholder cover image (400x400)
 
@@ -38,7 +38,7 @@ The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses wit
 
 ## Key Technical Notes
 
-- **URL Encoding**: Album paths and filenames are encoded with `encodeURI()` in `buildAlbums()` in js/uqt.js when constructing `track.file` and `album.cover`. The proxy forwards encoded paths as-is to S3. S3 stores files with literal spaces (no %20).
+- **URL Encoding**: Album paths and filenames are encoded with `encodeURI()` in `buildAlbums()` in js/ui.js when constructing `track.file` and `album.cover`. The proxy forwards encoded paths as-is to S3. S3 stores files with literal spaces (no %20).
 - **Cover images**: Served as `capa-min.jpg` (200px wide, ~10KB) resized from original `capa.jpg` via `script/resize-cover-images.js`. All img elements use `loading="lazy"`. SVG placeholder shown when cover missing.
 - **Album selection**: Clicking an album primes the first track (sets `audio.src`, calls `audio.load()`, updates player UI) without auto-playing. Play button starts audio.
 - **CORS**: The proxy adds CORS headers to all responses; app runs cross-origin from haloy.
