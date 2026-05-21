@@ -578,9 +578,7 @@ function safePlay(audio) {
   const p = audio.play();
   if (p?.catch) p.catch(err => {
     if (err.name === 'NotAllowedError') {
-      const resume = () => { audio.play().catch(() => {}); document.removeEventListener('click', resume); document.removeEventListener('keydown', resume); };
-      document.addEventListener('click', resume, { once: true });
-      document.addEventListener('keydown', resume, { once: true });
+      document.getElementById('btn-play')?.classList.add('autoplay-blocked');
     } else if (err.name !== 'AbortError') {
       console.error('audio.play() failed:', err);
     }
@@ -898,7 +896,7 @@ u(document).on('DOMContentLoaded', async function () {
     overlayBtnPlay?.classList.toggle('loading', on);
   };
 
-  audio.addEventListener('play',     () => { u('#btn-play').addClass('playing');    overlayBtnPlay?.classList.add('playing'); });
+  audio.addEventListener('play',     () => { u('#btn-play').addClass('playing');    overlayBtnPlay?.classList.add('playing'); document.getElementById('btn-play')?.classList.remove('autoplay-blocked'); });
   audio.addEventListener('pause',    () => { u('#btn-play').removeClass('playing'); overlayBtnPlay?.classList.remove('playing'); });
   audio.addEventListener('waiting',  () => setLoading(true));
   audio.addEventListener('stalled',  () => setLoading(true));

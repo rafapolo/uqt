@@ -775,6 +775,13 @@ body {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+.btn-play.autoplay-blocked {
+  animation: autoplay-pulse 1s ease-in-out infinite;
+}
+@keyframes autoplay-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 165, 116, 0.6); }
+  50%       { box-shadow: 0 0 0 6px rgba(212, 165, 116, 0); }
+}
 
 @keyframes marquee-scroll {
   0%   { transform: translateX(0); }
