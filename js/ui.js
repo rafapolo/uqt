@@ -12,6 +12,10 @@ let repeatMode = 'off'; // 'off' | 'one' | 'all'
 let renderedAlbum = null;
 const durationCache = new Map();
 let _toastEl = null, _countEl = null, _clearBtn = null, _emptyState = null;
+// Cached DOM references for hot-path elements (set once after DOMContentLoaded)
+let _btnPlay = null, _mobileDrawer = null, _drawerCover = null, _overlayTrackTitle = null;
+let _playerTitleEl = null, _volumeWave = null, _searchInput = null, _overlayCover = null;
+let _overlayTrackArtist = null;
 
 const BASE_URL = 'https://uqt.xn--2dk.xyz/uqt';
 const failedCovers = new Set();
@@ -33,8 +37,7 @@ function attachArtistHandlers(container) {
     el.addEventListener('click', e => {
       e.stopPropagation();
       const name = el.dataset.artist;
-      const input = u('#search-input').first();
-      input.value = name;
+      if (_searchInput) { _searchInput.value = name; }
       searchQuery = name;
       activeDecade = null;
       document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
@@ -42,7 +45,7 @@ function attachArtistHandlers(container) {
       filterAlbums();
       updateQueryInUrl(name, true);
       closeMobileDrawer();
-      input.focus();
+      _searchInput?.focus();
     });
   });
 }
@@ -183,9 +186,9 @@ function isMobile() {
   return window.matchMedia('(max-width: 768px)').matches;
 }
 
-function openMobileDrawer()   { document.getElementById('mobile-track-drawer')?.classList.add('open'); }
-function closeMobileDrawer()  { document.getElementById('mobile-track-drawer')?.classList.remove('open'); }
-function toggleMobileDrawer() { document.getElementById('mobile-track-drawer')?.classList.toggle('open'); }
+function openMobileDrawer()   { (_mobileDrawer ??= document.getElementById('mobile-track-drawer'))?.classList.add('open'); }
+function closeMobileDrawer()  { (_mobileDrawer ??= document.getElementById('mobile-track-drawer'))?.classList.remove('open'); }
+function toggleMobileDrawer() { (_mobileDrawer ??= document.getElementById('mobile-track-drawer'))?.classList.toggle('open'); }
 
 // ── Virtual Grid ──────────────────────────────────────────────────────────
 // Renders only visible album cards; ~30 DOM nodes instead of 2,164.
@@ -441,7 +444,7 @@ function renderDecadeButtons() {
     activeDecade = null;
     activeYear = 0; updateYearInUrl(0);
     searchQuery = '';
-    u('#search-input').first().value = '';
+    if (_searchInput) _searchInput.value = '';
     filterAlbums();
     container.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
     todosBtn.classList.add('active');
@@ -469,7 +472,7 @@ function renderDecadeButtons() {
     activeDecade = 'pre1940';
     activeYear = 0; updateYearInUrl(0);
     searchQuery = '';
-    u('#search-input').first().value = '';
+    if (_searchInput) _searchInput.value = '';
     filterAlbums();
     container.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
     pre1940Btn.classList.add('active');
@@ -486,7 +489,7 @@ function renderDecadeButtons() {
       activeDecade = parseInt(btn.dataset.decade);
       activeYear = 0; updateYearInUrl(0);
       searchQuery = '';
-      u('#search-input').first().value = '';
+      if (_searchInput) _searchInput.value = '';
       filterAlbums();
       container.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
@@ -504,7 +507,7 @@ function renderDecadeButtons() {
       activeDecade = 'noyear';
       activeYear = 0; updateYearInUrl(0);
       searchQuery = '';
-      u('#search-input').first().value = '';
+      if (_searchInput) _searchInput.value = '';
       filterAlbums();
       container.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
       infBtn.classList.add('active');
@@ -539,7 +542,7 @@ function renderAlbumHeader() {
     activeYear = selectedAlbum.year;
     searchQuery = '';
     activeDecade = null;
-    u('#search-input').first().value = '';
+    if (_searchInput) _searchInput.value = '';
     document.querySelectorAll('.decade-btn').forEach(b => b.classList.remove('active'));
     document.querySelector('.decade-btn[data-decade="all"]')?.classList.add('active');
     updateYearInUrl(activeYear);
@@ -616,7 +619,7 @@ function safePlay(audio) {
   const p = audio.play();
   if (p?.catch) p.catch(err => {
     if (err.name === 'NotAllowedError') {
-      document.getElementById('btn-play')?.classList.add('autoplay-blocked');
+      (_btnPlay ??= document.getElementById('btn-play'))?.classList.add('autoplay-blocked');
     } else if (err.name !== 'AbortError') {
       console.error('audio.play() failed:', err);
     }
@@ -639,7 +642,8 @@ function playTrack(track) {
 function renderMobileDrawer(album) {
   const titleEl = document.getElementById('drawer-album-title');
   const metaEl  = document.getElementById('drawer-album-meta');
-  const coverEl = document.getElementById('drawer-cover');
+  _drawerCover ??= document.getElementById('drawer-cover');
+  const coverEl = _drawerCover;
   const listEl  = document.getElementById('drawer-track-list');
 
   if (!album) {
@@ -697,15 +701,15 @@ function updateNowPlaying() {
   const coverUrl = `${BASE_URL}/${folder}/capa-min.jpg`;
   const coverImg = u('#player-cover').first();
   if (coverImg) { coverImg.loading = 'lazy'; loadCoverImage(coverImg, coverUrl); }
-  const drawerCover = document.getElementById('drawer-cover');
-  if (drawerCover) loadCoverImage(drawerCover, coverUrl);
+  _drawerCover ??= document.getElementById('drawer-cover');
+  if (_drawerCover) loadCoverImage(_drawerCover, coverUrl);
   // Overlay
-  const overlayCover = document.getElementById('overlay-cover');
-  if (overlayCover) loadCoverImage(overlayCover, coverUrl);
-  const overlayTitle = document.getElementById('overlay-track-title');
-  if (overlayTitle) overlayTitle.textContent = currentTrack.title;
-  const overlayArtist = document.getElementById('overlay-track-artist');
-  if (overlayArtist) overlayArtist.textContent = currentTrack.artists;
+  _overlayCover ??= document.getElementById('overlay-cover');
+  if (_overlayCover) loadCoverImage(_overlayCover, coverUrl);
+  _overlayTrackTitle ??= document.getElementById('overlay-track-title');
+  if (_overlayTrackTitle) _overlayTrackTitle.textContent = currentTrack.title;
+  _overlayTrackArtist ??= document.getElementById('overlay-track-artist');
+  if (_overlayTrackArtist) _overlayTrackArtist.textContent = currentTrack.artists;
 
   // Media Session
   if ('mediaSession' in navigator) {
@@ -717,16 +721,31 @@ function updateNowPlaying() {
     });
   }
 
-  checkMarquee(document.getElementById('player-title'));
-  checkMarquee(document.getElementById('overlay-track-title'));
+  _playerTitleEl ??= document.getElementById('player-title');
+  checkMarquee(_playerTitleEl);
+  _overlayTrackTitle ??= document.getElementById('overlay-track-title');
+  checkMarquee(_overlayTrackTitle);
 }
 
 function playNext() {
   if (shuffleOn) {
     if (!albums.length) return;
-    const pool = albums.flatMap(a => a.tracks.map(t => ({ track: t, album: a }))).filter(({ track }) => track !== currentTrack);
-    if (!pool.length) return;
-    const { track, album: nextAlbum } = pool[Math.floor(Math.random() * pool.length)];
+    // Avoid flatMap allocation: pick a random album (weighted by track count), then a random track.
+    // Falls back to retry if the single track selected is currentTrack (rare; at most 1 retry).
+    let nextAlbum, track;
+    const totalTracks = albums.reduce((s, a) => s + a.tracks.length, 0);
+    if (totalTracks <= 1) return;
+    let attempts = 0;
+    do {
+      let r = Math.floor(Math.random() * totalTracks);
+      for (let ai = 0; ai < albums.length; ai++) {
+        const tlen = albums[ai].tracks.length;
+        if (r < tlen) { nextAlbum = albums[ai]; track = albums[ai].tracks[r]; break; }
+        r -= tlen;
+      }
+      attempts++;
+    } while (track === currentTrack && attempts < 3);
+    if (track === currentTrack) return;
     if (nextAlbum !== selectedAlbum) {
       selectedAlbum = nextAlbum;
       renderedAlbum = null;
@@ -742,7 +761,7 @@ function playNext() {
   }
   if (!selectedAlbum || !currentTrack) return;
   const tracks = selectedAlbum.tracks;
-  const idx = tracks.findIndex(t => t.num === currentTrack.num);
+  const idx = tracks.indexOf(currentTrack);
   if (idx < tracks.length - 1) {
     playTrack(tracks[idx + 1]);
   } else if (repeatMode === 'all') {
@@ -752,7 +771,7 @@ function playNext() {
 
 function playPrevious() {
   if (!selectedAlbum || !currentTrack) return;
-  const idx = selectedAlbum.tracks.findIndex(t => t.num === currentTrack.num);
+  const idx = selectedAlbum.tracks.indexOf(currentTrack);
   if (idx > 0) playTrack(selectedAlbum.tracks[idx - 1]);
 }
 
@@ -800,8 +819,7 @@ u(document).on('DOMContentLoaded', async function () {
     if (q !== searchQuery || yr !== activeYear) {
       searchQuery = q;
       activeYear = yr;
-      const input = document.getElementById('search-input');
-      if (input) input.value = q;
+      if (_searchInput) _searchInput.value = q;
       filterAlbums();
     }
     const path = e.state?.album ?? new URLSearchParams(window.location.search).get('album');
@@ -857,6 +875,17 @@ u(document).on('DOMContentLoaded', async function () {
   db = JSON.parse(json);
   skeletonEl.remove();
 
+  // Cache hot-path DOM elements once at init time
+  _btnPlay = document.getElementById('btn-play');
+  _mobileDrawer = document.getElementById('mobile-track-drawer');
+  _volumeWave = document.getElementById('volume-wave');
+  _searchInput = document.getElementById('search-input');
+  _playerTitleEl = document.getElementById('player-title');
+  _overlayTrackTitle = document.getElementById('overlay-track-title');
+  _overlayTrackArtist = document.getElementById('overlay-track-artist');
+  _overlayCover = document.getElementById('overlay-cover');
+  _drawerCover = document.getElementById('drawer-cover');
+
   buildAlbums();
   filteredAlbums = [...albums];
   renderDecadeButtons();
@@ -867,8 +896,7 @@ u(document).on('DOMContentLoaded', async function () {
   const initialQuery = getQueryFromUrl();
   if (initialQuery) {
     searchQuery = initialQuery;
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) searchInput.value = initialQuery;
+    if (_searchInput) _searchInput.value = initialQuery;
     filterAlbums();
   }
   const initialYear = getYearFromUrl();
@@ -930,11 +958,11 @@ u(document).on('DOMContentLoaded', async function () {
 
   const overlayBtnPlay = document.getElementById('overlay-btn-play');
   const setLoading = on => {
-    document.getElementById('btn-play')?.classList.toggle('loading', on);
+    _btnPlay?.classList.toggle('loading', on);
     overlayBtnPlay?.classList.toggle('loading', on);
   };
 
-  audio.addEventListener('play',     () => { u('#btn-play').addClass('playing');    overlayBtnPlay?.classList.add('playing'); document.getElementById('btn-play')?.classList.remove('autoplay-blocked'); });
+  audio.addEventListener('play',     () => { u('#btn-play').addClass('playing');    overlayBtnPlay?.classList.add('playing'); _btnPlay?.classList.remove('autoplay-blocked'); });
   audio.addEventListener('pause',    () => { u('#btn-play').removeClass('playing'); overlayBtnPlay?.classList.remove('playing'); });
   audio.addEventListener('waiting',  () => setLoading(true));
   audio.addEventListener('stalled',  () => setLoading(true));
@@ -1029,7 +1057,7 @@ u(document).on('DOMContentLoaded', async function () {
   document.getElementById('overlay-close')?.addEventListener('click', () => overlay?.classList.remove('open'));
   document.getElementById('overlay-btn-prev')?.addEventListener('click', playPrevious);
   document.getElementById('overlay-btn-next')?.addEventListener('click', playNext);
-  overlayBtnPlay?.addEventListener('click', () => document.getElementById('btn-play').click());
+  overlayBtnPlay?.addEventListener('click', () => _btnPlay?.click());
 
   // Media Session action handlers
   if ('mediaSession' in navigator) {
@@ -1072,7 +1100,7 @@ u(document).on('DOMContentLoaded', async function () {
   const savedVolume = parseFloat(localStorage.getItem('uqt-volume') ?? '1');
   if (volumeSlider) volumeSlider.value = savedVolume;
   audio.volume = savedVolume;
-  if (savedVolume === 0) document.getElementById('volume-wave').style.display = 'none';
+  if (savedVolume === 0 && _volumeWave) _volumeWave.style.display = 'none';
 
   btnShuffle?.addEventListener('click', () => applyShuffle(!shuffleOn));
   btnShuffleMobile?.addEventListener('click', () => applyShuffle(!shuffleOn));
@@ -1084,7 +1112,7 @@ u(document).on('DOMContentLoaded', async function () {
   volumeSlider?.addEventListener('input', () => {
     const vol = parseFloat(volumeSlider.value);
     audio.volume = vol;
-    document.getElementById('volume-wave').style.display = vol === 0 ? 'none' : '';
+    if (_volumeWave) _volumeWave.style.display = vol === 0 ? 'none' : '';
     localStorage.setItem('uqt-volume', vol);
   });
 
@@ -1101,11 +1129,10 @@ u(document).on('DOMContentLoaded', async function () {
     bar.addEventListener('touchmove',  e => { e.preventDefault(); seekFromClient(e.touches[0].clientX, bar); }, { passive: false });
   });
 
-  const playerTitleEl = document.getElementById('player-title');
-  if (playerTitleEl && window.ResizeObserver) {
+  if (_playerTitleEl && window.ResizeObserver) {
     new ResizeObserver(() => {
-      if (currentTrack) checkMarquee(playerTitleEl);
-    }).observe(playerTitleEl.closest('.player-info'));
+      if (currentTrack) checkMarquee(_playerTitleEl);
+    }).observe(_playerTitleEl.closest('.player-info'));
   }
 
   let searchDebounce;
@@ -1124,10 +1151,10 @@ u(document).on('DOMContentLoaded', async function () {
   const clearSearch = () => {
     searchQuery = '';
     activeYear = 0; updateYearInUrl(0);
-    u('#search-input').first().value = '';
+    if (_searchInput) { _searchInput.value = ''; }
     filterAlbums();
     updateQueryInUrl('', false);
-    u('#search-input').first().focus();
+    _searchInput?.focus();
   };
   document.getElementById('search-clear')?.addEventListener('click', clearSearch);
   document.getElementById('empty-clear-btn')?.addEventListener('click', clearSearch);
@@ -1137,7 +1164,7 @@ u(document).on('DOMContentLoaded', async function () {
     switch (e.key) {
       case ' ':
         e.preventDefault();
-        document.getElementById('btn-play').click();
+        _btnPlay?.click();
         break;
       case 'ArrowRight':
         e.preventDefault();
@@ -1155,7 +1182,7 @@ u(document).on('DOMContentLoaded', async function () {
         break;
       case '/':
         e.preventDefault();
-        u('#search-input').first().focus();
+        _searchInput?.focus();
         break;
     }
   });
