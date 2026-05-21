@@ -3,15 +3,14 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy package files if they exist
+# Copy package files for reproducible install
 COPY package*.json ./
 
-# Install dependencies (or skip if no package.json)
-RUN if [ -f package.json ]; then npm install --production && npm cache clean --force; else echo "No package.json found"; fi
+# Install only production dependencies, reproducibly
+RUN npm ci --omit=dev && npm cache clean --force
 
-# Copy application code
+# Copy application code (proxy only — no js/, assets/, or scripts needed at runtime)
 COPY proxy.js .
-COPY js/ ./js/
 
 # Create non-root user for security
 RUN addgroup -g 1001 -S nodejs && adduser -S nodejs -u 1001
