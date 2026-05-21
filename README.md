@@ -29,6 +29,13 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Filtros combinados**: Use busca + década juntos para encontrar exatamente o que procura
 - **Metadados precisos**: Carregados de `js/uqt-albums.json.gz` (707 KB, assíncrono) com contagem exata de artistas e álbuns
 
+### ♿ Acessibilidade
+- **Navegação por teclado**: todos os elementos interativos (álbuns, faixas, links de artista/ano, controles do player) alcançáveis via Tab e ativáveis com Enter/Espaço
+- **Leitor de tela**: `aria-label` em todos os botões de ícone; `aria-pressed` em shuffle e repeat; `aria-expanded` no drawer de faixas; `role="slider"` com `aria-valuenow` atualizado em tempo real na barra de progresso
+- **Anúncio automático de faixa**: região `aria-live="polite"` anuncia "Reproduzindo: [faixa] — [artista]" a cada troca sem que o usuário precise navegar
+- **HTML semântico**: filtro de décadas como `<nav>`, grid de álbuns com `role="list"`, campo de busca com `<label>` visualmente oculto
+- **Focus-visible**: estilo de foco explícito em todos os elementos interativos — distinguível do foco por mouse
+
 ### 📱 Totalmente Responsivo
 - **Desktop**: Layout lado-a-lado (grid de álbuns + painel de faixas lateral com auto-scroll para a faixa tocando)
 - **Mobile**: Grid de álbuns em tela cheia; painel de faixas como drawer deslizante no player (☰ à direita); shuffle (à esquerda) e controles centrais na barra do player; header compacto com stats visíveis
@@ -84,11 +91,19 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Event delegation**: 3 listeners delegados substituem 2.155+ listeners individuais por álbum
 - **Track list diffing**: `renderTrackList()` detecta se o álbum já está renderizado — ao trocar faixa no mesmo álbum, só atualiza `.playing` sem reconstruir o DOM (React-style reconciliation)
 
+### DOM e JavaScript
+- **Refs em módulo**: 9 elementos hot-path (`btn-play`, `mobile-track-drawer`, `drawer-cover`, `overlay-cover`, `player-title`, `search-input` etc.) inicializados uma vez no `DOMContentLoaded` — `updateNowPlaying()` e `setLoading()`, chamados a cada faixa, fazem zero `getElementById`
+- **Shuffle O(1) sem alocação**: o shuffle antigo fazia `albums.flatMap(a => a.tracks.map(...)).filter(...)` a cada "próxima aleatória" — criava ~2.000 objetos temporários e depois descartava tudo. Substituído por caminhada aleatória ponderada por peso de faixas: escolhe álbum em O(nAlbums), faixa em O(1), zero alocações
+- **indexOf vs findIndex**: `tracks.findIndex(t => t.num === currentTrack.num)` (closure + comparação por valor) → `tracks.indexOf(currentTrack)` (comparação por identidade, sem closure)
+- **CSS deduplicado**: blocos `@media (max-width: 768px)` e `(max-width: 480px)` que estavam fragmentados em múltiplos lugares no arquivo merged em bloco único; mesma coisa para `.mobile-track-drawer.open` e `.player-controls`
+
 ### Streaming e Deployment
 - **Servidor de mídia**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — armazenamento privado, `Range` suportado para seek/streaming
 - **Capas**: `capa-min.jpg` (200px wide, 80% quality) — 159 MB → 21.8 MB vs originais; geradas por `script/resize-cover-images.js` com upload direto via AWS SDK
 - **Lazy loading**: `loading="lazy"` em todas as capas — zero impacto no carregamento inicial
+- **Cache-Control em camadas**: capas recebem `public, max-age=31536000, immutable` (browser nunca re-valida após o primeiro download); áudio recebe cache longo sem `immutable`; catálogo JSON tem TTL de 1h — cada tipo com a política adequada ao seu ciclo de vida
 - **Deployment**: Haloy + Docker, rolling updates sem downtime
+- **Docker enxuto**: `sharp`, `@aws-sdk/lib-storage` e `fast-xml-parser` são usados apenas pelos scripts de manutenção (`script/`) — movidos para `devDependencies`; a imagem de produção instala só o que o proxy precisa (`npm ci --omit=dev`), economizando ~120–150 MB por deploy
 - **SSL/TLS**: Let's Encrypt automático (Haloy)
 - **Health check**: `/health` retorna `{status, timestamp}`
 - **Zero egress**: proxy e bucket na mesma zona de hospedagem
