@@ -50,7 +50,7 @@ body {
 
 /* Header */
 .app-header {
-  background: linear-gradient(135deg, #1a1814 0%, #252019 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, #252019 100%);
   border-bottom: 2px solid var(--color-accent);
   padding: var(--spacing-sm) var(--spacing-md);
   flex-shrink: 0;
@@ -509,18 +509,12 @@ body {
   margin-bottom: 2px;
 }
 
-.year-link {
-  cursor: pointer;
-}
-.year-link:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
-}
-
+.year-link,
 .artist-link {
   cursor: pointer;
 }
 
+.year-link:hover,
 .artist-link:hover {
   color: var(--color-accent);
   text-decoration: underline;
@@ -1114,6 +1108,11 @@ audio {
 
   .player-controls {
     justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    align-items: center;
+    min-width: 0;
   }
 
   .player-cover {
@@ -1128,14 +1127,6 @@ audio {
 
   .player-info p {
     font-size: 0.7rem;
-  }
-
-  .player-controls {
-    flex-direction: column;
-    gap: 2px;
-    width: 100%;
-    align-items: center;
-    min-width: 0;
   }
 
   .controls-buttons {
@@ -1227,9 +1218,6 @@ audio {
 
   .mobile-track-drawer.open {
     border-top-color: var(--color-border);
-  }
-
-  .mobile-track-drawer.open {
     max-height: 65dvh;
   }
 
@@ -1304,37 +1292,6 @@ audio {
     padding: 10px var(--spacing-sm);
   }
 
-}
-
-@media (max-width: 480px) {
-  .album-item-title {
-    font-size: 0.68rem;
-  }
-
-  .album-item-meta {
-    font-size: 0.6rem;
-  }
-
-  .decade-buttons {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 4px;
-    margin-top: 7px;
-  }
-
-  .decade-btn {
-    padding: 5px 8px;
-    font-size: 0.78rem;
-  }
-
-  .filters-section {
-    padding: var(--spacing-xs) var(--spacing-sm);
-    padding-bottom: 6px;
-    gap: 0;
-  }
-}
-
-@media (max-width: 768px) {
   .now-playing-overlay {
     display: flex;
     flex-direction: column;
@@ -1342,7 +1299,7 @@ audio {
     position: fixed;
     inset: 0;
     z-index: 500;
-    background: linear-gradient(180deg, #252019 0%, #0f0e0c 60%);
+    background: linear-gradient(180deg, var(--color-surface-light) 0%, var(--color-bg) 60%);
     padding: env(safe-area-inset-top, 0) 28px 32px;
     transform: translateY(100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1456,9 +1413,30 @@ audio {
     gap: 8px;
     padding: 8px;
   }
+
 }
 
 @media (max-width: 480px) {
+  .album-item-title {
+    font-size: 0.68rem;
+  }
+
+  .album-item-meta {
+    font-size: 0.6rem;
+  }
+
+  .decade-buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 4px;
+    margin-top: 7px;
+  }
+
+  .decade-btn {
+    padding: 5px 8px;
+    font-size: 0.78rem;
+  }
+
   .grid-skeleton {
     grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
     gap: 6px;
