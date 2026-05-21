@@ -2,6 +2,9 @@
   "name": "uqt",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "test": "playwright test"
+  },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1035.0",
     "@aws-sdk/lib-storage": "^3.0.0",
@@ -10,7 +13,9 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "esbuild": "^0.28.0"
+    "@playwright/test": "^1.60.0",
+    "esbuild": "^0.28.0",
+    "serve": "^14.2.6"
   },
   "overrides": {
     "fast-xml-parser": "^5.7.1"
