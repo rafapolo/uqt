@@ -51,9 +51,24 @@ if (cluster.isPrimary) {
     'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
     'Access-Control-Allow-Headers': 'Range, Content-Type',
     'Access-Control-Expose-Headers': 'Content-Length, Content-Type, Content-Range, ETag, Accept-Ranges',
-    'Cache-Control': 'public, max-age=31536000',
     'X-Content-Type-Options': 'nosniff',
   };
+
+  // Cache-Control by asset type:
+  // - Images (capa-min.jpg) are immutable content; browsers should never revalidate.
+  // - Audio files are large and also content-addressed; long cache, no immutable
+  //   so range-request resumption works on restart.
+  // - JSON/other: short cache.
+  function cacheControlFor(key) {
+    const k = key.toLowerCase();
+    if (k.endsWith('.jpg') || k.endsWith('.jpeg') || k.endsWith('.png') || k.endsWith('.webp')) {
+      return 'public, max-age=31536000, immutable';
+    }
+    if (k.endsWith('.mp3') || k.endsWith('.mp4') || k.endsWith('.m4a')) {
+      return 'public, max-age=31536000';
+    }
+    return 'public, max-age=3600';
+  }
 
   function mimeFor(key) {
     const k = key.toLowerCase();
@@ -84,7 +99,7 @@ if (cluster.isPrimary) {
         : new GetObjectCommand({ Bucket: BUCKET, Key: key, Range: req.headers.range });
       const obj = await s3.send(cmd, { abortSignal: abort.signal });
 
-      const headers = { ...corsHeaders, 'Content-Type': mimeFor(key) };
+      const headers = { ...corsHeaders, 'Content-Type': mimeFor(key), 'Cache-Control': cacheControlFor(key) };
       if (obj.ContentLength != null) headers['Content-Length'] = String(obj.ContentLength);
       if (obj.ContentRange) headers['Content-Range'] = obj.ContentRange;
       if (obj.AcceptRanges) headers['Accept-Ranges'] = obj.AcceptRanges;

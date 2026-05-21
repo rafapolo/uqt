@@ -12,3 +12,13 @@ capa.jpg
 uqt.css
 uqt.rb
 tasks/
+unzips/
+test-results/
+tests/
+script/
+js/
+assets/
+playwright.config.js
+3d.html
+index.html
+bun.lock
