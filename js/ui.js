@@ -914,9 +914,12 @@ u(document).on('DOMContentLoaded', async function () {
   // Init virtual grid before data loads so it sizes correctly
   virtualGrid = new VirtualGrid(albumsList);
 
-  // Async data: fetch gzipped JSON, decompress with native DecompressionStream
+  // Async data: fetch gzipped JSON; ?acervo=<encoded_url> overrides the default source
+  const acervoParam = new URLSearchParams(location.search).get('acervo');
+  if (acervoParam) sessionStorage.setItem('acervo', decodeURIComponent(acervoParam));
+  const dataUrl = sessionStorage.getItem('acervo') || 'js/uqt-albums.json.gz';
   const json = await new Response(
-    (await fetch('js/uqt-albums.json.gz')).body.pipeThrough(new DecompressionStream('gzip'))
+    (await fetch(dataUrl)).body.pipeThrough(new DecompressionStream('gzip'))
   ).text();
   db = JSON.parse(json);
   skeletonEl.remove();
