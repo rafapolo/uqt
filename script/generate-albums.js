@@ -138,7 +138,16 @@ async function generateAlbums() {
   const zlib      = require('zlib');
   const outputPath = path.join(__dirname, '..', 'js', 'uqt-albums.js');
   const gzPath     = path.join(__dirname, '..', 'js', 'uqt-albums.json.gz');
-  const jsonStr    = JSON.stringify({ albums });
+
+  const totalSeconds = albums.reduce((s, a) => s + a.tracks.reduce((ts, t) => ts + (t.duration || 0), 0), 0);
+  const meta = {
+    title: 'Acervo UQT',
+    subtitle: '100 Anos de MPB',
+    hours: Math.round(totalSeconds / 3600).toString(),
+    base_url: 'https://uqt.xn--2dk.xyz/uqt',
+  };
+
+  const jsonStr    = JSON.stringify({ meta, albums });
 
   fs.writeFileSync(outputPath, `db = ${JSON.stringify({ albums }, null, 2)}`);
   fs.writeFileSync(gzPath, zlib.gzipSync(Buffer.from(jsonStr)));
