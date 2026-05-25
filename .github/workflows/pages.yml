@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true          # pulls tocador/ submodule
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/js _site/assets
+          # Player files from tocador submodule
+          cp tocador/index.html  _site/
+          cp tocador/3d.html     _site/
+          cp tocador/assets/*    _site/assets/
+          cp tocador/js/ui.js    _site/js/
+          # UQT-specific: config and album data
+          cp config.json                _site/         || true
+          cp js/uqt-albums.json.gz      _site/js/
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

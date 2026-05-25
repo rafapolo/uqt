@@ -1,6 +1,8 @@
-# 🎵 Acervo UQT
+# Acervo UQT
 
 Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleção curada de **100 anos de Música Popular Brasileira**. **1.658 horas** de MPB, samba, bossa nova e muito mais — totalmente grátis e organizado para explorar.
+
+> **Este repositório é uma instância do [tocador](https://github.com/rafapolo/tocador)** — a plataforma de player de arquivo. O código do player, proxy e scripts vivem lá; aqui ficam apenas os dados e a configuração de deploy desta coleção específica.
 
 ## 📊 Números
 
@@ -51,24 +53,38 @@ Um arquivo digital em homenagem ao falecido blog **Um Que Tenha** com uma coleç
 - **Persistência**: Shuffle, modo de repetição e volume são salvos no `localStorage` e restaurados ao reabrir
 - **Atalhos de teclado**: `Espaço` play/pausa · `←/→` recua/avança 10s · `n` próxima · `p` anterior
 
-## 🛠️ Como Funciona
+## Como o acervo foi gerado
+
+### Pipeline de dados
+Os arquivos de dados neste repo (`js/uqt-albums.json.gz`, `genres.json`) foram gerados pelos scripts do tocador a partir de ~2.200 álbuns em MP3:
+
+```bash
+# 1. Gerar catálogo de álbuns a partir dos MP3s locais
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/generate-albums.js
+
+# 2. Sincronizar áudio para o bucket S3
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/sync-to-bucket.js
+
+# 3. Redimensionar e fazer upload das capas (200px)
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/resize-cover-images.js
+
+# 4. Classificar gêneros com ML (Essentia + TensorFlow, modelo discogs519)
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz python3 tocador/script/extract-genres.py --model discogs519 --workers 6
+```
 
 ### Arquitetura
-- **Frontend**: HTML5 + CSS3 + JavaScript vanilla, servido pelo GitHub Pages (`assets/uqt.css`, `assets/capa.jpg`)
-- **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (4.8 MB → 693 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
-- **Rolagem virtual**: `VirtualGrid` em `js/ui.js` renderiza apenas os cards visíveis (~30 nós) com posicionamento absoluto; ResizeObserver recalcula colunas ao redimensionar
-- **Capas e áudio**: Servidos pelo proxy em `https://uqt.ミ.xyz/uqt/…`; placeholder SVG inline quando não há capa
-- **Servidor de mídia**: Node.js com o SDK S3 — acessa o armazenamento privado via credenciais; os arquivos nunca são expostos diretamente ao cliente
-- **Deployment**: Haloy + Docker, SSL automático via Let's Encrypt, health check em `/health`
-- **Scripts**: `script/` — `generate-albums.js`, `sync-to-bucket.js`, `resize-cover-images.js`, `fetch-covers.py`, `deploy.sh`, `find-untagged.js`, `fix-missing-tags.py`, `fix-tags-mbsearch.py`, `fix-tags-audd.py`
-- **Fonts**: Playfair Display (títulos) + Inter (corpo)
+- **Player**: HTML5 + CSS3 + JavaScript vanilla — código em [`tocador/`](https://github.com/rafapolo/tocador), servido pelo GitHub Pages
+- **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (~700 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
+- **Gêneros**: `genres.json` — classificação por faixa via ML (MAEST + discogs519, 519 géneros)
+- **Capas e áudio**: Servidos pelo proxy em `https://uqt.xn--2dk.xyz/uqt/…`
+- **Proxy**: Node.js + S3 SDK — acessa o armazenamento privado; os arquivos nunca expostos diretamente
+- **Deployment**: Haloy + Docker (`haloy.yaml`), SSL automático, health check em `/health`
 
 ### Fluxo de uma requisição
-1. Browser carrega `index.html` do GitHub Pages (sem bloqueio — `uqt-albums.js` não é mais um script tag)
-2. `ui.js` faz `fetch('js/uqt-albums.json.gz')`, descomprime com pako e renderiza o grid
-3. Ao clicar em um álbum, constrói a URL `https://uqt.ミ.xyz/uqt/{path}/{file}`
-4. Servidor de mídia recebe a requisição e busca o arquivo no armazenamento privado
-5. Responde com `Content-Type` correto, CORS e suporte a `Range` (streaming de MP3)
+1. Browser carrega `index.html` do GitHub Pages
+2. `ui.js` lê `config.json` (baseUrl + dataUrl), faz fetch do catálogo gzipado e renderiza o grid
+3. Ao clicar num álbum, constrói a URL `https://uqt.xn--2dk.xyz/uqt/{path}/{file}`
+4. Proxy recebe, busca o arquivo no S3 e responde com `Content-Type` correto, CORS e suporte a `Range`
 
 ### Frontend
 - Dependências mínimas: Umbrella JS (~2.6 KB); descompressão gzip via `DecompressionStream` nativa (zero KB extra)

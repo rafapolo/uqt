@@ -1,16 +1,11 @@
-# Production-ready Node.js proxy for UQT
 FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy package files for reproducible install
-COPY package*.json ./
-
-# Install only production dependencies, reproducibly
+# tocador submodule owns the proxy and its dependencies
+COPY tocador/package*.json ./
 RUN npm ci --omit=dev && npm cache clean --force
-
-# Copy application code (proxy only — no js/, assets/, or scripts needed at runtime)
-COPY proxy.js .
+COPY tocador/proxy.js .
 
 # Create non-root user for security
 RUN addgroup -g 1001 -S nodejs && adduser -S nodejs -u 1001
