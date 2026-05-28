@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses with pako, then renders albums into a virtual scrolling grid. Album paths in the JSON map directly to file paths on the audio server.
 
 ### Backend/Infrastructure
-- **proxy.js** — Node.js reverse proxy listening on port 9001. Forwards all requests under `/uqt/*` to object storage (endpoint set via `S3_ENDPOINT` env var). Sets correct `Content-Type` headers (audio/mpeg for .mp3, image/jpeg for .jpg, etc.) and CORS headers to prevent CORB blocking.
+- **proxy.js** — Bun reverse proxy on port 9002 (behind nginx on 9001). Uses `Bun.S3Client` (native, no npm deps). Sets MIME types, CORS, Range support, security hardening. Lives in the `tocador` repo and is shared across all acervos.
 - **haloy.yaml** — Deployment config; deploys proxy to uqt.xn--2dk.xyz
 - **Dockerfile** — Packages proxy.js for haloy deployment
 
@@ -49,7 +49,7 @@ The app fetches `js/uqt-albums.json.gz` asynchronously on load, decompresses wit
 
 ### Testing the Proxy Locally
 ```bash
-node proxy.js
+bun proxy.js
 # Listens on http://localhost:9001
 # Test: curl -I http://localhost:9001/health
 ```
@@ -59,7 +59,7 @@ The proxy will forward requests to the live S3 bucket ($S3_BUCKET), so you need 
 ### Regenerating Album Database
 When MP3 files are added/updated in `unzips/`, regenerate the JSON database:
 ```bash
-node script/generate-albums.js
+bun script/generate-albums.js
 ```
 
 This reads MP3 metadata from all files in `unzips/` and outputs both `js/uqt-albums.js` and `js/uqt-albums.json.gz`.
@@ -93,7 +93,7 @@ Album `path` is used to construct URLs: the proxy expects files at `s3://$S3_BUC
 ### Resizing and Uploading Cover Images
 When new albums are added, generate and upload resized covers (200px wide) to S3:
 ```bash
-node script/resize-cover-images.js
+bun script/resize-cover-images.js
 ```
 Requires `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` in `.env` with write access to `$S3_BUCKET/uqt/*`. Source covers read from `/Volumes/EXTRA/bkps/sambaderaiz`. Skips albums already uploaded.
 
@@ -124,4 +124,4 @@ Audio files and cover images are synced to the S3 bucket (`$S3_ENDPOINT/$S3_BUCK
 
 **Proxy not routing through haloy**: Haloy deployment requires valid `HALOY_API_TOKEN`. Verify with `haloy status` (will error if token is missing).
 
-**App doesn't show albums**: Check browser console for fetch errors on `js/uqt-albums.json.gz`. Verify the file exists and is valid gzip. Regenerate with `node script/generate-albums.js`.
+**App doesn't show albums**: Check browser console for fetch errors on `js/uqt-albums.json.gz`. Verify the file exists and is valid gzip. Regenerate with `bun script/generate-albums.js`.

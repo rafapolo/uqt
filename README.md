@@ -60,13 +60,13 @@ Os arquivos de dados neste repo (`js/uqt-albums.json.gz`, `genres.json`) foram g
 
 ```bash
 # 1. Gerar catálogo de álbuns a partir dos MP3s locais
-ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/generate-albums.js
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz bun tocador/script/generate-albums.js
 
 # 2. Sincronizar áudio para o bucket S3
-ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/sync-to-bucket.js
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz bun tocador/script/sync-to-bucket.js
 
 # 3. Redimensionar e fazer upload das capas (200px)
-ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz node tocador/script/resize-cover-images.js
+ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz bun tocador/script/resize-cover-images.js
 
 # 4. Classificar gêneros com ML (Essentia + TensorFlow, modelo discogs519)
 ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz python3 tocador/script/extract-genres.py --model discogs519 --workers 6
@@ -77,7 +77,7 @@ ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz python3 tocador/script/extract-g
 - **Dados**: `js/uqt-albums.json.gz` — catálogo gzipado (~700 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
 - **Gêneros**: `genres.json` — classificação por faixa via ML (MAEST + discogs519, 519 géneros)
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.xn--2dk.xyz/uqt/…`
-- **Proxy**: Node.js + S3 SDK — acessa o armazenamento privado; os arquivos nunca expostos diretamente
+- **Proxy**: Bun + `Bun.S3Client` nativo — acessa o armazenamento privado; os arquivos nunca expostos diretamente
 - **Deployment**: Haloy + Docker (`haloy.yaml`), SSL automático, health check em `/health`
 
 ### Fluxo de uma requisição
@@ -114,12 +114,12 @@ ARCHIVE_DIR=/Volumes/EXTRA/bkps/UQT/sambaderaiz python3 tocador/script/extract-g
 - **CSS deduplicado**: blocos `@media (max-width: 768px)` e `(max-width: 480px)` que estavam fragmentados em múltiplos lugares no arquivo merged em bloco único; mesma coisa para `.mobile-track-drawer.open` e `.player-controls`
 
 ### Streaming e Deployment
-- **Servidor de mídia**: Node.js + S3 SDK em `https://uqt.ミ.xyz/uqt` — armazenamento privado, `Range` suportado para seek/streaming
+- **Servidor de mídia**: Bun + `Bun.S3Client` em `https://uqt.ミ.xyz/uqt` — armazenamento privado, `Range` suportado para seek/streaming
 - **Capas**: `capa-min.jpg` (200px wide, 80% quality) — 159 MB → 21.8 MB vs originais; geradas por `script/resize-cover-images.js` com upload direto via AWS SDK
 - **Lazy loading**: `loading="lazy"` em todas as capas — zero impacto no carregamento inicial
 - **Cache-Control em camadas**: capas recebem `public, max-age=31536000, immutable` (browser nunca re-valida após o primeiro download); áudio recebe cache longo sem `immutable`; catálogo JSON tem TTL de 1h — cada tipo com a política adequada ao seu ciclo de vida
 - **Deployment**: Haloy + Docker, rolling updates sem downtime
-- **Docker enxuto**: `sharp`, `@aws-sdk/lib-storage` e `fast-xml-parser` são usados apenas pelos scripts de manutenção (`script/`) — movidos para `devDependencies`; a imagem de produção instala só o que o proxy precisa (`npm ci --omit=dev`), economizando ~120–150 MB por deploy
+- **Docker enxuto**: proxy usa apenas `Bun.S3Client` nativo — zero dependências npm em produção; scripts de manutenção (`script/`) usam `@aws-sdk` em `devDependencies` e não entram na imagem
 - **SSL/TLS**: Let's Encrypt automático (Haloy)
 - **Health check**: `/health` retorna `{status, timestamp}`
 - **Zero egress**: proxy e bucket na mesma zona de hospedagem
