@@ -41,18 +41,30 @@ for album in albums:
         skipped += 1
         continue
 
-    mp3 = best_mp3(album_dir)
-    if not mp3:
-        no_art += 1
-        continue
-
-    data = extract_apic(mp3)
-    if not data:
-        no_art += 1
-        continue
+    # prefer existing capa.jpg, fall back to embedded ID3 art
+    capa_path = os.path.join(album_dir, 'capa.jpg')
+    if os.path.exists(capa_path):
+        try:
+            img = Image.open(capa_path).convert('RGB')
+        except Exception:
+            no_art += 1
+            continue
+    else:
+        mp3 = best_mp3(album_dir)
+        if not mp3:
+            no_art += 1
+            continue
+        data = extract_apic(mp3)
+        if not data:
+            no_art += 1
+            continue
+        try:
+            img = Image.open(io.BytesIO(data)).convert('RGB')
+        except Exception:
+            no_art += 1
+            continue
 
     try:
-        img = Image.open(io.BytesIO(data)).convert('RGB')
         img = img.resize((SIZE, SIZE), Image.LANCZOS)
         img.save(out, 'JPEG', quality=85, optimize=True)
         done += 1
