@@ -29,10 +29,11 @@ jobs:
         run: |
           mkdir -p _site/js _site/assets _site/data
           # Player files from tocador submodule
-          cp tocador/index.html  _site/
-          cp tocador/3d.html     _site/
-          cp tocador/assets/*    _site/assets/
-          cp tocador/js/ui.js    _site/js/
+          cp tocador/index.html         _site/
+          cp tocador/3d.html            _site/
+          cp tocador/assets/*           _site/assets/
+          cp tocador/js/ui.js           _site/js/
+          cp tocador/js/acervo-format.js _site/js/
           # UQT-specific: config and album data
           cp config.json                _site/         || true
           cp data/uqt-albums.json.gz    _site/data/
