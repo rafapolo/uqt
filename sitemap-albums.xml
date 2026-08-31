@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tocador.cc/?acervo=uqt</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1683,13 +1683,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=2010+-+Sambas-de-enredo+Grupo+Rio+de+Janeiro+1&amp;artista=Sambas</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=2010+-+Sambas-de-enredo+Grupo+Rio+de+Janeiro+1&amp;artista=Mocidade+de+Vicente+de+Carvalho</loc>
     <lastmod>2010-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/2010%20-%20Sambas-de-enredo%20Grupo%20Rio%20de%20Janeiro%201/capa-min.jpg</image:loc>
-      <image:title>de-enredo Grupo Rio de Janeiro 1 — Sambas (2010)</image:title>
+      <image:title>Sambas-de-enredo Grupo Rio de Janeiro 1 — Mocidade de Vicente de Carvalho (2010)</image:title>
     </image:image>
   </url>
   <url>
@@ -4985,13 +4985,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=2006+-+Cacha%C3%A7a+d%C3%A1+samba+Alfredo+Del-Penho+e+Pedro+Paulo+Malta&amp;artista=Cachac%CC%A7a+da%CC%81+samba+Alfredo+Del</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=2006+-+Cacha%C3%A7a+d%C3%A1+samba+Alfredo+Del-Penho+e+Pedro+Paulo+Malta&amp;artista=Alfredo+del-Penho+e+Pedro+Paulo+Malta</loc>
     <lastmod>2006-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/2006%20-%20Cacha%C3%A7a%20d%C3%A1%20samba%20Alfredo%20Del-Penho%20e%20Pedro%20Paulo%20Malta/capa-min.jpg</image:loc>
-      <image:title>Penho e Pedro Paulo Malta — Cachaça dá samba Alfredo Del (2006)</image:title>
+      <image:title>Cachaça dá samba Alfredo Del-Penho e Pedro Paulo Malta — Alfredo del-Penho e Pedro Paulo Malta (2006)</image:title>
     </image:image>
   </url>
   <url>
@@ -6135,13 +6135,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=2005+-+Velha-Guarda+da+Vila+Isabel+-+Sou+Velha+Guarda%2C+Muito+Prazer&amp;artista=Velha</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=2005+-+Velha-Guarda+da+Vila+Isabel+-+Sou+Velha+Guarda%2C+Muito+Prazer&amp;artista=Velha-Guarda+da+Vila+Isabel</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/2005%20-%20Velha-Guarda%20da%20Vila%20Isabel%20-%20Sou%20Velha%20Guarda%2C%20Muito%20Prazer/capa-min.jpg</image:loc>
-      <image:title>Guarda da Vila Isabel - Sou Velha Guarda, Muito Prazer — Velha (2005)</image:title>
+      <image:title>Sou Velha Guarda, Muito Prazer — Velha-Guarda da Vila Isabel (2005)</image:title>
     </image:image>
   </url>
   <url>
@@ -6575,13 +6575,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=2004+-+Pedro+Paulo+Malta+e+Alfredo+Del-Penho+-+Dois+bicudos&amp;artista=Pedro+Paulo+Malta+e+Alfredo+Del</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=2004+-+Pedro+Paulo+Malta+e+Alfredo+Del-Penho+-+Dois+bicudos&amp;artista=Pedro+Paulo+Malta+e+Alfredo+Del-Penho</loc>
     <lastmod>2004-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/2004%20-%20Pedro%20Paulo%20Malta%20e%20Alfredo%20Del-Penho%20-%20Dois%20bicudos/capa-min.jpg</image:loc>
-      <image:title>Penho - Dois bicudos — Pedro Paulo Malta e Alfredo Del (2004)</image:title>
+      <image:title>Dois bicudos — Pedro Paulo Malta e Alfredo Del-Penho (2004)</image:title>
     </image:image>
   </url>
   <url>
@@ -9915,13 +9915,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1994+-+Neguinho+da+Beija-Flor+-+Da+Vila+%26+da+Viola&amp;artista=Neguinho+da+Beija</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1994+-+Neguinho+da+Beija-Flor+-+Da+Vila+%26+da+Viola&amp;artista=Neguinho+da+Beija-Flor</loc>
     <lastmod>1994-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1994%20-%20Neguinho%20da%20Beija-Flor%20-%20Da%20Vila%20%26%20da%20Viola/capa-min.jpg</image:loc>
-      <image:title>Flor - Da Vila &amp; da Viola — Neguinho da Beija (1994)</image:title>
+      <image:title>Da Vila &amp; da Viola — Neguinho da Beija-Flor (1994)</image:title>
     </image:image>
   </url>
   <url>
@@ -10821,13 +10821,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1991+-+Neguinho+da+Beija-Flor+-+Poetas+de+Cal%C3%A7ada&amp;artista=Neguinho+da+Beija</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1991+-+Neguinho+da+Beija-Flor+-+Poetas+de+Cal%C3%A7ada&amp;artista=Neguinho+da+Beija-Flor</loc>
     <lastmod>1991-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1991%20-%20Neguinho%20da%20Beija-Flor%20-%20Poetas%20de%20Cal%C3%A7ada/capa-min.jpg</image:loc>
-      <image:title>Flor - Poetas de Calçada — Neguinho da Beija (1991)</image:title>
+      <image:title>Poetas de Calçada — Neguinho da Beija-Flor (1991)</image:title>
     </image:image>
   </url>
   <url>
@@ -11071,23 +11071,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1990+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1990+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Acad%C3%AAmicos+de+Santa+Cruz</loc>
     <lastmod>1990-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1990%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1990)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Acadêmicos de Santa Cruz (1990)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1990+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1990+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Acad%C3%AAmicos+do+Grande+Rio</loc>
     <lastmod>1990-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1990%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1990)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Acadêmicos do Grande Rio (1990)</image:title>
     </image:image>
   </url>
   <url>
@@ -11371,23 +11371,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1989+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1989+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Arranco</loc>
     <lastmod>1989-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1989%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1989)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Arranco (1989)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1989+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1989+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Em+Cima+da+Hora</loc>
     <lastmod>1989-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1989%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1989)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Em Cima da Hora (1989)</image:title>
     </image:image>
   </url>
   <url>
@@ -11611,23 +11611,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1988+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1988+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Unidos+da+Tijuca</loc>
     <lastmod>1988-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1988%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1988)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Unidos da Tijuca (1988)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1988+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1988+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Independentes+de+Cordovil</loc>
     <lastmod>1988-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1988%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1988)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Independentes de Cordovil (1988)</image:title>
     </image:image>
   </url>
   <url>
@@ -11851,13 +11851,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Neguinho+da+Beija-Flor+-+Meu+sorriso&amp;artista=Neguinho+da+Beija</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Neguinho+da+Beija-Flor+-+Meu+sorriso&amp;artista=Neguinho+da+Beija-Flor</loc>
     <lastmod>1987-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1987%20-%20Neguinho%20da%20Beija-Flor%20-%20Meu%20sorriso/capa-min.jpg</image:loc>
-      <image:title>Flor - Meu sorriso — Neguinho da Beija (1987)</image:title>
+      <image:title>Meu sorriso — Neguinho da Beija-Flor (1987)</image:title>
     </image:image>
   </url>
   <url>
@@ -11911,19 +11911,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Sambas+de+Enredo+Grupo+1-A+RCA&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Sambas+de+Enredo+Grupo+1-A+RCA</loc>
     <lastmod>1987-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Sambas+de+Enredo+Grupo+1-A+Top+Tape&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1987+-+Sambas+de+Enredo+Grupo+1-A+Top+Tape&amp;artista=Acad%C3%AAmicos+do+Salgueiro+%28int%C3%A9rprete%3A+Richahs%29</loc>
     <lastmod>1987-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1987%20-%20Sambas%20de%20Enredo%20Grupo%201-A%20Top%20Tape/capa-min.jpg</image:loc>
-      <image:title>A Top Tape — Sambas de Enredo Grupo 1 (1987)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A Top Tape — Acadêmicos do Salgueiro (intérprete: Richahs) (1987)</image:title>
     </image:image>
   </url>
   <url>
@@ -12283,29 +12283,29 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-A+RCA&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-A+RCA</loc>
     <lastmod>1986-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-A+Top-Tape&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-A+Top-Tape&amp;artista=Caprichosos+de+Pilares</loc>
     <lastmod>1986-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1986%20-%20Sambas%20de%20Enredo%20Grupo%201-A%20Top-Tape/capa-min.jpg</image:loc>
-      <image:title>A Top-Tape — Sambas de Enredo Grupo 1 (1986)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A Top-Tape — Caprichosos de Pilares (1986)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1986+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Unidos+do+Jacarezinho</loc>
     <lastmod>1986-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1986%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1986)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Unidos do Jacarezinho (1986)</image:title>
     </image:image>
   </url>
   <url>
@@ -12579,13 +12579,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Neguinho+da+Beija-Flor+-+Of%C3%ADcio+de+Puxador&amp;artista=Neguinho+da+Beija</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Neguinho+da+Beija-Flor+-+Of%C3%ADcio+de+Puxador&amp;artista=Neguinho+da+Beija-Flor</loc>
     <lastmod>1985-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1985%20-%20Neguinho%20da%20Beija-Flor%20-%20Of%C3%ADcio%20de%20Puxador/capa-min.jpg</image:loc>
-      <image:title>Flor - Ofício de Puxador — Neguinho da Beija (1985)</image:title>
+      <image:title>Ofício de Puxador — Neguinho da Beija-Flor (1985)</image:title>
     </image:image>
   </url>
   <url>
@@ -12649,23 +12649,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Esta%C3%A7%C3%A3o+Primeira+de+Mangueira</loc>
     <lastmod>1985-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1985%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1985)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Estação Primeira de Mangueira (1985)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1985+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Acad%C3%AAmicos+de+Santa+Cruz</loc>
     <lastmod>1985-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1985%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1985)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Acadêmicos de Santa Cruz (1985)</image:title>
     </image:image>
   </url>
   <url>
@@ -12899,23 +12899,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1984+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1984+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Beija-Flor+de+Nil%C3%B3polis</loc>
     <lastmod>1984-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1984%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1984)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Beija-Flor de Nilópolis (1984)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1984+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1984+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Arrast%C3%A3o+de+Cascadura</loc>
     <lastmod>1984-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1984%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1984)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Arrastão de Cascadura (1984)</image:title>
     </image:image>
   </url>
   <url>
@@ -13185,23 +13185,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1983+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1983+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Imp%C3%A9rio+Serrano</loc>
     <lastmod>1983-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1983%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1983)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Império Serrano (1983)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1983+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1983+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Imp%C3%A9rio+da+Tijuca</loc>
     <lastmod>1983-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1983%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1983)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Império da Tijuca (1983)</image:title>
     </image:image>
   </url>
   <url>
@@ -13425,33 +13425,33 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Imperatriz+Leopoldinense+%28Int%C3%A9rprete%3A+Dominguinhos+do+Est%C3%A1cio%29</loc>
     <lastmod>1982-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1982%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1982)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Imperatriz Leopoldinense (Intérprete: Dominguinhos do Estácio) (1982)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Unidos+da+Ponte</loc>
     <lastmod>1982-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1982%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1982)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Unidos da Ponte (1982)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Sambas+de+Enredo+Grupo+2</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1982+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Unidos+de+Manguinhos+%28int%C3%A9rprete%3A+Tinga%29</loc>
     <lastmod>1982-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1982%20-%20Sambas%20de%20Enredo%20Grupo%202-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 2 (1982)</image:title>
+      <image:title>Sambas de Enredo Grupo 2-A — Unidos de Manguinhos (intérprete: Tinga) (1982)</image:title>
     </image:image>
   </url>
   <url>
@@ -13695,43 +13695,43 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Imperatriz+Leopoldinense+%28Int%C3%A9rprete%3A+Dominguinhos+do+Est%C3%A1cio%29</loc>
     <lastmod>1981-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1981%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1981)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Imperatriz Leopoldinense (Intérprete: Dominguinhos do Estácio) (1981)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Caprichosos+de+Pilares</loc>
     <lastmod>1981-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1981%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1981)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Caprichosos de Pilares (1981)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Sambas+de+Enredo+Grupo+2</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Acad%C3%AAmicos+do+Grande+Rio</loc>
     <lastmod>1981-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1981%20-%20Sambas%20de%20Enredo%20Grupo%202-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 2 (1981)</image:title>
+      <image:title>Sambas de Enredo Grupo 2-A — Acadêmicos do Grande Rio (1981)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+2-B&amp;artista=Sambas+de+Enredo+Grupo+2</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1981+-+Sambas+de+Enredo+Grupo+2-B&amp;artista=Uni%C3%A3o+de+Rocha+Miranda</loc>
     <lastmod>1981-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1981%20-%20Sambas%20de%20Enredo%20Grupo%202-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 2 (1981)</image:title>
+      <image:title>Sambas de Enredo Grupo 2-B — União de Rocha Miranda (1981)</image:title>
     </image:image>
   </url>
   <url>
@@ -14191,23 +14191,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1980+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1980+-+Sambas+de+Enredo+Grupo+1-A&amp;artista=Mocidade+Independente+de+Padre+Miguel+%28Int%C3%A9rprete%3A+Ney+Vianna%29</loc>
     <lastmod>1980-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1980%20-%20Sambas%20de%20Enredo%20Grupo%201-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 1 (1980)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A — Mocidade Independente de Padre Miguel (Intérprete: Ney Vianna) (1980)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1980+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1980+-+Sambas+de+Enredo+Grupo+1-B&amp;artista=Caprichosos+de+Pilares</loc>
     <lastmod>1980-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1980%20-%20Sambas%20de%20Enredo%20Grupo%201-B/capa-min.jpg</image:loc>
-      <image:title>B — Sambas de Enredo Grupo 1 (1980)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-B — Caprichosos de Pilares (1980)</image:title>
     </image:image>
   </url>
   <url>
@@ -14631,23 +14631,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1979+-+Sambas+de+Enredo+Grupo+1-A+e+1-B&amp;artista=Sambas+de+Enredo+Grupo+1</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1979+-+Sambas+de+Enredo+Grupo+1-A+e+1-B&amp;artista=Beija-Flor+de+Nilop%C3%B3lis+%28Int%C3%A9rprete%3A+Neguinho+da+Beija-Flor%29</loc>
     <lastmod>1979-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1979%20-%20Sambas%20de%20Enredo%20Grupo%201-A%20e%201-B/capa-min.jpg</image:loc>
-      <image:title>A e 1-B — Sambas de Enredo Grupo 1 (1979)</image:title>
+      <image:title>Sambas de Enredo Grupo 1-A e 1-B — Beija-Flor de Nilopólis (Intérprete: Neguinho da Beija-Flor) (1979)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1979+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Sambas+de+Enredo+Grupo+2</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1979+-+Sambas+de+Enredo+Grupo+2-A&amp;artista=Lins+Imperial</loc>
     <lastmod>1979-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1979%20-%20Sambas%20de%20Enredo%20Grupo%202-A/capa-min.jpg</image:loc>
-      <image:title>A — Sambas de Enredo Grupo 2 (1979)</image:title>
+      <image:title>Sambas de Enredo Grupo 2-A — Lins Imperial (1979)</image:title>
     </image:image>
   </url>
   <url>
@@ -15991,13 +15991,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1976+-+Hist%C3%B3ria+Do+Brasil+Atrav%C3%A9s+Dos+Sambas-De-Enredo+-+O+Negro+No+Brasil&amp;artista=Histo%CC%81ria+Do+Brasil+Atrave%CC%81s+Dos+Sambas</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1976+-+Hist%C3%B3ria+Do+Brasil+Atrav%C3%A9s+Dos+Sambas-De-Enredo+-+O+Negro+No+Brasil&amp;artista=Histo%CC%81ria+Do+Brasil+Atrave%CC%81s+Dos+Sambas-De-Enredo</loc>
     <lastmod>1976-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1976%20-%20Hist%C3%B3ria%20Do%20Brasil%20Atrav%C3%A9s%20Dos%20Sambas-De-Enredo%20-%20O%20Negro%20No%20Brasil/capa-min.jpg</image:loc>
-      <image:title>De-Enredo - O Negro No Brasil — História Do Brasil Através Dos Sambas (1976)</image:title>
+      <image:title>O Negro No Brasil — História Do Brasil Através Dos Sambas-De-Enredo (1976)</image:title>
     </image:image>
   </url>
   <url>
@@ -16681,13 +16681,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1975+-+Os+maiores+sambas-enredos+de+todos+os+tempos+%E2%80%93+Vol+3&amp;artista=Os+maiores+sambas</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1975+-+Os+maiores+sambas-enredos+de+todos+os+tempos+%E2%80%93+Vol+3&amp;artista=Os+maiores+sambas-enredos+de+todos+os+tempos</loc>
     <lastmod>1975-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1975%20-%20Os%20maiores%20sambas-enredos%20de%20todos%20os%20tempos%20%E2%80%93%20Vol%203/capa-min.jpg</image:loc>
-      <image:title>enredos de todos os tempos – Vol 3 — Os maiores sambas (1975)</image:title>
+      <image:title>Vol 3 — Os maiores sambas-enredos de todos os tempos (1975)</image:title>
     </image:image>
   </url>
   <url>
@@ -17121,13 +17121,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1974+-+Osvaldinho+da+Cu%C3%ADca+e+Grupo+Vai-Vai+-+Vamos+sambar&amp;artista=Osvaldinho+da+Cui%CC%81ca+e+Grupo+Vai</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1974+-+Osvaldinho+da+Cu%C3%ADca+e+Grupo+Vai-Vai+-+Vamos+sambar&amp;artista=Osvaldinho+da+Cui%CC%81ca+e+Grupo+Vai-Vai</loc>
     <lastmod>1974-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1974%20-%20Osvaldinho%20da%20Cu%C3%ADca%20e%20Grupo%20Vai-Vai%20-%20Vamos%20sambar/capa-min.jpg</image:loc>
-      <image:title>Vai - Vamos sambar — Osvaldinho da Cuíca e Grupo Vai (1974)</image:title>
+      <image:title>Vamos sambar — Osvaldinho da Cuíca e Grupo Vai-Vai (1974)</image:title>
     </image:image>
   </url>
   <url>
@@ -17935,13 +17935,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1972+-+Os+maiores+sambas-enredos+de+todos+os+tempos+%E2%80%93+Vol+2&amp;artista=Os+maiores+sambas</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1972+-+Os+maiores+sambas-enredos+de+todos+os+tempos+%E2%80%93+Vol+2&amp;artista=Os+maiores+sambas-enredos+de+todos+os+tempos</loc>
     <lastmod>1972-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1972%20-%20Os%20maiores%20sambas-enredos%20de%20todos%20os%20tempos%20%E2%80%93%20Vol%202/capa-min.jpg</image:loc>
-      <image:title>enredos de todos os tempos – Vol 2 — Os maiores sambas (1972)</image:title>
+      <image:title>Vol 2 — Os maiores sambas-enredos de todos os tempos (1972)</image:title>
     </image:image>
   </url>
   <url>
@@ -19441,13 +19441,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1968+-+O+melhor+da+Velha-Guarda&amp;artista=O+melhor+da+Velha</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1968+-+O+melhor+da+Velha-Guarda&amp;artista=Various+Artists</loc>
     <lastmod>1968-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1968%20-%20O%20melhor%20da%20Velha-Guarda/capa-min.jpg</image:loc>
-      <image:title>Guarda — O melhor da Velha (1968)</image:title>
+      <image:title>O melhor da Velha-Guarda — Various Artists (1968)</image:title>
     </image:image>
   </url>
   <url>
@@ -19571,13 +19571,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?acervo=uqt&amp;album=1968+-+Sambas-Enredo+As+dez+grandes+escolas+cantam+para+a+posteridade+seus+sambas-enredo+de&amp;artista=Sambas</loc>
+    <loc>https://tocador.cc/?acervo=uqt&amp;album=1968+-+Sambas-Enredo+As+dez+grandes+escolas+cantam+para+a+posteridade+seus+sambas-enredo+de&amp;artista=esta%C3%A7%C3%A3o+primeira+de+mangueira+%5Bdarcy+da+mangueira%5D</loc>
     <lastmod>1968-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/uqt/1968%20-%20Sambas-Enredo%20As%20dez%20grandes%20escolas%20cantam%20para%20a%20posteridade%20seus%20sambas-enredo%20de/capa-min.jpg</image:loc>
-      <image:title>Enredo As dez grandes escolas cantam para a posteridade seus sambas-enredo de — Sambas (1968)</image:title>
+      <image:title>Sambas-Enredo As dez grandes escolas cantam para a posteridade seus sambas-enredo de — estação primeira de mangueira [darcy da mangueira] (1968)</image:title>
     </image:image>
   </url>
   <url>
@@ -22342,7 +22342,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Alvaiade+-+Alvaiade+78RPM&amp;artista=j.b.+de+carvalho</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22352,13 +22352,13 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=2010+-+Pitanga+Em+Pe+De+Amora%2FAo+Vivo+No+Cachuera&amp;artista=Pitanga+Em+P%C3%A9+de+Amora</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Brasil+samba+sele%C3%A7%C3%A3o+Os+pagodeiros&amp;artista=Os+Pagodeiros+D%C3%A3o+O+Recado</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22368,7 +22368,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Brazil+-+Roots+-+Samba&amp;artista=Wilson+Moreira</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22378,7 +22378,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Candeia+-+Luz+da+Inspira%C3%A7%C3%A3o+CD+contido+no+livro&amp;artista=Di%C3%A1logo+Entre+Jo%C3%A3o+Baptista+M.+Vargens+E+Lu%C3%ADs+Carlos+Magalh%C3%A3es</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22388,7 +22388,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Geraldo+Pereira+-+Geraldo+Pereira+78RPM&amp;artista=roberto+paiva</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22398,7 +22398,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Nelson+Cavaquinho+-+Nelson+Cavaquinho+78RPM&amp;artista=cyro+monteiro</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22408,7 +22408,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Noel+Rosa+de+Oliveira+-+Noel+Rosa+de+Oliveira+e+Escola+de+Samba&amp;artista=Noel+Rosa+de+Oliveira</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22418,7 +22418,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Nova+Hist%C3%B3ria+Da+M%C3%BAsica+Popular+Brasileira+Vol18+%E2%80%93+Cartola&amp;artista=Various+Artists</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22428,7 +22428,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=O+samba+de+Chico+Buarque&amp;artista=Chico+Buarque</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22438,7 +22438,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Olha+o+partido+a%C3%AD%21+-+Gravado+ao+vivo+nos+40+anos+de+samba+da+Mangueira+%E2%80%93+Xang%C3%B4+da+Mangueira%2C+Padeirinho%2C+Jorge+Zagaia%2C+Aniceto+e+Jorginho&amp;artista=velha-guarda+da+mangueira</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22448,7 +22448,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=Os+grandes+sambas+de+terreiro+do+Imp%C3%A9rio+Serrano&amp;artista=velha-guarda+do+imp%C3%A9rio+serrano</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -22458,7 +22458,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?acervo=uqt&amp;album=2011+-+Caraivana+-+Ser+Feliz%2FUQT2011_Caraivana-SerFeliz</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
