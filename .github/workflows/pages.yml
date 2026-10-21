@@ -37,7 +37,7 @@ jobs:
           cp config.json                _site/         || true
           cp data/uqt-albums.json.gz    _site/data/
 
-      - uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v6
 
       - uses: actions/upload-pages-artifact@v3
         with:
